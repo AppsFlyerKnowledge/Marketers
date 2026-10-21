@@ -1,9 +1,5 @@
 ---
 title: Protect360 onboarding guide
-excerpt: >-
-  Quickly and effectively safeguard your marketing investments by following this
-  step-by-step onboarding guide to maximize your Protect360 value within just 6
-  weeks.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34554022072209-Protect360-onboarding-guide
 ---
+**At a glance:** Quickly and effectively safeguard your marketing investments by following this step-by-step onboarding guide to maximize your Protect360 value within just 6 weeks.
+
 ## **Onboarding timeline and what to expect?**
 
 This guide outlines a phased onboarding approach of 6 weeks:
@@ -48,7 +46,7 @@ In this step, the focus is to send in-app data to AppsFlyer, set up the basic se
 There are two ways to send in-app events data to AppsFlyer: SDK and Server-to-Server (S2S). Depending on the method used, there may be some action required:
 
 * **SDK**: No action required.
-* **Server-to-Server (S2S)**: Ensure events are sent via API3. [Learn more about how to do this here.](/docs/bulletin-upgrading-the-appsflyer-s2s-api)
+* **Server-to-Server (S2S)**: Ensure events are sent via API3. <Anchor target="_blank" href="/marketers/docs/bulletin-upgrading-the-appsflyer-s2s-api">Learn more about how to do this here.</Anchor>
 
 > 📘 **Note**
 >
@@ -65,21 +63,21 @@ Understanding these differences and available options is key to making informed 
 
 > 📘 **Note**
 >
-> You can switch ([Admin only](/docs/user-management)) between **Implemented** and **Tagged** modes anytime to match your evolving business objectives. [Learn more here](/docs/beta-fraud-protection-studio#key-concepts).
+> You can switch (<Anchor target="_blank" href="/marketers/docs/user-management">Admin only</Anchor>) between **Implemented** and **Tagged** modes anytime to match your evolving business objectives. <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio#key-concepts">Learn more here</Anchor>.
 
-![](https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png)
+<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
-Tip: At this stage, when your team is getting familiar with Protect360, we strongly recommend visiting the [**App detection evaluation**](/docs/beta-fraud-protection-studio#app-detection-evaluation) card within the Fraud Protection Studio to test and understand these settings on the app level.
+Tip: At this stage, when your team is getting familiar with Protect360, we strongly recommend visiting the <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio#app-detection-evaluation">**App detection evaluation**</Anchor> card within the Fraud Protection Studio to test and understand these settings on the app level.
 
 #### **Data connection setup**
 
-You can export Protect360 data in three ways: [Raw Data Report](/docs/protect360-raw-data-reports#about-protect360-raw-data-reports), [Pull API](/docs/protect360-raw-data-reports#pull-api), or [Data Locker](/docs/protect360-raw-data-reports#data-locker). Whichever way you choose, it is important to configure your data connections properly to ensure accurate fraud data reporting and effective analysis.
+You can export Protect360 data in three ways: <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#about-protect360-raw-data-reports">Raw Data Report</Anchor>, <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>, or <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>. Whichever way you choose, it is important to configure your data connections properly to ensure accurate fraud data reporting and effective analysis.
 
-![](https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png)
+<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> In order to get the full value of Protect360, export the [Post-attribution report](/docs/protect360-raw-data-reports#postattribution-reports) every 8th of every month, so you can reconsolidate with partners.
+> In order to get the full value of Protect360, export the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#postattribution-reports">Post-attribution report</Anchor> every 8th of every month, so you can reconsolidate with partners.
 
 #### **How to display hijacked installs correctly in your BI**
 
@@ -147,9 +145,9 @@ Contact your Customer Success Manager or Account Manager to learn more about bes
 
 #### **Working with dashboards**
 
-The [Protect360 dashboard](/docs/protect360-dashboard) provides a visual overview of your fraud data, allowing you to investigate further and better understand fraud detection and its impact on your activities.
+The <Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360 dashboard</Anchor> provides a visual overview of your fraud data, allowing you to investigate further and better understand fraud detection and its impact on your activities.
 
-![](https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png)
+<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 
@@ -190,7 +188,7 @@ After implementing Protect360 and accumulating several weeks of fraud detection 
 
 This critical step helps ensure that you and your partners are aligned on campaign performance, fraud detection methods, and accuracy.
 
-Download your [post-attribution data](/docs/protect360-anti-fraud-guide#postattribution-detection) and collaborate closely with your ad partners to cross-reference fraud metrics. This reconciliation helps identify discrepancies, resolve disputes proactively, and build transparency. Find out how to reconcile fraud data with ad partners [here](/docs/protect360-anti-fraud-guide#fraud-reconciliation-with-ad-networks).
+Download your <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#postattribution-detection">post-attribution data</Anchor> and collaborate closely with your ad partners to cross-reference fraud metrics. This reconciliation helps identify discrepancies, resolve disputes proactively, and build transparency. Find out how to reconcile fraud data with ad partners <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#fraud-reconciliation-with-ad-networks">here</Anchor>.
 
 </Accordion>
 

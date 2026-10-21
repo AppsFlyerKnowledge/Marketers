@@ -1,8 +1,5 @@
 ---
 title: Self-reporting networks (SRNs)
-excerpt: >-
-  Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS
-  implications, and FAQ.
 metadata:
   keywords:
     - Facebook
@@ -32,28 +29,30 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001546905-Self-reporting-networks-SRNs
 ---
+**At a glance:** Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ.
+
 ## SRNs integrated with AppsFlyer
 
 | **SRN** | **Logo** |
 | --- | --- |
-| [Amazon Ads](/docs/amazon-ads-campaign-configuration) | ![amazon-ads-logo.png](https://files.readme.io/da898ff008f7fe6f9a6f845f7c170746c36bd88293632555c2a2c3db13b47414-32259457808145.png) |
-| [Apple Ads](/docs/apple-ads-integration-setup) | ![](https://cdn.appsflyer.com/marketplace/static/logo/iossearchads.png) |
-| [Google Ads](/docs/google-ads-adwords-integration-setup-for-advertisers) | ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png?v=1) |
-| [Google Marketing Platform (DV360)](/docs/google-marketing-platform-display-video-360-dv360-integration) | ![](https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png?v=1) |
-| [Meta ads](/docs/meta-ads-integration-setup) | ![](https://cdn.appsflyer.com/marketplace/static/logo/facebook.png?v=1) |
-| [Roku](/docs/roku-integration-with-appsflyer) | ![roku.png](https://files.readme.io/4909a45e611700e5c2a69f94710226e65e10faf620e3a7939a2c038bea1736ca-33565070184337.png) |
-| [Snapchat—Advanced SRN](/docs/snapchat-advanced-srn-integration-setup) | ![snapchat_logo.png](https://files.readme.io/c9b62d55d5c1497011d7411a21dca6f1668308bbe2806ab238b71742c421b182-32259457816209.png) |
-| Tencent Social Ads | ![blobid0.jpg](https://files.readme.io/6d6e9661c9d81f80ffeedfdf4850a84f3cc183faa49a514d1d3bb116641738da-32259428896017.jpg) |
-| [TikTok for Business—Advanced SRN](/docs/tiktok-for-business-advanced-srn-integration-setup) | ![TTFB_logo__4C_horizontal_black.png](https://files.readme.io/caa8c9e02b161eea10740cb79f26d04d3324e87b9cfd929281374d2d7936ef2e-32259428903953.png) |
-| [X Ads](/docs/x-ads-formerly-twitter-ads-setup-guide-overview) | ![X Ads logo.png](https://files.readme.io/be88359054dba353a15beeafc13d590f5296a721b206be3f768fa606592249e6-32259428909841.png) |
-| [Yahoo (Oath: Ad Platforms / Yahoo Gemini)](/docs/yahoo-integration-setup) | ![verizonmedia.png](https://files.readme.io/36291ff556d07a5dbf2ae8ff693ea33d21dae9e0518a94b251202634a24049cf-32259428916369.png) |
-| [Yahoo! Search Ads](/docs/yahoo-japan-search-ads-campaign-configuration) | ![](https://cdn.appsflyer.com/marketplace/static/logo/yahoojapansearch.png) |
+| <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration">Amazon Ads</Anchor> | <Image alt="amazon-ads-logo.png" src="https://files.readme.io/da898ff008f7fe6f9a6f845f7c170746c36bd88293632555c2a2c3db13b47414-32259457808145.png" width="134px" /> |
+| <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup">Apple Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/iossearchads.png" width="131px" /> |
+| <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">Google Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png?v=1" width="47px" /> |
+| <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration">Google Marketing Platform (DV360)</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png?v=1" width="45px" /> |
+| <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/facebook.png?v=1" width="67px" /> |
+| <Anchor target="_blank" href="/marketers/docs/roku-integration-with-appsflyer">Roku</Anchor> | <Image alt="roku.png" src="https://files.readme.io/4909a45e611700e5c2a69f94710226e65e10faf620e3a7939a2c038bea1736ca-33565070184337.png" width="1705px" /> |
+| <Anchor target="_blank" href="/marketers/docs/snapchat-advanced-srn-integration-setup">Snapchat—Advanced SRN</Anchor> | <Image alt="snapchat_logo.png" src="https://files.readme.io/c9b62d55d5c1497011d7411a21dca6f1668308bbe2806ab238b71742c421b182-32259457816209.png" width="41px" /> |
+| Tencent Social Ads | <Image alt="blobid0.jpg" src="https://files.readme.io/6d6e9661c9d81f80ffeedfdf4850a84f3cc183faa49a514d1d3bb116641738da-32259428896017.jpg" width="80px" /> |
+| <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Business—Advanced SRN</Anchor> | ![TTFB_logo__4C_horizontal_black.png](https://files.readme.io/caa8c9e02b161eea10740cb79f26d04d3324e87b9cfd929281374d2d7936ef2e-32259428903953.png) |
+| <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview">X Ads</Anchor> | <Image alt="X Ads logo.png" src="https://files.readme.io/be88359054dba353a15beeafc13d590f5296a721b206be3f768fa606592249e6-32259428909841.png" width="37px" /> |
+| <Anchor target="_blank" href="/marketers/docs/yahoo-integration-setup">Yahoo (Oath: Ad Platforms / Yahoo Gemini)</Anchor> | <Image alt="verizonmedia.png" src="https://files.readme.io/36291ff556d07a5dbf2ae8ff693ea33d21dae9e0518a94b251202634a24049cf-32259428916369.png" width="76px" /> |
+| <Anchor target="_blank" href="/marketers/docs/yahoo-japan-search-ads-campaign-configuration">Yahoo! Search Ads</Anchor> | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yahoojapansearch.png" width="139px" /> |
 
-**Note:** SRNs have [user-level data use and retention restrictions.](/docs/user-level-data-retention)
+**Note:** SRNs have <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">user-level data use and retention restrictions.</Anchor>
 
 ## Attribution
 
-Unlike non-SRNs (ad networks), which use attribution links to report events to AppsFlyer, SRNs self-attribute using the device ID when notified of an install by AppsFlyer. For iOS apps, [SKAN](/docs/skadnetwork-skan-solution-guide) and the [Aggregated Advanced Privacy framework](/docs/apply-aggregated-advanced-privacy-framework) are used for attribution.
+Unlike non-SRNs (ad networks), which use attribution links to report events to AppsFlyer, SRNs self-attribute using the device ID when notified of an install by AppsFlyer. For iOS apps, <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN</Anchor> and the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy framework</Anchor> are used for attribution.
 
 AppsFlyer attribution for both SRNs and non-SRNs is based on:
 
@@ -68,11 +67,11 @@ SRNs report events, such as new installs and in-app events, to AppsFlyer in the 
 * When third-party attribution providers detect an install, they query the network using the advertising ID.
 * Reporting details of any relevant ad clicks or impressions.
 
-After AppsFlyer performs the attribution, the customer sends in-app postbacks to the SRN for the duration of the [partner data retention period](/docs/user-level-data-retention#partner-data-retention-periods).
+After AppsFlyer performs the attribution, the customer sends in-app postbacks to the SRN for the duration of the <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">partner data retention period</Anchor>.
 
 ### How does attribution work with Advanced SRNs?
 
-Advanced SRNs support the same attribution methods as standard SRNs. In addition, advanced SRNs support measurement through the [Aggregated Advanced Privacy](/docs/appsflyer-knowledge-base-glossary#aggregated-advanced-privacy) framework. Depending on the network, this may include attribution based on advertising ID where dual consent has been obtained, or campaign measurement modeling based on click and impression data.
+Advanced SRNs support the same attribution methods as standard SRNs. In addition, advanced SRNs support measurement through the <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#aggregated-advanced-privacy">Aggregated Advanced Privacy</Anchor> framework. Depending on the network, this may include attribution based on advertising ID where dual consent has been obtained, or campaign measurement modeling based on click and impression data.
 
 ### Install attribution
 
@@ -102,7 +101,7 @@ When an app is first launched:
 
 **AppsFlyer** attributes the install to Network C and gives Networks A and B credit for assisting with the install.
 
-AppsFlyer gives advertisers assist data (unattributed engagements that occur before an install). This lets advertisers customize their multi-touch or fractional attribution models. For more information, see [Assisted installs explained](/docs/measure-assisted-installs).
+AppsFlyer gives advertisers assist data (unattributed engagements that occur before an install). This lets advertisers customize their multi-touch or fractional attribution models. For more information, see <Anchor target="_blank" href="/marketers/docs/measure-assisted-installs">Assisted installs explained</Anchor>.
 
 </Accordion>
 
@@ -142,9 +141,9 @@ So how can you deep link your users and get the relevant data from SRNs?
 
 <Accordion title="Direct deep linking">
 
-When a user device performs deep linking, direct deep linking with SRNs is done without calling the AppsFlyer deep linking method. In the example below, existing users clicking an ad are redirected to the activity directly using Facebook's methods, while new users get the same experience using AppsFlyer's conversion data. Learn how [Meta ads uses OneLink for deep linking](/docs/meta-ads-faq#who-needs-facebooks-sdk)
+When a user device performs deep linking, direct deep linking with SRNs is done without calling the AppsFlyer deep linking method. In the example below, existing users clicking an ad are redirected to the activity directly using Facebook's methods, while new users get the same experience using AppsFlyer's conversion data. Learn how <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta ads uses OneLink for deep linking</Anchor>
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Jill, the mobile marketer of "greatapp", decides to run a deep linking campaign on Meta ads, targeted at general audiences. The campaign redirects any clicking users to a "bonus" activity.
 > Jack, the mobile developer, adds this logic after getting the conversion data:
@@ -175,12 +174,12 @@ Most SRNs support SKAdNetwork and have the necessary integration with AppsFlyer.
 
 <Accordion title="iOS 14.5 SRN attribution">
 
-Starting iOS 14.5, when users give ATT consent in both the advertiser and publisher apps ([dual consent](/docs/appsflyer-knowledge-base-glossary#dual-consent)), SRN installs, which are recorded in the [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer), are also shown in the traditional dashboards.
+Starting iOS 14.5, when users give ATT consent in both the advertiser and publisher apps (<Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#dual-consent">dual consent</Anchor>), SRN installs, which are recorded in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork dashboard</Anchor>, are also shown in the traditional dashboards.
 
 > 📘 **Note**
 >
-> * The traditional dashboard shows a reduction in installs attributed to SRNs. When considering SRN performance, use the [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer). Overall expect a decrease in SRN attributions of installs, with a matching increase in organic installs. However, for advanced SRNs, the impact is lower, as they also support measurement via the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) framework and other privacy-preserving methods.
-> * The [SKAdNetwork dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer) updates with a lag of 48-72 hours after installs.
+> * The traditional dashboard shows a reduction in installs attributed to SRNs. When considering SRN performance, use the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork dashboard</Anchor>. Overall expect a decrease in SRN attributions of installs, with a matching increase in organic installs. However, for advanced SRNs, the impact is lower, as they also support measurement via the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> framework and other privacy-preserving methods.
+> * The <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAdNetwork dashboard</Anchor> updates with a lag of 48-72 hours after installs.
 > * Installs brought by Apple Ads (ASA) aren't attributed in the SKAdNetwork dashboard.
 
 </Accordion>
@@ -258,7 +257,7 @@ AppsFlyer data analysts checked Meta ads **user acquisition** campaigns during a
 * Periodically (and manually) update the campaign, for example, once a month.
 * However, time gaps mean that existing users may be targeted in user-acquisition campaigns during the first month after they install an app.
 
-[**Audiences**](/docs/audiences-guide), an AppsFlyer premium feature, lets you automatically send, on a daily basis, any segment of your user base to dozens of ad networks.
+<Anchor target="_blank" href="/marketers/docs/audiences-guide">**Audiences**</Anchor>, an AppsFlyer premium feature, lets you automatically send, on a daily basis, any segment of your user base to dozens of ad networks.
 
 AppsFlyer research shows that solving mistargeting can have a dramatic impact on your marketing and user acquisition efforts.
 
@@ -278,7 +277,7 @@ Click is performed in the SRN environment but without an AppsFlyer attribution l
 
 Click is performed in the SRN environment but without an AppsFlyer attribution link. Therefore, some SRNs don't give click and impression data to AppsFlyer.
 
-[Meta Ads](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) and [Google](/docs/google-ads-adwords-cost-and-ad-revenue) provide aggregated data to AppsFlyer.
+<Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#cost-clicks-and-impressions">Meta Ads</Anchor> and <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-cost-and-ad-revenue">Google</Anchor> provide aggregated data to AppsFlyer.
 
 </Accordion>
 
@@ -286,7 +285,7 @@ Click is performed in the SRN environment but without an AppsFlyer attribution l
 
 <Accordion title="Can agencies configure SRN campaigns?">
 
-Yes, [see here about SRN configuration by Agencies](/partners/docs/about-agency-accounts#self-reporting-ad-networks).
+Yes, <Anchor target="_blank" href="/partners/docs/about-agency-accounts#self-reporting-ad-networks">see here about SRN configuration by Agencies</Anchor>.
 
 </Accordion>
 
@@ -299,7 +298,7 @@ When advertising IDs contain an empty string (“”) or show the value ‘00000
 * Google Ads: As part of the integration for remarketing measurement with Google Ads, when double consent is not obtained, and a user performs an app open or in-app event,  `gbraid` and event info is sent to Google Ads (for the `additional_data_json` event).
 * Google Ads: On Android, when there’s no device ID, but the referrer value contains a `gclid` (for installs) or a re-engagement event contains a deep link with the `gclid` parameter, the `gclid` and event info is sent to Google Ads.
 * Meta: Facebook cookie or campaign IDs (on deep link or previous re-engagement) or AEM toggle enabled.
-* Snapchat and [TikTok for Business—Advanced SRN](/docs/tiktok-for-business-advanced-srn-integration-setup): If an install is attributed to Snapchat or TikTok via probabilistic modeling and an in-app event tied to that install arrives, the postback is sent.
+* Snapchat and <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Business—Advanced SRN</Anchor>: If an install is attributed to Snapchat or TikTok via probabilistic modeling and an in-app event tied to that install arrives, the postback is sent.
 
 **Google Ads** `gbraid` **parameter:** An aggregated identifier generated by Google that identifies a group of devices and is referenced by the deep link.
 

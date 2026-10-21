@@ -1,9 +1,5 @@
 ---
 title: OneSignal integration with AppsFlyer
-excerpt: >-
-  OneSignal is the market-leading push notification and in-app messaging
-  provider, supporting over 1 million developers and marketers with a
-  best-of-breed engagement platform.
 metadata:
   keywords:
     - Advertisers
@@ -25,13 +21,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015926437-OneSignal-integration-with-AppsFlyer
 ---
+> **At a glance:** OneSignal is the market-leading push notification and in-app messaging provider, supporting over 1 million developers and marketers with a best-of-breed engagement platform.
+
 ![onesignal-logo-stack__3_.png](https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png)
 
 OneSignal delivers 8 billion messages every day across the globe. Powered by superior architecture and an easy-to-use platform, the OneSignal delivers messages faster, more efficiently, and at a greater scale than any other solution in the world. Learn more at [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
 
-**Important!**
-
-[Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up OneSignal
 
@@ -56,7 +56,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      ```
    * For Unity SDK:
 
-     ```javascript
+     ```
      var status = OneSignal.GetPermissionSubscriptionState();
 
                String deviceId = status.subscriptionStatus.userId;
@@ -79,17 +79,18 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 2. Insert the following lines of code in your app's code - [after OneSignal SDK was launched](https://documentation.onesignal.com/docs/android-sdk-setup) and before the initialization code for AppsFlyer SDK.
    * For iOS devices using OneSignal SDK version 2.x.x:
 
-     <Accordion title="Swift">
+     <Tabs>
+     <Tab title="Swift">
 
-     ```javascript
+     ```
      let status: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
      if let deviceId = status.subscriptionStatus.userId{
          customData.put("onesignalCustomerId", deviceId);
      ```
 
-     </Accordion>
+     </Tab>
 
-     <Accordion title="Objective-C">
+     <Tab title="Objective-C">
 
      ```
      OSPermissionSubscriptionState* status = [OneSignal getPermissionSubscriptionState];
@@ -97,11 +98,13 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      [[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
      ```
 
-     </Accordion>
+     </Tab>
+     </Tabs>
 
    * For iOS devices using OneSignal Native SDK version 3+:
 
-     <Accordion title="Swift">
+     <Tabs>
+     <Tab title="Swift">
 
      ```
      if let deviceState = OneSignal.getDeviceState() {
@@ -109,9 +112,9 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
          customData.put("onesignalCustomerId", deviceId);
      ```
 
-     </Accordion>
+     </Tab>
 
-     <Accordion title="Objective-C">
+     <Tab title="Objective-C">
 
      ```
      OSDeviceState *deviceState = [OneSignal getDeviceState];
@@ -120,7 +123,8 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      [[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
      ```
 
-     </Accordion>
+     </Tab>
+     </Tabs>
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
@@ -131,7 +135,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below:
 
 <div id="integration-tab" />
@@ -145,7 +149,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 Must be enabled for as long as you work with the partner.  
-Learn more about [partner activation](/docs/partner-activation-deactivation#activate-a-partner-integration).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
 
 ### General settings
 
@@ -161,7 +165,7 @@ Your OneSignal app ID is available in the OneSignal platform under **Settings** 
 ![onesignal-default-postbacks_en-us.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
 
 AppsFlyer can send automatic postbacks to OneSignal following user installs. Use this section to define the source of the users that the postbacks are sent to for each event.  
-Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 **To send postbacks for any user that downloads the app to OneSignal**, select **All media sources, including organic**.
 

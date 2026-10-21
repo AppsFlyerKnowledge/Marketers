@@ -1,8 +1,5 @@
 ---
 title: Protect360 dashboard
-excerpt: >-
-  The Protect360 dashboard provides insights about fraudulent traffic and
-  installs blocked due to the application of validation rules.
 metadata:
   keywords:
     - dashboard
@@ -30,6 +27,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/360011793077-Protect360-dashboard
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance:** The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
 
 ## About Protect360 dashboard
 
@@ -62,7 +61,7 @@ The following filtering and grouping options are available:
   * Source type: Non-organic and/or organic
   * Media source
   * Geo
-  * Date range ([see time zone support](/docs/about-data-freshness-and-timezone-support#protect360-dashboard))
+  * Date range (<Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#protect360-dashboard">see time zone support</Anchor>)
   * Attribution type: Installs, re-attributions, and/or re-engagements
   * [Payable events](/docs/protect360-dashboard#payable-events) (available in the In-app events dashboard)
 * Expanded filters - click on the blue arrow, to the right of the date picker:
@@ -71,7 +70,7 @@ The following filtering and grouping options are available:
   * Channels
 * Grouping options - choose different dimensions to group the fraud data by to get the specific insights you need:
   * **Application:** Compare the total amount of fraud per each of your apps.
-  * **Media Source**(default): Compare the identified fraud from each of the media sources used by your apps
+  * **Media Source** (default): Compare the identified fraud from each of the media sources used by your apps
   * **Media Source + Campaign**: Compare the identified fraud from all your campaigns across all media sources used by your apps
   * **Media Source + Site ID**: Compare the identified fraud from all publishers (site IDs) across all media sources used by your apps
   * **Media Source + Site ID + Campaign**: Compare the identified fraud from all publishers (site IDs) across all media sources used by your apps, associated with the relevant campaign names
@@ -131,13 +130,13 @@ Tagged in-app events metrics display the number of installs that were recognized
 
 **Identified compromised installs**
 
-![](https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png)
+<Image alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
 
 Installs where the device was detected by AppsFlyer attribution logic as being flooded with inauthentic engagements.
 
 **Average engagement per install**
 
-![](https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png)
+<Image alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
 
  Average engagement per install shows the average number of engagements associated with the install.
 
@@ -180,7 +179,7 @@ You can:
 The identified fraud chart displays the types of fraud you experience, by percentage. Fraud breakdown can be by:
 
 * Block reason
-* [Blocked sub-reason](/docs/protect360-raw-data-reports#install-level-fake-install-block-sub-reasons)
+* <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#install-level-fake-install-block-sub-reasons">Blocked sub-reason</Anchor>
 * Tag type
 * Tag reason
 * Tag sub reason
@@ -458,9 +457,9 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Protect360 Overview](/docs/protect360-anti-fraud-guide)
-> * [Raw data reports](/docs/protect360-raw-data-reports)
+> * <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360 Overview</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">Raw data reports</Anchor>
 
 <div data-zendesk-anchors="01H8H9GQ17C4PBHCAMXE879BX7=about-protect360-dashboard 01H8H9GQ173SQ8P29C4DETJRTD=filters-and-groupings 01H8H9GQ173H3QH1Y5KZ26XMCW=installs-dashboard installs%E2%80%94headline-metrics=installs-headline-metrics 01H8H9GQ17FJKWE3M2YSZFTQCS=installs-headline-metrics installs%E2%80%94charts=installs-charts 01H8H9GQ18VHMK7FFV3RY409VB=installs-charts 01H8H9GQ18JDSZ2H8BKZVWGBPV=identified-fraud-trend-chart 01H8H9GQ18VXBPQRN55WHM3GG0=hijacked-installs-attribution-correction-chart 01H8H9GQ18FW87TXQZCYERHNDE=identified-fraud-chart h_01KQY7ARA2Z1WJ1V84X5GH832C=affiliate-attribution-model installs%E2%80%94table=installs-table 01H8H9GQ18FYXJA7TXQ4RNQGX2=installs-table 01H8H9GQ18540JJ8X833E6WF44=identified-fraud-breakdown 01H8H9GQ18DMPD7YTPTN2XJMSH=content-of-the-identified-fraud-breakdown-table 01H8H9GQ18PZ8ABG3D51M7J91R=additional-table-options inapp-events-dashboard=in-app-events-dashboard 01H8H9GQ19CQZV00XA62MGVJ86=in-app-events-dashboard inapp-events%E2%80%94headline-metrics=inapp-events-headline-metrics 01H8H9GQ19B95MDK2WEHVNEFS5=inapp-events-headline-metrics inapp-events%E2%80%94charts=inapp-events-charts 01H8H9GQ19XEJ0HNY2Y8BMX7A5=inapp-events-charts 01H8H9GQ1969AB4KK4ENP8AVQJ=fraud-trend-over-time-chart 01H8H9GQ19Z078PK1HR7VEZHXG=top-iae-fraud-by-media-source-chart inapp-events%E2%80%94table=inapp-events-table 01H8H9GQ19PTNWGJV6YDWR7SH6=inapp-events-table content-of-the-inapp-event-fraud-breakdown-table=content-of-the-in-app-event-fraud-breakdown-table 01H8H9GQ19773CS8TGS2QXBRG5=content-of-the-in-app-event-fraud-breakdown-table additional-table-options::44e54bfa=additional-table-options-1 01H8H9GQ192WA6XFNW7CKGBQ03=additional-table-options-1 01H8H9GQ1AVAVQ31ZZA1K024RF=payable-events 01H8H9GQ1BJX0K01NX8VCC0690=traits-and-limitations h_01HE7S2JKX3VMRCF6913S4MCAR=see-also" />

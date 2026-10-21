@@ -2,9 +2,6 @@
 title: >-
   Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and
   events
-excerpt: >-
-  Instructions for setting up event sending reported via Firebase SDK to
-  AppsFlyer in your app.
 metadata:
   keywords:
     - Developers
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481550609-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Sending-installs-and-events
 ---
+**At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
+
 ## Configuring events in the app
 
 This section discusses how to set up and create events in the app with Google Tag Manager (GTM).
@@ -38,60 +37,76 @@ When the event is sent, GTM checks to see if there is a tag that is configured t
 
 #### Android
 
-JavaKotlin
+<Tabs>
+<Tab title="Java">
 
 1. In the MainActivity class, create a variables to hold AppsFlyer Device ID:  
 
-   ```
+   ```java
    public static String appsFlyerID;
    ```
 2. Back in the MainActivity class, in the `onCreate` method and after `super.onCreate`, pass the AppsFlyer ID to the variable:
 
-   ```
+   ```java
    appsFlyerID = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
    ```
 
+</Tab>
+
+<Tab title="Kotlin">
+
 1. In the MainActivity class, create a variable to hold AppsFlyer Device ID:  
 
-   ```javascript
+   ```java
    var appsFlyerID: String? = null
    ```
 2. Back in the MainActivity class, in the `onCreate` method and after `super.onCreate`, pass the AppsFlyer ID value to the variable:
 
-   ```
+   ```java
    override fun onCreate(savedInstanceState: Bundle?) {
     ...
     appsFlyerID = AppsFlyerLib.getInstance().getAppsFlyerUID(this)
    }
    ```
 
+</Tab>
+</Tabs>
+
 #### iOS
 
 For iOS, parameters are available across the app. You can retrieve them through the AppsFlyerTracker instance.
 
-Objective C Swift
+<Tabs>
+<Tab title="Objective C">
 
 1. AppsFlyer Device ID -
 
-   ```
+   ```objectivec
    [AppsFlyerTracker sharedTracker].getAppsFlyerUID
    ```
 2. Apple App ID -
 
-   ```
+   ```objectivec
    [AppsFlyerTracker sharedTracker].appleAppID
    ```
 
+</Tab>
+
+<Tab title="Swift">
+
 1. AppsFlyer Device ID -
 
-   ```
+   ```swift
     AppsFlyerTracker.shared().getAppsFlyerUID()
    ```
 2. Apple App ID -
 
-   ```
+   ```swift
    AppsFlyerTracker.shared().appleAppID
    ```
+
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -99,22 +114,23 @@ Objective C Swift
 
 <Accordion title="Adding events in the app">
 
-The first step is to configure the event in the app. The event is sent using Firebase Event Logging In the event you specify the AppsFlyer ID, event name, and event parameters. The AppsFlyer ID is retrieved from the variable that is created in the [setup step](/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#google-tag-manager-setup).
+The first step is to configure the event in the app. The event is sent using Firebase Event Logging In the event you specify the AppsFlyer ID, event name, and event parameters. The AppsFlyer ID is retrieved from the variable that is created in the <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#google-tag-manager-setup">setup step</Anchor>.
 
-[Google Tag Manager uses Firebase Analytics](https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables) Events to trigger tag events. Whenever an event is sent to Firebase, Tag Manager recognizes the event and sends it to AppsFlyer as well.
+<Anchor target="_blank" href="https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables">Google Tag Manager uses Firebase Analytics</Anchor> Events to trigger tag events. Whenever an event is sent to Firebase, Tag Manager recognizes the event and sends it to AppsFlyer as well.
 
 #### Android
 
-JavaKotlin
+<Tabs>
+<Tab title="Java">
 
 1. In the desired activity, add the import statement for Firebase:  
 
-   ```
+   ```java
    import com.google.firebase.analytics.FirebaseAnalytics;
    ```
 2. Add the following code to run whenever a purchase event occurs:
 
-   ```
+   ```java
    Bundle bundle = new Bundle();
      // notice "af_id", this is the name of the event parameter 
      // for AppsFlyer ID that we created in the previous step
@@ -124,14 +140,18 @@ JavaKotlin
      mFirebaseAnalytics.logEvent("af_purchase", bundle);
    ```
 
+</Tab>
+
+<Tab title="Kotlin">
+
 1. In the desired activity, add the import statement for Firebase:  
 
-   ```
+   ```java
    import com.google.firebase.analytics.FirebaseAnalytics
    ```
 2. Add the following code to run whenever a purchase event occurs:
 
-   ```
+   ```java
    val bundle = Bundle()
      // notice "af_id", this is the name of the event parameter
      // for AppsFlyer ID that we created in the previous step
@@ -141,14 +161,18 @@ JavaKotlin
      FirebaseAnalytics.getInstance(this).logEvent("af_purchase", bundle)
    ```
 
+</Tab>
+</Tabs>
+
 iOS
 
-Objective-C Swift
+<Tabs>
+<Tab title="Objective-C">
 
 1. In the view where the event is sent add `@import Firebase`
 2. Add the following code to run whenever a purchase event occurs:
 
-   ```
+   ```objectivec
    NSString *id_prefix = @"id";  
    NSString *apple_app_id = [id_prefix stringByAppendingString:[AppsFlyerTracker sharedTracker].appleAppID];  
 
@@ -161,10 +185,14 @@ Objective-C Swift
        }];
    ```
 
+</Tab>
+
+<Tab title="Swift">
+
 1. In the view where the event is sent add `import Firebase`
 2. Add the following code to run whenever a purchase event occurs:
 
-   ```
+   ```swift
    Analytics.logEvent("af_purchase", parameters: [
           "apple_app_id": "id" + AppsFlyerTracker.shared().appleAppID,
           "af_id": AppsFlyerTracker.shared().getAppsFlyerUID(),
@@ -172,6 +200,9 @@ Objective-C Swift
           "af_price": 375
        ]);
    ```
+
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -181,7 +212,8 @@ You can also send install events to Firebase with all install-related data.
 
 #### Android
 
-Java Kotlin
+<Tabs>
+<Tab title="Java">
 
 To send install events to Firebase in Android, you can use the `conversionData`object.
 
@@ -189,7 +221,7 @@ To send install events to Firebase in Android, you can use the `conversionData`o
 
 Add the following method in the `AFApplication` class right below the `onCreate` method:
 
-```
+```java
 public void sendInstallToFirebase(Map<String, String> conversionData){
        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
        Bundle bundle = new Bundle();
@@ -208,7 +240,7 @@ This method accepts a `conversionData` object. The method checks whether install
 
 Add the following code in the `onConversionDataSuccess` method:
 
-```
+```java
 if(conversionData.get("is_first_launch").equals("true")){
        sendInstallToFirebase(conversionData);
     }
@@ -216,13 +248,17 @@ if(conversionData.get("is_first_launch").equals("true")){
 
 This code checks if this is the first time the app is launched. If so, it calls the `sendInstallToFirebase` method.
 
+</Tab>
+
+<Tab title="Kotlin">
+
 To send install events to Firebase in Android, you can use the `conversionData`object.
 
 #### Creating the send event method
 
 Add the following method in the `AFApplication` class right below the `onCreate` method:
 
-```
+```java
 fun sendInstallToFirebase(conversionData: Map<String, Any>) {
       val bundle = Bundle()
       bundle.putString("install_time", conversionData["install_time"]?.toString() ?: Date().time.toString())
@@ -240,7 +276,7 @@ This method accepts a `conversionData` object. The method checks whether install
 
 Add the following code in the `onConversionDataSuccess` method:
 
-```
+```java
 if(conversionData?.get("is_first_launch") == true){
       sendInstallToFirebase(conversionData);
   }
@@ -248,30 +284,34 @@ if(conversionData?.get("is_first_launch") == true){
 
 This code checks if this is the first time the app is launched. If so, it calls the `sendInstallToFirebase` method.
 
-**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded`. We recommend that you upgrade to SDK 5.0.0. To learn more, click <Anchor target="_blank" href="/marketers/docs/links-to-appsflyer-sdk-release-notes">here</Anchor>.
+
+</Tab>
+</Tabs>
 
 #### iOS
 
-Objective-C Swift
+<Tabs>
+<Tab title="Objective-C">
 
 #### Creating the send event method
 
 In AppDelegate.m, add the following method at the end of the file:
 
-```
+```objectivec
 - (void) sendInstallToFirebase:(NSDictionary *) installData{
       NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
       [dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm:ss"];
       NSDate *date = [NSDate date];
       NSString *newDate = [dateFormatter stringFromDate:date];
-    
+
       if([[installData objectForKey: @"af_status"] isEqual: @"Organic"]){
         [FIRAnalytics logEventWithName:@"install"
          parameters:@{
           @"install_time": newDate,
           @"media_source": @"organic",
           @"campaign": @"organic"
-    
+
         }];
       }
       else {
@@ -299,7 +339,7 @@ In AppDelegate.m, in the method `didFinishLaunchingWithOptions`, add `[FIRApp co
 
 In AppDelegate.m, in the `onConversionDataSuccess` method, add the following code at the end of the method:
 
-```
+```objectivec
 if([installData objectForKey:@"is_first_launch"]){
       [self sendInstallToFirebase: installData];
     }
@@ -307,16 +347,20 @@ if([installData objectForKey:@"is_first_launch"]){
 
 The code snippet above checks if this is the first time the app is launched. If it is, it calls the `sendInstallToFirebase` method.
 
+</Tab>
+
+<Tab title="Swift">
+
 In AppDelegate.swift, add the following method at the end of the file:
 
-```
+```swift
 func sendInstallToFirebase(_ installData: [AnyHashable : Any]!){
-    
+
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
         let _newDate: String = dateFormatter.string(from: date)
-    
+
         if(installData["af_status"] as? String == "Organic"){
           Analytics.logEvent("install", parameters: [
             "install_time": _newDate,
@@ -332,11 +376,11 @@ func sendInstallToFirebase(_ installData: [AnyHashable : Any]!){
             "install_type": installData["af_status"]
           ]);
         }
-    
+
       }
 ```
 
-**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0. To learn more, click <Anchor target="_blank" href="/marketers/docs/links-to-appsflyer-sdk-release-notes">here</Anchor>.
 
 This method accepts the `installData` object and checks if the install is organic or not. If it's organic, it sets the install time to the current time and the media source, campaign, and install type to organic.
 
@@ -350,7 +394,7 @@ In AppDelegate.swift, in the method `didFinishLaunchingWithOptions`, add `Fireba
 
 In AppDelegate.swift, in the `onConversionDataSuccess` method, add the following code at the end of the method:
 
-```
+```swift
 if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_launch as? Int {
       if(launch_code == 1){
         print("First Launch")
@@ -361,17 +405,20 @@ if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_la
     }
 ```
 
-**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onConversionDataReceived`. We recommend that you upgrade to SDK 5.0.0. To learn more, click <Anchor target="_blank" href="/marketers/docs/links-to-appsflyer-sdk-release-notes">here</Anchor>.
 
 The code snippet above checks if this is the first time the app is launched. If it is, it calls the `sendInstallToFirebase` method.
 
-> 📘 **Warning**
+</Tab>
+</Tabs>
+
+> ❗️ **Warning**
 >
 > Certain media sources don't allow their data to be shared with third-party platforms and services. If you are working with partners such as Meta ads, Twitter, Snap, Pinterest, etc. who have set restrictions on sharing their data with third-party platforms and services, please make sure **to follow their guidelines and remove any data which is under these restrictions**.
 >
-> * [Meta ads Data Policy](https://www.facebook.com/privacy/policy/)
-> * [Twitter Data Policy](https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html)
-> * [Snapchat Data Policy](https://www.snap.com/en-US/privacy/privacy-policy/)
-> * [Pinterest Data Policy](https://policy.pinterest.com/en/privacy-policy)
+> * <Anchor target="_blank" href="https://www.facebook.com/privacy/policy/">Meta ads Data Policy</Anchor>
+> * <Anchor target="_blank" href="https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html">Twitter Data Policy</Anchor>
+> * <Anchor target="_blank" href="https://www.snap.com/en-US/privacy/privacy-policy/">Snapchat Data Policy</Anchor>
+> * <Anchor target="_blank" href="https://policy.pinterest.com/en/privacy-policy">Pinterest Data Policy</Anchor>
 
-<div data-zendesk-anchors="01H8H2MH93M1SB9HEQNHDDJZP0=configuring-events-in-the-app 01H8H2MH93D36ZH7788XCMHHV6=creating-event-variables-for-revenue-and-price 01H8H2MH93RNWN6N6EWE5T26V1=android 01H8H2MH93CZ5TACG3MWJ8YRFK=ios 01H8H2MH9340PQCCKB85BQZQEG=adding-events-in-the-app android::eb294e42=android-1 01H8H2MH9357Z5M1DBK4Z9N22P=android-1 01H8H2MH930VDZH5YSWEPTS8BN=sending-install-events-to-firebase android::319436d3=android-2 01H8H2MH938Y980A9KA9BPP44Y=android-2 01H8H2MH932WYSS6Z5NZJ3195X=creating-the-send-event-method 01H8H2MH93H0WKMV5DAN713EY0=sending-the-install-event creating-the-send-event-method::64b5a305=creating-the-send-event-method-1 01H8H2MH93VYXGMM5H6ZQWCFZY=creating-the-send-event-method-1 sending-the-install-event::aeb9cdb7=sending-the-install-event-1 01H8H2MH93VTPZNF51R05QPK7C=sending-the-install-event-1 ios::95ad6e27=ios-1 01H8H2MH93AQE7PKVW4QKD2ARN=ios-1 creating-the-send-event-method::346138b1=creating-the-send-event-method-2 01H8H2MH93NGBRHBDQTX4DKNTY=creating-the-send-event-method-2 sending-the-install-event::aca3c0e3=sending-the-install-event-2 01H8H2MH93SWYFF2KTC1HJ06FF=sending-the-install-event-2 sending-the-install-event::b6997ad3=sending-the-install-event-3 01H8H2MH93Y5J8QH0YBKPQSV5N=sending-the-install-event-3 01H8H2MH93JQBAR6ZTW77HHFQR=warning" />
+<div data-zendesk-anchors="01H8H2MH93M1SB9HEQNHDDJZP0=configuring-events-in-the-app 01H8H2MH93D36ZH7788XCMHHV6=creating-event-variables-for-revenue-and-price 01H8H2MH93RNWN6N6EWE5T26V1=android 01H8H2MH93CZ5TACG3MWJ8YRFK=ios 01H8H2MH9340PQCCKB85BQZQEG=adding-events-in-the-app android::eb294e42=android-1 01H8H2MH9357Z5M1DBK4Z9N22P=android-1 01H8H2MH930VDZH5YSWEPTS8BN=sending-install-events-to-firebase android::319436d3=android-2 01H8H2MH938Y980A9KA9BPP44Y=android-2 01H8H2MH932WYSS6Z5NZJ3195X=creating-the-send-event-method 01H8H2MH93H0WKMV5DAN713EY0=sending-the-install-event creating-the-send-event-method::64b5a305=creating-the-send-event-method 01H8H2MH93VYXGMM5H6ZQWCFZY=creating-the-send-event-method sending-the-install-event::aeb9cdb7=sending-the-install-event 01H8H2MH93VTPZNF51R05QPK7C=sending-the-install-event ios::95ad6e27=ios-1 01H8H2MH93AQE7PKVW4QKD2ARN=ios-1 creating-the-send-event-method::346138b1=creating-the-send-event-method-2 01H8H2MH93NGBRHBDQTX4DKNTY=creating-the-send-event-method-2 sending-the-install-event::aca3c0e3=sending-the-install-event-2 01H8H2MH93SWYFF2KTC1HJ06FF=sending-the-install-event-2 sending-the-install-event::b6997ad3=sending-the-install-event-2 01H8H2MH93Y5J8QH0YBKPQSV5N=sending-the-install-event-2 01H8H2MH93JQBAR6ZTW77HHFQR=warning" />

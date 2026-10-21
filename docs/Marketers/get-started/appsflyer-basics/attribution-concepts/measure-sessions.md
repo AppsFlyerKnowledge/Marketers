@@ -1,8 +1,5 @@
 ---
 title: Measure sessions
-excerpt: >-
-  The sessions metric is used by advertisers to measure app user engagement
-  during a given period.
 metadata:
   keywords:
     - Advertisers
@@ -29,7 +26,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000520785-Measure-sessions
 ---
-![DAU_example.jpg](https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg)
+**At a glance**: The sessions metric is used by advertisers to measure app user engagement during a given period.
+
+<Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
 ## Sessions counting principles
 
@@ -117,7 +116,7 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
     * Data freshness: Daily 13:00 UTC.
   * Data Locker: Retargeting sessions reports can be enabled; they include both re-engagement and re-attribution sessions. 
     * Data freshness: 6-hour lag.
-* During re-engagement windows, sessions are attributed to both the UA and retargeting media source. Similarly, other re-engagement in-app events are [double-attributed](/docs/resolve-retargeting-double-attribution).
+* During re-engagement windows, sessions are attributed to both the UA and retargeting media source. Similarly, other re-engagement in-app events are <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double-attributed</Anchor>.
 * In the case of Google Ads and X Ads, to avoid duplicate postbacks, the *af\_app\_opened* event is sent once.
 
 </Accordion>
@@ -126,7 +125,7 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 
 <Accordion title="Sessions postbacks to partners">
 
-You can send partner session postbacks so that a [postback](/docs/in-app-event-postback-configuration#mapping-methods) is sent for each session counted.
+You can send partner session postbacks so that a <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">postback</Anchor> is sent for each session counted.
 
 * To send the postback: Explicitly map *af\_app\_opened* to a partner event. Note! In the AppsFlyer raw data report available via Data Locker this event reflects as a *launch.*
 * Consider that this is a high-volume event and that many partners don't want to receive it.
@@ -143,11 +142,11 @@ You can send partner session postbacks so that a [postback](/docs/in-app-event-p
 
 **App-side:** The SDK sends *af\_app\_opened* each time the app is opened or brought to the foreground after considering the SDK *setMinTimeBetweenSessions* setting.
 
-**Server-side:** A session is counted **if it's not on of the first 5 sessions after the app's first launch** and after considering the minimum time between sessions mechanism. Counted sessions are attributed using the same [attribution rules](/docs/appsflyer-attribution-model) as other in-app events.
+**Server-side:** A session is counted **if it's not on of the first 5 sessions after the app's first launch** and after considering the minimum time between sessions mechanism. Counted sessions are attributed using the same <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution rules</Anchor> as other in-app events.
 
 #### **Explicit sessions reporting by the developer (Android apps only)**
 
-Use [logSession](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession) in Android to explicitly report a session. An equivalent call is not available in iOS.
+Use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor> in Android to explicitly report a session. An equivalent call is not available in iOS.
 
 * Apps that work in the background continuously may require some logic implemented by the developer to report sessions. For example, utility apps like battery savers, launchers, screen locks, and antivirus apps. For these types of apps, consider reporting a session daily at midnight or some other interval appropriate to the app.
 * In other cases, you may want to count sessions when users perform some in-app action, such as pressing the *clear memory* button and so on.
@@ -163,13 +162,25 @@ Use ***setMinTimeBetweenSessions,*** meaning af\_app\_opened event, to control t
 
 **The `setMinTimeBetweenSessions` SDK reference:**
 
-Android iOS Unity
+<Tabs>
+<Tab title="Android">
 
 See the [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setmintimebetweensessions) in the Android SDK reference
 
+</Tab>
+
+<Tab title="iOS">
+
 See the [`minTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#mintimebetweensessions) in the iOS SDK reference
 
+</Tab>
+
+<Tab title="Unity">
+
 See the [`setMinTimeBetweenSessions`](https://dev.appsflyer.com/hc/docs/api#setmintimebetweensessions) in the Unity SDK reference
+
+</Tab>
+</Tabs>
 
 </Accordion>
 

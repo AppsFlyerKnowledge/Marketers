@@ -26,7 +26,7 @@ x-zendesk:
 >
 > The original article appearing in the URL is deprecated.
 >
-> * Go to the [Dev Hub](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2) to learn about smart banners website code implementation for developers
-> * Go to [here](/docs/smart-banners-website-code-implementation-for-marketers) to learn about smart banners website code implementation for marketers.
+> * Go to the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Dev Hub</Anchor> to learn about smart banners website code implementation for developers
+> * Go to <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">here</Anchor> to learn about smart banners website code implementation for marketers.
 
 <div data-zendesk-anchors="h_01HHYE22GM644Z5HB8DQD264CZ=note" />

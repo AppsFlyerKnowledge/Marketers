@@ -13,8 +13,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550995484561-Data-delivery-tools
 ---
-- [Aggregated data export page](/docs/aggregated-data-export-page)
-- [Raw data export page](/docs/raw-data-export-page)
-- [Pull API raw data](/docs/pull-api-raw-data)
-- [Push API streaming raw data](/docs/push-api-streaming-raw-data)
-- [Pull API aggregate data](/docs/pull-api-aggregate-data)
+- <Anchor target="_blank" href="/marketers/docs/aggregated-data-export-page">Aggregated data export page</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Raw data export page</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API raw data</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API streaming raw data</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">Pull API aggregate data</Anchor>

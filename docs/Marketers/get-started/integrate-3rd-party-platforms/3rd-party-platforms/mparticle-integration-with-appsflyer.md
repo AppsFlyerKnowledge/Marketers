@@ -1,8 +1,5 @@
 ---
 title: mParticle integration with AppsFlyer
-excerpt: >-
-  mParticle, an AppsFlyer integrated partner, collects customer data and sends
-  it to different analytics, marketing, and data warehousing platforms.
 metadata:
   keywords:
     - Advertisers
@@ -27,9 +24,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209787323-mParticle-integration-with-AppsFlyer
 ---
-**Important!**
+> **At a glance:** mParticle, an AppsFlyer integrated partner, collects customer data and sends it to different analytics, marketing, and data warehousing platforms.
 
-[Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Event integrations
 
@@ -37,7 +38,7 @@ The purpose of this document is to provide you with details of how to activate e
 
 1. mParticle customers must integrate the AppsFlyer kit into their application. The mParticle SDK will initialize AppsFlyer’s SDK and will also forward all required lifecycle events to the AppsFlyer SDK.
 
-2. Refer to the [iOS](https://github.com/mParticle/mParticle-apple-SDK) and [Android](https://github.com/mParticle/mparticle-android-sdk) SDK GitHub repositories for details on how to configure the AppsFlyer kit with the mParticle SDK into your app.
+2. Refer to the <Anchor target="_blank" href="https://github.com/mParticle/mParticle-apple-SDK">iOS</Anchor> and <Anchor target="_blank" href="https://github.com/mParticle/mparticle-android-sdk">Android</Anchor> SDK GitHub repositories for details on how to configure the AppsFlyer kit with the mParticle SDK into your app.
 
 ### Configure the AppsFlyer event integration
 
@@ -83,7 +84,7 @@ Apple App ID (enter the number only and not the ID prefix. For example, if your 
 
 11. Click **Add Connection**.
 
-AppsFlyer is now shown as a Connected Output Further options, such as Custom Mappings, may be available. See [mParticle’s documentation](https://docs.mparticle.com/guides/getting-started/connect-an-event-output#outputs) for more.
+AppsFlyer is now shown as a Connected Output Further options, such as Custom Mappings, may be available. See <Anchor target="_blank" href="https://docs.mparticle.com/guides/getting-started/connect-an-event-output#outputs">mParticle’s documentation</Anchor> for more.
 
 ![AppsFlyer shown as a Connected Output](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
 
@@ -93,7 +94,7 @@ This section helps you understand how to connect a data feed from AppsFlyer to m
 
 General integration information for AppsFlyer can be found at [https://docs.mparticle.com/integrations/appsflyer/feed/](https://docs.mparticle.com/integrations/appsflyer/feed/).
 
-1. From the mParticle Dashboard ([https://app.mparticle.com](https://app.mparticle.com)), select your App (aka Workspace)
+1. From the mParticle Dashboard (<Anchor target="_blank" href="https://app.mparticle.com">https://app.mparticle.com</Anchor>), select your App (aka Workspace)
 
 2. Click **Directory** from the left navigation
 
@@ -123,7 +124,7 @@ You are now taken to the Setup screen, where you can continue the configuration 
 
 AppsFlyer allows you to access the user attribution data in real-time directly at the SDK level. It enables you to customize the landing page a user sees on the very first app open after a fresh app install. This is commonly referred to as “deferred” deep linking.
 
-For more details of deferred deep linking, click [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
+For more details of deferred deep linking, click <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">here</Anchor>.
 
 AppsFlyer conversion data contains a parameter called `is_First_Launch`. The value of `is_First_Launch` is 'true' on first launches only, and 'false' on all following launches. You can use this parameter to determine on every launch if the app should defer deep link to the user or not.
 
@@ -131,23 +132,26 @@ AppsFlyer conversion data contains a parameter called `is_First_Launch`. The val
 af_dp → $deeplink_path
 ```
 
-**Example**
+> 📘 **Note**
+>
+> **Example**
+>
+> ```
+> $deeplink_path=product/Banana-Pet-Costume/dd67268672b345e491656c871af8aa29
+> ```
+>
+> `af_dp` includes the encoded URI scheme and pathway
+>
+> `af_dp` →
+>
+> `%20jet%3A%2F%2Fproduct%2FBanana-Pet-Costume%2Fdd67268672b345e491656c871af8aa29`
 
-```
-$deeplink_path=product/Banana-Pet-Costume/dd67268672b345e491656c871af8aa29
-```
+<Tabs>
+<Tab title="Android">
 
-`af_dp` includes the encoded URI scheme and pathway
+For Android: Perform this with Shared Preferences: <Anchor target="_blank" href="https://developer.android.com/reference/android/content/SharedPreferences.html">here.</Anchor>
 
-`af_dp` →
-
-`%20jet%3A%2F%2Fproduct%2FBanana-Pet-Costume%2Fdd67268672b345e491656c871af8aa29`
-
-<Accordion title="Android">
-
-For Android: Perform this with Shared Preferences: [here.](https://developer.android.com/reference/android/content/SharedPreferences.html)
-
-```
+```java
 AttributionListener myListener = new AttributionListener() {
   @Override
   public void onResult(@NonNull AttributionResult attributionResult) {
@@ -175,13 +179,13 @@ AttributionListener myListener = new AttributionListener() {
  MParticle.start(options);
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-For iOS: Perform this in UserDefaults: [here](https://developer.apple.com/documentation/foundation/userdefaults)
+For iOS: Perform this in UserDefaults: <Anchor target="_blank" href="https://developer.apple.com/documentation/foundation/userdefaults">here</Anchor>
 
-```
+```objectivec
 - (BOOL) application:(UIApplication *) application didFinishLaunchingWithOptions:(NSDictionary *) launchOptions {
  MParticleOptions *options = [MParticleOptions optionsWithKey:@"<>" secret:@"<>"];
  options.onAttributionComplete = ^void (MPAttributionResult *_Nullable attributionResult, NSError * _Nullable error) {
@@ -196,7 +200,8 @@ For iOS: Perform this in UserDefaults: [here](https://developer.apple.com/docume
 }
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ### AppsFlyer/mparticle use cases
 
@@ -213,7 +218,7 @@ For iOS: Perform this in UserDefaults: [here](https://developer.apple.com/docume
 
 AppsFlyer also enables you to serve personalized content or send existing users to specific locations in the app AFTER the initial launch. When existing users are deep linked into the app, the app opens from `onOpenAttribution` method, which returns the referring URL data.
 
-```
+```swift
  if let conversionData = params?[MPKitAppsFlyerConversionResultKey] as? [AnyHashable: Any], !alreadyLoggedAppsflyerConversionData {
    logAppsflyerConversionData(conversionData: conversionData)
    alreadyLoggedAppsflyerConversionData = true
@@ -227,7 +232,7 @@ AppsFlyer also enables you to serve personalized content or send existing users 
 
 AppsFlyer uses iOS ***UserDefaults*** and Android ***Shared Preferences*** to indicate whether the user is opening the app for the first time and should be redirected to the appropriate page, or if the app has already been opened and the user has already been directed to that page. To do this, the `alreadyLoggedAppsflyerConversionData` value is read and written to UserDefaults/ SharedPreferences, so that the value ***af\_dp*** is not looked at on the first launch.
 
-For more details about serving personalized content on deep linking [click here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
+For more details about serving personalized content on deep linking <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">click here</Anchor>.
 
 ## Enabling AppsFlyer uninstall measurement in mParticle
 

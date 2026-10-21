@@ -1,9 +1,5 @@
 ---
 title: MoEngage campaign configuration
-excerpt: >-
-  MoEngage, a third-party customer engagement platform integrated with
-  AppsFlyer, is an agentic customer engagement platform built for the
-  mobile-first world.
 metadata:
   keywords:
     - MoEngage
@@ -26,9 +22,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003139643-MoEngage-campaign-configuration
 ---
-> 📘 **Important!**
+**At a glance:** MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up MoEngage
 
@@ -41,10 +39,10 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
-Learn more about [setting the partner page header.](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page)
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">setting the partner page header.</Anchor>
 
 <div id="integration-tab" />
 
@@ -54,14 +52,14 @@ The **Integration** tab is divided into different sections, as described below.
 
 ### Activate partner
 
-On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about [partner activation](/docs/partner-activation-deactivation).
+On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
 ### General settings
 
 MoEngage connects with AppsFlyer via a unique App ID, App Key, and the Data Center of MoEngage. If you don't already have the App ID and App Key, you must obtain the first to continue with the integration:
 
 * **APP\_ID:** Enter the app ID. To obtain it, log in to your MoEngage account from the left menu, and go to **Settings** > **App Settings**.
-* **MoEngage Data Center:** Specify the MoEngage data center that you have signed up with. Learn more about [Data Centers in MoEngage](https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage).
+* **MoEngage Data Center:** Specify the MoEngage data center that you have signed up with. Learn more about <Anchor target="_blank" href="https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage">Data Centers in MoEngage</Anchor>.
 * **APP\_KEY:** Enter the app API key. To obtain it, log in to your MoEngage account, and go to **Settings** > **Analytics**.
 
 ![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)

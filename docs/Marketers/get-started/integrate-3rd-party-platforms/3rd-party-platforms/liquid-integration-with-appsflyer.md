@@ -1,9 +1,5 @@
 ---
 title: Liquid integration with AppsFlyer
-excerpt: >-
-  Liquid, an AppsFlyer integrated partner, automates your campaigns and
-  processes with no need to call your IT. Their intelligent rules engine acts
-  based on user behavior and advanced analytics.
 metadata:
   keywords:
     - Liquid
@@ -30,9 +26,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040626-Liquid-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Liquid, an AppsFlyer integrated partner, automates your campaigns and processes with no need to call your IT. Their intelligent rules engine acts based on user behavior and advanced analytics.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Liquid
 
@@ -45,7 +43,7 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 <div id="integration-tab" />
@@ -57,7 +55,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
 ### General settings
 

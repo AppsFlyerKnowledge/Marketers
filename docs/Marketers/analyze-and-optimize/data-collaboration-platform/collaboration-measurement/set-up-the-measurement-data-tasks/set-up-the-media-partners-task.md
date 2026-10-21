@@ -1,6 +1,5 @@
 ---
 title: Set up the Media partners task
-excerpt: Learn how to configure media partners for off-site campaigns.
 metadata:
   keywords:
     - Marketers
@@ -21,7 +20,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38191067035153-Set-up-the-Media-partners-task
 ---
-Before you can share eligible conversions with your [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns) media partners and receive aggregated performance data in response, you must first connect DCP to the media account that activates the campaign. This connection tells AppsFlyer how to send the conversion data to the media partner.
+**At a glance:** Learn how to configure media partners for off-site campaigns.
+
+Before you can share eligible conversions with your <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site campaign</Anchor> media partners and receive aggregated performance data in response, you must first connect DCP to the media account that activates the campaign. This connection tells AppsFlyer how to send the conversion data to the media partner.
 
 ## Prerequisites
 
@@ -33,7 +34,7 @@ Before the Media partners task can be set up, the collaboration owner needs to a
 
 > 📘 **Note**
 >
-> The **Media Partners** task appears on the **Measurement settings** page only when you set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns) that uses a custom source as the provisioning method. For more information, see: [Set conversion data provision method](/docs/set-up-the-conversions-task#set-conversion-data-provision-method)
+> The **Media Partners** task appears on the **Measurement settings** page only when you set up an <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site campaign</Anchor> that uses a custom source as the provisioning method. For more information, see: <Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-conversion-data-provision-method">Set conversion data provision method</Anchor>
 
 To select or create a media partner connection, follow these steps:
 
@@ -61,9 +62,9 @@ To select or create a media partner connection, follow these steps:
 
 <Accordion title="Set the Google Ads Conversion action ID parameter">
 
-If your media partner is Google Ads, provide DCP with the Conversion action ID parameter. The Conversion action ID is obtained from your Google Ads account and included in the conversion data sent to Google Ads. TheConversion Actio**n** must be of type `UPLOAD_CLICKS`.
+If your media partner is Google Ads, provide DCP with the Conversion action ID parameter. The Conversion action ID is obtained from your Google Ads account and included in the conversion data sent to Google Ads. The Conversion Actio**n** must be of type `UPLOAD_CLICKS`.
 
-To learn more about Google Ads’ Conversion action, see the [Google Ads documentation](https://support.google.com/google-ads/answer/12216226?hl=en).
+To learn more about Google Ads’ Conversion action, see the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/12216226?hl=en">Google Ads documentation</Anchor>.
 
 To set the Google Ads Conversion Action ID, follow these steps:
 
@@ -73,13 +74,9 @@ To set the Google Ads Conversion Action ID, follow these steps:
    * **Web conversion action:** The conversion action ID used for conversion events created on the collaborator website. This must be a **Conversion Action** of type `UPLOAD_CLICKS`.
    * **App conversion action (per app):** The conversion action ID used for conversion events created on the collaborator app. Enter the corresponding Conversion Action ID, also of type `UPLOAD_CLICKS`.
 
-     <br /><br />**Note**<br />
-
-
-   #### Note
-
-   These Conversion Actions should be kept **exclusive to DCP measurement** and should not be used for other traffic.
-
+   > 📘 **Note**
+   >
+   > These Conversion Actions should be kept **exclusive to DCP measurement** and should not be used for other traffic.
 
 3. Click **Done** to return to the main dialog.
 4. Confirm the connection is listed, then click **Save**.
@@ -93,7 +90,7 @@ To set the Google Ads Conversion Action ID, follow these steps:
 
 If your media partner is Meta Ads, provide DCP with the Meta Pixel and Dataset ID parameters. The Meta Pixel and Dataset ID are obtained from your Meta Ads account and included in the conversion data sent to Meta Ads.
 
-See the Meta Ads documentation about [Meta Pixel](https://www.facebook.com/business/help/952192354843755?id=1205376682832142) and [Dataset ID](https://www.facebook.com/business/help/5818684664831465?id=490360542427371).
+See the Meta Ads documentation about <Anchor target="_blank" href="https://www.facebook.com/business/help/952192354843755?id=1205376682832142">Meta Pixel</Anchor> and <Anchor target="_blank" href="https://www.facebook.com/business/help/5818684664831465?id=490360542427371">Dataset ID</Anchor>.
 
 To set the Google Ads Conversion Action ID, follow these steps:
 
@@ -103,13 +100,14 @@ To set the Google Ads Conversion Action ID, follow these steps:
    * **Meta Pixel:** The ID used for conversion events created on the collaborator website.
    * **Dataset ID (per app):** The ID used for conversion events created on the collaborator app.
 
-     > ⚠️ **Warning**
-     >
-     > The Dataset and Meta Pixel must meet the following conditions:
-     >
-     > * Created specifically for DCP.
-     > * Must **not receive any conversions directly** from the client.
-     > * Meta Pixel and Dataset ID are interchangeable.
+   > ❗️ **Warning**
+   >
+   > The Dataset and Meta Pixel must meet the following conditions:
+   >
+   > * Created specifically for DCP.
+   > * Must **not receive any conversions directly** from the client.
+   > * Meta Pixel and Dataset ID are interchangeable.
+
 
    > 📘 **Note**
    >

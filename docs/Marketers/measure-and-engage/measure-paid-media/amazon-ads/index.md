@@ -12,5 +12,5 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/28703975923729-Amazon-Ads
 ---
-- [Amazon Ads campaign configuration](/docs/amazon-ads-campaign-configuration)
-- [Attribution discrepancies between Amazon Ads and AppsFlyer](/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer)
+- <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration">Amazon Ads campaign configuration</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer">Attribution discrepancies between Amazon Ads and AppsFlyer</Anchor>

@@ -1,9 +1,5 @@
 ---
 title: About Receipt validation
-excerpt: >-
-  Understand how Receipt validation measures revenue from in-app purchases and
-  subscriptions and verifies it with the app stores, ensuring accurate revenue
-  measurement.
 metadata:
   keywords:
     - Marketers
@@ -24,11 +20,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42136725767569-About-Receipt-validation
 ---
+> **At a glance:** Understand how Receipt validation measures revenue from in-app purchases and subscriptions and verifies it with the app stores, ensuring accurate revenue measurement.
+
 Advertisers can use Receipt validation to validate and measure in-app purchases and subscriptions from the Play Store and the App Store.
 
 Receipt validation is free of charge to all account plans.
 
-Consider using our premium ROI360 store revenue solution to benefit from net revenue calculation, full subscription funnel coverage, refund handling, and automated purchase detection & deduplication. For more information and a comparison between the two solutions, see The two solutions for purchase and subscription validation.
+> 📘 **Note**
+>
+> Consider using our premium ROI360 store revenue solution to benefit from net revenue calculation, full subscription funnel coverage, refund handling, and automated purchase detection & deduplication. For more information and a comparison between the two solutions, see The two solutions for purchase and subscription validation.
 
 ## How does Receipt validation work?
 
@@ -40,7 +40,7 @@ The receipt validation flow is as follows:
 4. The SDK calls the AppsFlyer validation service.
 5. AppsFlyer validates the purchase to make sure it is not fraudulent.
 6. Upon successful validation, AppsFlyer logs the purchase or subscription event.
-7. If receipt validation fails, the event is displayed in the [Blocked in-app events raw data report](/docs/protect360-raw-data-reports#blocked-inapp-events) (available to Protect360 subscribers) and on the [Live events viewer page](/docs/testing-the-sdk-integration-for-marketers#view-live-events) with the parameter `af_validated` set to `false`.
+7. If receipt validation fails, the event is displayed in the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#blocked-inapp-events">Blocked in-app events raw data report</Anchor> (available to Protect360 subscribers) and on the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live events viewer page</Anchor> with the parameter `af_validated` set to `false`.
 8. The AppsFlyer validation service transfers the response to the SDK.
 9. The SDK transfers the receipt validation response to the app (either success or failure).
 
@@ -55,7 +55,7 @@ To activate Receipt validation, follow these steps:
 
 ## Set up Receipt validation
 
-For more information, see [Set up receipt validation](/docs/set-up-receipt-validation)[.](/docs/set-up-receipt-validation#step-3-verify-sdk-implementation)
+For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation">Set up receipt validation</Anchor><Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation#step-3-verify-sdk-implementation">.</Anchor>
 
 ## In-app purchase events and parameters for Receipt validation
 
@@ -96,9 +96,9 @@ All predefined events share the following properties:
 
 If you currently use ROI360 store revenue and want to switch to Receipt validation, follow these steps:
 
-1. In AppsFlyer, from the side menu, open ![settings-roi.png](https://files.readme.io/23e5d6ac29cfd14f1c34247e6a19cdb86a364c3dbe1122e5fde43bb27902b864-42137277590289.png) **Settings** and under **ROI360** select **Revenue Settings**.
+1. In AppsFlyer, from the side menu, open <Image alt="settings-roi.png" src="https://files.readme.io/23e5d6ac29cfd14f1c34247e6a19cdb86a364c3dbe1122e5fde43bb27902b864-42137277590289.png" width="2.02%" /> **Settings** and under **ROI360** select **Revenue Settings**.
 2. In the **Purchases & subscriptions** tab, confirm that the **Product type** is currently set to **ROI360**.
-3. Click ![Untitled 3.png](https://files.readme.io/5f58109e6a7f7d2d3958a05e3da1aaa99d5d104c09346240ae7d20f48047afc6-42137388748177.png).
+3. Click <Image alt="Untitled 3.png" src="https://files.readme.io/5f58109e6a7f7d2d3958a05e3da1aaa99d5d104c09346240ae7d20f48047afc6-42137388748177.png" width="2.07%" />.
 4. A message appears outlining the impact of switching to Receipt validation:
    * ROI360 features such as refund attribution, subscription renewal measurement, and net revenue calculations will be disabled.
    * Data accuracy may decrease.

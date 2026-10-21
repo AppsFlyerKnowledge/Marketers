@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) media partner connections
-excerpt: >-
-  Connect your audiences to media partners so you can activate your tailored
-  campaigns and achieve maximum results.
 metadata:
   keywords:
     - Marketers
@@ -25,9 +22,11 @@ x-zendesk:
 ---
 ## At a glance
 
+Connect your audiences to media partners so you can activate your tailored campaigns and achieve maximum results.
+
 ## About partner connections
 
-[Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions).
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">permissions</Anchor>.
 
 > 📘 **Note**
 >
@@ -62,7 +61,7 @@ A Standard/Admin user must enable the integration during setup. 
 After that, the DCP uploads audiences automatically via the Partner Link.
 
 **Official resources:**  
-[Google Ads Customer Match help](https://support.google.com/google-ads/answer/10589050)
+<Anchor target="_blank" href="https://support.google.com/google-ads/answer/10589050">Google Ads Customer Match help</Anchor>
 
 **Supported campaign types:**
 
@@ -152,7 +151,7 @@ The appropriate DV360 access permissions are needed to enable the integration du
 After that, the DCP uploads audiences automatically via the Partner Link.
 
 **Official resources:**  
-[Display & Video 360 audience help](https://support.google.com/displayvideo/answer/9134175?hl=en)
+<Anchor target="_blank" href="https://support.google.com/displayvideo/answer/9134175?hl=en">Display & Video 360 audience help</Anchor>
 
 **Supported campaign types:**
 
@@ -219,7 +218,7 @@ After setup is complete:
 * The DCP can upload and refresh audiences automatically.
 
 **Official resources:**  
-[Meta Business help](https://www.facebook.com/business/help/1143109949216644/)
+<Anchor target="_blank" href="https://www.facebook.com/business/help/1143109949216644/">Meta Business help</Anchor>
 
 **Supported campaign types:**
 
@@ -280,7 +279,7 @@ After setup is complete:
 * Audience activation happens directly within TikTok Ads using those uploaded audiences
 
 **Official resources:**  
-[TikTok Business Center partner access help](https://ads.tiktok.com/help/article/invite-partners-into-tiktok-business-center?lang=en)
+<Anchor target="_blank" href="https://ads.tiktok.com/help/article/invite-partners-into-tiktok-business-center?lang=en">TikTok Business Center partner access help</Anchor>
 
 **Supported campaign types:**
 
@@ -340,7 +339,7 @@ After setup is complete:
 * The DCP can upload and refresh audiences automatically
 
 **Official resources:**  
-[Pinterest audience targeting help](https://help.pinterest.com/en/business/article/audience-targeting)
+<Anchor target="_blank" href="https://help.pinterest.com/en/business/article/audience-targeting">Pinterest audience targeting help</Anchor>
 
 **Supported campaign types:**
 
@@ -404,7 +403,7 @@ After setup is complete:
 * Audiences are available as first-party data segments in TTD
 
 **Official resources:**  
-[The Trade Desk platform](https://www.thetradedesk.com/)
+<Anchor target="_blank" href="https://www.thetradedesk.com/">The Trade Desk platform</Anchor>
 
 **Supported campaign types:**
 
@@ -438,7 +437,7 @@ You can set up partner connections as part of the audience-builder flow or separ
 
 <span id="h_01HZHF5BWHBE7W8VNM3QFB7K58"></span>**To create a media partner connection as part of the audience-builder flow:**
 
-Follow the instructions detailed [here](/docs/data-collaboration-platform-dcp-build-and-activate-audiences#step-3-connect-and-export).
+Follow the instructions detailed <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences#step-3-connect-and-export">here</Anchor>.
 
 </Accordion>
 
@@ -453,7 +452,7 @@ Follow the instructions detailed [here](/docs/data-collaboration-platform-dcp-bu
 3. Click **New connection**. If you already have existing cloud connections in your account, you'll see them all under **Partner**.
 4. From the **New media partner connection** dialog, select the relevant media partner.
 
-   ![New media partner connection.png](https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png)
+   <Image alt="New media partner connection.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
 5. Enter a connection name.
 6. Log in to the media partner account with your credentials, and follow their instructions to enable AppsFlyer access.
 7. Click **Select account ID** and select the relevant account for this connection.

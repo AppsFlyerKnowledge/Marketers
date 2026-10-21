@@ -21,17 +21,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15199908310801-CTV-PC-and-console-platform-direct-attribution-links
 ---
-**At a glance:**  Learn about the AppsFlyer attribution link structure and parameters for CTV, PC, and console platforms. **Note**: For Android and iOS apps, including Android PC games, use [mobile attribution link instructions](/docs/about-link-structure-and-parameters).
+**At a glance:**  Learn about the AppsFlyer attribution link structure and parameters for CTV, PC, and console platforms. **Note**: For Android and iOS apps, including Android PC games, use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">mobile attribution link instructions</Anchor>.
 
 ## Overview
 
 CTV, PC, and console platform direct attribution links allow advertisers to redirect users and collect data following clicks. These direct attribution links are AppsFlyer links that support redirection and attribution **for a single destination app on a single platform at a time**. The redirection destination is the value of the af\_r parameter included in the link.
 
-**Note**: For Android and iOS apps, including Android PC games, use [mobile attribution link instructions](/docs/about-link-structure-and-parameters).
+**Note**: For Android and iOS apps, including Android PC games, use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">mobile attribution link instructions</Anchor>.
 
 Attribution links can be directly created by you and placed behind ads. To create such links, follow the instructions in this article.
 
-Alternatively, links can be created via S2S using the [Engagements API](https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id). This requires some developer work. **Note**: Links created via S2S can also collect impression data.
+Alternatively, links can be created via S2S using the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">Engagements API</Anchor>. This requires some developer work. **Note**: Links created via S2S can also collect impression data.
 
 ### Attribution link
 
@@ -71,7 +71,7 @@ Alternatively, links can be created via S2S using the [Engagements API](https://
 | af\_os\_version | N/A | <ul><li>Device OS version</li><li>Only digits and dots allowed</li><li>Example: 8.1.0</li></ul> | String |
 | af\_device\_id\_type | N/A | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>Device identifier type. Either:<ul><li>vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>custom</li></ul> | String |
 | af\_device\_id\_value | N/A | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>Device identifier type | String |
-| af\_r | N/A | <ul><li>Contains the link to the correct app store or landing page</li><li>Everything within the af\_r parameter needs to be encoded. This includes any UTM parameter values, if appended.</li></ul>**Note:** Ensure that the URL domain for af\_r is included in your [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist). | String |
+| af\_r | N/A | <ul><li>Contains the link to the correct app store or landing page</li><li>Everything within the af\_r parameter needs to be encoded. This includes any UTM parameter values, if appended.</li></ul>**Note:** Ensure that the URL domain for af\_r is included in your <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">redirect allowlist</Anchor>. | String |
 
 ## Traits and limitations
 

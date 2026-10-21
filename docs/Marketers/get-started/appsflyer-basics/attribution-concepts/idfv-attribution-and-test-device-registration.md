@@ -1,9 +1,5 @@
 ---
 title: IDFV attribution and test-device registration
-excerpt: >-
-  IDFV is a unique identifier assigned by iOS to apps of the same vendor. You
-  can use it to attribute installs that originated in cross-promotion campaigns
-  and register test devices.
 metadata:
   keywords:
     - Developers
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17798709514001-IDFV-attribution-and-test-device-registration
 ---
+> **At a glance:** IDFV is a unique identifier assigned by iOS to apps of the same vendor. You can use it to attribute installs that originated in cross-promotion campaigns and register test devices.
+
 IDFV (Identifier for Vendor) is a unique identifier iOS generates while installing the first app the vendor owns. When another vendor app is installed on the same device, it is assigned the same IDFV. If all the vendor apps are deleted from the device, the IDFV is deleted, too, and a different one is generated when the vendor apps are installed again.
 
 According to Apple: "The ID for Vendors (IDFV) may be used for analytics across apps from the same content provider. In this case, the use of the [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) framework is not required. The IDFV may not be combined with other data to track a user across apps and websites owned by other companies. You remain fully responsible to ensure that your collection and use of the IDFV complies with applicable law."
@@ -80,9 +78,9 @@ Test device registration can also be done with IDFA. However, an iOS app does no
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Cross-promotion attribution for marketers](/docs/cross-promotion-attribution-for-marketers)
-> * [How to register your test device with IDFV](/docs/registering-test-devices#how-to-register-your-device-with-idfv)
+> * <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Cross-promotion attribution for marketers</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/registering-test-devices#how-to-register-your-device-with-idfv">How to register your test device with IDFV</Anchor>
 
 <div data-zendesk-anchors="idfv-in-crosspromotion-attribution=idfv-in-cross-promotion-attribution h_01H9041HQ7H18541W83A72B85B=idfv-in-cross-promotion-attribution h_01H9041HQ7JE11FTWTD0XYQWRS=how-does-crosspromotion-attribution-using-idfv-work a-few-examples-of-idfv-attribution%E2%80%A6=a-few-examples-of-idfv-attribution h_01H9041HQ7YDCTJQYBYDVJZPW0=a-few-examples-of-idfv-attribution h_01H9041HQ8ZC679PX7HWRMG1YC=idfv-for-test-device-registration h_01H9041HQ8K76JD72VR4EXCEZB=why-identify-devices-as-test-devices h_01H9041HQ8WS1GEAY6RGV10PF5=why-use-idfv-as-an-identifier-in-test-device-registration h_01HG809S72YC5W61GGN0CE6TP1=see-also" />

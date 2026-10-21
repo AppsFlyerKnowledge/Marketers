@@ -1,8 +1,5 @@
 ---
 title: ChatGPT plugin attribution
-excerpt: >-
-  See how to report ChatGPT plugin data to AppsFlyer for a holistic view of your
-  user journeys.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15224646285713-ChatGPT-plugin-attribution
 ---
+**At a glance:** See how to report ChatGPT plugin data to AppsFlyer for a holistic view of your user journeys.
+
 ![51523_Image_3.jpg](https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg)
 
 ## What are ChatGPT plugins?
@@ -31,7 +30,7 @@ ChatGPT plugins are like apps within the chat, that users can get from the Plugi
 
 There’s a simple API that enables those plugins to generate some actions directly from the chat. For example, users can purchase items, search private databases, or create documents from the chat content on Google Drive.
 
-You can read about ChatGPT plugins and join the waitlist [here](https://openai.com/blog/chatgpt-plugins).
+You can read about ChatGPT plugins and join the waitlist <Anchor target="_blank" href="https://openai.com/blog/chatgpt-plugins">here</Anchor>.
 
 ### How do marketers use ChatGPT plugins?
 

@@ -1,8 +1,5 @@
 ---
 title: Hotstar campaign configuration
-excerpt: >-
-  Hotstar, an AppsFlyer integrated partner, is a major ad-supported streaming
-  service in India.
 metadata:
   keywords:
     - Campaign
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004428658-Hotstar-campaign-configuration
 ---
+**At a glance:** Hotstar, an AppsFlyer integrated partner, is a major ad-supported streaming service in India.
+
 ![](https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png)
 
 ## Hotstar integration in AppsFlyer
@@ -46,10 +45,10 @@ an account, contact the partner to open one before setting up the integration.
    **Activate partner** toggle.   
    **Note:** The toggle
    **must stay on (active) as long as you work with the partner**.
-   [Learn more](/docs/partner-activation-deactivation)
+   <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn
    more about
-   [partner integrations.](/docs/set-up-an-integrated-partner)
+   <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -88,7 +87,7 @@ Generate click and impression attribution links to be used by Hotstar. The follo
 | Click | A lead clicks on an ad served by Hotstar | The **click-through** lookback window is the **maximum time from click to install**.<br /><br />Hotstar gets an attribution if a lead clicks and installs an app before the lookback window expires.<br /><br />**Parameter name**: `af_click_lookback`  <br />**Default value**: 7 days  <br />**Range:** 1-23 hours or 1-30 days |
 | Impression | A lead views an ad (for at least 1 second) served by Hotstar | The **view-through** lookback window is the **maximum time from impression to install**.<br /><br />Hotstar gets an attribution if a lead views (impression) an app and then installs before the lookback window expires. This applies if there are no other relevant ad clicks.<br /><br />**Parameter name**: `af_viewthrough_lookback`  <br />**Default value**: 1 day  <br />**Range:** 1-23 hours or 1-7 days |
 
-Learn more about[link structure and parameters](/docs/about-link-structure-and-parameters).
+Learn more about<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">link structure and parameters</Anchor>.
 
 **Typical link parameters:**
 
@@ -97,7 +96,7 @@ Learn more about[link structure and parameters](/docs/about-link-structure-and-p
 | Campaign | c | Name of the campaign |
 | Ad set | af\_adset | Name of the ad set. Use to differentiate between ad sets within a campaign |
 | Ad name | af\_ad | Name of the specific ad. Use to differentiate between creatives within an ad set |
-| Site ID | af\_siteid  <br />af\_sub\_siteid | Publisher ID used to attribute installs to specific publishers.<br /><br />**Good practice!** If there are many publishers,<ul><li>Limit the number of site IDs in use.</li><li>Use the subsite ID parameter to avoid [exceeding the site ID limit](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit).</li></ul> |
+| Site ID | af\_siteid  <br />af\_sub\_siteid | Publisher ID used to attribute installs to specific publishers.<br /><br />**Good practice!** If there are many publishers,<ul><li>Limit the number of site IDs in use.</li><li>Use the subsite ID parameter to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID limit</Anchor>.</li></ul> |
 | Subscriber parameters | af\_sub1 up to af\_sub5 | Use to insert values:<ul><li>Parameters are parsed and included in the raw data report.</li><li>Use them to perform data aggregation or filtering.</li></ul> |
 
 **To generate the attribution links**:

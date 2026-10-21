@@ -1,11 +1,5 @@
 ---
 title: Send OpenDSR API requests
-excerpt: >-
-  This article is for the use of AppsFlyer clients, often referred to as
-  Advertisers or App Owners, using the Platform to record app use and
-  attribution. App Owners implement OpenDSR (Data Subject Request) API to comply
-  with applicable data protection laws like GDPR (Europe), CCPA (California),
-  LGPD (Brazil), PDPA (Thailand), and PIPA (Korea).
 metadata:
   keywords:
     - Advertisers
@@ -29,7 +23,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/11332840660625-Send-OpenDSR-API-requests
 ---
-**A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how GDPR, CCPA, or any other laws may or may not apply to you.* The privacy relationship between you and AppsFlyer is governed by the [AppsFlyer Services Privacy Policy](https://www.appsflyer.com/services-privacy-policy). For any questions relating to this Services Privacy Policy or to contact our data protection officer please send us a mail to [privacy@appsflyer.com](mailto:privacy@appsflyer.com). For the purposes of Article 27 of the General Data Protection Regulation, the representative within the EU of AppsFlyer is AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (contact [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
+> **At a glance:** This article is for the use of AppsFlyer clients, often referred to as Advertisers or App Owners, using the Platform to record app use and attribution. App Owners implement OpenDSR (Data Subject Request) API to comply with applicable data protection laws like GDPR (Europe), CCPA (California), LGPD (Brazil), PDPA (Thailand), and PIPA (Korea).
+
+**A word from our lawyers:** *Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how GDPR, CCPA, or any other laws may or may not apply to you.* The privacy relationship between you and AppsFlyer is governed by the <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">AppsFlyer Services Privacy Policy</Anchor>. For any questions relating to this Services Privacy Policy or to contact our data protection officer please send us a mail to [privacy@appsflyer.com](mailto:privacy@appsflyer.com). For the purposes of Article 27 of the General Data Protection Regulation, the representative within the EU of AppsFlyer is AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (contact [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 
 ## Privacy regulations
 
@@ -50,7 +46,7 @@ To address and manage requests by Data Subjects submitted in accordance with pri
 
 OpenDSR is an open-source framework, that facilitates cooperation between technology companies for the fair and transparent use of consumer data. It enables vendors to take data privacy actions across multiple systems that process and store customer data.
 
-[Learn more about the OpenDSR initiative](https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/).
+<Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">Learn more about the OpenDSR initiative</Anchor>.
 
 ### Definitions
 
@@ -77,8 +73,8 @@ Use the GDPR Requests API as described in this section to implement DSR complian
 
 * **GDPR Request:** Perform one of the above request types: access, portability, erasure, rectification.
 * **Status Request**: Query the current status of a GDPR request.
-* **Discovery Request**:Inquire as to the supported API version and Data Format.
-* **Cancellation**:Cancel a GDPR request during its ***pending*** phase.
+* **Discovery Request**: Inquire as to the supported API version and Data Format.
+* **Cancellation**: Cancel a GDPR request during its ***pending*** phase.
 
 App Owners must implement UI changes to their app so that App Users can submit requests. Note that GDPR requests are per single user at one time.
 
@@ -111,17 +107,17 @@ A GDPR Request API can be submitted via HTTP POST to the following endpoint:
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 ```
 
-For the API authorization, use the same V2 API token as for Pull API. An admin user can [retrieve the token](/docs/managing-appsflyer-tokens#retrieve-tokens) from the API token page in the dashboard. Add the token into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
+For the API authorization, use the same V2 API token as for Pull API. An admin user can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#retrieve-tokens">retrieve the token</Anchor> from the API token page in the dashboard. Add the token into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
 
 #### Parameters
 
-<table><thead><tr><th><strong>Property Name</strong></th><th><strong>Mandatory</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Yes</td><td>UUID v4 string. Generated by the controller at the time of request submission to a Processor. It can then be used in order to check the status of the request, update or cancel it.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Yes</td><td><p>String value representing the type of GDPR Request. Supported values:</p><ul><li>erasure</li><li>portability</li><li>access</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Yes</td><td><ul><li>An array of identity objects defining the requester's identity (see below).</li><li>Each request can contain only one subject identity.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Yes</td><td><ul><li>RFC 3339 date string of the time of the original request by the data subject</li><li>Timestamps in UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Yes</td><td><p>String representing the mobile app to which this request is scoped:</p><p><strong>Examples</strong>:</p><ul><li><strong>iOS</strong>: id123456789</li><li><strong>Android</strong>: com.example, com.publishers.name</li><li><strong>Android out-of-store</strong>: com.publisher.name-channel<br/><strong>Note </strong>In some cases, App Owners record out-of-store attribution using the Android Google Play name. In these cases use the regular app name as it displays in the Dashboard.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>No</td><td>Version string representing the desired version of the GDPR Requests API</td></tr><tr><td><strong>status_callback_urls</strong></td><td>No, but recommended</td><td><ul><li>An array of up to 3 endpoints for status callbacks to be sent to the following request status changes.</li><li>Only HTTPS endpoints are supported.</li><li>Invalid URLs are rejected.</li></ul></td></tr><tr><td rowspan="2"><strong>platform</strong><br/><br/> </td><td>No</td><td>Value is one of the supported DSR platforms:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code></td></tr><tr><td>Yes</td><td><p>For a CTV, PC, or Console platform request, include any of the following platforms:</p><p><code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
+<table><thead><tr><th><strong>Property Name</strong></th><th><strong>Mandatory</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Yes</td><td>UUID v4 string. Generated by the controller at the time of request submission to a Processor. It can then be used in order to check the status of the request, update or cancel it.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Yes</td><td><p>String value representing the type of GDPR Request. Supported values:</p><ul><li>erasure</li><li>portability</li><li>access</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Yes</td><td><ul><li>An array of identity objects defining the requester's identity (see below).</li><li>Each request can contain only one subject identity.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Yes</td><td><ul><li>RFC 3339 date string of the time of the original request by the data subject</li><li>Timestamps in UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Yes</td><td><p>String representing the mobile app to which this request is scoped:</p><p><strong>Examples</strong>:</p><ul><li><strong>iOS</strong>: id123456789</li><li><strong>Android</strong>: com.example, com.publishers.name</li><li><strong>Android out-of-store</strong>: com.publisher.name-channel<br/><strong>Note</strong> In some cases, App Owners record out-of-store attribution using the Android Google Play name. In these cases use the regular app name as it displays in the Dashboard.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>No</td><td>Version string representing the desired version of the GDPR Requests API</td></tr><tr><td><strong>status_callback_urls</strong></td><td>No, but recommended</td><td><ul><li>An array of up to 3 endpoints for status callbacks to be sent to the following request status changes.</li><li>Only HTTPS endpoints are supported.</li><li>Invalid URLs are rejected.</li></ul></td></tr><tr><td rowspan="2"><strong>platform</strong><br/><br/> </td><td>No</td><td>Value is one of the supported DSR platforms:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code></td></tr><tr><td>Yes</td><td><p>For a CTV, PC, or Console platform request, include any of the following platforms:</p><p><code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
 
 #### Subject\_identities objects
 
 | Object type | **Mandatory** | **Description** |
 | --- | --- | --- |
-| identity\_type | Yes | <ul><li>The identity type in string format for `android`, `ios`, `web`, `windowsphone` platforms are any of the following:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>For `CTV`, `PC`, and `Console`platforms only the following:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Example: `android_advertising_id`</li></ul>**Important!**<br /><br />To use CUID through the OpenDSR API, you must send the CUID with `idfa` / `appsflyer_id` inside in-app events using `event_name`: `Login - Complete` or `Registration - Account created` |
+| identity\_type | Yes | <ul><li>The identity type in string format for `android`, `ios`, `web`, `windowsphone` platforms are any of the following:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>For `CTV`, `PC`, and `Console`platforms only the following:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Example: `android_advertising_id`</li></ul>**Important**<br />**Important!**<br /><br />To use CUID through the OpenDSR API, you must send the CUID with `idfa` / `appsflyer_id` inside in-app events using `event_name`: `Login - Complete` or `Registration - Account created` |
 | identity\_value | Yes | <ul><li>Format: String</li><li>Example: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
 | identity\_format | Yes | <ul><li>The method used to encode the identity\_value: `raw` is the only supported:</li><li>Example: "raw"</li></ul> |
 
@@ -186,9 +182,10 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
 
 #### GDPR erasure request code example
 
-<Accordion title="Java">
+<Tabs>
+<Tab title="Java">
 
-```
+```java
 /*
 using the okhttp package install from maven
 https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
@@ -234,11 +231,11 @@ public class GdprSendRequest {
 }
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="PythonNode.jsC#">
+<Tab title="PythonNode.jsC#">
 
-```
+```python
 """ using the requests python package,
 install using pip install requests """
 
@@ -269,7 +266,7 @@ headers=headers, data=body, params=params)
 print(res.text)
 ```
 
-```
+```javascript
 /* using the request npm package,
 install using npm install request */
 
@@ -299,7 +296,7 @@ request(options, function (error, response, body) {
 });
 ```
 
-```
+```csharp
 using System;
  using RestSharp;
  namespace CS
@@ -333,7 +330,8 @@ using System;
   }
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -519,10 +517,12 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
-**Notes**
-
-* A valid V2 API token must be inserted into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
-* In the ‘property\_id’ property, the App ID must belong to the account owner (according to the API token).
+> 📘 **Note**
+>
+> **Notes**
+>
+> * A valid V2 API token must be inserted into the request header as follows: `'Authorization': 'Bearer %AuthTokenV2%'`
+> * In the ‘property\_id’ property, the App ID must belong to the account owner (according to the API token).
 
 </Accordion>
 

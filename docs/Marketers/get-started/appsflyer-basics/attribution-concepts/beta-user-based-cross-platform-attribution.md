@@ -1,8 +1,5 @@
 ---
 title: '[Beta] User-based cross-platform attribution'
-excerpt: >-
-  Learn what cross-platform user-based attribution is, how it operates, and how
-  to set it in AppsFlyer.
 metadata:
   keywords:
     - Marketers
@@ -23,11 +20,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39104189339793--Beta-User-based-cross-platform-attribution
 ---
+> **At a glance:** Learn what cross-platform user-based attribution is, how it operates, and how to set it in AppsFlyer.
+
 ## What is user-based attribution?
 
-User-based attribution is a cross-platform model that relies on a persistent [Customer User ID (CUID)](/docs/customer-user-id-field-cuid) to link conversion events across platforms. Using the CUID, the model attributes all activity to the media source that drove the user’s first conversion or re-engagement event.
+User-based attribution is a cross-platform model that relies on a persistent <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID (CUID)</Anchor> to link conversion events across platforms. Using the CUID, the model attributes all activity to the media source that drove the user’s first conversion or re-engagement event.
 
-If you want to use cross-platform re-engagement, make sure to continue reading this article, as it covers the foundational attribution model. You can then read cross-platform re-engagement for user-based attribution for specific guidance.
+> 📘 **Note**
+>
+> If you want to use cross-platform re-engagement, make sure to continue reading this article, as it covers the foundational attribution model. You can then read cross-platform re-engagement for user-based attribution for specific guidance.
 
 ### A cross-platform user journey example
 
@@ -57,10 +58,10 @@ Device-based attribution credits $0 to Meta Ads, while user-based attribution cr
 
 An event is considered a **candidate for cross-platform attribution** if it meets **all** of the following conditions:
 
-* **CUID is present:** The event must include a valid [Customer User ID (CUID)](/docs/customer-user-id-field-cuid) — a persistent, advertiser-provided identifier (e.g., login ID or hashed email) that uniquely identifies a user across devices and platforms.
+* **CUID is present:** The event must include a valid <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID (CUID)</Anchor> — a persistent, advertiser-provided identifier (e.g., login ID or hashed email) that uniquely identifies a user across devices and platforms.
   * If an event is missing a CUID but shares the same `appsflyer_id`, AppsFlyer can backfill the CUID within a short processing window — up to 4 hours before the first event that arrived with a CUID. For more information, see [The CUID enrichment processing window](#the-cuid-enrichment-processing-window) below.
   * Events that arrive without a CUID and can’t be enriched through the CUID enrichment process are still included in cross-platform attribution. In these cases, attribution is determined using their device-level (classic) attribution method.
-* **Belongs to a product line:** The app generating the event must be part of a **product line** – a grouping of related apps (e.g., iOS, Android, CTV) under the same brand, for which attribution is scoped and configured collectively. For more information, see [Group apps for cross-platform attribution](/docs/product-line-group-apps-for-cross-platform-attribution#about-product-line).
+* **Belongs to a product line:** The app generating the event must be part of a **product line** – a grouping of related apps (e.g., iOS, Android, CTV) under the same brand, for which attribution is scoped and configured collectively. For more information, see <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution#about-product-line">Group apps for cross-platform attribution</Anchor>.
 * **Within the inactivity restoration window:** The event must fall within the **inactivity window** – a configurable period (e.g., 7 to 390 days) during which a CUID is still considered active and eligible for attribution within a given product line. If the CUID has not been seen within this window, its previous attribution mapping is discarded.
 * **Device-level attribution fields are present:** The event must already contain valid **device-level attribution parameters** (e.g., media source, campaign ID) derived from AppsFlyer’s classic device-based attribution model.
 
@@ -76,7 +77,9 @@ The attributed original media source is determined using the following logic:
 * If an in-app event lacks a CUID, AppsFlyer attempts to backfill it during the 1–4 hour [enrichment processing window](#the-cuid-enrichment-processing-window).
 * If an event without a CUID arrives outside the defined CUID [enrichment window](#the-cuid-enrichment-processing-window), it will still be included in cross-platform attribution. These events are attributed using their device-level (classic) attribution method.
 
-AppsFlyer only matches identical CUIDs **within the same product line**. We do not attempt to match, infer, or share CUIDs across different product lines or customers. This ensures a strict privacy-first approach, keeping each customer’s data siloed and independent.
+> 📘 **Note**
+>
+> AppsFlyer only matches identical CUIDs **within the same product line**. We do not attempt to match, infer, or share CUIDs across different product lines or customers. This ensures a strict privacy-first approach, keeping each customer’s data siloed and independent.
 
 #### The CUID enrichment processing window
 
@@ -101,19 +104,21 @@ The CUID enrichment processing window is the period (1–4 hours) during which A
 * Events without a CUID arriving **outside the 1–4 hour processing window** are attributed using classic AppsFlyer attribution and added to the cross-platform attribution method results.
 * CUID stitching is **not applied retroactively** beyond the processing window.
 
-To maximize cross-platform matching, always include a CUID in every in-app event sent.
+> 👍 **Tip**
+>
+> To maximize cross-platform matching, always include a CUID in every in-app event sent.
 
 ## Set up cross-platform attribution
 
 To set up cross-platform attribution, you need to apply a few settings in AppsFlyer and implement specific SDK functions in your app code.
 
-* **In AppsFlyer**, assign your apps to a product line, opt in to cross-platform attribution, and specify the inactivity restoration window. For more information, see [Set up a product line](/docs/product-line-group-apps-for-cross-platform-attribution#how-to-set-up-a-product-line).
+* **In AppsFlyer**, assign your apps to a product line, opt in to cross-platform attribution, and specify the inactivity restoration window. For more information, see <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution#how-to-set-up-a-product-line">Set up a product line</Anchor>.
 * **In your app**, set the AppsFlyer SDK to send events with CUIDs. For developer instructions, see [Set Customer User ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id).
 
 ## View cross-platform attribution results
 
-* **Report:** To view cross-platform attribution results, see the [Data Locker End-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker).
-* **My Dashboards:** Available via the "Cross Platform" template. For more information about selecting a dashboard template, see [Create a custom dashboard](/docs/my-dashboards#create-dashboard).
+* **Report:** To view cross-platform attribution results, see the <Anchor target="_blank" href="/marketers/docs/end-user-events-cross-platform-report-in-data-locker">Data Locker End-user events cross-platform report</Anchor>.
+* **My Dashboards:** Available via the "Cross Platform" template. For more information about selecting a dashboard template, see <Anchor target="_blank" href="/marketers/docs/my-dashboards#create-dashboard">Create a custom dashboard</Anchor>.
 
 ## Frequently Asked Questions (FAQs)
 

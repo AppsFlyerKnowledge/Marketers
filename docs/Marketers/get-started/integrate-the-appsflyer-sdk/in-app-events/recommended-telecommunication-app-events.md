@@ -1,8 +1,5 @@
 ---
 title: Recommended telecommunication app events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your telecommunication app .
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019896558-Recommended-telecommunication-app-events
 ---
-## ![telecommunications_icon.png](https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png) Telecommunication
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
+
+## <Image alt="telecommunications_icon.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Telecommunication
 
 Telecommunication apps enable users to purchase and manage cell phone plans, data plans, and so on. The typical events that we suggest recording include purchases, top-ups, and subscriptions.
 
@@ -35,14 +34,14 @@ Recording these events can help you determine:
 * What products or packages users can afford
 * Which plans are most likely to get long-term commitments from customers
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=telecommunication). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=telecommunication&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=telecommunication">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=telecommunication&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the  **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
 
@@ -156,7 +155,7 @@ When the user lands on the thank you page after a successful purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 2050.50 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 2050.50 |
 | af\_currency | Currency code | THB |
 | af\_content\_type | Name of the package bought | 5G |
 | af\_order\_id | Order ID | 9277 |
@@ -205,7 +204,7 @@ When the user completes the top-up
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Amount of the top-up | 2050.50 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Amount of the top-up | 2050.50 |
 | top\_up\_id | ID of the top-up | 397 |
 | payment\_method\_type | Type of payment method | credit card, local payment |
 
@@ -253,7 +252,7 @@ Recording this event can help you:
 | Name | Description | Example value |
 | --- | --- | --- |
 | subscription\_type | Type of subscription | Monthly 30 GB |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Amount of the subscription | 555.50 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Amount of the subscription | 555.50 |
 
 </Accordion>
 

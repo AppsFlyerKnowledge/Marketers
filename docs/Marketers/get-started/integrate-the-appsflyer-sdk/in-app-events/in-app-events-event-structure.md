@@ -1,8 +1,5 @@
 ---
 title: In-app events—Event structure
-excerpt: >-
-  View the list of predefined event names and event parameters to record
-  post-install in-app events (such as login, register, or in-app purchase).
 metadata:
   keywords:
     - iOS
@@ -28,11 +25,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481112081-In-app-events-Event-structure
 ---
+**At a glance:** View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase).
+
 ## Overview
 
 In-app events that you want to send require your developer to implement code where applicable in your app. This article describes the predefined event names and predefined event parameters.
 
-To help you determine what events and parameters to record, see our [articles that include examples and flows](/docs/in-app-events-overview#recommended-events-by-business-vertical) according to business verticals.
+To help you determine what events and parameters to record, see our <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#recommended-events-by-business-vertical">articles that include examples and flows</Anchor> according to business verticals.
 
 ## Predefined event names
 
@@ -127,7 +126,7 @@ Click the links to view the mapping to SRNs.
 
 **Description**: Used to record payment info configuration status
 
-**Appears in these verticals:** [Ride-hailing](/docs/recommended-ride-hailing-app-events#add-payment-info-af_add_payment_info), [Flight booking](/docs/recommended-flight-booking-app-events#add-payment-info-af_add_payment_info)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ride-hailing-app-events#add-payment-info-af_add_payment_info">Ride-hailing</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-flight-booking-app-events#add-payment-info-af_add_payment_info">Flight booking</Anchor>
 
 **Event mapping**:
 
@@ -154,9 +153,9 @@ Click the link to view the mapping to SRNs.
 
 <Accordion title="Add to cart (af_add_to_cart)">
 
-**Description**: Used to record add to cart events of specific items. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record add to cart events of specific items. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#add-to-cart-af_add_to_cart), [Healthcare](/docs/recommended-healthcare-app-events#add-to-cart-af_add_to_cart)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#add-to-cart-af_add_to_cart">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-healthcare-app-events#add-to-cart-af_add_to_cart">Healthcare</Anchor>
 
 **Event mapping:**
 
@@ -188,9 +187,9 @@ Click the links to view the mapping to SRNs.
 
 <Accordion title="Add to wishlist (af_add_to_wishlist)">
 
-**Description**: Used to record add to wishlist events of specific items. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record add to wishlist events of specific items. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#add-to-wishlist-af_add_to_wishlist), [Hotel booking](/docs/recommended-hotel-booking-app-events#add-to-wishlist-af_add_to_wishlist)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#add-to-wishlist-af_add_to_wishlist">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#add-to-wishlist-af_add_to_wishlist">Hotel booking</Anchor>
 
 **Event mapping:**
 
@@ -236,7 +235,7 @@ Roku Ads event mapping:
 
 **Description**: Used to record user registration methods
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#complete-registration-af_complete_registration), [eCommerce](/docs/recommended-ecommerce-app-events#complete-registration-af_complete_registration), [Entertainment](/docs/recommended-entertainment-app-events#complete-registration-af_complete_registration), [Finance and banking](/docs/recommended-finance-and-banking-app-events#complete-registration-af_complete_registration), [P2P lending](/docs/recommended-p2p-lending-app-events#complete-registration-af_complete_registration), [Online education](/docs/recommended-online-education-app-events#complete-registration-af_complete_registration), [Ride-hailing](/docs/recommended-ride-hailing-app-events#complete-registration-af_complete_registration), [Hotel booking](/docs/recommended-hotel-booking-app-events#complete-registration-af_complete_registration), [Healthcare](/docs/recommended-healthcare-app-events#complete-registration-af_complete_registration), [Telecommunication](/docs/recommended-telecommunication-app-events#complete-registration-af_complete_registration)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#complete-registration-af_complete_registration">Gaming</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#complete-registration-af_complete_registration">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-entertainment-app-events#complete-registration-af_complete_registration">Entertainment</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-finance-and-banking-app-events#complete-registration-af_complete_registration">Finance and banking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-p2p-lending-app-events#complete-registration-af_complete_registration">P2P lending</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-online-education-app-events#complete-registration-af_complete_registration">Online education</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-ride-hailing-app-events#complete-registration-af_complete_registration">Ride-hailing</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#complete-registration-af_complete_registration">Hotel booking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-healthcare-app-events#complete-registration-af_complete_registration">Healthcare</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-telecommunication-app-events#complete-registration-af_complete_registration">Telecommunication</Anchor>
 
 **Event mapping:**
 
@@ -263,9 +262,9 @@ Click the link to view the mapping to SRNs.
 
 <Accordion title="Content view (af_content_view)">
 
-**Description**: Used to record content view events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record content view events. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#content-view-af_content_view), [Flight booking](/docs/recommended-flight-booking-app-events#content-view-af_content_view), [Hotel booking](/docs/recommended-hotel-booking-app-events#content-view-af_content_view)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#content-view-af_content_view">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-flight-booking-app-events#content-view-af_content_view">Flight booking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#content-view-af_content_view">Hotel booking</Anchor>
 
 **Event mapping:**
 
@@ -324,9 +323,9 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 <Accordion title="Initiated checkout (af_initiated_checkout)">
 
-**Description**: Used to record checkout events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record checkout events. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#initiated-checkout-af_initiated_checkout), [Hotel booking](/docs/recommended-hotel-booking-app-events#initiated-checkout-af_initiated_checkout)
+**Appears in verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#initiated-checkout-af_initiated_checkout">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#initiated-checkout-af_initiated_checkout">Hotel booking</Anchor>
 
 **Event mapping:**
 
@@ -390,7 +389,7 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 **Description**: Used to record invite (social) events
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#invite-af_invite)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#invite-af_invite">Gaming</Anchor>
 
 **Event mapping:**
 
@@ -430,7 +429,7 @@ Roku Ads event mapping:
 
 **Description**: Used to record game level events
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#level-achieved-af_level_achieved)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#level-achieved-af_level_achieved">Gaming</Anchor>
 
 **Event mapping:**
 
@@ -460,7 +459,7 @@ Click the links to view the mapping to SRNs.
 
 **Description**: Used to record listings view events
 
-**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#list-view-af_list_view)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#list-view-af_list_view">eCommerce</Anchor>
 
 **Event mapping:**
 
@@ -489,7 +488,7 @@ Click the links to view the mapping to SRNs.
 
 **Description**: Used to record user login events
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#login-af_login), [eCommerce](/docs/recommended-ecommerce-app-events#login-af_login), [Entertainment](/docs/recommended-entertainment-app-events#login-af_login), [Finance and banking](/docs/recommended-finance-and-banking-app-events#login-af_login), [Online education](/docs/recommended-online-education-app-events#login-af_login), [Hotel booking](/docs/recommended-hotel-booking-app-events#login-af_login), [Healthcare](/docs/recommended-healthcare-app-events#login-af_login), [Telecommunication](/docs/recommended-telecommunication-app-events#login-af_login)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#login-af_login">Gaming</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#login-af_login">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-entertainment-app-events#login-af_login">Entertainment</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-finance-and-banking-app-events#login-af_login">Finance and banking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-online-education-app-events#login-af_login">Online education</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#login-af_login">Hotel booking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-healthcare-app-events#login-af_login">Healthcare</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-telecommunication-app-events#login-af_login">Telecommunication</Anchor>
 
 **Event mapping:**
 
@@ -531,11 +530,11 @@ Click the links to view the mapping to SRNs.
 
 **Description**: Used to record purchase events (and associate revenue to them).
 
-* For a list of currency symbols supported by AppsFlyer, click [here](https://docs.openexchangerates.org/docs/supported-currencies).
-* To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
-* To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+* For a list of currency symbols supported by AppsFlyer, click <Anchor target="_blank" href="https://docs.openexchangerates.org/docs/supported-currencies">here</Anchor>.
+* To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
+* To record and validate this event, see <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation</Anchor>.
 
-**Appears in verticals:** [Gaming](/docs/recommended-gaming-app-events#purchase-af_purchase), [eCommerce](/docs/recommended-ecommerce-app-events#purchase-af_purchase), [Online education](/docs/recommended-online-education-app-events#purchase-af_purchase), [Healthcare](/docs/recommended-healthcare-app-events#purchase-af_purchase), [Telecommunication](/docs/recommended-telecommunication-app-events#purchase-af_purchase)
+**Appears in verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#purchase-af_purchase">Gaming</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#purchase-af_purchase">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-online-education-app-events#purchase-af_purchase">Online education</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-healthcare-app-events#purchase-af_purchase">Healthcare</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-telecommunication-app-events#purchase-af_purchase">Telecommunication</Anchor>
 
 **Event mapping:**
 
@@ -598,7 +597,7 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 <Accordion title="Rate (af_rate)">
 
-**Description**: Used to record app/item rating events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record app/item rating events. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
 **Event mapping:**
 
@@ -655,7 +654,7 @@ Click the link to view the mapping to SRNs.
 
 **Description**: Used to record search events
 
-**Appears in these verticals:** [eCommerce](/docs/recommended-ecommerce-app-events#search-af_search), [Flight booking](/docs/recommended-flight-booking-app-events#search-af_search), [Hotel booking](/docs/recommended-hotel-booking-app-events#search-af_search)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events#search-af_search">eCommerce</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-flight-booking-app-events#search-af_search">Flight booking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#search-af_search">Hotel booking</Anchor>
 
 **Event mapping:**
 
@@ -714,7 +713,7 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 **Description**: Used to record sharing events
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#share-af_share)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#share-af_share">Gaming</Anchor>
 
 **Event mapping:**
 
@@ -740,9 +739,9 @@ Click the link to view the mapping to SRNs.
 
 <Accordion title="Spent credits (af_spent_credits)">
 
-**Description**: Used to record credit spend events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record credit spend events. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in verticals:** [Ride-hailing](/docs/recommended-ride-hailing-app-events#spent-credits-af_spent_credits)
+**Appears in verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-ride-hailing-app-events#spent-credits-af_spent_credits">Ride-hailing</Anchor>
 
 **Event mapping:**
 
@@ -771,9 +770,9 @@ Click the links to view the mapping to SRNs.
 
 <Accordion title="Start trial (af_start_trial)">
 
-**Description**: Used to record the start of a free trial of a product. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+**Description**: Used to record the start of a free trial of a product. To record and validate this event, see <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation</Anchor>.
 
-**Appears in these verticals:** [Entertainment](/docs/recommended-entertainment-app-events#start-trial-af_start_trial)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-entertainment-app-events#start-trial-af_start_trial">Entertainment</Anchor>
 
 **Event mapping:**
 
@@ -806,9 +805,9 @@ Click the links to view the mapping to SRNs.
 
 <Accordion title="Subscription (af_subscribe)">
 
-**Description**: Used to record paid subscription purchases. To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+**Description**: Used to record paid subscription purchases. To record and validate this event, see <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation</Anchor>.
 
-**Appears in these verticals:** [Entertainment](/docs/recommended-entertainment-app-events#subscription-af_subscribe)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-entertainment-app-events#subscription-af_subscribe">Entertainment</Anchor>
 
 **Event mapping:**
 
@@ -837,9 +836,9 @@ Click the links to view the mapping to SRNs.
 
 <Accordion title="Travel booking (af_travel_booking)">
 
-**Description**: Used to record travel booking events (and associate revenue to them). To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record travel booking events (and associate revenue to them). To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in these verticals:** [Flight booking](/docs/recommended-flight-booking-app-events#travel-booking-af_travel_booking), [Hotel booking](/docs/recommended-hotel-booking-app-events#travel-booking-af_travel_booking)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-flight-booking-app-events#travel-booking-af_travel_booking">Flight booking</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events#travel-booking-af_travel_booking">Hotel booking</Anchor>
 
 **Event mapping:**
 
@@ -899,9 +898,9 @@ Click the parameters that are relevant to your business needs to view the mappin
 
 <Accordion title="Tutorial completion (af_tutorial_completion)">
 
-**Description**: Used to record tutorial completions. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record tutorial completions. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
-**Appears in these verticals:** [Gaming](/docs/recommended-gaming-app-events#tutorial-completion-af_tutorial_completion), [Online education](/docs/recommended-gaming-app-events#tutorial-completion-af_tutorial_completion)
+**Appears in these verticals:** <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#tutorial-completion-af_tutorial_completion">Gaming</Anchor>, <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events#tutorial-completion-af_tutorial_completion">Online education</Anchor>
 
 **Event mapping:**
 
@@ -929,7 +928,7 @@ Click the links to view the mapping to SRNs.
 
 <Accordion title="Update (af_update)">
 
-**Description**: Used to record update events. To report an event containing multiple items, click [here](/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction).
+**Description**: Used to record update events. To report an event containing multiple items, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#can-i-add-multiple-items-to-a-single-transaction">here</Anchor>.
 
 **Event mapping:**
 
@@ -952,7 +951,7 @@ Click the link to view the mapping to SRNs.
 
 > 📘 **Note**
 >
-> In addition to the predefined event names described in this section, [Meta ads offers additional events](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping) that are sent without attributes.
+> In addition to the predefined event names described in this section, <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#predefined-event-mapping">Meta ads offers additional events</Anchor> that are sent without attributes.
 
 ## Predefined event parameters
 
@@ -960,7 +959,7 @@ The following section provides a list of the predefined event parameters. Each e
 
 > 📘 **Note**
 >
-> You can see the event parameters in the Event Value column in [raw data reports](/docs/raw-data-reporting-overview) (premium feature).
+> You can see the event parameters in the Event Value column in <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data reports</Anchor> (premium feature).
 
 <div id="af_adrev_ad_type" />
 
@@ -1370,7 +1369,7 @@ The following section provides a list of the predefined event parameters. Each e
 
 <Accordion title="af_net_revenue">
 
-**Description**: Net revenue reported for the event. The value represents net revenue according to your own business logic; AppsFlyer does not prescribe how it's calculated and aggregates the value you send. Common examples: revenue after app store fees and/or taxes, gross margin, or revenue after banking or service fees (ecommerce, finance, and so on). Used for the Net revenue metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit) in [My Dashboards](/docs/my-dashboards).
+**Description**: Net revenue reported for the event. The value represents net revenue according to your own business logic; AppsFlyer does not prescribe how it's calculated and aggregates the value you send. Common examples: revenue after app store fees and/or taxes, gross margin, or revenue after banking or service fees (ecommerce, finance, and so on). Used for the Net revenue metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit) in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor>.
 
 The value is in the transaction currency, expressed by af\_currency (default USD). Same formatting rules as af\_revenue: no comma separators, currency symbols, special characters, or text (for example, 1234.56), up to five decimal places.
 
@@ -1378,7 +1377,7 @@ The value is in the transaction currency, expressed by af\_currency (default USD
 
 > 📘 **Note**
 >
-> For apps with [ROI360 store revenue](/docs/about-roi360-store-revenue) enabled, AppsFlyer populates af\_net\_revenue automatically on the in-app purchase and subscription events it records, calculated as gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes).
+> For apps with <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">ROI360 store revenue</Anchor> enabled, AppsFlyer populates af\_net\_revenue automatically on the in-app purchase and subscription events it records, calculated as gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes).
 
 </Accordion>
 
@@ -1717,13 +1716,13 @@ The estimated revenue an advertiser expects from a user based on their early int
 
 <Accordion title="af_revenue">
 
-**Description**: Total amount of purchases. af\_revenue is counted as revenue in the AppsFlyer platform. It also counts [negative revenue](/docs/in-app-events-overview#revenue-in-in-app-events), from cancellations or refunds.
+**Description**: Total amount of purchases. af\_revenue is counted as revenue in the AppsFlyer platform. It also counts <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">negative revenue</Anchor>, from cancellations or refunds.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > The revenue value should not contain comma separators, currency, special characters, or text. For example, a revenue value should be, 1234.56. AppsFlyer provides revenue value with an accuracy of up to five decimal places.
 
-To learn more about how to use the revenue parameter, click [here](/docs/in-app-events-overview#revenue-in-in-app-events).
+To learn more about how to use the revenue parameter, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">here</Anchor>.
 
 **Net revenue:** To report net revenue alongside gross revenue, send [af\_net\_revenue](/docs/in-app-events-event-structure#h_01NEWAFNETREVENUE0001) as a custom event parameter. You define what net means for your business (for example, revenue after store fees and/or taxes, gross margin, or revenue after service fees). Apps with ROI360 store revenue enabled have it populated automatically on the purchase and subscription events it records, as gross minus app store fees and taxes.
 
@@ -1958,8 +1957,8 @@ The following is a list of predefined event parameters that do not include SRN m
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [In-app event postback configuration](/docs/in-app-event-postback-configuration)
+> * <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">In-app event postback configuration</Anchor>
 
 <div data-zendesk-anchors="h_01H9HT8C713A4NV9WCB0FJZJ4R=overview h_01H9HT8C7189W1JXAR3J3KT8KV=predefined-event-names h_01H9HT8C71MV7V7C75MB6ESHMM=achievement-unlocked-af_achievement_unlocked h_01H9HT8C7171PB7KAC83MYBWQ8=ad-click-af_ad_click h_01H9HT8C72KJ6ZA663SH7HJ7MP=ad-view-af_ad_view h_01H9HT8C72HSM88DJG0PDV5140=add-payment-info-af_add_payment_info h_01H9HT8C72BWFSPKWDVQW926WG=add-to-cart-af_add_to_cart h_01H9HT8C7228B57XKAACPZG8NK=add-to-wishlist-af_add_to_wishlist h_01K0PJ4C3HP9DMJT1DFZ848WF0=app-open-af_app_opened h_01H9HT8C72DX0DXBDHRJFG19G2=complete-registration-af_complete_registration h_01H9HT8C72SPY9VQ9AD648AKZK=content-view-af_content_view h_01H9HT8C722T2VH6A9257Q7T4P=initiated-checkout-af_initiated_checkout h_01H9HT8C72F0RZ4JS9929SE465=invite-af_invite h_01K0PJ4C3H72BDTRH7WAYW4V7S=lead-lead h_01H9HT8C72VFGC08Q858EX7XTN=level-achieved-af_level_achieved h_01H9HT8C72DZW77YTQ9KB0XEVG=list-view-af_list_view h_01H9HT8C720W10QEBCTPAGMRFB=login-af_login h_01H9HT8C72QC4WV10Z4JZTZM7D=opened-from-push-notification-af_opened_from_push_notification h_01H9HT8C7263J0YSX5K10R497N=purchase-af_purchase h_01H9HT8C73MPYMG8KSYE04DKDZ=rate-af_rate h_01H9HT8C734DAC6GPJE58DB5JD=reengage-af_re_engage h_01H9HT8C73YSYBK0YSDPRWDBNW=search-af_search h_01H9HT8C734GJ07V67QC9V3TVC=share-af_share h_01H9HT8C73H4VT2M0P3M1SYG88=spent-credits-af_spent_credits h_01H9HT8C73YWDCKAZPY0BVRS6F=start-trial-af_start_trial h_01H9HT8C736BF2VNRCFSJSVXWS=note h_01H9HT8C73N69S45H82NWQ5FN1=subscription-af_subscribe h_01H9HT8C73CD6HNT5GA6B4CHQ9=travel-booking-af_travel_booking h_01H9HT8C73NFDPS1P5AVXXZEX7=tutorial-completion-af_tutorial_completion h_01H9HT8C73JPH6Q9XFKA3GNYT8=update-af_update h_01H9HT8C74SGGK2FW92JH4BJPZ=note-1 h_01H9HT8C74N4TJZ5ZVBTKAX810=predefined-event-parameters h_01H9HT8C74VQ9ZWF079V50E5HE=note-2 h_01H9HT8C74Y0BWS565DFTY75KJ=af_adrev_ad_type h_01H9HT8C742NHGXFKWSS4P07K2=af_city h_01H9HT8C7442PFZEK7QC6R0K67=af_class h_01H9HT8C7462KG3030WWZ2XGZW=af_content h_01H9HT8C74ZX07907NXFHKGJ91=af_content_id h_01H9HT8C744CMWSYHJB74JFSS5=af_content_list h_01H9HT8C74GKGG5V4X54BCAADC=af_content_type h_01H9HT8C74RD08Z9EBZTKY5KSD=af_country h_01H9HT8C75BJYK4R3WYSN4BF43=af_currency h_01H9HT8C752E2PK6QKTA2GNGH5=af_customer_user_id h_01H9HT8C75BN0A92X9BRY4A74T=af_date_a h_01H9HT8C75406KV9264ZZT9DKM=af_date_b h_01H9HT8C7526AEHJAA7FM7442E=af_departing_arrival_date h_01H9HT8C75W9X61ZH0849EPDBY=af_departing_departure_date h_01H9HT8C75VEV3C8CJBDN6X5HW=af_description h_01H9HT8C75Z8TBZEPEY9EGSR4Y=af_destination_a h_01H9HT8C751G216VB6GYTPEPE1=af_destination_b h_01H9HT8C75CVM0MHSKTK2CZ8HD=af_destination_list h_01H9HT8C75CVVDFABSTN5R4MWT=af_hotel_score h_01H9HT8C75GEMHE2NHEFK9J7NT=af_level h_01H9HT8C7505H4CMY70EMDQWSF=af_max_rating_value af_net_revenue=h_01NEWAFNETREVENUE0001 h_01NEWAFNETREVENUENOTE0001=note-3 h_01H9HT8C75ST9XBDC3SR6XFDPB=af_num_adults h_01H9HT8C75NNZ5NP6PRPXDSKP8=af_num_children h_01H9HT8C757X70AAGNWFV0CKRY=af_num_infants h_01H9HT8C75A0HESE5FD10VD1P8=af_order_id h_01H9HT8C75B488VKY8SW9M4GG4=af_payment_info_available h_01H9HT8C75W7SRB0KF4E5FB2YF=af_preferred_neighborhoods h_01H9HT8C75GC61D1A0P6P42TMR=af_preferred_num_stops h_01H9HT8C76XRY6CD1TJEPCJJTR=af_preferred_price_range h_01H9HT8C76Y9ZQQ2X4EJT2DC14=af_preferred_star_ratings h_01H9HT8C76KCDRJKBWSM9JKFE1=af_price 01J9XHWVFHXPN6N3EZF1P8XWYM=af_projected_revenue h_01H9HT8C76Y5VXBKF3TBVVJG1C=af_quantity h_01H9HT8C768WXZ126Q425PHDWX=af_rating_value h_01H9HT8C76XX9J6FZ6RWQB6B6R=af_receipt_id h_01H9HT8C760S0F7QZMFYW1BKRD=af_region h_01H9HT8C76N4S3SGES5SQ2J4AC=af_registration_method h_01H9HT8C76ZR36A4CM2PY6PJ10=af_returning_arrival_date h_01H9HT8C760JPVXYC5WH9ZSDPX=af_returning_departure_date h_01H9HT8C76PYB14WPCQKSEK69J=af_revenue h_01H9HT8C762BGPRHFX228APEHR=important h_01H9HT8C76P55HN8K6D7PHFS2J=af_score h_01H9HT8C76TB4KNTZVD6JVPEYQ=af_search_string h_01H9HT8C762R2PJ573W8TJFJHG=af_subscription_id h_01H9HT8C76VZ6FA20K471V0EKK=af_success h_01H9HT8C76029H94AY5EHCZX6X=af_suggested_destinations h_01H9HT8C76N6C694TCPVCK4EC3=af_suggested_hotels h_01H9HT8C765EM1SAEJ67FNXZDE=af_travel_end h_01H9HT8C76YP8VEM5E6WB9NQ7T=af_travel_start h_01H9HT8C771SYQWQ8VBTPA2V2E=af_user_score h_01H9HT8C771XFSQJX42QVBNZAJ=af_validated h_01HDNZ30NH2QXSHD7B4EMFG4T5=see-also" />

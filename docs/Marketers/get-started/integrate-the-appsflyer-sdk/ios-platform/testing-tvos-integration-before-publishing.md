@@ -1,8 +1,5 @@
 ---
 title: Testing tvOS integration before publishing
-excerpt: >-
-  Simulate a non-organic install from your AppleTV device using the tvOS Test
-  App.
 metadata:
   keywords:
     - Testing
@@ -27,9 +24,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211758923-Testing-tvOS-integration-before-publishing
 ---
+**At a glance:** Simulate a non-organic install from your AppleTV device using the tvOS Test App.
+
 ## Overview
 
-AppleTV does not contain a browser. Therefore, you cannot test clicks or installs on the device for an **unpublished** app. (For **published** apps, you can [test using attribution links](/docs/testing-the-sdk-integration-for-marketers#testing-using-attribution-links)).
+AppleTV does not contain a browser. Therefore, you cannot test clicks or installs on the device for an **unpublished** app. (For **published** apps, you can <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#testing-using-attribution-links">test using attribution links</Anchor>).
 
 To test attribution on unpublished apps, you can use the **tvOS Test App.**
 
@@ -39,13 +38,13 @@ The tvOS Test App allows you to simulate an attribution link click from within y
 
 **To test attribution using the tvOS Test App:**
 
-1. Download the project from [here](https://github.com/AppsFlyerSDK/AppsFlyerFramework).
+1. Download the project from <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AppsFlyerFramework">here</Anchor>.
 2. From XCode, build the project to your AppleTV testing device.
 
    The following window displays:
 
    ![](https://files.readme.io/7ed3c5e8165e6d27c9d87db8b026c0898536b145def6bfedd0dc5f78c7804669-205289963.png)
-3. [Register](/docs/registering-test-devices) your AppleTV device as a test device using the **IDFA** displayed at the bottom of the app screen.
+3. <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Register</Anchor> your AppleTV device as a test device using the **IDFA** displayed at the bottom of the app screen.
 4. In the Test App, enter your AppID as it appears on your app’s dashboard.
 
    Make sure that the app you are testing is **not installed** on the device. To get a non-organic attribution, you must simulate a real scenario where the attribution link is clicked before the app is opened on **first** **launch**.

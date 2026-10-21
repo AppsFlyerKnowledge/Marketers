@@ -1,11 +1,5 @@
 ---
 title: Xsolla integration with AppsFlyer
-excerpt: >-
-  Xsolla, an AppsFlyer integrated partner, is a gaming commerce tech partner
-  specializing in payment processing outside of traditional app platforms. The
-  integration between Xsolla and AppsFlyer enables Xsolla to automate Web Shop
-  purchases and revenue to be sent to AppsFlyer, to present the full ROAS and
-  LTV of the game, including purchases made in the Xsolla Web Shop.
 metadata:
   keywords:
     - Marketers
@@ -26,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/23593013687185-Xsolla-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Xsolla, an AppsFlyer integrated partner, is a gaming commerce tech partner specializing in payment processing outside of traditional app platforms. The integration between Xsolla and AppsFlyer enables Xsolla to automate Web Shop purchases and revenue to be sent to AppsFlyer, to present the full ROAS and LTV of the game, including purchases made in the Xsolla Web Shop.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Integration types
 
@@ -39,7 +35,7 @@ There are two available integration methods with Xsolla:
 
 **Prerequisites:**
 
-* Before setting up the integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+* Before setting up the integration, make sure you <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact the partner</Anchor> and open an account with them.
 * To enable the integration to function properly, make sure to share the Customer User ID (CUID) with AppsFlyer, and that it matches the user ID shared with Xsolla. This alignment allows users to log in to Xsolla's Web Shop and ensures that user data is accurately sent to AppsFlyer.
 
 ## Setting up the tech partner integration
@@ -53,8 +49,8 @@ There are two available integration methods with Xsolla:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 The configuration window only uses the **Integration** tab.
 
@@ -64,15 +60,15 @@ The configuration window only uses the **Integration** tab.
 
 #### Activate partner
 
-On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Xsolla. Learn more about [partner activation](/docs/partner-activation-deactivation).
+On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Xsolla. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
 #### Advanced Privacy
 
-For iOS apps, the [Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
 
 #### Default postbacks
 
-AppsFlyer sends default postbacks to Xsolla following user installs. Use this section to [define these postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+AppsFlyer sends default postbacks to Xsolla following user installs. Use this section to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">define these postbacks</Anchor>.
 
 * **Off:** Install postbacks aren't sent to Xsolla.  
   **Note:** Xsolla's integration with AppsFlyer doesn't require sending install postbacks. Therefore, it's recommended to set it to Off.
@@ -139,14 +135,14 @@ This integration enables present LTV (Lifetime Value) data and insights for anal
 
 **To set up the integration:**
 
-1. **In AppsFlyer:** [Add the Xsolla app](/docs/adding-an-app-to-appsflyer?query=adding%20an%20app). Select [Web (PBA)](/docs/adding-an-app-to-appsflyer#web-pba) as the platform, and enter the following details:
+1. **In AppsFlyer:** <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer?query=adding%20an%20app">Add the Xsolla app</Anchor>. Select <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web-pba">Web (PBA)</Anchor> as the platform, and enter the following details:
    * Use your Web Shop domain as the web app URL. For example, if your Web Shop domain is [www.webshop.com,](http://www.webshop.com,) use this as your web app URL.
    * Use any value as the app name.
-2. **In AppsFlyer:** [Add the Xsolla bundle](/docs/pba-brand-bundles-and-settings#add-brand-bundle) with the following details:
+2. **In AppsFlyer:** <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#add-brand-bundle">Add the Xsolla bundle</Anchor> with the following details:
    1. Enter any bundle name as the bundle name.
    2. Select the web app you created in the previous step as the web app of the bundle.
 3. **In Xsolla:** Connect AppsFlyer with your Xsolla Publisher Account:
-   1. Open your project in your [Publisher Account](https://publisher.xsolla.com/).
+   1. Open your project in your <Anchor target="_blank" href="https://publisher.xsolla.com/">Publisher Account</Anchor>.
    2. Select your site and click **Configure**.
    3. On the **Site settings** tab, go to the **Apps** section.
    4. In the **AppsFlyer** block, click **Connect**.  
@@ -185,8 +181,8 @@ PC / Console support - the AppsFlyer integration with Xsolla does not support PC
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Xsolla documentation](https://developers.xsolla.com/solutions/web-shop/analytics/appsflyer/)
+> * <Anchor target="_blank" href="https://developers.xsolla.com/solutions/web-shop/analytics/appsflyer/">Xsolla documentation</Anchor>
 
 <div data-zendesk-anchors="h_01HST42K52VQDWCWGP7TQVFB2X=important h_01J3DB8MCNQKKKCV1M39KN7Q0H=integration-types setting-up-xsolla=setting-up-the-tech-partner-integration h_01HST42K52JKQ70F7Y5PHDZAZ5=setting-up-the-tech-partner-integration h_01HST42K52YZMTE3C2TBTK865M=integration-tab h_01HST42K52RCTSGRNRCJ1C70NP=activate-partner h_01HST42K52BBJ6JS5KM0WCN6CF=advanced-privacy h_01HST47F5BXWV5W8BNHS9M2MTN=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01H9FKEAV3GG6X17X3NCCSWJAS=in-app-event-postbacks h_01HST42K53GSMD91ACXY9DMP7S=attribution-link-tab h_01HST42K53D0PPXTM7MHBQ8P04=cost-tab h_01HST42K53YS8N6G2V0279F5GA=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab h_01J3DEZZHDPSRZRXDV6FD4HY6Q=setting-up-the-pba-web-sdk-integration h_01J3F247QEAFGRW7CEP941KZE9=finding-the-web-dev-key-in-appsflyer h_01JMHXRGB60RVZ399FNHS18ZHZ=identifying-xsollas-events-in-appsflyer h_01JMHXS5MZ7B781WNNVYMDGGFY=tech-partner-s2s-integration h_01JMHXX7VBPPS7GQ0VBGWRPT7X=web-sdk-integration h_01JN0HXSEJV9JPAXGSBM7B3X7X=traits-and-limitations h_01J1C78W0MP8KXFB4251FKWJBX=see-also" />

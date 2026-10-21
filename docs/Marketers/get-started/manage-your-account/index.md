@@ -15,5 +15,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551054625937-Manage-your-account
 ---
-- [Account management](/docs/account-management)
-- [Account security](/docs/account-security)
+- <Anchor target="_blank" href="/marketers/docs/account-management">Account management</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/account-security">Account security</Anchor>

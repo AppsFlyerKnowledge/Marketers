@@ -29,7 +29,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207032166-AppsFlyer-factory-preinstall-using-manifest-Android
 ---
-**At a glance:** Attribute app installs to device manufacturers for apps added to devices before leaving the factory. **Note**: See [all other preload attribution methods](/docs/appsflyer-attribution-model#preload-campaigns).
+**At a glance:** Attribute app installs to device manufacturers for apps added to devices before leaving the factory. **Note**: See <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">all other preload attribution methods</Anchor>.
 
 ![pre-install-intro-breakdown.png](https://files.readme.io/f14231089f68ffa90dc90700397463d363c08b8266e0d18677e9ccf3c28b0828-360002653365.png)
 
@@ -43,7 +43,7 @@ In pre-install campaigns, app owners can ask device manufacturers to **pre-insta
 
 Pre-install campaigns can also be a collaboration with 3rd party media sources, which work with various manufacturers on behalf of app owners.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > AppsFlyer counts an install once an app launches for the first time. Therefore, the number of displayed pre-installs is the number of users launching your app, and not the number of devices that have the app pre-installed on.
 
@@ -72,7 +72,7 @@ Pre-installs appear in the AppsFlyer dashboard under the attributed media source
 > Starting May 24, 2022:
 >
 > * Match\_type for factory preinstall campaigns is displayed as `preload_conf` in raw data reports.
-> * AppsFlyer displays in dashboards the ad network that drove the preload and ad networks that contributed to the first app launch. Learn more about [preload campaigns](/docs/appsflyer-attribution-model#preload-campaigns).
+> * AppsFlyer displays in dashboards the ad network that drove the preload and ad networks that contributed to the first app launch. Learn more about <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">preload campaigns</Anchor>.
 
 ## Setup
 
@@ -111,11 +111,11 @@ For example:
 
 In the **pre\_install.appsflyer** file, pass the additional parameters in JSON format. For example:
 
-```
+```json
 com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
 ```
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > It's important to note the following behavior when using this option:
 >
@@ -130,7 +130,7 @@ Once you have the pre\_install.appsflyer file, give it to the media source or ma
 
 The manufacturer places the ***pre\_install.appsflyer*** in a file path of its choosing. The **pre\_install.appsflyer** file permissions should be set to 744.
 
-The manufacturer then edits the system properties file in order to point to the ***pre\_install.appsflyer***file. To do so, the manufacturer needs to add a key-value pair to system properties.
+The manufacturer then edits the system properties file in order to point to the ***pre\_install.appsflyer*** file. To do so, the manufacturer needs to add a key-value pair to system properties.
 
 > 📘 **Note**
 >
@@ -179,14 +179,14 @@ To use this method, add the following method call in the AFApplication class bef
 
 #### When working with a media source
 
-```
+```java
 AppsFlyerLib.getInstance().setPreinstallAttribution("MEDIA_SOURCE_NAME", "CAMPAIGN_NAME", "123");
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
 
 #### When working with a manufacturer
 
-```
+```java
 AppsFlyerLib.getInstance().setPreinstallAttribution(android.os.Build.MANUFACTURER, "CAMPAIGN_NAME", "123");
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
@@ -214,7 +214,7 @@ In some cases, the install might not be attributed to the pre-install media sour
 * A user with a new device updates the pre-installed app directly from Google Play without first launching it, the install is considered organic.
 * A user with a new device updates the app from Google Play after clicking an ad, the install is attributed to the media source that serves the ad.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > You can implement logic in the app to make sure that the install is counted as pre-install, even if the scenarios above take place. Both the Play Store APK and the APK intended for Pre Install should contain that logic.
 >
@@ -233,7 +233,7 @@ The name in the manifest method requires you to add a metadata tag to the app's 
 
 Add a metadata tag before the closing application tag:
 
-```
+```html
 ...
     <meta-data android:name="AF_PRE_INSTALL_NAME" android:value="market_name"/>
   </application>
@@ -277,11 +277,11 @@ The pathway method allows you to specify a path to a file that holds the name of
 
    You can specify additional pre-install parameters in the file using JSON. For example, you can add the following key-value pair in the **pre\_install.appsflyer** file:
 
-   ```
+   ```json
    com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
    ```
 
-   > 📘 **Important!**
+   > 🚧 **Important!**
    >
    > It's important to note the following behaviors when using this option:
    >
@@ -295,7 +295,7 @@ The pathway method allows you to specify a path to a file that holds the name of
 2. Talk to the media source or manufacturer and agree with them on a path where they put the file. The recommended path is "/data/local/tmp/pre\_install.appsflyer".
 3. Once a path is agreed upon, specify it in the manifest file. Place the following snippet before the closing application tag:  
 
-   ```xml
+   ```html
    <meta-data android:name="AF_PRE_INSTALL_PATH" 
          android:value="/data/local/temp/pre_install.appsflyer" />
    ```
@@ -310,7 +310,7 @@ Once the app launches, the SDK looks inside the manifest file, sees the specifie
 
 AppsFlyer looks for the **pre\_install.appsflyer** file in two default paths:
 
-```
+```bash
 /data/local/tmp/pre_install.appsflyer
 OR 
 /etc/pre_install.appsflyer
@@ -318,7 +318,7 @@ OR
 
 Some manufacturers prefer to put the file in a non-default path. In such case you can specify this non-default path in the manifest file.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Non-default path requires SDK version 4.8 or later
 >
@@ -341,12 +341,12 @@ If a **non-default path** is used, the install might not be attributed to the pr
 
 This section demonstrates how to test and verify your pre-install configuration.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> Before you start testing, make sure to [allowlist the devices](/docs/registering-test-devices) you are using for testing.
+> Before you start testing, make sure to <Anchor target="_blank" href="/marketers/docs/registering-test-devices">allowlist the devices</Anchor> you are using for testing.
 > Also, make sure to set the debug log to true in the AFApplication class.
 >
-> ```
+> ```java
 > AppsFlyerLib.getInstance().setDebugLog(true);
 > ```
 
@@ -354,7 +354,7 @@ This section demonstrates how to test and verify your pre-install configuration.
 
 <Accordion title="Verifying the configuration in the app">
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > To avoid caching issues and for best results, it is recommended that you clean the project before building it. In Android Studio, click on ***Build*** in the context menu and choose ***Clean Project***.
 
@@ -399,7 +399,7 @@ If you have campaigns for several apps that are installed on the same device, yo
 * SDK API method - for each app, specify the media source or manufacturer in the SDK API method for pre-install.
 * For system properties or pathway methods - can specify the apps and their corresponding media source in the ***pre\_install.appsflyer*** file. Each app info should be added in a new line in the file. For example:
 
-  ```
+  ```bash
   com.appsflyer.tester=market_name
   com.newapp.newapp=market_name
   com.game.king=market_name
@@ -411,11 +411,11 @@ If you have campaigns for several apps that are installed on the same device, yo
 
 <Accordion title="Sending install postbacks">
 
-If the media source or manufacturer that you collaborate with is an [AppsFlyer partner](/docs/set-up-an-integrated-partner#your-integrated-partners), you can enable postbacks for installs.
+If the media source or manufacturer that you collaborate with is an <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#your-integrated-partners">AppsFlyer partner</Anchor>, you can enable postbacks for installs.
 
 To do so, make sure that the media source name is equivalent to the media source pid as it is configured by AppsFlyer.
 
-For example, if you are collaborating with market\_name, its pid is market\_name\_int. You can see the pid by examining the [attribution link of an integrated partner](/docs/set-up-an-integrated-partner#click-through-attribution).
+For example, if you are collaborating with market\_name, its pid is market\_name\_int. You can see the pid by examining the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#click-through-attribution">attribution link of an integrated partner</Anchor>.
 
 </Accordion>
 

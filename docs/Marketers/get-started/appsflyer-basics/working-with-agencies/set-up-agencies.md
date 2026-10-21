@@ -1,6 +1,5 @@
 ---
 title: Set up agencies
-excerpt: 'Get started working with agencies in AppsFlyer: all the details in this video!'
 metadata:
   keywords:
     - Advertisers
@@ -24,13 +23,15 @@ x-zendesk:
   section_id: 6551289835025
   url: https://support.appsflyer.com/hc/en-us/articles/360004013198-Set-up-agencies
 ---
+**At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
+
 Watch the video below to learn:
 
 * What is the attribution flow when working with agencies?
 * How to set up an agency integration with your app?
 * How can you get both the agency and ad network attribution data?
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:
 >
@@ -43,6 +44,6 @@ Watch the video below to learn:
 >
 > **Note:** If the advertiser deactivates the partner without first turning off these settings, the agencies may continue to use these attribution capabilities.
 
-<Embed title="Set up agencies" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/3oc17c9r89" height="556px" />
+<Image alt="" src="https://fast.wistia.com/embed/medias/3oc17c9r89/swatch" width="100%" />
 
 <div data-zendesk-anchors="h_01KC9MDDRPTB05PV6NCGZVFRMJ=important" />

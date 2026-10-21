@@ -15,5 +15,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551212604305-Google-Marketing-Platform-GMP
 ---
-- [Google Marketing Platform - Display & Video 360 (DV360) integration](/docs/google-marketing-platform-display-video-360-dv360-integration)
-- [GMP use case of traffic measurement from 3rd parties in CMP360](/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360)
+- <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration">Google Marketing Platform - Display & Video 360 (DV360) integration</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">GMP use case of traffic measurement from 3rd parties in CMP360</Anchor>

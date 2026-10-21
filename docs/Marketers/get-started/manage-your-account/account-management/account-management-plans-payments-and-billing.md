@@ -1,8 +1,5 @@
 ---
 title: Account management—plans, payments, and billing
-excerpt: >-
-  Learn about AppsFlyer plans and premium add-on features. See how plan usage
-  and invoices are calculated. Manage your account.
 metadata:
   keywords:
     - Advertisers
@@ -34,6 +31,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000136303-Account-management-plans-payments-and-billing
 ---
+**At a glance:** Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account.
+
 ## AppsFlyer plans and usage
 
 <div id="appsflyer-plans" />
@@ -50,9 +49,9 @@ Every new account begins with a default **Welcome** plan (after completing the s
 | **Zero** | <ul><li>Measures engagement only: clicks and impressions</li><li>Doesn't measure attribution</li><li>Free forever with no need to provide payment details</li></ul> |
 | **Growth** | <ul><li>Measures engagement: clicks and impressions</li><li>Measures attribution. Account is billed per conversion</li><li>Payment and billing details must be provided</li></ul> |
 | **Enterprise** | <ul><li>A plan customized to meet your needs. The measurement of usage depends on the terms of the plan</li><li>Payment and billing details must be provided</li></ul> |
-| [**Deep Linking Suite (OneLink Standalone**](/docs/onelink-standalone-deep-linking-suite)) | <ul><li>Deep linking and redirection solution</li><li>Supports owned media attribution only<ul><li>Partner attribution integrations aren’t supported</li></ul></li><li>Available in 3 packages (with different levels of access of OneLink features):<ul><li>Standard</li><li>Advanced</li><li>Premium</li></ul></li></ul> |
+| <Anchor target="_blank" href="/marketers/docs/onelink-standalone-deep-linking-suite">**Deep Linking Suite (OneLink Standalone**</Anchor>) | <ul><li>Deep linking and redirection solution</li><li>Supports owned media attribution only<ul><li>Partner attribution integrations aren’t supported</li></ul></li><li>Available in 3 packages (with different levels of access of OneLink features):<ul><li>Standard</li><li>Advanced</li><li>Premium</li></ul></li></ul> |
 
-Learn more about all included features and [compare plans](https://www.appsflyer.com/pricing/).
+Learn more about all included features and <Anchor target="_blank" href="https://www.appsflyer.com/pricing/">compare plans</Anchor>.
 
 </Accordion>
 
@@ -84,12 +83,12 @@ You can check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsfl
 
 Any [add-ons](/docs/account-management-plans-payments-and-billing#premium-add-on-units) you've included in your plan are premium features. For example:
 
-* [Protect360](/docs/protect360-anti-fraud-guide) (mobile fraud protection)
-* [ROI360](/docs/roi360-cost-aggregation-overview) (cost data)
-* [Audiences](/docs/audiences-guide)
-* [Pivot table](/docs/pivot-table-user-metrics)
-* [Data Locker](/docs/data-locker-for-marketers)
-* [ESP integration](/docs/email-service-provider-esp-integration-guide)
+* <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> (mobile fraud protection)
+* <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">ROI360</Anchor> (cost data)
+* <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot table</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">ESP integration</Anchor>
 
 To learn more about these add-ons and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
@@ -102,9 +101,9 @@ The different units on which a plan can be based:
 | Non-organic installs (NOI) | New app installs attributed to a media source | <ul><li>Overview dashboard</li><li>[Billing for iOS apps](/docs/account-management-plans-payments-and-billing#conversion-measurement-options-for-ios-app-billing)</li></ul> |
 | Re-engagements | Existing users engaging in a retargeting campaign, which leads to app launches | Overview dashboard |
 | Re-attributions | Former users engaging in a retargeting campaign, which leads to new app installs and app launches | Overview dashboard |
-| Monthly active users (MAU) | The number of unique users who opened the app during the invoice month | [Activity dashboard metrics](/docs/activity-dashboard#metric-definitions) |
-| In-app events | Any action performed by a user in your app following the install. For example, login, tutorial completed, purchase, and achieved game level. | [Rich in-app events guide](/docs/in-app-events-overview) |
-| Non-direct web conversions  <br />(for PBA packages) | Any user action on your website that:<ul><li>You've defined it as a conversion</li><li>It was attributed as a referred visit (originating from a web campaign)</li></ul> | [People-Based Attribution (PBA)](/docs/people-based-attribution-pba-overview) |
+| Monthly active users (MAU) | The number of unique users who opened the app during the invoice month | <Anchor target="_blank" href="/marketers/docs/activity-dashboard#metric-definitions">Activity dashboard metrics</Anchor> |
+| In-app events | Any action performed by a user in your app following the install. For example, login, tutorial completed, purchase, and achieved game level. | <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Rich in-app events guide</Anchor> |
+| Non-direct web conversions  <br />(for PBA packages) | Any user action on your website that:<ul><li>You've defined it as a conversion</li><li>It was attributed as a referred visit (originating from a web campaign)</li></ul> | <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">People-Based Attribution (PBA)</Anchor> |
 
 #### Premium add-on units
 
@@ -112,7 +111,7 @@ The units on which additional measured add-ons can be based:
 
 | Unit | Description | Learn more |
 | --- | --- | --- |
-| ROI360 dollar units | Recorded dollar units of your ad cost, in-app ad revenue, and in-app purchase revenue (including subscriptions), measured by the ROI360 add-on. Each unit represents $1 of the recorded ROI360 measurement. | [ROI360—cost and revenue data](/docs/roi360-guide-cost-and-revenue-data) |
+| ROI360 dollar units | Recorded dollar units of your ad cost, in-app ad revenue, and in-app purchase revenue (including subscriptions), measured by the ROI360 add-on. Each unit represents $1 of the recorded ROI360 measurement. | <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">ROI360—cost and revenue data</Anchor> |
 
 #### ROI360 dollar units
 
@@ -168,7 +167,7 @@ The page includes 3 tabs: **My plan**, **Payment and invoices**, and **Billing d
 
 > 📘 **Note**
 >
-> Only account admins and account [users with appropriate permissions](/docs/user-management#manage-roles) can access this page.
+> Only account admins and account <Anchor target="_blank" href="/marketers/docs/user-management#manage-roles">users with appropriate permissions</Anchor> can access this page.
 
 **To access the Account page:**
 
@@ -187,7 +186,7 @@ From the **My plan** tab, you can see the details of your current plan, review p
 | <span id="details"></span>**Plan details** | Includes details that differ by plan, such as those listed below:<ul><li>Plan start and end date</li><li>**Remaining units:** The remaining number of [units](/docs/account-management-plans-payments-and-billing#plan-units) available in your plan</li><li>**Extra unit cost:** Cost per unit after the regular units have been used up</li><li>**Clicks:** The number of clicks included in your plan</li><li>**Impressions:** The number of impressions included in your plan</li><li>**Organic installs:** The number of organic installs included in your plan</li><li>**Users:** The number of users included in your plan</li></ul> |
 | <span id="features"></span>**Included features** | A list of the features included in your plan |
 | <span id="usage"></span>**Plan usage** | Shows the [unit](/docs/account-management-plans-payments-and-billing#plan-units) usage in your plan, since the last update (UTC). You can view and [download usage reports](/docs/account-management-plans-payments-and-billing#download-a-usage-report) to get aggregated data on unit usage.  <br />**Note:** Your [invoice payment](/docs/account-management-plans-payments-and-billing#payments-and-invoices) depends on the number of units used and the add-ons included according to [your plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans). |
-| <span id="addons"></span>**Add-ons** | Add-ons included in your plan and their start/end dates. These are premium features, for example:<ul><li>[Protect360](/docs/protect360-anti-fraud-guide): Mobile fraud protection</li><li>[ROI360](/docs/roi360-cost-aggregation-overview): Cost data</li><li>[Audiences](/docs/audiences-guide)</li><li>[Pivot table](/docs/pivot-table-user-metrics)</li><li>[Data Locker](/docs/data-locker-for-marketers)</li></ul>To learn more about these features and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com). |
+| <span id="addons"></span>**Add-ons** | Add-ons included in your plan and their start/end dates. These are premium features, for example:<ul><li><Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Mobile fraud protection</li><li><Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Cost data</li><li><Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot table</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>To learn more about these features and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Future plan** | This section appears only when a future plan has been purchased. If this is the case, you'll see details on your next plan here. |
 
 ### Usage Report
@@ -202,7 +201,7 @@ The Usage Report page shows your billable conversions and your return on investm
 **Prerequisite:**
 
 * Only account admins and account users with the following permissions can access the Usage Report page:
-  * Access the**Account** page
+  * Access the **Account** page
   * Access to all apps, media sources, and geos
 
 **To access the Usage Report page:**
@@ -231,7 +230,7 @@ The Usage Report page shows your billable conversions and your return on investm
 > 📘 **Note**
 >
 > * Usage reports and invoices are calculated based on the UTC+0 time zone. As a result, there may be slight discrepancies between usage reports and the data reported on dashboards, Cohort reports, and other aggregated reports.
-> * Data in the usage report remains **non-transparent** whether or not [**Allow transparency**](/partners/docs/getting-started-agency-onboarding#transparency) is turned on, meaning they show the agency name and not the attributed media source
+> * Data in the usage report remains **non-transparent** whether or not <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#transparency">**Allow transparency**</Anchor> is turned on, meaning they show the agency name and not the attributed media source
 
 #### Usage report fields
 
@@ -245,9 +244,9 @@ See below the field specifications for measurement conversions and ROI360 events
 | --- | --- |
 | <span id="date"></span>**Date** | Conversion date |
 | <span id="account-name"></span>**Account** | AppsFlyer account or sub-account name |
-| <span id="appbundle-id"></span>**App/Bundle** | App ID from the relevant app store -***or-*** Bundle ID from [AppsFlyer People-Based Attribution](/docs/people-based-attribution-pba-overview) |
+| <span id="appbundle-id"></span>**App/Bundle** | App ID from the relevant app store -***or-*** Bundle ID from <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">AppsFlyer People-Based Attribution</Anchor> |
 | <span id="media-source"></span>**Media Source** | The media source to which the conversions were attributed.  <br />**Note:** When a media source uses an agency, the agency name appears and not the media source, regardless of the **Allow transparency** toggle state. |
-| <span id="conversion-source"></span>**Conversion** | Source of aggregate attribution data. Possible values include:<ul><li>**Real-time attribution (RTA):** AppsFlyer is the source of aggregate attribution data</li><li>**SKAd Network:** SKAdNetwork is the source of aggregate attribution data</li><li>**Protect360 - post attribution:** Adjustments for previous attributions and in-app events identified as fraud by [AppsFlyer Protect360](/docs/protect360-anti-fraud-guide)</li><li>**People-based attribution (PBA):** Web conversions attributed as referred visits by AppsFlyer PBA</li></ul> |
+| <span id="conversion-source"></span>**Conversion** | Source of aggregate attribution data. Possible values include:<ul><li>**Real-time attribution (RTA):** AppsFlyer is the source of aggregate attribution data</li><li>**SKAd Network:** SKAdNetwork is the source of aggregate attribution data</li><li>**Protect360 - post attribution:** Adjustments for previous attributions and in-app events identified as fraud by <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">AppsFlyer Protect360</Anchor></li><li>**People-based attribution (PBA):** Web conversions attributed as referred visits by AppsFlyer PBA</li></ul> |
 | <span id="conversion-type"></span>**Conversion type** | Type of attributed conversions. Possible [unit](/docs/account-management-plans-payments-and-billing#plan-units) values include:<ul><li>Non-organic installs (NOI)</li><li>Re-engagements</li><li>Re-attributions</li><li>Organic installs</li><li>App opens</li><li>Organic app opens</li><li>In-app events</li><li>Organic in-app events</li><li>Monthly active users (MAU)</li><li>Direct web conversion events</li><li>Non-direct web conversion events</li><li>Direct web standard events</li><li>Non-direct web standard events</li></ul>The **Conversion type** field is **not** populated for **Protect360 - post attribution** conversions. |
 | <span id="total-conversions"></span>**Billable Conversions** | The number of conversions for which your account is charged.<ul><li>The number of conversions varies according to the selected filters</li><li>Billable data doesn't include non-chargeable conversions, such as organic installs and non-countable contract obligations (for example, fraud-related installs, free trial, transferred or deleted apps). This may result in fewer conversions compared to the total number of conversions in the dashboards.</li><li>**Protect360 - post attribution** conversions are always **negative** since they reverse charge conversions identified as fraud.</li><li>Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms.</li><li>For more information about how iOS app conversions are calculated, see [Billing for iOS apps](/docs/account-management-plans-payments-and-billing#conversion-measurement-options-for-ios-app-billing) (below).</li></ul> |
 
@@ -261,7 +260,7 @@ See below the field specifications for measurement conversions and ROI360 events
 | --- | --- |
 | **Date** | The date of the ROI360 event. |
 | **Account** | AppsFlyer account or sub-account name |
-| **App/Bundle** | App ID from the relevant app store -***or-*** Bundle ID from [AppsFlyer People-Based Attribution](/docs/people-based-attribution-pba-overview) |
+| **App/Bundle** | App ID from the relevant app store -***or-*** Bundle ID from <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">AppsFlyer People-Based Attribution</Anchor> |
 | **Media Source** | The media source to which the event type was attributed.  <br />**Note:** When a media source uses an agency, the agency name appears and not the media source, regardless of the **Allow transparency** toggle state. |
 | **Source** | The source of aggregate attribution data, which reflects the value of **ROI360**. |
 | **Event type** | Types of ROI360 events, including the following (in USD):<ul><li>Purchase revenue</li><li>Cost</li><li>Ad revenue</li></ul> |
@@ -318,7 +317,7 @@ Learn about the payment options available for your AppsFlyer invoices and why AC
 
 ACH is the fastest, most reliable, and most cost-efficient way for US customers to pay. We strongly encourage all US-based clients to select ACH as their primary payment method for the best experience.
 
-See the video below for a quickwalk-through on how ACH works and why many finance teams are making the switch.
+See the video below for a quick walk-through on how ACH works and why many finance teams are making the switch.
 
 <Embed title="Account management—plans, payments, and billing" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vfPp97vNFVM?si=R2AEEFyM2N989zhD?badge=0" providerUrl="https://www.youtube.com" />
 
@@ -365,24 +364,24 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 2. Go to the **Payments & invoices** tab.
    1. For recurring payment, click **Update payment method** under the **Payment method** section.  
 
-      ![2025-12-04_10-47-01.png](https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png)
+      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. For PayNow payments, click **Pay** next to any unpaid invoices under the **Invoices** section.  
 
-      ![2025-12-04_10-49-59.png](https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png)
+      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. In the pop-up, select **Bank account** -> **Next.**  
 
-   ![2025-12-08_12-14-41.png](https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png)
+   <Image alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
 4. Fill in your details and select your bank.  
 
-   ![2025-12-08_12-15-37.png](https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png)
+   <Image alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
 5. You will be redirected to your Banking portal to sign in and authorize our ACH provider, Stripe, to provide payment processing services.  
 
-   ![2025-12-08_12-16-39.png](https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png)
+   <Image alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
 6. Choose either:
    1. **Save with Link** - To save your ACH log in to Stripe Link for future use on other sites.
    2. **Not now** - to not save your ACH log in to Stripe Link.  
 
-      ![2025-12-08_12-17-44.png](https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png)
+      <Image alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
 7. Click **Accept** to update payment details and pay with ACH.
 
 </Accordion>
@@ -397,10 +396,10 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 2. Go to the **Payments & invoices** tab.
    1. For recurring payment, click **Update payment method** under the **Payment method** section.  
 
-      ![2025-12-04_10-47-01.png](https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png)
+      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. For PayNow payments, click **Pay** next to any unpaid invoices under the **Invoices** section.  
 
-      ![2025-12-04_10-49-59.png](https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png)
+      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. In the pop-up, select **Credit card** -> **Next.**
 4. Fill in your details and click **Save**.
 
@@ -498,18 +497,18 @@ Certain countries, listed in the table below, require us to record your company 
 
 | Country | Additional information on tax-related requirements |
 | --- | --- |
-| Canada | [GST/HST program account number](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html) |
-| EU countries | [VAT Information Exchange System (VIES)](https://ec.europa.eu/taxation_customs/vies/#/vat-validation) |
-| Israel | [Israeli VAT registration](https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html) |
+| Canada | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">GST/HST program account number</Anchor> |
+| EU countries | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">VAT Information Exchange System (VIES)</Anchor> |
+| Israel | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">Israeli VAT registration</Anchor> |
 
 ### Conversion measurement options for iOS app billing
 
 Since the introduction of iOS 14.5, AppsFlyer offers two possible methods to determine campaign performance and attribution for iOS apps:
 
-* [**Single Source of Truth (SSOT)**](/docs/single-source-of-truth-ssot-guide-for-ios-attribution): If you have SSOT configured in AppsFlyer SKAN Conversion Studio, this method will automatically be used for billing.
+* <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">**Single Source of Truth (SSOT)**</Anchor>: If you have SSOT configured in AppsFlyer SKAN Conversion Studio, this method will automatically be used for billing.
 * **If you haven't turned on SSOT:** AppsFlyer runs a side-by-side comparison of the number of daily conversions measured by SKAdNetwork and those measured by our privacy-centric RTA (real-time attribution) for each media source. These two methods run independently and in parallel. The higher of the two numbers is taken into account for billing. This ensures that you're never charged twice for a conversion event.
 
-[Learn more](https://content.appsflyer.com/ios-14-hub/billing/) about AppsFlyer iOS billing policy.
+<Anchor target="_blank" href="https://content.appsflyer.com/ios-14-hub/billing/">Learn more</Anchor> about AppsFlyer iOS billing policy.
 
 </Accordion>
 

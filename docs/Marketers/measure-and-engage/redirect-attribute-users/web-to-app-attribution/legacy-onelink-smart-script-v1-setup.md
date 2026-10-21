@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4415354290321--Legacy-OneLink-Smart-Script-V1-setup
 ---
-**At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users. **Note**: Although not mandatory, consider migrating to [OneLink Smart Script V2](/docs/set-up-smart-script-to-convert-web-visitors).
+**At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users. **Note**: Although not mandatory, consider migrating to <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">OneLink Smart Script V2</Anchor>.
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/89302407b5a7fb98299ce5255393651cc147ed963b0b17a6f74effbc0f7e16e0-4723094404753.png)
 
@@ -32,7 +32,7 @@ x-zendesk:
 
 There are two versions of OneLink Smart Script:
 
-[**OneLink Smart Script V2 (recommended)**](/docs/set-up-smart-script-to-convert-web-visitors): If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. The developer work portion is easier, and it can also be set up using Google Tag Manager. **Note**: Although not mandatory, consider migrating to V2. 
+<Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">**OneLink Smart Script V2 (recommended)**</Anchor>: If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. The developer work portion is easier, and it can also be set up using Google Tag Manager. **Note**: Although not mandatory, consider migrating to V2. 
 
 **OneLink Smart Script V1 (legacy)**: If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. 
 
@@ -42,14 +42,14 @@ There are two versions of OneLink Smart Script:
 
 | **Who's involved**<ul><li>**Advertiser**:<ul><li>Decides what the outgoing URL should contain. This includes what attribution data to append to the link, and data required for deep linking. Either by manipulating the incoming URL or by forcing certain values.</li><li>Makes sure all campaigns leading to the mobile website have incoming URLs with parameters that the script works for.</li></ul></li><li>**Web developer**:<ul><li>Configures the data to initialize the script.</li><li>Enters the setters necessary to generate the outgoing OneLink URLs based on the incoming URL parameters provided by the marketer. This includes mandatory and optional parameters.</li><li>Embeds the script in the website or specific page/s.</li></ul></li></ul> |
 | --- |
-| **Prerequisites**<ul><li>An AppsFlyer account with at least one app.</li><li>A [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) that serves as the value of the [OneLinkURL parameter](/docs/legacy-onelink-smart-script-v1-setup#parameters).</li></ul> |
+| **Prerequisites**<ul><li>An AppsFlyer account with at least one app.</li><li>A <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor> that serves as the value of the [OneLinkURL parameter](/docs/legacy-onelink-smart-script-v1-setup#parameters).</li></ul> |
 
 **To implement the script on the web page**:
 
 1. Decide what parameters/values the automatically-generated outgoing OneLink URL should contain. See the [list of parameters](/docs/legacy-onelink-smart-script-v1-setup#parameters) you can use.
    * Make sure that all campaigns with incoming URLs have parameters that the script works for (and can place as the **pid** and **c** parameters).
 2. Provide the [list of parameters](/docs/legacy-onelink-smart-script-v1-setup#parameters) to the web developer.
-3. Tell the developer to follow the [dev instructions](https://dev.appsflyer.com/hc/docs/onelink-smart-script) and implement the script so the correct outgoing link is generated.
+3. Tell the developer to follow the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script">dev instructions</Anchor> and implement the script so the correct outgoing link is generated.
 
 </Accordion>
 
@@ -67,9 +67,9 @@ There are two versions of OneLink Smart Script:
 | pidStaticValue | <ul><li>State what you want your "fallback" media source to be.</li><li>If a media source parameter is not found in your pidKeysList, the pidStaticValue is used as the media source (pid) in the outgoing URL.</li><li>Example: 'website' or 'landing\_page'</li></ul> |  |
 | campaignKeysList (campaigns) | <ul><li>List all the campaign parameter/s in the incoming URL that will be placed as the campaign (c) parameter in the outgoing URL.</li><li>Example: ['af\_campaign', 'utm\_campaign']</li></ul> |  |
 | campaignStaticValue | <ul><li>State what you want your "fallback" campaign to be.</li><li>If a campaign parameter is not found in your campaignKeysList, the campaignStaticValue is used as the campaign (c) in the outgoing URL.</li><li>Example: 'website' or 'landing\_page'</li></ul> |  |
-| gclIdParam | <ul><li>State what to call the parameter that carries the [GCLID](https://support.google.com/google-ads/answer/9744275?hl=en).<br />**Note**! To display in AppsFlyer raw data reports, the param must be one of **af\_sub[1-5]**.</li></ul> |  |
+| gclIdParam | <ul><li>State what to call the parameter that carries the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9744275?hl=en">GCLID</Anchor>.<br />**Note**! To display in AppsFlyer raw data reports, the param must be one of **af\_sub[1-5]**.</li></ul> |  |
 | skipList | <ul><li>List the strings in the HTTP referrer that disable the Smart Script for a particular click (for example Twitter or Facebook). If the strings are found, the Smart Script doesn't run. This can be useful for SRNs like X Ads and Meta ads, for which clicks are already reported.</li><li>If you always want the Smart Script to run, even for SRNs, tell the developer to pass an empty skip list.</li></ul> |  |
-| Other query parameters | <ul><li>List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking.</li><li>Add a **deep\_link\_value** for deep linking.<ul><li>In addition to adding the param, you and your developer need to implement the deep linking logic. [Learn more](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).</li></ul></li><li>You can either use parameters from the incoming URL, or force a static value.</li></ul> |  |
+| Other query parameters | <ul><li>List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking.</li><li>Add a **deep\_link\_value** for deep linking.<ul><li>In addition to adding the param, you and your developer need to implement the deep linking logic. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Learn more</Anchor>.</li></ul></li><li>You can either use parameters from the incoming URL, or force a static value.</li></ul> |  |
 
 </Accordion>
 
@@ -83,9 +83,9 @@ The following sections provide Smart Script use cases for some common campaign/m
 
 Meta ads is an SRN that doesn't use external attribution links.
 
-Upon first app launch, AppsFlyer queries Meta ads whether the user has previously (within the last [7 days](/docs/meta-ads-discrepancies#click-through-and-view-through-attribution)) engaged with an ad for the app. If the user has engaged with a Facebook ad of the advertiser, Meta ads self-attributes. Meta ads also attributes cross-platform, meaning that the user may interact with any type of campaign, mobile or not, on any platform, to be self-attributed by Meta ads.
+Upon first app launch, AppsFlyer queries Meta ads whether the user has previously (within the last <Anchor target="_blank" href="/marketers/docs/meta-ads-discrepancies#click-through-and-view-through-attribution">7 days</Anchor>) engaged with an ad for the app. If the user has engaged with a Facebook ad of the advertiser, Meta ads self-attributes. Meta ads also attributes cross-platform, meaning that the user may interact with any type of campaign, mobile or not, on any platform, to be self-attributed by Meta ads.
 
-**Action**: Tell your developer to use the [skipList method](https://dev.appsflyer.com/hc/docs/onelink-smart-script#skip-clicks-from-twitter-or-facebook) to disable the Smart Script for Meta ads (or any other strings you want). If Meta ads or any of the strings in the skip list appear in the HTTP referrer of the click, the Smart Script returns `null`.
+**Action**: Tell your developer to use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script#skip-clicks-from-twitter-or-facebook">skipList method</Anchor> to disable the Smart Script for Meta ads (or any other strings you want). If Meta ads or any of the strings in the skip list appear in the HTTP referrer of the click, the Smart Script returns `null`.
 
 **Note**: Meta ads cross-platform attribution may be affected when users opt not to share their device ID, as is expected with iOS 14 users during 2021.
 
@@ -99,7 +99,7 @@ The usual process for install attribution of Google Ads campaigns (which carry a
 
 Since in this case, you are redirecting leads from Google Ads to a web/landing page, the script takes the GCLID parameter from the Google Ads install campaign URL and puts it into the outgoing URL in your choice of output parameter **af\_sub[1-5].** **Note!** This applies to install campaigns. For non-ACI search campaigns, meaning re-engagement campaigns, Google may be attributed as the media source, despite the Smart Script output.
 
-**Prerequisite**: On the Google dashboard, [enable auto-tagging](https://support.google.com/analytics/answer/1033981?hl=en).With auto-tagging enabled, the URL contains the *GCLID* parameter.
+**Prerequisite**: On the Google dashboard, <Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">enable auto-tagging</Anchor>.With auto-tagging enabled, the URL contains the *GCLID* parameter.
 
 **To set up the script for Google Ads**:
 
@@ -117,7 +117,7 @@ Since in this case, you are redirecting leads from Google Ads to a web/landing p
 **To notify Google Ads about these installs:**
 
 1. Get the GCLID data from the param **af\_sub[1-5]** via CSV, or Push API in real-time for every install.
-2. Upload the GCLID data to Google either [manually](https://support.google.com/adwords/answer/7014069) or via an [Adwords API](https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions).
+2. Upload the GCLID data to Google either <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">manually</Anchor> or via an <Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">Adwords API</Anchor>.
 
 > 📘 **Note**
 >
@@ -129,7 +129,7 @@ Since in this case, you are redirecting leads from Google Ads to a web/landing p
 
 <Accordion title="SRNs, owned media, and other media source links">
 
-[SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
+<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRNs</Anchor> like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
 
 For these SRNs, script setup is the same as for links from owned media, or other media sources you might use.
 
@@ -141,7 +141,7 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 **Result**: For these SRNs/media sources, the values in the media source and campaign parameters in the incoming link are used to populate the values for the **pid** and **c** parameters in the outgoing link.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Incoming URL**: https://hotel.me/af_pid=twitter&af_c=big_social
 >
@@ -153,11 +153,11 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 <Accordion title="AppsFlyer attribution links">
 
-AppsFlyer attribution links can be used when the media source is a click ad network. When you set up such a link in AppsFlyer, you have the option to add a ***Redirection URL path (af\_r)***parameter with the desired URL path to your mobile website, for web campaign-to-app attribution. 
+AppsFlyer attribution links can be used when the media source is a click ad network. When you set up such a link in AppsFlyer, you have the option to add a ***Redirection URL path (af\_r)*** parameter with the desired URL path to your mobile website, for web campaign-to-app attribution. 
 
 **Result**: If the **af\_r** and **af\_redirect=true** parameters are on the incoming link, the landing page script makes no changes. It leaves the web/landing page direct links to the app stores as they are. 
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Incoming URL**: https://app.appsflyer.com/id123456789?pid=click_ad_network_int&c=orlando&af_redirect=true&af_r=hotel.me
 >
@@ -175,11 +175,11 @@ However, desktop users shouldn't immediately be sent to an app store, because th
 
 **To set up the script for desktop users**:
 
-* In your [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template), set a destination URL for **When link is clicked on desktop**. The URL should redirect to a dedicated web/landing page. The landing page can contain a web form where they fill in their details to get an SMS or an email with a link to download the app. It's up to you to create the web form and provide the URL to it in the script.
+* In your <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>, set a destination URL for **When link is clicked on desktop**. The URL should redirect to a dedicated web/landing page. The landing page can contain a web form where they fill in their details to get an SMS or an email with a link to download the app. It's up to you to create the web form and provide the URL to it in the script.
 
 **Result**: The script detects the device or platform the user is on. If it's desktop, the script generates an outgoing OneLink URL that redirects the user to your dedicated web/landing page.
 
-See also [Desktop-to-app conversion](/docs/qr-to-app-conversion).
+See also <Anchor target="_blank" href="/marketers/docs/qr-to-app-conversion">Desktop-to-app conversion</Anchor>.
 
 </Accordion>
 
@@ -189,7 +189,7 @@ See also [Desktop-to-app conversion](/docs/qr-to-app-conversion).
 
 | Limitation | Remarks |
 | --- | --- |
-| Tag manager | Smart Script cannot be implemented via tag manager. See [OneLink Smart Script V2](/docs/set-up-smart-script-to-convert-web-visitors) or [Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers) as an alternative web-to-app attribution solution. |
+| Tag manager | Smart Script cannot be implemented via tag manager. See <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">OneLink Smart Script V2</Anchor> or <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor> as an alternative web-to-app attribution solution. |
 
 </Accordion>
 

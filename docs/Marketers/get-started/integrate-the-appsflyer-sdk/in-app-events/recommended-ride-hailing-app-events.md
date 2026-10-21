@@ -1,8 +1,5 @@
 ---
 title: Recommended ride-hailing app events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your ride-hailing app.
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019651957-Recommended-ride-hailing-app-events
 ---
-## ![InApp_Events_ride.png](https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png) Ride-hailing
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app.
+
+## <Image alt="InApp_Events_ride.png" src="https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png" width="100px" /> Ride-hailing
 
 Ride-hailing has become very popular recently, especially in urban areas where most residents don't own a car. The typical events that we suggest recording are ride requests and bookings.
 
@@ -35,14 +34,14 @@ Recording events can help you determine:
 * Countries where more people use your ride-hailing service
 * Metrics about price, rides, and ride distance
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=ride_hailing). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=ride_hailing&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ride_hailing">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ride_hailing&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the  **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
 

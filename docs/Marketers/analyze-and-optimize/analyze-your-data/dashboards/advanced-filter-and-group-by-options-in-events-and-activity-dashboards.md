@@ -1,6 +1,5 @@
 ---
 title: Advanced filter and group by options in events and activity dashboards
-excerpt: Use advanced filter and group by options in events and activity dashboards.
 metadata:
   keywords:
     - advance filters
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211490886-Advanced-filter-and-group-by-options-in-events-and-activity-dashboards
 ---
+**At a glance**: Use advanced filter and group by options in events and activity dashboards.
+
 ## Advanced filter by and group by options in dashboards
 
 * **Filter by**: Media Source, Geo

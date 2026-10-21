@@ -1,8 +1,5 @@
 ---
 title: Data collaboration platform (DCP) - Prepare collaboration measurement
-excerpt: >-
-  Learn how to create measurement data sources, and how to provide access to
-  them in a way that can be digested by the attribution job.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32144170371985-Data-collaboration-platform-DCP-Prepare-collaboration-measurement
 ---
+**At a glance:** Learn how to create measurement data sources, and how to provide access to them in a way that can be digested by the attribution job.
+
 ## Overview
 
 The first step in setting up the measurement process is to prepare the three inputs that feed it: conversions, engagements, and campaign mapping. These inputs must be prepared based on the predefined schema or event structure, depending on the data provision mode: in-app events or custom source files.
@@ -71,7 +70,7 @@ For information about how to prepare in-app events, see the [Create in-app even
 
 <Accordion title="Prepare engagement in-app events">
 
-[On-site campaigns](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement) can receive engagements via in-app events. The engagement in-app event should include the attribution data in the `event_value` key. See, as an example, the following `event_value` JSON structure:
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#onsite-and-offsite-campaign-measurement">On-site campaigns</Anchor> can receive engagements via in-app events. The engagement in-app event should include the attribution data in the `event_value` key. See, as an example, the following `event_value` JSON structure:
 
 ```
 "event_value": {
@@ -96,7 +95,7 @@ You can use the fields below in your `evant_value` JSON key:
 | `campaign_id` | Campaign ID | Yes | No | `string` |
 | `campaign_name` | Campaign name | No | No | `string` |
 | `engagement_type` | Differentiates between clicks and impressions | Yes | No | `string` |
-| `media_source` | Media source attributed to an event or restricted ([see more](/docs/about-raw-data-identifier-restrictions#media-source-restrictions)) | Yes | No | `string` |
+| `media_source` | Media source attributed to an event or restricted (<Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">see more</Anchor>) | Yes | No | `string` |
 | `ad_id` | Ad ID | No | No | `string` |
 | `ad_name` | Ad name | No | No | `string` |
 | `ad_type` | Example: banner, footer | No | No | `string` |
@@ -114,8 +113,8 @@ For more information, about how to prepare in-app events, see the Create in-app
 
 To provide conversion and engagement data through in-app events configure the AppsFlyer SDK integrated into your app. For more information about creating in-app events, see:
 
-* [In-app events overview](/docs/in-app-events-overview)
-* [Implement in-app events in AppsFlyer SDK for developers](http://dev.appsflyer.com/hc/docs/in-app-events-sdk)
+* <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events overview</Anchor>
+* <Anchor target="_blank" href="http://dev.appsflyer.com/hc/docs/in-app-events-sdk">Implement in-app events in AppsFlyer SDK for developers</Anchor>
 
 </Accordion>
 
@@ -169,7 +168,7 @@ Use the schema below to create the engagement data source.
 | `app_id` | Unique app identifier in AppsFlyer. Example: iOS: `id123456789`, Android: `com.appsflyer.referrersender` | Optional | `string` |
 | `campaign_id` | Campaign ID | Mandatory | `string` |
 | `campaign_name` | Campaign name | Optional | `string` |
-| `media_source` | Media source attributed to an event or restricted ([see more](/docs/about-raw-data-identifier-restrictions#media-source-restrictions)) | Mandatory | `string` |
+| `media_source` | Media source attributed to an event or restricted (<Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">see more</Anchor>) | Mandatory | `string` |
 | `engagement_type` | Differentiates between clicks and impressions | Mandatory | `string` |
 | `event_name` | Set by the advertiser | Mandatory | `string` |
 | `event_time` | Event time, rounded down to the nearest hour | Mandatory | `datetime` |
@@ -269,8 +268,8 @@ When configuring in-app events for conversions, engagements, or both, you must s
 
 To connect data through custom sources customer will first need to follow the instructions in the following DCP knowledge base articles:
 
-* [Data Collaboration Platform — Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services)
-* [Data Collaboration Platform — Add connections](/docs/data-collaboration-platform-dcp-add-connections)
-* [Data Collaboration Platform — Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources)
+* <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">Data Collaboration Platform — Set up your cloud services</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Data Collaboration Platform — Add connections</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Data Collaboration Platform — Create and manage sources</Anchor>
 
 <div data-zendesk-anchors="h_01JJKFW5Z2D7Y1MM5A7YR0TY0T=overview prepare-inapp-events-for-conversions-and-engagements=prepare-in-app-events h_01JJKFW5Z22DG4CKFMXPGR3BW0=prepare-in-app-events h_01JJKFW5Z2NP9187GYHS0YEXED=note h_01JJKFW5Z2AX7SHHZ23P0KDQJY=prepare-conversion-inapp-events h_01JJKFW5Z2YD0B151VSR3TG6SP=prepare-engagement-inapp-events h_01JJKFW5Z3QES9BAZX7KNSPCM8=create-inapp-events prepare-custom-source-files-for-engagements-and-conversions=prepare-custom-source-files h_01JJKFW5Z3QX33NK3XP452AAFB=prepare-custom-source-files h_01JK3QFQCK30A7SSPWXSH3VP0D=the-conversion-source-scheme h_01K399C7NME67HQGJKRG1A5JB2=media-partners h_01K399DC8ZAEA86DD4W0181EM6=background-colors h_01JK3QFQCKD1TV5G4N0KP85AWS=the-engagement-source-scheme h_01JK3QFQCK6C16SCW8EYQNS47F=note-1 h_01JJKFW5Z3QR107P3M111P4STG=prepare-campaign-mapping-source h_01JJKFW5Z3ZSYET4HMWD7TWSD8=note-2 h_01JJKFW5Z3Q6F3DP0EMTNQRD8R=the-campaign-mapping-scheme prepare-data-for-attribution-job-ingestion=attribution-job-ingestion-flow h_01JJKFW5Z38W581F4CBW3T4CPZ=attribution-job-ingestion-flow h_01JK5R1VPJ0WAF3WX4R1ECE0R7=campaign-mapping-source-ingestion h_01JK5R1VPJT41RF2EN8806ZY5C=conversion-source-ingestion h_01JK5R1VPJN8KTFTN21DA3619Y=engagement-source-ingestion h_01JK5R1VPJV6F5Y5JB3Q45R89B=inapp-data-ingestion h_01JJKFW5Z3NKB0MB7GN2FC87H5=create-and-connect-custom-data-sources" />

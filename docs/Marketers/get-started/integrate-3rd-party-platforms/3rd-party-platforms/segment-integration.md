@@ -1,6 +1,5 @@
 ---
 title: Segment integration
-excerpt: Send your Segment analytics data to AppsFlyer.
 metadata:
   keywords:
     - Integration
@@ -25,13 +24,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210041606-Segment-integration
 ---
+**At a glance:** Send your Segment analytics data to AppsFlyer.
+
 ## Introduction
 
 Segment makes it easy to send your data to AppsFlyer. Once you have recorded your data through Segment's open source libraries, the data is translated and routed to AppsFlyer in the appropriate format. AppsFlyer helps marketers to pinpoint targeting, optimize ad spend, and boost ROI.
 
 ## Integrating Segment with AppsFlyer
 
-Follow [this guide from Segment](https://segment.com/docs/destinations/appsflyer/) to learn how to integrate Segment with AppsFlyer.
+Follow <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">this guide from Segment</Anchor> to learn how to integrate Segment with AppsFlyer.
 
 ## FAQs
 
@@ -41,10 +42,10 @@ Follow [this guide from Segment](https://segment.com/docs/destinations/appsflyer
 
 To integrate Segment with AppsFlyer, follow these steps:
 
-* [Configure your Segment dashboard](https://segment.com/docs/destinations/appsflyer/#getting-started) to connect to AppsFlyer
+* <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">Configure your Segment dashboard</Anchor> to connect to AppsFlyer
 * Implement [the Segment Wrapper SDK](/docs/segment-integration#how-does-the-sdk-wrapper-work) in your app:
-  * [Native iOS](https://github.com/segment-integrations/analytics-swift-appsflyer)
-  * [Native Android](https://github.com/segment-integrations/analytics-kotlin-appsflyer)
+  * <Anchor target="_blank" href="https://github.com/segment-integrations/analytics-swift-appsflyer">Native iOS</Anchor>
+  * <Anchor target="_blank" href="https://github.com/segment-integrations/analytics-kotlin-appsflyer">Native Android</Anchor>
 
 </Accordion>
 
@@ -66,7 +67,7 @@ When you use the Segment SDK wrapper to call Segment's methods for recording ins
 
 This saves you time and effort and requires less coding.
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > Warning - **DO NOT USE** methods from both the Segment SDK wrapper and the AppsFlyer SDK. Doing so could lead to errors and data discrepancies.
 >
@@ -87,9 +88,9 @@ No, there is no change in functionality. All functions in the AppsFlyer SDK are 
 <Accordion title="I don't see in-app event data in the AppsFlyer dashboard">
 
 * Make sure to follow the instructions for implementing the track method in Segment SDK wrapper:
-  * [Android](https://github.com/AppsFlyerSDK/AppsFlyer-Segment-Integration#adding_events)
-  * [iOS](https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift)
-* Make sure to [specify your dev key](https://segment.com/docs/destinations/appsflyer/#getting-started) when integrating AppsFlyer in Segment's dashboard.
+  * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AppsFlyer-Segment-Integration#adding_events">Android</Anchor>
+  * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/segment-appsflyer-ios/blob/master/examples/SwiftPodsSample/SwiftPodsSample/ViewController.swift">iOS</Anchor>
+* Make sure to <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/#getting-started">specify your dev key</Anchor> when integrating AppsFlyer in Segment's dashboard.
 
 </Accordion>
 

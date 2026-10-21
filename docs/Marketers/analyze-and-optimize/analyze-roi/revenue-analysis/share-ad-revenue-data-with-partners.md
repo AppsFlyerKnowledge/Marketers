@@ -1,9 +1,5 @@
 ---
 title: Share ad revenue data with partners
-excerpt: >-
-  Allow partners to receive ad revenue information from mediation networks so
-  they can optimize their user acquisition (UA) campaigns. Note : This requires
-  an ROI360 Advanced subscription.
 metadata:
   keywords:
     - Premium
@@ -26,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/24100803679761-Share-ad-revenue-data-with-partners
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance:** Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. **Note**: This requires an ROI360 Advanced subscription.
 
 ## About sharing ad revenue data with partners
 
@@ -64,7 +62,7 @@ You may want to work with ad networks that can receive UA signals. This means th
 9. Click **Save Settings**.
 10. Contact the ad network:
     1. Notify it that you've granted the permissions.
-    2. Tell them to follow [their instructions](/partners/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report) to receive the report.
+    2. Tell them to follow <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks#enable-the-ad-revenue-report">their instructions</Anchor> to receive the report.
 
 **List of mediation partners that can send UA signals to ad networks:**
 
@@ -90,27 +88,27 @@ You may want to work with ad networks that can receive UA signals. This means th
 
 You can configure ad revenue postbacks for ad networks. This means that ad networks responsible for user acquisition can receive real-time data from mediation networks regarding ad revenue and use it to optimize their customers' UA campaigns. 
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Ad revenue event postbacks to ad networks only work with Impression-level via SDK and Impression-level (via SDK) with device-level (via server-to-server (S2S) API) ad revenue [integration types](/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution). This means your developer must integrate the [AppsFlyer ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api).
+> * Ad revenue event postbacks to ad networks only work with Impression-level via SDK and Impression-level (via SDK) with device-level (via server-to-server (S2S) API) ad revenue <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">integration types</Anchor>. This means your developer must integrate the <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">AppsFlyer ad revenue SDK API</Anchor>.
 > * While you can send ad revenue postbacks to specific partners, we recommend validating how partners use the data before starting the integration.
 
 **To set up ad revenue event postbacks**:
 
-1. Search for and select your partner, either [from the marketplace](/docs/partner-integrations#manage-existing-integrations) or from the **Collaborate** > **Partner Integrations** > **Active** **Integrations** page.
+1. Search for and select your partner, either <Anchor target="_blank" href="/marketers/docs/partner-integrations#manage-existing-integrations">from the marketplace</Anchor> or from the **Collaborate** > **Partner Integrations** > **Active** **Integrations** page.
 2. In the **Integration** tab, scroll down and turn on **In-app event postbacks**.
 3. Select the AppsFlyer event af\_ad\_revenue. **Note**: Some ad network integrations have the option to **Select all events**. Don't use this option, as it excludes af\_ad\_revenue events.
 4. Map it to the ad network event as follows:
 
 | Ad network | Event to map af\_ad\_revenue to | Screenshot |
 | --- | --- | --- |
-| Google Ads | ad\_impression | ![Google Ads ad_impression event mapping](https://files.readme.io/883dd04563027d722e7e8e76a50f813c8a955db827cbb92e94cdc650ab7b234d-50421403523601.png) |
+| Google Ads | ad\_impression | <Image alt="Google Ads ad_impression event mapping" src="https://files.readme.io/883dd04563027d722e7e8e76a50f813c8a955db827cbb92e94cdc650ab7b234d-50421403523601.png" width="2170px" /> |
 | Unity Ads | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
 | Moloco | No mapping needed |  |
 | Mintegral | No mapping needed |  |
 | Smadex | No mapping needed |  |
 | Mistplay | No mapping needed |  |
-| Meta Ads | fb\_mobile\_purchase, for iOS apps  <br />or  <br />Adimpression, for Android apps  <br />[Meta Ads in-app event mapping guide](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization). | [![revenue-mapping-meta2.jpg](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg)](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg) |
+| Meta Ads | fb\_mobile\_purchase, for iOS apps  <br />or  <br />Adimpression, for Android apps  <br /><Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization">Meta Ads in-app event mapping guide</Anchor>. | [![revenue-mapping-meta2.jpg](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg)](https://files.readme.io/9ec143cbcb622dec2aa0081812e41c0c7586b3583f4da7e57d71dffcb2d68a79-29375912802193.jpg) |
 | TikTok For Business - Advanced SRN | ImpressionLevelAdRevenue | [![](https://files.readme.io/8beed93895ac3e9d52049bea06b89388e8f32ca12d404c3461a3dcc493aed26f-24100803659665.png)](https://files.readme.io/8beed93895ac3e9d52049bea06b89388e8f32ca12d404c3461a3dcc493aed26f-24100803659665.png) |
 | Aura from Unity | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
 | Digital Turbine | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |

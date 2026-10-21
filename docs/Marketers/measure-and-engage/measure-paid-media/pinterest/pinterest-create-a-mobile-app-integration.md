@@ -1,10 +1,5 @@
 ---
 title: Pinterest—Create a mobile app integration
-excerpt: >-
-  Pinterest, an AppsFlyer integrated partner, is one of the top contributors of
-  traffic for bloggers and brands. Pinterest offers both click-based and
-  view-through mobile attribution. In addition, Pinterest also offers
-  click-based retargeting which you can record with AppsFlyer.
 metadata:
   keywords:
     - Pinterest
@@ -27,11 +22,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/216912786-Pinterest-Create-a-mobile-app-integration
 ---
+**At a glance:** Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer.
+
 > 📘 **Note**
 >
-> * After accepting Pinterest Ad Terms, accept Pinterest Mobile Measurement Terms & Conditions [here](https://ads.pinterest.com/terms/app_install/).
-> * Pinterest requires attribution providers to delete their user-level data [6 months after the install](/docs/user-level-data-retention#partner-data-retention-periods). This means that the events performed by these users 6 months after they install the app are counted as organic. Past aggregate data remains the same.
-> * Effective September 4, 2023, Pinterest requires attribution providers to [restrict the availability of some fields in raw data reports](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) to preserve user privacy and ensure regulation compliance.
+> * After accepting Pinterest Ad Terms, accept Pinterest Mobile Measurement Terms & Conditions <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">here</Anchor>.
+> * Pinterest requires attribution providers to delete their user-level data <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">6 months after the install</Anchor>. This means that the events performed by these users 6 months after they install the app are counted as organic. Past aggregate data remains the same.
+> * Effective September 4, 2023, Pinterest requires attribution providers to <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">restrict the availability of some fields in raw data reports</Anchor> to preserve user privacy and ensure regulation compliance.
 
 ## Set up Pinterest
 
@@ -44,8 +41,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -54,7 +51,7 @@ x-zendesk:
 ### Activate partner
 
 On the **first visit**, you will need to turn on the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
-For more details about partner activation click [here](/docs/partner-activation-deactivation).
+For more details about partner activation click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 
@@ -66,7 +63,7 @@ Turn this on if you want to attribute view-through installs from Pinterest. The 
 
 **Advanced Matching data sharing**
 
-Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Pinterest, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Pinterest, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 
 ### In-app events settings
 
@@ -102,7 +99,7 @@ In this section, you can map your AppsFlyer events with Pinterest via postbacks.
 | Parameter Name | Description |
 | --- | --- |
 | <span id="appsflyer-event-name"></span>**AppsFlyer event name** | The name of the event, as received by AppsFlyer, either from the SDK integrated with your app or from server-to-server events.   <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
-| <span id="partner-event-name"></span>**Partner event name** | The unique name of the event, as defined on Pinterest's side. For the Pinterest event names, see the [Pinterest documentation.](https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events) |
+| <span id="partner-event-name"></span>**Partner event name** | The unique name of the event, as defined on Pinterest's side. For the Pinterest event names, see the <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events">Pinterest documentation.</Anchor> |
 | <span id="to-users-from"></span>**To users from** | <ul><li>**This partner only:** For events coming **only** from users attributed to this partner.</li><li>**All media sources including organic:** To have your entire user base available to be reported to the partner.</li></ul> |
 | <span id="including"></span>**Including** | Select if event revenue or parameter values are sent to the partner in the postback, or if this data isn’t included.<br /><br />AppsFlyer can send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter. Or, AppsFlyer can send all the parameters including the revenue value (if it exists in the event). |
 
@@ -114,10 +111,10 @@ In this section, you can map your AppsFlyer events with Pinterest via postbacks.
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 #### Attribution link for retargeting campaign
 
@@ -142,21 +139,21 @@ Once you set Pinterest's cost, don't change the name of any running campaign, ad
 
 ### Enabling and testing Pinterest integration
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
 ### Cost data sync status
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 ### Stop Pinterest cost sync
 
 **To delete a connected account:**
 
-* [In the actions column, hover over an account, click ***Delete connection***](/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab). Once deleted, AppsFlyer stops getting the cost. Deleting the connection doesn't impact historical data.
+* <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">In the actions column, hover over an account, click ***Delete connection***</Anchor>. Once deleted, AppsFlyer stops getting the cost. Deleting the connection doesn't impact historical data.
 
 <div id="ad-revenue-tab" />
 
@@ -172,7 +169,7 @@ Ad Revenue data is not supported by this partner.
 
 In this tab, you can select the permissions to grant Pinterest. Note that even if attribution is disabled for Pinterest, the permissions tab is active and you can grant control to Pinterest.
 
-Learn more about the [permissions you can grant Pinterest](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions you can grant Pinterest</Anchor>.
 
 </Accordion>
 

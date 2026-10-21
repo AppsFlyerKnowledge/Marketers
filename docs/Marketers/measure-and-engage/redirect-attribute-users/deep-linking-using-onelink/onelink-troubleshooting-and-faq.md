@@ -1,8 +1,5 @@
 ---
 title: OneLink troubleshooting and FAQ
-excerpt: >-
-  Quickly find solutions for testing and debugging OneLink custom link
-  redirection/behavior issues.
 metadata:
   keywords:
     - faq
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360014821438-OneLink-troubleshooting-and-FAQ
 ---
+> **At a glance:** Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues.
+
 ## OneLink troubleshooting guide
 
 ## OneLink frequently asked questions
@@ -36,18 +35,20 @@ x-zendesk:
 
 **App Links:** For Android users with version 6.0+. **Note**: Samsung OS can't open apps using Android App Links.
 
-Both Universal Links and App Links require proof that the domain in the clicked URL (in other words, the OneLink custom link domain or branded domain) is owned and associated with the specific app it’s trying to open. This domain association is done via the **Apple App Site Association file (AASA)** for iOS and **Assetlinks** file for Android.
-
-These files are either hosted by AppsFlyer or by the advertiser on its website. By default, when you create OneLink templates and set up Universal Links and App Links, these files are generated and hosted by AppsFlyer.
+> 📘 **Note**
+>
+> Both Universal Links and App Links require proof that the domain in the clicked URL (in other words, the OneLink custom link domain or branded domain) is owned and associated with the specific app it’s trying to open. This domain association is done via the **Apple App Site Association file (AASA)** for iOS and **Assetlinks** file for Android.
+>
+> These files are either hosted by AppsFlyer or by the advertiser on its website. By default, when you create OneLink templates and set up Universal Links and App Links, these files are generated and hosted by AppsFlyer.
 
 **URI schemes:** The primary method for opening apps on Samsung devices. Otherwise, it is a legacy and fallback method for opening apps. Can be used:
 
 * For Android users with versions prior to 6.0 (less than 15% of Android users)
-* As a fallback for when Universal Links and App Links don't open the app, either because they don't work, or aren't set up. **Note:** Using URI schemes as a fallback for Universal Links is subject to iOS-based limitations. [Learn more](/docs/uri-scheme-fallback-for-ios).
+* As a fallback for when Universal Links and App Links don't open the app, either because they don't work, or aren't set up. **Note:** Using URI schemes as a fallback for Universal Links is subject to iOS-based limitations. <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">Learn more</Anchor>.
 
 #### Deep linking
 
-Universal Links, App Links, and URI schemes are secure methods for **opening** an app. To deep link and redirect users into specific activities or pages in the app, follow the [OneLink deep linking instructions](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking).
+Universal Links, App Links, and URI schemes are secure methods for **opening** an app. To deep link and redirect users into specific activities or pages in the app, follow the <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">OneLink deep linking instructions</Anchor>.
 
 </Accordion>
 
@@ -55,7 +56,7 @@ Universal Links, App Links, and URI schemes are secure methods for **opening** a
 
 | OS | Do URI schemes work to open the app? |
 | --- | --- |
-| iOS | **Yes.** Use as a fallback for Universal Links failure.<br /><br />**Important notes:**<ul><li>Using URI schemes as a fallback is subject to iOS-based limitations.</li><li>For many browsers, including Safari, you must add the `af_force_deeplink=true` parameter to the URL to use URI schemes as a fallback. [Learn more](/docs/uri-scheme-fallback-for-ios).</li><li>If an error message appears that says: "Something went wrong. The application couldn’t be opened.”, this generally means that the application isn’t installed or an incorrect URI scheme was used.</li></ul> |
+| iOS | **Yes.** Use as a fallback for Universal Links failure.<br /><br />**Important notes:**<ul><li>Using URI schemes as a fallback is subject to iOS-based limitations.</li><li>For many browsers, including Safari, you must add the `af_force_deeplink=true` parameter to the URL to use URI schemes as a fallback. <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">Learn more</Anchor>.</li><li>If an error message appears that says: "Something went wrong. The application couldn’t be opened.”, this generally means that the application isn’t installed or an incorrect URI scheme was used.</li></ul> |
 | Android | **Yes.** Use for Samsung devices, Android versions prior to 6.0 and as a fallback for when App Links fail on later Android versions. |
 | Amazon | **No** |
 | Windows Mobile | **No** |
@@ -64,7 +65,7 @@ Universal Links, App Links, and URI schemes are secure methods for **opening** a
 
 <Accordion title="Do I need to update the app after iOS Universal Links and Android App Links setup?">
 
-**Yes.** Whenever Universal Links or App Links are implemented to open the app for existing users, iOS Associated Domains or AndroidManifest.xml is updated. This means that you must upload a new version of the app to the relevant app store. **Tip:** To minimize the need for app updates, make all the dev-related changes required to [open the app](/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users) and [deep link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking) at one time.
+**Yes.** Whenever Universal Links or App Links are implemented to open the app for existing users, iOS Associated Domains or AndroidManifest.xml is updated. This means that you must upload a new version of the app to the relevant app store. **Tip:** To minimize the need for app updates, make all the dev-related changes required to <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">open the app</Anchor> and <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep link</Anchor> at one time.
 
 </Accordion>
 
@@ -77,7 +78,7 @@ To send users to a web page:
 1. In your template, do not set up Universal Links, App Links, or URI scheme.
 2. Set up the redirections for when the app isn't installed to the landing page/web URL.
    * The landing page/web URLs are added as the values for the af\_android\_url and af\_ios\_url parameters.
-   * Make sure any URLs you're redirecting users to have been added to your [domain redirect allowlist](/docs/set-up-your-domain-redirect-allowlist).
+   * Make sure any URLs you're redirecting users to have been added to your <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">domain redirect allowlist</Anchor>.
    * The redirections are then automatically applied for when the app is installed (for existing users), as well.
 
 **Note**: If you want to redirect existing users to a mobile web page only after app launch, your app developer must configure that behavior.
@@ -121,7 +122,7 @@ Yes.
 2. Select the OneLink template.
 3. Click the 'Edit template' option from the ellipsis menu.
 
-   ![delete template.png](https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png)
+   <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 4. Click the trash icon.
 
 **Note:** If you have existing OneLink URLs based on the deleted template, **they won’t work even to get users to the app store.** For this reason, it’s particularly important that you don’t delete a template without first making sure that there are no OneLink URLs using it. Alternatively, consider if it's possible to achieve the results you need by changing the existing template's configuration instead of deleting it.
@@ -168,11 +169,13 @@ Desktop users can engage with your OneLink custom links, for example, via an ema
 
 **So how can I give desktop users a good user experience and convert them into mobile users?**
 
-In the OneLink URL or template, you can redirect desktop users (Windows or Mac) to a different URL. This web URL is added to the link in the `af_web_dp` parameter. Make sure all URLs you’re redirecting users to have been added to your domain [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist). Otherwise, redirection will not work.
+In the OneLink URL or template, you can redirect desktop users (Windows or Mac) to a different URL. This web URL is added to the link in the `af_web_dp` parameter. Make sure all URLs you’re redirecting users to have been added to your domain <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">redirect allowlist</Anchor>. Otherwise, redirection will not work.
 
 **Note:** If your link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop.
 
-Try redirecting desktop users to a web URL that contains a dedicated web form that sends a OneLink URL to the mobile device of the desktop user via SMS or email. Learn more about this option as part of the OneLink Smart Script solution.
+> 👍 **Tip**
+>
+> Try redirecting desktop users to a web URL that contains a dedicated web form that sends a OneLink URL to the mobile device of the desktop user via SMS or email. Learn more about this option as part of the OneLink Smart Script solution.
 
 </Accordion>
 
@@ -225,12 +228,12 @@ The following table compares the different methods available for creating OneLin
 
 | Link creation method | Uses | Short/long URL | Premium feature | Visible in UI? | Attribution TTL (Time to Live) max and default |
 | --- | --- | --- | --- | --- | --- |
-| [AppsFlyer UI](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) | Create OneLink template and custom links | Both | -- | **✓** | No TTL |
-| [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) | Create thousands of OneLinks quickly | Short | **✓** | -- | 31 days |
-| [OneLink bulk link creation](/docs/perform-onelink-bulk-actions-via-csv) | Create thousands of OneLinks short URLs quickly using the parameters defined in a CSV | Short | -- | -- | 365 days |
-| [SDK](/docs/user-invite-attribution) | User invite (referral) campaigns | Short | -- | -- | 60 days |
-| [OneLink Smart Script](/docs/onelink-smart-script-overview) | Mobile web-to-app campaigns | Long | -- | -- | No TTL |
-| [Spreadsheet](/docs/understand-onelink-short-vs-long-urls) | Create thousands of OneLink custom links by applying your own formulas | Long | -- | -- | No TTL |
+| <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">AppsFlyer UI</Anchor> | Create OneLink template and custom links | Both | -- | **✓** | No TTL |
+| <Anchor target="_blank" href="/marketers/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">OneLink API</Anchor> | Create thousands of OneLinks quickly | Short | **✓** | -- | 31 days |
+| <Anchor target="_blank" href="/marketers/docs/perform-onelink-bulk-actions-via-csv">OneLink bulk link creation</Anchor> | Create thousands of OneLinks short URLs quickly using the parameters defined in a CSV | Short | -- | -- | 365 days |
+| <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">SDK</Anchor> | User invite (referral) campaigns | Short | -- | -- | 60 days |
+| <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor> | Mobile web-to-app campaigns | Long | -- | -- | No TTL |
+| <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">Spreadsheet</Anchor> | Create thousands of OneLink custom links by applying your own formulas | Long | -- | -- | No TTL |
 
 </Accordion>
 
@@ -242,7 +245,7 @@ As of November 2025,
 * The link will stop working within 2 minutes of deletion.
 * Links deleted via the UI after November 5, 2025, can be restored through the **Deleted links** table, accessible in OneLink management.
 
-  ![deleted links.png](https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png)
+  <Image alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
 * Links can be restored up to 90 days from the deletion date. If more than 90 days have passed from the link deletion date, the link cannot be restored.
 
 </Accordion>
@@ -263,7 +266,7 @@ There are several possible reasons for this:
 * **Browsers:** Certain browsers and OS platforms behave differently with links. In certain browsers, for example, pasting a link does not work. The link must actually be clicked.
 * **OS updates:** New OS updates (both iOS and Android) may introduce unexpected bugs that hamper deep linking.
 * **Devices:** Different smartphones, tablets, laptops, and other devices running different versions of iOS, Android, Windows Mobile, and other operating systems can vary greatly in their handling of attribution links.
-* **Misconfiguration:** The use of [special characters](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#traits-and-limitations) in the deep linking value breaks the link.
+* **Misconfiguration:** The use of <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#traits-and-limitations">special characters</Anchor> in the deep linking value breaks the link.
 
 Two solutions for improving the user experience are Fallback URLs and forced deep linking.
 
@@ -277,20 +280,24 @@ To implement a fallback URL, in the OneLink template or custom link settings, se
 
 Using this setting adds `af_ios_url` and `af_android_url` as destination parameters for the fallback, which will cause iOS users to be redirected to the page specified by `af_ios_url` and Android users to be redirected to the page specified by `af_android_url`.
 
-Consider, for example, the following OneLink URL:
+> 👍 **Tip**
+>
+> Consider, for example, the following OneLink URL:
+>
+> Both iOS and Android users who click on this link should be deep linked into the app. However, when deep linking fails, users are redirected as follows:
+>
+> * iOS: www.yoursite.com/ios-bonus
+> * Android: www.yoursite.com/android-bonus
 
-Both iOS and Android users who click on this link should be deep linked into the app. However, when deep linking fails, users are redirected as follows:
-
-* iOS: www.yoursite.com/ios-bonus
-* Android: www.yoursite.com/android-bonus
-
-When redirection occurs, OneLink URL parameters pass through to the destination page specified by af\_ios\_url or af\_android\_url. To prevent this behavior, add the parameter af\_param\_forwarding=false to the OneLink.
+> 📘 **Note**
+>
+> When redirection occurs, OneLink URL parameters pass through to the destination page specified by af\_ios\_url or af\_android\_url. To prevent this behavior, add the parameter af\_param\_forwarding=false to the OneLink.
 
 #### Forced deep linking
 
 Forced deep linking allows you to use a URI scheme as a fallback to open the app and deep link users.
 
-This solution works well for most users who have the app installed. However, for iOS, using a URI scheme to open the app has limitations, and you may need to add `af_force_deeplink=true` to the OneLink URL to force deep linking into the activity specified in the URI scheme (the `af_dp` parameter). Learn more about [URI scheme fallback for iOS.](/docs/uri-scheme-fallback-for-ios)
+This solution works well for most users who have the app installed. However, for iOS, using a URI scheme to open the app has limitations, and you may need to add `af_force_deeplink=true` to the OneLink URL to force deep linking into the activity specified in the URI scheme (the `af_dp` parameter). Learn more about <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">URI scheme fallback for iOS.</Anchor>
 
 </Accordion>
 
@@ -324,9 +331,11 @@ Turning on **Enable cost per install** (under **Advanced parameters**) allows yo
 
 Select the cost currency and then a **numeric ONLY value** (with up to 4 digits after the decimal point) representing the CPI. This adds the parameters af\_cost\_currency and af\_cost\_value to the link.
 
-An SMS campaign costs $20 per 1000 messages (CPM). Experience has shown that your campaigns achieve a 5% conversion rate, meaning the derived CPI is $0.40. Setting the cost per install to 0.40 USD allows you to measure the eventual ROI of the SMS campaign.
+> 👍 **Tip**
+>
+> An SMS campaign costs $20 per 1000 messages (CPM). Experience has shown that your campaigns achieve a 5% conversion rate, meaning the derived CPI is $0.40. Setting the cost per install to 0.40 USD allows you to measure the eventual ROI of the SMS campaign.
 
-Learn more about [measuring cost and ROI](/docs/roi360-cost-aggregation-overview).
+Learn more about <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">measuring cost and ROI</Anchor>.
 
 </Accordion>
 
@@ -372,8 +381,8 @@ In order to activate Universal Links or App Links, the OS needs to recognize the
   * This method works because it uses the OneLink subdomain configured in the OneLink template.
   * It enables you to change parameters on the fly, including any deep linking settings, even after distributing the attribution links to your leads.
   * It counts all the clicks from mobile devices in the AppsFlyer dashboard, so you don't need to check another service.
-  * The last part of the short URL can be customized to make it a [branded domain](/docs/brand-onelink-with-your-domain).
-* Use the [URI scheme](/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users) as a fallback to open the app when Universal Links and App Links fail, and add the following parameter to the link: `af_force_deeplink=true`.
+  * The last part of the short URL can be customized to make it a <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">branded domain</Anchor>.
+* Use the <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">URI scheme</Anchor> as a fallback to open the app when Universal Links and App Links fail, and add the following parameter to the link: `af_force_deeplink=true`.
 * See options for [working with ESPs](/docs/onelink-troubleshooting-and-faq#can-i-use-onelink-custom-links-in-emails).
 
 </Accordion>
@@ -387,7 +396,7 @@ To prevent this, use one of the following optional solutions:
 * Disable click recording in your ESP configuration.  
   **(Tip: This is generally the easiest solution.)**
 * Force the app open with the URI scheme specified in the `af_dp` parameter by adding the flag `af_esp=true` to the attribution link. This solution works well for users who have the app installed.
-* Use ESPs that support the AppsFlyer solution for app opening and deep linking with Universal Links. [Learn more](/docs/email-service-provider-esp-integration-guide).
+* Use ESPs that support the AppsFlyer solution for app opening and deep linking with Universal Links. <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">Learn more</Anchor>.
 
 </Accordion>
 
@@ -399,7 +408,7 @@ OneLink redirects users to the correct regional app store based on their IP addr
 
 <Accordion title="Why isn't my OneLink URL redirecting users to the specified domain?">
 
-Check whether you have activated Redirect allowlists in AppsFlyer. If you have it activated, the desired web URL domain or subdomain must be listed. [Learn more about Redirect allowlists](/docs/set-up-your-domain-redirect-allowlist)
+Check whether you have activated Redirect allowlists in AppsFlyer. If you have it activated, the desired web URL domain or subdomain must be listed. <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">Learn more about Redirect allowlists</Anchor>
 
 </Accordion>
 
@@ -407,8 +416,8 @@ Check whether you have activated Redirect allowlists in AppsFlyer. If you have i
 
 The 'App you are looking for is unavailable' error may arise instead of redirection to Google Play due to:
 
-* Your app is currently in 'Pending' status on Google Play. To avoid the error message mentioned above, set the link's redirection to point to a web URL instead of Google Play. Once the app is approved, the redirection can be changed back to Google Play. These configuration changes are performed on the [link's template page](/docs/create-a-onelink-template#create-a-onelink-template-with-redirection-logic-for-new-app-users).
-* If your app is available exclusively through a third-party store, the issue may arise from it being assigned the incorrect Google Play status in AppsFlyer. To resolve this, you [must set its Google Play status to Published out of store](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) on the Settings My Apps page.
+* Your app is currently in 'Pending' status on Google Play. To avoid the error message mentioned above, set the link's redirection to point to a web URL instead of Google Play. Once the app is approved, the redirection can be changed back to Google Play. These configuration changes are performed on the <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template-with-redirection-logic-for-new-app-users">link's template page</Anchor>.
+* If your app is available exclusively through a third-party store, the issue may arise from it being assigned the incorrect Google Play status in AppsFlyer. To resolve this, you <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app">must set its Google Play status to Published out of store</Anchor> on the Settings My Apps page.
 
 </Accordion>
 
@@ -420,7 +429,7 @@ As of June 2024, the older shortlink version **m.onelink.me** was deprecated. Li
 
 <Accordion title="Can I manually switch between the branded domain and its OneLink subdomain in an existing link?">
 
-Yes - If the branded domain and the OneLink subdomain are properly mapped. See: [Set up a Branded Domain in AppsFlyer](/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer)
+Yes - If the branded domain and the OneLink subdomain are properly mapped. See: <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain#set-up-a-branded-domain-in-appsflyer">Set up a Branded Domain in AppsFlyer</Anchor>
 
 **Example**:  
 OneLink subdomain: **demo.onelink.me**  
@@ -455,11 +464,13 @@ Only the media source (**pid**) parameter is mandatory.
 
 **Important!** Parameters appended to the short URL do not override the parameters inside the link.
 
-* You create a OneLink custom link with the following output:
-  * **Long URL:** https://onelink-sim.onelink.me/Il2C?pid=training&c=peaches
-  * **Short URL:** https://onelink-sim.onelink.me/Il2C/70e6d165
-* You append the following parameters to the short URL: https://onelink-sim.onelink.me/Il2C/70e6d165?c=bananas&af_adset=fruits
-* The **af\_adset=fruits** parameter appended to the short URL is effective for attribution. However, the **c=bananas** parameter **is not effective** since there is already a **c** parameter in the long URL.
+> 👍 **Tip**
+>
+> * You create a OneLink custom link with the following output:
+>   * **Long URL:** https://onelink-sim.onelink.me/Il2C?pid=training&c=peaches
+>   * **Short URL:** https://onelink-sim.onelink.me/Il2C/70e6d165
+> * You append the following parameters to the short URL: https://onelink-sim.onelink.me/Il2C/70e6d165?c=bananas&af_adset=fruits
+> * The **af\_adset=fruits** parameter appended to the short URL is effective for attribution. However, the **c=bananas** parameter **is not effective** since there is already a **c** parameter in the long URL.
 
 </Accordion>
 
@@ -487,7 +498,7 @@ You can add numerous attribution parameters to enable you to perform a thorough 
 | **Subscriber Parameters** | Use any of the 5 available subscriber parameters to insert values that are useful for your analysis.<br /><br />**Note:** These parameters are parsed and appear in raw data reports, which makes them useful for performing data aggregation or filtering. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 | **Custom Parameters** | Similar to subscriber parameters, you can specify fields with any parameter names and values. and any names.<br /><br />Unlike subscriber parameters, custom parameters are not parsed in raw data; they appear in raw data reports only in the **original url** column. | Custom  <br />(as you specify) |
 
-See more information about [AppsFlyer attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+See more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer attribution link structure and parameters</Anchor>.
 
 </Accordion>
 
@@ -515,7 +526,7 @@ Unfortunately, iOS Universal Link limitations and restrictions set by some socia
 
 The following table summarizes when OneLinks can be used in today’s popular social apps:
 
-<table><tbody><tr><td>Social app</td><td>Android users without app installed</td><td>Android deep linking</td><td>iOS users without app installed</td><td>iOS deep linking</td></tr><tr><td><strong>Facebook </strong>(including boosted posts)</td><td><span><strong>✓\*\*†† </strong></span></td><td><span><strong>✓\*\*††</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>Facebook Messenger</strong></td><td><span><strong>✓\*\*†† </strong></span></td><td><span><strong>✓\*\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>Snapchat</strong></td><td><span><strong>✓†† </strong></span></td><td><span><strong>✓\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>Instagram</strong></td><td><span><strong>✓†† </strong></span></td><td><span><strong>✓††</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>LinkedIn</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*\*</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span></td></tr><tr><td><strong>Reddit</strong></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><strong>Slack</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>X (formerly Twitter)</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓^</strong></span> </td></tr><tr><td><strong>WeChat</strong></td><td><span><strong>✓† </strong></span></td><td><span><strong>✓† </strong></span></td><td><span><strong>✓\*</strong></span></td><td><span><strong>✓\*† </strong></span></td></tr><tr><td><strong>WhatsApp</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td colspan="5"><p>\* If <a href="./onelink-troubleshooting-and-faq#which-operating-systems-allow-uri-schemes-to-open-the-app">URI scheme</a>, or a <a href="./create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">social app landing page</a> set up. <strong>Note</strong>: For Facebook and Facebook Messenger, if both URI scheme and a Social app landing page are set up, the Social app landing page doesn't display.</p><p>\*\* Must have URI scheme.</p><p>^ Must have social app landing page with Universal Links setup.</p><p><span><strong>†</strong></span> User may be prompted to open the link in an external browser.</p><p><span><strong>†† </strong>Android social apps WebView deep linking redirection limitation. See details </span><a href="./create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#android-social-apps-webview-deep-linking-redirection"><span>here</span></a><span>.</span></p></td></tr></tbody></table>
+<table><tbody><tr><td>Social app</td><td>Android users without app installed</td><td>Android deep linking</td><td>iOS users without app installed</td><td>iOS deep linking</td></tr><tr><td><strong>Facebook</strong> (including boosted posts)</td><td><span><strong>✓\*\*††</strong> </span></td><td><span><strong>✓\*\*††</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>Facebook Messenger</strong></td><td><span><strong>✓\*\*††</strong> </span></td><td><span><strong>✓\*\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>Snapchat</strong></td><td><span><strong>✓††</strong> </span></td><td><span><strong>✓\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>Instagram</strong></td><td><span><strong>✓††</strong> </span></td><td><span><strong>✓††</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>LinkedIn</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*\*</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span></td></tr><tr><td><strong>Reddit</strong></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td><strong>Slack</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td></tr><tr><td><strong>X (formerly Twitter)</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓\*</strong></span> </td><td><span><strong>✓</strong></span></td><td><span><strong>✓^</strong></span> </td></tr><tr><td><strong>WeChat</strong></td><td><span><strong>✓†</strong> </span></td><td><span><strong>✓†</strong> </span></td><td><span><strong>✓\*</strong></span></td><td><span><strong>✓\*†</strong> </span></td></tr><tr><td><strong>WhatsApp</strong></td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td><td><span><strong>✓</strong></span></td></tr><tr><td colspan="5"><p>\* If <a href="./onelink-troubleshooting-and-faq#which-operating-systems-allow-uri-schemes-to-open-the-app">URI scheme</a>, or a <a href="./create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page" target="_blank">social app landing page</a> set up. <strong>Note</strong>: For Facebook and Facebook Messenger, if both URI scheme and a Social app landing page are set up, the Social app landing page doesn't display.</p><p>\*\* Must have URI scheme.</p><p>^ Must have social app landing page with Universal Links setup.</p><p><span><strong>†</strong></span> User may be prompted to open the link in an external browser.</p><p><span><strong>††</strong> Android social apps WebView deep linking redirection limitation. See details </span><a href="./create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#android-social-apps-webview-deep-linking-redirection" target="_blank"><span>here</span></a><span>.</span></p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -523,26 +534,30 @@ The following table summarizes when OneLinks can be used in today’s popular so
 
 **Yes,** but note that OneLink is mainly used with owned media, not with ad networks. This is because ad networks usually advertise in apps (which means they know the user's platform, device ID, and so on), app and platform-specific attribution links suffice, so using OneLink isn't necessary. However, for cases in which ad networks don't know the user platform in advance (for example, when they run email or SMS campaigns themselves), OneLink can be the solution.
 
-When you use OneLink with ad networks, you must use the OneLink long URL.
+> 🚧 **Important**
+>
+> When you use OneLink with ad networks, you must use the OneLink long URL.
 
 **To set up OneLink for partner ad networks:**
 
-* Follow the [ad network attribution link instructions](/docs/set-up-an-integrated-partner#attribution-link-tab), and select **Use OneLink** when prompted.
+* Follow the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">ad network attribution link instructions</Anchor>, and select **Use OneLink** when prompted.
 
 Once all the parameters for Android and iOS are added correctly, when the OneLink custom link is clicked and the user is redirected to the right platform, the required parameters are sent to the network within a postback after the user installs.
 
-The network uses either the IDFA or GAID parameters according to the client's device platform and disregards the other parameter.
+> 👍 **Tip**
+>
+> The network uses either the IDFA or GAID parameters according to the client's device platform and disregards the other parameter.
 
 </Accordion>
 
 <Accordion title="How can I solve the iOS app-launching issue from social media apps?">
 
-Facebook and other social media apps sometimes block iOS Universal Links from opening apps. [Social app landing pages](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) are the recommended solution for these app-launching issues.
+Facebook and other social media apps sometimes block iOS Universal Links from opening apps. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">Social app landing pages</Anchor> are the recommended solution for these app-launching issues.
 
 If you do not want to use Social app landing pages, you can use URI schemes as a fallback method. Note, however:
 
 * Using URI schemes as a fallback is subject to iOS-based limitations.
-* For many browsers, including Safari, you must add the `af_force_deeplink=true` parameter to the URL to use URI schemes as a fallback. [Learn more](/docs/uri-scheme-fallback-for-ios).
+* For many browsers, including Safari, you must add the `af_force_deeplink=true` parameter to the URL to use URI schemes as a fallback. <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">Learn more</Anchor>.
 * X (formerly Twitter) doesn't support URI schemes. A Social app landing page should be used to avoid app-launching issues.
 
 </Accordion>
@@ -553,7 +568,7 @@ If you do not want to use Social app landing pages, you can use URI schemes as a
 
 * Due to the way Instagram renders the text of a page post, links are not clickable when entered into a post caption.
 * App opening and deep linking into Android apps are supported without any special considerations. However, Instagram doesn't support app opening and deep linking into iOS apps. To overcome this issue, you can take one of two approaches:
-  * **Recommended:** Configure a [Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page). The Clustered Poster and ShowAndTell templates work best. In addition to the Social landing page, we recommend setting a URI scheme in your OneLink template.
+  * **Recommended:** Configure a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">Social app landing page</Anchor>. The Clustered Poster and ShowAndTell templates work best. In addition to the Social landing page, we recommend setting a URI scheme in your OneLink template.
   * Use a URI scheme and [forced deep linking](/docs/onelink-troubleshooting-and-faq#forced-deep-linking) when using OneLinks on Instagram. Be sure to keep the following considerations in mind the following when using `af_force_deeplink=true` with OneLink on Instagram:
 
 | App installed? | Click has af\_force\_deeplink=true? | Result |
@@ -608,21 +623,21 @@ When a OneLink custom link is embedded behind the video in a Meta Web Ads paid c
 
 <Accordion title="How can I A/B test the Social app landing page?">
 
-The [social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) gives users a seamless app-launching experience when using OneLink in social network apps. You may be concerned that adding a step to the funnel decreases conversion rates. But the truth is, that without the landing page, user journeys are generally broken, resulting in very low conversion rates.
+The <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">social app landing page</Anchor> gives users a seamless app-launching experience when using OneLink in social network apps. You may be concerned that adding a step to the funnel decreases conversion rates. But the truth is, that without the landing page, user journeys are generally broken, resulting in very low conversion rates.
 
 If you're not fully convinced, why not test it?
 
-[A/B test](/docs/create-a-b-tests) your custom link in social media apps, with and without the Social app landing page.
+<Anchor target="_blank" href="/marketers/docs/create-a-b-tests">A/B test</Anchor> your custom link in social media apps, with and without the Social app landing page.
 
 **To A/B test the Social app landing page:**
 
-1. [Create a OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) (called Link1) to use with social media apps. Don't set the Social app landing page for this link.
+1. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Create a OneLink link</Anchor> (called Link1) to use with social media apps. Don't set the Social app landing page for this link.
 2. Add the **af\_adset** attribution parameter.
 3. Add the **af\_ad** attribution parameter with the value "no lp".
 4. Test Link1 outside of social media apps, and verify the link works and launches your app correctly.
 5. Duplicate Link1 and call it Link2.
 6. Change the **af\_ad** attribution parameter value to "using lp".
-7. [Create the Social app landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) for Link2 only.
+7. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">Create the Social app landing page</Anchor> for Link2 only.
 8. Publish 2 different posts in the **same** social media app, using Link1 and Link2.  
    Don't worry about the different number of clicks each link produces. The important KPI is the final conversion rate of each link.
 9. **Check the A/B test results after enough traffic is created.**
@@ -634,7 +649,7 @@ If you're not fully convinced, why not test it?
 
 <Accordion title="How can I bypass the app selection dialog?">
 
-If you see an app selection dialog when testing your OneLinks, make sure to [sign your app](https://developer.android.com/studio/publish/app-signing), even if it's a [debug app.](https://developer.android.com/studio/publish/app-signing#debug-mode) The certificate you use to sign the app is the same certificate you use to [generate the SHA256 fingerprint](https://dev.appsflyer.com/docs/initial-setup-for-deep-linking-and-deferred-deep-linking#generating-a-sha256-fingerprint) when configuring OneLink for App Links.
+If you see an app selection dialog when testing your OneLinks, make sure to <Anchor target="_blank" href="https://developer.android.com/studio/publish/app-signing">sign your app</Anchor>, even if it's a <Anchor target="_blank" href="https://developer.android.com/studio/publish/app-signing#debug-mode">debug app.</Anchor> The certificate you use to sign the app is the same certificate you use to <Anchor target="_blank" href="https://dev.appsflyer.com/docs/initial-setup-for-deep-linking-and-deferred-deep-linking#generating-a-sha256-fingerprint">generate the SHA256 fingerprint</Anchor> when configuring OneLink for App Links.
 
 </Accordion>
 
@@ -642,7 +657,7 @@ If you see an app selection dialog when testing your OneLinks, make sure to [sig
 
 <Accordion title="What deep linking methods should be implemented?">
 
-Your developers should implement the unified deep linking (UDL) method for deep linking. See our full [instructions for deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking).
+Your developers should implement the unified deep linking (UDL) method for deep linking. See our full <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">instructions for deep linking</Anchor>.
 
 iOS Universal Links and Android App Links are **app-launching methods, which don't actually deep link users** (sending them to specific content within the app). The URI scheme method can launch the app and deep link users (via the **af\_dp** custom link parameter), but it should only be configured for app-launching. Its main usage is as a fallback method for Universal Links and App Links and for app-launching users with Android OS versions prior to 6.0.
 

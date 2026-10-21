@@ -1,9 +1,5 @@
 ---
 title: Additional SDK integration guide
-excerpt: >-
-  Consider the additional SDK functionalities that are available and work with
-  your developer to implement APIs such as uninstall measurement, user invite
-  attribution, push notifications, and privacy settings.
 metadata:
   keywords:
     - iOS
@@ -33,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4408735106193-Additional-SDK-integration-guide
 ---
+> **At a glance:** Consider the additional SDK functionalities that are available and work with your developer to implement APIs such as uninstall measurement, user invite attribution, push notifications, and privacy settings.
+
 ## Additional attribution methods
 
 Consider these additional attribution methods if you plan to measure TV, uninstalls, or pre-installed apps.
@@ -41,7 +39,7 @@ Consider these additional attribution methods if you plan to measure TV, uninsta
 
 <Accordion title="CTV attribution">
 
-Attribute [mobile users to CTV ads](/docs/ctv-pc-and-console-platform-attribution-concepts) aired in specific locations and at specific times.
+Attribute <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">mobile users to CTV ads</Anchor> aired in specific locations and at specific times.
 
 </Accordion>
 
@@ -49,7 +47,7 @@ Attribute [mobile users to CTV ads](/docs/ctv-pc-and-console-platform-attributio
 
 Measure the uninstall rate of users coming from different sources. Uninstall measurement can help you to analyze and optimize your campaigns according to this significant KPI.
 
-[Learn how to set up uninstall measurement](/docs/measure-uninstalls).
+<Anchor target="_blank" href="/marketers/docs/measure-uninstalls">Learn how to set up uninstall measurement</Anchor>.
 
 </Accordion>
 
@@ -57,7 +55,7 @@ Measure the uninstall rate of users coming from different sources. Uninstall mea
 
 <Accordion title="Pre-installed apps">
 
-In [pre-install campaigns](/docs/appsflyer-factory-preinstall-using-manifest-android), app owners contract with device manufacturers (OEMs) to pre-install their apps.
+In <Anchor target="_blank" href="/marketers/docs/appsflyer-factory-preinstall-using-manifest-android">pre-install campaigns</Anchor>, app owners contract with device manufacturers (OEMs) to pre-install their apps.
 
 With AppsFlyer, you can easily attribute installs of pre-installed apps. When users launch your app for the first time, AppsFlyer attributes the install to the preload partner as a media source.
 
@@ -71,7 +69,7 @@ Measure user engagement with your app by counting the number of user sessions du
 
 <Accordion title="Custom time between sessions">
 
-By default, at least 5 seconds must pass between two app launches to count as two separate sessions. Learn more about [counting sessions](/docs/measure-sessions#session-reporting-by-the-app-sdk).
+By default, at least 5 seconds must pass between two app launches to count as two separate sessions. Learn more about <Anchor target="_blank" href="/marketers/docs/measure-sessions#session-reporting-by-the-app-sdk">counting sessions</Anchor>.
 
 Setting a **high value to the custom time between launches can impair APIs** that rely on session data, such as deep linking.
 
@@ -81,7 +79,7 @@ Setting a **high value to the custom time between launches can impair APIs** t
 
 <Accordion title="Background sessions for utility apps">
 
-You can [manually report user sessions](/docs/measure-sessions#session-reporting-by-the-app-sdk). This can be useful for utility apps that run in the background.
+You can <Anchor target="_blank" href="/marketers/docs/measure-sessions#session-reporting-by-the-app-sdk">manually report user sessions</Anchor>. This can be useful for utility apps that run in the background.
 
 </Accordion>
 
@@ -93,27 +91,29 @@ Use OneLink to attribute your owned media sources such as websites, social media
 
 <Accordion title="Resolve wrapped deep link URLs">
 
-Some 3rd party services, such as [email service providers](/docs/email-service-provider-esp-integration-guide), wrap links in emails with their own click recording domains. Some even allow you to set your own click recording domains. If OneLink is wrapped in such domains, it might limit its functionality.
+Some 3rd party services, such as <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">email service providers</Anchor>, wrap links in emails with their own click recording domains. Some even allow you to set your own click recording domains. If OneLink is wrapped in such domains, it might limit its functionality.
 
 To overcome this issue, your developer needs to configure the app using these APIs:
 
-<Accordion title="Android Native">
+<Tabs>
+<Tab title="Android Native">
 
 See [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setresolvedeeplinkurls) in the Android SDK reference
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS Native">
+<Tab title="iOS Native">
 
 See [`resolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#resolvedeeplinkurls) in the iOS SDK reference
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity">
+<Tab title="Unity">
 
 See [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/api#setresolvedeeplinkurls) in the Unity SDK reference
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -121,7 +121,7 @@ See [`setResolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/api#setresolved
 
 AppsFlyer supports the measurement of push notification campaigns from all vendors, including Google Cloud Messaging and Apple push notification services.
 
-[Learn more about push notification measurement](/docs/measuring-push-notification-re-engagement-campaigns).
+<Anchor target="_blank" href="/marketers/docs/measuring-push-notification-re-engagement-campaigns">Learn more about push notification measurement</Anchor>.
 
 </Accordion>
 
@@ -129,7 +129,7 @@ AppsFlyer supports the measurement of push notification campaigns from all vendo
 
 Allowing your existing users to invite their friends and contacts as new users to your app can be a key growth factor for your app. With AppsFlyer, you can attribute and record installs that originate from user invites within your app.
 
-[Learn more about user invite attribution](/docs/user-invite-attribution).
+<Anchor target="_blank" href="/marketers/docs/user-invite-attribution">Learn more about user invite attribution</Anchor>.
 
 </Accordion>
 
@@ -137,13 +137,13 @@ Allowing your existing users to invite their friends and contacts as new users t
 
 Cross-promoting apps can be a major growth factor in driving additional installs for your apps. AppsFlyer enables you to attribute and record installs originating from a cross-promotion from the app the user currently has, to another one of your apps.
 
-[Learn more about cross-promotion attribution](/docs/cross-promotion-attribution-for-marketers).
+<Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Learn more about cross-promotion attribution</Anchor>.
 
 </Accordion>
 
 <Accordion title="Attribute app sessions initiated from owned websites (domains)">
 
-App owners that use App Links or Universal Links for deep linking (without OneLink), can configure the SDK to attribute sessions initiated via the domain associated with their app ([Android](https://developer.android.com/studio/write/app-link-indexing#associatesite)/[iOS](https://developer.apple.com/documentation/xcode/supporting-associated-domains?preferredLanguage=occ)).
+App owners that use App Links or Universal Links for deep linking (without OneLink), can configure the SDK to attribute sessions initiated via the domain associated with their app (<Anchor target="_blank" href="https://developer.android.com/studio/write/app-link-indexing#associatesite">Android</Anchor>/<Anchor target="_blank" href="https://developer.apple.com/documentation/xcode/supporting-associated-domains?preferredLanguage=occ">iOS</Anchor>).
 
 For example:
 
@@ -153,10 +153,10 @@ For example:
 
 Developer documentation is available as follows:
 
-* [Android SDK reference](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl)
-* [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl)
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl">Android SDK reference</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#appendparameterstodeeplinkingurl">iOS SDK reference</Anchor>
 
-**Tip!** [OneLink Smart Script](/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions) can help app owners convert website visitors to app users.
+**Tip!** <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">OneLink Smart Script</Anchor> can help app owners convert website visitors to app users.
 
 </Accordion>
 
@@ -168,7 +168,7 @@ Review regulations like GDPR and CCPA and your business requirements, and consid
 
 <Accordion title="Opt-out policy">
 
-In some instances, you might need to instruct your developer to set the AppsFlyer SDK to stop or limit data collection, (for example, to comply with GDPR and CCPA regulations). There are different methods to preserve the privacy of users on the SDK. For more information about the various methods, see [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) article.
+In some instances, you might need to instruct your developer to set the AppsFlyer SDK to stop or limit data collection, (for example, to comply with GDPR and CCPA regulations). There are different methods to preserve the privacy of users on the SDK. For more information about the various methods, see <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">Privacy preserving methods in the SDK</Anchor> article.
 
 </Accordion>
 
@@ -182,25 +182,27 @@ In some cases, advertisers may want to stop sharing user-level data with ad netw
 
 Data sharing with partners is controlled via the `setSharingFilterForPartners` method:
 
-<Accordion title="Android native">
+<Tabs>
+<Tab title="Android native">
 
 See [`setSharingFilterForPartners`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners) in the Android SDK reference
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS native">
+<Tab title="iOS native">
 
 See [`resolveDeepLinkURLs`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#setsharingfilterforpartners) in the iOS SDK reference
 
-</Accordion>
+</Tab>
 
-<Accordion title="UnityReact Native">
+<Tab title="UnityReact Native">
 
 See [`setSharingFilterForPartners`](https://dev.appsflyer.com/hc/docs/api#setsharingfilterforpartners) in the Unity SDK reference
 
 See [`setSharingFilterForPartners`](https://dev.appsflyer.com/hc/docs/rn_api#setsharingfilterforpartners) in the React Native SDK reference
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -219,17 +221,19 @@ The SDK offers two alternative methods for gathering consent data:
 
 To implement user consent data collection for DMA compliance see our Dev Hub guides:
 
-<Accordion title="Android Native">
+<Tabs>
+<Tab title="Android Native">
 
-[Send consent for DMA compliance](https://dev.appsflyer.com/hc/docs/android-send-consent-for-dma-compliance)
+<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-send-consent-for-dma-compliance">Send consent for DMA compliance</Anchor>
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS Native">
+<Tab title="iOS Native">
 
 [Send consent for DMA compliance](https://dev.appsflyer.com/hc/docs/ios-send-consent-for-dma-compliance)
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -237,9 +241,9 @@ To implement user consent data collection for DMA compliance see our Dev Hub gui
 
 <Accordion title="Strict-mode SDK">
 
-Use the strict-mode SDK to completely remove IDFA collection functionality and AdSupport framework dependencies (for example, when developing [apps for children](https://developer.apple.com/app-store/review/guidelines/#kids-category)).
+Use the strict-mode SDK to completely remove IDFA collection functionality and AdSupport framework dependencies (for example, when developing <Anchor target="_blank" href="https://developer.apple.com/app-store/review/guidelines/#kids-category">apps for children</Anchor>).
 
-If you market apps for children, your developer needs to install the [strict-mode SDK](https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk) instead of the regular SDK. **Note:** IDFV remains available.
+If you market apps for children, your developer needs to install the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk">strict-mode SDK</Anchor> instead of the regular SDK. **Note:** IDFV remains available.
 
 </Accordion>
 
@@ -247,19 +251,21 @@ If you market apps for children, your developer needs to install the [strict-mod
 
 To disable the AdSupport and iAd frameworks, the SDK provides the following setters:
 
-<Accordion title="iOS native">
+<Tabs>
+<Tab title="iOS native">
 
 * [`disableCollectASA`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disablecollectasa) to opt out of Apple Search Ads attributions.
 * [`disableAdvertisingIdentifier`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) to not collect Apple `advertisingIdentifier`
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity">
+<Tab title="Unity">
 
 * [`setDisableCollectIAd`](https://dev.appsflyer.com/hc/docs/api#setdisablecollectiad) to opt out of Apple Search Ads attributions.
 * [`setDisableCollectAppleAdSupport`](https://dev.appsflyer.com/hc/docs/api#setdisablecollectappleadsupport) to not collect Apple `advertisingIdentifier`
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 

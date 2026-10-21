@@ -1,8 +1,5 @@
 ---
 title: '[Legacy] X Ads (formerly Twitter Ads) integration setup'
-excerpt: >-
-  Integrate your X Ads account with AppsFlyer to display attribution data of X
-  Ads campaigns.
 deprecated: true
 metadata:
   keywords:
@@ -24,11 +21,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/36433415114769--Legacy-X-Ads-formerly-Twitter-Ads-integration-setup
 ---
+**At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
+
 ## Connecting your X Ads account to AppsFlyer
 
 <Accordion title="Watch">
 
-<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/a65pnqoyxw" height="556px" />
+<Image alt="" src="https://fast.wistia.com/embed/medias/a65pnqoyxw/swatch" width="100%" />
 
 </Accordion>
 
@@ -36,21 +35,21 @@ x-zendesk:
 
 > 📘 **Before you begin**
 >
-> Make sure you've [added a payment method](https://business.twitter.com/en/help/account-setup/billing-basics.html) to your X Ads account. Otherwise, you won't be able to activate the partner integration in AppsFlyer.
+> Make sure you've <Anchor target="_blank" href="https://business.twitter.com/en/help/account-setup/billing-basics.html">added a payment method</Anchor> to your X Ads account. Otherwise, you won't be able to activate the partner integration in AppsFlyer.
 
-1. Log in to your X Ads Account at [ads.twitter.com](https://ads.twitter.com)  
+1. Log in to your X Ads Account at <Anchor target="_blank" href="https://ads.twitter.com">ads.twitter.com</Anchor>  
    If you're not automatically directed to the Ads page, click the Ads button at the top-left corner.
 2. When prompted to select either a **Simple (NEW)** or **Advanced** campaign, select **Advanced**.
 3. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.
 
    ![twitter-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
 4. Choose your app, then click the **mobile measurement partner** link.
-5. On the **Conversion tracking**page, click **Go to AppsFlyer**. 
+5. On the **Conversion tracking** page, click **Go to AppsFlyer**. 
 
    ![twitter-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
 6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
 
-   ![twitter-go-to-appsflyer.png](https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png)
+   <Image alt="twitter-go-to-appsflyer.png" src="https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png" width="576px" />
 7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.
 8. Search for **X Ads** and select it.
 9. In the **Integration** tab, accept the X Ads Terms and Conditions for Mobile App Conversion Recording (MACT), then click **Save integration**.
@@ -59,7 +58,7 @@ x-zendesk:
 
     [![](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)
 12. Turn on **Activate Partner** again to display the **Integration** tab settings and enable attribution.  
-    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about [partner activation.](/docs/partner-activation-deactivation)
+    **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation.</Anchor>
 13. Select your X Ads accounts to activate them, then click **Save & Close**.
 
     ![twitter_account_name.png](https://files.readme.io/d74e9b3edd08c4ca3396b95ae20e20db99bcbe1a220318403bd6c9d6f9600282-36433415108497.png)
@@ -68,13 +67,13 @@ x-zendesk:
 
 ## X Ads attribution setup
 
-For a detailed description of the partner configuration page Header, click [here](/docs/set-up-an-integrated-partner).
+For a detailed description of the partner configuration page Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">here</Anchor>.
 
 <div id="integration-tab" />
 
 <Accordion title="Integration tab">
 
-The **Integration Tab** is divided into different sections, as described below. [Partner must be activated](/docs/partner-activation-deactivation) on the first visit to enable its setup.
+The **Integration Tab** is divided into different sections, as described below. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Partner must be activated</Anchor> on the first visit to enable its setup.
 
 ### Ad account connected
 
@@ -102,9 +101,9 @@ You can customize this value to 1-23 hours or 1-7 days. We recommend setting th
 
 For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement. **Currently, re-attribution measurement is not supported by X Ads.**
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> Ensure Retargeting is enabled for the app on the App Settings page. For details, click [here](/docs/app-settings#reengagement-attribution).
+> Ensure Retargeting is enabled for the app on the App Settings page. For details, click <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">here</Anchor>.
 
 #### Re-engagement click-through lookback window
 
@@ -141,13 +140,13 @@ In this section, you can map your AppsFlyer events with your partners via postba
 
 | Parameter | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
-| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible [mapping configurations](/docs/in-app-event-postback-configuration#event-mapping):<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
+| **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">mapping configurations</Anchor>:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
 | **for users from** | Select the sending option for the event:<br /><br /><br /><br />**Note**<br />For X Ads to receive agency-attributed postbacks, you must select **All media sources, including organic**. Otherwise, X Ads won't receive such postbacks.<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
-5. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/9649c58fb3f46bbb89605e274623e80fbae8d31417694961f0035b7b50276aa9-36433422313105.png) to set conditions for sending certain in-app events to the partner.  
-   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
+5. [Optional] Click <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/9649c58fb3f46bbb89605e274623e80fbae8d31417694961f0035b7b50276aa9-36433422313105.png" width="30px" /> to set conditions for sending certain in-app events to the partner.  
+   Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">conditional in-app event postbacks</Anchor>.
 
 </Accordion>
 
@@ -159,7 +158,7 @@ X Ads does not use attribution links for attribution.
 
 > 📘 **Note**
 >
-> For all [self-reporting networks (SRNs)](/docs/self-reporting-networks-srns), such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
+> For all <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">self-reporting networks (SRNs)</Anchor>, such as Meta ads, Apple Ads, Google Ads, X Ads, etc., this tab is not functional since they don't use external attribution links.
 
 </Accordion>
 
@@ -169,15 +168,15 @@ X Ads does not use attribution links for attribution.
 
 The cost integration provides the following aggregated data:
 
-* Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.  
-  **Note:** Cost data requires an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription.
+* Cost data for your campaigns, adsets, ads, channel, and geo/countries. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
+  **Note:** Cost data requires an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription.
 * Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -207,11 +206,11 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions.](/docs/set-up-an-integrated-partner#permissions-tab)
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions.</Anchor>
 
 ### Agency permissions
 
-Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+Learn about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">granting agency permissions</Anchor>.
 
 </Accordion>
 
@@ -219,7 +218,7 @@ Learn about [granting agency permissions](/docs/set-up-an-integrated-partner#age
 
 <Accordion title="Watch">
 
-<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/3ypfld8enr" height="556px" />
+<Image alt="" src="https://fast.wistia.com/embed/medias/3ypfld8enr/swatch" width="100%" />
 
 </Accordion>
 

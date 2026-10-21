@@ -1,8 +1,5 @@
 ---
 title: Audiences - Create better audiences with user attribute data
-excerpt: >-
-  Enrich your ability to segment users into relevant groups by adding your data
-  about their characteristics into Audiences.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Enrich your ability to segment users into relevant groups by adding your data about their characteristics into Audiences.
+
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
 ## About user attributes
@@ -41,7 +40,7 @@ User attribute data is:
 
 User attribute data is **not shared with advertising partners.**
 
-User attributes are housed at either the app-level or account-level as described in this article. If using app-level attributes, the account user requires [app permission](/docs/user-management#overview) to manage and use the attributes.
+User attributes are housed at either the app-level or account-level as described in this article. If using app-level attributes, the account user requires <Anchor target="_blank" href="/marketers/docs/user-management#overview">app permission</Anchor> to manage and use the attributes.
 
 The following scenario provides a detailed explanation of user attributes.
 
@@ -97,7 +96,7 @@ To manage app-level attributes, an account user must have app permission.
 2. [Do one of the following](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
    * [Import user-attribute data by CSV.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)
    * [Import user-attribute data by API.](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)
-3. [Implement user attributes in rulesets.](/docs/audiences-guide#user-attributes)
+3. <Anchor target="_blank" href="/marketers/docs/audiences-guide#user-attributes">Implement user attributes in rulesets.</Anchor>
 
 </Accordion>
 
@@ -169,7 +168,7 @@ Manage user attributes
 | Field | Content | Format | Add data  <br />by CSV | Remove data by CSV |
 | --- | --- | --- | --- | --- |
 | <span id="device_id"></span>device\_id | Includes 1 of these user IDs:<ul><li>IDFA</li><li>GAID</li></ul> | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
-| <span id="customer_id"></span>customer\_id | [Customer user ID](/docs/customer-user-id-field-cuid) | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
+| <span id="customer_id"></span>customer\_id | <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer user ID</Anchor> | Text | Either **device\_id** or **customer\_id** is mandatory | Either **device\_id** or **customer\_id** is mandatory<br /><br />To remove existing data, don't send |
 | <span id="app_id"></span>app\_id | **App-level attribute:** App ID as it displays in the dashboard.<br /><br />For iOS apps, include the prefix *ID*.<br /><br />**Account-level attribute**: Always populate with * | Text | Mandatory | Mandatory |
 | <span id="attribute_key"></span>attribute\_key | User-attribute name, exactly as it displays on the user-attributes tab. | Text | Mandatory | Mandatory |
 | <span id="attribute_value"></span>attribute\_value | Assigned value<br /><br />[*See limitations](/docs/audiences-create-better-audiences-with-user-attribute-data#limitations) | Text or number | Mandatory | Don't send |
@@ -184,7 +183,7 @@ User-attribute field list
 
 User-attribute data is added or removed via a CSV file. The figure and example CSV file that follows, match the scenario describing the feature in this article.
 
-[User-attribute-example.csv](https://support.appsflyer.com/hc/article_attachments/360012423857)
+<Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">User-attribute-example.csv</Anchor>
 
 ![FileForAttributes.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
 
@@ -195,14 +194,14 @@ User-attribute data is added or removed via a CSV file. The figure and example C
 
 > 📘 **Note**
 >
-> This CSV format is for importing user attribute data. If you're importing audience segments instead, see [Import audience segments from internal systems](/docs/audiences-import-audience-segments-from-internal-systems), which uses a different CSV format that requires a header row.
+> This CSV format is for importing user attribute data. If you're importing audience segments instead, see <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems">Import audience segments from internal systems</Anchor>, which uses a different CSV format that requires a header row.
 
 **To import a CSV file:**
 
 1. Go to **Audiences** > **User attributes** tab.
 2. Click **Import data**.
 3. Select **CSV**.
-4. Selecteither:
+4. Select either:
    * **Add data**
    * **Remove data**
 5. Choose a CSV file to import.
@@ -260,7 +259,7 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 > 📘 **Note**
 >
-> You must authenticate the request using an Authorization Bearer Header with an [API token V2.0](/docs/managing-appsflyer-tokens#advertiser-1)
+> You must authenticate the request using an Authorization Bearer Header with an <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#advertiser">API token V2.0</Anchor>
 
 **Example with multiple device IDs, attribute keys, and attribute values**
 

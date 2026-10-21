@@ -1,10 +1,5 @@
 ---
 title: Creative Management
-excerpt: >-
-  Creative Management helps you centralize, review, and launch creatives faster.
-  Use it to sync creatives from your creative storage, understand creative
-  activity status across media sources, easily find relevant creatives, and
-  upload them directly to supported media source campaigns.
 metadata:
   keywords:
     - Premium
@@ -28,6 +23,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns.
+
 ## About Creative Management
 
 Creative Management is a centralized hub for managing creative assets across their lifecycle, from storage sync to media source upload.
@@ -47,7 +44,7 @@ Built for scale, Creative Management helps marketing and creative teams reduce m
 
 **Prerequisites**
 
-An AppsFlyer account with a [Creative Optimization](/docs/creative-optimization-guide) subscription. To sign up for Creative Management, contact your CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com). A free trial may also be available.
+An AppsFlyer account with a <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">Creative Optimization</Anchor> subscription. To sign up for Creative Management, contact your CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com). A free trial may also be available.
 
 **To get started using Creative Management, follow the steps below:**
 
@@ -70,11 +67,11 @@ Creative Management currently supports Google Drive and Dropbox. Each source has
 
 1. In AppsFlyer, go to **Optimize > Creative Management**.
 
-**![Click Creative Management New.png](https://files.readme.io/c4ae98a4409b0766c9bd41e2f153d67c3d6168d31af82dadd1f43f345678878e-40988213459217.png)**
+**<Image alt="Click Creative Management New.png" src="https://files.readme.io/c4ae98a4409b0766c9bd41e2f153d67c3d6168d31af82dadd1f43f345678878e-40988213459217.png" width="35.83%" />**
 
 2. Click **Creative connections**.
 
-![click Creative connection.png](https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png)
+<Image alt="click Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. Click **Add connections**.
 4. Select **Google Drive**.
@@ -85,7 +82,7 @@ Creative Management currently supports Google Drive and Dropbox. Each source has
 8. Click **Add URL**.
 9. Repeat the previous two steps to connect multiple folders at once.
 
-![image (49).png](https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png)
+<Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Click **Connect**.
 
@@ -103,7 +100,7 @@ Before connecting Dropbox, make sure you're logged in to Dropbox with the accoun
 6. In the connection modal, click **Choose folders**, then select the folders you want to connect.
    * Creative Management syncs creatives from the selected folders and their subfolders.
 
-![click Choose folders.png](https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png)
+<Image alt="click Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. Select the relevant app for each folder. This step is optional, but we recommend it because it helps organize and match creatives correctly.
 8. Click **Connect**.
@@ -120,7 +117,7 @@ The Creative Management gallery is where you review, search, filter, and select 
 
 Each creative card represents one creative. A creative may include multiple versions, such as different resolutions or formats. From the card, you can quickly understand whether the creative is new, active, or inactive across media sources, and view high-level metadata such as when it was first launched and when it was synced to Creative Management. Each new creative is automatically analyzed and scored to help you choose the best ones before launch. Scores range from C (less likely to succeed) to A (ready to scale), helping you prioritize top-performing creatives with confidence.
 
-![image (52).png](https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png)
+<Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
 
 #### Filter creatives
 
@@ -175,7 +172,7 @@ For Google Ads, you can upload creatives to existing app promotion ad groups.
 8. Review the setup and any validation messages.
 9. Click **Upload to Google Ads**.
 
-![click Upload to Google Ads.png](https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png)
+<Image alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 > 📘 **Note**
 >
@@ -195,7 +192,7 @@ For Meta, you can create ads inside existing ad sets.
 6. Select the creatives from the **All creatives** section and assign them to the ads.
 7. If a creative has multiple versions, select the relevant ones you want to upload.
 
-![Meta Ads.png](https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png)
+<Image alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. Review the setup and any validation messages.
 9. Click **Next**.
@@ -203,7 +200,7 @@ For Meta, you can create ads inside existing ad sets.
     * By default, this setup applies to all new ads created. You can edit specific ads by choosing them from the **Customize a specific ad** dropdown.
 11. Click **Create ads in Meta**.
 
-![image (55).png](https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png)
+<Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
 #### TikTok Ads
 
@@ -337,8 +334,8 @@ Use status information to answer questions such as:
 | Asset requirements | Creative file formats, dimensions, duration, and size must meet each network's requirements. |
 | Upload history scope | Upload history reflects the upload result, not the creative's ongoing delivery or moderation status. |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Creative Optimization guide](/docs/creative-optimization-guide)
+> * <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">Creative Optimization guide</Anchor>
 
 <div data-zendesk-anchors="h_01KXDN2V1R9SRPFSRGZZ4ZA62S=sync-creatives-from-the-creative-storage h_01KXDN2V1RGCDYJ074FV4KJY8T=connect-google-drive h_01KXDN2V1R75971RE5ECTDM8TM=connect-dropbox h_01KXDN2V1RAA882M55HK9152D6=browse-and-select-creatives h_01KXDN2V1RHJJZC67ZM84TNT0Y=filter-creatives h_01KXDN2V1R8CXZ4XGTX656XRWF=upload-creatives-to-media-sources h_01KXDN2V1RE8748NWSCJP824PD=google-ads h_01KXDN2V1R31MABH1A3G0T9B84=note h_01KXDN2V1RG25RR7BXYAFVEAT7=meta-ads h_01KXDN2V1RBANB482286YP1QSY=tiktok-ads h_01KXDN2V1R52Y91AZNVGPPWW44=unity-ads h_01KXDN2V1RF9TZ25DFYQ91RVRC=note-1 h_01KXDN2V1REED32CRW83W7MMC9=mintegral h_01KXDN2V1SVWASV4KGJJ2VC162=note-2 h_01KXDN2V1RSFB2GHDPN95S90EJ=applovin h_01M1H2RMVW2CYMV7KBBSHJ9686=note-3 h_01KXDN2V1S8NZP8F4QN51NS3XP=review-upload-results h_01KXDN2V1SC0PHRY810NJG6QY3=creative-activity-status h_01KXDN2V1SDNR1Z5FTKEJNDZF3=see-also" />

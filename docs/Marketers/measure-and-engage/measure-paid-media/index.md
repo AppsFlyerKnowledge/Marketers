@@ -13,22 +13,22 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550990672401-Measure-paid-media
 ---
-- [Media source configuration](/docs/media-source-configuration)
-- [SKAN interoperation](/docs/skan-interoperation)
-- [SKAN solution](/docs/skan-solution)
-- [Amazon Ads](/docs/amazon-ads)
-- [Apple Ads](/docs/apple-ads)
-- [Google Ads](/docs/google-ads)
-- [Google Marketing Platform (GMP)](/docs/google-marketing-platform-gmp)
-- [Meta ads](/docs/meta-ads)
-- [Meta campaign management partners](/docs/meta-campaign-management-partners)
-- [Pinterest](/docs/pinterest)
-- [Snap (Snapchat)](/docs/snap-snapchat)
-- [TikTok for Business](/docs/tiktok-for-business)
-- [X Ads (formerly Twitter Ads)](/docs/x-ads-formerly-twitter-ads)
-- [Ad network configuration guides (A-F)](/docs/ad-network-configuration-guides-a-f)
-- [Ad network configuration guides (G-Q)](/docs/ad-network-configuration-guides-g-q)
-- [Ad network configuration guides (R-Z)](/docs/ad-network-configuration-guides-r-z)
-- [China market](/docs/china-market)
-- [China domestic market ad network configuration](/docs/china-domestic-market-ad-network-configuration)
-- [ChatGPT Ads (OpenAI) integration setup](/docs/chatgpt-ads-openai-integration-setup)
+- <Anchor target="_blank" href="/marketers/docs/media-source-configuration">Media source configuration</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/skan-interoperation">SKAN interoperation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/skan-solution">SKAN solution</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/amazon-ads">Amazon Ads</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/apple-ads">Apple Ads</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/google-ads">Google Ads</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-gmp">Google Marketing Platform (GMP)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/meta-ads">Meta ads</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/meta-campaign-management-partners">Meta campaign management partners</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/pinterest">Pinterest</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/snap-snapchat">Snap (Snapchat)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/tiktok-for-business">TikTok for Business</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads">X Ads (formerly Twitter Ads)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/ad-network-configuration-guides-a-f">Ad network configuration guides (A-F)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/ad-network-configuration-guides-g-q">Ad network configuration guides (G-Q)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/ad-network-configuration-guides-r-z">Ad network configuration guides (R-Z)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/china-market">China market</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/china-domestic-market-ad-network-configuration">China domestic market ad network configuration</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/chatgpt-ads-openai-integration-setup">ChatGPT Ads (OpenAI) integration setup</Anchor>

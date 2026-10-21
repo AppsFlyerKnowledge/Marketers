@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16065571938961-Bulletin-Changes-in-agency-transparency
 ---
-| **What's new** | As the industry shifts towards a more transparent ecosystem, AppsFlyer supports transparency between advertisers and agencies.<br /><br />As of August 14, 2023, the app-level [agency transparency](/partners/docs/getting-started-agency-onboarding#transparency) toggle is permanently turned on by default. This is relevant for new agencies joining AppsFlyer and for existing agencies with new advertiser access permissions. |
+| **What's new** | As the industry shifts towards a more transparent ecosystem, AppsFlyer supports transparency between advertisers and agencies.<br /><br />As of August 14, 2023, the app-level <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#transparency">agency transparency</Anchor> toggle is permanently turned on by default. This is relevant for new agencies joining AppsFlyer and for existing agencies with new advertiser access permissions. |
 | --- | --- |
 | **Effective date** | August 14, 2023 |
 | **Before the change** | All agency accounts with advertiser access permission could choose to turn on and turn off the **Allow transparency** toggle. |

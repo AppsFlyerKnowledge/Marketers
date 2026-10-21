@@ -1,8 +1,5 @@
 ---
 title: '[Beta] User-based cross-platform re-engagement attribution'
-excerpt: >-
-  Learn how cross-platform re-engagement attribution credits the media sources
-  that bring existing users back to your product across platforms.
 metadata:
   keywords:
     - Marketers
@@ -23,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45444294953361--Beta-User-based-cross-platform-re-engagement-attribution
 ---
+**At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
+
 ## About cross-platform re-engagement attribution
 
-Cross-platform re-engagement attribution extends the [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution) model to include measuring user cohorts based on the latest ad engagement, in addition to the original acquisition source.
+Cross-platform re-engagement attribution extends the <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor> model to include measuring user cohorts based on the latest ad engagement, in addition to the original acquisition source.
 
 In cross-platform user-acquisition attribution, all activity for a given user is credited to the original media source that drove their first conversion, using a persistent Customer User ID (CUID) to link events across devices and platforms. This gives you a unified view of each user's journey, regardless of where it takes place.
 
@@ -93,13 +92,13 @@ Once Meta is credited with the re-engagement, the re-engagement window opens. An
 
 ## Set up cross-platform re-engagement attribution
 
-To set up cross-platform re-engagement attribution, you need to apply a few settings in AppsFlyer specific to re-engagement on top of your product line setup. For more information, see [How to create a product line](/docs/product-line-group-apps-for-cross-platform-attribution#how-to-create-a-product-line).
+To set up cross-platform re-engagement attribution, you need to apply a few settings in AppsFlyer specific to re-engagement on top of your product line setup. For more information, see <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution#how-to-create-a-product-line">How to create a product line</Anchor>.
 
 ## View cross-platform attribution results
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Data Locker end-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker)
-> * [The cross-platform dashboard](/docs/my-dashboards#crossplatform-dashboard)
+> * <Anchor target="_blank" href="/marketers/docs/end-user-events-cross-platform-report-in-data-locker">Data Locker end-user events cross-platform report</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/my-dashboards#crossplatform-dashboard">The cross-platform dashboard</Anchor>
 
 <div data-zendesk-anchors="h_01KNEVA6TAJZRZYS11Z0Q59AQJ=about-cross-platform-re-engagement-attribution h_01KNEVA6TASWZ0S6HH5QT0ZZF0=how-does-re-engagement-attribution-work a-cross-platform-re-engagement-user-journey-example=cross-platform-re-engagement-user-journey-example h_01KNEVA6TA5PVF5E8YWFE13QAQ=cross-platform-re-engagement-user-journey-example h_01KNEVA6TAPFZ48SHNN1F8Y8P5=user-journey-without-re-engagement h_01KNEVA6TA0ZRG6Z6A38JGEFAQ=user-journey-with-re-engagement h_01KNEVH8QZ2K59BJX0HZ908FXR=set-up-cross-platform-re-engagement-attribution h_01KNEVH8QZNV046JAF9PRADK4E=view-cross-platform-attribution-results h_01KNEVH8QZK4J276D8RPBH15JY=see-also" />

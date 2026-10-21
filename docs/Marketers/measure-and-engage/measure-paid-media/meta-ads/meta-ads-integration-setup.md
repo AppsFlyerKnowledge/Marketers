@@ -1,6 +1,5 @@
 ---
 title: Meta Ads—integration setup
-excerpt: Learn about integrating Meta ads with AppsFlyer.
 metadata:
   keywords:
     - iOS
@@ -29,11 +28,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033826-Meta-Ads-integration-setup
 ---
+**At a glance:** Learn about integrating Meta ads with AppsFlyer.
+
 ## Meta ads setup guide
 
 How long does it take to start attributing your Meta ads mobile app ads with AppsFlyer?
 
-If you already have the [AppsFlyer SDK integrated into your app](/docs/integrate-the-appsflyer-sdk) and have already defined your app on Meta ads, the answer is less than a minute!
+If you already have the <Anchor target="_blank" href="/marketers/docs/integrate-the-appsflyer-sdk">AppsFlyer SDK integrated into your app</Anchor> and have already defined your app on Meta ads, the answer is less than a minute!
 
 You don't need to implement Facebook Login or integrate your app with Facebook's SDK for mobile attribution. Just follow the [basic step-by-step setup](#basic-meta-ads-attribution-setup) instructions below. Afterward, check out [advanced setup options](#advanced-meta-ads-attribution-setup) for Meta ads.
 
@@ -43,17 +44,17 @@ You don't need to implement Facebook Login or integrate your app with Facebook's
 
 <Accordion title="Create and retrieve a Facebook App ID">
 
-To integrate Meta ads with AppsFlyer, first, create a [Facebook App ID](https://developers.facebook.com/docs/apps/register), then retrieve it.
+To integrate Meta ads with AppsFlyer, first, create a <Anchor target="_blank" href="https://developers.facebook.com/docs/apps/register">Facebook App ID</Anchor>, then retrieve it.
 
 **To create a Facebook App ID**:
 
-1. On **Meta ads**, go to your [App Dashboard](https://developers.facebook.com/apps).
+1. On **Meta ads**, go to your <Anchor target="_blank" href="https://developers.facebook.com/apps">App Dashboard</Anchor>.
 2. Under **Apps**, click **Create New App.**
 3. Complete the app name and enter a unique namespace. Make sure to add the correct platform for your app; otherwise, installs might not be attributed correctly.
 
 **To retrieve the Facebook App ID**:
 
-1. On **Meta ads**, go to your [App Dashboard.](https://developers.facebook.com/apps)
+1. On **Meta ads**, go to your <Anchor target="_blank" href="https://developers.facebook.com/apps">App Dashboard.</Anchor>
 2. Click the required app.
 3. Click the App ID at the top left of the screen to copy it.
 
@@ -75,11 +76,11 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 
 **To enable AMM, follow these steps:**
 
-1. Visit [Meta Ads](https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms).
+1. Visit <Anchor target="_blank" href="https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms">Meta Ads</Anchor>.
 2. Select the relevant app ID(s).
 3. Accept Meta's Advanced Mobile Measurement terms.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * An admin of your Meta developer app is required to accept Meta's AMM terms.
 > * Device-level data with full attribution visibility is only available for new attributed devices after the AMM terms have been accepted.
@@ -97,7 +98,7 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 2. Search for Meta ads and then select it.
 3. Click **Integrate**. You’re directed to the integration setup page.
 4. In the **Integration** tab, turn on **Activate partner**.  
-   **Note:** The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
+   **Note:** The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
 5. Under **General settings**:
 
    [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
@@ -119,7 +120,7 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 * To match with the click-through lookback window of Meta ads, set it to 7 days.  
   (Note that [there are some specific cases where the default is different](https://www.facebook.com/business/help/395050428485124?id=428636648170202).)
 * To match Meta ads' view-through lookback window, set it to one day.
-* The **Reinstall attribution** toggle is turned on by default for new integrations. Reinstall attribution lets you measure users who reinstall your app during their re-attribution window. No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see [Measure reinstalls](/docs/measure-reinstalls).
+* The **Reinstall attribution** toggle is turned on by default for new integrations. Reinstall attribution lets you measure users who reinstall your app during their re-attribution window. No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see <Anchor target="_blank" href="/marketers/docs/measure-reinstalls">Measure reinstalls</Anchor>.
 
 </Accordion>
 
@@ -133,7 +134,7 @@ With basic attribution already set up for Meta ads, it's time for some quick adv
 
 #### Google Play Install Referrer API
 
-Meta ads share campaign metadata with advertisers for Android app ads that direct users to the Google Play Store. In this case, attribution fields are available to advertisers in the Google Play Install Referrer API, which must be [integrated into your app.](/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play) The fields provided via the Google Play install referrer API populate AppsFlyer raw data reports with the match type `gp_referrer`. This is only available once the decryption key is submitted and an install is attributed to Meta ads. This enables AppsFlyer to attribute users who don't have an advertising ID (LAT-enabled).
+Meta ads share campaign metadata with advertisers for Android app ads that direct users to the Google Play Store. In this case, attribution fields are available to advertisers in the Google Play Install Referrer API, which must be <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">integrated into your app.</Anchor> The fields provided via the Google Play install referrer API populate AppsFlyer raw data reports with the match type `gp_referrer`. This is only available once the decryption key is submitted and an install is attributed to Meta ads. This enables AppsFlyer to attribute users who don't have an advertising ID (LAT-enabled).
 
 #### **Meta install referrer**
 
@@ -165,7 +166,7 @@ As a result, you may see an increase in Meta-attributed installs in raw data rep
 >   * AppsFlyer SDK must be **V5.4.0+** for the referrer data to be passed properly. Referrer data has priority over data provided by the API and isn't restricted. This solution applies to click-through attribution and not view-through attribution.
 >   * The Channel field is determined by the channel value received from the Google Play Referrer API (sent to Google Play by Meta). If an empty string is received, the Channel field shows "None".
 >
-> * **For the Meta install referrer:** Refer to the [prerequisites and required actions](/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe) described in the bulletin.
+> * **For the Meta install referrer:** Refer to the <Anchor target="_blank" href="/marketers/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">prerequisites and required actions</Anchor> described in the bulletin.
 
 #### Meta install referrer—FAQ
 
@@ -223,9 +224,9 @@ Note that if the key is not provided or was deleted, there are some cases in whi
 
 [![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
 
-This integration provides aggregated data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.
+This integration provides aggregated data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.
 
-**Note:** Data on clicks and impressions is included in the integration. However, **cost data requires an** [**ROI360**](/docs/roi360-cost-aggregation-overview?query=xpend) **subscription**.
+**Note:** Data on clicks and impressions is included in the integration. However, **cost data requires an** <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">**ROI360**</Anchor> **subscription**.
 
 **To enable the cost API**:
 
@@ -241,15 +242,15 @@ This integration provides aggregated data on cost, clicks, and impressions for y
 > 📘 **Notes**
 >
 > * If you are already logged into Meta ads, when you click the **f login** button, the window immediately opens and closes. This is regular behavior.
-> * If you have several users with permissions to Meta ads, the best practice is to perform the login for all of them to [avoid getting partial data](/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns).
+> * If you have several users with permissions to Meta ads, the best practice is to perform the login for all of them to <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">avoid getting partial data</Anchor>.
 
 #### Cost data sync status
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard or in the individual ad network dashboard. 
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard or in the individual ad network dashboard. 
 
 You can sync several accounts for pulling cost data. For each synced account, AppsFlyer shows the status of cost integration and the last time AppsFlyer managed to pull matching cost data.
 
-Learn more about enriching your data with[cost, clicks, and impressions data](/docs/meta-ads-faq#meta-ads-cost-faq).
+Learn more about enriching your data with <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#meta-ads-cost-faq">cost, clicks, and impressions data</Anchor>.
 
 </Accordion>
 
@@ -267,7 +268,7 @@ Learn more about enriching your data with[cost, clicks, and impressions data](/d
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined on Meta ads. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from Meta ads</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to Meta ads.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner and organic events.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
@@ -285,7 +286,7 @@ Learn more about enriching your data with[cost, clicks, and impressions data](/d
 
 > 📘 **Note**
 >
-> Meta ads can optimize your campaigns based on your ad revenue data by [mapping the af\_ad\_revenue event to the right Meta ads event](/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization).
+> Meta ads can optimize your campaigns based on your ad revenue data by <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization">mapping the af\_ad\_revenue event to the right Meta ads event</Anchor>.
 
 </Accordion>
 
@@ -295,7 +296,7 @@ Learn more about enriching your data with[cost, clicks, and impressions data](/d
 
 AppsFlyer retargeting attribution for Meta ads lets advertisers attribute an existing user's engagement with a Facebook ad, and measure the quality of the user, post engagement, using the AppsFlyer reports. It should be used only if you are actively running campaigns targeted at your own Facebook users.
 
-1. [Turn on retargeting on the App Settings](/docs/app-settings#reengagement-attribution) page.
+1. <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">Turn on retargeting on the App Settings</Anchor> page.
 2. On the Meta ads partner page, turn on **Re-engagement attribution**.
 3. Set the **Re-engagement click-through lookback window**.  
    The re-engagement lookback window is the period of time, starting from an ad click, during which the app must be launched for the click to be recorded as a re-engagement.  
@@ -308,9 +309,9 @@ AppsFlyer retargeting attribution for Meta ads lets advertisers attribute an exi
    You can set the value in days (1-90), hours (up to 23), or even lifetime. The default is 30 days.  
    [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
 
-Learn more about [AppsFlyer retargeting attribution](/docs/retargeting-attribution-guide).
+Learn more about <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">AppsFlyer retargeting attribution</Anchor>.
 
-Learn more about [deep linking users from SRNs such as Meta ads](/docs/self-reporting-networks-srns#deep-linking-with-srns).
+Learn more about <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#deep-linking-with-srns">deep linking users from SRNs such as Meta ads</Anchor>.
 
 #### WhatsApp retargeting campaign attribution
 
@@ -334,7 +335,7 @@ This method attributes iOS click-through and view-through installs, as well as i
 
 > 📘 **Note**
 >
-> If the **Advanced Data Sharing** toggle is turned on and you’re not receiving attribution with Meta, check if the shared events meet Meta's eligibility criteria. See [Meta documentation](https://www.facebook.com/business/help/716239976391518?id=1877298665783613)
+> If the **Advanced Data Sharing** toggle is turned on and you’re not receiving attribution with Meta, check if the shared events meet Meta's eligibility criteria. See <Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">Meta documentation</Anchor>
 
 </Accordion>
 
@@ -342,7 +343,7 @@ This method attributes iOS click-through and view-through installs, as well as i
 
 <Accordion title="Advanced Matching data sharing">
 
-When **Advanced Matching data sharing** is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, hashed last name, and Facebook login ID, are shared with Meta if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+When **Advanced Matching data sharing** is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, hashed last name, and Facebook login ID, are shared with Meta if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 
 </Accordion>
 
@@ -364,16 +365,16 @@ The table below describes which Meta Ads campaign objectives support direct deep
 
 | Campaign objective | Direct deep link | Deferred deep link (DDL) | Setup | Limitations and prerequisites |
 | --- | --- | --- | --- | --- |
-| App Promotion / Install | Supported | Supported | Enter the DDL URL in the **Deferred Deep Link** field at the ad level, in the **Destination** section. | <ul><li>In iOS, DDL is supported only in [AEM enabled apps](/docs/meta-ads-aggregate-event-measurement-aem-for-ios) or apps with double consent (Meta + App)</li><li>DDL requires the Facebook SDK for iOS and Android.</li></ul> |
+| App Promotion / Install | Supported | Supported | Enter the DDL URL in the **Deferred Deep Link** field at the ad level, in the **Destination** section. | <ul><li>In iOS, DDL is supported only in <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios">AEM enabled apps</Anchor> or apps with double consent (Meta + App)</li><li>DDL requires the Facebook SDK for iOS and Android.</li></ul> |
 | Sales | Supported | Not supported | Configure at the ad set level under **Conversion**, or use Catalog settings. You can override catalog deep links with a website URL if needed. | <ul><li>Requires **Enable Install Tracking** to be active.</li><li>The destination must be a mobile app.</li></ul> |
 | Traffic | Supported | Not supported | Configure at the ad set level under **Conversion**. Supports fallbacks to the App Store or a website. | <ul><li>Requires **Enable Install Tracking** to be active.</li></ul> |
 | Awareness | Supported | Not supported | Configure at the ad level in the **Destination** section. | <ul><li>Requires **Enable Install Tracking** to be active.</li></ul> |
 | Leads | Supported | Not supported | Configure at the ad set level under **Conversion**. | <ul><li>Requires **Enable Install Tracking** to be active.</li></ul> |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [OneLink guide](/docs/onelink-guide)
-> * [Create deep linking and redirection links for your campaigns with OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)
+> * <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink guide</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Create deep linking and redirection links for your campaigns with OneLink</Anchor>
 
 </Accordion>
 
@@ -385,7 +386,7 @@ Complying with CCPA privacy regulations limits the data coming from Meta ads use
 
 **To enable compliance with CCPA:** Turn on **Limit Meta ads use of users' personal information (CCPA)** in the **Integration** tab.
 
-Learn more about [data protection laws](/docs/send-opendsr-api-requests).
+Learn more about <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">data protection laws</Anchor>.
 
 </Accordion>
 
@@ -399,7 +400,7 @@ If your app uses Meta Audience Network Ad Revenue for ad monetization, you can r
 
 #### Record Meta Audience Network Ad Revenue
 
-1. On the **Ad Revenue**tab and turn on **Get ad revenue data**.
+1. On the **Ad Revenue** tab and turn on **Get ad revenue data**.
 2. Select the type of aggregated ad revenue data you want to receive: **Attributed revenue** and/or **Aggregated monetization revenue**:
    * **Attributed Revenue**: Revenue based on the user acquisition source.  
      Set the **Event Source**, which is the event representing your ad revenue model in the best possible way. For example, if your revenue is based on impressions, it is recommended to send AppsFlyer an ad\_viewed event. The best event can be configured for each monetization platform separately. However, it is also possible to use the `af_app_opened` event. In this case, ad revenue is attributed for every app open performed by the user.
@@ -419,13 +420,13 @@ If your app uses Meta Audience Network Ad Revenue for ad monetization, you can r
 
 Enable Meta ads to perform various actions and to access your data according to the available permissions.
 
-Learn more about [granting permissions to integrated partners](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">granting permissions to integrated partners</Anchor>.
 
 </Accordion>
 
 ## Aggregate Event Measurement (AEM) for iOS
 
-AppsFlyer supports the [Meta ads Aggregated Event Measurement (AEM)](/docs/meta-ads-aggregate-event-measurement-aem-for-ios). This solution helps optimize iOS conversions and in-app events while also attributing iOS re-engagements on Meta ads.
+AppsFlyer supports the <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios">Meta ads Aggregated Event Measurement (AEM)</Anchor>. This solution helps optimize iOS conversions and in-app events while also attributing iOS re-engagements on Meta ads.
 
 ## Meta ads integration troubleshooting
 
@@ -451,7 +452,7 @@ Starting iOS 14.5 you'll have to display the Apple ATT prompt and get user conse
 The Facebook App ID was configured incorrectly in AppsFlyer.  
 Verify that the app ID is correct and matches the value in the Meta ads dashboard.  
 
-Note - you can also use [Facebook's Graph API](https://developers.facebook.com/tools/explorer/?method=GET&path=&version=v6.0) to validate your Facebook App ID.
+Note - you can also use <Anchor target="_blank" href="https://developers.facebook.com/tools/explorer/?method=GET&path=&version=v6.0">Facebook's Graph API</Anchor> to validate your Facebook App ID.
 
 </Accordion>
 
@@ -469,7 +470,7 @@ The app must be defined on Meta ads as **Live** rather than **In development** f
 
 <Accordion title="Wrong type of Meta ads campaign">
 
-Make sure the Meta ads campaign is for **Mobile app install ads** or **Mobile App Engagement**. For other campaign objectives, to measure mobile installs, the advertiser must [check the **App Event recording**option](/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads) when defining the Meta ads campaign.
+Make sure the Meta ads campaign is for **Mobile app install ads** or **Mobile App Engagement**. For other campaign objectives, to measure mobile installs, the advertiser must <Anchor target="_blank" href="/marketers/docs/attributing-app-installs-to-non-mobile-ads-from-meta-ads">check the **App Event recording** option</Anchor> when defining the Meta ads campaign.
 
 <div id="aem-attribution-is-not-working" />
 
@@ -501,9 +502,9 @@ Incorrect set-up - attribution fails.
 
 AppsFlyer confirms that our MMP integration with Meta ads always implements the *Advertiser Tracking Enabled* flag. Meaning, no action is required of you in AppsFlyer. This information is provided pursuant to the Meta ads app guidance iOS 14 checklist dated February 2021.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * For iOS 14-related considerations, see [Meta ads SKAN interoperation](/docs/skadnetwork-skan-interoperation-with-meta-ads)
-> * [Meta campaign management partners configuration](/docs/configuring-meta-campaign-management-partners) ([Bidalgo](/docs/bidalgo-meta-campaign-management-partner-configuration) / [Kenshoo](/docs/kenshoo-meta-campaign-management-partner-configuration) / [Adquant](/docs/adquant-meta-campaign-management-partner-configuration) / [Webpals](/docs/webpals-mobile-meta-campaign-management-partner-configuration))
+> * For iOS 14-related considerations, see <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-interoperation-with-meta-ads">Meta ads SKAN interoperation</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/configuring-meta-campaign-management-partners">Meta campaign management partners configuration</Anchor> (<Anchor target="_blank" href="/marketers/docs/bidalgo-meta-campaign-management-partner-configuration">Bidalgo</Anchor> / <Anchor target="_blank" href="/marketers/docs/kenshoo-meta-campaign-management-partner-configuration">Kenshoo</Anchor> / <Anchor target="_blank" href="/marketers/docs/adquant-meta-campaign-management-partner-configuration">Adquant</Anchor> / <Anchor target="_blank" href="/marketers/docs/webpals-mobile-meta-campaign-management-partner-configuration">Webpals</Anchor>)
 
 <div data-zendesk-anchors="facebook-ads-setup-guide=meta-ads-setup-guide 01H7YJVNMSZ4WG4HWBZF648HZN=meta-ads-setup-guide basic-facebook-attribution-setup=basic-meta-ads-attribution-setup 01H7YJVNMTFW076FAJZGJWT4R9=basic-meta-ads-attribution-setup h_01JXYJW7AFB53PY7WHGM05HDMH=create-and-retreive-facebook-app-id h_01JKX03GC8ZSMGCSX84381QW0A=enable-meta-ads-device-level-data h_01JYPKG2RH3R08604V7B3NC5WQ=important h_01JXYHEFW19DJXXXRNN186E07B=set-the-meta-ads-active-integration %5Boptional%5D-configure-recommended-settings=optional--configure-recommended-settings h_01JXYHEFW15E6K39JY2VBCN79E=optional--configure-recommended-settings advanced-facebook-attribution-setup=advanced-meta-ads-attribution-setup 01H7YJVNMTHF800PD5CEWPFS49=advanced-meta-ads-attribution-setup h_01JKX03GC8B4VKC6KJT4CZ9VT8=getting-userlevel-data-for-android-installs h_01JKX2BE00WYHMJ3RX1FK8DQV5=google-play-install-referrer-api h_01JKX2BNRDHHNJCN257H3QBZ65=meta-install-referrer h_01JKX03GC8JRZSD13TVDDM1MWE=note h_01JKX2CF8RE4T5R3V83FS1PBQR=campaign-attribution-fields-available-via-the-referrer h_01JKX03GC9BG4GFDKR7JHG31BQ=note-1 meta-install-referrer%E2%80%94faq=meta-install-referrerfaq h_01JKX2DSY85X6570AHYKHM34KS=meta-install-referrerfaq h_01JKX2E4A44QHKADG4S8ZM9KC5=encrypted-data-from-google-play-referrer-api-or-meta-install-referrer 01H7YJVNMTBN9RJ6Q7TJ1AJ0XX=cost-clicks-and-impressions 01H7YJVNMTGRBQG54DVMJDHDKS=notes 01H7YJVNMTRQAYG7TY29AX4MZS=cost-data-sync-status 01H7YJVNMTNRREKWY96CK9JJKV=inapp-event-mapping 01H7YJVNMT2DRVR26F8CDDTWHP=note-2 01H7YJVNMV5AZ9G2KCKEFF1CSV=retargeting-attribution h_01KBZ2CAGX18ZZPXQGMPTEPSCP=whatsapp-retargeting-campaign-attribution 01H7YJVNMVSA4Y33MW6Q8Y777Y=advanced_data_sharing 01JDH9Y65409Y5E162NWJA25E3=note-3 h_01KPK96J1G0BY3PPEBN9RB005V=use-deep-links-in-meta-ads-campaigns h_01KPK96J1GZE9ZHQB5NHFCVAG6=see-also h_01JKTYRMD70ZGN31FSQ7BXF1HB=comply-with-california-consumer-privacy-act-ccpa 01H7YJVNMVWRG10SZY1B33H5EA=ad-revenue-recording 01H7YJVNMV1TTHKMMX4TFB2BF3=record-meta-audience-network-ad-revenue 01H7YJVNMVMW5BXWEP8BPX4D7E=permissions 01H7YJVNMVGFYMHE5FACTD9NS0=aggregate-event-measurement-aem-for-ios 01H7YJVNMVCAQ6ETKBGCAM31B9=meta-ads-integration-troubleshooting 01H7YJVNMV3YRF59RX87TJCT8D=no-idfa-collection 01H7YJVNMVHCYVWKDW5WWPX1A5=wrong-facebook-app-id 01H7YJVNMVE9QJAXQBD4P14C88=app-status-on-meta-ads 01H7YJVNMVBRVTT9HH7KM8P33B=wrong-type-of-meta-ads-campaign h_01JKTYRMD7YPGJRZXR4Y66BAHG=aem-attribution-is-not-working 01H7YJVNMV4G3VP40E6VFD7SJD=meta-ads-app-install ios-14-updates-relating-to-facebook=ios-14-updates-relating-to-meta-ads 01H7YJVNMVQP5PR6XDHTCPXVDC=ios-14-updates-relating-to-meta-ads h_01HDP0Y4CZBZEK5VZ6FG3T31JB=see-also-1" />

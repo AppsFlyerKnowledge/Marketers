@@ -1,10 +1,5 @@
 ---
 title: Tencent AMS campaign configuration
-excerpt: >-
-  Tencent AMS, an AppsFlyer ad network integrated partner, operates social media
-  and mobile utility properties in China, and enables marketers to run app
-  install campaigns on: WeChat, the company’s mobile communication platform, QQ,
-  the instant messaging service, QQ Music, QQ Browser, Myapp, and more.
 metadata:
   keywords:
     - integrated partner
@@ -30,7 +25,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017577338-Tencent-AMS-campaign-configuration
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png)
+**At a glance:** Tencent AMS, an AppsFlyer ad network integrated partner, operates social media and mobile utility properties in China, and enables marketers to run app install campaigns on: WeChat, the company’s mobile communication platform, QQ, the instant messaging service, QQ Music, QQ Browser, Myapp, and more.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png" width="120px" />
 
 ## Setting up Tencent AMS
 
@@ -43,8 +40,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -56,7 +53,7 @@ The Integration Tab is divided into different sections as described below.
 
 The Integration tab is divided into different sections as described below. To integrate TencentAMS with AppsFlyer, you’ll need the following credentials: **account\_id, user\_action\_set\_id, and access\_token**. If you don’t already have these values, please get them directly from Tencent AMS before proceeding with the integration.
 
-![tencent.png](https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png)
+<Image alt="tencent.png" src="https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png" width="248px" />
 
 > 📘 **Note**
 >
@@ -83,7 +80,7 @@ In this section, you can configure in-app event postbacks that are sent to Tence
 **To configure in-app event postbacks**,
 
 1. Turn **In-app event postback** on.
-2. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+2. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
 3. Click **Add event** to add an SDK Event to the list.
 4. Fill in the following parameters in the table below
 
@@ -102,10 +99,10 @@ In this section, you can configure in-app event postbacks that are sent to Tence
 
 <Accordion title="Attribution link">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -113,13 +110,13 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -148,7 +145,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow spend ingestion** - permit the partner to send ad spend data in files; for this app only.
 * **Allow access to your Protect360 & Raw data dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#ad-network-permissions).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">ad network permissions</Anchor>.
 
 </Accordion>
 

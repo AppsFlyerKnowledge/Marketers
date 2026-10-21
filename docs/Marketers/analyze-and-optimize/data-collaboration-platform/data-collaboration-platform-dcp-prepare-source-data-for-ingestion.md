@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Prepare source data for ingestion
-excerpt: >-
-  Prepare your source data to maximize match rates between collaborator datasets
-  and optimize collaboration outcomes.
 metadata:
   keywords:
     - Marketers
@@ -23,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43205325114897-Data-Collaboration-Platform-DCP-Prepare-source-data-for-ingestion
 ---
+**At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
+
 ## About data preparation
 
-The AppsFlyer [Data Collaboration Platform (DCP)](/docs/data-collaboration-platform-dcp-guide) is designed to ingest and process large-scale transactional data, user-level data, or a combination of both from multiple collaborators. Once ingested, the DCP can match users across datasets using shared identifiers (for example, hashed email or hashed phone) and enable collaboration workflows based on that data.
+The AppsFlyer <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> is designed to ingest and process large-scale transactional data, user-level data, or a combination of both from multiple collaborators. Once ingested, the DCP can match users across datasets using shared identifiers (for example, hashed email or hashed phone) and enable collaboration workflows based on that data.
 
 This article outlines:
 
@@ -55,7 +54,7 @@ This section outlines DCP data structuring guidelines and best practices.
 
 **To structure your source data for optimal ingestion and maximum outcomes in DCP:**
 
-1. Ensure it [meets source data formatting requirements](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-data-requirements).
+1. Ensure it <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-data-requirements">meets source data formatting requirements</Anchor>.
 2. For best results, **structure identity data as one row per user and include all available identifiers for that user.** See [Recommended identifier structures](#recommended-identifier-structures).
    * If users have multiple email addresses or phone numbers, use array-based formats (such as Parquet, BigQuery, or Snowflake).
 3. Check that [hashing guidelines](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-e-hashed-data-formatting-guidelines-by-media-partner) are followed.
@@ -319,7 +318,7 @@ Snowflake supports list-like fields (arrays). This is preferred over creating em
 
 <Accordion title="Why Data Views are recommended">
 
-[Data views](/docs/data-collaboration-platform-dcp-create-customized-data-views) are customized subsets of your existing data sources that you can create without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what’s relevant in collaborations, keeping the data you share clear and focused, and all other data private and secure. Use Data Views in collaborations because they:
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views">Data views</Anchor> are customized subsets of your existing data sources that you can create without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what’s relevant in collaborations, keeping the data you share clear and focused, and all other data private and secure. Use Data Views in collaborations because they:
 
 #### Are business-oriented and easier to collaborate with
 
@@ -417,9 +416,9 @@ Before hashing any data, almost all platforms require the following normalizatio
 
 | Media Partner | Email Guidelines | Phone Number Guidelines | Mobile ID (MAID) Guidelines | Specific Platform Nuances & Matching Logic | Relevant Reference |
 | --- | --- | --- | --- | --- | --- |
-| Google Ads / DV360 | Format: Lowercase, trim whitespace. Include domain. Gmail Rule: For @gmail.com / @googlemail.com, remove periods (.) before the "@" and suffixes after (+). Hashing: SHA-256 (Hex encoded). | Format: E.164 (e.g., +16505551212). Must include country code. Hashing: SHA-256. | Format: IDFA (iOS) or GAID (Android). Hashing: Do not hash. | Matching Priority: Deterministic and prioritized (1. Email, 2. Phone, 3. Mobile IDs). It does not combine multiple IDs to form a match (single-ID resolution). DV360 PAIR: DV360 also supports the PAIR protocol for secure publisher-advertiser reconciliation. | [Get started with Customer Match (Google Ads API)](https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started) |
-| Meta (Facebook/ Instagram) | Format: Lowercase, trim whitespace. Hashing: SHA-256 required.<br /><br />**Note:** Meta doesn't remove dots from email addresses as part of its hashing normalization. Only lowercase + whitespace trimming should be applied before hashing for Meta. Sending a dot-stripped hashed email ("Hashed email (no dots)" in DCP source mapping) won't match Meta's own hash and will result in reduced match rates for email-domain users. This identifier variant is intended for partners that do require dot-removal (e.g., Google Ads) and should not be used for Meta/Facebook activations. | Format: Remove symbols, letters, and leading zeros. Include country code (e.g., 16505551212). Hashing: SHA-256. | Format: IDFA or GAID. Hashing: Do not hash. Lowercase, keep hyphens. | Matching Logic: Uses "any-of-them" logic; combines multiple IDs (Email, Phone, MAID, etc.) to resolve a user, providing strong cross-ID reinforcement.<br /><br />CAPI: Requires unhashed client\_ip\_address and client\_user\_agent for browser matching. | [Customer Information Parameters - Conversions API](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters/) |
-| TikTok | Format: Lowercase, remove all spaces. Hashing: SHA-256. | Format: E.164 (+[country code][number]). Also accepts without +. Hashing: SHA-256. | Format: GAID (Android) or IDFA (iOS). Case: All upper or all lower. Hashing: SHA-256 or MD5. | Matching Logic: Similar to Meta, uses "any-of-them" deterministic matching logic where any single valid ID is sufficient.<br /><br />Audience Size: Requires a minimum of 1,000 matched users to activate a Custom Audience. | [How to create a Custom Audience with a customer file](https://ads.tiktok.com/help/article/how-to-create-a-custom-audience-with-a-customer-file) |
+| Google Ads / DV360 | Format: Lowercase, trim whitespace. Include domain. Gmail Rule: For @gmail.com / @googlemail.com, remove periods (.) before the "@" and suffixes after (+). Hashing: SHA-256 (Hex encoded). | Format: E.164 (e.g., +16505551212). Must include country code. Hashing: SHA-256. | Format: IDFA (iOS) or GAID (Android). Hashing: Do not hash. | Matching Priority: Deterministic and prioritized (1. Email, 2. Phone, 3. Mobile IDs). It does not combine multiple IDs to form a match (single-ID resolution). DV360 PAIR: DV360 also supports the PAIR protocol for secure publisher-advertiser reconciliation. | <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/remarketing/audience-segments/customer-match/get-started">Get started with Customer Match (Google Ads API)</Anchor> |
+| Meta (Facebook/ Instagram) | Format: Lowercase, trim whitespace. Hashing: SHA-256 required.<br /><br />**Note:** Meta doesn't remove dots from email addresses as part of its hashing normalization. Only lowercase + whitespace trimming should be applied before hashing for Meta. Sending a dot-stripped hashed email ("Hashed email (no dots)" in DCP source mapping) won't match Meta's own hash and will result in reduced match rates for email-domain users. This identifier variant is intended for partners that do require dot-removal (e.g., Google Ads) and should not be used for Meta/Facebook activations. | Format: Remove symbols, letters, and leading zeros. Include country code (e.g., 16505551212). Hashing: SHA-256. | Format: IDFA or GAID. Hashing: Do not hash. Lowercase, keep hyphens. | Matching Logic: Uses "any-of-them" logic; combines multiple IDs (Email, Phone, MAID, etc.) to resolve a user, providing strong cross-ID reinforcement.<br /><br />CAPI: Requires unhashed client\_ip\_address and client\_user\_agent for browser matching. | <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters/">Customer Information Parameters - Conversions API</Anchor> |
+| TikTok | Format: Lowercase, remove all spaces. Hashing: SHA-256. | Format: E.164 (+[country code][number]). Also accepts without +. Hashing: SHA-256. | Format: GAID (Android) or IDFA (iOS). Case: All upper or all lower. Hashing: SHA-256 or MD5. | Matching Logic: Similar to Meta, uses "any-of-them" deterministic matching logic where any single valid ID is sufficient.<br /><br />Audience Size: Requires a minimum of 1,000 matched users to activate a Custom Audience. | <Anchor target="_blank" href="https://ads.tiktok.com/help/article/how-to-create-a-custom-audience-with-a-customer-file">How to create a Custom Audience with a customer file</Anchor> |
 | The Trade Desk (UID2) | Format: Same "Gmail Rule" as Google (remove dots/plus). Encoding: Base64-encode the raw bytes (result is 44 chars). | Format: E.164. Hashing: SHA-256. Encoding: Base64-encode the raw bytes. | Format: AAID (lowercase) / IDFA (uppercase). Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: Deterministic via identity graph. Matching depends on graph participation rather than raw ID coverage.<br /><br />Critical Nuance: You must base64-encode the raw bytes of the hash. Encoding the hex string will fail. |  |
 | Pinterest | Format: Must include "@". Hashing: SHA-256, MD5, or SHA-1. | Format: E.164. Remove special characters (spaces, hyphens). Hashing: SHA-256, MD5, or SHA-1. | Format: IDFA or GAID. Hashing: SHA-256, MD5, or SHA-1. | Matching Logic: "ID-Centric." Matching is primarily driven by Email and MAID. There is "limited upside" to providing other IDs as cross-ID reinforcement is weak compared to Meta. Upload Behavior: Uploads one identifier type per audience. | DCP Data Ingestion and Structuring Guidelines |
 

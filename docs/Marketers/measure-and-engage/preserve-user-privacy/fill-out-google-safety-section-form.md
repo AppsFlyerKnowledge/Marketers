@@ -1,12 +1,5 @@
 ---
 title: Fill out Google safety section form
-excerpt: >-
-  As of April 2022, app developers are required to complete the Google Play Data
-  safety section form and publish a link to a privacy policy, even if they don’t
-  collect any of the data types specified by Google. This page is intended to
-  provide information to assist you in answering the Google Safety Section
-  Questionnaire, only in relation to what AppsFlyer processes on behalf of
-  customers.
 metadata:
   keywords:
     - Google Play
@@ -28,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417197430289-Fill-out-Google-safety-section-form
 ---
+**At a glance**: As of April 2022, app developers are required to complete the Google Play Data safety section form and publish a link to a privacy policy, even if they don’t collect any of the data types specified by Google. This page is intended to provide information to assist you in answering the Google Safety Section Questionnaire, only in relation to what AppsFlyer processes on behalf of customers.
+
 Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
 
 #### **Disclaimer**
@@ -131,11 +126,11 @@ Google has provided a list of purposes from which app developers must choose as 
 | Personalization | Select if you use the data for any type of product personalization |
 | Account management | Select if you use the data for the setup and management of user accounts |
 
-> 📘 **See also**
+> 📄 **See also**
 >
 > To learn more about preparing for the Google Play safety section and how to complete the required form, read these articles:
 >
-> * [Preparing for Google Play's new safety section](https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html)
-> * [Provide information for Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469)
+> * <Anchor target="_blank" href="https://android-developers.googleblog.com/2021/07/new-google-play-safety-section.html">Preparing for Google Play's new safety section</Anchor>
+> * <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/10787469">Provide information for Google Play's Data safety section</Anchor>
 
 <div data-zendesk-anchors="h_01HDP3NTTKH3X3585J3DM6MCDC=disclaimer h_01HDP3NTTK1BDTZTHNWRM3411D=introduction h_01HDP3NTTKQE2N0HZDNGK2ZQPC=audience h_01HDP3NTTKK6DJSF49326V3BEG=google-safety-form-questionnaire h_01HDP3NTTK89K8YPT6C7S9QM3W=data-collection-and-security h_01HDP3NTTK9DYZTQ2B64QMKGX8=data-types h_01HDP3NTTKT7C0TGVCZJ4GR9BF=ephemeral-processing h_01HDP3NTTK4CT8MJ1S84MAG8VD=user-choice h_01HDP3NTTKD3MND388MWCC6PAT=purpose h_01HDP3RBENN69F150ESQMSVP3Q=see-also" />

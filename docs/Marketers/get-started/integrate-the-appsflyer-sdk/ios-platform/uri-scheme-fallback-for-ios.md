@@ -1,8 +1,5 @@
 ---
 title: URI scheme fallback for iOS
-excerpt: >-
-  Understand the flow when a user with an iOS device clicks on a OneLink custom
-  link and Universal Links fails to open the app.
 metadata:
   keywords:
     - Advertisers
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115002366466-URI-scheme-fallback-for-iOS
 ---
+**At a glance:** Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
+
 ## About URI fallback for iOS
 
 * The best-supported way to open apps on iOS devices is by using Universal Links. Since 2016, there are considerable built-in OS limitations to using URI schemes as a fallback method for when iOS Universal Links don't open the app. These limitations are not AppsFlyer-related, and would also impact any other links with URI schemes you might use to open the app.
@@ -42,7 +41,7 @@ x-zendesk:
 
 ### Scenarios flowchart
 
-![flowchartdoctored.png](https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png)
+<Image alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
 
 ## Use cases
 
@@ -60,7 +59,7 @@ Sometimes, Universal Links fail to open the app, either because the app does not
 
 #### **Flowchart**
 
-![use case flowchart.png](https://files.readme.io/9b68ccc634b55d72a9be8f8b07d9744214a10b2f14f11bf97416fcb377b28963-41284872656401.png)
+<Image alt="use case flowchart.png" src="https://files.readme.io/9b68ccc634b55d72a9be8f8b07d9744214a10b2f14f11bf97416fcb377b28963-41284872656401.png" width="75.41%" />
 
 </Accordion>
 

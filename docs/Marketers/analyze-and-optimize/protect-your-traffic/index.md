@@ -15,16 +15,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551015912465-Protect-your-traffic
 ---
-- [\[Closed beta\] Validation Rules API](/docs/closed-beta-validation-rules-api)
-- [Closed Beta: Protect360 Explore insights with Val anti-fraud assistant](/docs/closed-beta-protect360-explore-insights-with-val-anti-fraud-assistant)
-- [Protect360 onboarding guide](/docs/protect360-onboarding-guide)
-- [\[Beta\] Fraud protection studio](/docs/beta-fraud-protection-studio)
-- [\[Closed beta\] Implementing Series of Events Rule for advanced fraud prevention](/docs/closed-beta-implementing-series-of-events-rule-for-advanced-fraud-prevention)
-- [Protect360 anti-fraud guide <span class="af-star">★</span>](/docs/protect360-anti-fraud-guide)
-- [Protect360 dashboard](/docs/protect360-dashboard)
-- [Basic fraud detection and insights​ with ProtectLITE dashboard and reporting](/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting)
-- [Protect360 raw data reports](/docs/protect360-raw-data-reports)
-- [Implement validation rules to prevent fraud](/docs/implement-validation-rules-to-prevent-fraud)
-- [Implement Google License Verification Library (LVL)](/docs/implement-google-license-verification-library-lvl)
-- [Implement Apple App Store (itunes) install validation](/docs/implement-apple-app-store-itunes-install-validation)
-- [\[Beta\] Advanced Security Protect360 Module](/docs/beta-advanced-security-protect360-module)
+- <Anchor target="_blank" href="/marketers/docs/closed-beta-validation-rules-api">\[Closed beta\] Validation Rules API</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/closed-beta-protect360-explore-insights-with-val-anti-fraud-assistant">Closed Beta: Protect360 Explore insights with Val anti-fraud assistant</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/protect360-onboarding-guide">Protect360 onboarding guide</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio">\[Beta\] Fraud protection studio</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/closed-beta-implementing-series-of-events-rule-for-advanced-fraud-prevention">\[Closed beta\] Implementing Series of Events Rule for advanced fraud prevention</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360 anti-fraud guide <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360 dashboard</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">Basic fraud detection and insights​ with ProtectLITE dashboard and reporting</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">Protect360 raw data reports</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Implement validation rules to prevent fraud</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/implement-google-license-verification-library-lvl">Implement Google License Verification Library (LVL)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/implement-apple-app-store-itunes-install-validation">Implement Apple App Store (itunes) install validation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/beta-advanced-security-protect360-module">\[Beta\] Advanced Security Protect360 Module</Anchor>

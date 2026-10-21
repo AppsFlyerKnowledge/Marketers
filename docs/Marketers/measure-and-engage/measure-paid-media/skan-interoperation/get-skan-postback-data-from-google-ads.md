@@ -1,8 +1,5 @@
 ---
 title: Get SKAN postback data from Google Ads
-excerpt: >-
-  Enable Google to share the content of your SKAdNewtork (SKAN) app iOS
-  postbacks with AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4403215779857-Get-SKAN-postback-data-from-Google-Ads
 ---
+**At a glance:** Enable Google to share the content of your SKAdNewtork (SKAN) app iOS postbacks with AppsFlyer.
+
 ## Get SKAN postback data from Google Ads
 
 If you work with multiple ad network partners, the best practice is to set it up in AppsFlyer. By doing so, SKAN performance metrics for all your ad network partners, enriched with other metrics like cost, are available via the AppsFlyer platform.
@@ -32,16 +31,16 @@ If you work with multiple ad network partners, the best practice is to set it up
 
 * Google Ads shares aggregated iOS SKAN postbacks they receive with AppsFlyer in the context of iOS app campaigns. These postbacks represent installs from multiple channels such as display, YouTube, and search.
 * AppsFlyer decodes the postback and then updates the SKAN dashboard and reports (including the postback raw data report).
-* [iOS 14.5 implications on SRN reporting](/docs/self-reporting-networks-srns#ios-145-srn-attribution)
+* <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#ios-145-srn-attribution">iOS 14.5 implications on SRN reporting</Anchor>
 
 **Considerations**:
 
 On receipt of the iOS postback, Google determines the last click time using ad serving signals. However, AppsFlyer regards the click time as the install time. This can lead to differences between the AppsFlyer and Google dashboards.
 
-Because of Google's click-reporting methodology and its retroactive data update on a daily basis, AppsFlyer pulls the data for the previous 45 days and displays the install under the last click before the install date.  For example, a click on July 1st can be reported to AppsFlyer until  August 15. AppsFlyer displays this install under the click date reported by Google. This impacts [reports](/docs/skadnetwork-skan-solution-guide#reporting-options) as follows:
+Because of Google's click-reporting methodology and its retroactive data update on a daily basis, AppsFlyer pulls the data for the previous 45 days and displays the install under the last click before the install date.  For example, a click on July 1st can be reported to AppsFlyer until  August 15. AppsFlyer displays this install under the click date reported by Google. This impacts <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#reporting-options">reports</Anchor> as follows:
 
 * Aggregated reports and the dashboard update retroactively.
-* [Raw data reports](/docs/skan-raw-data-reports) don't change retroactively. Data (provided via Data Locker) is provided in folders according to the date Google provided the data to AppsFlyer (data arrival date).
+* <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">Raw data reports</Anchor> don't change retroactively. Data (provided via Data Locker) is provided in folders according to the date Google provided the data to AppsFlyer (data arrival date).
 
 ## Set up interoperation
 
@@ -53,8 +52,8 @@ To set up interoperation with Google Ads, complete the steps in the following ta
 
 | Step | Action | Details |
 | --- | --- | --- |
-| 1 | SKAN settings review | Verify that AppsFlyer [SKAN solution](/docs/skadnetwork-skan-solution-guide) is set up and is on. Doing so allows the AppsFlyer SDK to call SKAN APIs and set the conversion value.<br /><br />**To review SKAN settings**:<ol><li>In AppsFlyer, go to **Settings** > **SKAN Conversion Studio**.</li><li>Click options (**⋮**), and verify that **SKAN measurement** is on.<br />![skan-settings.png](https://files.readme.io/5602fded7e030177bb921ff83ff1e6dad7a230a87825e112314935a4c3dd83dd-4406452045457.png)</li><li>Select your preferred measurement mode.<br />Learn more about [SKAN Conversion Studio](/docs/skan-conversion-studio).</li><li>Make a note of the exact event names set. You'll need them in the next step. **Note**! Names are case-sensitive.</li></ol> |
-| 2 | In-app event mapping in AppsFlyer | **To view and set in-app event mapping**:<ol><li>In AppsFlyer, go to **Collaborate** > **Active integrations**.</li><li>Select **Google Ads**.</li><li>From the **Integration** tab, verify that **Activate Partner** is on. If not, you must first complete the [integration with Google Ads](/docs/google-ads-adwords-integration-setup-for-advertisers).</li><li>In the **In-app events postbacks section**:<ol><li>If not on, turn on **In-app events postbacks**.</li><li>The best practice is to map the events related to the currently selected measurement type. Note! In the case of revenue measurement, map af\_skad\_revenue to the appropriate Google revenue event</li></ol></li><li>Scroll down to the bottom of the page.</li><li>Click **Save integration**.</li></ol> |
+| 1 | SKAN settings review | Verify that AppsFlyer <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN solution</Anchor> is set up and is on. Doing so allows the AppsFlyer SDK to call SKAN APIs and set the conversion value.<br /><br />**To review SKAN settings**:<ol><li>In AppsFlyer, go to **Settings** > **SKAN Conversion Studio**.</li><li>Click options (**⋮**), and verify that **SKAN measurement** is on.<br />![skan-settings.png](https://files.readme.io/5602fded7e030177bb921ff83ff1e6dad7a230a87825e112314935a4c3dd83dd-4406452045457.png)</li><li>Select your preferred measurement mode.<br />Learn more about <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.</li><li>Make a note of the exact event names set. You'll need them in the next step. **Note**! Names are case-sensitive.</li></ol> |
+| 2 | In-app event mapping in AppsFlyer | **To view and set in-app event mapping**:<ol><li>In AppsFlyer, go to **Collaborate** > **Active integrations**.</li><li>Select **Google Ads**.</li><li>From the **Integration** tab, verify that **Activate Partner** is on. If not, you must first complete the <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">integration with Google Ads</Anchor>.</li><li>In the **In-app events postbacks section**:<ol><li>If not on, turn on **In-app events postbacks**.</li><li>The best practice is to map the events related to the currently selected measurement type. Note! In the case of revenue measurement, map af\_skad\_revenue to the appropriate Google revenue event</li></ol></li><li>Scroll down to the bottom of the page.</li><li>Click **Save integration**.</li></ol> |
 
 </Accordion>
 
@@ -67,7 +66,7 @@ In order to see SKAN installs attributed to Google Ads in the AppsFlyer SKAN das
 1. The procedure that follows must be performed by the advertiser. In the case of an agency, both the agency and advertiser have to enable SKAN measurement.
 2. In AppsFlyer, go to **Collaborate** > **Active integrations**.
 3. Search for and select **Google Ads**.
-4. Go to the **SKAN** tab. ![mceclip0.png](https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png)
+4. Go to the **SKAN** tab. <Image alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
 5. If the **temporarily unavailable message displays**, most times it means an ad blocker is active. If so, disable the ad blocker and reload the page. If this is not the case, contact AppsFlyer support.  ![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)
 6. Click **Connect** **Google Ads**.
    * You must log in to Google Ads using an Administrator user role on the account.
@@ -125,7 +124,7 @@ When turning off your Google Ads integration, it's not enough to turn off the *
 | --- | --- |
 | Engaged views | Engaged views are counted as clicks and postbacks are sent for them as they are for any click-through attribution. |
 | Data freshness | <ul><li>We collect SKAN data from Google Ads daily starting 01:00 UTC.</li><li>Dashboards and aggregate data update 7 hours later.</li><li>Google occasionally experiences delays in its SKAN pipeline, so data might arrive later than usual and single source of truth (SSOT) data might also be affected.<ul><li>Once Google delivers the delayed data, it is updated retroactively.</li></ul></li></ul> |
-| Reports available | Google Ads data is available in the SKAN dashboard, aggregate, and raw data reports. See [SKAN reporting options.](/docs/skadnetwork-skan-solution-guide#reporting-options) |
+| Reports available | Google Ads data is available in the SKAN dashboard, aggregate, and raw data reports. See<Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#reporting-options"> SKAN reporting options.</Anchor> |
 | Agencies | If the agency has an Administrator user role in the advertiser's Google Ads account, then they can perform the procedure in this article and enable Google SKAN interoperation on behalf of the advertiser. Advertisers don't need to log in to their Google Ads as well. The agency login is indicated in the advertiser's account. |
 
 </Accordion>
@@ -169,8 +168,8 @@ If you've completed the steps above and installs still aren't showing, check the
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [AppsFlyer SKAN Solution guide](/docs/skadnetwork-skan-solution-guide)
+> * <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">AppsFlyer SKAN Solution guide</Anchor>
 
 <div data-zendesk-anchors="h_01HCHYGCVJA3C8WJS8JH7BG0CD=get-skan-postback-data-from-google-ads h_01HCHYGCVJY5KT4J6RQS0BJ90G=set-up-interoperation h_01HCHYGCVJTS53PCGK21BEZB2T=additional-information h_01HE7RMSECNDW9VD9XY6H01H55=see-also" />

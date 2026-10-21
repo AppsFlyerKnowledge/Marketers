@@ -1,8 +1,5 @@
 ---
 title: SKAN aggregated postback arrival date API
-excerpt: >-
-  Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback
-  arrival date.
 metadata:
   keywords:
     - Advertisers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016646557-SKAN-aggregated-postback-arrival-date-API
 ---
+**At a glance:** Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
+
 ## SKAN aggregated postback arrival date API
 
 The API returns aggregated SKAdNetwork postbacks, using the postback arrival date range.
@@ -39,7 +38,7 @@ The API returns aggregated SKAdNetwork postbacks, using the postback arrival dat
 1. Get the API token. An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the section that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
-4. Tell your developer to follow their [SKAN aggregated postback arrival date API](https://dev.appsflyer.com/hc/reference/skan-agg-postback-arrival-date-api-get) in the developer hub.
+4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-postback-arrival-date-api-get">SKAN aggregated postback arrival date API</Anchor> in the developer hub.
 
 #### Parameters
 
@@ -64,7 +63,7 @@ The API returns a CSV file.
 
 Columns and metrics available are listed in the table that follows.
 
-Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXgsWlkyvMS20HgZuOQnH1YC8QQcRhOMYIOxyj_fcgikfDfmW6wNAMHO6alPWVA1j_KZwtqowohqrK/pub?gid=0&single=true&output=csv)| [V2](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMFEELm8JCAQBBAIJqAc1eE5YdN0kOcSVkOPd_Ki2ngnX61wHL4sXypVouOhto8u-JCQmdIYY_5UG6/pub?gid=219191499&single=true&output=csv)
+Examples: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRXgsWlkyvMS20HgZuOQnH1YC8QQcRhOMYIOxyj_fcgikfDfmW6wNAMHO6alPWVA1j_KZwtqowohqrK/pub?gid=0&single=true&output=csv">V1</Anchor> | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMFEELm8JCAQBBAIJqAc1eE5YdN0kOcSVkOPd_Ki2ngnX61wHL4sXypVouOhto8u-JCQmdIYY_5UG6/pub?gid=219191499&single=true&output=csv">V2</Anchor>
 
 | Column name | Dimension or measure | Available with API V1 token | Available with API V2 token | Available with API V2 token (for SKAN 4) | Available with modeled data only filter |
 | --- | --- | --- | --- | --- | --- |
@@ -100,7 +99,7 @@ Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXgsWlkyvMS20Hg
 
 | Spec | Remarks |
 | --- | --- |
-| Data freshness | The report updates [Daily.](/docs/about-data-freshness-and-timezone-support#eod)<br /><br />Data availability is according to the [SKAdNetwork](/docs/about-data-freshness-and-timezone-support#skan) data freshness rate. |
+| Data freshness | The report updates <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#eod">Daily.</Anchor><br /><br />Data availability is according to the <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#skan">SKAdNetwork</Anchor> data freshness rate. |
 | Date range | <ul><li>Earliest date supported: November 1, 2020</li><li>Maximum query range: 60 days</li></ul> |
 | Rate limit | <ul><li>Queries return up to 200K rows</li><li>60 calls per minute</li></ul> |
 | SRNs | Google Ads: The postback arrival date is derived using the last-click time reported by Google. |
@@ -115,8 +114,8 @@ Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXgsWlkyvMS20Hg
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [SKAN aggregated performance report API](/docs/skan-aggregated-performance-report-api)
+> * <Anchor target="_blank" href="/marketers/docs/skan-aggregated-performance-report-api">SKAN aggregated performance report API</Anchor>
 
 <div data-zendesk-anchors="skadnetwork-postback-arrival-date-aggregation-reporting-api=skan-aggregated-postback-arrival-date-api h_01HDNZKFEHWET0FPX9WN136MB2=skan-aggregated-postback-arrival-date-api h_01HDNZKFEH76Y06091QS6Y5K1Z=using-skan-aggregated-performance-report-api h_01HDNZKFEHA6N6EE4RMG0HGABA=parameters h_01HDNZKFEHM2D7GS3RMSRCKZY7=report-structure-and-example h_01HDNZKFEJ5P3245V1R99DGAQW=specifications-and-limitations h_01HDNZP87CWGVJ3G1BDXAR1WN0=see-also" />

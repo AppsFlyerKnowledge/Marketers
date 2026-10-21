@@ -1,8 +1,5 @@
 ---
 title: Movable Ink integration with AppsFlyer
-excerpt: >-
-  Set up an integration with Movable Ink to create unique AI-powered user
-  journeys in your marketing campaigns and in-app content.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/28109258392977-Movable-Ink-integration-with-AppsFlyer
 ---
+**At a glance:** Set up an integration with Movable Ink to create unique AI-powered user journeys in your marketing campaigns and in-app content.
+
 ## ![53374 Movable Ink KB image.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
 
 ## About the integration
@@ -34,9 +33,9 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 **Prerequisites**
 
 * For email campaigns, you'll need to have your email service provider (ESP) integration in place.  
-  A list of AppsFlyer-supported ESPs can be found [here.](/docs/email-service-provider-esp-integration-guide)
-* Integration of the AppsFlyer [URL Resolver code](https://github.com/AppsFlyerSDK/appsflyer-urlresolver-client) snippet into your mobile apps (it is responsible for resolving the Movable Ink wrapped link).
-* OneLink is set up and supports Universal Links/App Links. [Learn more](/docs/create-a-onelink-template#create-a-onelink-template)
+  A list of AppsFlyer-supported ESPs can be found <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">here.</Anchor>
+* Integration of the AppsFlyer <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-urlresolver-client">URL Resolver code</Anchor> snippet into your mobile apps (it is responsible for resolving the Movable Ink wrapped link).
+* OneLink is set up and supports Universal Links/App Links. <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">Learn more</Anchor>
 
 **To set up the integration:**
 
@@ -47,8 +46,8 @@ Movable Ink is a dynamic content optimization partner that provides personalized
      * Click on the three dots (“…”) under the section **Copy Creative Tag** and choose **Copy Link URL**.   
        **Note:** Finalize your campaign setup before copying the link URL.
      * Copy the HREF URL from the copied link (highlighted) and set it aside. It will be used as the deep link value in the final link.   
-       ![Movableink image highlighted.png](https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png)
-4. **In AppsFlyer:** Navigate to the specific [OneLink template](/docs/create-a-onelink-template) that you'll use for the campaign and retrieve the following data points for the integration:
+       <Image alt="Movableink image highlighted.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
+4. **In AppsFlyer:** Navigate to the specific <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor> that you'll use for the campaign and retrieve the following data points for the integration:
    * * **OneLink Domain:** The subdomain for OneLink generation within AppsFlyer.
      * **Template ID:** ID of the referenced template or the one created for the campaign.
      * **PID**: The unique identification of the media source.  
@@ -83,6 +82,6 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 
 ## Traits and limitations
 
-See additional [attribution link traits and limitations](/docs/about-link-structure-and-parameters#traits-and-limitations).
+See additional <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#traits-and-limitations">attribution link traits and limitations</Anchor>.
 
 <div data-zendesk-anchors="h_01J8HQFV2ZYYN7G1FDA1DH1GV3=about-the-integration h_01J8HX53FVT1N4MG2HPE743RTS=about-the-integration h_01J710N8QBFHSX9BS6H0NFY918=set-up-the-integration 01J9GSWGHBA01N227MCEV91YMV=note h_01J9GAS3T6STFKHD4C6Z6GYFMF=traits-and-limitations" />

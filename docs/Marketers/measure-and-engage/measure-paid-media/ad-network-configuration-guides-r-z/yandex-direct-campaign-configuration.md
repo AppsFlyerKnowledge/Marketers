@@ -1,9 +1,5 @@
 ---
 title: Yandex Direct campaign configuration
-excerpt: >-
-  Yandex Direct is an advertising platform that allows you to run user
-  acquisition and retargeting campaigns on Yandex Search, as well as on
-  thousands of apps and websites in the Yandex Advertising Network.
 metadata:
   keywords:
     - Advertisers
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018910138-Yandex-Direct-campaign-configuration
 ---
+**At a glance:** Yandex Direct is an advertising platform that allows you to run user acquisition and retargeting campaigns on Yandex Search, as well as on thousands of apps and websites in the Yandex Advertising Network.
+
 ## Set up Yandex Direct
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -36,8 +34,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 Yandex Direct's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**.
 
@@ -48,15 +46,15 @@ Yandex Direct's configuration window includes 3 active tabs: **Integration, Attr
 ### Activate partner
 
 On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
-Learn more about [partner activation/deactivation](/docs/partner-activation-deactivation).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation/deactivation</Anchor>.
 
 ### Advanced privacy
 
-For iOS apps only, **Enable advanced privacy (for iOS 14.5 and above)** controls what data is shared with the partner via postbacks and reports. [Learn more about advanced privacy](/docs/set-up-an-integrated-partner#b-advanced-privacy).
+For iOS apps only, **Enable advanced privacy (for iOS 14.5 and above)** controls what data is shared with the partner via postbacks and reports. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">Learn more about advanced privacy</Anchor>.
 
 ### Transaction ID
 
-For iOS apps only. When **Share SKAN transaction ID** is turned on, you're [sharing the transaction ID of SKAdNetwork postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners) with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
+For iOS apps only. When **Share SKAN transaction ID** is turned on, you're <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">sharing the transaction ID of SKAdNetwork postbacks</Anchor> with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
 
 ### General settings
 
@@ -84,9 +82,9 @@ As an all-installs network, Yandex Direct prefers to receive postbacks for all n
 In this section, you can configure in-app event postbacks that are sent to Yandex Direct.
 
 1. Turn **In-app event postbacks** on.
-2. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+2. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
 3. Click **Add event** to add an SDK Event to the list.
-4. [Complete the required parameters](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+4. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Complete the required parameters</Anchor>.
 5. Click **Save integration**.
 
 </Accordion>
@@ -95,10 +93,10 @@ In this section, you can configure in-app event postbacks that are sent to Yande
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -106,13 +104,13 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api). **Note**: Add campaign ID (af\_c\_id=`{campaign_id}`) to your links to ensure accurate cost reporting. [Learn more](/docs/about-link-structure-and-parameters)
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>. **Note**: Add campaign ID (af\_c\_id=`{campaign_id}`) to your links to ensure accurate cost reporting. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more</Anchor>
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -128,7 +126,7 @@ Ad Revenue data is not available for this partner.
 
 <Accordion title="Permissions tab">
 
-In this tab, you can select the permissions to grant Yandex Direct, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Yandex Direct, the Permissions tab is active and you can grant control to Yandex Direct. [Configure permissions to Yandex Direct](/docs/set-up-an-integrated-partner#permissions-tab).
+In this tab, you can select the permissions to grant Yandex Direct, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Yandex Direct, the Permissions tab is active and you can grant control to Yandex Direct. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Configure permissions to Yandex Direct</Anchor>.
 
 </Accordion>
 

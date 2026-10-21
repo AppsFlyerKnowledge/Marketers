@@ -1,9 +1,5 @@
 ---
 title: Tapjoy campaign configuration
-excerpt: >-
-  Tapjoy, an AppsFlyer ad network integrated partner, is an advertising and app
-  monetization platform. In addition to click-based mobile attribution, Tapjoy
-  offers view-through attribution, which can be recorded with AppsFlyer.
 metadata:
   keywords:
     - Tapjoy
@@ -28,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033956-Tapjoy-campaign-configuration
 ---
+**At a glance:** Tapjoy, an AppsFlyer ad network integrated partner, is an advertising and app monetization platform. In addition to click-based mobile attribution, Tapjoy offers view-through attribution, which can be recorded with AppsFlyer.
+
 To configure your campaigns with Tapjoy, follow the steps below.
 
 ## Setting up Tapjoy
@@ -46,10 +44,10 @@ an account, contact the partner to open one before setting up the integration.
    **Activate partner** toggle.   
    **Note:** The toggle
    **must stay on (active) as long as you work with the partner**.
-   [Learn more](/docs/partner-activation-deactivation)
+   <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn
    more about
-   [partner integrations.](/docs/set-up-an-integrated-partner)
+   <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -59,7 +57,7 @@ The ***Integration Tab*** is divided into different sections as described below.
 
 ### Activate partners
 
-The [partner must be activated](/docs/partner-activation-deactivation#activate-a-partner-integration) by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
+The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
 
 ### General settings
 
@@ -102,12 +100,12 @@ In this section, you can configure in-app event postbacks that are sent to Tapjo
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.</li></ul> |
 | **including** | <ul><li>**No data (default)**: Send just the event itself, without any event values.</li><li>**Values and revenue**: Send all event parameters, including revenue values (if exist in the event).</li><li>**Values without revenue**: Send all event parameters, excluding revenue values.</li></ul> |
 
-4. [Optional] Click the Add condition![image.png](https://files.readme.io/8e650caf6472b316bd49bc25c45cc4c9d63b67770dd1c920fb873118b82ff868-17023682954385.png) icon of an event to [set conditions for the event](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) sent to Tapjoy.   
+4. [Optional] Click the Add condition![image.png](https://files.readme.io/8e650caf6472b316bd49bc25c45cc4c9d63b67770dd1c920fb873118b82ff868-17023682954385.png) icon of an event to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions for the event</Anchor> sent to Tapjoy.   
 
    > 📘 **Note**
    >
@@ -121,10 +119,10 @@ In this section, you can configure in-app event postbacks that are sent to Tapjo
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 **Note:** TapJoy doesn't report Offerwall impressions to AppsFlyer. So installs following Offerwall impressions are not counted in AppsFlyer. Learn more about [Offerwall impressions](https://www.tapjoy.com/offerwall/).
 
@@ -134,17 +132,17 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
 <div id="cost-data-sync-status" />
 
 <Accordion title="Cost data sync status">
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -159,11 +157,11 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 
 <Accordion title="Ad revenue tab">
 
-This section is relevant if you are a publisher displaying partner ads to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources to find the most profitable sources for you. Learn more about [Tapjoy ad revenue setup](https://dev.tapjoy.com/en/graphql-api/Appsflyer#iap-and-ad-revenue-configuration-for-roas).
+This section is relevant if you are a publisher displaying partner ads to your users. As such, you would certainly like to measure the engagement of your users acquired from different sources to find the most profitable sources for you. Learn more about <Anchor target="_blank" href="https://dev.tapjoy.com/en/graphql-api/Appsflyer#iap-and-ad-revenue-configuration-for-roas">Tapjoy ad revenue setup</Anchor>.
 
 **To enable the ad revenue API**:
 
-* Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
 </Accordion>
 
@@ -185,7 +183,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 

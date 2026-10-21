@@ -1,9 +1,5 @@
 ---
 title: Data Clean Room—Setting up cloud services
-excerpt: >-
-  Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage
-  buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive
-  reports.
 metadata:
   keywords:
     - Premium
@@ -27,6 +23,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive reports.
+
 ## Overview
 
 Preparing to use the Data Clean Room (DCR) involves setting up:
@@ -37,11 +35,11 @@ Preparing to use the Data Clean Room (DCR) involves setting up:
 Creating an inbound or outbound connection is a 2-step process:
 
 * **Step #1 –** Use the interfaces of your selected cloud services to prepare them for use with the DCR (this article).
-* **Step #2 –** Use the AppsFlyer platform to connect them to the DCR. (See [Data Clean Room—Working with connections](/docs/data-clean-room-working-with-connections)).
+* **Step #2 –** Use the AppsFlyer platform to connect them to the DCR. (See <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections">Data Clean Room—Working with connections</Anchor>).
 
 > 📘 **Note**
 >
-> See [Data Clean Room—Working with sources](/docs/data-clean-room-working-with-sources#source-requirements) for complete information about data source requirements:
+> See <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#source-requirements">Data Clean Room—Working with sources</Anchor> for complete information about data source requirements:
 >
 > * Data format *(for all data sources)*
 > * Table columns *(for data sources in data warehouses)*
@@ -56,7 +54,7 @@ Two types of cloud services are supported for inbound and outbound connections t
 
 You can use one or any combination of these services for inbound and outbound connections.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * If you will be using multiple custom data sources for a single report, they must be located in cloud storage buckets.
 > * It's very common to use the same cloud storage bucket on Amazon S3 or GCS for both inbound and outbound connections. Be sure to follow the [special instructions for that setup](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
@@ -78,24 +76,24 @@ Prepare your selected cloud services for use with DCR inbound connections accord
 1. Log in to your Google Cloud console.
 2. Go to the BigQuery page.
 3. In a new or existing Google Cloud project, create a dataset for the exclusive use of the DCR:
-   1. In the **left-side** panel, click the **View actions** button ![BQ_view_actions_button.png](https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png) to the right of the project ID.
+   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the project ID.
    2. Select **Create dataset.**
 
-      ![BQ_create_dataset.png](https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png)
+      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. In the **right-side** panel that opens, enter the name of the dataset and select other options as you require.
       * You can use any name that suits you – using letters, numbers, and underscores (\_) only.
         * **Recommended:** Use a name that indicates the dataset is being used for an inbound connection.
       * It is strongly recommended **NOT** to use the **Enable table expiration** option since the DCR would be unable to read the sources after the tables expire.
-   4. Click the ![BQ_create_dataset_button.png](https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png) button.
+   4. Click the <Image alt="BQ_create_dataset_button.png" src="https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png" width="88px" /> button.
 4. Grant the DCR permissions to the dataset:
-   1. In the **left-side** panel, click the **View actions** button ![BQ_view_actions_button.png](https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png) to the right of the dataset you created.
+   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the dataset you created.
    2. Select **Share.**
    3. In the **right-side** panel that opens, click the ![BQ_add_principal_button.png](https://files.readme.io/77179cb4b9c81faa7cdc13397920699186df15fd1722247ccd8cbecb0cc43bce-13879857984017.png) button.
    4. In the **Add principals** section, enter the following account in the **New principals** field:  
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. In the **Assign roles** section, select **BigQuery > BigQuery Data Viewer.**
 
-      ![BQ_data_viewer.png](https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png)
+      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. Click **Save.**
    7. Click **CLOSE** to close the right-side panel.
 
@@ -109,15 +107,15 @@ Prepare your selected cloud services for use with DCR inbound connections accord
 
 **To create a private share for use by the DCR:**
 
-1. [Log in to the Snowflake account](https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface) that contains the data you want to share with the DCR.
+1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Log in to the Snowflake account</Anchor> that contains the data you want to share with the DCR.
 2. Switch your role to **Accountadmin.**
 3. From the left-side panel, select **Private Sharing.**
 4. In the page that opens, select the **Shared By Your Account** tab.
 
-   ![snowflake_private_sharing.png](https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png)
+   <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
 5. Click the **Share** button. From the list that opens, select **Create a Direct Share.**
 
-   ![snowflake_create_direct_share.png](https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png)
+   <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. Select the tables and/or views that you want to share with the DCR, then click **Done.**
 7. According to your needs, change the **Secure Share Identifier** and add an optional description.
 8. In the field **Add accounts in your region by name**, enter one of the following AppsFlyer Snowflake accounts, according to your Snowflake account region:
@@ -154,8 +152,8 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
       * spaces
       * all other symbols or special characters
     * Characters used for special purposes only:
-      * * equal signs `(=)`, *only where required in* [date and version folder names](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)
-        * underscores `(_)`, *only where used to identify the parts of* [multi-part GZIP files](/docs/data-clean-room-working-with-sources#file-format) *or for naming* [\_SUCCESS files](/docs/data-clean-room-working-with-sources#_success-files)
+      * * equal signs `(=)`, *only where required in* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">date and version folder names</Anchor>
+        * underscores `(_)`, *only where used to identify the parts of* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#file-format">multi-part GZIP files</Anchor> *or for naming* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#_success-files">\_SUCCESS files</Anchor>
         * dots `(.)`, *only directly before filename extensions* `(.csv, .gzip)`
 
 <div id="amazon-s3-inbound" />
@@ -240,7 +238,7 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
 
 ## Setting up cloud services for outbound connections
 
-The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers).
+The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>.
 
 * **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
@@ -259,24 +257,24 @@ Your DCR reports can be delivered to one or more locations on your cloud service
 1. Log in to your Google Cloud console.
 2. Go to the BigQuery page.
 3. In a new or existing Google Cloud project, create a dataset for the exclusive use of Data Locker:
-   1. In the **left-side** panel, click the **View actions** button ![BQ_view_actions_button.png](https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png) to the right of the project ID.
+   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the project ID.
    2. Select **Create dataset.**
 
-      ![BQ_create_dataset.png](https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png)
+      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. In the **right-side** panel that opens, enter the name of the dataset and select other options as you require.
       * You can use any name that suits you – using letters, numbers, and underscores (\_) only.
         * **Recommended:** Use a name that indicates the dataset is being used for an outbound connection.
       * It is strongly recommended **NOT** to use the **Enable table expiration** option since Data Locker would be unable to write reports to the dataset after the tables expire.
-   4. Click the ![BQ_create_dataset_button.png](https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png) button.
+   4. Click the <Image alt="BQ_create_dataset_button.png" src="https://files.readme.io/242c16aaa7e7f1f96b3392452260fa1c1987a8ebfd276c36630a028baa245b16-13879858133137.png" width="88px" /> button.
 4. Grant Data Locker permissions to the dataset:
-   1. In the **left-side** panel, click the **View actions** button ![BQ_view_actions_button.png](https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png) to the right of the dataset you created.
+   1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the dataset you created.
    2. Select **Share.**
    3. In the **right-side** panel that opens, click the ![BQ_add_principal_button.png](https://files.readme.io/77179cb4b9c81faa7cdc13397920699186df15fd1722247ccd8cbecb0cc43bce-13879857984017.png) button.
    4. In the **Add principals** section, enter the following account in the **New principals** field:  
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
    5. In the **Assign roles** section, select **BigQuery > BigQuery Data Editor.**
 
-      ![BQ_data_editor.png](https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png)
+      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. Click **Save.**
    7. Click **CLOSE** to close the right-side panel.
 
@@ -286,7 +284,7 @@ Your DCR reports can be delivered to one or more locations on your cloud service
 
 <Accordion title="Snowflake">
 
-The procedure for preparing Snowflake for outbound connections is completed in combination with the [procedure for creating the outbound connection](/docs/data-clean-room-working-with-connections#snowflake-outbound) itself.
+The procedure for preparing Snowflake for outbound connections is completed in combination with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#snowflake-outbound">procedure for creating the outbound connection</Anchor> itself.
 
 </Accordion>
 

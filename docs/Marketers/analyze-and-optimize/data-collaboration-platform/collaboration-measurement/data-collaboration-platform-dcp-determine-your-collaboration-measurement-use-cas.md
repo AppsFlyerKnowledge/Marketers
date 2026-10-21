@@ -2,9 +2,6 @@
 title: >-
   Data collaboration platform (DCP) - Determine your collaboration measurement
   use case
-excerpt: >-
-  Identify your collaboration scenario, making sure you know what data to
-  provide, who is responsible for it, and in what format to submit it.
 metadata:
   keywords:
     - Marketers
@@ -25,11 +22,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32964487756561-Data-collaboration-platform-DCP-Determine-your-collaboration-measurement-use-case
 ---
+**At a glance:** Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it.
+
 ## Overview
 
 DCP supports a variety of on-site and off-site use cases. Each use case requires a different setup, specifying which collaborator is responsible for preparing each data source and the format in which the data should be configured.
 
-This article aims to help Commerce Media Networks (CMNs) and advertisers (brands) identify which use case applies to them. Once the appropriate use case is determined, the collaboration owner can assign the necessary preparation and configuration tasks to the relevant collaborators (For more information about task assignment, see: [Assign configuration task](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configuration-task-assignment).)
+This article aims to help Commerce Media Networks (CMNs) and advertisers (brands) identify which use case applies to them. Once the appropriate use case is determined, the collaboration owner can assign the necessary preparation and configuration tasks to the relevant collaborators (For more information about task assignment, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configuration-task-assignment">Assign configuration task</Anchor>.)
 
 This is where the use case decision tree comes into play. It serves as a structured guide to help you specify your use case and receive the corresponding preparation instructions.
 
@@ -64,10 +63,10 @@ If the CMN platform is an app, follow the instructions below for each data type:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | CMN | <ul><li>[Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Conversions | CMN | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li><li>[Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Engagements | CMN | <ul><li>[Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)</li><li>[Engagement in-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events)</li></ul> | <ul><li>[Engagements task configuration](/docs/set-up-the-engagements-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relevant | <ul><li>[Lookback windows task configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Campaigns | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Conversions | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Conversion In-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Engagements | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Engagement source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events">Engagement in-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Engagements task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Lookback windows task configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -81,10 +80,10 @@ If the CMN platform is a website, follow the instructions below for each data ty
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | CMN | <ul><li>[Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Conversions | CMN | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Engagements | CMN | <ul><li>[Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)</li></ul> | <ul><li>[Engagements task configuration](/docs/set-up-the-engagements-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relevant | <ul><li>[Lookback windows task configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Campaigns | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Conversions | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Engagements | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Engagement source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Engagements task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Lookback windows task configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -104,10 +103,10 @@ If the advertiser platform is an app, follow the instructions below for each dat
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | Advertiser | <ul><li>[Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Conversions | Advertiser | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li><li>[Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Engagements | CMN | <ul><li>[Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)</li><li>[Engagement in-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events)</li></ul> | <ul><li>[Engagements task configuration](/docs/set-up-the-engagements-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relevant | <ul><li>[Lookback windows task configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Campaigns | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Conversions | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Conversion In-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Engagements | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Engagement source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events">Engagement in-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Engagements task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Lookback windows task configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -121,10 +120,10 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Campaigns | Advertiser | <ul><li>[Campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Conversions | Advertiser | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Engagements | CMN | <ul><li>[Engagement source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme)</li></ul> | <ul><li>[Engagements task configuration](/docs/set-up-the-engagements-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relevant | <ul><li>[Lookback windows task configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Campaigns | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Conversions | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Engagements | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Engagement source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Engagements task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Lookback windows task configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -154,10 +153,10 @@ If the CMN platform is an app, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li><li>[Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | CMN | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | CMN | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Conversion In-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | CMN | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -171,10 +170,10 @@ If the CMN platform is a website, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | <ul><li>[Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | CMN | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | CMN | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relevant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source (custom)</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | CMN | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -194,10 +193,10 @@ If the advertiser platform is an app, follow the instructions below for each tas
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li><li>[Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | Advertiser | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | CMN | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Conversion In-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | CMN | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -211,10 +210,10 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | <ul><li>[Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | Advertiser | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | CMN | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source (custom)</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | CMN | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -240,10 +239,10 @@ If the CMN platform is an app, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li><li>[Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | CMN | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | Advertiser | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN/Advertiser | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Conversion In-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN/Advertiser | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -257,10 +256,10 @@ If the CMN platform is a website, follow the instructions below for each task:
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | CMN | <ul><li>[Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | CMN | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | Advertiser | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source (custom)</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | CMN | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -280,10 +279,10 @@ If the advertiser platform is an app, follow the instructions below for each tas
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | <ul><li>[Conversion source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li><li>[Conversion In-app event](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | Advertiser | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | Advertiser | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Conversion In-app event</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 
@@ -297,10 +296,10 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 | Task | Prepared and configured by | Learn how to prepare | Learn how to configure |
 | --- | --- | --- | --- |
-| Conversions | Advertiser | <ul><li>[Conversion source (custom)](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme)</li></ul> | <ul><li>[On-site Conversions task configuration](/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions)</li></ul> |
-| Campaigns | Advertiser | <ul><li>[Campaign mapping source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source)</li></ul> | <ul><li>[Campaigns task configuration](/docs/set-up-the-campaigns-task)</li></ul> |
-| Media partners | Advertiser | Not relevant | <ul><li>[Media partners task configuration](/docs/set-up-the-media-partners-task)</li></ul> |
-| Lookback windows | CMN | Not relavant | <ul><li>[Loookback windows configuration](/docs/set-up-the-lookback-windows-task)</li></ul> |
+| Conversions | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Conversion source (custom)</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-up-on-site-campaign-conversions">On-site Conversions task configuration</Anchor></li></ul> |
+| Campaigns | Advertiser | <ul><li><Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Campaign mapping source</Anchor></li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Campaigns task configuration</Anchor></li></ul> |
+| Media partners | Advertiser | Not relevant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Media partners task configuration</Anchor></li></ul> |
+| Lookback windows | CMN | Not relavant | <ul><li><Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Loookback windows configuration</Anchor></li></ul> |
 
 </Accordion>
 

@@ -1,8 +1,5 @@
 ---
 title: Apply IP masking to user data
-excerpt: >-
-  How to mask app user IP addresses in AppsFlyer raw data reports and in
-  postbacks sent to partners.
 metadata:
   keywords:
     - IP masking
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208879066-Apply-IP-masking-to-user-data
 ---
+**At a glance:** How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners.
+
 ## IP masking
 
 When turning on IP masking:
@@ -35,9 +34,9 @@ When turning on IP masking:
 > 📘 **Note**
 >
 > * Installs that occurred before IP masking was turned on aren't masked
-> * [AEM data sharing](/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing) for Meta ads isn't supported for both server-to-server and SDK events when IP masking is turned on. This means data isn't shared with Meta ads.
+> * <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing">AEM data sharing</Anchor> for Meta ads isn't supported for both server-to-server and SDK events when IP masking is turned on. This means data isn't shared with Meta ads.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > * The IP masking setting follows this path: Turned off, turned on, and then turned off.
 > * Three users install the app on different dates as shown in the app install table
@@ -82,7 +81,7 @@ IP masking is set per app and affects installs from all sources.
 When IP masking is turned on:
 
 * New installs and in-app events show an IP address of 1.1.1.1.
-* [Location-related parameters](/docs/determine-user-location), like country and city, still appear in raw data reports.
+* <Anchor target="_blank" href="/marketers/docs/determine-user-location">Location-related parameters</Anchor>, like country and city, still appear in raw data reports.
 
 **Example raw data report**
 

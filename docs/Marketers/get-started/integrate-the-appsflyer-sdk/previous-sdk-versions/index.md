@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551300280977-Previous-SDK-versions
 ---
-- [Old SDK guides - Android and iOS](/docs/old-sdk-guides-android-and-ios)
-- [AppsFlyer SDK version control policy](/docs/appsflyer-sdk-version-control-policy)
-- [Migrating from Version 3.3.X to 4.3.2 and Higher](/docs/migrating-from-version-3-3-x-to-4-3-2-and-higher)
+- <Anchor target="_blank" href="/marketers/docs/old-sdk-guides-android-and-ios">Old SDK guides - Android and iOS</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/appsflyer-sdk-version-control-policy">AppsFlyer SDK version control policy</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/migrating-from-version-3-3-x-to-4-3-2-and-higher">Migrating from Version 3.3.X to 4.3.2 and Higher</Anchor>

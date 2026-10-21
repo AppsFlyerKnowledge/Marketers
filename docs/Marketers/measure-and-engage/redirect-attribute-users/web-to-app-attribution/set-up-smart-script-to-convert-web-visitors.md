@@ -1,8 +1,5 @@
 ---
 title: Set up Smart Script to convert web visitors
-excerpt: >-
-  Set up OneLink Smart Script to convert and attribute your mobile website
-  visitors, coming from any source, into mobile app users.
 metadata:
   keywords:
     - OneLink
@@ -26,15 +23,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4413588932241-Set-up-Smart-Script-to-convert-web-visitors
 ---
+**At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
+
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/4f506532e65c118a76e875b992be59cf8cca925f78e125dbb35b958fc1639d16-42045468431121.png)
 
 ## Setup
 
 There are two versions of OneLink Smart Script:
 
-**OneLink Smart Script V2 (recommended)**: If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be generated in the AppsFlyer UI without developer assistance. If for some reason, a developer is needed, their work portion is easier. And it can also be set up using Google Tag Manager. [See developer instructions](https://dev.appsflyer.com/hc/docs/dl_smart_script_v2)
+**OneLink Smart Script V2 (recommended)**: If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be generated in the AppsFlyer UI without developer assistance. If for some reason, a developer is needed, their work portion is easier. And it can also be set up using Google Tag Manager. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2">See developer instructions</Anchor>
 
-[**OneLink Smart Script V1 (legacy)**](/docs/legacy-onelink-smart-script-v1-setup): If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2 to properly get [view-thorough attributions](https://www.appsflyer.com/glossary/view-through-attribution/) using the OneLink Smart Script.
+<Anchor target="_blank" href="/marketers/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (legacy)**</Anchor>: If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2 to properly get <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">view-thorough attributions</Anchor> using the OneLink Smart Script.
 
 ### Set up OneLink Smart Script
 
@@ -51,7 +50,7 @@ To set up the Smart Script, you can either:
   * Decides what the outgoing URL should contain based on the [arguments](/docs/set-up-smart-script-to-convert-web-visitors#arguments) in the script that process the incoming URL. This determines the attribution and deep linking data that gets appended to the outgoing URL, either by manipulating the incoming URL or by forcing certain values.
   * Generates the Smart Script in the AppsFlyer UI.
   * Makes sure all campaigns leading to the mobile website have incoming URLs with parameters that the script works for.
-  * [Tests the Smart Script](https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html).
+  * <Anchor target="_blank" href="https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html">Tests the Smart Script</Anchor>.
 * **Web developer**:
   * Verifies the script runs on the mobile site/pages on which you want it to work.
   * Uses the result value as needed, for example, to place it as a link under a CTA on your website.
@@ -61,7 +60,7 @@ To set up the Smart Script, you can either:
 **Prerequisites**
 
 * An AppsFlyer account with at least one app.
-* A [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) that serves as the value of the [OneLinkURL parameter](/docs/set-up-smart-script-to-convert-web-visitors#arguments).
+* A <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor> that serves as the value of the [OneLinkURL parameter](/docs/set-up-smart-script-to-convert-web-visitors#arguments).
 
 <div id="how-to-create-a-onelink-smart-script" />
 
@@ -93,21 +92,21 @@ To set up the Smart Script, you can either:
 8. Select how to implement the Smart Script on your website:
    * **Embed the script in your website.**
    * **Use Google Tag Manager.**
-9. Click on **Test** to test the script on the [Smart Script test page](https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html). Make sure the correct outgoing URL is generated.
+9. Click on **Test** to test the script on the <Anchor target="_blank" href="https://appsflyersdk.github.io/appsflyer-onelink-smart-script/examples/test_page.html">Smart Script test page</Anchor>. Make sure the correct outgoing URL is generated.
 10. Click
     1. **Save** to save your changes
     2. **Save and Generate** to save and generate the script
        1. Click **Download script**.
-11. If you selected to embed the script in your website: Send the script to your web developer to implement and tell them what to do with the generated outgoing URL. For example, place it under a CTA button on your mobile site or present a QR code on your desktop site. [Developer instructions](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#embed-the-script-in-your-website)
+11. If you selected to embed the script in your website: Send the script to your web developer to implement and tell them what to do with the generated outgoing URL. For example, place it under a CTA button on your mobile site or present a QR code on your desktop site. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#embed-the-script-in-your-website">Developer instructions</Anchor>
 12. If you selected to use Google Tag Manager:
     1. In Google Tag Manager, create a new tag, name the tag, click **Tag Configuration**, and select **Custom HTML**.
     2. In the HTML box, paste the generated Smart Script code.
-    3. Click **Triggering**, create a new trigger, name it, and choose a **Trigger Configuration** (for example, all page views). [See GTM documentation to learn more](https://support.google.com/tagmanager/answer/7679319?hl=en&ref_topic=7679108)
+    3. Click **Triggering**, create a new trigger, name it, and choose a **Trigger Configuration** (for example, all page views). <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en&ref_topic=7679108">See GTM documentation to learn more</Anchor>
     4. Click **Save**
-    5. Tell your web developer what to do with the generated outgoing URL. For example, place it under a CTA button on your mobile site or present a QR code on your desktop site. [Developer instructions](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager)
+    5. Tell your web developer what to do with the generated outgoing URL. For example, place it under a CTA button on your mobile site or present a QR code on your desktop site. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager">Developer instructions</Anchor>
 13. Saved scripts can be viewed in the [dropdown menu](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script).
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Every time you update the script, it needs to be implemented again
 
@@ -119,15 +118,15 @@ To set up the Smart Script, you can either:
 
 **To edit or delete a script:**
 
-1. Click the dropdown arrow ![Down_arrow.jpg](https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg) next to the Smart Script name.  
+1. Click the dropdown arrow <Image alt="Down_arrow.jpg" src="https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg" width="28px" /> next to the Smart Script name.  
    Here you can see all your saved scripts  
 
-   ![Script_steps.jpg](https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg)
+   <Image alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
 2. Click on the pen icon next to the script you want to edit
    1. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
 3. Click on the trash bin icon to delete the Smart Script
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Every time you update the script, it needs to be implemented again
 
@@ -140,7 +139,7 @@ To set up the Smart Script, you can either:
 **To duplicate a script:**
 
 1. Go to the Smart Script you want to duplicate
-2. Click on the duplicate button ![SmartScript_duplicate.jpg](https://files.readme.io/ec05ea217331b588dc7033984287d46b61a37e41510546b67a0046ea281e0979-42045454920721.jpg) on the top banner
+2. Click on the duplicate button <Image alt="SmartScript_duplicate.jpg" src="https://files.readme.io/ec05ea217331b588dc7033984287d46b61a37e41510546b67a0046ea281e0979-42045454920721.jpg" width="21px" /> on the top banner
 3. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
 
 </Accordion>
@@ -167,7 +166,7 @@ The OneLink Smart Script uses arguments to generate an outgoing URL based on the
 
 #### Arguments (parameters and values) to implement the Smart Script
 
-<table><thead><tr><th colspan="2">Argument</th><th>Remarks</th><th>Record your responses (for you or your developer to use)</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL (required)</td><td><ul><li>Provide the OneLink template domain + template ID. <strong>Note: </strong>Not a OneLink custom link URL!</li><li>Example: <strong>yourbrand.onelink.me/A1b2</strong></li><li>Branded domain example: <strong>click.yourbrand.com/A1b2</strong></li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>(required)</p></td><td><p>mediaSource</p><p>(required)</p></td><td><ul><li>Configuration object for media source.</li><li>Example:<ul><li>Keys: ['incoming_mediasource’' 'utm_source']</li><li>Default value: ['any_source']</li><li>Override values: `{twitter: 'twitter_int', orig_src: 'new_src',  seo:'false'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>campaign</td><td><ul><li>Configuration object for campaign.</li><li>Example:<ul><li>Keys: ['incoming_campaign', 'utm_campaign']</li><li>Default value: ['any_campaign_name']</li><li>Override values: {campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>channel</td><td><ul><li>Configuration object for channel.</li><li>Example:<ul><li>Keys: ['incoming_channel', 'utm_channel']</li><li>Default value: ['any_video']</li><li>Override values: {video: 'new_video'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>ad</td><td><ul><li>Configuration object for ad.</li><li>Example:<ul><li>Keys: ['incoming_ad', 'utm_ad']</li><li>Default value: ['any_ad_name']</li><li>Override values: {ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>adSet</td><td><ul><li>Configuration object for adset.</li><li>Example:<ul><li>Keys: ['incoming_adset', 'utm_adset']</li><li>Default value: ['any_ad_name']</li><li>Override values: {adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>deepLinkValue</td><td><ul><li>Configuration object for <strong>deep_link_value</strong>.</li><li>Example:<ul><li>Keys: ['product_id', 'page_name']</li><li>Default value: 'new_offers_page'</li><li>Override values: {twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>afSub1-5</td><td>Configuration object for <strong>af_sub[1-5]</strong>.</td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>googleClickIdKey</td><td>State what to call the parameter that carries the <a href="https://support.google.com/google-ads/answer/9744275?hl=en">GCLID</a>.<br/><strong>Note</strong>! <span>To display in AppsFlyer raw data reports, the param must be one of <strong>af_sub[1-5]</strong>.</span></td><td> </td></tr><tr><td><span>Other (custom) query parameters</span><br/> </td><td><ul><li>List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking, along with their configuration objects.</li><li>The name of the custom parameter is listed by the developer as a paramKey in the configuration object.<span></span></li><li>Example:<ul><li>paramKey: 'deep_link_sub1'</li><li>Keys: ['page_id']</li><li>Default value: 'page1'</li><li>Override values: {page12: 'new_page12'}`</li></ul></li></ul></td><td><p>Param key:</p><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr></tbody></table>
+<table><thead><tr><th colspan="2">Argument</th><th>Remarks</th><th>Record your responses (for you or your developer to use)</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL (required)</td><td><ul><li>Provide the OneLink template domain + template ID. <strong>Note:</strong> Not a OneLink custom link URL!</li><li>Example: <strong>yourbrand.onelink.me/A1b2</strong></li><li>Branded domain example: <strong>click.yourbrand.com/A1b2</strong></li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>(required)</p></td><td><p>mediaSource</p><p>(required)</p></td><td><ul><li>Configuration object for media source.</li><li>Example:<ul><li>Keys: ['incoming_mediasource’' 'utm_source']</li><li>Default value: ['any_source']</li><li>Override values: `{twitter: 'twitter_int', orig_src: 'new_src',  seo:'false'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>campaign</td><td><ul><li>Configuration object for campaign.</li><li>Example:<ul><li>Keys: ['incoming_campaign', 'utm_campaign']</li><li>Default value: ['any_campaign_name']</li><li>Override values: {campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>channel</td><td><ul><li>Configuration object for channel.</li><li>Example:<ul><li>Keys: ['incoming_channel', 'utm_channel']</li><li>Default value: ['any_video']</li><li>Override values: {video: 'new_video'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>ad</td><td><ul><li>Configuration object for ad.</li><li>Example:<ul><li>Keys: ['incoming_ad', 'utm_ad']</li><li>Default value: ['any_ad_name']</li><li>Override values: {ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>adSet</td><td><ul><li>Configuration object for adset.</li><li>Example:<ul><li>Keys: ['incoming_adset', 'utm_adset']</li><li>Default value: ['any_ad_name']</li><li>Override values: {adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>deepLinkValue</td><td><ul><li>Configuration object for <strong>deep_link_value</strong>.</li><li>Example:<ul><li>Keys: ['product_id', 'page_name']</li><li>Default value: 'new_offers_page'</li><li>Override values: {twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>afSub1-5</td><td>Configuration object for <strong>af_sub[1-5]</strong>.</td><td><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr><tr><td>googleClickIdKey</td><td>State what to call the parameter that carries the <a href="https://support.google.com/google-ads/answer/9744275?hl=en">GCLID</a>.<br/><strong>Note</strong>! <span>To display in AppsFlyer raw data reports, the param must be one of <strong>af_sub[1-5]</strong>.</span></td><td> </td></tr><tr><td><span>Other (custom) query parameters</span><br/> </td><td><ul><li>List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking, along with their configuration objects.</li><li>The name of the custom parameter is listed by the developer as a paramKey in the configuration object.<span></span></li><li>Example:<ul><li>paramKey: 'deep_link_sub1'</li><li>Keys: ['page_id']</li><li>Default value: 'page1'</li><li>Override values: {page12: 'new_page12'}`</li></ul></li></ul></td><td><p>Param key:</p><p>Keys:</p><p>Default value:</p><p>Override values:</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -215,7 +214,7 @@ You can also map Click IDs to other outgoing parameters (**af\_sub[1-5]**) to ha
 * This applies to install campaigns. For non-ACI search campaigns, meaning re-engagement campaigns, Google may be attributed as the media source, despite the Smart Script output.
 * If a GCLID is found, the script looks for the incoming parameter keyword. If found, it puts the keyword value in the outgoing URL as the value of af\_keywords.
 
-**Prerequisite**: On the Google dashboard, [enable auto-tagging](https://support.google.com/analytics/answer/1033981?hl=en).  
+**Prerequisite**: On the Google dashboard, <Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">enable auto-tagging</Anchor>.   
 With auto-tagging enabled, the URL contains the *GCLID* parameter.
 
 **To set up the script to map Google Ads GCLID to other parameters**:
@@ -226,12 +225,12 @@ With auto-tagging enabled, the URL contains the *GCLID* parameter.
 
 **To notify Google Ads about these installs:**
 
-**Recommended:** Set up [Google web integration](/docs/google-ads-adwords-create-web-based-campaigns). This integration supports automatic postbacks for installs.
+**Recommended:** Set up <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-create-web-based-campaigns">Google web integration</Anchor>. This integration supports automatic postbacks for installs.
 
 **If you don't have the integration:**
 
 1. Get the GCLID data from the param **af\_sub[1-5]** via CSV, or Push API in real-time for every install.
-2. Upload the GCLID data to Google either [manually](https://support.google.com/adwords/answer/7014069) or via [Google Ads API](https://developers.google.com/google-ads/api/docs/start).
+2. Upload the GCLID data to Google either <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">manually</Anchor> or via <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">Google Ads API</Anchor>.
 
 > 📘 **Note**
 >
@@ -273,8 +272,8 @@ You can also map these Click IDs to other outgoing parameters - such as af\_sub1
 
 See the following relevant web integration articles:
 
-* [TikTok](/docs/tiktok-for-business-create-web-based-campaigns)
-* [Snap](/docs/snapchat-create-web-based-campaigns)
+* <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-create-web-based-campaigns">TikTok</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/snapchat-create-web-based-campaigns">Snap</Anchor>
 
 </Accordion>
 
@@ -282,7 +281,7 @@ See the following relevant web integration articles:
 
 <Accordion title="SRNs, owned media, and other media source links">
 
-[SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
+<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRNs</Anchor> like Snapchat or X Ads, work differently than Google Ads or a cross-platform like Meta ads. Campaigns from these SRNs lead your users to the web/landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
 
 For these SRNs, script setup is the same as for links from owned media, or other media sources you might use.
 
@@ -294,7 +293,7 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 **Result**: For these SRNs/media sources, the values in the media source and campaign parameters in the incoming link are used to populate the values for the **media\_source** and **campaign** parameters in the outgoing link.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Incoming URL**: https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
 >
@@ -312,7 +311,7 @@ AppsFlyer attribution links can be used when the media source is a click ad netw
 
 **Result**: When the Smart Script finds the **af\_r** parameter on the incoming link, the Smart Script doesn't produce an outgoing URL and the developer must decide what link to place as the outgoing URL and implement it.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Incoming URL**: https://app.appsflyer.com/id123456789?pid=click_ad_network_int&c=orlando&af_r=hotel.me
 >
@@ -336,7 +335,7 @@ You can set the Smart Script to collect this information from your landing page 
    * af\_sub1-5 - Parameter is available in raw data under the **af\_sub1-5** columns and in the **original URL** column.
    * Custom parameter - This is made up of the parameter name and value. The parameter is shown in raw data in **the original URL** column.
 
-To learn about organic search attribution for re-engagements using Universal Links and App Links, see [here](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution).
+To learn about organic search attribution for re-engagements using Universal Links and App Links, see <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">here</Anchor>.
 
 </Accordion>
 
@@ -361,11 +360,11 @@ However, desktop users shouldn't immediately be sent to an app store, because th
 
 **To set up the script for desktop users**:
 
-* In your [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template), set a destination URL for **When link is clicked on desktop**. The URL should redirect to a dedicated web/landing page. The landing page can contain a web form where they fill in their details to get an SMS or an email with a link to download the app. It's up to you to create the web form and provide the URL to it in the script.
+* In your <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>, set a destination URL for **When link is clicked on desktop**. The URL should redirect to a dedicated web/landing page. The landing page can contain a web form where they fill in their details to get an SMS or an email with a link to download the app. It's up to you to create the web form and provide the URL to it in the script.
 
 **Result**: The script detects the device or platform the user is on. If it's desktop, the script generates an outgoing OneLink URL that redirects the user to your dedicated web/landing page.
 
-See also [Desktop-to-app conversion](/docs/qr-to-app-conversion).
+See also <Anchor target="_blank" href="/marketers/docs/qr-to-app-conversion">Desktop-to-app conversion</Anchor>.
 
 </Accordion>
 
@@ -378,14 +377,14 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 **To display a QR code:**
 
 1. Make sure you use Smart Script 2.6+ when you set up your Smart Script.
-2. Tell your developer to follow [their instructions](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#create-a-qr-code-with-the-smart-script-result) to create a QR code with the Smart Script result.
+2. Tell your developer to follow <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#create-a-qr-code-with-the-smart-script-result">their instructions</Anchor> to create a QR code with the Smart Script result.
 3. [Best practice] Tell the developer to:
-   * [Customize the QR code](https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#create-a-qr-code-with-the-smart-script-result) by adding your app logo to the QR code center and customizing the color.
+   * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#create-a-qr-code-with-the-smart-script-result">Customize the QR code</Anchor> by adding your app logo to the QR code center and customizing the color.
    * Show the QR code when users are on desktop and show the button with the link when users are on mobile.
 
 **Result**: The script displays a QR code instead of a button with a URL behind it.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Incoming URL**:
 >
@@ -397,7 +396,7 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 >
 > **Outgoing QR code**:
 >
-> ![](https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png)
+> <Image alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
 
 </Accordion>
 
@@ -405,7 +404,7 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 
 <Accordion title="Impressions">
 
-The OneLink Smart Script can be used to count impressions on your website. To do so, the developer needs to call the impression function. Installs are then attributed to the impressions via [view-through attribution](/docs/measure-view-through-engagements).
+The OneLink Smart Script can be used to count impressions on your website. To do so, the developer needs to call the impression function. Installs are then attributed to the impressions via <Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements">view-through attribution</Anchor>.
 
 **Note**:
 
@@ -415,12 +414,12 @@ The OneLink Smart Script can be used to count impressions on your website. To do
 **To attribute new installs to these impressions (which is view-through attribution):**
 
 1. Make sure you use Smart Script 2.3+ when you set up your Smart Script.
-2. Tell your developer to [call the impression function](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression) in the Smart Script.
-3. Make sure [view-through attribution is turned on](/docs/measure-view-through-engagements).
+2. Tell your developer to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression">call the impression function</Anchor> in the Smart Script.
+3. Make sure <Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements">view-through attribution is turned on</Anchor>.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> As of February 1st, 2023 (Chrome 110 stable release), Google has made some changes to [reduce User-Agent data](https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/). In order to properly get [view-thorough attributions](https://www.appsflyer.com/glossary/view-through-attribution/) using the OneLink Smart Script, you should use the OneLink Smart Script version 2.3 and above.
+> As of February 1st, 2023 (Chrome 110 stable release), Google has made some changes to <Anchor target="_blank" href="https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/">reduce User-Agent data</Anchor>. In order to properly get <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">view-thorough attributions</Anchor> using the OneLink Smart Script, you should use the OneLink Smart Script version 2.3 and above.
 
 </Accordion>
 
@@ -432,7 +431,7 @@ The OneLink Smart Script can be used to count impressions on your website. To do
 
 #### **Will the incoming URL for OneLink link generation work if the user browses to a different page on the website?**
 
-Yes. Incoming URL parameters are stored for the duration of the browsing session and applied to the outgoing parameters of the Smart Script-generated OneLink link. For more implementation info, [see our developer hub](https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages).
+Yes. Incoming URL parameters are stored for the duration of the browsing session and applied to the outgoing parameters of the Smart Script-generated OneLink link. For more implementation info, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages">see our developer hub</Anchor>.
 
 #### **Why do I get an error when implementing Smart Script via Google Tag Manager?**
 
@@ -466,7 +465,7 @@ Smart Script uses Javascript and should work on all browsers.
 
 | **Spec** | **Remarks** |
 | --- | --- |
-| URI scheme | Even if a URI scheme is set in the OneLink template to open the app for existing users, for links created using Smart Script, the af\_dp parameter with the URI scheme must be added by the developer to URLs as a [custom parameter](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#set-additional-custom-parameters). |
+| URI scheme | Even if a URI scheme is set in the OneLink template to open the app for existing users, for links created using Smart Script, the af\_dp parameter with the URI scheme must be added by the developer to URLs as a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#set-additional-custom-parameters">custom parameter</Anchor>. |
 | **in incoming URL**| Smart Script encounters issues when handling incoming URLs that include a hash ('#') symbol preceding the query parameters (indicated by a '?' sign). In such cases, Smart Script  reverts to default values. |
 
 </Accordion>

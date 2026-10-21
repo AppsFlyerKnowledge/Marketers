@@ -1,9 +1,5 @@
 ---
 title: PBA brand bundles and settings
-excerpt: >-
-  Brand bundles consolidate the attribution, events, visits, and revenue of
-  brand-related apps and websites. Use the brand bundle settings page to mark
-  conversion events, integrate with Google Ads, and more.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000646498-PBA-brand-bundles-and-settings
 ---
+**At a glance:** Brand bundles consolidate the attribution, events, visits, and revenue of brand-related apps and websites. Use the brand bundle settings page to mark conversion events, integrate with Google Ads, and more.
+
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
 ## About brand bundles
@@ -36,7 +34,7 @@ Brands operate in an ecosystem encompassing both web and mobile properties. As a
 
 > 📘 **What is a web app?**
 >
-> A web app is an [entity you have created in AppsFlyer](/docs/adding-an-app-to-appsflyer) that specifies a website for which you want to measure performance.
+> A web app is an <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">entity you have created in AppsFlyer</Anchor> that specifies a website for which you want to measure performance.
 >
 > * The web app entity was added to AppsFlyer on February 9, 2022. Prior to that date, you entered the brand bundle domain as a separate setting when creating a brand bundle. Now, you first create a web app that defines the domain, then include that web app when creating a bundle.
 > * If you had existing brand bundles on February 9, 2022, you will see that you now have a web app on the **My apps** page corresponding to each of those bundles. **Rest assured!** Your web traffic is being attributed just as it was before, and there have been no other changes to PBA dashboards or raw data reports.
@@ -66,7 +64,7 @@ To add, delete, or manage brand bundles, select one of these options from the **
 | PBA dashboard | Opens the brand dashboard |
 | Brand bundle ID | Copies brand bundle ID to the clipboard |
 | Web dev key | Copies the web dev key to the clipboard |
-| Select an existing bundle to update brand bundle settings and options | Options available:<ul><li>Mark events as conversion events:<ul><li>[Web event settings](/docs/pba-brand-bundles-and-settings#web-event-settings)</li><li>[In-app event settings](/docs/pba-brand-bundles-and-settings#inapp-event-settings)</li></ul></li><li>[Domain exclusion](/docs/pba-brand-bundles-and-settings#domain-exclusion)</li><li>[Google Ads integration](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba)</li></ul> |
+| Select an existing bundle to update brand bundle settings and options | Options available:<ul><li>Mark events as conversion events:<ul><li>[Web event settings](/docs/pba-brand-bundles-and-settings#web-event-settings)</li><li>[In-app event settings](/docs/pba-brand-bundles-and-settings#inapp-event-settings)</li></ul></li><li>[Domain exclusion](/docs/pba-brand-bundles-and-settings#domain-exclusion)</li><li><Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads integration</Anchor></li></ul> |
 | Delete icon | [Deletes the selected brand bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) (after you confirm your decision to do so) |
 
 <div id="add-brand-bundle" />
@@ -89,7 +87,7 @@ Before proceeding, make sure that all the apps you want to include in the bundle
      * There is no limit to the number of mobile apps you can include in a bundle.
 4. Click Create bundle.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Brand bundles cannot be created in the following circumstances:
 >
@@ -105,7 +103,7 @@ Before proceeding, make sure that all the apps you want to include in the bundle
 There are two types of web events: **standard** and **conversion**. To focus and prioritize your optimization efforts, set some events as conversion events.
 
 * PBA attributes standard and conversion events in the same way.
-* [Raw data](/docs/raw-data-reporting-overview) reports include both standard and conversion events.
+* <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data</Anchor> reports include both standard and conversion events.
 * PBA dashboards include conversion events only.
 * An event type can be changed at any time; however, the change isn't retroactive.
 
@@ -114,7 +112,7 @@ There are two types of web events: **standard** and **conversion**. To focus and
 1. From the [Brand Bundles](/docs/pba-brand-bundles-and-settings#accessing-brand-bundles) page, select the brand bundle.  
    The **Update Brand bundles** page opens.
 2. Go to the **Web event settings** tab.
-3. Turn on **Mark as conversion event**as required.
+3. Turn on **Mark as conversion event** as required.
 4. Click **Update bundle.**
 
 </Accordion>
@@ -130,7 +128,7 @@ In-app events having revenue are marked as conversion events [Default]. **Note!*
 1. From the [Brand Bundles](/docs/pba-brand-bundles-and-settings#accessing-brand-bundles) page, select the brand bundle.  
    The **Update Brand bundles** page opens.
 2. Go to the **In-app event settings** tab.
-3. Turn on **Mark as conversion event**as required.
+3. Turn on **Mark as conversion event** as required.
 4. Click **Update bundle.**
 
 </Accordion>
@@ -139,7 +137,7 @@ In-app events having revenue are marked as conversion events [Default]. **Note!*
 
 <Accordion title="Domain exclusion">
 
-A domain exclusion mechanism, part of [PBA media source rules,](/docs/pba-media-source-attribution-rules) is implemented to prevent:
+A domain exclusion mechanism, part of <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source rules,</Anchor> is implemented to prevent:
 
 * Self-attribution: In other words, AppsFlyer will not attribute events to the website defined in the web app itself and to domains you specify are associated with that website.
 * Attributing or recording events associated with domains that aren't part of your brand but participate in the user flow (for example, payment gateways).
@@ -148,8 +146,8 @@ A domain exclusion mechanism, part of [PBA media source rules,](/docs/pba-media-
 | --- | --- | --- |
 | Primary | The domain of the **web app** included in the brand bundle. This includes sub-domains.<br /><br />For example, if your domain is mydomain.co.za then subdomains like a.mydomain.co.za, b.mydomain.co.za are excluded automatically. <br /><br />The domain of a web app cannot be changed without [deleting](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) and recreating the web app. (This also means deleting the bundle in which the web app is included). | No self-attribution |
 | Internal | List other domains forming part of your brand, for example, mydomain.com, mydomain.in, mydomain.co.ng, abc.com | No self-attribution |
-| External (listed by you) | Domains used by your website directly, but not part of the brand. These include payment gateways, payment processing sites, etc. | [Visits are disregarded](/docs/pba-media-source-attribution-rules#visit-recognition-rules) |
-| External (listed by AppsFlyer) | Domains listed by AppsFlyer and always excluded.<ul><li>PayPal</li><li>Stripe</li><li>Adyen</li></ul>The list of automatic domains cannot be edited. | [Visits are disregarded](/docs/pba-media-source-attribution-rules#visit-recognition-rules) |
+| External (listed by you) | Domains used by your website directly, but not part of the brand. These include payment gateways, payment processing sites, etc. | <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules#visit-recognition-rules">Visits are disregarded</Anchor> |
+| External (listed by AppsFlyer) | Domains listed by AppsFlyer and always excluded.<ul><li>PayPal</li><li>Stripe</li><li>Adyen</li></ul>The list of automatic domains cannot be edited. | <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules#visit-recognition-rules">Visits are disregarded</Anchor> |
 
 **To exclude internal or external domains:**
 
@@ -224,9 +222,9 @@ You probably didn’t subscribe to PBA. Please contact your CSM or [hello@appsf
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Onboarding guide to PBA](/docs/onboarding-guide-to-people-based-attribution)
-> * [PBA getting started](/docs/people-based-attribution-pba-overview)
+> * <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution">Onboarding guide to PBA</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">PBA getting started</Anchor>
 
 <div data-zendesk-anchors="h_01HE0Y2A3A5W86YY44RWCTKM1Y=about-brand-bundles h_01HE0Y2A3AYAFFSPRSH2BQ00Z3=what-is-a-web-app h_01HE0Y2A3A7265NYM7GVBZVXEN=accessing-brand-bundles h_01HE0Y2A3A272QJ4ZQH7VXJWCC=managing-brand-bundles h_01HE0Y2A3ATX4ZDYZSRQGSJ4G7=add-brand-bundle h_01HE0Y2A3AQC5MMNQA0AV34MZ3=important h_01HE0Y2A3ATN6DEQ2KHCGT6VPQ=web-event-settings h_01HE0Y2A3A76VBZ17W4P1D0K2A=inapp-event-settings h_01HE0Y2A3A7F2YEW2SK0PSXXE4=domain-exclusion h_01HE0Y2A3AB24NCNPAYFC0J4YH=faq h_01HE0Y2A3A5E816CYG2TMZ37DA=can-i-include-the-same-app-in-more-than-one-bundle h_01HE0Y2A3BENKY1AM51VM76TVS=can-i-add-or-remove-apps-after-creating-a-bundle h_01HE0Y2A3BK4JKMTND0JFCB179=how-do-i-add-or-remove-delete-apps-from-a-bundle h_01HE0Y2A3BKJTQZJXV49X32N1E=what-happens-if-i-delete-a-bundle h_01HE0Y2A3B276FV92EYBCZRA6C=faqs-what-happens-if-i-delete-a-bundle h_01HE0Y2A3BEB2JG8CPSX3DA1V9=why-are-certain-apps-not-available-for-me-to-add-to-a-bundle h_01JTQF9DZZZ5JFN43Y5KJJV943=page-404 h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />

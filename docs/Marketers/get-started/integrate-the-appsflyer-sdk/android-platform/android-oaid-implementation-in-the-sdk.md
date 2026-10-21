@@ -1,8 +1,5 @@
 ---
 title: Android OAID implementation in the SDK
-excerpt: >-
-  Collect the Android OAID to attribute installs from third-party Android app
-  stores.
 metadata:
   keywords:
     - China
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006278797-Android-OAID-implementation-in-the-SDK
 ---
+**At a glance:** Collect the Android OAID to attribute installs from third-party Android app stores.
+
 ## About OAID
 
 The Open Anonymous Device Identifier (OAID) is a user-resettable unique identifier for Android devices. It was introduced by the Mobile Security Alliance (MSA), China Information and Communication Research Institute, and device manufacturers, as a privacy-preserving alternative to non-resettable device identifiers like IMEI.
@@ -54,7 +53,7 @@ The integration of OAID consists of 3 steps:
 1. Follow the instructions on the [MSA website](http://www.msa-alliance.cn/col.jsp?id=120) to register your app.
    * Registering allows you to download the SDK.
    * As part of the registration process, you receive a certificate file that needs to be added into the app.
-2. Tell your developers to follow their [integration instructions](https://dev.appsflyer.com/hc/docs/oaid#msa-sdk-integration).
+2. Tell your developers to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#msa-sdk-integration">integration instructions</Anchor>.
 
 </Accordion>
 
@@ -64,7 +63,7 @@ The integration of OAID consists of 3 steps:
 
 **To integrate and use the Huawei HMS SDK**:
 
-* Tell your developers to follow their [integration instructions](https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration).
+* Tell your developers to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration">integration instructions</Anchor>.
 
 </Accordion>
 
@@ -76,17 +75,25 @@ The integration of OAID consists of 3 steps:
 
 Once the OAID integration is complete, the SDK attempts to collect OAID automatically. If you want to prevent the collection of OAID for certain users, tell the developer to use of the following:
 
-Android Unity
+<Tabs>
+<Tab title="Android">
 
-[setCollectOAID(false) API](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) or [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers)
+<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid">setCollectOAID(false) API</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers">setDisableAdvertisingIdentifiers</Anchor>
 
-[setCollectOAID(false) API](https://dev.appsflyer.com/hc/docs/api#setcollectoaid) or [setDisableAdvertisingIdentifiers](https://dev.appsflyer.com/hc/docs/api#setdisableadvertisingidentifiers)
+</Tab>
+
+<Tab title="Unity">
+
+<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setcollectoaid">setCollectOAID(false) API</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#setdisableadvertisingidentifiers">setDisableAdvertisingIdentifiers</Anchor>
+
+</Tab>
+</Tabs>
 
 <div id="setting-oaid-manually" />
 
 <Accordion title="Setting OAID manually">
 
-If your app already collects OAID, you can skip the AppsFlyer OAID plugin integration and simply set the OAID value into the AppsFlyer SDK manually, using the [setOaidData API](https://dev.appsflyer.com/hc/docs/oaid#setting-oaid-manually).
+If your app already collects OAID, you can skip the AppsFlyer OAID plugin integration and simply set the OAID value into the AppsFlyer SDK manually, using the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#setting-oaid-manually">setOaidData API</Anchor>.
 
 </Accordion>
 

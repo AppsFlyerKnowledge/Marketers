@@ -1,9 +1,5 @@
 ---
 title: Baidu mDSP Ads (Baiyi) campaign configuration
-excerpt: >-
-  Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an
-  advertising solutions provider and part of Baidu, the dominant search engine
-  in China with over 70% market share.
 metadata:
   keywords:
     - Advertisers
@@ -27,9 +23,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004330446-Baidu-mDSP-Ads-Baiyi-campaign-configuration
 ---
+**At a glance:** Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share.
+
 ## Setting up Baidu mDSO Ads (Baiyi)
 
-1. In AppsFlyer, from the side menu, select**Collaborate> Partner Integrations** > **Partner Marketplace**.
+1. In AppsFlyer, from the side menu, select **Collaborate** **> Partner Integrations** > **Partner Marketplace**.
 2. Search for the partner and select it. You’re directed to the integration setup page.
 
 The Baidu mDSP Ads (Baiyi) configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tabs setup.
@@ -41,7 +39,7 @@ The Baidu mDSP Ads (Baiyi) configuration window includes 2 active tabs: Integrat
 ### Activate partner
 
 On the **first visit**, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 Default Postbacks
 
@@ -87,12 +85,12 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameter:** af\_adset
 * **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Baidu mDSP Ads (Baiyi).  
   **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
 ### Click-through attribution
 
@@ -100,7 +98,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![baidu-mdsp-click-through.png](https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png)
 

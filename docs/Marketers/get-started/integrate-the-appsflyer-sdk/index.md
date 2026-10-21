@@ -13,12 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551164458257-Integrate-the-AppsFlyer-SDK
 ---
-- [SDK integration planning](/docs/sdk-integration-planning)
-- [Android platform](/docs/android-platform)
-- [iOS platform](/docs/ios-platform)
-- [Web platform](/docs/web-platform)
-- [Other platforms](/docs/other-platforms)
-- [Windows platform](/docs/windows-platform)
-- [In-app events](/docs/in-app-events)
-- [Conversion data](/docs/conversion-data)
-- [Previous SDK versions](/docs/previous-sdk-versions)
+- <Anchor target="_blank" href="/marketers/docs/sdk-integration-planning">SDK integration planning</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/android-platform">Android platform</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/ios-platform">iOS platform</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/web-platform">Web platform</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/other-platforms">Other platforms</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/windows-platform">Windows platform</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/in-app-events">In-app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/conversion-data">Conversion data</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/previous-sdk-versions">Previous SDK versions</Anchor>

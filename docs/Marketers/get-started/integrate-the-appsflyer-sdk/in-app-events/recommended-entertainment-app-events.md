@@ -1,8 +1,5 @@
 ---
 title: Recommended entertainment app events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your entertainment app.
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019699898-Recommended-entertainment-app-events
 ---
-## ![InApp_Events_streaming.png](https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png) Entertainment
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app.
+
+## <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png" width="100px" /> Entertainment
 
 With the growing requirement by users for on-demand content, the entertainment applications market has become very competitive. The typical events that we suggest recording are user subscriptions, streaming content, and downloading and saving content.
 
@@ -41,14 +40,14 @@ These events are also relevant for entertainment apps that run on the following 
 * Apple TV (tvOS)
 * Amazon Fire TV
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=entertainment). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=entertainment&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=entertainment">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=entertainment&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">**AppsFlyer developer hub**</Anchor>.
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
 
@@ -106,7 +105,7 @@ Many streaming services offer users a trial period to explore premium features. 
 * Whether the trial is part of a promotion or a collaboration with a partner
 * What promotion prompted the user to activate the trial period
 
-To record and validate this event, see [Purchase and subscription validation](/docs/purchase-and-subscription-validation-overview).
+To record and validate this event, see <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation</Anchor>.
 
 **Trigger**
 
@@ -151,7 +150,7 @@ See our Subscription attribution—Overview for more information.
 | new\_subscription | Whether the subscription is new or renewed | true / false |
 | af\_coupon\_code | Coupon code, if one is used during the subscription | 3MonthsSubscription |
 | coupon\_code\_value | How much the coupon deducts from the initial price | 10% |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue associated with the subscription | 5.95 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue associated with the subscription | 5.95 |
 | af\_currency | Currency of the payment for the subscription | USD |
 | subscription\_method | Payment method used in the subscription | credit card, e-wallet, PayPal |
 | expiration\_date | Expiration date of the subscription | 2018/07/18 |

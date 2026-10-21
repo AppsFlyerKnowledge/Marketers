@@ -1,8 +1,5 @@
 ---
 title: Set up the Campaigns task
-excerpt: >-
-  Learn how to configure the campaign source for on-site, off-site and combined
-  campaigns (on-site and off-site campaigns).
 metadata:
   keywords:
     - Marketers
@@ -23,7 +20,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38190881693969-Set-up-the-Campaigns-task
 ---
-[The campaign source](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping) connects on-site conversion events to their respective off-site, on-site, and combined campaigns, enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
+**At a glance:** Learn how to configure the campaign source for on-site, off-site and combined campaigns (on-site and off-site campaigns).
+
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping">The campaign source</Anchor> connects on-site conversion events to their respective off-site, on-site, and combined campaigns, enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
 
 ## Prerequisites
 
@@ -37,14 +36,14 @@ The campaigns source links internal conversion events to campaign-level identifi
 
 <Accordion title="1. Prepare campaign data">
 
-Before you set up the campaign source in DCP, prepare the campaign’s custom source and upload it to your cloud service. For details about the mapping schema and how to load the campaign source to your cloud environment, see [Prepare campaign source](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source).
+Before you set up the campaign source in DCP, prepare the campaign’s custom source and upload it to your cloud service. For details about the mapping schema and how to load the campaign source to your cloud environment, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-campaign-mapping-source">Prepare campaign source</Anchor>.
 
 To set up the campaign source in DCP:
 
 1. Go to the **collaboration measurement** page.
 2. Click **Campaigns**.
 3. On the **Campaigns** dialog, click **+ New campaign source**.
-4. In the **New campaign source** dialog, enter a name in the **Source name** field according to [requirements and guidelines](/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines).
+4. In the **New campaign source** dialog, enter a name in the **Source name** field according to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
 5. Click **Next**.
 
 </Accordion>
@@ -60,7 +59,7 @@ To open the **Measurement settings** page, follow these steps:
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
 3. At the bottom of the collaboration page, click **Set up measurement.**
-   * If the link is disabled, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).
+   * If the link is disabled, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
 4. On the **Measurement Setting** page, click the **Campaigns** pane to open the **Campaigns** dialog.
 
    > 📘 **Note**
@@ -80,7 +79,7 @@ Campaign data is provided to DCP in a custom source file stored in your cloud.
 To set up the conversion provision method in DCP, follow these steps:
 
 1. In the **Campaigns** dialog, click + **New campaign source**.
-2. In the **New conversion source** dialog, in the **Source name** step, set the campaign source's name in the **Source name** field according to the [requirements and guidelines](/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines).
+2. In the **New conversion source** dialog, in the **Source name** step, set the campaign source's name in the **Source name** field according to the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
 3. Click **Next**.
 
 </Accordion>
@@ -95,11 +94,11 @@ Set the location of the campaign's source in your cloud service.
    * If your account does not have connections defined, the **New connection** dialog will open, prompting you to create one.
    * If you have existing connections but want to use a new one, open the **Select connection** list and select **+ New connection**.
 2. Set the access details according to your cloud service:
-   * [BigQuery](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery)
-   * [Snowflake](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake)
-   * [Amazon S3 and GCS](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets)
-   * [Local file system](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files)
-3. Select how new data should be handled. For more information, see: [Set source sync method](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method).
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery">BigQuery</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake">Snowflake</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets">Amazon S3 and GCS</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">Local file system</Anchor>
+3. Select how new data should be handled. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Set source sync method</Anchor>.
 4. Click **Next**.
 
 </Accordion>
@@ -117,7 +116,7 @@ If the campaign source fields are not already loaded, you might have to load the
 To load conversion source fields, follow these steps:
 
 1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: [Load your source fields](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields).
+2. For information about how to manually load fields, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields">Load your source fields</Anchor>.
 
 **Auto-map campaign fields**
 

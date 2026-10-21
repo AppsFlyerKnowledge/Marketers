@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - View measurement dashboard
-excerpt: >-
-  Analyze performance and trends over time of your collaborative campaigns using
-  visualizations and table views.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34052274677905-Data-Collaboration-Platform-DCP-View-measurement-dashboard
 ---
+**At a glance:** Analyze performance and trends over time of your collaborative campaigns using visualizations and table views.
+
 Use the measurement dashboard to view and analyze campaign performance. It contains performance KPIs, over-time trends, impressions and clicks, revenue, and other metrics.
 
 ## The measurement dashboard
@@ -35,7 +34,7 @@ The dashboard includes the following components:
 
 <Accordion title="A - Measurement panel">
 
-Select the measurement you want to view in the dashboard panel (**B**). You can view either the live dashboard or one of the historical dashboards you set up. For more information about live and historical dashboards, see [About measurement run modes](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#about-the-measurement-run-modes).
+Select the measurement you want to view in the dashboard panel (**B**). You can view either the live dashboard or one of the historical dashboards you set up. For more information about live and historical dashboards, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-run-and-manage-measurement#about-the-measurement-run-modes">About measurement run modes</Anchor>.
 
 </Accordion>
 
@@ -43,7 +42,7 @@ Select the measurement you want to view in the dashboard panel (**B**). You can 
 
 <Accordion title="B - Dashboard panel">
 
-Displays the dashboard you selected in the measurement panel (**A**). The pane enables you to edit, duplicate, re-run, and share the dashboard with your collaborators. For more information, see [Manage measurement](/docs/data-collaboration-platform-dcp-run-and-manage-measurement#manage-measurements).
+Displays the dashboard you selected in the measurement panel (**A**). The pane enables you to edit, duplicate, re-run, and share the dashboard with your collaborators. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-run-and-manage-measurement#manage-measurements">Manage measurement</Anchor>.
 
 </Accordion>
 

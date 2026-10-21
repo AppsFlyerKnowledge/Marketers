@@ -1,10 +1,5 @@
 ---
 title: '[Closed beta] Validation Rules API'
-excerpt: >-
-  Automate the creation and management of Validation Rules at scale. The
-  Validation Rules API lets technical teams programmatically create, update,
-  patch, and delete rules, going beyond the UI's value limits and cutting out
-  manual rule management overhead.
 metadata:
   keywords:
     - Marketers
@@ -27,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/48341412127249--Closed-beta-Validation-Rules-API
 ---
 <span class="af-tag af-tag--closed-beta">Closed beta</span>
+
+> **At a glance:** Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead.
 
 > 📘 **Note**
 >
@@ -145,7 +142,7 @@ Traffic blocked by API-managed rules is reported identically to traffic blocked 
 
 <Accordion title="Technical documentation">
 
-For full technical details, including endpoint references, request and response schemas, and error codes, see the [Validation Rules API reference](https://dev.appsflyer.com/hc/reference/updaterule).
+For full technical details, including endpoint references, request and response schemas, and error codes, see the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/updaterule">Validation Rules API reference</Anchor>.
 
 </Accordion>
 
@@ -216,7 +213,7 @@ Install events only. In-app events aren't supported in this version.
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
 > * Implement validation rules to prevent fraud
 

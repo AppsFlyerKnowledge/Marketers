@@ -1,8 +1,5 @@
 ---
 title: Google AdMob—Ad revenue attribution configuration
-excerpt: >-
-  Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad
-  revenue data to be used for ad revenue attribution.
 metadata:
   keywords:
     - ad revenue
@@ -27,10 +24,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006951817-Google-AdMob-Ad-revenue-attribution-configuration
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1)
+**At a glance:** Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
 
-AdMob provides [ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution) at the aggregate and impression levels. See also: [Generic impression-level ad revenue SDK connector integration guide](/docs/integrate-the-roi360-ad-revenue-sdk-api)
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
 
-**Prerequisite:** Before you set up the integration, make sure you [contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
+AdMob provides <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> at the aggregate and impression levels. See also: <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">Generic impression-level ad revenue SDK connector integration guide</Anchor>
 
-**To enable the ad revenue integration,** follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+**Prerequisite:** Before you set up the integration, make sure you <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact the partner</Anchor> and open an account with them.
+
+**To enable the ad revenue integration,** follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.

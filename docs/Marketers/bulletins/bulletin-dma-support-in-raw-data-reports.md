@@ -27,4 +27,4 @@ x-zendesk:
 | **Where** | <ul><li>Raw data export page</li><li>Pull API</li><li>Push API</li><li>Datalocker</li></ul> |
 | **Who should know** | <ul><li>Advertisers and agencies using Raw data export page, Push API, Pull API and Datalocker to export raw data (event level) from AppsFlyer.</li></ul> |
 | **How does it impact you** | <ul><li>Configure your scheme and any other processes involved in consuming the data.</li><li>Make sure that the new fields do not break your scheme for Push API and Data Locker.</li></ul> |
-| **Additional Info** | Please review our [Supporting the Google EU consent policy](/docs/support-google-eu-consent-policy) article. |
+| **Additional Info** | Please review our <Anchor target="_blank" href="/marketers/docs/support-google-eu-consent-policy">Supporting the Google EU consent policy</Anchor> article. |

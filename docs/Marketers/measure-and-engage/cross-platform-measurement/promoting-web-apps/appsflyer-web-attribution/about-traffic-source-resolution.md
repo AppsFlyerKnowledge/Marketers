@@ -1,11 +1,5 @@
 ---
 title: About traffic source resolution
-excerpt: >-
-  Use traffic source resolution to identify the initial media source, campaign,
-  and channel for each web visit, using the URL parameters and referrer data
-  available at landing page load. This gives attribution the traffic-source
-  context it needs to attribute downstream web events, including the
-  user-acquisition event, accurately.
 metadata:
   keywords:
     - Agencies
@@ -29,17 +23,19 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43518064765201-About-traffic-source-resolution
 ---
+> **At a glance:** Use traffic source resolution to identify the initial media source, campaign, and channel for each web visit, using the URL parameters and referrer data available at landing page load. This gives attribution the traffic-source context it needs to attribute downstream web events, including the user-acquisition event, accurately.
+
 ## What is traffic source resolution?
 
 For web attribution, the landing page load (**web visit**) is the user’s first engagement with the website. AppsFlyer relies on information available at the time, such as URL parameters and referrer data, to identify the user's media source, campaign, and channel.
 
 This process, known as **traffic source resolution**, identifies and resolves media source and campaign information from URL parameters. AppsFlyer captures and prioritizes these parameters to determine the initial traffic source context for a visit.
 
-Traffic source resolution is a **pre-attribution process**. The resolved parameters may be overridden later during [the attribution process](/docs/web-performance-measurement-overview#the-web-performance-measurement-flow).
+Traffic source resolution is a **pre-attribution process**. The resolved parameters may be overridden later during <Anchor target="_blank" href="/marketers/docs/web-performance-measurement-overview#the-web-performance-measurement-flow">the attribution process</Anchor>.
 
 The role of traffic source resolution does not end with the visit. Its outcome provides the traffic-source context that the attribution process later uses to attribute subsequent web events, including the user-acquisition event.
 
-Understanding the mechanics of traffic source resolution is essential for constructing accurate URLs. To learn how to create a well-structured URL, see [Choose attribution parameters for landing page URLs](/docs/choose-attribution-parameters-for-landing-page-urls).
+Understanding the mechanics of traffic source resolution is essential for constructing accurate URLs. To learn how to create a well-structured URL, see <Anchor target="_blank" href="/marketers/docs/choose-attribution-parameters-for-landing-page-urls">Choose attribution parameters for landing page URLs</Anchor>.
 
 ## The traffic source resolution flow
 
@@ -79,7 +75,7 @@ Based on the referrer type, AppsFlyer evaluates the session state and decides wh
   * If there's an active session and a non-direct media source is present (UTM, PID, click ID, etc.), record the visit. This revisit may trigger a retargeting conversion (re-engagement), which is used to attribute subsequent events.
   * If there's an active session and no media source information is present, don't record a new visit within that session.
 
-![traffic resolution flow](https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png)
+<Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 ## Step 2: Media source resolution
 
@@ -98,7 +94,7 @@ AppsFlyer follows a priority order to resolve the media source. The process stop
 
 First, AppsFlyer checks if the visit comes from a domain on your **Exclude list**. If the domain is excluded (for example, your internal domain or a payment processor like PayPal), the visit is automatically ignored or classified as **Organic.**
 
-For more information about how to specify the excluded domains when adding a web app to AppsFlyer, see [Excluded domains](/docs/configure-web-performance-measurement-settings#excluded-domains).
+For more information about how to specify the excluded domains when adding a web app to AppsFlyer, see <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings#excluded-domains">Excluded domains</Anchor>.
 
 </Accordion>
 
@@ -179,8 +175,10 @@ AppsFlyer uses the following Click ID mapping to attribute the visit:
 | `epik` | pinterest\_int |
 | `oppref` | openai\_int |
 
-* AppsFlyer doesn’t use fbclid for traffic source resolution because Meta appends it to both paid and organic Facebook clicks. To attribute traffic to Meta, include pid=facebook\_int or set utm\_source to the relevant Meta source value.
-* The dclid parameter is not used for media source resolution. dclid is a Campaign Manager 360 (CM360) identifier that can appear alongside other click IDs, such as fbclid (Facebook) or ttclid (TikTok), when CM360 is used. Using dclid alone can result in the wrong resolution.
+> 📘 **Note**
+>
+> * AppsFlyer doesn’t use fbclid for traffic source resolution because Meta appends it to both paid and organic Facebook clicks. To attribute traffic to Meta, include pid=facebook\_int or set utm\_source to the relevant Meta source value.
+> * The dclid parameter is not used for media source resolution. dclid is a Campaign Manager 360 (CM360) identifier that can appear alongside other click IDs, such as fbclid (Facebook) or ttclid (TikTok), when CM360 is used. Using dclid alone can result in the wrong resolution.
 
 </Accordion>
 

@@ -1,6 +1,5 @@
 ---
 title: ROI360 cost aggregation overview
-excerpt: Learn about methods for advertisers to aggregate and view marketing cost data.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +27,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Learn about methods for advertisers to aggregate and view marketing cost data.
+
 ## Cost aggregation
 
 ROI360 does the following:
@@ -35,12 +36,12 @@ ROI360 does the following:
 * Provides aggregate advertising cost data and cost-related lifetime value (LTV) performance metrics. These are available via dashboards and performance reports. The cost-related metrics available include return on investment (ROI), return on ad spend (ROAS), clicks, impressions, campaign ROI, and average effective cost per install (eCPI) over time.
 * Covers advertising costs across all platforms, including mobile apps, web browsers, connected TV (CTV), PCs, and consoles.
 * Supports different cost models used by the media source, for example, cost per install (CPI), cost per action (CPA), cost per click (CPC), and cost per mille (CPM).
-* Records advertising cost by API, Cost Import (CSV file upload), and [cost on the attribution link](/docs/view-aggregated-cost-data-for-attribution-links).
+* Records advertising cost by API, Cost Import (CSV file upload), and <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links">cost on the attribution link</Anchor>.
 * Enables agencies to access ROI360 cost data for advertisers with an ROI360 subscription.
 
 The following data is available to advertisers without an ROI360 subscription:
 
-* [Cost data on the attribution link](/docs/view-aggregated-cost-data-for-attribution-links)
+* <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links">Cost data on the attribution link</Anchor>
 * Self-reporting network (SRN) clicks and impressions data, which you configure in the **Cost** tab of the SRN integrated partner
 
 ## Principles of cost data aggregation
@@ -53,9 +54,9 @@ This section describes the main principles of aggregating campaign cost data.
 
 AppsFlyer obtains cost data from media sources using one or more methods. If a media source reports cost through more than one method, then the [cost prioritization mechanism](#cost-prioritization-mechanism) determines which data AppsFlyer uses. This prevents cost data from being inflated.
 
-After AppsFlyer processes the data, it shows in UTC time zone (default) or according to your [app-specific time zone](/docs/changing-app-time-zone-settings) settings.
+After AppsFlyer processes the data, it shows in UTC time zone (default) or according to your <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">app-specific time zone</Anchor> settings.
 
-<table><thead><tr><th>Cost aggregation method</th><th>Cost models supported</th><th>Data granularity</th><th>Data freshness</th><th>Remarks</th></tr></thead><tbody><tr><td><a href="./set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">API</a>\*</td><td>All</td><td>Level depends on the integration</td><td><a href="./about-data-freshness-and-timezone-support#intraday-during-the-day">Intraday</a></td><td>Data might change after the cost event because AppsFlyer tries to retrieve data up to 7 days back (depending on the media source). This lets AppsFlyer account for retroactive changes made by the media source.</td></tr><tr><td><a href="./import-cost-data">Cost Import (file upload)</a></td><td>All</td><td>Level depends on the file uploaded</td><td>Up to 4 hours after import</td><td>You can revert the reported cost and submit corrected data for up to 90 days.</td></tr><tr><td><a href="./view-aggregated-cost-data-for-attribution-links">Cost on the attribution link</a></td><td>CPI</td><td>User-level</td><td><p>Minimum: real time</p><p>Maximum: Up to 4 hours after the link is clicked</p></td><td>No change possible</td></tr><tr><td colspan="5">\* API integrations between media sources and AppsFlyer are by either Cost API or InCost API (never both). The API used and the data granularity provided are media source-dependent.</td></tr></tbody></table>
+<table><thead><tr><th>Cost aggregation method</th><th>Cost models supported</th><th>Data granularity</th><th>Data freshness</th><th>Remarks</th></tr></thead><tbody><tr><td><a href="./set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api" target="_blank">API</a>\*</td><td>All</td><td>Level depends on the integration</td><td><a href="./about-data-freshness-and-timezone-support#intraday-during-the-day" target="_blank">Intraday</a></td><td>Data might change after the cost event because AppsFlyer tries to retrieve data up to 7 days back (depending on the media source). This lets AppsFlyer account for retroactive changes made by the media source.</td></tr><tr><td><a href="./import-cost-data" target="_blank">Cost Import (file upload)</a></td><td>All</td><td>Level depends on the file uploaded</td><td>Up to 4 hours after import</td><td>You can revert the reported cost and submit corrected data for up to 90 days.</td></tr><tr><td><a href="./view-aggregated-cost-data-for-attribution-links" target="_blank">Cost on the attribution link</a></td><td>CPI</td><td>User-level</td><td><p>Minimum: real time</p><p>Maximum: Up to 4 hours after the link is clicked</p></td><td>No change possible</td></tr><tr><td colspan="5">\* API integrations between media sources and AppsFlyer are by either Cost API or InCost API (never both). The API used and the data granularity provided are media source-dependent.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -114,7 +115,7 @@ The following examples show how the ±10-day window affects where cost appears:
 >
 > The following points apply to the table:
 >
-> * Data granularity can vary by dashboard/report type. The [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports) reporting tool contains the complete dataset. This includes campaign hierarchy details (media source, campaign name, ad, adset, and the dimensions available from the media source, including geo, channel, site ID, and keywords).
+> * Data granularity can vary by dashboard/report type. The <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor> reporting tool contains the complete dataset. This includes campaign hierarchy details (media source, campaign name, ad, adset, and the dimensions available from the media source, including geo, channel, site ID, and keywords).
 > * Cost data reported on the attribution link is available in raw data reports.
 > * If a media source doesn't support campaign name changes, both campaign names display: one with attribution data and one with cost data. Neither campaign name includes the complete data picture.
 
@@ -137,7 +138,7 @@ The cost prioritization mechanism impacts aggregate data reports and dashboards.
 * If you change cost aggregation methods, the change has a retroactive impact. Historical aggregate cost data can change.
 * A change to the cost aggregation method affects agency-generated traffic the same way. This includes both transparent and non-transparent agencies.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Scenario:** A media source reports cost on the attribution link, but you decide to enable the media source's Cost API.
 >
@@ -198,7 +199,7 @@ The downloadable table below lists all media sources supporting Cost API, with t
 * Supported features and their characteristics
 * Metrics (as reported by the media sources)
 
-Download file: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=csv), [XLSX](https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=xlsx)
+Download file: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pub?output=xlsx">XLSX</Anchor>
 
 </Accordion>
 
@@ -213,7 +214,7 @@ To avoid display anomalies, make sure that:
 * Each campaign has a unique campaign ID.
 * You don't use the same campaign name with different campaign IDs.
 
-[Learn more about campaign name changes](/docs/campaign-name-changes)
+<Anchor target="_blank" href="/marketers/docs/campaign-name-changes">Learn more about campaign name changes</Anchor>
 
 </Accordion>
 
@@ -225,7 +226,7 @@ To avoid display anomalies, make sure that:
 
 AppsFlyer completes the cost data for missing dimensions from an upper-level hierarchy. This guarantees a full view of the cost data at any level and minimizes internal discrepancies.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > An advertiser runs a campaign. The advertising hierarchy is as follows:
 >
@@ -273,7 +274,7 @@ AppsFlyer completes the cost data for missing dimensions from an upper-level hie
 
 If the campaign cost currency provided by the media source differs from the app-defined currency on the platform, AppsFlyer converts the cost to the app-defined currency as follows:
 
-* AppsFlyer gets the rates from [openexchangerates.org](https://openexchangerates.org/).
+* AppsFlyer gets the rates from <Anchor target="_blank" href="https://openexchangerates.org/">openexchangerates.org</Anchor>.
 * AppsFlyer updates exchange rates hourly for data up to seven days back.
 * AppsFlyer performs currency conversions using the last known rate.
 
@@ -286,10 +287,10 @@ If the campaign cost currency provided by the media source differs from the app-
 | Trait | Description |
 | --- | --- |
 | Agencies | <ul><li>When transparent agencies run campaigns, advertisers can see costs displayed in dashboards and reports, providing a unified view. [Learn more about cost data availability and reports](#cost-data-availability-and-reports)</li><li>If an advertiser ends their relationship with an agency and the agency has cost configured for the app, AppsFlyer continues to pull cost data even if the advertiser disables the agency permissions at the app level. To prevent this, the advertiser must ask the agency to deactivate their cost integration in AppsFlyer before disabling the agency permissions.</li><li>For some media sources, agencies must contact the advertiser to activate the integration, and the AppsFlyer UI prompts them to do so. For these media sources, agencies and advertisers must make sure that when the media source sends data, it includes the `af_prt` parameter, required for agency cost attribution.</li><li>For X Ads, cost data for SKAN-only campaigns (those with only SKAN installs and no "regular" installs) isn't available to agencies. The advertiser must set up the cost integration. Only the advertiser can view the data.</li></ul> |
-| API data freshness | <ul><li>[Intraday](/docs/about-data-freshness-and-timezone-support#intraday-during-the-day) (except for Moloco)</li><li>Mintegral data is available via the API the following day, approximately 4 hours after the previous day ends. For example, if the event occurred on Day 1, cost data is available by Day 2, at approximately 4:00.</li></ul> |
+| API data freshness | <ul><li><Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">Intraday</Anchor> (except for Moloco)</li><li>Mintegral data is available via the API the following day, approximately 4 hours after the previous day ends. For example, if the event occurred on Day 1, cost data is available by Day 2, at approximately 4:00.</li></ul> |
 | Campaign name changes | Ad spend data displays the most recent reported campaign name. This applies to aggregate data only, not to the raw data itself. |
 | Time zone | If a media source supports only one time zone, and that time zone differs from the one set in your app settings, AppsFlyer uses the media source's time zone. |
-| CTV, PC, and console platforms | For apps on these platforms, import data via [Ad Spend Ingestion](/docs/import-cost-data) using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok in the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Tizen</li><li>Quest</li></ul> |
+| CTV, PC, and console platforms | For apps on these platforms, import data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok in the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Tizen</li><li>Quest</li></ul> |
 | Cross-platform | Cost data isn't available for cross-platform clicks and impressions, meaning the impression/click might occur on one platform and the app install on another. |
 | Out-of-store apps | Cost data from Mintegral isn't available for out-of-store apps (apps from platforms other than Google Play and App Store). |
 | Geo | Geo/country breakdown isn't available for Mistplay bundled campaigns (campaigns targeted to several countries). For such campaigns, geo displays as N/A. |

@@ -1,11 +1,5 @@
 ---
 title: Export Web Performance Measurement report data from Data Locker
-excerpt: >-
-  Export Web Performance Measurement data from Data Locker in two report types
-  that enable you to analyze website performance at the right level. Use End
-  User Events to analyze all visits and events, and use Conversions to count and
-  attribute unique conversion anchors (first visits, revisits, and
-  user-acquisition events).
 metadata:
   keywords:
     - Agencies
@@ -29,7 +23,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43510758321809-Export-Web-Performance-Measurement-report-data-from-Data-Locker
 ---
-**Important!** You must have a Data Locker subscription to use the Web Performance Measurement reports in Data Locker.
+**At a glance:** Export Web Performance Measurement data from Data Locker in two report types that enable you to analyze website performance at the right level. Use End User Events to analyze all visits and events, and use Conversions to count and attribute unique conversion anchors (first visits, revisits, and user-acquisition events).
+
+> ❗️ **Warning**
+>
+> **Important!** You must have a Data Locker subscription to use the Web Performance Measurement reports in Data Locker.
 
 ## About the Web Performance Measurement reports
 
@@ -63,7 +61,7 @@ To learn which fields are contained in the reports, download a sample for each r
 * [End User events report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQYFF0r4pMpo_voSK8QObpiRtx-diU_0a-0XVuKIVMEfh6rRPudIDXA5bgDw_lcc0qwBPcPhYtLdWwh/pub?output=csv)
 * [Conversion events report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vTMqcc6PKBATBg1DYVO8MWKrAs_wlqXxyANe3a_gu62xp3hFZV9wWT1X8c9oRekaIEwCfKZ2y9agVeV/pub?output=csv)
 
-The sample report includes all report fields and their values. For the definitions of the fields, see [the field dictionary](/docs/raw-data-field-dictionary).
+The sample report includes all report fields and their values. For the definitions of the fields, see <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">the field dictionary</Anchor>.
 
 ## Report timing and data freshness
 
@@ -95,7 +93,7 @@ Events are written to reports **after processing finishes**. So, for example, ev
 
 ## Download report data from your cloud bucket
 
-For more information on how to download report data from your cloud bucket, see [the Data Locker Folder structure](/docs/data-locker-for-marketers#folder-structure).
+For more information on how to download report data from your cloud bucket, see <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#folder-structure">the Data Locker Folder structure</Anchor>.
 
 ## BI developer considerations
 
@@ -147,7 +145,7 @@ Apply the following filters to make sure your raw data queries are accurate. Fai
 
     To avoid double-counting, query `end_user_events` using only the primary credit record by default:
 
-    ```
+    ```sql
     WHERE platform = 'WEBSITE'
       AND is_primary_attribution = true
     ```
@@ -179,7 +177,7 @@ In Web Performance Measurement raw data, an end user can appear under two differ
 
 To correctly identify **unique users** and calculate **user-level metrics**, always use:
 
-```
+```sql
 COALESCE(customer_user_id, appsflyer_id_value)
 ```
 
@@ -443,7 +441,7 @@ The following fields are **not supported for web data** and will always be empty
 
 ## See also
 
-* [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports)
-* [Data Locker for marketers](/docs/data-locker-for-marketers)
+* <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">About Data Locker Advanced Reports</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker for marketers</Anchor>
 
 <div data-zendesk-anchors="about-the-data-locker-web-attribution-reports=about-the-web-performance-measurement-reports h_01KGM4FT90X1K2V8M8GJV6EW5K=about-the-web-performance-measurement-reports h_01_select-web-performance-measurement-report=select-a-web-performance-measurement-report h_01KGM4FT90WP73N1D75WWNT2TE=report-fields h_01KGM4FT90B6W7KBS9K1FSSETD=report-timing-and-data-freshness here%E2%80%99s-how-each-batch-works=heres-how-each-batch-works h_01KGM4FT91MCGCBYSHE18JHQ96=heres-how-each-batch-works h_01KGM4FT91XF7HCM8E8TQ56D0D=when-will-these-events-appear-in-the-report h_01KGM4FT91D90DWYGSE3SES2ZY=example-what-the-1000-am-batch-does h_01KGM4FT91NECKXMDW60A4B9X5=download-report-data-from-your-cloud-bucket h_01KGM4FT91C2KP050ZAYW6K8FD=bi-developer-considerations h_01KGM4FT91MSN2SN7TKNJZ54V4=filter-summary-table h_01KGM4FT91VDR0FWTMAPW6GM83=example-count-distinct-users h_01KGM4FT91QZR30KJAQ87AG691=traits-and-limitations h_01_web-perf-see-also=see-also" />

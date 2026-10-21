@@ -1,8 +1,5 @@
 ---
 title: Master API—user acquisition metrics via API
-excerpt: >-
-  Get selected LTV, activity, retention, cohort, and Protect360 campaign
-  performance KPIs by API, in CSV or JSON format. Select 1 or more apps.
 metadata:
   keywords:
     - Master API
@@ -31,22 +28,24 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format. Select 1 or more apps.
+
 ## Master API—user acquisition metrics via API
 
 Master API:
 
 * Lets you get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs. The KPIs available are the equivalent KPIs of those found in the Overview, Activity, Retention, Cohort, and Protect360 dashboards.
 * Is calculated daily. The updated data is available to you within 24-48 hours, depending on your app-specific timezone.
-* Is the infrastructure upon which the AppsFlyer [pivot table](/docs/pivot-table-user-metrics) is built.
+* Is the infrastructure upon which the AppsFlyer <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">pivot table</Anchor> is built.
 
-To use Master API, you define the data that you want to view (similar to the implementation of the [Pull API](/docs/pull-api-aggregate-data)). The result returns as a CSV or JSON file.
+To use Master API, you define the data that you want to view (similar to the implementation of the <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">Pull API</Anchor>). The result returns as a CSV or JSON file.
 
 **To use Master API**:
 
-1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/11471b4014e8a4805ff15397166298cd02b4df7707bacb62c936f1513dbe34a5-16574754168721.png) Get the [API token](/docs/managing-appsflyer-tokens). An admin needs to retrieve the token.
+1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/11471b4014e8a4805ff15397166298cd02b4df7707bacb62c936f1513dbe34a5-16574754168721.png) Get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor>. An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the sections that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
-4. Tell your developer to follow their [Master API instructions](https://dev.appsflyer.com/hc/reference/overview-9) in the developer hub.
+4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-9">Master API instructions</Anchor> in the developer hub.
 5.
    <div id="api-parameters" />
 
@@ -70,7 +69,7 @@ To use Master API, you define the data that you want to view (similar to the imp
 
    <Accordion title="Groupings">
 
-   These dimensions are used for collecting the data into groups to allow easier and more accurate examination of the information. You can find descriptions of these fields [here](/docs/raw-data-field-dictionary).
+   These dimensions are used for collecting the data into groups to allow easier and more accurate examination of the information. You can find descriptions of these fields <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">here</Anchor>.
 
    <table><thead><tr><th>Group by<br/>API name</th><th>Group by display name</th><th>LTV KPIs</th><th>Retention KPIs</th><th>Activity KPIs</th><th>Protect360</th><th>Cohort</th></tr></thead><tbody><tr><td>app_id</td><td>App ID</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>pid</td><td>Media source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>af_prt</td><td>Agency</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>c</td><td>Campaign</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>af_adset</td><td>Adset</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>af_ad</td><td>Ad</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>af_channel</td><td>Channel</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>af_siteid</td><td>Publisher ID</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>af_keywords</td><td>Keywords</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>is_primary</td><td>Is primary attribution</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>af_c_id</td><td>Campaign ID</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>af_adset_id</td><td>Adset ID</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>af_ad_id</td><td>Ad ID</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>install_time</td><td>Install Time</td><td>Yes</td><td>Yes</td><td>Yes\*</td><td>Yes</td><td>Yes</td></tr><tr><td>attributed_touch_type</td><td>Touch Type</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td>geo</td><td>Geo</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td colspan="7">\* In the context of Activity KPIs, regard install time as event time. </td></tr></tbody></table>
 
@@ -158,7 +157,7 @@ To use Master API, you define the data that you want to view (similar to the imp
 
    * **Rounding errors:** Cohort per user KPIs are calculated using four decimal places. This means that if the calculated value per user is &lt; 0.0001 then this shows as 0. For example, the number of users is 100,000, and total revenue is $9. The revenue per user is 9/100000=0.00009. As 0.00009&lt;0.0001 the value shown will be 0.
    * **Cohort days**: The maximum cohort day number is 90 days post-install where day 0 is the install day. The cohort day value [x] must be in the range of 1-90.  **Note**: cohort\_day\_0 isn't supported in Mater API, even though it's supported in the Cohort dashboard.
-   * **Master API vs. Cohort API and** [**Cohort dashboard:**](/docs/cohort-and-retention-dashboard) Results may differ due to different handling of reinstalls and timing issues.
+   * **Master API vs. Cohort API and** <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">**Cohort dashboard:**</Anchor> Results may differ due to different handling of reinstalls and timing issues.
 
    **Sessions**
 
@@ -262,9 +261,7 @@ To use Master API, you define the data that you want to view (similar to the imp
 
    Calculated KPI field keys **must** start with "calculated\_kpi\_", followed by any valid string, such as, "calculated\_kpi\_purchaserate".
 
-   > 📘 **Note**
-   >
-   > #### Example
+   > 📄 **Example**
    >
    > **First three days combined retention**
    >
@@ -307,7 +304,7 @@ To use Master API, you define the data that you want to view (similar to the imp
 
    <Accordion title="Localization">
 
-   Local currency and app-specific timezone are set on the [app settings page](/docs/app-settings). Master API data can extract the data using either the system's default currency and timezone or using the app-specific timezone and currency.
+   Local currency and app-specific timezone are set on the <Anchor target="_blank" href="/marketers/docs/app-settings">app settings page</Anchor>. Master API data can extract the data using either the system's default currency and timezone or using the app-specific timezone and currency.
 
    The following applies:
 
@@ -331,7 +328,7 @@ To use Master API, you define the data that you want to view (similar to the imp
 
 | Trait | Remarks |
 | --- | --- |
-| Cost data | <ul><li>Availability of different cost dimensions meaning adset, ad, geo, channel, and site ID is [ad network dependent](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).</li><li>To get eCPI: If the cost data is available, include both installs and cost in the call.</li><li>In general, all sources, including owned media, which use AppsFlyer links and have the cost parameter on the links, fully support cost data, regardless of the requested dimensions. Self-reporting networks, with their own API, usually support cost data with only some of the available dimensions. For example, [Meta ads](/docs/meta-ads-faq#what-are-the-limitations-of-facebook-cost-data-in-master-api) doesn’t support grouping by Geo and Channel in the same call. Grouping by either of them separately is supported.</li><li>Campaigns that have cost data, but no installs data in the recent past (approx. 7 days), are not available via Master API.</li></ul> |
+| Cost data | <ul><li>Availability of different cost dimensions meaning adset, ad, geo, channel, and site ID is <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network dependent</Anchor>.</li><li>To get eCPI: If the cost data is available, include both installs and cost in the call.</li><li>In general, all sources, including owned media, which use AppsFlyer links and have the cost parameter on the links, fully support cost data, regardless of the requested dimensions. Self-reporting networks, with their own API, usually support cost data with only some of the available dimensions. For example, <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#what-are-the-limitations-of-facebook-cost-data-in-master-api">Meta ads</Anchor> doesn’t support grouping by Geo and Channel in the same call. Grouping by either of them separately is supported.</li><li>Campaigns that have cost data, but no installs data in the recent past (approx. 7 days), are not available via Master API.</li></ul> |
 | Groupings | Specific groupings are only available for LTV KPIs, Activity, or Retention KPIs. The API returns N/A when the data for a specific KPI is not available. For example, requesting retention\_rate\_day\_7 grouped by af\_channel returns N/A. |
 | Dimensions | For cohort data, if an agency is involved in the attribution, the returned media source is the agency name |
 | Maximum rows per report | 200K |

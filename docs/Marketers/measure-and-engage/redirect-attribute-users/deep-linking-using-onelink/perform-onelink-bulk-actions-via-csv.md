@@ -1,8 +1,5 @@
 ---
 title: Perform OneLink bulk actions via CSV
-excerpt: >-
-  The OneLink Bulk Links page allows you to create and manage OneLink custom
-  shortlinks in bulk.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14511403892369-Perform-OneLink-bulk-actions-via-CSV
 ---
+**At a glance:** The OneLink Bulk Links page allows you to create and manage OneLink custom shortlinks in bulk.
+
 You can create, view, and edit links generated in bulk. These links are organized into a convenient collection format, allowing you to perform batch actions on the whole collection, such as adding new links, downloading them, and generating QR code image files.
 
 ## Getting started
@@ -31,7 +30,7 @@ You can create, view, and edit links generated in bulk. These links are organize
 1. In AppsFlyer, go to **Engage** > **Bulk links**.
 2. You will see an intro page with one of the following buttons:
    1. **Get Started** - Click to create your first collection.
-   2. **Create a OneLink template** - Make sure you have at least one OneLink template in your account, and a Growth/Enterprise plan. See [OneLink templates](/docs/create-a-onelink-template).
+   2. **Create a OneLink template** - Make sure you have at least one OneLink template in your account, and a Growth/Enterprise plan. See <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink templates</Anchor>.
    3. **Upgrade** - Bulk links are available with the Enterprise or Growth plan. Contact your CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com) about upgrading your package.
 
 ## Creating your first collection
@@ -89,9 +88,9 @@ To Download a collection:
 3. Select the domain for the short URL output.
 4. Click **Download**.
 
-> 📘 **Important!,**
+> 🚧 **Important!,**
 >
-> AppsFlyer recommends using Branded Domains as they can improve campaign performance by driving trust and promoting brand awareness. [Learn more here.](/docs/brand-onelink-with-your-domain)
+> AppsFlyer recommends using Branded Domains as they can improve campaign performance by driving trust and promoting brand awareness. <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">Learn more here.</Anchor>
 
 </Accordion>
 
@@ -102,13 +101,13 @@ To Download a collection:
 You can create QR code images for the entire collection.
 
 1. In AppsFlyer, from the side menu, select **Engage** > **Bulk links.**
-2. In the collection row, click the download QR code images icon ![generate qr.png](https://files.readme.io/23dbd4b2e3ed248e868ae7d5deee3cac383b0e018ae17204f9547f5707a428c9-21656949404561.png) .
+2. In the collection row, click the download QR code images icon <Image alt="generate qr.png" src="https://files.readme.io/23dbd4b2e3ed248e868ae7d5deee3cac383b0e018ae17204f9547f5707a428c9-21656949404561.png" width="22px" /> .
 3. In the **Generate QR code images** dialog, set the following:
    * **Domain:** Select the subdomain or the branded domain of the URL that end users will see after they scan the QR code.
    * **QR code image format:** Choose either PNG or SVG as the format for the QR code image.
    * **QR code file name format:** Select the parameter whose values will be used as the prefix of the QR code image file names. Ensure that the values from this parameter add a meaningful context to the file names, helping you identify the purpose of each QR image.
 4. Click **Generate.** You can monitor the file generation process in the **Download QR code images** panel.
-5. To to download the ZIP file, click the download icon ![download-bulk.png](https://files.readme.io/8436aed2633bbed2f6cb65c00690711766c153c97042b5b157c199333e8723c2-21656949409041.png).
+5. To to download the ZIP file, click the download icon <Image alt="download-bulk.png" src="https://files.readme.io/8436aed2633bbed2f6cb65c00690711766c153c97042b5b157c199333e8723c2-21656949409041.png" width="18px" />.
 
 > 📘 **Note**
 >
@@ -150,7 +149,7 @@ The editing links option is available when:
 2. Download the collection base CSV. This file contains all the links in the collection you can edit.
 3. Follow the instructions in the first step to edit link parameters. For any links you want to update, make sure **Mark for update** is set to **true**.
 4. Click **Next**.
-5. Upload your edited CSV. See[Upload format](/docs/perform-onelink-bulk-actions-via-csv#upload-format) to make sure your CSV is compatible and uploads successfully.
+5. Upload your edited CSV. See [Upload format](/docs/perform-onelink-bulk-actions-via-csv#upload-format) to make sure your CSV is compatible and uploads successfully.
    * Once the CSV file is uploaded, it gets validated.
    * If there are invalid rows, a validity report CSV is available for download to help fix your file. Follow the instructions in the UI and upload a corrected file.
 6. Click **Update links**.
@@ -242,7 +241,7 @@ In order to make sure your CSV uploads without any errors, make sure that your f
 * The file cannot be bigger than 4 MB
 * The file should only contain content for the links you are creating/updating
 * Each link should be in their own row
-* The **Custom Link ID** is a unique column, that enables the user to set the link short URL ID. The short URL ID cannot be edited after the link is created. To learn more about URL ID, see [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#url-id).
+* The **Custom Link ID** is a unique column, that enables the user to set the link short URL ID. The short URL ID cannot be edited after the link is created. To learn more about URL ID, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#url-id">here</Anchor>.
 * Each column represents a parameter (Maximum 35 parameter columns)
 * Only UTF-8 character encoding is accepted
 

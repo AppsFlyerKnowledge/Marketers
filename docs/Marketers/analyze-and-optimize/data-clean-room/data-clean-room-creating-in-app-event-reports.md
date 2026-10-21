@@ -1,10 +1,5 @@
 ---
 title: Data Clean Room—Creating In-app event reports
-excerpt: >-
-  Create In-app event reports to focus on user activity occurring after an app
-  has been installed. Extract specific event parameters from your in-app event
-  raw data, optionally match the data with custom sources, then process and
-  present it in aggregated form.
 metadata:
   keywords:
     - Premium
@@ -27,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/9312610473233-Data-Clean-Room-Creating-In-app-event-reports
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance:** Create In-app event reports to focus on user activity occurring after an app has been installed. Extract specific event parameters from your in-app event raw data, optionally match the data with custom sources, then process and present it in aggregated form.
 
 ## Creating an In-app event report
 
@@ -92,7 +89,7 @@ The following step is relevant **only for reports that use custom sources.**
 
 <Accordion title="Join sources (only for reports containing custom sources)">
 
-In order to match data among sources, each of the **custom** sources used in the report must include an [identifier](/docs/data-clean-room-setting-up-cloud-services) mapped to a **key identifier** in the in-app event data.
+In order to match data among sources, each of the **custom** sources used in the report must include an <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">identifier</Anchor> mapped to a **key identifier** in the in-app event data.
 
 * In-app event reports include **all** selected events matching the key identifier during the selected timeframe.
 
@@ -104,9 +101,9 @@ You can map to either of these in-app event data identifiers as **key identifier
   * This ID appears in all events recorded by AppsFlyer.
   * A new AppsFlyer ID is generated if an app is deleted and then reinstalled.
 * **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
-  * Using CUID to map data requires that your app is configured to [send the CUID to AppsFlyer](/docs/customer-user-id-field-cuid) via the SDK or the server-to-server API (S2S).
+  * Using CUID to map data requires that your app is configured to <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">send the CUID to AppsFlyer</Anchor> via the SDK or the server-to-server API (S2S).
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
 
@@ -114,7 +111,7 @@ You can map to either of these in-app event data identifiers as **key identifier
 
 If the report includes more than one custom source, only one of them needs to be mapped **directly** to an in-app event key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > ![dcr_mapping_identifiers_in-app events.png](https://files.readme.io/73d0e929663bda4e6f142c64d0228fdf1eeec3b02ef1560f6f03f2a089d00664-9969546429713.png)
 >
@@ -149,7 +146,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
 
 **To extract dimensions from the event\_value field for use in DCR reports:**
 
-1. In the **Dimensions from sources** list, click the ![extract_dimension_button.png](https://files.readme.io/c238da4a1d2a15fe2249070747fa6247db63ab4129b1c72804b84550675214f3-10754426767761.png) button.
+1. In the **Dimensions from sources** list, click the <Image alt="extract_dimension_button.png" src="https://files.readme.io/c238da4a1d2a15fe2249070747fa6247db63ab4129b1c72804b84550675214f3-10754426767761.png" width="123px" /> button.
 
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted dimension as you would like it to appear in your report.
@@ -165,7 +162,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
 **To edit extracted dimensions:**
 
 1. In either the **Dimensions from sources** or the **Report dimensions** list, hover over the name of the dimension you want to edit.
-2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the dimension.
+2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the dimension.
 3. Select **Edit extracted field.**
 4. Make changes to the **Report field** name and/or parameter mapping as necessary.
 5. Click **Save** to save your changes.
@@ -173,7 +170,7 @@ One of the major advantages of In-app event reports is that they allow you to ex
 **To delete extracted dimensions:**
 
 1. In either the **Dimensions from sources** or the **Report dimensions** list, hover over the name of the dimension you want to delete.
-2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the dimension.
+2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the dimension.
 3. Select **Delete field.**
    * **Caution!** If you delete an extracted field from the **Report dimensions** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
 
@@ -183,7 +180,7 @@ In-app event report dimensions can include:
 
 * Dimensions you've extracted from event\_value
 * [Default in-app event dimensions](/docs/data-clean-room-creating-in-app-event-reports#default-inapp-event-dimensions)
-* Any field in the report's custom sources that has been [categorized as a dimension](/docs/data-clean-room-working-with-sources#3-define-the-source-structure) (if applicable)
+* Any field in the report's custom sources that has been <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#3-define-the-source-structure">categorized as a dimension</Anchor> (if applicable)
 
 **To select the dimensions to include in your report:**
 
@@ -213,7 +210,7 @@ Depending on the size of your data set, the number of dimensions you choose, and
 
 However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
 
-> 📘 **Regrouping example**
+> 📄 **Regrouping example**
 >
 > Assume you have set up a report according to the following dimensions (in order):
 >
@@ -302,7 +299,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 
 **To extract dimensions from the event\_value field for use in DCR reports:**
 
-1. In the **Metrics from sources** list, click the ![extract_metric_button.png](https://files.readme.io/93ca5970968816d452331df4ce5ff4cfb678cbb24f65eb99fe01bd3bb3016959-10755235273233.png) button.
+1. In the **Metrics from sources** list, click the <Image alt="extract_metric_button.png" src="https://files.readme.io/93ca5970968816d452331df4ce5ff4cfb678cbb24f65eb99fe01bd3bb3016959-10755235273233.png" width="102px" /> button.
 
    The **Extract field from event\_value** window opens.
 2. In the **Report field** box, enter the name of the extracted metric as you would like it to appear in your report.
@@ -318,7 +315,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 **To edit extracted metrics:**
 
 1. In either the **Metrics from sources** or the **Report metrics** list, hover over the name of the metric you want to edit.
-2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the metric.
+2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the metric.
 3. Select **Edit extracted field.**
 4. Make changes to the **Report field** name and/or parameter mapping as necessary.
 5. Click **Save** to save your changes.
@@ -326,7 +323,7 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 **To delete extracted metrics:**
 
 1. In either the **Metrics from sources** or the **Report metrics** list, hover over the name of the metric you want to delete.
-2. Click the ![more_options_button.png](https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png) button that displays to the right of the metric.
+2. Click the <Image alt="more_options_button.png" src="https://files.readme.io/d52908bc376b10d60f12ec401b8ba13adf1946ca4ef27cb7a588fae33a603384-10755347815441.png" width="21px" /> button that displays to the right of the metric.
 3. Select **Delete field.**
    * **Caution!** If you delete an extracted field from the **Report metrics** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
 
@@ -381,19 +378,19 @@ Reports without custom sources are run according to the schedule you define.
 1. Select whether to run the report daily or on one or more days each week.
 2. Select the time at which to run the report (timezone is UTC).
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> Scheduling options are disabled for reports that use custom sources. This type of report runs whenever new versions of all of the [custom sources it uses](/docs/data-clean-room-creating-attribution-data-reports#custom-sources) are detected:
+> Scheduling options are disabled for reports that use custom sources. This type of report runs whenever new versions of all of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#custom-sources">custom sources it uses</Anchor> are detected:
 >
 > * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
 >   * **Important!** To ensure the completeness of your report, be sure to populate the source table with a complete set of data whenever the column value is changed.
-> * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) along with its accompanying \_SUCCESS file.
+> * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> along with its accompanying \_SUCCESS file.
 >
 > AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
 
 #### **Report destination**
 
-The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
 
 * **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
@@ -402,10 +399,10 @@ The DCR delivers reports to your selected cloud services using [AppsFlyer Data 
 1. Select from the list of Data Locker connections available in your AppsFlyer account.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
+     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/21fda59ab30e85ab4ba8b4b5920c901e8bcdedadad393a2205bb34e839f9c8db-16684568466961.png) button:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
+     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
    * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
 2. Click **Save** to save the report.
 3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**

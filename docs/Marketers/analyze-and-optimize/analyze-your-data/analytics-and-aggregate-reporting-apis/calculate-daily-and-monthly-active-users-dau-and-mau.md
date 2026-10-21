@@ -1,8 +1,5 @@
 ---
 title: Calculate daily and monthly active users (DAU and MAU)
-excerpt: >-
-  Learn how to calculate Daily and Monthly active users to get valuable insights
-  about your campaigns
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39071744864657-Calculate-daily-and-monthly-active-users-DAU-and-MAU
 ---
+**At a glance:** Learn how to calculate Daily and Monthly active users to get valuable insights about your campaigns
+
 ## Overview
 
 Daily Active Users (DAU) and Monthly Active Users (MAU) are key metrics for understanding app engagement and overall user behavior. They provide valuable insights into your active user base, including user stickiness, campaign performance, and growth trends over time.
@@ -31,11 +30,11 @@ This article explains how to calculate DAU and MAU using queries on two **Premiu
 
 > 📘 **Note**
 >
-> Starting February 2025, the Activity dashboard in AppsFlyer shows Unified (UA & Retargeting) data by default. You may notice a minor delta between raw data and dashboard numbers due to [approved algorithmic adjustments](/docs/activity-metrics-in-my-dashboards#specifications-and-limitations).
+> Starting February 2025, the Activity dashboard in AppsFlyer shows Unified (UA & Retargeting) data by default. You may notice a minor delta between raw data and dashboard numbers due to <Anchor target="_blank" href="/marketers/docs/activity-metrics-in-my-dashboards#specifications-and-limitations">approved algorithmic adjustments</Anchor>.
 
 ### Querying for active unique users
 
-To calculate unique users, use the `advertising_id` as the primary identifier in your query. If the `advertising_id` is unavailable, substitute it with the `appsflyer_id`. This method applies only to apps configured in [first-install mode](/docs/measure-reinstalls#attributed-to-the-first-install).
+To calculate unique users, use the `advertising_id` as the primary identifier in your query. If the `advertising_id` is unavailable, substitute it with the `appsflyer_id`. This method applies only to apps configured in <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">first-install mode</Anchor>.
 
 For apps not using this mode, we recommend applying `count(distinct appsflyer_id)` instead.
 

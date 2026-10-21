@@ -1,9 +1,5 @@
 ---
 title: Incorporate agency fees into campaign costs
-excerpt: >-
-  Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables
-  advertisers to add the percentage fees agencies charge for traffic so they can
-  see the total campaign cost.
 metadata:
   keywords:
     - Advertisers
@@ -31,11 +27,13 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables advertisers to add the percentage fees agencies charge for traffic so they can see the total campaign cost.
+
 ## Overview
 
 Agency fee rules are defined by the advertiser (with AppsFlyer account admin privileges) in the rule builder using customized conditions that add fee percentages to the cost of agency campaigns for specific apps and/or media sources.
 
-ROI360 uses the agency fee rule to calculate the total ad cost with the fee, based on the ad network API and attribution link cost. The calculation applies at every granularity level (campaign, adset, etc.). The results are displayed in your dashboards, reports, and Cost ETL; not in the agency or ad network dashboards and reports. **Note**: Cost ETL reports have additional [fields for agency fees](/docs/set-up-and-use-roi360-cost-etl-reports#file-fields).
+ROI360 uses the agency fee rule to calculate the total ad cost with the fee, based on the ad network API and attribution link cost. The calculation applies at every granularity level (campaign, adset, etc.). The results are displayed in your dashboards, reports, and Cost ETL; not in the agency or ad network dashboards and reports. **Note**: Cost ETL reports have additional <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#file-fields">fields for agency fees</Anchor>.
 
 Agency rules help advertisers:
 
@@ -124,7 +122,7 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 | Trait | Remarks |
 | --- | --- |
 | Agencies and ad networks | Agencies and ad networks cannot view rules, or see the total ad cost data that results from agency fee rules in their dashboards and reports. |
-| Data freshness | [Intraday](/docs/about-data-freshness-and-timezone-support#intraday-during-the-day). Initial calculations can take up to 5 hours to display. |
+| Data freshness | <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">Intraday</Anchor>. Initial calculations can take up to 5 hours to display. |
 | Historical data | Rules can be created and impact data up to 90 days in the past. |
 | Rule processing frequency | New agency fee rules are processed every **4 hours**. This means that a rule may take up to **4 hours** to apply. |
 

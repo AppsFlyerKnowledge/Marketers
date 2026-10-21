@@ -1,8 +1,5 @@
 ---
 title: Troubleshooting the web SDK
-excerpt: >-
-  A troubleshooting guide for AppsFlyer Web SDK added directly to your website
-  or implemented via Google Tag Manager.
 metadata:
   keywords:
     - People Based Attribution
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002075858-Troubleshooting-the-web-SDK
 ---
+**At a glance:** A troubleshooting guide for AppsFlyer Web SDK added directly to your website or implemented via Google Tag Manager.
+
 ## SDK added directly
 
 You can add the SDK directly to your website.
@@ -34,8 +33,8 @@ You can add the SDK directly to your website.
 
 | Cause | Solution |
 | --- | --- |
-| Data takes up to 24 hours to display in [People-Based Analysis dashboards](/docs/pba-website-attribution-dashboard) after you implement the SDK. | Wait 24 hours. If data is still not available, see additional causes in this document. |
-| Incorrect web dev key | <ul><li>Web SDK uses the web dev key to identify web events sent in order to know which bundle to attribute data to.</li><li>Verify that you are using the [correct web dev key.](/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working)</li></ul>[Brand Bundle page](/docs/pba-brand-bundles-and-settings#add-brand-bundle) |
+| Data takes up to 24 hours to display in <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">People-Based Analysis dashboards</Anchor> after you implement the SDK. | Wait 24 hours. If data is still not available, see additional causes in this document. |
+| Incorrect web dev key | <ul><li>Web SDK uses the web dev key to identify web events sent in order to know which bundle to attribute data to.</li><li>Verify that you are using the <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working">correct web dev key.</Anchor></li></ul><Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#add-brand-bundle">Brand Bundle page</Anchor> |
 | You placed the web SDK in the body of the page | <ul><li>You can put the web SDK in the body of the page, but this might affect the data that is sent to AppsFlyer.</li><li>We recommend that you put it in the head section of the page.</li></ul> |
 | The web SDK is not placed on all pages on your website | We recommend placing the web SDK on all pages of your website. |
 
@@ -44,8 +43,8 @@ You can add the SDK directly to your website.
 | Cause | Solution |
 | --- | --- |
 | Events are being sent before the web SDK loads up. In such cases the browser developer console shows the error: `Uncaught ReferenceError: AF is not defined` | Verify that the web SDK is loaded before the code that sends events. |
-| Incorrect web dev key | <ul><li>PBA requires a web dev key in order to know which bundle to attribute data to. Make sure that the correct web dev key is used.</li><li>Verify that you are using the [correct web dev key.](/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working)</li></ul> |
-| Malformed events | Make sure the event is well-formed.<br /><br />See [available event parameters](/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters) to learn more about well-formed events. |
+| Incorrect web dev key | <ul><li>PBA requires a web dev key in order to know which bundle to attribute data to. Make sure that the correct web dev key is used.</li><li>Verify that you are using the <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#ensure-that-the-sdk-is-working">correct web dev key.</Anchor></li></ul> |
+| Malformed events | Make sure the event is well-formed.<br /><br />See <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">available event parameters</Anchor> to learn more about well-formed events. |
 | SDK called twice |  |
 
 ### Conflicting SDKs and libraries
@@ -70,7 +69,7 @@ If you come across issues. Apart from the issues described in the [native implem
 
 ### Tag priority
 
-GTM allows you to [set tag priority](https://support.google.com/tagmanager/answer/2772421?hl=en). This means that you can control which tags are fired first.
+GTM allows you to <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">set tag priority</Anchor>. This means that you can control which tags are fired first.
 
 | Cause | Solution |
 | --- | --- |
@@ -82,7 +81,7 @@ In GTM, every tag has a trigger that determines when this tag should be fired.
 
 | Cause | Solution |
 | --- | --- |
-| The trigger responsible for firing the tag that loads the SDK is not set to all pages. As a result, not all page visits are logged and some events are not sent. | The best approach is to set an [all-page views](https://support.google.com/tagmanager/answer/7679319?hl=en) trigger for the tag that loads the SDK. |
+| The trigger responsible for firing the tag that loads the SDK is not set to all pages. As a result, not all page visits are logged and some events are not sent. | The best approach is to set an <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en">all-page views</Anchor> trigger for the tag that loads the SDK. |
 | The trigger responsible for firing tags that send events is not configured correctly. As a result, some events are not sent. | Determine the conditions for the trigger. For example,<ul><li>an interaction with DOM elements like a click on a button</li><li>a page visit to a page that has a certain path like **/thank-you-page** or **/confirmation-page**</li></ul> |
 
 ### Publishing GTM containers

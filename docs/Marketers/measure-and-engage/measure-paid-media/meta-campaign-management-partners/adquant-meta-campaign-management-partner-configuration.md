@@ -1,9 +1,5 @@
 ---
 title: Adquant (Meta campaign management partner) configuration
-excerpt: >-
-  Adquant, an AppsFlyer integrated partner (formerly known as Facebook Marketing
-  Partners), is a leading provider of Artificial Intelligence solutions to help
-  app marketers scale their growth.
 metadata:
   keywords:
     - Facebook
@@ -29,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001425369-Adquant-Meta-campaign-management-partner-configuration
 ---
+**At a glance:** Adquant, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
+
 ## Setting up Adquant
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -45,12 +43,12 @@ x-zendesk:
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
-Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
 
 ### In-app events
 
 1. To send in-app event postbacks to Bidalgo, turn on **In-app event postbacks**.
-2. Set the configuration according to the guidelines [here](/docs/meta-ads-in-app-event-mapping#predefined-event-mapping).
+2. Set the configuration according to the guidelines <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#predefined-event-mapping">here</Anchor>.
 3. Click **Save**.
 
 [![meta_campaign_management_partner_settings.png](https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png)](https://files.readme.io/0c2f25de2211ff01c5d3a7086c1865edd902afbf648388fa636979032e75ad16-360002515305.png)

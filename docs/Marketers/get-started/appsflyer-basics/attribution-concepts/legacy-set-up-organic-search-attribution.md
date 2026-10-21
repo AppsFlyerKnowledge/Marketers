@@ -26,11 +26,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210195193--Legacy-Set-up-organic-search-attribution
 ---
-**At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. [See our updated organic search attribution method](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution).
+**At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">See our updated organic search attribution method</Anchor>.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> We recommend implementing our [updated organic search attribution method](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution).
+> We recommend implementing our <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">updated organic search attribution method</Anchor>.
 
 ## Organic search attribution
 
@@ -51,7 +51,7 @@ Use organic search attribution to attribute these existing users who re-engage w
 
 1. Give your app Android and iOS app developers the domain associated with your app. For Android, this means the domain with Android App Links configured to open the app for existing users. And for iOS, this means the domain with Universal Links is configured to open the app for existing users.
 2. Tell the developers what value to use for the media source (`pid`) parameter. For example: search\_engine.
-3. Tell your developers to follow their [Android](https://dev.appsflyer.com/hc/docs/dl_android_organic_search_attr) and [iOS](https://dev.appsflyer.com/hc/docs/dl_ios_organic_search_attr) organic search attribution instructions.  
+3. Tell your developers to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_organic_search_attr">Android</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_organic_search_attr">iOS</Anchor> organic search attribution instructions.  
    Any installs from organic searches will display with the media source value you chose. For example: search\_engine.
 
-**Tip!** Learn about [search engine usage breakdown by geo](https://gs.statcounter.com/search-engine-market-share)
+**Tip!** Learn about <Anchor target="_blank" href="https://gs.statcounter.com/search-engine-market-share">search engine usage breakdown by geo</Anchor>

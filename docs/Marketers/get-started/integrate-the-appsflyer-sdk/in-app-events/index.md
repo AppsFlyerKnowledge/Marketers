@@ -12,23 +12,23 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551285343761-In-app-events
 ---
-- [In-app events—Overview](/docs/in-app-events-overview)
-- [In-app events—Event structure](/docs/in-app-events-event-structure)
-- [In-app event generator <span class="af-star">★</span>](/docs/in-app-event-generator)
-- [Server-to-server events API for mobile (S2S-mobile)](/docs/server-to-server-events-api-for-mobile-s2s-mobile)
-- [Customer User ID field (CUID)](/docs/customer-user-id-field-cuid)
-- [\[Legacy\] Receipt validation for in-app purchases](/docs/legacy-receipt-validation-for-in-app-purchases)
-- [In-app events for hybrid apps](/docs/in-app-events-for-hybrid-apps)
-- [Recommended gaming app events](/docs/recommended-gaming-app-events)
-- [Recommended eCommerce app events](/docs/recommended-ecommerce-app-events)
-- [Recommended entertainment app events](/docs/recommended-entertainment-app-events)
-- [Recommended finance and banking app events](/docs/recommended-finance-and-banking-app-events)
-- [Recommended P2P lending app events](/docs/recommended-p2p-lending-app-events)
-- [Recommended online education app events](/docs/recommended-online-education-app-events)
-- [Recommended ride-hailing app events](/docs/recommended-ride-hailing-app-events)
-- [Recommended flight booking app events](/docs/recommended-flight-booking-app-events)
-- [Recommended hotel booking app events](/docs/recommended-hotel-booking-app-events)
-- [Recommended telecommunication app events](/docs/recommended-telecommunication-app-events)
-- [Recommended healthcare app events](/docs/recommended-healthcare-app-events)
-- [Recommended eWallet app events](/docs/recommended-ewallet-app-events)
-- [Recommended sports betting events](/docs/recommended-sports-betting-events)
+- <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events—Overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure">In-app events—Event structure</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/in-app-event-generator">In-app event generator <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">Server-to-server events API for mobile (S2S-mobile)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID field (CUID)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/legacy-receipt-validation-for-in-app-purchases">\[Legacy\] Receipt validation for in-app purchases</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/in-app-events-for-hybrid-apps">In-app events for hybrid apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events">Recommended gaming app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events">Recommended eCommerce app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-entertainment-app-events">Recommended entertainment app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-finance-and-banking-app-events">Recommended finance and banking app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-p2p-lending-app-events">Recommended P2P lending app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-online-education-app-events">Recommended online education app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-ride-hailing-app-events">Recommended ride-hailing app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-flight-booking-app-events">Recommended flight booking app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events">Recommended hotel booking app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-telecommunication-app-events">Recommended telecommunication app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-healthcare-app-events">Recommended healthcare app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-ewallet-app-events">Recommended eWallet app events</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/recommended-sports-betting-events">Recommended sports betting events</Anchor>

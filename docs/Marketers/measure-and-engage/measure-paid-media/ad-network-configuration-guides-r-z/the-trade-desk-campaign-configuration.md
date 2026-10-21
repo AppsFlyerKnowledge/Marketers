@@ -1,11 +1,5 @@
 ---
 title: The Trade Desk campaign configuration
-excerpt: >-
-  The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced
-  mobile advertising solution to cultivate strategic, scalable, and smart
-  campaigns to meet the needs of cross-device users. The Trade Desk offers
-  click-based mobile attribution, view-through mobile attribution, and
-  click-based retargeting, all of which can be recorded through AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000894849-The-Trade-Desk-campaign-configuration
 ---
+**At a glance:** The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of cross-device users. The Trade Desk offers click-based mobile attribution, view-through mobile attribution, and click-based retargeting, all of which can be recorded through AppsFlyer.
+
 ## Setting up The Trade Desk (TTD)
 
 Follow these steps to enable AppsFlyer campaign measurement.
@@ -125,12 +121,12 @@ In this step, you'll add the click and impression trackers that were created in 
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 TTD configuration window includes three active tabs: Integration, Attribution link, and Permissions. Click the items below to read about the tabs setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
 <div id="integration-tab" />
 
@@ -139,11 +135,11 @@ For a detailed description of the Partner Configuration Window Header, click [he
 #### Activate partner
 
 On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with TTD.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 #### Advanced Privacy
 
-For iOS apps, the [Enable Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle is on in the App Settings, **Enable Advanced Privacy** is turned on and locked by default. 
+For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Enable Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is on in the App Settings, **Enable Advanced Privacy** is turned on and locked by default. 
 
 #### General settings
 
@@ -180,16 +176,16 @@ Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, thi
 
 1. Enter the **advertiserid** and **Tracker\_ID**.
 2. Enable **In-app event postbacks**.
-3. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
-4. If available, select whether to send events automatically or manually. Learn more about [sending all events as they are](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped).
+3. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
+4. If available, select whether to send events automatically or manually. Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped">sending all events as they are</Anchor>.
 5. Click **Add event** to add an SDK or server-to-server event to the list.
 6. Complete the parameters required.
-7. [Optional] Click![conditional-iae-postbacks-icon.png](https://files.readme.io/8b8da8198a5180447eacaab4a3dd101d82149a8d7aa926e3b896847a18eb76f9-50612291007377.png) to set conditions for sending certain in-app events to TTD.  
-   Learn more about [conditional in-app event postbacks](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks).
+7. [Optional] Click<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/8b8da8198a5180447eacaab4a3dd101d82149a8d7aa926e3b896847a18eb76f9-50612291007377.png" width="30px" />to set conditions for sending certain in-app events to TTD.  
+   Learn more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">conditional in-app event postbacks</Anchor>.
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources including organic**: send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event).</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
@@ -199,7 +195,7 @@ Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, thi
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to TTD for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or [OneLink](/docs/onelink-guide).
+Generate and save attribution links and send them to TTD for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.
 
 #### Attribution link parameters
 
@@ -213,13 +209,13 @@ Select which parameters you want to add to the attribution link.
 
 | Name | Description | Parameter |
 | --- | --- | --- |
-| Site ID | Set your site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations. | af\_siteid |
+| Site ID | Set your site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations. | af\_siteid |
 | Campaign Name | Add your campaign name to compare different campaigns running with TTD. | c |
 | Campaign ID | Add your campaign ID. | af\_c\_id |
 | Adset ID | Add your adset ID to compare the performance of all your ads per adset. | af\_adset |
 | Ad ID | Add your ad ID. | af\_ad\_id |
 
-You can add more parameters for the attribution link. Learn more about [setting up the attribution link](/docs/set-up-an-integrated-partner#attribution-link-tab) and about attribution link [structure and parameters](/docs/about-link-structure-and-parameters).
+You can add more parameters for the attribution link. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">setting up the attribution link</Anchor> and about attribution link <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">structure and parameters</Anchor>.
 
 #### Parameters for measuring CTV
 
@@ -240,7 +236,7 @@ Lookback window range: 1-23 hours or 1-30 days.
 
 Attribution link parameter: af\_click\_lookback
 
-Learn more about the [click lookback window](/docs/set-up-lookback-windows).
+Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window</Anchor>.
 
 **Click-through attribution link:** Contains all the parameters you included in the attribution link setup. You can copy the link and send it to the partner to be activated when your leads click a corresponding ad.
 
@@ -254,7 +250,7 @@ Lookback window range: 1-24 hours.
 
 Attribution link parameter: af\_viewthrough\_lookback
 
-Learn more about [view-through attribution](/docs/set-up-lookback-windows).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution</Anchor>.
 
 **View-through attribution link:** Contains all the parameters you included in the attribution link setup. You can copy the link and send it to the partner to be activated when your leads click a corresponding ad.
 
@@ -296,7 +292,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your aggregate revenue data:** Only for the revenue data attributed to TTD
 * **Allow access to your Protect360 dashboard:** Only for TTD's own Protect360 data, and providing you have this feature enabled
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 

@@ -1,8 +1,5 @@
 ---
 title: Set retargeting inactivity window
-excerpt: >-
-  Increase incremental lift by retargeting inactive users. Set inactivity
-  windows by media source.
 metadata:
   keywords:
     - Agencies
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360009305817-Set-retargeting-inactivity-window
 ---
+**At a glance:** Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
+
 ## Inactivity period
 
 Advertisers regain inactive users by retargeting them. These campaigns usually have a good conversion rate and generate significant ROAS. However, many retargeting campaigns underperform as they don't filter out active users. To increase the incremental lift of retargeting campaigns, implement **minimum inactivity time** to filter out active users.

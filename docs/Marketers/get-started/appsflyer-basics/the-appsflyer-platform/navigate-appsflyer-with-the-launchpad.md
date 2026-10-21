@@ -1,8 +1,5 @@
 ---
 title: Navigate AppsFlyer with the launchpad
-excerpt: >-
-  Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the
-  dashboard.
 metadata:
   keywords:
     - Advertisers

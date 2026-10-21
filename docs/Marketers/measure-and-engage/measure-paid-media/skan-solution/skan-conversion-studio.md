@@ -1,11 +1,5 @@
 ---
 title: SKAN Conversion Studio
-excerpt: >-
-  Use SKAN Conversion Studio to set which user engagements in the app to
-  measure, and for how long. Measure revenue, conversion, engagement, and
-  retention during a limited post-install period. By adding the Single Source of
-  Truth measurement we can let you know if the user was attributed by both
-  AppsFlyer and SKAN.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4403727223185-SKAN-Conversion-Studio
 ---
+**At a glance**: Use SKAN Conversion Studio to set which user engagements in the app to measure, and for how long. Measure revenue, conversion, engagement, and retention during a limited post-install period. By adding the Single Source of Truth measurement we can let you know if the user was attributed by both AppsFlyer and SKAN.
+
 <Embed title="SKAN 4 Conversion Studio (including lock window)" typeOfEmbed="vimeo" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
 ## SKAN Conversion Studio basics
@@ -51,7 +47,7 @@ Conversion Studio provides you with maximum flexibility to make every possible v
 | Fixed* | Revenue<br /><br />[Legacy] | Measure revenue using one of the following ranges:<ul><li>$1-$630 in steps of $10</li><li>$1-$63 in steps of $1</li><li>$0.01-$0.63 in steps of $0.01</li></ul> | 24h |
 | Fixed* | Conversion<br /><br />[Legacy] | Select 1-6 in-app events. | 24h |
 | Fixed* | Engagement<br /><br />[Legacy] | Number of times a user performs an event | 24h |
-| Flexible | [Decode](/docs/skan-cv-decode-map-your-cv-to-events) | <ul><li>Create your own CV to event mapping and set the CV in the app yourself. Use this option if you can't integrate the AppsFlyer SDK into your app. To use Decode, go to **SKAN Conversion Studio,** click options (⋮), select **Upload custom decode mapping file**.</li></ul> | 12-1512h (63 days) |
+| Flexible | <Anchor target="_blank" href="/marketers/docs/skan-cv-decode-map-your-cv-to-events">Decode</Anchor> | <ul><li>Create your own CV to event mapping and set the CV in the app yourself. Use this option if you can't integrate the AppsFlyer SDK into your app. To use Decode, go to **SKAN Conversion Studio,** click options (⋮), select **Upload custom decode mapping file**.</li></ul> | 12-1512h (63 days) |
 
 *Fixed modes are unavailable for new apps starting from 23/06/2024.  All functionalities are supported in the Custom and SKAN4 modes.
 
@@ -69,10 +65,10 @@ Conversion Studio provides you with maximum flexibility to make every possible v
   * Window 3: 8-35 days
   * The 3 windows measure 3 different, non-overlapping, post-install time periods. Meaning, window 2 measures days 3-7 post-install, not days 0-7.
 * **Activity Window:** Relevant for SKAN 3 and below. Has a set duration, default of 24 hours, starting with the first app open. If you're using SKAN 4+, but user devices or ad networks don't support SKAN 4 yet, the Activity Window is 48 hours.
-* **Conversion Value (CV)**: The measure of user quality reported in the postbacks sent by iOS at the end of the SKAN 4 windows or, for SKAN 3 and below, at the end of the Activity Window. The AppsFlyer SDK sets the CVs for you. However, if you want to set the CV use [Decode](/docs/skan-cv-decode-map-your-cv-to-events) to upload your CV mapping file.
+* **Conversion Value (CV)**: The measure of user quality reported in the postbacks sent by iOS at the end of the SKAN 4 windows or, for SKAN 3 and below, at the end of the Activity Window. The AppsFlyer SDK sets the CVs for you. However, if you want to set the CV use <Anchor target="_blank" href="/marketers/docs/skan-cv-decode-map-your-cv-to-events">Decode</Anchor> to upload your CV mapping file.
   * For SKAN 4+, there are both fine and coarse conversion values.
 * **Conversion-value capacity:** The number of CVs required to map your setting. The more components and measurement elements you select, the more conversion-value capacity is required. Each range or setting element selected consumes conversion-value capacity. (And each additional setting unit included in a single component consumes it exponentially!) [Examples of maximized CV usage.](/docs/skan-conversion-studio#maximized-custom-cv-examples)
-* **Single Source of Truth (SSOT):** [Mechanism to flag](/docs/single-source-of-truth-ssot-guide-for-ios-attribution) if the user was attributed by SKAN and another attribution matching method. The flag is used to eliminate duplicate install data in SKAN raw data and to calculate true performance metrics.
+* **Single Source of Truth (SSOT):** <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Mechanism to flag</Anchor> if the user was attributed by SKAN and another attribution matching method. The flag is used to eliminate duplicate install data in SKAN raw data and to calculate true performance metrics.
 * **Measurement components**:  
   * **Revenue:** Measures revenue generated
   * **In-app event**: Measure conversion (number of unique users performing an event),  
@@ -86,7 +82,7 @@ Conversion Studio provides you with maximum flexibility to make every possible v
 * At any given time, only one mode is active.
 * For a given mode, AppsFlyer maps the combinations defined by your settings to CVs. You can [view and download the mapping table](/docs/skan-conversion-studio#view-cv-mapping).
 * In the app, AppsFlyer sets the CV after each measurable user action using the measurement mode active when a user launches the app for the first time.
-* iOS considers [Apple crowd anonymity](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows) before populating the CV in the postback.
+* iOS considers <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/receiving_postbacks_in_multiple_conversion_windows">Apple crowd anonymity</Anchor> before populating the CV in the postback.
 * User actions occurring after the end of a window are disregarded.
 * SKAN dashboard and reports:
   * The SKAN dashboard layout and metrics depend on the mode and configuration.
@@ -116,7 +112,7 @@ There are several modes available in SKAN Conversion Studio to set conversion va
 
 Learn more about the different measurement modes in the sections that follow.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Setting conversion values in SKAN Conversion Studio must be performed by an admin or an account user with the **Manage*** permissions in **SKAN Conversion Studio**.
 >
@@ -124,7 +120,7 @@ Learn more about the different measurement modes in the sections that follow.
 >
 > 1. In AppsFlyer, in the upper-right click on your email address.
 > 2. Select **User Management** > Select the user.
-> 3. If required, grant the user with the **Manage** permissions in **SKAN Conversion Studio**. For more about permissions, see [User Management](/docs/user-management).
+> 3. If required, grant the user with the **Manage** permissions in **SKAN Conversion Studio**. For more about permissions, see <Anchor target="_blank" href="/marketers/docs/user-management">User Management</Anchor>.
 >
 > *Note: Users whose access is limited to specific media sources and geos may not be able to see or access the SKAN Conversion Studio.
 
@@ -150,7 +146,7 @@ To manually set SKAN 4, experiment with different options. As you make changes, 
 4. Click **Continue**.  
    The settings for **Window 1 (1-2 days) fine** CV opens.
 5. [Optional] Turn on **Single Source of Truth (SSOT)**.  
-   The SSOT mechanism flags (and deduplicates) installs reported by more than one attribution matching method. [Learn more](/docs/single-source-of-truth-ssot-guide-for-ios-attribution)
+   The SSOT mechanism flags (and deduplicates) installs reported by more than one attribution matching method. <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Learn more</Anchor>
 6. Click **+ Add measurement** to add different [measurement components](/docs/skan-conversion-studio#measurement-components).  
    The following sections detail the setting options and components. Use them as guides as you experiment with the different SKAN measurement settings:
    * Revenue
@@ -161,7 +157,7 @@ To manually set SKAN 4, experiment with different options. As you make changes, 
    **Note**:
    * Only Revenue and In-app event measurement components are available.
    * Low CV must be a user session to ensure the postback is sent.
-8. [Optional] Turn on **Lock window**and set the condition (either time or coarse conversion value) for locking the SKAN window earlier than the default. [Learn more](/docs/skan-conversion-studio#lock-window)
+8. [Optional] Turn on **Lock window** and set the condition (either time or coarse conversion value) for locking the SKAN window earlier than the default. [Learn more](/docs/skan-conversion-studio#lock-window)
 9. Click **Window 2 (3-7 days)** and repeat Steps 6-8 to set the window 2 CV.   
    **Note**:
    * Only Revenue and In-app event measurement components are available.
@@ -194,7 +190,7 @@ Note: By default, AppsFlyer displays SKAN 4 on the Conversion Studio. To revert 
 3. Select the **Custom** measurement mode.
 4. Click **Continue**.
 5. [Optional] Turn on **Single Source of Truth (SSOT)**.  
-   The SSOT mechanism flags (and deduplicates) installs reported by more than one attribution matching method. [Learn more](/docs/single-source-of-truth-ssot-guide-for-ios-attribution)
+   The SSOT mechanism flags (and deduplicates) installs reported by more than one attribution matching method. <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Learn more</Anchor>
 6. Click **+ Add measurement** to add different measurement components.  
    The following sections detail the setting options and components. Use them as guides as you experiment with the different SKAN measurement settings:
    * Revenue
@@ -247,7 +243,7 @@ As you make changes to the mode settings, the **Conversion-value capacity** summ
 | Measurement mode | Description |
 | --- | --- |
 | Revenue | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Revenue generated during the 24-hour activity window.**<br /><br />Select a unit-to-USD rate from one of the following:<ul><li>$0.01 to measure up to $0.63</li><li>$1 to measure up to $63</li><li>$10 to measure up to $630</li></ul>AppsFlyer automatically populates 63 revenue measurement ranges. Ensure that the event name `af_skad_revenue` is correctly mapped for partners. In the dashboard, revenue is recorded as the maximum of the range. For example, if the range is $60-$61, the revenue recorded is $61. Note! Custom revenue uses a different method to calculate revenue.<br /><br />**Metrics available:**<ul><li>Revenue<ul><li>ROI</li><li>ROAS</li><li>ARPU: Revenue/users installing the app</li><li>Rate of users converting: Users making a purchase/users installing the app</li><li>eCPA</li></ul></li></ul> |
-| Conversion | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**In-app events performed one or more times during the 24-hour activity window**<br /><br />**Settings**:<ul><li>Select 1-6 in-app events to measure from the drop-down list. Limitation: The list is limited to the top 300 events during the previous 30 days.</li><li>In the SKAdNetwork dashboard, select a given event as the [conversion event](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings).</li></ul>**Metrics per in-app event:**<ul><li>Count of users performing an event<ul><li>Conversion rate: Users performing the Conversion Event/users installing the app</li><li>eCPA</li><li>Sessions (uses the *af\_app\_opened* event)</li></ul></li></ul>Example of user counts:<ul><li>Completed registration</li><li>Made a purchase</li><li>Reached a game level</li></ul>**Clarification!** Use conversion measurement to count **if** a user performed an event. To count how many times a user performs an event use engagement measurement. |
+| Conversion | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**In-app events performed one or more times during the 24-hour activity window**<br /><br />**Settings**:<ul><li>Select 1-6 in-app events to measure from the drop-down list. Limitation: The list is limited to the top 300 events during the previous 30 days.</li><li>In the SKAdNetwork dashboard, select a given event as the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">conversion event</Anchor>.</li></ul>**Metrics per in-app event:**<ul><li>Count of users performing an event<ul><li>Conversion rate: Users performing the Conversion Event/users installing the app</li><li>eCPA</li><li>Sessions (uses the *af\_app\_opened* event)</li></ul></li></ul>Example of user counts:<ul><li>Completed registration</li><li>Made a purchase</li><li>Reached a game level</li></ul>**Clarification!** Use conversion measurement to count **if** a user performed an event. To count how many times a user performs an event use engagement measurement. |
 | Engagement | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Number of times the user performed a specified in-app event during the Activity Window**<br /><br />**Settings:**<ul><li>Select an in-app event from the drop-down list.</li><li>The in-app selection is also designated as the Conversion Event.</li><li>Value range: 0-63</li></ul>**Metrics for the in-app event**:<ul><li>Count of users performing the event<ul><li>Average number of events per user</li><li>Conversion rate</li><li>eCPA</li><li>Sessions</li></ul></li></ul>Examples:<ul><li>Measure the number of times:<ul><li>a user opened the app</li><li>the user viewed an ad</li></ul></li></ul> |
 
 </Accordion>
@@ -275,7 +271,7 @@ Create your own CV-to-event mapping and set the CV in the app yourself. Use this
 
 <Accordion title="Single Source of Truth">
 
-<table><tbody><tr><td colspan="2"><p><img alt="SSOTControl.png" src="https://files.readme.io/77570ca922d33a0ef3df4b5a42904452c07b9b472ea4c68c8390155ed2bc53ed-4458326657553.png"/></p><p><a href="./single-source-of-truth-ssot-guide-for-ios-attribution">Single Source of Truth (SSOT)</a> mechanism flags (and deduplicates) installs reported by more than one attribution matching method. In other words, SKAN and another method. The flag is available in SKAN raw data reports and is considered in calculating metrics in the Overview dashboard <a href="./single-source-of-truth-ssot-guide-for-ios-attribution#overview-dashboard-single-source-of-truth-view">SSOT view</a>. </p></td></tr><tr><td>Mandatory</td><td>No</td></tr><tr><td>Multiple-use permitted</td><td>No</td></tr><tr><td>Setting options</td><td><p>if SSOT is on, the CV is set so that it can flag if a user is attributed by SKAN and another attribution-matching method. </p><p>Where is the SSOT flag used?</p><ul><li>AppsFlyer Overview dashboard SSOT view</li><li>SKAN raw data reports have the <em>af_attribution_flag</em> field. If true, the user was attributed by both SKAN and another method. </li><li>SKAN aggregated attribution API reports.</li></ul></td></tr></tbody></table>
+<table><tbody><tr><td colspan="2"><p><img alt="SSOTControl.png" src="https://files.readme.io/77570ca922d33a0ef3df4b5a42904452c07b9b472ea4c68c8390155ed2bc53ed-4458326657553.png"/></p><p><a href="./single-source-of-truth-ssot-guide-for-ios-attribution" target="_blank">Single Source of Truth (SSOT)</a> mechanism flags (and deduplicates) installs reported by more than one attribution matching method. In other words, SKAN and another method. The flag is available in SKAN raw data reports and is considered in calculating metrics in the Overview dashboard <a href="./single-source-of-truth-ssot-guide-for-ios-attribution#overview-dashboard-single-source-of-truth-view" target="_blank">SSOT view</a>. </p></td></tr><tr><td>Mandatory</td><td>No</td></tr><tr><td>Multiple-use permitted</td><td>No</td></tr><tr><td>Setting options</td><td><p>if SSOT is on, the CV is set so that it can flag if a user is attributed by SKAN and another attribution-matching method. </p><p>Where is the SSOT flag used?</p><ul><li>AppsFlyer Overview dashboard SSOT view</li><li>SKAN raw data reports have the <em>af_attribution_flag</em> field. If true, the user was attributed by both SKAN and another method. </li><li>SKAN aggregated attribution API reports.</li></ul></td></tr></tbody></table>
 
 </Accordion>
 
@@ -283,7 +279,7 @@ Create your own CV-to-event mapping and set the CV in the app yourself. Use this
 
 <Accordion title="In-app event component">
 
-<table><tbody><tr><td colspan="2"><img alt="ConversionStudioIn-app-event.png" src="https://files.readme.io/7b110093a72b13c0750ccb66da5efe737b8f83c0adcb95eb35185a4dc77bad6c-4406051824657.png"/></td></tr><tr><td>Mandatory</td><td>No</td></tr><tr><td>Multiple-use permitted</td><td>Yes</td></tr><tr><td>Setting options</td><td><p>Select an in-app event; then setup ranges according to your measurement goal as follows: </p><ul><li><strong>Conversion only: </strong>Configure one range with a range of 0–1</li><li><strong>Engagement and conversion: </strong>Configure multiple ranges with your selected ranges</li></ul></td></tr><tr><td>Ranges for engagement</td><td><p>To measure engagement, you must create occurrence ranges. When an occurrence of the selected engagement event is reported, SKAN associates it with the appropriate range according to the number of event occurrences.</p><p><strong>Characteristics</strong></p><ul><li>Each range contains an occurrence range consisting of a <strong>from</strong> value and a <strong>to</strong> value. The lower value isn't included in the range, and the upper value is. For example, 5–10 means greater than 5 up to and including 10.</li><li>The range with the lowest value always starts at 0 (but doesn't include 0 itself). </li><li>You can create as many ranges as you wish, but keep in mind that each range affects your conversion value capacity. </li><li>Ranges must be sequential (without gaps between ranges).</li></ul><p><strong>Measuring engagement using ranges</strong></p><ul><li>When an event occurrence is reported, SKAN associates the occurrence with the appropriate range. Occurrences recorded are derived from the average of the range. The value is rounded up to the nearest integer. For example, 5.7 is rounded up to 6. </li><li>If the number of occurrences exceeds the maximum value of the highest-value range, the occurrences are associated with the highest-value range. The number of occurrences recorded is the average value of the highest-value range’s range. In other words, the actual number of occurrences is disregarded. </li><li>In raw data, both the actual number of occurrences and ranges are available.</li></ul><p><strong>Example:</strong></p><p>In the image, the following occurrence ranges are depicted:</p><p>The occurrence ranges set are:</p><ul><li>A: 0-5</li><li>B: 5-10</li><li>C: 10-20</li></ul><p>Number of occurrences are recorded using the ranges as follows:</p><figure><table><thead><tr><th>Example</th><th>Number of occurrences reported by the SDK</th><th>Associated range</th><th>Number of occurrences reported</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>A </td><td>3</td></tr><tr><td>2</td><td>6</td><td>B</td><td>8</td></tr><tr><td>3</td><td>10</td><td>B</td><td>8</td></tr><tr><td>4</td><td>125</td><td>C</td><td>15</td></tr></tbody></table></figure></td></tr><tr><td>Limitation</td><td>A given in-app event can be associated once with this component.</td></tr></tbody></table>
+<table><tbody><tr><td colspan="2"><img alt="ConversionStudioIn-app-event.png" src="https://files.readme.io/7b110093a72b13c0750ccb66da5efe737b8f83c0adcb95eb35185a4dc77bad6c-4406051824657.png"/></td></tr><tr><td>Mandatory</td><td>No</td></tr><tr><td>Multiple-use permitted</td><td>Yes</td></tr><tr><td>Setting options</td><td><p>Select an in-app event; then setup ranges according to your measurement goal as follows: </p><ul><li><strong>Conversion only:</strong> Configure one range with a range of 0–1</li><li><strong>Engagement and conversion:</strong> Configure multiple ranges with your selected ranges</li></ul></td></tr><tr><td>Ranges for engagement</td><td><p>To measure engagement, you must create occurrence ranges. When an occurrence of the selected engagement event is reported, SKAN associates it with the appropriate range according to the number of event occurrences.</p><p><strong>Characteristics</strong></p><ul><li>Each range contains an occurrence range consisting of a <strong>from</strong> value and a <strong>to</strong> value. The lower value isn't included in the range, and the upper value is. For example, 5–10 means greater than 5 up to and including 10.</li><li>The range with the lowest value always starts at 0 (but doesn't include 0 itself). </li><li>You can create as many ranges as you wish, but keep in mind that each range affects your conversion value capacity. </li><li>Ranges must be sequential (without gaps between ranges).</li></ul><p><strong>Measuring engagement using ranges</strong></p><ul><li>When an event occurrence is reported, SKAN associates the occurrence with the appropriate range. Occurrences recorded are derived from the average of the range. The value is rounded up to the nearest integer. For example, 5.7 is rounded up to 6. </li><li>If the number of occurrences exceeds the maximum value of the highest-value range, the occurrences are associated with the highest-value range. The number of occurrences recorded is the average value of the highest-value range’s range. In other words, the actual number of occurrences is disregarded. </li><li>In raw data, both the actual number of occurrences and ranges are available.</li></ul><p><strong>Example:</strong></p><p>In the image, the following occurrence ranges are depicted:</p><p>The occurrence ranges set are:</p><ul><li>A: 0-5</li><li>B: 5-10</li><li>C: 10-20</li></ul><p>Number of occurrences are recorded using the ranges as follows:</p><figure><table><thead><tr><th>Example</th><th>Number of occurrences reported by the SDK</th><th>Associated range</th><th>Number of occurrences reported</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>A </td><td>3</td></tr><tr><td>2</td><td>6</td><td>B</td><td>8</td></tr><tr><td>3</td><td>10</td><td>B</td><td>8</td></tr><tr><td>4</td><td>125</td><td>C</td><td>15</td></tr></tbody></table></figure></td></tr><tr><td>Limitation</td><td>A given in-app event can be associated once with this component.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -390,9 +386,9 @@ Priority is best explained in the [detailed example](/docs/skan-conversion-studi
 
 * View the events mapped to a CV by selecting the CV. The mapped events display below the table.
 * Download the CV mapping table as a CSV file from the **Conversion value summary** pane. Click **Download mapping file.**
-* Get the CV mapping using the [SKAN CV schema API for advertisers](/docs/skan-cv-schema-api-for-advertisers).
+* Get the CV mapping using the <Anchor target="_blank" href="/marketers/docs/skan-cv-schema-api-for-advertisers">SKAN CV schema API for advertisers</Anchor>.
 
-![SKAN_download_mapping.png](https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png)
+<Image alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
 
 #### CSV mapping file columns
 
@@ -526,12 +522,12 @@ In the table:
 | Scenario | <ul><li>20 users install the app and perform the following purchases:<ul><li>9 users, each make a purchase of $10</li><li>5 users, each make a purchase of $5</li><li>1 user makes a purchase of $1, then $3, then $5, and finally $1. In total $10.</li></ul></li><li>Cost data provided by API from the ad network: $30</li></ul> |
 | SKAN configuration | <ul><li>Select measurement type: revenue</li><li>Set conversion factor: 1 conversion unit = $1</li><li>Designated conversion event: In the SDK, you must send revenue using the *af\_revenue* parameter.</li></ul> |
 | Selected metrics | Revenue related metrics available<ul><li>Installs: 20</li><li>Revenue: $125</li><li>Conversions:15</li><li>ARPU: $6.25</li><li>ROI: 316%</li></ul> |
-| Number of raw data rows per report | [Raw data reports are available via Data Locker](/docs/skan-raw-data-reports)<ul><li>Device postbacks: 20 rows</li><li>Installs: 20 rows</li><li>In-app events: 15 rows. Note! The user making multiple purchases is represented by a single row of $10.</li></ul> |
+| Number of raw data rows per report | <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">Raw data reports are available via Data Locker</Anchor><ul><li>Device postbacks: 20 rows</li><li>Installs: 20 rows</li><li>In-app events: 15 rows. Note! The user making multiple purchases is represented by a single row of $10.</li></ul> |
 | Developer considerations | Events carrying revenue are recognized |
 
 #### Example B: Conversion measurement
 
-<table><thead><tr><th>Factor</th><th>Remarks</th></tr></thead><tbody><tr><td>Example</td><td><ul><li>5 users (A-E) install the app</li><li>They perform 0-3 different in-app events, as depicted in the table</li><li>Cost data provided by API from the ad network: $30</li></ul><h4><span id="inapp-events-performed-by-users"></span>In-app events performed by users</h4><figure><table><thead><tr><th> </th><th>in-app-1</th><th>in-app-2</th><th>in-app-3</th></tr></thead><tbody><tr><td>User A</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User B</td><td>Performed</td><td>-</td><td>Performed</td></tr><tr><td>User C</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User D</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User E</td><td>-</td><td>-</td><td>-</td></tr></tbody></table></figure></td></tr><tr><td>SKAdNetwork Attribution Configuration</td><td><p>Select measurement type: Conversion</p><ul><li>Select in-app events: in-app-1, in-app-2, in-app-3</li><li>In the SKAdNetwork <a href="./skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">dashboard</a>, you select one of the events to calculate the converted users metric. You can change the selected event as needed. </li></ul></td></tr><tr><td>Selected metrics</td><td><h4><span id="inapp-related-metrics-available"></span>In-app related metrics available</h4><figure><table><thead><tr><th>Metric </th><th>App </th><th>in-app-1</th><th>in-app -2</th><th>in-app- 3</th></tr></thead><tbody><tr><td>Installs</td><td>5</td><td> </td><td> </td><td> </td></tr><tr><td>Conversions</td><td>4</td><td> </td><td> </td><td> </td></tr><tr><td>Unique users</td><td> </td><td>4</td><td>3</td><td>1</td></tr><tr><td>eCPA</td><td>$ 7.5</td><td> </td><td> </td><td> </td></tr></tbody></table></figure><p><strong>Note! </strong>Because the designated Conversion Event is in-app 1, the value 4 is used to calculate app-level metrics and for in-app-1 metrics. </p></td></tr><tr><td> </td><td><p><a href="./skan-raw-data-reports">Raw data reports are available via Data Locker</a></p><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 8 rows</li></ul></td></tr><tr><td>Developer considerations</td><td><ul><li>Make sure you send in-app events users perform.</li><li>SKAdNetwork Solution disregards event values (except in relation to revenue measurement.</li></ul></td></tr></tbody></table>
+<table><thead><tr><th>Factor</th><th>Remarks</th></tr></thead><tbody><tr><td>Example</td><td><ul><li>5 users (A-E) install the app</li><li>They perform 0-3 different in-app events, as depicted in the table</li><li>Cost data provided by API from the ad network: $30</li></ul><h4><span id="inapp-events-performed-by-users"></span>In-app events performed by users</h4><figure><table><thead><tr><th> </th><th>in-app-1</th><th>in-app-2</th><th>in-app-3</th></tr></thead><tbody><tr><td>User A</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User B</td><td>Performed</td><td>-</td><td>Performed</td></tr><tr><td>User C</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User D</td><td>Performed</td><td>Performed</td><td>-</td></tr><tr><td>User E</td><td>-</td><td>-</td><td>-</td></tr></tbody></table></figure></td></tr><tr><td>SKAdNetwork Attribution Configuration</td><td><p>Select measurement type: Conversion</p><ul><li>Select in-app events: in-app-1, in-app-2, in-app-3</li><li>In the SKAdNetwork <a href="./skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings" target="_blank">dashboard</a>, you select one of the events to calculate the converted users metric. You can change the selected event as needed. </li></ul></td></tr><tr><td>Selected metrics</td><td><h4><span id="inapp-related-metrics-available"></span>In-app related metrics available</h4><figure><table><thead><tr><th>Metric </th><th>App </th><th>in-app-1</th><th>in-app -2</th><th>in-app- 3</th></tr></thead><tbody><tr><td>Installs</td><td>5</td><td> </td><td> </td><td> </td></tr><tr><td>Conversions</td><td>4</td><td> </td><td> </td><td> </td></tr><tr><td>Unique users</td><td> </td><td>4</td><td>3</td><td>1</td></tr><tr><td>eCPA</td><td>$ 7.5</td><td> </td><td> </td><td> </td></tr></tbody></table></figure><p><strong>Note!</strong> Because the designated Conversion Event is in-app 1, the value 4 is used to calculate app-level metrics and for in-app-1 metrics. </p></td></tr><tr><td> </td><td><p><a href="./skan-raw-data-reports" target="_blank">Raw data reports are available via Data Locker</a></p><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 8 rows</li></ul></td></tr><tr><td>Developer considerations</td><td><ul><li>Make sure you send in-app events users perform.</li><li>SKAdNetwork Solution disregards event values (except in relation to revenue measurement.</li></ul></td></tr></tbody></table>
 
 #### Example C: Engagement measurement
 
@@ -546,7 +542,7 @@ In the table:
 | User E | - |
 | SKAdNetwork Attribution Configuration | <ul><li>Select measurement type: Engagement</li><li>Designated conversion event: af\_app\_opened Note! You can use any event available.</li></ul> |
 | Selected metrics | Sample metrics available<ul><li>Installs: 5</li><li>Conversions: 4</li><li>Sessions: 79</li></ul> |
-| Number of raw data rows per report | [Raw data reports are available via Data Locker](/docs/skan-raw-data-reports)<ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 4 rows; a row is equivalent to a single session<br />Note: In this example, there are four different rows as four different unique users made this event.<br />To count and calculate the number of actual event occurrences, the rows will have a minimum and a maximum event count attached to them.</li></ul> |
+| Number of raw data rows per report | <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">Raw data reports are available via Data Locker</Anchor><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 4 rows; a row is equivalent to a single session<br />Note: In this example, there are four different rows as four different unique users made this event.<br />To count and calculate the number of actual event occurrences, the rows will have a minimum and a maximum event count attached to them.</li></ul> |
 | Developer considerations | On each occasion the user performs the selected engagement event: send the in-app event. SKAdNetwork counts the number of times you send the event. |
 
 <div id="skan-conversion-studio-api" />
@@ -557,12 +553,12 @@ If you have many apps for which you want similar SKAN conversion value configura
 
 **To use the SKAN Conversion Studio API**:
 
-1. Get the [API token](/docs/managing-appsflyer-tokens). An admin needs to retrieve the token.
+1. Get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor>. An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the app IDs of:
    * The app for which the SKAN schema is configured in the UI (meaning the app from which you want to copy the SKAN schema).
    * All the apps that you want to have the same schema.
-4. Tell your developer to follow their [SKAN Conversion Studio API instructions](https://dev.appsflyer.com/hc/reference/skan-studio-config-overview-1) in the developer hub.
+4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-studio-config-overview-1">SKAN Conversion Studio API instructions</Anchor> in the developer hub.
 
 **Note**:
 
@@ -666,7 +662,7 @@ To turn off SKAdNetwork measurement:
 
 1. In AppsFlyer, go to **Settings** > **SKAN Conversion Studio.**
 2. Click **⋮** .
-3. Turn off **SKAdNetwork measurement.**  
+3. Turn off **SKAdNetwork measurement.**   
    Among other things, the SDK stops calling SKAN functions like *registerAppForAdNetworkAttribution*, *updateConversionValue.*
 4. Click **Save changes.**
 
@@ -678,9 +674,9 @@ To turn off SKAdNetwork measurement:
 
 ![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
 
-Both the SDK and [server-to-server API (S2S)](/docs/server-to-server-events-api-for-mobile-s2s-mobile) can send in-app events to AppsFlyer servers.
+Both the SDK and <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">server-to-server API (S2S)</Anchor> can send in-app events to AppsFlyer servers.
 
-The S2Sflow is as follows:
+The S2S flow is as follows:
 
 * An event occurs related to the user in the advertiser's servers. The app may be open or closed at this time.
 * Advertiser servers report the event to AppsFlyer by S2S.
@@ -717,7 +713,7 @@ The S2Sflow is as follows:
 >
 > Fixed modes are unavailable for new apps starting from 23/06/2024. All functionalities are supported in the Custom and SKAN4.
 
-If you have the Revenue or Engagement measurement mode set up, Single Source of Truth (SSOT, which deduplicates and accurately reports iOS data), isn't supported. [Learn more about SSOT](/docs/single-source-of-truth-ssot-guide-for-ios-attribution)
+If you have the Revenue or Engagement measurement mode set up, Single Source of Truth (SSOT, which deduplicates and accurately reports iOS data), isn't supported. <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Learn more about SSOT</Anchor>
 
 **To enable SSOT when you have Revenue or Engagement mode set up**:
 
@@ -790,11 +786,11 @@ User then did another session event - it will remain on CV 3
 
 <Accordion title="Support Anonymized Users">
 
-Enabling the **Support anonymized users** toggle ensures that SKAN conversion values are accurately updated for [anonymized users](/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information), while still protecting their privacy.
+Enabling the **Support anonymized users** toggle ensures that SKAN conversion values are accurately updated for <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information">anonymized users</Anchor>, while still protecting their privacy.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> This feature is relevant only for apps that call the [anonymize user method](/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information) to remove and hash all user-identifying information. To ensure accurate reporting by SKAN, these apps must activate the **Support anonymized users** toggle.
+> This feature is relevant only for apps that call the <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods#anonymize-user-information">anonymize user method</Anchor> to remove and hash all user-identifying information. To ensure accurate reporting by SKAN, these apps must activate the **Support anonymized users** toggle.
 
 Why is it needed?  
 SKAN uses identifiers to update conversion values based on post-install activity. When an app calls the **anonymize user method** after calling the start method, the system may not be able to link some post-install events to the original install, leading to inaccurate conversion value updates.  
@@ -863,7 +859,7 @@ A: Yes. That is now considered valid behavior under the updated validation logic
 
 | Spec | Remarks |
 | --- | --- |
-| Agencies | Agencies have [limited access to advertisers' SKAN Conversion Studio](/partners/docs/getting-started-agency-onboarding#access-to-skan-conversion-studio). |
+| Agencies | Agencies have <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#access-to-skan-conversion-studio">limited access to advertisers' SKAN Conversion Studio</Anchor>. |
 | Coarse values | <ul><li>Up to 10 measurement components.</li><li>When using more than one measurement, all events must happen for course value to be encoded.</li></ul> |
 | Organic in-app events | In SKAN 4, Custom and Decode modes, organic metrics for in-app events and overall revenue aren't available. |
 | Ambiguous data | After changing the SKAN configuration for the next 48-72 hours, data in the dashboard and raw data reports is ambiguous. Due to iOS timer issues, it is uncertain if the configuration used to decode the postbacks matches the configuration used to encode them before. |

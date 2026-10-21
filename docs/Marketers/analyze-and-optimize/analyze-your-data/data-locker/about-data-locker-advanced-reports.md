@@ -1,10 +1,5 @@
 ---
 title: About Data Locker Advanced Reports
-excerpt: >-
-  Advanced Reports deliver consolidated, typed, and consistently named
-  event-level data across mobile, web, and connected TV (CTV) platforms in a
-  single report, so you can spend less time preparing data and more time using
-  it.
 metadata:
   keywords:
     - Marketers
@@ -25,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45424430660497-About-Data-Locker-Advanced-Reports
 ---
+> **At a glance:** Advanced Reports deliver consolidated, typed, and consistently named event-level data across mobile, web, and connected TV (CTV) platforms in a single report, so you can spend less time preparing data and more time using it.
+
 <Embed title="About Data Locker Advanced Reports" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube.com" />
 
 ## About Advanced Reports
@@ -104,7 +101,7 @@ The End-user events report captures detailed in-app event data, including sessio
 
 <Accordion title="End user events cross-platform">
 
-The End user events cross-platform report extends the end-user events report to support cross-platform use cases. See the [End-user events cross-platform report](/docs/end-user-events-cross-platform-report-in-data-locker) for more information.
+The End user events cross-platform report extends the end-user events report to support cross-platform use cases. See the <Anchor target="_blank" href="/marketers/docs/end-user-events-cross-platform-report-in-data-locker">End-user events cross-platform report</Anchor> for more information.
 
 * **Platforms:** Mobile, Web, CTV
 
@@ -112,7 +109,7 @@ The End user events cross-platform report extends the end-user events report to 
 
 <Accordion title="Conversions cross-platform">
 
-The cross-platform conversions-with-assists report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain, not just the last touchpoint. See the [Conversions cross-platform report](/docs/conversions-cross-paltform-report) for more information.
+The cross-platform conversions-with-assists report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain, not just the last touchpoint. See the <Anchor target="_blank" href="/marketers/docs/conversions-cross-paltform-report">Conversions cross-platform report</Anchor> for more information.
 
 * **Data freshness:** 4 hours
 * **Report Fields:** [Download the report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv)

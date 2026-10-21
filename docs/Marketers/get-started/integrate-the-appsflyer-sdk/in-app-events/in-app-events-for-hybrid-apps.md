@@ -1,9 +1,5 @@
 ---
 title: In-app events for hybrid apps
-excerpt: >-
-  Record in-app events from web-views embedded in your mobile app, allowing full
-  event measurement even when the interaction occurs in the app’s web-based
-  content.
 metadata:
   keywords:
     - Event
@@ -32,14 +28,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207031976-In-app-events-for-hybrid-apps
 ---
+**At a glance:** Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content.
+
 ## Introduction
 
-[In-app events](/docs/in-app-events-overview) that occur within the app are reported using the SDK. What about events that occur outside the app?
+<Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events</Anchor> that occur within the app are reported using the SDK. What about events that occur outside the app?
 
 There are a few scenarios in which events occur outside the app context:
 
-* Events that take place on your website: Implement [People-Based Attribution (PBA)](/docs/people-based-attribution-pba-overview) to get a unified view of customer journeys across channels, platforms including the website, and devices. This provides you with Web-to-App, Conversion paths analysis, and raw-data.
-* [Backend servers](/docs/server-to-server-events-api-for-mobile-s2s-mobile): Events occur independently of user action on either the website or app. For example, automatic subscription renewal
+* Events that take place on your website: Implement <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">People-Based Attribution (PBA)</Anchor> to get a unified view of customer journeys across channels, platforms including the website, and devices. This provides you with Web-to-App, Conversion paths analysis, and raw-data.
+* <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">Backend servers</Anchor>: Events occur independently of user action on either the website or app. For example, automatic subscription renewal
 * Hybrid:  The event takes place on your mobile website on a device having the app as described in this article. In-app events are recorded by calling the AppsFlyer SDK API using JavaScript.
 
 This guide regards the hybrid scenario. Learn how to bridge the gap between the HTML view and native views, enabling you to record events in the HTML view and send them to the app.
@@ -48,9 +46,9 @@ This guide regards the hybrid scenario. Learn how to bridge the gap between the 
 >
 > If your app integrates AppsFlyer **using a hybrid plugin** (for example, Cordova, Ionic, React Native, or Flutter), the bridging method described in this guide doesn’t apply.
 >
-> We recommend sending WebView-based events using the [AppsFlyer server-to-server (S2S) API](/docs/server-to-server-events-api-for-mobile-s2s-mobile).
+> We recommend sending WebView-based events using the <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">AppsFlyer server-to-server (S2S) API</Anchor>.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You have a hybrid app that offers subscriptions. You implement the subscription form in a web view which actually loads from your website.
 >
@@ -71,8 +69,8 @@ In this guide we provide two methods for recording in-app events in hybrid apps:
 
 Both Android and iOS have native JavaScript interfaces that allow web views to call native code.
 
-* Android: [JavaScriptInterface](https://developer.android.com/guide/webapps/webview)
-* iOS: [JavaScriptCore](https://developer.apple.com/documentation/JavaScriptcore)
+* Android: <Anchor target="_blank" href="https://developer.android.com/guide/webapps/webview">JavaScriptInterface</Anchor>
+* iOS: <Anchor target="_blank" href="https://developer.apple.com/documentation/JavaScriptcore">JavaScriptCore</Anchor>
 
 Advantages of using the native JavaScript interface over URL loading:
 
@@ -94,7 +92,7 @@ The implementation consists of the following steps:
 
 Add the following HTML code to the web view or web page:
 
-```
+```html
 <h1>Recording Event From Web View</h1>
 <div id="main">
  <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
@@ -116,7 +114,7 @@ When passing event value, keep the following in mind:
 
 * Make sure to pass the event value as a stringified JSON.
 
-  ```
+  ```html
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
 * To avoid any possible problems AppsFlyer recommends using
@@ -129,7 +127,7 @@ When passing event value, keep the following in mind:
 
 Create a web activity class with the following code:
 
-```
+```java
 public class WebActivity extends AppCompatActivity {
  WebView web;
 
@@ -154,7 +152,7 @@ acts as the bridge between the web view and the native code.
 Create a MainJsInterface class to implement `recordEvent()`
 as `JavaScriptInterface`
 
-```
+```java
 public class MainJsInterface {
  Context mContext;
 
@@ -244,7 +242,7 @@ When passing event value, keep the following in mind:
 
 * Make sure to pass the event value as a stringified JSON.
 
-  ```
+  ```html
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
 * To avoid any possible problems AppsFlyer recommends using
@@ -264,7 +262,7 @@ When passing event value, keep the following in mind:
 In your web view controller, add the following code in the view
 controller.
 
-```
+```objectivec
 -(void) loadView{
  [super loadView];
 
@@ -322,7 +320,7 @@ method which parses the values and calls the native SDK
 
 In your web view controller, add the following code:
 
-```
+```swift
 import WebKit
 import UIKit
 import AppsFlyerLib
@@ -442,13 +440,14 @@ When passing event value, keep the following in mind:
 
 ### Native implementation
 
-Android iOS
+<Tabs>
+<Tab title="Android">
 
 #### Android implementation
 
 Android WebView uses a WebViewClient that receives notifications from the web view. In the `shouldOverrideUrlLoading`, you can handle URL loading events that come from the web view:
 
-```
+```java
 @Override
 public boolean shouldOverrideUrlLoading(WebView view, String url) {
 	if (url.startsWith("af-event://")) {
@@ -489,13 +488,20 @@ public boolean shouldOverrideUrlLoading(WebView view, String url) {
 }
 ```
 
+</Tab>
+
+<Tab title="iOS">
+
+<div id="ios-implementation" />
+
 #### iOS implementation
 
-Objective C Swift
+<Tabs>
+<Tab title="Objective C">
 
 In your web view controller, add the following code in the `shouldStartLoadWithRequest` method.
 
-```
+```objectivec
 - (void) viewDidLoad {
  [super viewDidLoad];
  NSString *page = @"https://yourwebsite.com";
@@ -541,9 +547,13 @@ In your web view controller, add the following code in the `shouldStartLoadWithR
 
 The code above listens to any URL loading. If a URL with "af-event" in it loads, it triggers the native `recordEvent` method. The native `recordEvent` method extracts the necessary parameters (eventName and eventValue) and passes them on to the native SDK `logEvent` method.
 
+</Tab>
+
+<Tab title="Swift">
+
 In your web view controller, add the following code in the `webView(_:decidePolicyFor:decisionHandler:)` method.
 
-```
+```swift
 import WebKit
 import UIKit
 import AppsFlyerLib
@@ -608,5 +618,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 ```
 
 The code above listens to any URL loading. If a URL with "af-event" in it loads, it extracts the necessary parameters (eventName and eventValue) and passes them on to the native SDK `logEvent` method.
+
+</Tab>
+</Tabs>
+
+</Tab>
+</Tabs>
 
 <div data-zendesk-anchors="h_01HGWH2AEJ0DHTGD41YN7R5A1V=introduction h_01KB7M7ZSM5AZACJNB32F65A62=note h_01HGWH2AEJZHV3KZR0ZPPFK71T=example recording-inapp-events-in-hybrid-apps=recording-in-app-events-in-hybrid-apps h_01HGWH2AEJFEZY7WBJTFP9N3AN=recording-in-app-events-in-hybrid-apps JavaScript-interface=javascript-interface h_01HGWH2AEJFVDZBPRS8DP64TRY=javascript-interface h_01HGWH2AEKB47CJ386AN7NNX4Y=android h_01HGWH2AEKZG98VWPECP6FBHN3=html-code-for-android h_01HGWH2AEKA5X1DPWS51WRCMD4=webactivity-class JavaScript-interface-class=javascript-interface-class h_01HGWH2AEK07MGR1FPFSWXYRKP=javascript-interface-class h_01HGWH2AEN4WHKBSM69S200F5H=ios h_01HGWH2AENKC2EEYJPW9KZDVJS=html-code-for-ios h_01HGWH2AENTMA7A71K2Y7XQF9T=note-1 h_01HGWH2AENGAWEGD5TRTR2P6PR=objective-c h_01HGWH2AENJVMVHSDPMKBP6HNT=web-view-controller h_01HGWH2AENV1J1M0KH36K1YSCJ=swift-webview-controller h_01HGWH2AENV0Q83A0GF8NK7S4B=url-loading h_01HGWH2AENFH6M2ZQSGH4EGEGB=webview-implementation h_01HGWH2AENEDT95283SQZDHPCD=html-code-for-both-android-webview-and-ios-wkwebview h_01HGWH2AENS43N93D65RN80VXN=native-implementation h_01HGWH2AEN0QYYJJGV90A27VAM=android-implementation h_01HGWH2AEN38VWNXE90BHGQQ9A=ios-implementation" />

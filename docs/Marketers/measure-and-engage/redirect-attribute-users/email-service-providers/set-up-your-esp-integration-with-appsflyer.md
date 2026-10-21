@@ -1,9 +1,5 @@
 ---
 title: Set up your ESP integration with AppsFlyer
-excerpt: >-
-  Set up an ESP integration with AppsFlyer to enable seamless and secure deep
-  linking in your email campaigns for better user engagement and conversion
-  rates.
 metadata:
   keywords:
     - Premium
@@ -27,7 +23,9 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-## ![ESP final main KB image.png](https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png)
+**At a glance:** Set up an ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
+
+## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
 ## About the AppsFlyer ESP integration
 
@@ -76,7 +74,7 @@ It consists of a subdomain and your main domain, such as mail.yourbrand.com. Dif
 
 <Accordion title="Step 2. Use a OneLink template for your email campaign">
 
-Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
+Create a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor> and configure Universal Links/App Links under "When app is installed". This template will be used later to create OneLink links for your email campaigns.
 
 *If you already have an existing OneLink template configured that enables Universal Links/App Links, you can use it.
 
@@ -92,11 +90,11 @@ Now it's time to set your ESP integration in AppsFlyer. Please note that this st
 
 1. In **AppsFlyer**, from the side menu, select **Engage** > **ESP integration**.
 
-![From Engage click ESP integration.png](https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png)
+<Image alt="From Engage click ESP integration.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
 
 2. Select your ESP.
 
-![select ESP.png](https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png)
+<Image alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
 
 3. Select the OneLink template you want to use for email campaigns, then click **Next**.
 
@@ -123,7 +121,7 @@ a. **Copy and send the customized pre-fabricated instructions in AppsFlyer to yo
 
 As a result, every time a link is clicked, the click will be redirected to AppsFlyer, which in turn will redirect it to the ESP endpoint.
 
-![click to Af to ESP image.png](https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png)
+<Image alt="click to Af to ESP image.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
 
 b. After copying and sending the instructions, click **Done**.
 
@@ -148,19 +146,19 @@ Have your developer make the following configurations to your app:
 
 #### **Configure your app to support associated domains**
 
-AppsFlyer hosts app association files for your app to enable [Universal Links (iOS)](/docs/appsflyer-knowledge-base-glossary#universal-links) or [App Links (Android)](/docs/appsflyer-knowledge-base-glossary#android-app-link).
+AppsFlyer hosts app association files for your app to enable <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#universal-links">Universal Links (iOS)</Anchor> or <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#android-app-link">App Links (Android)</Anchor>.
 
 **To configure your app to access the files:**
 
 **For iOS**  
-**Prerequisite:** SDK from [v6.12.3](/docs/appsflyer-ios-sdk-release-notes)  
+**Prerequisite:** SDK from <Anchor target="_blank" href="/marketers/docs/appsflyer-ios-sdk-release-notes">v6.12.3</Anchor>  
 Configure your app to enable Universal Linking from the email message to your app.  
-Learn more about configuring [Universal links](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links).  
+Learn more about configuring <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">Universal links</Anchor>.  
 **Note:** The click domain should be added to the current domains already defined in the associated domains.
 
 **For Android**  
-**Prerequisite:** SDK from [v6.12.5](https://mvnrepository.com/artifact/com.appsflyer/af-android-sdk)  
-Configure your app to enable Android App Linking from the email message to your app. Learn more about configuring Android [App Links](/docs/appsflyer-knowledge-base-glossary#universal-links).  
+**Prerequisite:** SDK from <Anchor target="_blank" href="https://mvnrepository.com/artifact/com.appsflyer/af-android-sdk">v6.12.5</Anchor>  
+Configure your app to enable Android App Linking from the email message to your app. Learn more about configuring Android <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#universal-links">App Links</Anchor>.  
 **Note:** The click domain should be added to the current domains already defined in the Android Manifest.
 
 
@@ -172,10 +170,10 @@ When a click on an App Link or Universal Link occurs, the app should open.
 
 1. Provide the click recording domain to the SDK API resolveDeepLinkURLs. This API must be called before SDK initialization.
 
-* For IOS please follow these [instructions](https://dev.appsflyer.com/hc/docs/dl_ios_esp_2_setup).
-* For Android please follow the follow these [instructions](https://dev.appsflyer.com/hc/docs/dl_android_esp_2_setup#flow-description).
+* For IOS please follow these <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_esp_2_setup">instructions</Anchor>.
+* For Android please follow the follow these <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_esp_2_setup#flow-description">instructions</Anchor>.
 
-2. Use the [Unified DeepLinking API](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl) to get the deep link parameters and handle the deep link data.
+2. Use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Unified DeepLinking API</Anchor> to get the deep link parameters and handle the deep link data.
 
 
 #### **Configure your app to handle Weblinks and Application Links**
@@ -183,8 +181,8 @@ When a click on an App Link or Universal Link occurs, the app should open.
 The provided code aims to regulate the functionality of wrapped links within an email campaign, specifically addressing two types: Weblinks intended to open a website, and links designed to open the app through a universal link or App link.  
 For more developer information please see the following guides:
 
-* [iOS Deep Linking ESP 2.0](https://dev.appsflyer.com/hc/docs/dl_ios_esp_2_setup)
-* [Android Deep Linking ESP 2.0](https://dev.appsflyer.com/hc/docs/dl_android_esp_2_setup)
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_esp_2_setup">iOS Deep Linking ESP 2.0</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_esp_2_setup">Android Deep Linking ESP 2.0</Anchor>
 
 </Accordion>
 
@@ -210,9 +208,9 @@ We appreciate your assistance with this update.
 
 **To create and customize the OneLink link for your campaign:**
 
-1. In AppsFlyer, create an “Email-to-app” OneLink link on the OneLink management page (or manually) within the OneLink template you created earlier. This is the link you’ll use in your email campaign that will attribute and redirect users per your specifications. Learn how to create a [OneLink link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
+1. In AppsFlyer, create an “Email-to-app” OneLink link on the OneLink management page (or manually) within the OneLink template you created earlier. This is the link you’ll use in your email campaign that will attribute and redirect users per your specifications. Learn how to create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink link</Anchor>.
 
-![email-to-app.png](https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png)
+<Image alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
 
 **Best practice:** Use the same campaign name in both the ESP email campaign and in the AppsFlyer OneLink links used in that campaign.
 
@@ -241,7 +239,7 @@ Well done! You're now ready to use links in your email campaigns. Afterwards, yo
 
 </Accordion>
 
-*ESPs supported by this integration include: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost, and more. See the full [list](/docs/email-service-provider-esp-integration-guide).
+*ESPs supported by this integration include: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost, and more. See the full <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">list</Anchor>.
 
 ## FAQ
 

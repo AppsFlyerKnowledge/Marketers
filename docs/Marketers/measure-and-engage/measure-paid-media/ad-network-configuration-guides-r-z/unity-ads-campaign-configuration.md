@@ -1,10 +1,5 @@
 ---
 title: Unity Ads campaign configuration
-excerpt: >-
-  Unity Ads, an AppsFlyer ad network integrated partner, is a video ad network
-  for iOS and Android. In addition to click-based mobile attribution, Unity Ads
-  offers cost, ad revenue, and view-through attribution, which can be recorded
-  in AppsFlyer.
 metadata:
   keywords:
     - Unity Ads
@@ -27,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208005086-Unity-Ads-campaign-configuration
 ---
+**At a glance:** Unity Ads, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Unity Ads offers cost, ad revenue, and view-through attribution, which can be recorded in AppsFlyer.
+
 To configure your campaigns with Unity Ads, follow the steps below.
 
 ## Setting up Unity Ads
@@ -40,8 +37,8 @@ To configure your campaigns with Unity Ads, follow the steps below.
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -50,7 +47,7 @@ To configure your campaigns with Unity Ads, follow the steps below.
 ### Activate partners
 
 On the first visit, you will need to turn on the **Activate partner** toggle to setup the integration. The toggle must remain on for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 
@@ -97,24 +94,24 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 
 1. Enter the **game\_id**. Make sure the game\_id is correct and is the same as used for install attribution.
 2. Turn on **In-app event postbacks**.
-3. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+3. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
 4. Click **Add event** to add an SDK or server-to-server event to the list.
 5. Complete the following parameters:
 
 | Parameter Name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Select the correct SDK/server-to-server event and the corresponding partner event identifier. Do not duplicate events (do not pass the same events under different SDK/server-to-server event names).
 
 > 📘 **Note**
 >
-> You can send [ad revenue postbacks](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks) to Unity Ads so they can optimize campaigns using ad revenue data:
+> You can send <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#ad-revenue-event-postbacks-for-ad-networks">ad revenue postbacks</Anchor> to Unity Ads so they can optimize campaigns using ad revenue data:
 >
 > * **Event name:** af\_ad\_revenue
 > * **Mapped to:** ad\_revenue
@@ -123,10 +120,10 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[More about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 **Notes:**
 
@@ -138,20 +135,20 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-Cost on the attribution link isn't supported. AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. 
+Cost on the attribution link isn't supported. AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. 
 
 **Note**:
 
 * Cost data requires an ROI360 subscription.
 * Cost data from Unity Ads can be received only for downloads coming from Google Play or Apple App Store. For Android, cost data for third-party Android app stores isn't supported.
-* Agency cost isn't supported via cost by click or API. Advertisers can send agency cost data via [Ad Spend Ingestion](/docs/import-cost-data).
+* Agency cost isn't supported via cost by click or API. Advertisers can send agency cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor>.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).   
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.   
   **Note**: For Unity cost integrations, all apps with the same Service account key ID must contain the same Organization core ID and Service account secret key. Otherwise, pulling cost data is affected. Make sure to select the **Organization core ID**.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -163,7 +160,7 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 **To enable the ad revenue API**:
 
-* Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
 </Accordion>
 
@@ -172,7 +169,7 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Unity Ads to perform certain actions. Note that even if attribution is disabled for Unity Ads, the permissions tab is active and you can grant Unity Ads permissions.  
-Learn more about [the permissions you can grant](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">the permissions you can grant</Anchor>.
 
 </Accordion>
 

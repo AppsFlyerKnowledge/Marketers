@@ -1,9 +1,5 @@
 ---
 title: Outbrain campaign configuration
-excerpt: >-
-  Outbrain, an AppsFlyer integrated partner, is a premium discovery platform
-  that helps connect marketers to their target audience through personalized
-  recommendations on the world's leading publishers.
 metadata:
   keywords:
     - Advertisers
@@ -26,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003981026-Outbrain-campaign-configuration
 ---
+**At a glance:** Outbrain, an AppsFlyer integrated partner, is a premium discovery platform that helps connect marketers to their target audience through personalized recommendations on the world's leading publishers.
+
 ## Setting up Outbrain integration
 
 AppsFlyer integration with Outbrain supports click attribution.
@@ -41,23 +39,23 @@ AppsFlyer integration with Outbrain supports click attribution.
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 If necessary, make additional settings changes according to the campaigns and postbacks you run with the partner.
 
 | Settings tab | Remarks |
 | --- | --- |
-| **Integration** | Configure additional [integration](/docs/set-up-an-integrated-partner#attribution-link-tab) settings as required. |
-| **Attribution link** | Generate [attribution links.](/docs/set-up-an-integrated-partner#attribution-link-tab) |
+| **Integration** | Configure additional <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">integration</Anchor> settings as required. |
+| **Attribution link** | Generate <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">attribution links.</Anchor> |
 | **Cost** | Not available for this partner |
 | **Ad revenue** | Not available for this partner |
-| **Permissions** | Set ad network [permissions](/docs/set-up-an-integrated-partner#permissions-tab) as required. |
+| **Permissions** | Set ad network <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> as required. |
 
 **Edit existing integration:**
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
-Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
 
 <div data-zendesk-anchors="h_01HKW7YJ8PN19J2HSZR3CPB36D=setting-up-outbrain-integration" />

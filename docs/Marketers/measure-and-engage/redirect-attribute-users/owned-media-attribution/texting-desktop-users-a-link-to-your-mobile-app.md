@@ -1,6 +1,5 @@
 ---
 title: Texting desktop users a link to your mobile app
-excerpt: Convert desktop users to mobile app users using SMS vendors and OneLink.
 metadata:
   keywords:
     - Advertisers
@@ -23,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360003799658-Texting-desktop-users-a-link-to-your-mobile-app
 ---
+**At a glance:** Convert desktop users to mobile app users using SMS vendors and OneLink.
+
 ![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
 
 ## Introduction
@@ -35,7 +36,7 @@ This way, they don't have to open the app store on their mobile, find your app, 
 
 > 📘 **Note**
 >
-> We offer another solution for [desktop-to-web conversion](/docs/qr-to-app-conversion) that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
+> We offer another solution for <Anchor target="_blank" href="/marketers/docs/qr-to-app-conversion">desktop-to-web conversion</Anchor> that simply requires you to post a QR code (generated from your OneLink) to your desktop site.
 
 ## Requirements
 
@@ -43,7 +44,7 @@ To text desktop users a link to your mobile app, you need the following:
 
 1. An SMS provider account like Twilio, AWS SNS, or bandwidth.com.
 2. A backend environment where you can handle the logic for texting links to users.
-3. A multi-platform custom link such as [OneLink](/docs/onelink-guide).
+3. A multi-platform custom link such as <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.
 
 ## Setting up
 
@@ -55,13 +56,13 @@ Create an account with any SMS provider. Then, you can send links to your mobile
 
 See the list that follows for some popular providers that support a variety of programming languages and have comprehensive APIs for various use cases:
 
-* [Twilio](https://www.twilio.com/docs/sms/send-messages)
-* [bandwidth](https://dev.bandwidth.com/messaging/about.html)
-* [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-phone-number-as-subscriber.html)
-* [Braze](https://www.braze.com/docs/user_guide/message_building_by_channel/sms/create/)
-* [Airship](https://www.airship.com/platform/channels/sms/)
+* <Anchor target="_blank" href="https://www.twilio.com/docs/sms/send-messages">Twilio</Anchor>
+* <Anchor target="_blank" href="https://dev.bandwidth.com/messaging/about.html">bandwidth</Anchor>
+* <Anchor target="_blank" href="https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-phone-number-as-subscriber.html">AWS SNS</Anchor>
+* <Anchor target="_blank" href="https://www.braze.com/docs/user_guide/message_building_by_channel/sms/create/">Braze</Anchor>
+* <Anchor target="_blank" href="https://www.airship.com/platform/channels/sms/">Airship</Anchor>
 * [Swrve](https://docs.swrve.com/user-documentation/campaigns/campaign-channels/intro-to-sms/)
-* [Mixpanel](https://help.mixpanel.com/hc/en-us/articles/115004730066-Send-SMS-Messages-From-Mixpanel)
+* <Anchor target="_blank" href="https://help.mixpanel.com/hc/en-us/articles/115004730066-Send-SMS-Messages-From-Mixpanel">Mixpanel</Anchor>
 
 ### A backend environment to communicate with the SMS provider
 
@@ -84,7 +85,7 @@ Create a multi-platform OneLink to put in the SMS. When you create the link, you
 
 When sending OneLink in SMS, it's best to use the short link version of the OneLink.
 
-To learn how to create the link, see [here](/docs/onelink-guide).
+To learn how to create the link, see <Anchor target="_blank" href="/marketers/docs/onelink-guide">here</Anchor>.
 
 ### Set up an SMS topic in your SMS provider account
 
@@ -102,9 +103,9 @@ Refer to your SMS provider API and documentation to learn how to create the logi
 
 ## How Attribution works when sending a link to the app
 
- There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to [attribution using Probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling).
+ There's no way to include the advertising ID when texting desktop users a link to the app. Therefore, AppsFlyer resorts to <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">attribution using Probabilistic modeling</Anchor>.
 
-AppsFlyer [limits the lookback window](/docs/set-up-lookback-windows#probabilistic-modeling-lookback-window) for Probabilistic modeling clicks to maintain accuracy. The limits are:
+AppsFlyer <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows#probabilistic-modeling-lookback-window">limits the lookback window</Anchor> for Probabilistic modeling clicks to maintain accuracy. The limits are:
 
 * iOS: up to 24 hours
 * Android (Google Play): up to one hour
@@ -120,6 +121,6 @@ To get more insights into how many web users convert to mobile apps users, and w
 
 People-based attribution (PBA) puts together data from both web and mobile app campaigns. The consolidated data helps you analyze user journeys across platforms and user transition from web to mobile apps.
 
-To learn more, see [here](/docs/people-based-attribution-pba-overview).
+To learn more, see <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">here</Anchor>.
 
 <div data-zendesk-anchors="h_01KQS4E94MVN7NEEDR7ESA17K9=introduction h_01KQS4E94MSP2PQ0RVAHS2JY8R=note h_01KQS4E94MVYA0EZ7Y0FCMZEBC=requirements h_01KQS4E94MF2BZZ5AXP67R7YRW=setting-up h_01KQS4E94MYPEBKN80CNHCV1DG=sms-provider-account-to-text-a-link-to-the-app h_01KQS4E94MW7DWRGPNX8D98W46=a-backend-environment-to-communicate-with-the-sms-provider a-multiplatform-custom-link=a-multi-platform-custom-link h_01KQS4E94MP2Q29S7892GGT0QM=a-multi-platform-custom-link h_01KQS4E94MGBCX0TM5AGHXPX0Z=texting-the-app-to-users create-a-multiplatform-onelink=create-a-multi-platform-onelink h_01KQS4E94MQSWQ9S0CHNJG8B77=create-a-multi-platform-onelink h_01KQS4E94MG7KGB8HQVT11717J=set-up-an-sms-topic-in-your-sms-provider-account h_01KQS4E94MNPRC5AJ9EJD4GPG3=set-up-a-web-form-to-collect-phone-numbers h_01KQS4E94MA810B0QRSMDQ0FQM=apply-logic-in-your-backend h_01KQS4E94MC8C19RCCPV52G7N1=how-attribution-works-when-sending-a-link-to-the-app peoplebased-attribution=people-based-attribution h_01KQS4E94MJ0C6Q82H67R22S2W=people-based-attribution" />

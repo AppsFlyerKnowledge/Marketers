@@ -1,10 +1,5 @@
 ---
 title: SKAN conversion schema templates
-excerpt: >-
-  SKAN conversion schema templates are ready-to-use templates. Simplifying the
-  SKAN setup by offering templates based on a combination of industry and
-  specific app data, offering industry insights and best practices. SKAN
-  conversion schema templates can be found in the Conversion Studio.
 metadata:
   keywords:
     - Marketers
@@ -25,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/28968432692241-SKAN-conversion-schema-templates
 ---
+**At a glance:** SKAN conversion schema templates are ready-to-use templates. Simplifying the SKAN setup by offering templates based on a combination of industry and specific app data, offering industry insights and best practices. SKAN conversion schema templates can be found in the Conversion Studio.
+
 ## Key benefits
 
 * These templates streamline the SKAN set up by enabling the creation of a conversion schema in just a few clicks.
@@ -43,7 +40,7 @@ x-zendesk:
 6. Click **Select & customize**  
    **Note:** This will not save your settings yet
 7. You will be redirected to the **Conversion Studio** edit page
-   1. Use the Conversion Studio’s [standard features and tools](/docs/skan-conversion-studio#measurement-components) to customize the template according to your app’s needs
+   1. Use the Conversion Studio’s <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#measurement-components">standard features and tools</Anchor> to customize the template according to your app’s needs
 
 ## What Are SKAN conversion schema templates?
 

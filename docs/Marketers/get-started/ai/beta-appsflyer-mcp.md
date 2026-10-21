@@ -1,10 +1,5 @@
 ---
 title: '[Beta] AppsFlyer MCP'
-excerpt: >-
-  AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs),
-  such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions,
-  get performance insights, and retrieve AppsFlyer information directly in your
-  AI chat or development environment.
 metadata:
   keywords:
     - Marketers
@@ -28,6 +23,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
+**At a glance:** AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
+
 <Embed title="[Beta] AppsFlyer MCP" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o?si=-s107vTaTTwO076n" providerUrl="https://www.youtube.com" />
 
 <div id="disclaimer" />
@@ -36,7 +33,7 @@ x-zendesk:
 
 **The AppsFlyer MCP Server is a service currently in beta phase, provided by AppsFlyer for evaluation purposes.**
 
-By using it to connect third-party AI tools, you agree that AppsFlyer has no responsibility or liability for such tools, their outputs, results, performance, operation, legality, or reliability. AppsFlyer does not control, endorse, or verify these tools or their results and expressly disclaims all warranties, express or implied, relating thereto. AppsFlyer is not responsible for data storage, retention, processing, or use by such tools. You are solely responsible for ensuring compliance with applicable laws and your own internal policies. You represent that you have all necessary rights and consents to connect these tools to the MCP Server and provide them access to your data. The service is provided "as-is" for supported use cases only. Use outside this scope is at your sole risk. Use is subject to the terms of the [Master Services Agreement](https://www.appsflyer.com/legal/msa/), or if a definitive agreement has been signed, then the terms of such agreement.
+By using it to connect third-party AI tools, you agree that AppsFlyer has no responsibility or liability for such tools, their outputs, results, performance, operation, legality, or reliability. AppsFlyer does not control, endorse, or verify these tools or their results and expressly disclaims all warranties, express or implied, relating thereto. AppsFlyer is not responsible for data storage, retention, processing, or use by such tools. You are solely responsible for ensuring compliance with applicable laws and your own internal policies. You represent that you have all necessary rights and consents to connect these tools to the MCP Server and provide them access to your data. The service is provided "as-is" for supported use cases only. Use outside this scope is at your sole risk. Use is subject to the terms of the <Anchor target="_blank" href="https://www.appsflyer.com/legal/msa/">Master Services Agreement</Anchor>, or if a definitive agreement has been signed, then the terms of such agreement.
 
 </Accordion>
 
@@ -102,7 +99,7 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 #### Set up Claude chat and Cowork
 
 1. Click your name in the lower-left corner and select **Settings**. Alternatively, in a new chat, click **Search & tools** > **Manage connectors**.
-2. Open the [Connectors](https://claude.ai/settings/integrations) tab.
+2. Open the <Anchor target="_blank" href="https://claude.ai/settings/integrations">Connectors</Anchor> tab.
 3. Switch to the **Organization connectors** tab.
 4. In the connectors section, click **Add connector**.
 5. Enter the following connector details:
@@ -116,12 +113,12 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 #### Test the Claude connection
 
 1. In any chat window, click the settings button.   
-   ![](https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png)
+   <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. If AppsFlyer MCP was set up correctly, the AppsFlyer tools appear in the menu.
 
 > 📘 **Note**
 >
-> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the <Anchor target="_blank" href="https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit">Claude Cowork starter kit for marketers</Anchor> to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
 
 </Accordion>
 
@@ -137,17 +134,17 @@ Use Claude Code with bearer token authentication for automation, scheduling, and
 2. Create an MCP token.
 3. In Terminal, add the AppsFlyer MCP server:
 
-   ```
+   ```bash
    claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
    ```
 4. Start Claude Code:
 
-   ```
+   ```bash
    claude .
    ```
 5. Verify that the MCP server was added:
 
-   ```
+   ```bash
    claude mcp list
    ```
 6. Confirm that `appsflyer` appears in the list of configured MCP servers.
@@ -224,7 +221,7 @@ There are two ways to use ChatGPT with AppsFlyer MCP.
 
 #### Add the AppsFlyer custom GPT
 
-1. Click [AppsFlyer custom GPT](https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer).
+1. Click <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyer custom GPT</Anchor>.
 2. Save the GPT to your sidebar for easy access.
 3. Open the custom GPT.
 4. Ask a question. For example:
@@ -264,12 +261,12 @@ Use Gemini CLI with browser-based OAuth login.
 
 1. In Terminal, add the AppsFlyer MCP server:
 
-   ```
+   ```bash
    gemini mcp add appsflyer https://mcp.appsflyer.com/auth/mcp -t http
    ```
 2. Start Gemini CLI:
 
-   ```
+   ```bash
    gemini
    ```
 3. In the Gemini CLI prompt, enter:
@@ -288,7 +285,7 @@ Use Gemini CLI with browser-based OAuth login.
 
 If authentication fails, start Gemini CLI in debug mode:
 
-```
+```bash
 GEMINI_LOG_LEVEL=debug gemini
 ```
 
@@ -307,7 +304,7 @@ Use Copilot CLI with browser-based OAuth login.
 1. Open Terminal.
 2. Start Copilot CLI:
 
-   ```
+   ```bash
    copilot
    ```
 3. If you're not logged in, enter the following command in the Copilot CLI prompt:
@@ -347,7 +344,7 @@ Use Copilot CLI with browser-based OAuth login.
 
 Use an MCP token to authenticate third-party or self-hosted systems with AppsFlyer MCP. This supports automation and AI integrations with platforms like n8n, Make, or your own LLM-powered agents.
 
-The MCP token is an account-level bearer token that inherits the permissions of the admin who created it. You can access and manage it from [Security Center > AppsFlyer Tokens](/docs/managing-appsflyer-tokens).
+The MCP token is an account-level bearer token that inherits the permissions of the admin who created it. You can access and manage it from <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Security Center > AppsFlyer Tokens</Anchor>.
 
 #### MCP connection details
 
@@ -378,11 +375,11 @@ AppsFlyer MCP also supports connections to the following platforms:
 
 | Platform | Redirect URI | Reference |
 | --- | --- | --- |
-| Microsoft 365 Copilot | `https://teams.microsoft.com/api/platform/v1.0/oAuthRedirect` | [Microsoft 365 Copilot: Plugins & MCP apps](https://github.com/MicrosoftDocs/m365copilot-docs/blob/main/docs/plugin-mcp-apps.md) |
-| Microsoft Azure AI Foundry | `https://cas.services.azure-ai.net/app/oauth/redirect` | [Azure AI Foundry: MCP authentication](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication) |
-| Microsoft Copilot Studio / Power Platform (custom connector) | `https://global.consent.azure-apim.net/redirect/{connector-slug}` | [Use an enterprise MCP server in Copilot Studio](https://learn.microsoft.com/en-us/graph/mcp-server/use-enterprise-mcp-server-copilot-studio) |
-| Google Gemini Enterprise | `https://vertexaisearch.cloud.google.com/oauth-redirect` | [Set up a custom MCP server](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server) |
-| Amazon Quick (formerly QuickSight) | `https://{region}.quicksight.aws.amazon.com/sn/oauthcallback` | [MCP integration – Amazon Quick](https://docs.aws.amazon.com/quick/latest/userguide/mcp-integration.html) |
+| Microsoft 365 Copilot | `https://teams.microsoft.com/api/platform/v1.0/oAuthRedirect` | <Anchor target="_blank" href="https://github.com/MicrosoftDocs/m365copilot-docs/blob/main/docs/plugin-mcp-apps.md">Microsoft 365 Copilot: Plugins & MCP apps</Anchor> |
+| Microsoft Azure AI Foundry | `https://cas.services.azure-ai.net/app/oauth/redirect` | <Anchor target="_blank" href="https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/mcp-authentication">Azure AI Foundry: MCP authentication</Anchor> |
+| Microsoft Copilot Studio / Power Platform (custom connector) | `https://global.consent.azure-apim.net/redirect/{connector-slug}` | <Anchor target="_blank" href="https://learn.microsoft.com/en-us/graph/mcp-server/use-enterprise-mcp-server-copilot-studio">Use an enterprise MCP server in Copilot Studio</Anchor> |
+| Google Gemini Enterprise | `https://vertexaisearch.cloud.google.com/oauth-redirect` | <Anchor target="_blank" href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server">Set up a custom MCP server</Anchor> |
+| Amazon Quick (formerly QuickSight) | `https://{region}.quicksight.aws.amazon.com/sn/oauthcallback` | <Anchor target="_blank" href="https://docs.aws.amazon.com/quick/latest/userguide/mcp-integration.html">MCP integration – Amazon Quick</Anchor> |
 
 We're continuously expanding this list as we validate and document more platforms. If the platform you're using isn't listed here, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com) and we'll help you get connected.
 
@@ -410,7 +407,7 @@ To connect to several accounts at the same time, for example for agency use, use
 1. For each account, create an MCP token in **Account menu > Security Center > AppsFlyer Tokens**.
 2. In your agent platform, connect each account separately using its own bearer token.
 
-See an example of this flow in [this video](https://www.youtube.com/watch?v=o5oK-yWuE5E).
+See an example of this flow in <Anchor target="_blank" href="https://www.youtube.com/watch?v=o5oK-yWuE5E">this video</Anchor>.
 
 </Accordion>
 
@@ -420,7 +417,7 @@ See an example of this flow in [this video](https://www.youtube.com/watch?v=o5oK
 
 AppsFlyer MCP gives you a set of tools and resources designed to help you retrieve marketing analytics, performance insights, and configuration information.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Answers generated through AppsFlyer MCP are only reliable when used for the supported use cases listed below. Responses outside of these use cases have not been validated by AppsFlyer and might be inaccurate or misleading. We can't guarantee the precision or correctness of AI-generated answers that fall outside the intended scope of the AppsFlyer MCP integration.
 
@@ -454,7 +451,7 @@ Explore aggregated marketing performance data in real time. You can identify top
 
 > 📘 **Note**
 >
-> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the [Claude Cowork starter kit for marketers](https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit) to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
+> **Get started faster with Cowork: save as a Skill.** If your team works in Claude Cowork, use the <Anchor target="_blank" href="https://github.com/AppsFlyerKnowledge/appsflyer-ai-agents-examples/tree/main/Claude/AppsFlyer%20Cowork%20Starter%20Kit">Claude Cowork starter kit for marketers</Anchor> to get set up faster. The starter kit includes an activation plan, ready-to-use templates, and copy-paste prompts for working with your AppsFlyer data through AI from day one, so you don't have to build your first workflows, reports, or briefs from scratch.
 
 </Accordion>
 
@@ -748,7 +745,7 @@ Each tool is mapped to a functional category, such as Analyze performance, apps 
 
 See the table below for the complete list of tools and their category mappings.
 
-<table><thead><tr><th>Category</th><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="#analyze-performance">Analyze performance</a></td><td>fetch_aggregated_data</td><td>Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters.</td></tr><tr><td rowspan="2"><a href="#h_analyze-incrementality-experiments">Analyze Incrementality for UA experiments</a></td><td>incrementality_list_experiments</td><td>Lists incrementality experiments, filtered by status, app, country, media source, and date range.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion.</td></tr><tr><td rowspan="2"><a href="#apps-management">Apps management</a></td><td>get_apps</td><td>Lists all permitted apps organized by pinned and unpinned status with transfer requests.</td></tr><tr><td>get_app_settings</td><td>Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations.</td></tr><tr><td><a href="#cost-configuration-integration">Cost configuration integration</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Gets an overview of active cost integration status and missing cost integrations in your account.</td></tr><tr><td><a href="#ad-revenue-integrations">Ad revenue integrations</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent.</td></tr><tr><td><a href="#analyze-skan-performance">SKAN performance</a></td><td>skan_get_app_data</td><td>Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges.</td></tr><tr><td rowspan="4"><a href="#onelink-management">OneLink management</a></td><td>get_onelink_templates</td><td>Lists all OneLink templates.</td></tr><tr><td>get_onelink_template_links</td><td>Gets all OneLink links created from a specific template.</td></tr><tr><td>get_onelink_details</td><td>Gets configuration details for a specific OneLink.</td></tr><tr><td>discover_onelink</td><td>Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL.</td></tr><tr><td> </td><td>create_onelink_link</td><td>Creates a new short link under an existing OneLink template. Requires user confirmation before the link is created.</td></tr><tr><td> </td><td>list_smart_banners</td><td><p>Lists Smart Banners for the account with metadata, filterable by active status and creation date.</p><p><strong>Note: </strong>list_smart_banners returns at most 30 banners per account, ordered by active banners first and then by last modified.</p></td></tr><tr><td> </td><td>get_smart_banner_performance</td><td>Gets Smart Banner performance for specific banner IDs, at total or daily granularity.</td></tr><tr><td rowspan="3"><a href="#zd-audiences-management">Audiences management</a></td><td>list_active_audiences</td><td>Lists all active audiences that are calculated daily.</td></tr><tr><td>list_audiences_connections</td><td>Lists advertising partner integrations for audience data.</td></tr><tr><td>get_audience_connections</td><td>Gets partner connections for a specific audience.</td></tr><tr><td><a href="#knowledge-base-and-developer-support">Knowledge base and developer support</a></td><td>get_public_knowledge</td><td>Searches AppsFlyer Knowledge Base and DevHub documentation.</td></tr><tr><td><a href="#feedback-tool">Feedback tool</a></td><td>send_feedback</td><td>Submits feedback about the tools or system.</td></tr><tr><td><a href="#user-management-and-role-control">User management and role control</a></td><td>get_users</td><td>Lists users and roles from AppsFlyer.</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="#analyze-performance">Analyze performance</a></td><td>fetch_aggregated_data</td><td>Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters.</td></tr><tr><td rowspan="2"><a href="#h_analyze-incrementality-experiments">Analyze Incrementality for UA experiments</a></td><td>incrementality_list_experiments</td><td>Lists incrementality experiments, filtered by status, app, country, media source, and date range.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion.</td></tr><tr><td rowspan="2"><a href="#apps-management">Apps management</a></td><td>get_apps</td><td>Lists all permitted apps organized by pinned and unpinned status with transfer requests.</td></tr><tr><td>get_app_settings</td><td>Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations.</td></tr><tr><td><a href="#cost-configuration-integration">Cost configuration integration</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Gets an overview of active cost integration status and missing cost integrations in your account.</td></tr><tr><td><a href="#ad-revenue-integrations">Ad revenue integrations</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent.</td></tr><tr><td><a href="#analyze-skan-performance">SKAN performance</a></td><td>skan_get_app_data</td><td>Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges.</td></tr><tr><td rowspan="4"><a href="#onelink-management">OneLink management</a></td><td>get_onelink_templates</td><td>Lists all OneLink templates.</td></tr><tr><td>get_onelink_template_links</td><td>Gets all OneLink links created from a specific template.</td></tr><tr><td>get_onelink_details</td><td>Gets configuration details for a specific OneLink.</td></tr><tr><td>discover_onelink</td><td>Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL.</td></tr><tr><td> </td><td>create_onelink_link</td><td>Creates a new short link under an existing OneLink template. Requires user confirmation before the link is created.</td></tr><tr><td> </td><td>list_smart_banners</td><td><p>Lists Smart Banners for the account with metadata, filterable by active status and creation date.</p><p><strong>Note:</strong> list_smart_banners returns at most 30 banners per account, ordered by active banners first and then by last modified.</p></td></tr><tr><td> </td><td>get_smart_banner_performance</td><td>Gets Smart Banner performance for specific banner IDs, at total or daily granularity.</td></tr><tr><td rowspan="3"><a href="#zd-audiences-management">Audiences management</a></td><td>list_active_audiences</td><td>Lists all active audiences that are calculated daily.</td></tr><tr><td>list_audiences_connections</td><td>Lists advertising partner integrations for audience data.</td></tr><tr><td>get_audience_connections</td><td>Gets partner connections for a specific audience.</td></tr><tr><td><a href="#knowledge-base-and-developer-support">Knowledge base and developer support</a></td><td>get_public_knowledge</td><td>Searches AppsFlyer Knowledge Base and DevHub documentation.</td></tr><tr><td><a href="#feedback-tool">Feedback tool</a></td><td>send_feedback</td><td>Submits feedback about the tools or system.</td></tr><tr><td><a href="#user-management-and-role-control">User management and role control</a></td><td>get_users</td><td>Lists users and roles from AppsFlyer.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -762,7 +759,7 @@ See the table below for the complete list of tools and their category mappings.
 | OneLink links | <ul><li>**OneLink link creation:**</li></ul><ul><li>Up to 10 links can be created per day, per account.</li><li>Links are created under an existing OneLink template.</li></ul><ul><li>The get\_onelink\_template\_links tool includes only links created from the OneLink Management page, not links created via API, SDK, or bulk creation.</li><li>Discover OneLink (discover\_onelink) has no such restriction. It supports all AppsFlyer link types, including single-platform (legacy) links, branded domains, and links created via the UI, API, SDK, or bulk creation.</li></ul> |
 | Rate limits | <ul><li>Analytics: 20 requests per minute</li><li>Audiences: 350 requests per minute</li><li>SKAN: Up to 10,000 rows per query</li></ul> |
 | Date range | <ul><li>Analytics: 3 years</li><li>SKAN: Maximum 90 days per request</li></ul> |
-| Groupings | <ul><li>Analytics: 4 groupings per request</li><li>SKAN: As available in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics)</li></ul> |
+| Groupings | <ul><li>Analytics: 4 groupings per request</li><li>SKAN: As available in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics">SKAN dashboard</Anchor></li></ul> |
 | App limits | <ul><li>Analytics: 10 apps per request</li><li>SKAN: One app per request, iOS only</li></ul> |
 | Supported dimensions | Analytics supports all dimensions available in My Dashboards. |
 | Aggregated data | Aggregated data is supported. This includes weekly and monthly granularity levels and custom metrics. |
@@ -825,12 +822,12 @@ Use this section for Claude Code, n8n, Make, self-hosted agents, and other autom
 
 5. **Verify that the server is registered.** For Claude Code, run:
 
-   ```
+   ```bash
    claude mcp list
    ```
 6. **Re-add the MCP server, if needed.**
 
-   ```
+   ```bash
    claude mcp remove appsflyer
    claude mcp add-json appsflyer '{"type":"http","url":"https://mcp.appsflyer.com/auth/mcp","headers":{"Authorization":"Bearer YOUR_APPSFLYER_MCP_TOKEN"}}'
    ```

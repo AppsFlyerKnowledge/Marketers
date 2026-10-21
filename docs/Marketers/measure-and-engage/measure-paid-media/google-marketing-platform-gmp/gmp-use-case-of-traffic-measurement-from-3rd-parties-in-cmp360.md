@@ -1,9 +1,5 @@
 ---
 title: GMP use case of traffic measurement from 3rd parties in CMP360
-excerpt: >-
-  Buy traffic from third-party media sources in CM360 and measure mobile app
-  conversions originating from this source both in AppsFlyer (attributed to the
-  third-party media source) and CM360.
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +21,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018228758-GMP-use-case-of-traffic-measurement-from-3rd-parties-in-CMP360
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png)
+**At a glance**: Buy traffic from third-party media sources in CM360 and measure mobile app conversions originating from this source both in AppsFlyer (attributed to the third-party media source) and CM360.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 ## Measurement of CM360 with non-DV360 third-party media sources
 
@@ -35,8 +33,8 @@ In the context of AppsFlyer, the standard DV360 SRN integration (dv360\_int) wit
 
 > 📘 **Note**
 >
-> * AppsFlyer attributes DV360 campaigns managed in CM360 via the standard DV360 SRN integration, without the need for attribution links. Installs and re-engagements are attributed to DV360 via DV360 SRN claims using the integration. If you're running DV360 campaigns via CM360, refer to the [DV360 integration guide](/docs/google-marketing-platform-display-video-360-dv360-integration).
-> * If the third-party media source is an SRN, AppsFlyer recommends not using the integration described in this article to avoid conflicts when conversions from the same partner are reported via two different integrations. For example, if the [Meta ads SRN integration](/docs/meta-ads-integration-setup) is enabled in AppsFlyer but CM360 is also utilized to report on Meta ads traffic (facebook\_int) using the method described in this article, conversions may be reported by both Meta ads and CM360, with CM360 capturing some of the conversions that would have been claimed by the main Meta ads integration.
+> * AppsFlyer attributes DV360 campaigns managed in CM360 via the standard DV360 SRN integration, without the need for attribution links. Installs and re-engagements are attributed to DV360 via DV360 SRN claims using the integration. If you're running DV360 campaigns via CM360, refer to the <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration">DV360 integration guide</Anchor>.
+> * If the third-party media source is an SRN, AppsFlyer recommends not using the integration described in this article to avoid conflicts when conversions from the same partner are reported via two different integrations. For example, if the <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta ads SRN integration</Anchor> is enabled in AppsFlyer but CM360 is also utilized to report on Meta ads traffic (facebook\_int) using the method described in this article, conversions may be reported by both Meta ads and CM360, with CM360 capturing some of the conversions that would have been claimed by the main Meta ads integration.
 
 ### Measuring third-party traffic running via CM360
 
@@ -55,15 +53,16 @@ To ensure attribution by AppsFlyer:
 
 #### Step 2: Create the required attribution links
 
-1. [Create a CM360 "tracking ad"](https://support.google.com/campaignmanager/answer/3040965?hl=en&ref_topic=2826011)
+1. <Anchor target="_blank" href="https://support.google.com/campaignmanager/answer/3040965?hl=en&ref_topic=2826011">Create a CM360 "tracking ad"</Anchor>
 2. Create an attribution link in AppsFlyer:
-   * The attribution link should contain the actual media source that you intend to report on, which should be a third-party media source, not GMP. For example, if the third-party media source is Rocketfuel, use `pid=rocketfuel_int` and not `pid=dv360_int`. [Learn more](/docs/retargeting-attribution-guide).
+   * The attribution link should contain the actual media source that you intend to report on, which should be a third-party media source, not GMP. For example, if the third-party media source is Rocketfuel, use `pid=rocketfuel_int` and not `pid=dv360_int`. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Learn more</Anchor>.
    * If your goal is to **re-engage existing users by opening the app** when they click the ad link (rather than being redirected to the App Store), **use the URI scheme method** for deep linking. This requires configuring the CM360 link with the following:
      * The `af_dp` parameter set to your app's URI scheme.
      * The `af_force_deeplink=true` parameter to explicitly force deep linking behavior.
 3. Append the AppsFlyer attribution link to the CM360 link:
 
-   Android iOS
+   <Tabs>
+   <Tab title="Android">
 
    ```
    https://ad.doubleclick.net/ddm/trackclk/N736113.127733/B202683.204586115;
@@ -72,6 +71,10 @@ To ensure attribution by AppsFlyer:
    &c=campaign_name&advertising_id=13******-****-****-****-54**********
    ```
 
+   </Tab>
+
+   <Tab title="iOS">
+
    ```
    https://ad.doubleclick.net/ddm/trackclk/N736113.127733/B202683.204586115;
    dc_trk_aid=404426918;dc_trk_cid=92566356;dc_lat=;dc_rdid=13******-****-****-****-54**********
@@ -79,8 +82,11 @@ To ensure attribution by AppsFlyer:
    &c=campaign_name&idfa=13******-****-****-****-54**********
    ```
 
-   * See more about [iOS and Android attribution links structure and parameters](/docs/about-link-structure-and-parameters?)
-   * See more about [CTV, Console, and PC attribution links structure and parameters](/docs/ctv-pc-and-console-platform-direct-attribution-links)
+   </Tab>
+   </Tabs>
+
+   * See more about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters?">iOS and Android attribution links structure and parameters</Anchor>
+   * See more about <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, Console, and PC attribution links structure and parameters</Anchor>
 
 #### Step 3: Set in-app event postbacks
 

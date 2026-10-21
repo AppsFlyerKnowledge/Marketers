@@ -1,8 +1,5 @@
 ---
 title: Winclap Analytics integration with AppsFlyer
-excerpt: >-
-  Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution
-  data for BI and post-attribution analytics.
 metadata:
   keywords:
     - Marketers
@@ -23,13 +20,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002403537-Winclap-Analytics-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Winclap
 
-The setup is done from the **Active Integrations** page, but to find the partner you must first go to the [marketplace](/docs/partner-integrations).
+The setup is done from the **Active Integrations** page, but to find the partner you must first go to the <Anchor target="_blank" href="/marketers/docs/partner-integrations">marketplace</Anchor>.
 
 > 📘 **Note**
 >
@@ -42,8 +41,8 @@ The setup is done from the **Active Integrations** page, but to find the partner
 > 2. Select the relevant app.
 > 3. Search for the partner and select **Integrate**.
 > 4. In the **Integration** tab, turn on the **Activate partner** toggle.
->    **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-> 5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+>    **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+> 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 Winclap Analytics configuration makes use of the ***Integration*** tab only.
 
@@ -56,7 +55,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you must toggle ON the ***Activate Partner*** toggle to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/user-level-data-retention).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
 
 ### Default postbacks
 
@@ -66,8 +65,8 @@ AppsFlyer can send automatic postbacks to Winclap Analytics user installs and r
 
 For **installs**, select:
 
-* (Default) ***This partner only***for events coming only from users attributed to Winclap.
-* ***All media sources, including organic***to send postbacks for any user that downloads the app to Winclap.
+* (Default) ***This partner only*** for events coming only from users attributed to Winclap.
+* ***All media sources, including organic*** to send postbacks for any user that downloads the app to Winclap.
 
 For **reengagements**, the postbacks can be sent for ***This partner only***.
 
@@ -96,13 +95,13 @@ In this section, you can map which in-app events to send to Winclap Analytics us
 [![winclap analytics - in-app event postback configuration](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
 
 1. Switch the ***In-App Event Postbacks*** toggle to ON.
-2. Set the ***In-app event postback window***, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+2. Set the ***In-app event postback window***, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
 3. Click ***Add Event*** to add an SDK Event to the list.
 4. Complete the following parameters:
 
 | Parameter Name | Description |
 | --- | --- |
-| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events). |
+| **SDK event name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping</Anchor>. |
 | **Partner event identifier** | The unique name or ID of each event as defined by Winclap.  <br />Get from Winclap the corresponding ID for each of the events you want to report to them, and enter in this field. |
 | **Sending option** | Select the sending option for the event:  <br />**This partner only** for events coming **only** from users attributed to this partner  <br />**All media sources, including organic** to have your entire user base available to be reported to the partner |
 | **Send event data** | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |

@@ -1,8 +1,5 @@
 ---
 title: PBA website attribution URL best practices
-excerpt: >-
-  Best practices to attribute your website attribution campaigns with the best
-  campaign granularity available.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/6313062676497-PBA-website-attribution-URL-best-practices
 ---
+**At a glance:** Best practices to attribute your website attribution campaigns with the best campaign granularity available.
+
 ## PBA website attribution URLs
 
 To get the best campaign granularity results combined with the most accurate attribution in your website attribution data, populate URLs (links), bringing users to your website using the practices detailed in this article.
@@ -35,7 +34,7 @@ The AppsFlyer website attribution solution supports several campaign parameter c
 * Click IDs from specific channels like Google, DoubleClick, and Microsoft
 * [Lowest priority] UTM
 
-The [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) determine how a given user is attributed. Parameter classes are ranked by priority. If more than one parameter class is found on a link, the class having the highest priority is awarded the attribution.
+The <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source attribution rules</Anchor> determine how a given user is attributed. Parameter classes are ranked by priority. If more than one parameter class is found on a link, the class having the highest priority is awarded the attribution.
 
 #### Supported parameters
 
@@ -85,7 +84,7 @@ Parameter values are case-sensitive. For example, utm\_source=channel1 and utm\_
 
 ### Use Google Ads integration to automate granularity
 
-In the case of Google Ads campaigns, you can get campaign granularity by integrating PBA with your [Google Ads](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba) account. This ensures that your data is populated with all campaign hierarchy data without the need for PID or UTM parameters on the URL.
+In the case of Google Ads campaigns, you can get campaign granularity by integrating PBA with your <Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads</Anchor> account. This ensures that your data is populated with all campaign hierarchy data without the need for PID or UTM parameters on the URL.
 
 ## Common URL parameter mistakes to avoid
 

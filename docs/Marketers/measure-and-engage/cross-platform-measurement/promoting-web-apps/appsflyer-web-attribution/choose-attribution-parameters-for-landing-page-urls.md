@@ -1,9 +1,5 @@
 ---
 title: Choose attribution parameters for landing page URLs
-excerpt: >-
-  Use consistent, complete URL parameters in your website landing page links to
-  get the best campaign granularity while maintaining accurate attribution in
-  Web Performance Measurement.
 metadata:
   keywords:
     - Agencies
@@ -27,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43525434385809-Choose-attribution-parameters-for-landing-page-URLs
 ---
+**At a glance:** Use consistent, complete URL parameters in your website landing page links to get the best campaign granularity while maintaining accurate attribution in Web Performance Measurement.
+
 ## About URL attribution parameter classes
 
 AppsFlyer reads campaign parameters from your landing page URL (the link a user clicks) and uses them to attribute sessions and events to the correct **media source**, **campaign**, and (when available) deeper hierarchy such as **ad set** and **ad**.
@@ -38,7 +36,7 @@ The URL parameters can belong to one of two classes: PID and UTM.
 * The PID class includes the AppsFlyer URL parameters.
 * The UTM class includes the standard UTM parameters.
 
-For more information about how Web Performance Measurement processes URL parameters, see [About traffic source resolution](/docs/about-traffic-source-resolution).
+For more information about how Web Performance Measurement processes URL parameters, see <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution">About traffic source resolution</Anchor>.
 
 ### Supported PID and UTM parameters
 

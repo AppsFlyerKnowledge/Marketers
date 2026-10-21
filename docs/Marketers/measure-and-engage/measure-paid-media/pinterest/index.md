@@ -12,6 +12,6 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551388216337-Pinterest
 ---
-- [Pinterest—Create a website app integration](/docs/pinterest-create-a-website-app-integration)
-- [Pinterest—Create a mobile app integration](/docs/pinterest-create-a-mobile-app-integration)
-- [Pinterest Marketing Partner Integration](/docs/pinterest-marketing-partner-integration)
+- <Anchor target="_blank" href="/marketers/docs/pinterest-create-a-website-app-integration">Pinterest—Create a website app integration</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/pinterest-create-a-mobile-app-integration">Pinterest—Create a mobile app integration</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/pinterest-marketing-partner-integration">Pinterest Marketing Partner Integration</Anchor>

@@ -1,8 +1,5 @@
 ---
 title: Set up ROI360 cost API to measure cost data
-excerpt: >-
-  Get aggregate marketing cost data (including cost-related LTV (Lifetime Value)
-  performance metrics) using Cost API at the app or media source account level.
 metadata:
   keywords:
     - ROI
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008850257-Set-up-ROI360-cost-API-to-measure-cost-data
 ---
+> **At a glance:** Get aggregate marketing cost data (including cost-related LTV (Lifetime Value) performance metrics) using Cost API at the app or media source account level.
+
 ## Overview
 
 ROI360 provides cost measurement at both the app and account levels, allowing stakeholders to analyze spend granularity per individual application or across an entire media source account.
@@ -37,7 +36,9 @@ Cost integrations are managed in two different locations, depending on the media
 * **Account-level integrations** are managed in **Cost settings**. These integrations are configured at the ad account level. see the [list of supported ad networks](#h_01KQ7V7Q6MAEMXKKJ7TV8GC1YR).
 * **App-level integrations** are managed in the **Cost** tab. These integrations are configured separately for each app. If a media source isn't available in **Cost settings**, configure its cost integration in the **Cost** tab at the app level.
 
-Role permissions control access to Cost settings. If you can't open **Cost settings**, ask your administrator to update your role permissions on the **User Management** page. The relevant capability is **Cost Connections**.
+> 📘 **Note**
+>
+> Role permissions control access to Cost settings. If you can't open **Cost settings**, ask your administrator to update your role permissions on the **User Management** page. The relevant capability is **Cost Connections**.
 
 ## Enable Cost API
 
@@ -47,7 +48,7 @@ There are two ways to enable cost integration: at the app or account levels.
 
 To set up a dedicated cost connection with a media source for an individual app, follow these steps:
 
-1. In AppsFlyer, from the side menu, select **Collaborate**> **Partner Integrations** > **Active Integrations**, and select the partner.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**, and select the partner.
 2. Click **Manage integration**.
 3. Open the integrated partner **Cost** tab.
 4. Turn on **Get Cost Data**. The requirements for connecting to the partner are displayed.
@@ -78,7 +79,9 @@ To enable the cost integration on the account level, follow these steps:
 
 </Accordion>
 
-If an advertiser uses an agency to run their campaigns, we recommend that the agency, and not the advertiser, integrate with the relevant partners. Otherwise, cost data is duplicated if both the advertiser and agency integrate with a media source using the same credentials for the same app.
+> 📘 **Note**
+>
+> If an advertiser uses an agency to run their campaigns, we recommend that the agency, and not the advertiser, integrate with the relevant partners. Otherwise, cost data is duplicated if both the advertiser and agency integrate with a media source using the same credentials for the same app.
 
 ## Cost integration methods
 
@@ -88,11 +91,11 @@ The method for enabling cost integration depends on the media source's integrati
 * **Credentials**: Enter media source-specific parameter values, for example, **API Key**.
 * **None:** No connection configuration is required other than turning on **Get Cost Data** like was instructed [above](#enable-cost-api).
 
-To learn what method a particular media source uses, you can see the **Integration method** column in the [media source cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
+To learn what method a particular media source uses, you can see the **Integration method** column in the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">media source cost integration table</Anchor>.
 
 ## Site ID mapping
 
-[Some media source integrations](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) allow you to select how the [site ID](/docs/raw-data-field-dictionary#attribution::e9b53459) field populates when reporting cost data. This makes sure that the AppsFlyer attribution link `site-id` macros match the value the media source expects.
+<Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">Some media source integrations</Anchor> allow you to select how the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::e9b53459">site ID</Anchor> field populates when reporting cost data. This makes sure that the AppsFlyer attribution link `site-id` macros match the value the media source expects.
 
 * By default, site ID mapping is aligned with the AppsFlyer macros in the attribution link.
 * If your attribution link uses macros that differ from the site ID mapping options, site ID data will not populate correctly.
@@ -141,18 +144,20 @@ Disabling the Cost API is available only at the app level.
 
 To turn off Cost API, follow these steps:
 
-1. Go to **Active integrations**and select the media source.
+1. Go to **Active integrations** and select the media source.
 2. Go to the **Cost** tab.
 3. Turn off **Get Cost Data**.
 4. Click **Save Cost**.
 
-If an advertiser stops working with an agency and turns off the agency permissions at the app level, cost data is still pulled if the agency has cost configured for the app. The advertiser must ask the agency to turn off their cost integration to stop this data from being pulled.
+> 📘 **Note**
+>
+> If an advertiser stops working with an agency and turns off the agency permissions at the app level, cost data is still pulled if the agency has cost configured for the app. The advertiser must ask the agency to turn off their cost integration to stop this data from being pulled.
 
 ## Cost API status
 
 The operational status of cost integrations is available as follows:
 
-* [Cost (and ad revenue) integration status dashboard](/docs/dashboard-cost-and-ad-revenue-status): Centralized list of media sources for which cost integration is enabled for one or more apps housed in your account.
+* <Anchor target="_blank" href="/marketers/docs/dashboard-cost-and-ad-revenue-status">Cost (and ad revenue) integration status dashboard</Anchor>: Centralized list of media sources for which cost integration is enabled for one or more apps housed in your account.
 * Integrated partners: Status available in the context of an individual app.
 * Cost settings: The **Cost settings** page allows you to view the cost API status at both the account and app levels. For more information, see the "[View the media source aggregate cost integration status"](#h_01K3DGA6SKBPXEY18VJBCBNCJS) below.
 
@@ -252,7 +257,9 @@ ROI360 customers can create and edit cost integrations at the account level in *
 | Unity Ads | `unityads_int` |
 | X (Twitter) | `twitter` |
 
-Additional media sources are available through InCost ad networks. To get the full list of supported InCost ad networks, contact your Customer Success Manager (CSM).
+> 📘 **Note**
+>
+> Additional media sources are available through InCost ad networks. To get the full list of supported InCost ad networks, contact your Customer Success Manager (CSM).
 
 </Accordion>
 

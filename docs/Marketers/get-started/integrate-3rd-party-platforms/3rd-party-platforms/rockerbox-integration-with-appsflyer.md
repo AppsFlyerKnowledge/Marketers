@@ -1,8 +1,5 @@
 ---
 title: Rockerbox integration with AppsFlyer
-excerpt: >-
-  Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing
-  and analytics platform for mobile and web apps.
 metadata:
   keywords:
     - Advertisers
@@ -24,11 +21,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015760757-Rockerbox-integration-with-AppsFlyer
 ---
+**At a glance:** Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps.
+
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Rockerbox
 
@@ -41,7 +40,7 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 <div id="integration-tab" />
@@ -53,7 +52,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 This toggle must be enabled for as long as you work with the partner.  
-Learn more about [partner activation](/docs/partner-activation-deactivation#activate-a-partner-integration).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
 
 ### General settings
 
@@ -64,7 +63,7 @@ Your Rockerbox account ID is available in the Rockerbox platform under **Setting
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 To send postbacks for any user that downloads the app to Rockerbox, select **All media sources, including organic**.
 
@@ -72,7 +71,7 @@ To send postbacks for any user that downloads the app to Rockerbox, select **All
 
 ![rockerbox-in-app-events_en-us.png](https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png)
 
-In this section, you map AppsFlyer events with the partner via postbacks. Learn more about [in-app event postbacks.](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration)
+In this section, you map AppsFlyer events with the partner via postbacks. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks.</Anchor>
 
 **To configure in-app events postbacks:**
 

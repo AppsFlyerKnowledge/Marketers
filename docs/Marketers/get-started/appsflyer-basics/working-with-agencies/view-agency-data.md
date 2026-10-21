@@ -1,8 +1,5 @@
 ---
 title: View agency data
-excerpt: >-
-  Learn about agency data to understand its impact on how your data is presented
-  in AppsFlyer.
 metadata:
   keywords:
     - Transparency
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003294203-View-agency-data
 ---
+**At a glance:** Learn about agency data to understand its impact on how your data is presented in AppsFlyer.
+
 ## About agency data
 
 When working with agencies, you can view the traffic they generated in AppsFlyer dashboards and reports. This means their media sources are disclosed.

@@ -1,10 +1,5 @@
 ---
 title: Google Marketing Platform - Display & Video 360 (DV360) integration
-excerpt: >-
-  Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer
-  self-reporting network (SRN) partner combining advertising and analytics. The
-  GMP-DV360 integration (dv360_int) combines advertising and analytics to
-  enhance customer connections, reveal insights, and improve marketing outcomes.
 metadata:
   keywords:
     - Advertisers
@@ -28,11 +23,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017595598-Google-Marketing-Platform-Display-Video-360-DV360-integration
 ---
-> 📘 **Important!**
->
-> See the bulletin about [supporting the new Google EU consent policy](/docs/bulletin-supporting-the-new-google-eu-consent-policy).
+**At a glance:** Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration  (dv360\_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png)
+> 🚧 **Important!**
+>
+> See the bulletin about <Anchor target="_blank" href="/marketers/docs/bulletin-supporting-the-new-google-eu-consent-policy">supporting the new Google EU consent policy</Anchor>.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 ## Overview
 
@@ -54,7 +51,7 @@ The table below describes GMP integration solutions:
 | --- | --- | --- |
 | DV360 | Integrate DV360 with AppsFlyer to measure dv360\_int attribution | Complete the [advertiser integration](#setting-up-gmp-dv360-for-advertisers) |
 | CM360 & DV360 | Buy DV360 traffic via CM360, measured as dv360\_int attribution in AppsFlyer. | Complete the [advertiser integration](#setting-up-gmp-dv360-for-advertisers) |
-| CM360 & non-DV360 third-party media source | Buy traffic from third-party media sources and measure mobile app conversions originating from this traffic in CM360. | [Measure 3rd party traffic using CM360](/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360) |
+| CM360 & non-DV360 third-party media source | Buy traffic from third-party media sources and measure mobile app conversions originating from this traffic in CM360. | <Anchor target="_blank" href="/marketers/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">Measure 3rd party traffic using CM360</Anchor> |
 
 ### Data sharing between AppsFlyer and GMP - DV360
 
@@ -80,8 +77,8 @@ The table below describes GMP integration solutions:
 
 Before setting up the integration, make sure to:
 
-* [Contact the partner](/docs/partner-integrations#contact-details) and open an account with them.
-* [Get the GMP-DV360 link ID](https://support.google.com/displayvideo/answer/10956727).
+* <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">Contact the partner</Anchor> and open an account with them.
+* <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/10956727">Get the GMP-DV360 link ID</Anchor>.
 
   > 📘 **Note**
   >
@@ -101,8 +98,8 @@ Before setting up the integration, make sure to:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -121,15 +118,15 @@ When AppsFlyer queries GMP-DV360, they return the parameters listed in their res
 
 #### Activate partner
 
-To configure the integration, you must first turn on the **Activate partner** toggle. Learn more about [activating and deactivating partner](/docs/partner-activation-deactivation#activate-a-partner-integration) integrations.
+To configure the integration, you must first turn on the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner</Anchor> integrations.
 
 #### General settings
 
 **Link ID:** Enter the link ID mentioned in the prerequisites.
 
-**Non EU Users:** Decide whether or not to turn on [**Non EU users**](/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users).
+**Non EU Users:** Decide whether or not to turn on <Anchor target="_blank" href="/marketers/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Non EU users**</Anchor>.
 
-![non eu usrs.png](https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png)
+<Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
 #### Install attribution
 
@@ -149,17 +146,17 @@ Set the different attribution windows to attribute re-engagements of your existi
 >
 > Re-attribution is not supported for DV360 campaigns
 
-Learn more about re-engagement [rules and windows](/docs/retargeting-attribution-guide#reengagement-rules-and-windows).
+Learn more about re-engagement <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#reengagement-rules-and-windows">rules and windows</Anchor>.
 
 #### Re-engagement window
 
-Set the time window during which in-app events are primarily attributed to the re-engagement conversion. [Learn more](/docs/retargeting-attribution-guide#setup-reengagement-window).
+Set the time window during which in-app events are primarily attributed to the re-engagement conversion. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#setup-reengagement-window">Learn more</Anchor>.
 
 * Set the **Re-engagement window** to either 1-23 hours, 1-90 days, or **Lifetime**.
 
 #### Ignore active users for retargeting
 
-Set a window timeframe to [ignore re-engagements](/docs/set-retargeting-inactivity-window#inactivity-period) of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
+Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">ignore re-engagements</Anchor> of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
 
 > 📘 **Note**
 >
@@ -177,12 +174,12 @@ Configure mapping of in-app events with GMP-DV360 events sent via postbacks:
 
 | Parameter name | Description |
 | --- | --- |
-| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
+| **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you are looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li></ul>**Note:**<ul><li>It's best practice to select a standard event from the list. However, for multiple CUSTOM events, it's best to specify them uniquely, such as CUSTOM\_1 and CUSTOM\_2. This will help distinguish between events on DV360/CM360.</li><li>AppsFlyer events (such as `af_purchase`, etc.) are always sent with `u` variables, for example, `u24=`. This helps you identify them on CM360, even when sent as custom.</li><li>CM360 allows a maximum of 10 custom events, on top of all standard events</li></ul> |
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only** (default): Send postbacks only when this event is attributed to GMP-DV360.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
 | **including** | <ul><li>**No values & no revenue** (default): Send only the event itself without any event values.</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
 
-3. [Optional] Click the **Add condition**![conditional-iae-postbacks-icon.png](https://files.readme.io/adc9e4826101d528a07ea04b88c323030258dcf891d9ba419baed60e662cdda1-22715359959697.png) icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
+3. [Optional] Click the **Add condition**<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/adc9e4826101d528a07ea04b88c323030258dcf891d9ba419baed60e662cdda1-22715359959697.png" width="30px" />icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 4. Click **Save integration**.
 5. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with GMP-DV360:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
@@ -191,7 +188,7 @@ Configure mapping of in-app events with GMP-DV360 events sent via postbacks:
 
 > 📘 **Note**
 >
-> For iOS apps only: Your control over data shared with the partner via postbacks and [reports](/docs/about-raw-data-identifier-restrictions) depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](#advanced-privacy).
+> For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](#advanced-privacy).
 
 #### U parameter mapping
 
@@ -241,7 +238,7 @@ You can **use AppsFlyer attribution links with DV360 for impressions and click r
 
 If you want to be able to measure the number of clicks from DV360 on AppsFlyer, we recommend adding an AppsFlyer attribution URL on your DV360 dashboard, via CM360. When doing so, make sure the campaign name in the attribution URL **is identical** to the **line item name** on GMP (if possible) so that AppsFlyer can retrieve and append the click data for the correct campaigns.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Using attribution links for DV360 is not mandatory.
 >
@@ -269,7 +266,7 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 
 Cost, clicks, and impressions are supported for this integration through ROI360.
 
-ROI360 customers can create and edit cost integrations in the **Cost tab** and in **Cost settings**. See [how to enable cost integration](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+ROI360 customers can create and edit cost integrations in the **Cost tab** and in **Cost settings**. See <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">how to enable cost integration</Anchor>.
 
 Starting September 7, 2026, clicks and impressions will no longer be reported through attribution. To keep receiving these metrics, set up the DV360 SRN/Cost integration.
 
@@ -305,8 +302,8 @@ Agencies are able to run campaigns with GMP-DV360 on your behalf.
 
 | Procedure performed by | Procedure |
 | --- | --- |
-| Advertiser | <ol><li>Verify that you've completed advertiser GMP-DV360 integration.</li><li>In AppsFlyer, from the side menu, select**Collaborate**> **Active Integrations**.</li><li>Select an agency.</li><li>Go to the **Permissions** tab, and turn on **Agency permissions**.</li><li>[Optional] In the **Integration** tab turn on **In-app event postback**. This enables the agency to turn on or off postbacks on their end.</li></ol> |
-| Agency | <ol><li>In AppsFlyer, from the side menu, select**Collaborate**> **Active Integrations**.</li><li>Select **Google Marketing Platform - Display & Video 360 (DV360).**</li><li>Go to the **Integration tab**.<br />The integration status with GMP displays. [![mceclip2.png](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)</li><li>Verify that **Activate Partner** is **On.** If this is not the case, the advertiser must complete [Advertiser GMP-DV360 integration.](#setting-up-gmp-dv360-for-advertisers)</li><li>Verify that the remaining settings, such as the lookback windows and in-app event mapping, are correct. If necessary, ask the advertiser to make changes.</li><li>Enter one or more **DBM Advertiser ID**s. The ID is available in your [GMP dashboard.](https://support.google.com/displayvideo/answer/11415707?hl=en)</li><li>Click **Save**.</li></ol> |
+| Advertiser | <ol><li>Verify that you've completed advertiser GMP-DV360 integration.</li><li>In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.</li><li>Select an agency.</li><li>Go to the **Permissions** tab, and turn on **Agency permissions**.</li><li>[Optional] In the **Integration** tab turn on **In-app event postback**. This enables the agency to turn on or off postbacks on their end.</li></ol> |
+| Agency | <ol><li>In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.</li><li>Select **Google Marketing Platform - Display & Video 360 (DV360).**</li><li>Go to the **Integration tab**.<br />The integration status with GMP displays. [![mceclip2.png](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)</li><li>Verify that **Activate Partner** is **On.** If this is not the case, the advertiser must complete [Advertiser GMP-DV360 integration.](#setting-up-gmp-dv360-for-advertisers)</li><li>Verify that the remaining settings, such as the lookback windows and in-app event mapping, are correct. If necessary, ask the advertiser to make changes.</li><li>Enter one or more **DBM Advertiser ID**s. The ID is available in your <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/11415707?hl=en">GMP dashboard.</Anchor></li><li>Click **Save**.</li></ol> |
 
 ## GMP-DV360 discrepancies
 
@@ -317,10 +314,10 @@ See possible reasons for discrepancies and how to minimize them:
 | View-through attribution window | View-through in the GMP-DV360 attribution window is 14 days, while the AppsFlyer default window is 1 day. | To reduce the discrepancy, set the view-through window in AppsFlyer to the maximum 7-day window. |
 | Incorrect mapping | Mapping between AppsFlyer and GMP-DV360 isn't correct | <ul><li>Verify the link ID</li><li>Verify that the in-app events are correctly mapped</li></ul> |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Set up ROI360 cost API to measure cost data](/docs/set-up-roi360-cost-api-to-measure-cost-data)
-> * [AppsFlyer's Retargeting Attribution](/docs/retargeting-attribution-guide)
-> * [Custom event mapping](/docs/in-app-event-postback-configuration)
+> * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data">Set up ROI360 cost API to measure cost data</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">AppsFlyer's Retargeting Attribution</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">Custom event mapping</Anchor>
 
 <div data-zendesk-anchors="h_01HMEH8VW3PYCZ6GC4T5BYBS3V=important 01H8E4ZJNRMXY183TQCPW15ZQB=overview 01H8DYEV7JPV80T3YAJQQHBA6C=note data-sharing-between-appsflyer-and-gmp=data-sharing-between-appsflyer-and-gmp---dv360 h_01HQ0QJJRMYP3E6B5FVA0V6861=data-sharing-between-appsflyer-and-gmp---dv360 advertiser-gmp-integration=setting-up-gmp-dv360-for-advertisers 01H8DYEV7KYNB2FJG7N1CTEE86=setting-up-gmp-dv360-for-advertisers h_01KC714WNQWGCM1C1MC8S2PZXH=note-1 h_01HPYMRJ1WVVKCHKKEA6WD0XZP=integration-tab 01H8VVCC8G0KR4AA2HD9S8QBKD=activate-partner 01H8VVCC8GSDPSNN0AJPVZPR8P=general-settings 01H8VVCC8GK8VFPBEPAMVHCAWM=install-attribution reengagement-attribution=re-engagement-attribution 01H8VVCC8HHG5290PYF0BT29QA=re-engagement-attribution h_01K4AFW71RG9YE5EJE1FQCN4SE=note-2 reengagement-window=re-engagement-window h_01HQ06JCJZD6AMFR2B6GTMSM9S=re-engagement-window h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting h_01HMXNJVHK9C3FT8E04RE0TH99=note-3 inapp-event-postbacks=in-app-event-postbacks 01H8VVCC8HHZRFQ2T1X478YZMP=in-app-event-postbacks 01H8VVCC8HDMTY1P2SG31HD61K=note-4 parameter-mapping=u-parameter-mapping h_01HBBJQZSTT1HFENXNACMHFC18=u-parameter-mapping 01H8VVCC8H53ZRMDBNK1436NAX=attribution-link-tab h_01HBBJQZSW45X3SM92H4FS94HM=important-1 01H8VVCC8H74GDVCNAXT0741MG=cost-tab-for-cost-clicks-and-impressions h_01_dv360_cutover_discrepancy=note-5 01H8VVCC8H90ANM70QAHKTQQ1S=ad-revenue-tab 01H8VVCC8HVNNQ9PJS4ZQCVDNS=setting-up-gmp-dv360-for-agencies 01H8DYEV7MNFFY9ESFF2S3ETEB=agency-setup gmp-discrepancies=gmp-dv360-discrepancies 01H8DYEV7MTPJMY12AVHX45YFF=gmp-dv360-discrepancies h_01KYS9JJ9RSTDPHRZWW47DN438=see-also" />

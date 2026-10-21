@@ -1,8 +1,5 @@
 ---
 title: Smart Banners website code implementation for marketers
-excerpt: >-
-  Add the Smart Banners code to your website to convert your website visitors
-  into mobile app users.
 metadata:
   keywords:
     - OneLink
@@ -28,9 +25,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4416119954705-Smart-Banners-website-code-implementation-for-marketers
 ---
+**At a glance:** Add the Smart Banners code to your website to convert your website visitors into mobile app users.
+
 > 📘 **Note**
 >
-> AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. [Learn more](/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1)
+> AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. <Anchor target="_blank" href="/marketers/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Learn more</Anchor>
 
 ## Website code implementation
 
@@ -43,11 +42,11 @@ This article is intended for marketers who want to implement the Smart Banners c
 * Squarespace
 * WordPress
 
-To add the code to your website via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see [Smart Banners website code implementation for developers](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2).
+To add the code to your website via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners website code implementation for developers</Anchor>.
 
 **To implement the Smart Banners code on your site**:
 
-1. Follow the [website workplace instructions](/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup) to get the Smart Banners code.
+1. Follow the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup">website workplace instructions</Anchor> to get the Smart Banners code.
 2. Use the platform-specific instructions that follow to implement the code into your website:
 
 <div id="google-tag-manager" />
@@ -61,7 +60,7 @@ To add the code to your website via other platforms, or to make changes to the c
 3. In the HTML box, paste the Smart Banner code snippet. Replace YOUR-BANNER-KEY in the snippet with your actual banner key.
 4. Click **Triggering** and create a new trigger by clicking on the plus icon at the top right-hand corner of the screen.
 5. Name the trigger, and then, under **Trigger Configuration,** and choose **Page View**.
-6. If you want the banner to show up on all pages, select **All Page Views**. If you want the banner to show up on selected pages, select **Some Page Views** and define the condition to trigger the tag. To learn more about triggers, read [GTM's documentation](https://support.google.com/tagmanager/answer/7679319?hl=en&ref_topic=7679108).
+6. If you want the banner to show up on all pages, select **All Page Views**. If you want the banner to show up on selected pages, select **Some Page Views** and define the condition to trigger the tag. To learn more about triggers, read <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en&ref_topic=7679108">GTM's documentation</Anchor>.
 7. Click **Save** at the top right-hand corner.
 8. Return to the tag configuration screen. Verify that all is set and click **Save** at the top right-hand corner.
 9. Publish your GTM container.
@@ -80,7 +79,7 @@ To add the code to your website via other platforms, or to make changes to the c
 
 **To create a property (tag) that hosts the Smart Banners code**:
 
-1. Go to **Adobe Experience Cloud** >**Launch**.
+1. Go to **Adobe Experience Cloud** > **Launch**.
 2. Under **Adobe Experience Cloud Launch**, click **Go to Launch**.
 3. Click **New Property**.
 4. Name your property.
@@ -136,7 +135,7 @@ To add the code to your website via other platforms, or to make changes to the c
 2. Under the **Development** section, click **Add New Library.**
    1. Name the library and choose an environment.
    2. Under **Resource Changes**, click **Add a Resource.**
-   3. Click **Rules**> **Load Smart Banners** > **Latest** > **Select & Create a New Revision**.
+   3. Click **Rules** > **Load Smart Banners** > **Latest** > **Select & Create a New Revision**.
    4. Click **Save**.
 3. Under the **Development** section:
    1. Next to the newly created library, click the Action menu (3 dots) and select **Build for Development**.
@@ -148,7 +147,7 @@ To add the code to your website via other platforms, or to make changes to the c
 
 </Accordion>
 
-Now, when your website loads on mobile, the banner's active creative will be displayed. To only display the banner on certain pages or according to user actions, see [Adobe Launch rules](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html).
+Now, when your website loads on mobile, the banner's active creative will be displayed. To only display the banner on certain pages or according to user actions, see <Anchor target="_blank" href="https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html">Adobe Launch rules</Anchor>.
 
 </Accordion>
 
@@ -216,8 +215,8 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [PBA integration with Smart Banners](/docs/pba-web-sdk-integration-guide#installation-and-integration)
+> * <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#installation-and-integration">PBA integration with Smart Banners</Anchor>
 
 <div data-zendesk-anchors="h_01HBT97B1ZGKKTD0TN2J2W56ZQ=note h_01HBT97B1Z0F4B8E9GQWJEE6BH=website-code-implementation h_01HBT97B1ZKW36W9F0XQKM323P=google-tag-manager h_01HBT97B1ZX6VM1YER2HXTYQJ2=adobe-launch-tag-manager h_01HBT97B1ZPP0AKB5E31W36VC2=step-1-create-a-property-in-adobe-experience-cloud h_01HBT97B1ZK4T23MF4D6VGP4B8=step-2-add-smart-banners-code-to-the-adobe-launch-property h_01HBT97B1Z0W9VJ5FCW4605RDC=step-3-add-the-adobe-launch-tag-to-your-website h_01HBT97B1Z1W33DTT6NR4PQHQ0=step-4-publish-the-adobe-launch-environment h_01HBT97B1Z0NTYJKB2YFMX62P9=shopify h_01HBT97B1ZYVJ6PW7F811V5TAX=wix h_01HBT97B1ZS0FDM60M1GA04PRT=squarespace h_01HBT97B1ZKYB7XPGFG00PB2BT=wordpress h_01HE7SG3MJ4WTPMTXF0DA0M07D=see-also" />

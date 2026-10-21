@@ -1,8 +1,5 @@
 ---
 title: Audiences - Use Braze events in audience creation
-excerpt: >-
-  Send Braze message engagement events to AppsFlyer Audiences and use them to
-  add precision to your audience definitions.
 metadata:
   keywords:
     - Advertisers
@@ -25,12 +22,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4411130243217-Audiences-Use-Braze-events-in-audience-creation
 ---
-By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in [rulesets](/docs/audiences-guide#all-about-rulesets) when defining audiences.
+> **At a glance:** Send Braze message engagement events to AppsFlyer Audiences and use them to add precision to your audience definitions.
 
-**Prerequisites**
+By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in <Anchor target="_blank" href="/marketers/docs/audiences-guide#all-about-rulesets">rulesets</Anchor> when defining audiences.
 
-* Both the Braze and AppsFlyer SDKs must be integrated into your app.
-* You must subscribe to the **Currents** feature in Braze.
+> 🚧 **Important**
+>
+> **Prerequisites**
+>
+> * Both the Braze and AppsFlyer SDKs must be integrated into your app.
+> * You must subscribe to the **Currents** feature in Braze.
 
 ## Set up the Braze incoming connection
 
@@ -51,19 +52,20 @@ To create an incoming connection from Braze, the AppsFlyer SDK in your apps must
 
 You can configure a dedicated parameter to pass the Braze External ID to AppsFlyer using the `setPartnerData` function of the AppsFlyer SDK. Usage examples follow:
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```java
 Map<String, Object> brazeData = new HashMap<>();
 brazeData.put("external_user_id", "some-braze-external-id-value");
 AppsFlyerLib.getInstance().setPartnerData("braze_int", brazeData);
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-```
+```objectivec
 NSDictionary *brazeInfo = @{
 @"external_user_id":@"some-braze-external-id-value"
 };
@@ -71,13 +73,14 @@ NSDictionary *brazeInfo = @{
 partnerInfo:brazeInfo];
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 #### **Using the CUID field**
 
 There is no need to configure a dedicated parameter for the Braze External ID if:
 
-* You have configured the SDK to send AppsFlyer a [CUID](/docs/customer-user-id-field-cuid) for each user
+* You have configured the SDK to send AppsFlyer a <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">CUID</Anchor> for each user
 * The CUID has the same value as the Braze External ID
 
 In this case, you can simply select the **CUID option** as the SDK parameter when [creating your incoming Braze connection](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer).
@@ -127,28 +130,30 @@ In this case, you can simply select the **CUID option** as the SDK parameter whe
 
 #### supported events
 
-**Supported Braze events**
-
-* Subscription Group State Change
-* Email Click
-* Email Open
-* Email Send
-* Email Delivery
-* Email Mark as Spam
-* Email Unsubscribe
-* Email Bounce
-* Email Soft Bounce
-* Push Open
-* Push Send
-* Push Bounce
-* iOS Foreground Push
-* SMS/MMS Send
+> 📘 **Note**
+>
+> **Supported Braze events**
+>
+> * Subscription Group State Change
+> * Email Click
+> * Email Open
+> * Email Send
+> * Email Delivery
+> * Email Mark as Spam
+> * Email Unsubscribe
+> * Email Bounce
+> * Email Soft Bounce
+> * Push Open
+> * Push Send
+> * Push Bounce
+> * iOS Foreground Push
+> * SMS/MMS Send
 
 </Accordion>
 
 ## Using Braze data in Audiences
 
-Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the [ruleset filters](/docs/audiences-guide#ruleset-filters) for defining audiences.
+Once the Braze incoming connection is set up, the engagement events you've defined will appear as options in the <Anchor target="_blank" href="/marketers/docs/audiences-guide#ruleset-filters">ruleset filters</Anchor> for defining audiences.
 
 ![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
 

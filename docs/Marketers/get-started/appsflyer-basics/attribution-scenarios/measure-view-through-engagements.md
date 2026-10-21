@@ -1,8 +1,5 @@
 ---
 title: Measure view-through engagements
-excerpt: >-
-  A user who views an ad (impression) and subsequently installs the app, is
-  attributed by view-through attribution.
 metadata:
   keywords:
     - Advertisers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210084473-Measure-view-through-engagements
 ---
+**At a glance:** A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution.
+
 ## Overview
 
 View-through attribution measures installs, re-attributions, and re-engagements of users who viewed an ad but didn't click on it.
@@ -40,7 +39,7 @@ View-through attribution measures installs, re-attributions, and re-engagements 
 
 ### View-through attribution principles
 
-* Both [device ID matching](/docs/appsflyer-attribution-model#device-id-matching) and [probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling) are supported.
+* Both <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#device-id-matching">device ID matching</Anchor> and <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">probabilistic modeling</Anchor> are supported.
 * Supported by partners listed in the [view-through attribution partner list](/docs/measure-view-through-engagements#view-vta-partner-list).
 
 Impressions are candidates for view-through attribution using the following principles:
@@ -72,7 +71,7 @@ Impressions are candidates for view-through attribution using the following prin
 
 <Accordion title="Set impression links">
 
-Ad networks send impression links to AppsFlyer populated with campaign and other details similar to those included in click-through [attribution links](/docs/about-link-structure-and-parameters).
+Ad networks send impression links to AppsFlyer populated with campaign and other details similar to those included in click-through <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution links</Anchor>.
 
 The links are sent in real-time so that if an install follows an impression, it is attributed correctly.
 
@@ -81,17 +80,17 @@ Consider the following in preparing links:
 * The base URL is `https://impression.appsflyer.com`.
 * Use a GET request.
 * Include device IDs where available: IDFA, GAID, IDFV, and so on.
-* Include [probabilistic modeling](/docs/appsflyer-attribution-model#probabilistic-modeling-parameters-for-ad-networks) parameters.
+* Include <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling-parameters-for-ad-networks">probabilistic modeling</Anchor> parameters.
 * The device ID values can be hashed for better security using SHA1. The parameter name should begin with "sha1\_" and be followed by the parameter name and the hashed value, for example, sha1\_idfa, sha1\_advertising\_id, sha1\_android\_id, and sha1\_imei.
 
-> 📘 **Note**
+> 📄
 >
 >  Example
 >
 > ```
-> https://impression.appsflyer.com/`{app-id}?c={campaign name}&pid={media source}`
-> &af_viewthrough_lookback=1d&af_prt=`{agency_name}&af_siteid={site id value}`
-> &af_sub1=`{free value}&idfa={idfa value}`
+> https://impression.appsflyer.com/{app-id}?c={campaign name}&pid={media source}
+> &af_viewthrough_lookback=1d&af_prt={agency_name}&af_siteid={site id value}
+> &af_sub1={free value}&idfa={idfa value}
 > ```
 
 </Accordion>
@@ -102,9 +101,9 @@ Consider the following in preparing links:
 
 Advertisers utilize attribution impression links with their own custom media sources, for example, website banners.
 
-When advertisers [create custom attribution links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link), they get full impression links, which can be fired every time a user engages with their owned ads.
+When advertisers <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">create custom attribution links</Anchor>, they get full impression links, which can be fired every time a user engages with their owned ads.
 
-Custom impression links (created via OneLink) can also be used to perform view-through attribution of mobile website visitors. Learn more about [creating custom impression URLs](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url).
+Custom impression links (created via OneLink) can also be used to perform view-through attribution of mobile website visitors. Learn more about <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">creating custom impression URLs</Anchor>.
 
 </Accordion>
 
@@ -123,7 +122,7 @@ View-through attribution can be disabled per media source. However, if impressio
 
 **To turn off view-through-attribution:**
 
-1. In AppsFlyer, from the side menu, select**Collaborate**> **Active Integrations**.
+1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
 2. Select the integrated partner.
 3. In the Integration tab, turn off **Install view-through attribution**.
 4. Click **Save integration**.

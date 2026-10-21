@@ -13,12 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551240476177-Web-to-app-attribution
 ---
-- [Convert your mobile web visitors to app users](/docs/convert-your-mobile-web-visitors-to-app-users)
-- [Smart Banners—mobile web-to-app (for marketers)](/docs/smart-banners-mobile-web-to-app-for-marketers)
-- [Smart Banners website code implementation for marketers](/docs/smart-banners-website-code-implementation-for-marketers)
-- [Smart Banners website code implementation for developers](/docs/smart-banners-website-code-implementation-for-developers)
-- [Smart Banners and Smart Script security and performance](/docs/smart-banners-and-smart-script-security-and-performance)
-- [OneLink Smart Script overview](/docs/onelink-smart-script-overview)
-- [Set up Smart Script to convert web visitors](/docs/set-up-smart-script-to-convert-web-visitors)
-- [\[Legacy\] OneLink Smart Script V1 setup](/docs/legacy-onelink-smart-script-v1-setup)
-- [\[Deprecated\] Mobile landing page attribution script](/docs/deprecated-mobile-landing-page-attribution-script)
+- <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">Convert your mobile web visitors to app users</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners—mobile web-to-app (for marketers)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">Smart Banners website code implementation for marketers</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-developers">Smart Banners website code implementation for developers</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/smart-banners-and-smart-script-security-and-performance">Smart Banners and Smart Script security and performance</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">Set up Smart Script to convert web visitors</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/legacy-onelink-smart-script-v1-setup">\[Legacy\] OneLink Smart Script V1 setup</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/deprecated-mobile-landing-page-attribution-script">\[Deprecated\] Mobile landing page attribution script</Anchor>

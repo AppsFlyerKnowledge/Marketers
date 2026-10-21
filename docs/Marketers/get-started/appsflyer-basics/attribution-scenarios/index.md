@@ -13,12 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551328497041-Attribution-scenarios
 ---
-- [About ATT and SKAN <span class="af-star">★</span>](/docs/about-att-and-skan)
-- [Privacy-preserving campaign measurement](/docs/privacy-preserving-campaign-measurement)
-- [Set up multi-store Android attribution <span class="af-star">★</span>](/docs/set-up-multi-store-android-attribution)
-- [Set up AppsFlyer preload referrer attribution](/docs/set-up-appsflyer-preload-referrer-attribution)
-- [Measure attribution in the Chinese domestic market](/docs/measure-attribution-in-the-chinese-domestic-market)
-- [Measure preload campaigns with Google Play Install](/docs/measure-preload-campaigns-with-google-play-install)
-- [Measure uninstalls](/docs/measure-uninstalls)
-- [Measure view-through engagements](/docs/measure-view-through-engagements)
-- [Measure podcast-based campaigns](/docs/measure-podcast-based-campaigns)
+- <Anchor target="_blank" href="/marketers/docs/about-att-and-skan">About ATT and SKAN <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/privacy-preserving-campaign-measurement">Privacy-preserving campaign measurement</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">Set up multi-store Android attribution <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution">Set up AppsFlyer preload referrer attribution</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measure-attribution-in-the-chinese-domestic-market">Measure attribution in the Chinese domestic market</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install">Measure preload campaigns with Google Play Install</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measure-uninstalls">Measure uninstalls</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements">Measure view-through engagements</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measure-podcast-based-campaigns">Measure podcast-based campaigns</Anchor>

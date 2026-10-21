@@ -1,11 +1,5 @@
 ---
 title: Ligatus campaign configuration
-excerpt: >-
-  Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising
-  Solutions for Publishers, Advertisers, and Programmatic buyers offering
-  high-quality and high-performance results. In addition to click-based mobile
-  attribution, Ligatus also offers cost, ad revenue, retargeting, and
-  view-through attribution, which you can record with AppsFlyer.
 metadata:
   keywords:
     - Ligatus
@@ -28,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211189743-Ligatus-campaign-configuration
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png)
+**At a glance:** Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising Solutions for Publishers, Advertisers, and Programmatic buyers offering high-quality and high-performance results. In addition to click-based mobile attribution, Ligatus also offers cost, ad revenue, retargeting, and view-through attribution, which you can record with AppsFlyer.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
 
 ## Setting up Ligatus
 
@@ -41,14 +37,14 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 Ligatus's configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tab setup.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
+> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional**
 
 <div id="integration-tab" />
@@ -60,7 +56,7 @@ The Integration tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the Integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation, please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### Default postbacks
 
@@ -90,12 +86,12 @@ Adding parameters to the attribution link here enables you to perform thorough d
   **Attribution link parameter:** af\_adset
 * **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Ligatus.  
   **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the subsite ID parameter to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
 ### Click-through attribution
 
@@ -103,7 +99,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ### Click attribution link
 

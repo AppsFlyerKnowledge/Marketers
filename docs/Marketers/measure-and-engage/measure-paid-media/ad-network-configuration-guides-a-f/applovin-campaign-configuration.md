@@ -1,10 +1,5 @@
 ---
 title: AppLovin campaign configuration
-excerpt: >-
-  AppLovin, an AppsFlyer integrated partner, is a well-known ad network for
-  mobile app traffic. In addition to click-based mobile attribution, AppLovin
-  also offers cost, ad revenue, and view-through attribution, which you can
-  record with AppsFlyer.
 metadata:
   keywords:
     - Applovin
@@ -27,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208335613-AppLovin-campaign-configuration
 ---
+**At a glance:** AppLovin, an AppsFlyer integrated partner, is a well-known ad network for mobile app traffic. In addition to click-based mobile attribution, AppLovin also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
+
 ## Setting up AppLovin
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -38,8 +35,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -48,7 +45,7 @@ x-zendesk:
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, click [here](/docs/partner-activation-deactivation).
+For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 > 📘 **Note**
 >
@@ -99,10 +96,10 @@ In this section you can map which of your AppsFlyer events to send to AppLovin v
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -110,17 +107,17 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
 
-> 📘 **Applovin billable cost**
+> 🚧 **Applovin billable cost**
 >
-> As of August 1, 2024, Applovin bills all their customers based on probabilistic installs. Prior to this date, some customers were billed based on SKAN installs. [See Applovin for additional information](https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method)
+> As of August 1, 2024, Applovin bills all their customers based on probabilistic installs. Prior to this date, some customers were billed based on SKAN installs. <Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">See Applovin for additional information</Anchor>
 >
 > The AppsFlyer cost integration with AppLovin accurately reflects this billable cost. Meaning the cost in AppsFlyer properly matches the cost on the AppLovin platform.
 
@@ -131,11 +128,11 @@ AppsFlyer gets cost details by API. See the [ad network cost integration table](
 <Accordion title="Ad revenue tab">
 
 * Applovin provides ad revenue mediation with aggregate data.
-* About [ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution) (ad monetization)
+* About <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> (ad monetization)
 
 **To enable the ad revenue API**:
 
-* Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
 > 📘 **Note**
 >
@@ -162,7 +159,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 

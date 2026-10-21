@@ -1,9 +1,5 @@
 ---
 title: Appodeal campaign configuration
-excerpt: >-
-  Appodeal, an AppsFlyer integrated partner, provides app owners with click
-  attribution and an all-in-one ad monetization solution. Ad revenue is reported
-  with user-level granularity.
 metadata:
   keywords:
     - ad revenue
@@ -27,11 +23,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004404977-Appodeal-campaign-configuration
 ---
+**At a glance:** Appodeal, an AppsFlyer integrated partner, provides app owners with click attribution and an all-in-one ad monetization solution. Ad revenue is reported with user-level granularity.
+
 ## Setting up Appodeal integration
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)
 
-AppsFlyer integration with Appodeal supports click attribution and [user-level ad revenue attribution.](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
+AppsFlyer integration with Appodeal supports click attribution and <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data">user-level ad revenue attribution.</Anchor>
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
@@ -42,7 +40,7 @@ AppsFlyer integration with Appodeal supports click attribution and [user-level a
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below:
 
 <div id="integration" />
@@ -62,7 +60,7 @@ Configure this section if Appodeal provides ad network advertising services.
 
 <Accordion title="Attribution link">
 
-Generate click attribution links (for use by Appodeal) via this tab. [More about link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate click attribution links (for use by Appodeal) via this tab. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about link structure and parameters</Anchor>.
 
 **To generate an attribution link**:
 
@@ -85,7 +83,7 @@ Generate click attribution links (for use by Appodeal) via this tab. [More about
 | Campaign | c | Name of the campaign |
 | Adset | af\_adset | Use to differentiate add sets. |
 | Ad name | af\_ad | Use to differentiate between creatives within the add set. |
-| Site ID | af\_siteid  <br />af\_subsiteid | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<ul><li>Limit the number of site IDs in use</li><li>Use the subsite ID parameter to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitation</li></ul> |
+| Site ID | af\_siteid  <br />af\_subsiteid | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<ul><li>Limit the number of site IDs in use</li><li>Use the subsite ID parameter to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitation</li></ul> |
 | Subscriber parameters | af\_sub1, af\_sub2, af\_sub3, af\_sub4, and af\_sub5 | Use to insert values.<ul><li>Parameters are parsed and included in the raw data report.</li><li>Use them to perform data aggregation or filtering</li></ul> |
 
 </Accordion>
@@ -102,12 +100,12 @@ Appodeal sends CPI cost data via the attribution link.
 
 <Accordion title="Ad revenue">
 
-* Appodeal provides ad revenue mediation with [user-level granularity](/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data)
-* Learn more about [AppsFlyer ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution)
+* Appodeal provides ad revenue mediation with <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data">user-level granularity</Anchor>
+* Learn more about <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">AppsFlyer ad revenue attribution</Anchor>
 
 **To enable the ad revenue API**:
 
-* Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
 </Accordion>
 

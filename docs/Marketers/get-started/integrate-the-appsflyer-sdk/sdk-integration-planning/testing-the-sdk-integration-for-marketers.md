@@ -1,6 +1,5 @@
 ---
 title: Testing the SDK integration for marketers
-excerpt: Test your Android or iOS app integration with AppsFlyer.
 metadata:
   keywords:
     - Testing
@@ -27,17 +26,19 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001559405-Testing-the-SDK-integration-for-marketers
 ---
+> **At a glance:** Test your Android or iOS app integration with AppsFlyer.
+
 ## Overview
 
 After the SDK integration is complete you can verify that the SDK is communicating successfully with AppsFlyer servers. Marketers can choose between two testing methods:
 
 * Testing using the **SDK Integration Test** page that enables you to:
-  * ![](https://files.readme.io/16b90e430d7beea0eaa1530130d094d590c0a202f6c6ad298a88aac9508fee7a-31828933593745.png) [View events in real-time](#view-live-events) as they occur in your tested app.
+  * <Image alt="" src="https://files.readme.io/16b90e430d7beea0eaa1530130d094d590c0a202f6c6ad298a88aac9508fee7a-31828933593745.png" width="30px" /> [View events in real-time](#view-live-events) as they occur in your tested app.
   * [Test non-organic install](#h_01HYX9R15931HJEA06SY3K47W5)
   * [Test deep links (retargeting)](#h_01HYX9R159DDNJW53AWTWT4C2Z)
 * [Test using attribution links.](#testing-using-attribution-links)
 
-Developers can perform integration testing in their development environment. See the [Dev Hub's Integration testing articles](https://dev.appsflyer.com/hc/docs/integration-testing).
+Developers can perform integration testing in their development environment. See the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integration-testing">Dev Hub's Integration testing articles</Anchor>.
 
 CTV apps can also be tested, see [Testing CTV](#testing-ctv).
 
@@ -45,15 +46,17 @@ CTV apps can also be tested, see [Testing CTV](#testing-ctv).
 
 Use the **SDK Integration Tests** page to view real-time live events, such as installs, ad revenue, and in-app events, as they occur in your app. You can also test non-organic installs, in-app events, and deep linking (retargeting), and locate any integration issues in your project. The live event viewer replaces the legacy in-app event testing tool.
 
-The SDK integration test page works only in apps where the SDK collects a device ID.
-
-* **iOS:** Make sure the user has granted App Tracking Transparency (ATT) permissions so that the IDFA can be collected. You can test non-ATT apps using the procedure specified here.
-* **Android:** Although the device ID (GAID) is typically collected automatically, we recommend verifying that the SDK collects it.
+> 📘 **Note**
+>
+> The SDK integration test page works only in apps where the SDK collects a device ID.
+>
+> * **iOS:** Make sure the user has granted App Tracking Transparency (ATT) permissions so that the IDFA can be collected. You can test non-ATT apps using the procedure specified here.
+> * **Android:** Although the device ID (GAID) is typically collected automatically, we recommend verifying that the SDK collects it.
 
 ### **Prepare a test device**
 
 1. Prepare a device (Android or iOS) that does not have the app installed. If needed, uninstall the app from the device.
-2. [Register the device as a test device.](/docs/registering-test-devices)
+2. <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Register the device as a test device.</Anchor>
 
 ### Perform the integration tests
 
@@ -63,7 +66,9 @@ The **SDK Integration Tests** page provides the following three tests:
 
 The Live Event Viewer is a testing tool that displays real-time data sent from the SDK to AppsFlyer, including install, ad revenue, and store revenue events, and other in-app events. For each event captured, you can see the event log and details.
 
-The Live Events Viewer also supports in-app events and sessions created from a test device, sent to your server, and ingested into AppsFlyer through the S2S API. Make sure the S2S events include the device identifier (IDFA for iOS, GAID for Android) of the registered test device.
+> 📘 **Note**
+>
+> The Live Events Viewer also supports in-app events and sessions created from a test device, sent to your server, and ingested into AppsFlyer through the S2S API. Make sure the S2S events include the device identifier (IDFA for iOS, GAID for Android) of the registered test device.
 
 **To view events in the Live Event Viewer:**
 
@@ -102,8 +107,8 @@ The Live Events Viewer also supports in-app events and sessions created from a t
 
 **If the app does not record a non-organic install, possible reasons might be:**
 
-* IDFA is available but the test device was not [registered with this identifier on the Test devices page](/docs/registering-test-devices#registering-an-ios-test-device).
-* You have more than 1 of your apps, besides the test app, installed on the test device but the test device was not [registered with IDFV on the Test devices page](/docs/registering-test-devices#registering-an-ios-test-device).
+* IDFA is available but the test device was not <Anchor target="_blank" href="/marketers/docs/registering-test-devices#registering-an-ios-test-device">registered with this identifier on the Test devices page</Anchor>.
+* You have more than 1 of your apps, besides the test app, installed on the test device but the test device was not <Anchor target="_blank" href="/marketers/docs/registering-test-devices#registering-an-ios-test-device">registered with IDFV on the Test devices page</Anchor>.
 * An organic install was recorded.
 * The test was performed on a version of the app that does not include the SDK.
 
@@ -116,8 +121,8 @@ For integration errors, contact your developer.
 **Before you begin:**
 
 * Launch the test app at least 3 times.
-* To test deep linking (retargeting), OneLink must be defined for your app. For more information, see the [OneLink Setup guide](/docs/create-a-onelink-template).
-* Verify that [retargeting](/docs/app-settings#reengagement-attribution) is turned on.
+* To test deep linking (retargeting), OneLink must be defined for your app. For more information, see the <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink Setup guide</Anchor>.
+* Verify that <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">retargeting</Anchor> is turned on.
 
 **To test deep links:**
 
@@ -148,18 +153,19 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
    1. **app\_id** value: Add your app ID in AppsFlyer.
    2. **pid** parameter: Specify the name of the media source to which the install is attributed.
    3. **c** parameter: Specify the name of the campaign.
-   4. If you are testing an app available via a third-party Android store, add the [af\_r parameter](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) to the attribution link.
+   4. If you are testing an app available via a third-party Android store, add the <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links">af\_r parameter</Anchor> to the attribution link.
    5. Replace the GAID, IDFA, or IDFV with your specific device identifier.
 
-   <Accordion title="Android">
+   <Tabs>
+   <Tab title="Android">
 
    ```
    https://app.appsflyer.com/<app_id>?pid=Test&c=Test&advertising_id=<GAID>
    ```
 
-   </Accordion>
+   </Tab>
 
-   <Accordion title="iOS">
+   <Tab title="iOS">
 
    IDFA
 
@@ -173,11 +179,13 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
    https://app.appsflyer.com/<app_id>?pid=Test&c=Test&idfv=<IDFV>
    ```
 
-   </Accordion>
+   </Tab>
+   </Tabs>
 
    The following are examples of attribution links with specific values:
 
-   <Accordion title="Android">
+   <Tabs>
+   <Tab title="Android">
 
    ```
 
@@ -187,9 +195,9 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
    https://app.appsflyer.com/com.my.app?pid=Test&c=Test&advertising_id=12345f9*-eba*-421*-876*-7654ac67876*
    ```
 
-   </Accordion>
+   </Tab>
 
-   <Accordion title="iOS">
+   <Tab title="iOS">
 
    ```
 
@@ -199,15 +207,20 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
    https://app.appsflyer.com/id123456789?pid=Test&c=Test&idfa=1A2B****-9128-4***-123*-04E***654321
    ```
 
-   </Accordion>
+   </Tab>
+   </Tabs>
 
-If you're testing an iOS app without registering a test device your test click can be flagged as fraudulent by Protect 360.
-
-To prevent this event from being detected as fraud, add the following query parameter to your link: pid=ios\_testing
+> 📘 **Note**
+>
+> If you're testing an iOS app without registering a test device your test click can be flagged as fraudulent by Protect 360.
+>
+> To prevent this event from being detected as fraud, add the following query parameter to your link: pid=ios\_testing
 
 1. Copy your updated link, send it to the test device, and then click the link.
 
-In iOS, use iMessage or email to send the link to the device. Don't paste the link in the iOS Notes app and click the link. This action can cause the link to break.
+> 📘 **Note**
+>
+> In iOS, use iMessage or email to send the link to the device. Don't paste the link in the iOS Notes app and click the link. This action can cause the link to break.
 
 1. Do one of the following:
 
@@ -220,12 +233,14 @@ In iOS, use iMessage or email to send the link to the device. Don't paste the li
 
    [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
 
-The following describes alternative ways to verify your test results:
-
-* If you have access to raw-data reports, download the Installs raw data report. This report takes several minutes to download. **To download the report:**
-  1. In AppsFlyer, from the side menu,select **Report** > **Raw Data Export.**
-  2. From the **User acquisition (non-organic)** list, click **Installs**, and then download the report.
-* If you have access to the debug logs, you can use the Get the conversion data API to retrieve the attribution results for a specific install.
+> 👍 **Tip**
+>
+> The following describes alternative ways to verify your test results:
+>
+> * If you have access to raw-data reports, download the Installs raw data report. This report takes several minutes to download. **To download the report:**
+>   1. In AppsFlyer, from the side menu,select **Report** > **Raw Data Export.**
+>   2. From the **User acquisition (non-organic)** list, click **Installs**, and then download the report.
+> * If you have access to the debug logs, you can use the Get the conversion data API to retrieve the attribution results for a specific install.
 
 </Accordion>
 
@@ -239,7 +254,7 @@ Testing in-app events allows you to verify that revenue associated with an event
 2. Open the app's Activity dashboard, and check that the events are there.  
    You should see the events, their revenue (if revenue is associated with them), and the media source to which they are associated. Allow up to 60-70 minutes for the events to appear in the dashboard.
 
-**Tip!** Consider downloading the [in-app events raw data report](/docs/raw-data-reporting-overview) to verify that events are attributed correctly. This report takes several minutes to download.
+**Tip!** Consider downloading the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">in-app events raw data report</Anchor> to verify that events are attributed correctly. This report takes several minutes to download.
 
 **To download the report:**
 
@@ -254,7 +269,7 @@ OneLink allows you to set a single attribution link for both Android and iOS. On
 
 In addition, OneLink enables deep linking. Deep linking allows you to open the app in a specific app activity while serving customized content.
 
-For more information, see our guide on [testing OneLink URLs](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing).
+For more information, see our guide on <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">testing OneLink URLs</Anchor>.
 
 </Accordion>
 
@@ -264,7 +279,7 @@ The following sections describe the procedures you should follow to test retarge
 
 <Accordion title="About retargeting tests">
 
-Retargeting attribution occurs when a user engages with a retargeting campaign by clicking on a retargeting attribution link. This results in a re-attribution or a re-engagement event. For more information, see the [Retargeting attribution guide](/docs/retargeting-attribution-guide).
+Retargeting attribution occurs when a user engages with a retargeting campaign by clicking on a retargeting attribution link. This results in a re-attribution or a re-engagement event. For more information, see the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution guide</Anchor>.
 
 Retargeting tests include the following :
 
@@ -288,13 +303,13 @@ Before running retargeting tests, the following setup is required:
 
    ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
 2. Do one of the following:
-   * Create an app-specific attribution link. Make sure to include the retargeting parameter, `is_retargeting=true`, and the advertising ID. To view the GAID, IDFA, or IDFV, follow the  [Registering a test device](/docs/registering-test-devices) instructions.    
-     The following is an example of an attribution link that includes an Android-specific parameter as the device identifier (GAID). For more information about adding other device identifier parameters, such as IDFA or IDFV, see [Attribution link structure and parameters](/docs/about-link-structure-and-parameters#ios-specific-parameters).
+   * Create an app-specific attribution link. Make sure to include the retargeting parameter, `is_retargeting=true`, and the advertising ID. To view the GAID, IDFA, or IDFV, follow the  <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Registering a test device</Anchor> instructions.    
+     The following is an example of an attribution link that includes an Android-specific parameter as the device identifier (GAID). For more information about adding other device identifier parameters, such as IDFA or IDFV, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#ios-specific-parameters">Attribution link structure and parameters</Anchor>.
 
      ```
      https://app.appsflyer.com/<app_id>?pid=Test&c=Test&is_retargeting=true&advertising_id=<GAID>
      ```
-   * Retrieve the [custom link's long URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) from a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template). Make sure to activate [Retargeting campaign](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings). The following image shows an example of a custom long URL: ![Testing_LongLink_en-us.png](https://files.readme.io/19c706b0cc11b83a5cb08d51b3418654c6fa1e597ee7ff9e631db21c33c00b82-31828933632401.png)
+   * Retrieve the <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">custom link's long URL</Anchor> from a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>. Make sure to activate <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">Retargeting campaign</Anchor>. The following image shows an example of a custom long URL: ![Testing_LongLink_en-us.png](https://files.readme.io/19c706b0cc11b83a5cb08d51b3418654c6fa1e597ee7ff9e631db21c33c00b82-31828933632401.png)
 
 You can now proceed to test re-attribution and re-engagement.
 
@@ -312,7 +327,9 @@ You can now proceed to test re-attribution and re-engagement.
 1. Uninstall the app from the device. If you just installed the app, wait for a few minutes.
 2. Copy the [attribution link](/docs/testing-the-sdk-integration-for-marketers#prerequisites-to-run-retargeting-tests) you created previously, either the app-specific attribution link or custom long link from the OneLink template, send it to the test device, and then click the link.
 
-In iOS, use iMessage or email to send the link to the device. Don't paste the link in the iOS Notes app and click the link. This action may cause the link to break.
+> 📘 **Note**
+>
+> In iOS, use iMessage or email to send the link to the device. Don't paste the link in the iOS Notes app and click the link. This action may cause the link to break.
 
 1. Do one of the following:
    * If the app is live, proceed to install it.
@@ -326,12 +343,14 @@ In iOS, use iMessage or email to send the link to the device. Don't paste the li
 
    [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
 
-The following describes alternative ways to verify your test results:
-
-* If you have access to raw-data reports, download the Conversions raw-data report. This report takes several minutes to download. **To download the report:**
-  1. In AppsFlyer, from the side menu,select **Report** > **Raw Data Export.**
-  2. From the **Retargeting** list, click **Conversions (re-engagements & re-attributions)**, and then download the report.
-* If you have access to the debug logs, you can use the SDK integration test API to retrieve the attribution results for a specific install.
+> 👍 **Tip**
+>
+> The following describes alternative ways to verify your test results:
+>
+> * If you have access to raw-data reports, download the Conversions raw-data report. This report takes several minutes to download. **To download the report:**
+>   1. In AppsFlyer, from the side menu,select **Report** > **Raw Data Export.**
+>   2. From the **Retargeting** list, click **Conversions (re-engagements & re-attributions)**, and then download the report.
+> * If you have access to the debug logs, you can use the SDK integration test API to retrieve the attribution results for a specific install.
 
 </Accordion>
 
@@ -345,7 +364,7 @@ The following describes alternative ways to verify your test results:
 
 **To test re-engagement (direct deep linking):**
 
-Make sure that your app is configured for [deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking), and then follow [this procedure](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing) for testing.
+Make sure that your app is configured for <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep linking</Anchor>, and then follow <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">this procedure</Anchor> for testing.
 
 **To test re-engagement (indirect deep linking):**
 
@@ -375,7 +394,7 @@ We recommend that you start by testing an organic install.
 
 **To test an organic install:**
 
-1. Install the app on a [registered test device](/docs/registering-test-devices).
+1. Install the app on a <Anchor target="_blank" href="/marketers/docs/registering-test-devices">registered test device</Anchor>.
 2. Launch the app.
 
 The app's dashboard displays a new organic install. Allow up to 30 minutes for the install to appear.
@@ -388,13 +407,15 @@ Special test cases include the following:
 
 * **Android TV:** The SDK is compatible with Android-based smart TVs. A marketer or any team member can test these TV apps by following the procedures in this article.
 * **Apple TV (tvOS):** The SDK is compatible with Apple TVs (tvOS). A marketer or any team member can test these TV apps by following the procedures in this article.
-* **Unpublished tvOS apps:** Requires a marketer and developer to work together (see [Testing tvOS integration before publishing](/docs/testing-tvos-integration-before-publishing)).
-* **Amazon Fire TV:** A marketer can [test the integration](/docs/testing-the-sdk-integration-for-marketers#testing-from-the-dashboard) using the Android SDK testing method in the AppsFlyer dashboard. (Learn more about [Amazon Fire TV attribution](/docs/setting-up-amazon-fire-tv-ad-attribution)).
-* **PBA web events:** Requires a marketer and developer to work together (see [Testing PBA web SDK integration](/docs/test-pba-web-sdk-integration)).
+* **Unpublished tvOS apps:** Requires a marketer and developer to work together (see <Anchor target="_blank" href="/marketers/docs/testing-tvos-integration-before-publishing">Testing tvOS integration before publishing</Anchor>).
+* **Amazon Fire TV:** A marketer can [test the integration](/docs/testing-the-sdk-integration-for-marketers#testing-from-the-dashboard) using the Android SDK testing method in the AppsFlyer dashboard. (Learn more about <Anchor target="_blank" href="/marketers/docs/setting-up-amazon-fire-tv-ad-attribution">Amazon Fire TV attribution</Anchor>).
+* **PBA web events:** Requires a marketer and developer to work together (see <Anchor target="_blank" href="/marketers/docs/test-pba-web-sdk-integration">Testing PBA web SDK integration</Anchor>).
 
-See also
-
-* Ad network integration testing Ad network integration testing
+> 📘 **Note**
+>
+> See also
+>
+> * Ad network integration testing Ad network integration testing
 
 ## Traits and limitations
 

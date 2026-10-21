@@ -1,8 +1,5 @@
 ---
 title: Cross-promotion attribution for marketers
-excerpt: >-
-  Attribute installs from cross-promotion campaigns that promote your apps on
-  other apps you own.
 metadata:
   keywords:
     - tracking
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004481946-Cross-promotion-attribution-for-marketers
 ---
+**At a glance:** Attribute installs from cross-promotion campaigns that promote your apps on other apps you own.
+
 ![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
 ## About cross-promotion
@@ -40,7 +39,7 @@ The following image shows the promoted app's dashboard with a breakdown of metri
 ### How does cross-promotion work?
 
 1. The user is served a cross-promotion ad on an existing app your company owns. The ad is promoting another app also owned by your company. The ad creative can be a banner, video, or any clickable object.
-2. [optional] The [SDK records and sends](/docs/cross-promotion-attribution-for-developers) a cross-promotion impression to AppsFlyer.
+2. [optional] The <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-developers">SDK records and sends</Anchor> a cross-promotion impression to AppsFlyer.
 3. The user clicks on the ad.
 4. The SDK records the click and redirects the user to the promoted app's page on the app store. The click recorded by the SDK already includes the device advertising ID.
 5. Once the promoted app is installed and launched, the [AppsFlyer dashboard](/docs/cross-promotion-attribution-for-marketers#promoted-app-dashboard) shows the newly acquired user under the media source **af\_cross\_promotion**.
@@ -51,7 +50,7 @@ The following image shows the promoted app's dashboard with a breakdown of metri
 
 ## Attributing cross-promotion
 
-AppsFlyer allows you to use device ID matching as the attribution method for recording and attributing installs that originate from your cross-promotion campaigns. You can attribute both impressions and clicks, enabling you to calculate the [click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1) or installs/impressions ratio.
+AppsFlyer allows you to use device ID matching as the attribution method for recording and attributing installs that originate from your cross-promotion campaigns. You can attribute both impressions and clicks, enabling you to calculate the <Anchor target="_blank" href="/marketers/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">click-through rate</Anchor> or installs/impressions ratio.
 
 The device identifier used for matching depends on the following:
 
@@ -74,8 +73,8 @@ The flow for the marketer and the developer is as follows:
 | Step | Role | Task | Details |
 | --- | --- | --- | --- |
 | 1 | Marketer | Decide on the existing apps in which to run the cross-promotion campaign. | The source app attributed with the install will appear as the **Site ID** in the promoted app’s dashboard. |
-| 2 | Marketer | Determine if you want to add [additional parameters](/docs/about-link-structure-and-parameters) such as lookback window, ad set name, and subscriber parameters. Send these additional parameter names and values to the developer. |  |
-| 3 | Developer | Implement the code in the SDK. | Developer documentation is [here](/docs/cross-promotion-attribution-for-developers). |
+| 2 | Marketer | Determine if you want to add <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">additional parameters</Anchor> such as lookback window, ad set name, and subscriber parameters. Send these additional parameter names and values to the developer. |  |
+| 3 | Developer | Implement the code in the SDK. | Developer documentation is <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-developers">here</Anchor>. |
 | 4 | Marketer | In the [promoted app's dashboard](/docs/cross-promotion-attribution-for-marketers#promoted-app-dashboard), view the traffic coming from the cross-promotion campaign and optimize your campaigns accordingly. |  |
 | 5 [Optional] | Marketer | Create a [custom dashboard](/docs/cross-promotion-attribution-for-marketers#custom-dashboard) to compare cross-promotion traffic and share data with account users. |  |
 
@@ -95,7 +94,7 @@ The promoted app's dashboard enables you to determine which source apps send the
 
 Viewing the installs, clicks, impressions, and conversion rate data from several existing apps all serving ads for the same promoted app enables you to perform affinity analysis. The source apps (Site IDs) with the best conversion rates have the best affinity with the promoted app, and their users are most likely to install it. Based on these insights, you can optimize your cross-promotion campaigns accordingly.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You are a marketer of gaming apps for PlayIt Gaming International. You have a number of successful apps, including Bowling (com.playit.bowling) and Golfing (com.playit.golfing). You have just launched a new app called Billiards. You decide to run cross-promotion tests to see how many users actually click on the Billiards ad in one of the existing apps. The campaign runs well on Bowling, with a conversion rate of 7.92%, so you decide to advertise on Golfing as well.
 >
@@ -106,15 +105,15 @@ Viewing the installs, clicks, impressions, and conversion rate data from several
 > Based on these insights, you could optimize your campaign as follows:
 >
 > * Run a full-scale cross-promotion campaign on Golfing.
-> * Start to [attribute impressions](/docs/measure-view-through-engagements#view-through-attribution-flow) in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
+> * Start to <Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements#view-through-attribution-flow">attribute impressions</Anchor> in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
 
 ### Custom dashboard
 
 The promoted app's dashboard is great for getting a picture of which source apps are driving the best traffic. But what about if you want to evaluate the performance of a single existing app being used to promote multiple apps? This is where a custom dashboard can do exactly what you need.
 
-A [custom dashboard](/docs/custom-dashboards) allows you to view information from several promoted apps in one place, including cross-promotion traffic. In addition, a custom dashboard is a quick and easy way to share data with account users.
+A <Anchor target="_blank" href="/marketers/docs/custom-dashboards">custom dashboard</Anchor> allows you to view information from several promoted apps in one place, including cross-promotion traffic. In addition, a custom dashboard is a quick and easy way to share data with account users.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You are a marketer for eCommerce Apps, Ltd., and you have a highly successful app called Shoes. You are now launching 3 new apps, Accessories, Jackets and Coats, and Sport Shoes. You decide to run a cross-promotion campaign in the Shoe app to see which of your new apps it does the best job of promoting.
 >

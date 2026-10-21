@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550930711057-Raw-data-reporting-APIs
 ---
-- [Raw data reporting overview](/docs/raw-data-reporting-overview)
-- [Raw data field dictionary](/docs/raw-data-field-dictionary)
-- [Data availability windows](/docs/data-availability-windows)
+- <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reporting overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">Raw data field dictionary</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/data-availability-windows">Data availability windows</Anchor>

@@ -1,9 +1,5 @@
 ---
 title: Partner Integrations
-excerpt: >-
-  Discover, review, activate, and manage partner integrations (ad networks,
-  agencies, tech partners, analytics platforms, and more) from one central place
-  in AppsFlyer.
 metadata:
   keywords:
     - Marketers
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/9960361873809-Partner-Integrations
 ---
+**At a glance**: Discover, review, activate, and manage partner integrations (ad networks, agencies, tech partners, analytics platforms, and more) from one central place in AppsFlyer.
+
 <Embed title="Partner Integrations" typeOfEmbed="youtube" url="https://www.youtube.com/embed/gADoRdje5z8" providerUrl="https://www.youtube.com" />
 
 ## About partner integrations
@@ -83,7 +81,7 @@ The **Active integrations** tab allows you to:
 | Go to the Marketplace tab | Click the **Marketplace** tab to explore new partners, where you can find all partners integrated with AppsFlyer. |
 | Manage the integration | Click a partner card or **Manage integration** to view and manage the partner integration setup page. |
 | Search within your active integrations | Enter a partner name in the search bar to find an active partner for the currently selected app. |
-| Change apps | The list of active partner integrations depends on the currently selected app. To see [active partners](/docs/partner-activation-deactivation#active-partners) for a different app:<ol><li>Click the app selector to open the list of your apps.</li><li>Select another app.</li></ol> |
+| Change apps | The list of active partner integrations depends on the currently selected app. To see <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#active-partners">active partners</Anchor> for a different app:<ol><li>Click the app selector to open the list of your apps.</li><li>Select another app.</li></ol> |
 | See the partner page | Click the **About** icon on a partner card to view the partner page. |
 
 ## Discover partners
@@ -105,7 +103,7 @@ Browse partner cards for basic information about each partner:
 * **About** (opens the partner page)
 * **Integrate / Manage integration** (starts setup or opens the integration configuration)
 
-![partner card.png](https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png)
+<Image alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
 
 ### Filter the list of partners
 
@@ -123,7 +121,7 @@ Use the filters at the top of the page to find partners relevant to your search.
 
 Use the search bar to find specific partners.
 
-![serach for partners.png](https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png)
+<Image alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
 
 When using the search bar in the Marketplace tab:
 
@@ -136,7 +134,7 @@ When using the search bar in the Marketplace tab:
 
 You can learn more about each partner and connect with them on their partner page. Click the **About** button on a [partner card](#partner-cards) to open the partner page.
 
-![new cropped partner image.png](https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png)
+<Image alt="new cropped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
 
 ### What you can do from the partner page
 
@@ -182,7 +180,7 @@ After [discovering new partners](#discover-partners) and learning about their ac
 >
 > 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
 > 2. Search for the partner and select it. Click the partner card or the **Integrate** button to open the integration setup page.
-> 3. Turn on **Activate partner** and [set up the rest of the integration sections](/docs/set-up-an-integrated-partner).
+> 3. Turn on **Activate partner** and <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">set up the rest of the integration sections</Anchor>.
 
 ## Invite new partners to AppsFlyer
 
@@ -194,14 +192,14 @@ Before new ad network integrations can be added to the Marketplace, they undergo
 
 > 📘 **Note**
 >
-> * Only [admins](/docs/user-management#invite-new-partners-to-appsflyer) can invite new partners via the invite link.
+> * Only <Anchor target="_blank" href="/marketers/docs/user-management#invite-new-partners-to-appsflyer">admins</Anchor> can invite new partners via the invite link.
 > * This option is available for customers in Growth and Enterprise plans.
 
 **To invite a new partner to integrate with AppsFlyer:**
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
 2. From the top-right corner of the Partner Marketplace page, click the letter icon.  
-   ![invite new partner.png](https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png)
+   <Image alt="invite new partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
 3. Enter the partner's name and relevant email address.
 
 The partner will receive an email with a registration link to start the signup process.

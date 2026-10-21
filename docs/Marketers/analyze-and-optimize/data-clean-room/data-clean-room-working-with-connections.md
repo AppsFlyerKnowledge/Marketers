@@ -1,8 +1,5 @@
 ---
 title: Data Clean Room—Working with connections
-excerpt: >-
-  Connect your cloud services to the Data Clean Room in order to upload data and
-  receive reports.
 metadata:
   keywords:
     - Premium
@@ -25,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/13886278812817-Data-Clean-Room-Working-with-connections
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance:** Connect your cloud services to the Data Clean Room in order to upload data and receive reports.
 
 ## Overview
 
@@ -54,7 +53,7 @@ Either way, the process is the same, and you can use the created connections in 
 
 **To create a new inbound connection as part of the source creation process:**
 
-1. Create the connection while you are [specifying the source location](/docs/data-clean-room-working-with-sources#2-specify-the-source-location).
+1. Create the connection while you are <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#2-specify-the-source-location">specifying the source location</Anchor>.
    * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one.
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) button to open the **New connection** dialog.
 2. Continue with the instructions in the [Complete the connection](#complete-the-connection) section below.
@@ -63,7 +62,7 @@ Either way, the process is the same, and you can use the created connections in 
 
 From the **New connection** dialog, select the cloud service you are connecting to the DCR, then continue with the instructions from the relevant tab below.
 
-![dcr_create_inbound_connection.png](https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png)
+<Image alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
 
 <div id="bigquery-inbound" />
 
@@ -73,7 +72,7 @@ In the **New connection** dialog, enter the BigQuery **project ID** for the proj
 
 * You can get this information from the Big Query page of your Google Cloud Console.
 
-  ![BQ_project_ID.png](https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png)
+  <Image alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
 
 </Accordion>
 
@@ -83,7 +82,7 @@ In the **New connection** dialog, enter the BigQuery **project ID** for the proj
 
 In the **New connection** dialog, enter the **Snowflake account ID** and **region** for the account that contains your custom data source. You can get this information by clicking on the account name at the bottom-left menu of your Snowflake console:
 
-* **ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. [See here Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account).
+* **ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">See here Snowflake documentation</Anchor>.
 
 ![ui-snowsight-account-identifier.png](https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png)
 
@@ -93,13 +92,13 @@ In the **New connection** dialog, enter the **Snowflake account ID** and **regio
 
 <Accordion title="Amazon S3 and GCS">
 
-In the **New connection** dialog, enter the name of the [bucket you created](/docs/data-clean-room-setting-up-cloud-services#cloud-storage-buckets--amazon-s3-and-gcs) for the exclusive use of the DCR.
+In the **New connection** dialog, enter the name of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#cloud-storage-buckets--amazon-s3-and-gcs">bucket you created</Anchor> for the exclusive use of the DCR.
 
 </Accordion>
 
 ## Creating outbound connections
 
-The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Because reports are delivered via Data Locker, outbound DCR connections are actually Data Locker connections. You can choose to create these connections either:
+The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Because reports are delivered via Data Locker, outbound DCR connections are actually Data Locker connections. You can choose to create these connections either:
 
 * Before using them to create reports (starting from the Data Locker page in AppsFlyer); *** or ***
 * As part of the report creation process (starting from the DCR page in AppsFlyer).
@@ -119,7 +118,7 @@ Either way, the process is largely the same, and you can use the created connect
 
 **To create a new outbound connection as part of the report creation process:**
 
-1. Create the connection while you are [setting the report destination](/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report).
+1. Create the connection while you are <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report">setting the report destination</Anchor>.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
      * A **New connection** dialog will open.
@@ -131,7 +130,7 @@ Either way, the process is largely the same, and you can use the created connect
 
 #### Complete the connection
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > The **AppsFlyer AWS Bucket** option should not be used for DCR reports.
 
@@ -144,10 +143,10 @@ From the **New connection** dialog, select the cloud service you are connecting
 <Accordion title="BigQuery">
 
 1. In the **New connection** dialog, enter a name for the connection; then select the **BigQuery** option.
-2. Enter the **Project ID** and **Dataset name** for the BigQuery project that contains the [dataset you created](/docs/data-clean-room-setting-up-cloud-services#bigquery-inbound) for Data Locker.  
+2. Enter the **Project ID** and **Dataset name** for the BigQuery project that contains the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#bigquery-outbound">dataset you created</Anchor> for Data Locker.  
    * You can get this information from the Big Query page of your Google Cloud Console.
 
-     ![BQ_project_ID_dataset_name.png](https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png)
+     <Image alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
 3. Click the ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) button to ensure that Data Locker is connected to the dataset.
 4. Click **Save** to create the connection.
 
@@ -172,13 +171,13 @@ The procedure for connecting Snowflake to Data Locker is a 2-step process:
 2. Enter your Snowflake account region and account ID.
    * You can get this information by clicking on the account name at the bottom-left corner of your Snowflake console, then hovering over the account name in the popup. **Important!** Look for the ID labeled **Locator.** This is **NOT** the same ID as the one used to create inbound Snowflake connections.  
 
-     ![snowflake_account_locator.png](https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png)
+     <Image alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
 3. Click the ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) button to ensure that Data Locker is connected to your Snowflake account.
 4. Click **Save** to create the connection.
 
 <span id="step-2"></span>**Step #2 (create a database from share)** –
 
-1. [Log in to your Snowflake account](https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface).
+1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Log in to your Snowflake account</Anchor>.
 2. Switch your role to **Accountadmin.**
 3. From the left-side panel, select **Private Sharing.**
 4. In the page that opens, select the **Shared With You** tab.
@@ -193,7 +192,7 @@ The procedure for connecting Snowflake to Data Locker is a 2-step process:
 <Accordion title="Amazon S3 and GCS">
 
 1. In the Data Locker **New connection** dialog, enter a name for the connection; then select either the **Amazon S3** or **GCS** option.
-2. Enter the name of the [bucket you created](/docs/data-clean-room-setting-up-cloud-services#cloud-storage-buckets--amazon-s3-and-gcs) for the exclusive use of DCR.
+2. Enter the name of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#cloud-storage-buckets--amazon-s3-and-gcs">bucket you created</Anchor> for the exclusive use of DCR.
 
 </Accordion>
 

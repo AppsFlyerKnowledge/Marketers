@@ -1,8 +1,5 @@
 ---
 title: Cocos2ds
-excerpt: >-
-  Integrate AppsFlyer into games developed in cocos2dX to measure installs,
-  in-app events, media sources, and more.
 metadata:
   keywords:
     - Advertisers
@@ -26,6 +23,8 @@ x-zendesk:
   section_id: 6551244207121
   url: https://support.appsflyer.com/hc/en-us/articles/115005899505-Cocos2ds
 ---
+**At a glance:** Integrate AppsFlyer into games developed in cocos2dX to measure installs, in-app events, media sources, and more.
+
 For the **Cocos2dX** AppsFlyer plugin for Android and iOS, follow this link:
 
-[https://github.com/AppsFlyerSDK/AppsFlyerCocos2dX/tree/master](https://github.com/AppsFlyerSDK/AppsFlyerCocos2dX/tree/master)
+<Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AppsFlyerCocos2dX/tree/master">https://github.com/AppsFlyerSDK/AppsFlyerCocos2dX/tree/master</Anchor>

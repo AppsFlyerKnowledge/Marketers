@@ -1,8 +1,5 @@
 ---
 title: SKAN modeled data
-excerpt: >-
-  AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to
-  provide.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/7086372479505-SKAN-modeled-data
 ---
+**At a glance**: AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to provide.
+
 ## Overview
 
 SKAdNetwork (SKAN) reporting can be limited because:

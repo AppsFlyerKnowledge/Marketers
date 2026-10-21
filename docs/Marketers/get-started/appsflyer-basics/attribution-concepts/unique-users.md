@@ -1,8 +1,5 @@
 ---
 title: Unique users
-excerpt: >-
-  Learn how unique users are counted and used in metrics in AppsFlyer dashboards
-  and reports.
 metadata:
   keywords:
     - Marketers
@@ -22,6 +19,8 @@ x-zendesk:
   section_id: 6551394235409
   url: https://support.appsflyer.com/hc/en-us/articles/27435981457553-Unique-users
 ---
+**At a glance:** Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports.
+
 ## About unique users
 
 A unique user is a term that refers to an attributed device whose presence is counted only once, regardless of how many actions a user performs on the device.
@@ -89,7 +88,7 @@ The install and re-engagement have the same device ID/AppsFlyer ID. However, in 
 
 ![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
 
-When an in-app event is unattributed, meaning it's following a reinstall but for whatever reason isn't linked to the first install, it's not included in the unique user count at all. This can occur when there isn't a device ID available for the reinstall, but **there could be other reasons as well**. [Learn more](/docs/measure-reinstalls#unattributed-organic-inapps)
+When an in-app event is unattributed, meaning it's following a reinstall but for whatever reason isn't linked to the first install, it's not included in the unique user count at all. This can occur when there isn't a device ID available for the reinstall, but **there could be other reasons as well**. <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#unattributed-organic-inapps">Learn more</Anchor>
 
 </Accordion>
 

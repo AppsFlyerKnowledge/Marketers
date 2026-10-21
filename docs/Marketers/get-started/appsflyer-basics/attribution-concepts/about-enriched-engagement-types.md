@@ -1,10 +1,5 @@
 ---
 title: About Enriched Engagement Types
-excerpt: >-
-  While ad types have become sophisticated and complex, reporting has remained
-  very narrow, focusing solely on view-through and click-through attribution.
-  Enriched Engagement Types changes that by reflecting users' full spectrum of
-  engagement and intentionality when viewing or interacting with an ad.
 metadata:
   keywords:
     - Marketers
@@ -25,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21837486015889-About-Enriched-Engagement-Types
 ---
+**At a glance:** While ad types have become sophisticated and complex, reporting has remained very narrow, focusing solely on view-through and click-through attribution. Enriched Engagement Types changes that by reflecting users' full spectrum of engagement and intentionality when viewing or interacting with an ad.
+
 ## Introduction
 
 Over the past few years, new creative ad types, such as playable, skippable, and short-form video ads, have been introduced to the market, offering new ways to connect with users. These types of ads differ significantly from the static banners and lo-fi video units of the past and provide advertisers with broader capabilities and formats.
@@ -53,7 +50,7 @@ The following is the list of the enriched engagement types:
 
 The Enriched Engagement Types framework does not impact the engagement type attribution priority. Hence, introducing EET is not expected to affect your install and conversion rate.
 
-The table below specifies the [attribution priority](/docs/appsflyer-attribution-model#attribution-method-priorities-attribution-waterfall) and [lookback window](/docs/set-up-lookback-windows#lookback-windows) of each engagement type:
+The table below specifies the <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-method-priorities-attribution-waterfall">attribution priority</Anchor> and <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows#lookback-windows">lookback window</Anchor> of each engagement type:
 
 <table><thead><tr><th>Engagement</th><th>Engagement type</th><th>Attribution priority\*</th><th>Lookback window\*\*</th></tr></thead><tbody><tr><td rowspan="2">Download</td><td>preload</td><td>1</td><td>1h-180d | default: 90d</td></tr><tr><td>click_to_download</td><td>2</td><td>1h-30d | default: 7d</td></tr><tr><td rowspan="2">Click</td><td>click_to_app</td><td>2</td><td>1h-30d | default: 7d</td></tr><tr><td>engaged_click</td><td>2</td><td>1h-7d | default: 2d </td></tr><tr><td rowspan="3">Impression</td><td>engaged_view</td><td>2</td><td>1h-7d | default: 2d</td></tr><tr><td>view</td><td>3</td><td>1h-24h | default: 24h</td></tr><tr><td>listening</td><td>3</td><td>1h-24h | default: 24h</td></tr></tbody></table>
 

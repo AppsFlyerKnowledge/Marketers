@@ -1,8 +1,5 @@
 ---
 title: Dev Key management
-excerpt: >-
-  Control and update your app’s Dev Key directly in the App Settings. Giving you
-  greater flexibility and security.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/37139123425809-Dev-Key-management
 ---
+**At a glance:** Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security.
+
 ## What is a Dev Key?
 
 The Developer Key (Dev Key) is a unique identifier for your app, used to authenticate event data sent from the SDK and server-to-server (S2S) integrations to AppsFlyer. It’s essential for enabling attribution, sessions, and in-app event measurement.  
@@ -31,7 +30,7 @@ To give you greater control, the Dev Key Management tab in your app settings all
 
 ## Where to find your Dev Keys
 
-In AppsFlyer, from the side menu, select **Settings** > **App Settings**> **Dev Key Management**.
+In AppsFlyer, from the side menu, select **Settings** > **App Settings** > **Dev Key Management**.
 
 ## Dev Key Management
 
@@ -62,7 +61,7 @@ After you generate or assign a new Dev Key, it is important to:
   * The new Dev Key will stay in a *Pending* state
   * No changes will apply to data collection
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Activate the Dev Key only after the updated app version is live. Activating too early may cause in-app events and sessions from older app versions to stop being recorded.
 
@@ -80,13 +79,9 @@ After you generate or assign a new Dev Key, it is important to:
       2. Your current Dev Key will remain active until activation
       3. **Activation is required** after the updated app version is live
 
-         <br /><br />**Note**<br />
-
-
-      #### Important!
-
-      Regardless of which option you choose, the Dev Key change only takes effect after you manually activate the Dev Key.
-
+      > 🚧 **Important!**
+      >
+      > Regardless of which option you choose, the Dev Key change only takes effect after you manually activate the Dev Key.
 
 5. Click Next.
 6. Copy and send the Dev key to your developer to they can implement your changes in your SDK and upload the new version of your app to the store.

@@ -1,6 +1,5 @@
 ---
 title: AppsFlyer server IP address ranges (allowlisting)
-excerpt: AppsFlyer IP addresses used for outgoing API requests.
 metadata:
   keywords:
     - whitelisting
@@ -27,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting
 ---
+**At a glance:** AppsFlyer IP addresses used for outgoing API requests.
+
 ## AppsFlyer server IP address ranges
 
 The IP addresses listed are controlled by and for the use of AppsFlyer. The list changes from time to time according to our capacity and operational requirements. We make every effort to make list changes infrequently.
@@ -36,7 +37,7 @@ AppsFlyer APIs provide attribution and reporting services to advertisers and par
 * Sending postbacks
 * Sending Push API messages
 
-If you use network perimeter devices such as firewalls and proxy servers, you must ask your security team to allowlist AppsFlyer IP addresses as listed in this [IP allowlist.](https://docs.google.com/spreadsheets/d/e/2PACX-1vTzJqwOhIkSV0Mbnu4DZOx2eWKAd8OPRUNCu2REjz9z9qonI5ZDlHl6kGd1KAXopaDbf1MzuNXjeVj-/pub?gid=0&single=true&output=csv)
+If you use network perimeter devices such as firewalls and proxy servers, you must ask your security team to allowlist AppsFlyer IP addresses as listed in this <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTzJqwOhIkSV0Mbnu4DZOx2eWKAd8OPRUNCu2REjz9z9qonI5ZDlHl6kGd1KAXopaDbf1MzuNXjeVj-/pub?gid=0&single=true&output=csv">IP allowlist.</Anchor>
 
 On February 16, 2022, we deprecated legacy IP addresses and removed them from the allowlist.
 
@@ -49,7 +50,7 @@ Allowlisted addresses use the following CIDR blocks:
 
 If you use network perimeter devices such as firewalls and proxy servers, you must ask your security team to allowlist AppsFlyer IP addresses as listed in this [IP allowlist for Audiences](https://support.appsflyer.com/hc/en-us/article_attachments/16888953497617/IP_list_for_Audiences.xlsx).
 
-Learn more about [Audiences](/docs/audiences-guide).
+Learn more about <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>.
 
 ### Pull API and server-to-server (S2S)
 

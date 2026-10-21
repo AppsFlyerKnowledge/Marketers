@@ -1,6 +1,5 @@
 ---
 title: '[Beta] Set up custom metrics in My Dashboards'
-excerpt: Define your own metrics and use them to view data in My Dashboards.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/31400289569169--Beta-Set-up-custom-metrics-in-My-Dashboards
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
+
+**At a glance:** Define your own metrics and use them to view data in My Dashboards.
 
 ## About custom metrics
 

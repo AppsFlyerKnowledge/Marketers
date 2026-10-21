@@ -1,8 +1,5 @@
 ---
 title: Meta Ads—Aggregate Event Measurement (AEM) for iOS
-excerpt: >-
-  Learn about the AEM solution for optimizing iOS conversions and in-app events
-  and for attributing iOS re-engagements on Meta Ads.
 metadata:
   keywords:
     - Agencies
@@ -25,9 +22,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/19228737402129-Meta-Ads-Aggregate-Event-Measurement-AEM-for-iOS
 ---
+**At a glance:** Learn about the AEM solution for optimizing iOS conversions and in-app events and for attributing iOS re-engagements on Meta Ads.
+
 ## Overview
 
-AppsFlyer supports the [Meta Ads Aggregated Event Measurement (AEM)](https://www.facebook.com/business/help/721422165168355) solution. This solution enables measuring web and app events for iOS 14+ devices using the following attribution methods:
+AppsFlyer supports the <Anchor target="_blank" href="https://www.facebook.com/business/help/721422165168355">Meta Ads Aggregated Event Measurement (AEM)</Anchor> solution. This solution enables measuring web and app events for iOS 14+ devices using the following attribution methods:
 
 * [App AEM for re-engagement](#app-aem-for-re-engagement)
 * [App AEM for app promotion](#app-aem-for-app-promotion)
@@ -98,7 +97,7 @@ Data coming from deep link attributions isn't subject to reporting restrictions.
 
 When an app is eligible for AEM on Meta Ads, during the Ad Set creation process **Aggregated Event Measurement** is selected by default. This means both AEM and SKAN can be used simultaneously for the campaign. If **Apple's SKAdNetwork** is selected instead, only SKAN will be applicable for the campaign. This means AppsFlyer has limited ability to measure the app activity on Meta Ads.
 
-![aem_meta_ads_platform.png](https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png)
+<Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
 > 📘 **Note**
 >
@@ -106,10 +105,10 @@ When an app is eligible for AEM on Meta Ads, during the Ad Set creation process 
 
 ### AEM data sharing
 
-**Advanced data sharing**enables you to make all qualifying conversion events available to Meta ads for measurement, including events from users for whom an Advertiser ID is unavailable.
+**Advanced data sharing** enables you to make all qualifying conversion events available to Meta ads for measurement, including events from users for whom an Advertiser ID is unavailable.
 
 * When turned off, Advanced data sharing is limited to conversion events for users whose Advertiser ID is available. Events from users without an Advertiser ID are not shared or attributed.
-* When turned on, Advanced data sharing enables conversion events to be made available to Meta ads for all users, including those where an Advertiser ID is not available. AppsFlyer attributes these events. The data made available may include additional device-related information that does not involve the device ID. To learn more, see [Advanced data sharing](/docs/meta-ads-integration-setup#advanced_data_sharing).
+* When turned on, Advanced data sharing enables conversion events to be made available to Meta ads for all users, including those where an Advertiser ID is not available. AppsFlyer attributes these events. The data made available may include additional device-related information that does not involve the device ID. To learn more, see <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#advanced_data_sharing">Advanced data sharing</Anchor>.
 
 ![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
 
@@ -118,11 +117,11 @@ When an app is eligible for AEM on Meta Ads, during the Ad Set creation process 
 > * All events include installs, app opens, and in-app events.
 > * Before enabling **Advanced data sharing**, make sure that making this data available to Meta ads, including any use of your data by third parties, complies with any platform policies and/or regulations to which you are subject. Data made available may include IP addresses, anon\_ids (if available), vendor\_id, and user agents.
 > * For in-app events sent via server-to-server (S2S), Meta Ads requires both the **IP address** and the **Identifier for Vendors (IDFV)** to be included in the event payload. Without these identifiers, the event won't be eligible for Meta Ads attribution in AEM.
-> * Meta AEM for app promotion may also include nondeterministic view-through claims. To support nondeterministic view-through attribution via Meta AEM, make sure the app-level Enable view-through attribution via campaign measurement modeling toggle is turned on. For details, see [View-through attribution via probabilistic modeling](/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling).
+> * Meta AEM for app promotion may also include nondeterministic view-through claims. To support nondeterministic view-through attribution via Meta AEM, make sure the app-level Enable view-through attribution via campaign measurement modeling toggle is turned on. For details, see <Anchor target="_blank" href="/marketers/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling">View-through attribution via probabilistic modeling</Anchor>.
 
 ## Check if your app events are eligible for AEM
 
-You can visit Meta Events Manager to check if your app events are eligible for AEM. Once your app event is eligible, you can see the results of your selected AEM campaigns in Ads Manager. To learn how to check if your app events are eligible for AEM, see [Meta documentation](https://www.facebook.com/business/help/716239976391518?id=1877298665783613).
+You can visit Meta Events Manager to check if your app events are eligible for AEM. Once your app event is eligible, you can see the results of your selected AEM campaigns in Ads Manager. To learn how to check if your app events are eligible for AEM, see <Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">Meta documentation</Anchor>.
 
 ## How to enable AEM - summary
 
@@ -142,7 +141,7 @@ Use the table below as a quick checklist to enable Meta Ads AEM in AppsFlyer.
 
 If Meta Ads flags your app events as ineligible—showing errors like **“Missing opt-out events”** or other AEM-related messages—it’s typically due to missing or misconfigured data. Use the checklist below to diagnose and fix common issues.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > After you complete the steps below, allow time for changes to take effect. After changes are applied, Meta Ads may take up to **2–3 days** to reflect AEM eligibility.
 

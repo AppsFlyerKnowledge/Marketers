@@ -13,10 +13,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/20162151531793-SSO-authentication
 ---
-- [Manage exception users for SSO](/docs/manage-exception-users-for-sso)
-- [SSO authentication—Overview and FAQ](/docs/sso-authentication-overview-and-faq)
-- [Set up SSO authentication with your identity provider (IdP)](/docs/set-up-sso-authentication-with-your-identity-provider-idp)
-- [Configure AppsFlyer SSO in JumpCloud](/docs/configure-appsflyer-sso-in-jumpcloud)
-- [Configure AppsFlyer SSO in Okta](/docs/configure-appsflyer-sso-in-okta)
-- [Configure AppsFlyer SSO in OneLogin](/docs/configure-appsflyer-sso-in-onelogin)
-- [Configure AppsFlyer SSO in Ping Identity](/docs/configure-appsflyer-sso-in-ping-identity)
+- <Anchor target="_blank" href="/marketers/docs/manage-exception-users-for-sso">Manage exception users for SSO</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/sso-authentication-overview-and-faq">SSO authentication—Overview and FAQ</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp">Set up SSO authentication with your identity provider (IdP)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-jumpcloud">Configure AppsFlyer SSO in JumpCloud</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-okta">Configure AppsFlyer SSO in Okta</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-onelogin">Configure AppsFlyer SSO in OneLogin</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-ping-identity">Configure AppsFlyer SSO in Ping Identity</Anchor>

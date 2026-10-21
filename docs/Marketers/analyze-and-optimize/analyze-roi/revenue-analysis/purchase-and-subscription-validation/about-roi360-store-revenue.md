@@ -1,8 +1,5 @@
 ---
 title: About ROI360 store revenue
-excerpt: >-
-  Use ROI360 store revenue to validate in-app purchases and subscriptions,
-  prevent duplicates, and calculate net revenue.
 metadata:
   keywords:
     - Premium
@@ -26,7 +23,9 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> 📘 **Important!**
+**At a glance:** Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
+
+> 🚧 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
 
@@ -39,7 +38,7 @@ ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate
 | Data sources | <ul><li>AppsFlyer purchase SDK connector for Android and iOS</li><li>App Store server notifications</li><li>Google Play Real-Time Developer Notifications (RTDN)</li></ul> |
 | Reporting and data availability | Revenue data is available in AppsFlyer dashboards and reports and can also be shared with partners through postbacks. |
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > When using ROI360 store revenue, do not send in-app purchase events, as this will result in duplicate revenue reporting.
 
@@ -61,14 +60,14 @@ ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate
 
 To activate ROI360 store revenue measurement, follow these steps:
 
-1. In AppsFlyer, from the side menu, open ![settings-roi.png](https://files.readme.io/86023f68c41c5260314171f40b28b73ccd6c9dbdf263391c3c751041625a6ed9-42138855423633.png) **Settings** and under **ROI360** select **Revenue Settings**.
+1. In AppsFlyer, from the side menu, open <Image alt="settings-roi.png" src="https://files.readme.io/86023f68c41c5260314171f40b28b73ccd6c9dbdf263391c3c751041625a6ed9-42138855423633.png" width="2.17%" /> **Settings** and under **ROI360** select **Revenue Settings**.
 2. Open the **Purchases & subscriptions** tab.
 3. Under **1 Choose Product type**, select **ROI360**.
 4. Click **Next** to continue.
 
 ## Set up ROI360 store revenue
 
-See the [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue) article
+See the <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue">Set up ROI360 store revenue</Anchor> article
 
 ## Reference
 
@@ -76,7 +75,7 @@ The following sections provide additional details about key aspects of ROI360 in
 
 > 📘 **Note**
 >
-> To send additional custom parameters with your in-app events, configure a **custom data source** in the [Purchase SDK Connector](https://dev.appsflyer.com/hc/docs/purchase-connector). This allows you to enrich purchase and subscription events with your own business logic or metadata.
+> To send additional custom parameters with your in-app events, configure a **custom data source** in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-connector">Purchase SDK Connector</Anchor>. This allows you to enrich purchase and subscription events with your own business logic or metadata.
 > These parameters will be available in the raw data report's `custom_data` field.
 
 <div id="iaprelated-events-and-parameters" />
@@ -943,7 +942,7 @@ The parameters that have their own columns are:
 * idfa
 * appsflyer\_id
 
-See the [data fields dictionary](/docs/raw-data-field-dictionary) for more details about these parameters.
+See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">data fields dictionary</Anchor> for more details about these parameters.
 
 The following table describes the raw data parameters available in ARS and VIAP events.
 
@@ -956,10 +955,10 @@ The following table describes the raw data parameters available in ARS and VIAP 
 | af\_environment | The environment from which data is received, either production or sandbox. | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_expires\_date\_ms | The expiration date of the current subscription billing cycle | Subscription |
 | af\_net\_revenue | Net revenue calculated based on all factored reasons. See af\_net\_revenue\_factors. | <ul><li>IAP</li><li>Subscription</li></ul> |
-| af\_net\_revenue\_country | <ul><li>[Two-letter ISO country code](https://www.nationsonline.org/oneworld/country_code_list.htm) for which the tax is applied.</li><li>Example: CA</li><li>Note: For United Kingdom, the code implemented is UK, not GB.</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_country | <ul><li><Anchor target="_blank" href="https://www.nationsonline.org/oneworld/country_code_list.htm">Two-letter ISO country code</Anchor> for which the tax is applied.</li><li>Example: CA</li><li>Note: For United Kingdom, the code implemented is UK, not GB.</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_net\_revenue\_factors | <ul><li>An array representing all factored reasons that produce the reported af\_net\_revenue amount.</li><li>Example value: store\_commission</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_net\_revenue\_postal\_code | <ul><li>String of letters and/or numbers</li><li>Example: L4J8E3</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
-| af\_net\_revenue\_subdivision | <ul><li>For some countries, there can be an additional state or subdivision. This is handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm).</li><li>Includes the country code and subdivision code.</li><li>Example: US-CA</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
+| af\_net\_revenue\_subdivision | <ul><li>For some countries, there can be an additional state or subdivision. This is handled according to <Anchor target="_blank" href="https://service.unece.org/trade/locode/2023-1%20SubdivisionCodes.htm">ISO 3166-2 subdivision codes</Anchor>.</li><li>Includes the country code and subdivision code.</li><li>Example: US-CA</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_net\_revenue\_tax\_exclusive | <ul><li>Boolean parameter, either true or false.</li><li>False means tax is included in the overall revenue.</li><li>True means tax is in addition to the overall stated revenue.</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_net\_revenue\_tax\_name | <ul><li>Name appearing in the customer invoice that describes the specific type of tax.</li><li>Example: Sales, VAT, GST</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
 | af\_net\_revenue\_tax\_rate | <ul><li>Number up to 4 decimal places representing the tax percentage collected.</li><li>Example: 7.25</li></ul> | <ul><li>IAP</li><li>Subscription</li></ul> |
@@ -991,9 +990,9 @@ Net revenue is a business logic layer built to serve the ROI360 Store revenue so
 
 > 📘 **Note**
 >
-> Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in [My Dashboards](/docs/my-dashboards) as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
+> Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
 >
-> To send net revenue in postbacks, configure the in-app event with the **Values, revenue & net revenue option**. See [In-app event postback configuration](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for details.
+> To send net revenue in postbacks, configure the in-app event with the **Values, revenue & net revenue option**. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">In-app event postback configuration</Anchor> for details.
 
 > 📘 **Tip**
 >
@@ -1010,11 +1009,11 @@ Net revenue considers the following factors in the gross-to-net revenue calculat
     * App Store — first 12 months: 26% in Japan and EU countries, 25% in China mainland (CN), 30% in the rest of the world. From the 13th month: 15% in Japan, 12% in China mainland (CN), 15% in the rest of the world.
     * Play Store: 15% from day one.
   * Related net revenue parameters are available in raw data reports.
-  * Use [the Net revenue API](https://dev.appsflyer.com/hc/reference/overview-7) to set a different store commission rate than the default. This is useful, for example, if your app is enrolled in Apple's Small Business Program, where the commission rate is 15% (12% in China mainland (CN)).
+  * Use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-7">the Net revenue API</Anchor> to set a different store commission rate than the default. This is useful, for example, if your app is enrolled in Apple's Small Business Program, where the commission rate is 15% (12% in China mainland (CN)).
 * **Tax**:
   * Tax is reported by default for any transaction measured by ROI360 using the default tax rate configuration.
   * This applies to tax-inclusive countries (where tax is included in the list price). So, for example, in the UK, AppsFlyer deducts the sum of the tax and the store commission. For tax-exclusive countries, such as the USA, where the list price does not include tax, revenue and net revenue parameters do not include tax by default.
-  * The configuration can be edited using [the Net revenue API](https://dev.appsflyer.com/hc/reference/overview-7). To learn which countries are supported and their default tax rates, see [this JSON file](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub). The developer can edit it or use it as-is in the API.
+  * The configuration can be edited using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-7">the Net revenue API</Anchor>. To learn which countries are supported and their default tax rates, see <Anchor target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub">this JSON file</Anchor>. The developer can edit it or use it as-is in the API.
 
 When viewing net revenue in reports, the following parameters contain the net revenue data. See the [parameter dictionary](#parameter-dictionary) for more details.
 
@@ -1059,7 +1058,7 @@ When viewing net revenue in reports, the following parameters contain the net re
 | SDK strict mode | <ul><li>IAP</li><li>Subscription revenue</li></ul> | ROI360 subscriptions and IAP are supported under SDK strict mode from the:<ul><li>AppsFlyer iOS purchase SDK connector V6.13.0</li><li>Unity purchase SDK connector V2.0.1</li></ul> |
 | Currency | <ul><li>IAP</li><li>Subscription revenue</li></ul> | Revenue is reported in the original currency (using the event\_revenue parameter) and in USD (using the event\_revenue\_usd parameter). |
 | Data freshness | <ul><li>IAP</li><li>Subscription revenue</li></ul> | <ul><li>Transaction-level store revenue report: Hourly</li><li>Device-level store revenue report: Every 8 hours</li></ul> |
-| StoreKit 2 | <ul><li>IAP</li><li>Subscription revenue</li></ul> | <ul><li>StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.</li><li>Make sure your app uses the updated App Store credentials described [here](/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation).</li></ul> |
+| StoreKit 2 | <ul><li>IAP</li><li>Subscription revenue</li></ul> | <ul><li>StoreKit 2 is supported starting with Purchase SDK Connector version 6.16.2.</li><li>Make sure your app uses the updated App Store credentials described <Anchor target="_blank" href="/marketers/docs/bulletin-update-app-store-credentials-for-ios-roi360-receipt-validation">here</Anchor>.</li></ul> |
 | Google one-time products | IAP | <ul><li>Supported purchase options: Buy and Rent</li><li>Pre-order: Not supported</li></ul> |
 
 </Accordion>

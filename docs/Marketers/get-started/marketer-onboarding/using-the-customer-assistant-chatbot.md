@@ -1,9 +1,5 @@
 ---
 title: Using the Customer Assistant Chatbot
-excerpt: >-
-  Contact AppsFlyer support through the Customer Assistant Chatbot for
-  assistance with troubleshooting issues or product guidance. The chatbot also
-  helps you open tickets to the correct team where necessary.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/23583984402193-Using-the-Customer-Assistant-Chatbot
 ---
+**At a glance:** Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary.
+
 ## Overview
 
 The Customer Assistant Chatbot directs your issues to the appropriate team, covering app-related concerns, account management, billing, product guidance, and technical support. The steps in the chatbot prompt you to provide the necessary details for accurate assistance, reducing the need for extra information.
@@ -32,10 +30,10 @@ The Customer Assistant Chatbot directs your issues to the appropriate team, cove
 
 1. From the top menu bar, select **Help** > **Contact our team**. The Customer Assistant Chatbot opens.
 
-   ![contact-your-team2.jpg](https://files.readme.io/3738e987c1710a12429cea8c9c679fa8bbc12bde1cfecbbeaf8d34f028c511b3-50372534621457.jpg)
+   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3738e987c1710a12429cea8c9c679fa8bbc12bde1cfecbbeaf8d34f028c511b3-50372534621457.jpg" width="257px" />
 2. Select the **Ticket Type** from the list item and fill in all information.
 
-   ![Bildschirmfoto 2026-08-26 um 12.17.34.png](https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png)
+   <Image alt="Bildschirmfoto 2026-08-26 um 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
    3. Click **Submit**
 

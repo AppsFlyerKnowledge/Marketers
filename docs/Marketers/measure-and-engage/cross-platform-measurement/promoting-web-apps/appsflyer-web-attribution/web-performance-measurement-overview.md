@@ -1,12 +1,5 @@
 ---
 title: Web Performance Measurement - Overview
-excerpt: >-
-  Web Performance Measurement enables you to identify which media sources and
-  campaigns drive users to your website and measure how those visits influence
-  downstream actions over time. It enables you to capture and attribute user
-  interactions end-to-end, supporting both user acquisition (first-time
-  visitors) and re-engagement, from the initial visit through lifetime value
-  measurement.
 metadata:
   keywords:
     - Agencies
@@ -33,6 +26,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
+
 ## About Web Performance Measurement
 
 Web attribution is the process of identifying which media sources and campaigns drive users to visit a website and influence their subsequent actions.
@@ -43,7 +38,7 @@ The purpose of this article is to outline the end-to-end Web Performance Measure
 
 #### If you use People-Based Attribution (PBA)
 
-If you currently use [People-Based Attribution (PBA)](/docs/people-based-attribution-pba), consider switching to Web Performance Measurement for more granular attribution and additional signals.
+If you currently use <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba">People-Based Attribution (PBA)</Anchor>, consider switching to Web Performance Measurement for more granular attribution and additional signals.
 
 ### The Web Performance Measurement flow
 
@@ -69,7 +64,7 @@ The following sections explain each step in detail.
 
 Once the user arrives at the landing page, AppsFlyer must capture that interaction through an integrated listener.
 
-* **Web SDK (Pixel)**: A client-side snippet [implemented directly on the website or via Google Tag Manager (GTM)](/docs/integrate-appsflyer-web-sdk).
+* **Web SDK (Pixel)**: A client-side snippet <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">implemented directly on the website or via Google Tag Manager (GTM)</Anchor>.
 * **Server-to-Server (S2S) API**: A robust server-side integration that helps bypass browser measurement prevention and ad blockers while allowing you to enrich data before it reaches AppsFlyer. The S2S integration can be done directly from a customer server or via Google Tag Manager Server Side.
 
 </Accordion>
@@ -82,7 +77,7 @@ After the session data is collected, the system determines whether to create a f
 
 AppsFlyer records a visit when someone lands on your site under a new session or with recognizable source parameters, and ignores visits from excluded domains. These visit recording rules prevent double-counting of sessions.
 
-For more information, see [Visit recording](/docs/about-traffic-source-resolution#step-1-visit-recording).
+For more information, see <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution#step-1-visit-recording">Visit recording</Anchor>.
 
 </Accordion>
 
@@ -97,7 +92,7 @@ After the data is collected and the visit is recorded, the engine evaluates it i
 * **Click IDs**: It then searches for network-specific IDs such as Google Click ID (`gclid`) or TikTok Click ID (`ttclid`).
 * **Referrer**: As a final fallback, it identifies the URL the user was on immediately before arriving.
 
-For more information, see [Media source resolution](/docs/about-traffic-source-resolution#step-2-media-source-resolution).
+For more information, see <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution#step-2-media-source-resolution">Media source resolution</Anchor>.
 
 </Accordion>
 
@@ -126,7 +121,7 @@ With the source identified and the 30-minute delay complete, the system moves to
 
 Once the user's identity is resolved, the engine looks for the specific action that defines them as acquired. The industry standard is the`first_visit`, but this often represents a weak signal—a user might click an ad accidentally or bounce immediately. By setting a custom acquisition event, such as registration or purchase, you ensure that long-term value (LTV) is attributed to the marketing source that drove a meaningful action, not just a curiosity click.
 
-When a user acquisition event occurs, the attribution engine searches backwards for a period equal to the **Lookback window (user acquisition)** to find a non-organic visit to attribute to. This setting defines the maximum time allowed between a user's visit and the completion of the UA event (Default: 30 days). If no non-organic touchpoint is found within this lookback period, the UA event is considered organic and not attributed. You can set the custom event Lookback window duration when you add your web app to AppsFlyer, see [Lookback window (user acquisition)](/docs/configure-web-performance-measurement-settings#lookback-window-user-acquisition).
+When a user acquisition event occurs, the attribution engine searches backwards for a period equal to the **Lookback window (user acquisition)** to find a non-organic visit to attribute to. This setting defines the maximum time allowed between a user's visit and the completion of the UA event (Default: 30 days). If no non-organic touchpoint is found within this lookback period, the UA event is considered organic and not attributed. You can set the custom event Lookback window duration when you add your web app to AppsFlyer, see <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings#lookback-window-user-acquisition">Lookback window (user acquisition)</Anchor>.
 
 Depending on the business model, different events can be defined as the user acquisition trigger, for example
 
@@ -134,7 +129,7 @@ Depending on the business model, different events can be defined as the user acq
 * **First order event (e.g., a food delivery app)**. Browsing or adding items does not count; the event fires only after a successful transaction.
 * **Subscription-activated event (e.g., a streaming or SaaS app)**. The acquisition event is recorded when the subscription is confirmed, not on trial start or app install.
 
-For more information about setting a user acquisition event, see [User acquisition settings](/docs/configure-web-performance-measurement-settings#user-acquisition-settings).
+For more information about setting a user acquisition event, see <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings#user-acquisition-settings">User acquisition settings</Anchor>.
 
 </Accordion>
 
@@ -156,7 +151,7 @@ Once a user is acquired, they may return to the site later. A re-engagement (rev
 
 While *re-engagement* focuses on existing users, a return can also be classified as a *re-acquisition* if the user has been inactive for an extended period. To be eligible for re-acquisition, the user must first cross the **Inactivity Window** (default: 90 days), which defines the period of inactivity required to consider them "churned." Once this window has passed, if the user returns, the engine records a new user acquisition event rather than a standard revisit.
 
-For more information, see [Re-engagement settings](/docs/configure-web-performance-measurement-settings#re-engagement-settings) and [Re-acquisition settings](/docs/configure-web-performance-measurement-settings#re-acquisition-settings)
+For more information, see <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings#re-engagement-settings">Re-engagement settings</Anchor> and <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings#re-acquisition-settings">Re-acquisition settings</Anchor>
 
 </Accordion>
 
@@ -168,7 +163,7 @@ Whether the user was brought in by an initial acquisition campaign or a subseque
 
 This measurement is governed by the **Attribution Window**, which is set to "Forever" by default. This ensures that every subsequent action—such as repeat purchases or subscription renewals—is credited back to the original marketing source that drove the user to the site. By capturing this long-term data, you can move beyond simple conversion counts and determine the true Return on Ad Spend (ROAS) for your campaigns.
 
-For more information about setting the **Attribution window**, see the [Attribution window](/docs/configure-web-performance-measurement-settings#attribution-window).
+For more information about setting the **Attribution window**, see the <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings#attribution-window">Attribution window</Anchor>.
 
 </Accordion>
 

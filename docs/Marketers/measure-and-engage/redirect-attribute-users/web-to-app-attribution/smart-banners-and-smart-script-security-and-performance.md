@@ -1,8 +1,5 @@
 ---
 title: Smart Banners and Smart Script security and performance
-excerpt: >-
-  Discover how AppsFlyer proactively addresses your security concerns regarding
-  Smart Banners and Smart Script.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/22082177372561-Smart-Banners-and-Smart-Script-security-and-performance
 ---
+**At a glance:** Discover how AppsFlyer proactively addresses your security concerns regarding Smart Banners and Smart Script.
+
 In this Q&A, we discuss common queries about smart banners and smart script integration, focusing on their impact on security and site speed.
 
 ## Smart banners API security
@@ -40,7 +39,7 @@ In this Q&A, we discuss common queries about smart banners and smart script inte
 | HTTP protocol | HTTP/HTTPS |
 | Headers | Host, Content-type, Origin, Content-length, Encoding |
 | OneLink parameters |  |
-| Banner parameters | Banner configuration settings:<ul><li>[Dismissal behavior](/docs/smart-banners-mobile-web-to-app-for-marketers#dismissal-behaviour)</li><li>[Incoming parameters](/docs/smart-banners-mobile-web-to-app-for-marketers#param-table)</li><li>UTM parameters</li><li>AppsFlyer parameters</li><li>default parameters</li><li>other parameters</li></ul> |
+| Banner parameters | Banner configuration settings:<ul><li><Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#dismissal-behaviour">Dismissal behavior</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#param-table">Incoming parameters</Anchor></li><li>UTM parameters</li><li>AppsFlyer parameters</li><li>default parameters</li><li>other parameters</li></ul> |
 
 </Accordion>
 
@@ -76,7 +75,7 @@ No. It's not possible to access and modify the code dictating the web key used i
 
 <Accordion title="Can clients host a copy of the Smart Banner script on their server?">
 
-Clients cannot host Smart Banners script on their servers. However they can use [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script) for OneLink URL generation and implement their own banner creatives.
+Clients cannot host Smart Banners script on their servers. However they can use <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script">Smart Script</Anchor> for OneLink URL generation and implement their own banner creatives.
 
 Using Smart Script along with your own banners lets you design custom creatives and further map and customize your generated links, eliminating the need to implement the banner SDK on your website and perform external API calls.
 
@@ -86,7 +85,7 @@ Using Smart Script along with your own banners lets you design custom creatives 
 
 <Accordion title="Can clients host their own code and still use banners?">
 
-Clients can develop their own banners, including the design, development, and integration on the site, and utilize [Smart Script](/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script) to generate the links for their banner's call-to-action (CTA).
+Clients can develop their own banners, including the design, development, and integration on the site, and utilize <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors?query=smart%20script">Smart Script</Anchor> to generate the links for their banner's call-to-action (CTA).
 
 </Accordion>
 
@@ -94,7 +93,7 @@ Clients can develop their own banners, including the design, development, and in
 
 <Accordion title="Can Smart Banners be supported without embedding their code snippet on the page?">
 
-* Clients have the option to use tag managers to invoke the Smart Banner APIs, as an alternative to directly integrating the code snippet. To learn more about tag managers see [here.](/docs/smart-banners-website-code-implementation-for-marketers#website-code-implementation)
+* Clients have the option to use tag managers to invoke the Smart Banner APIs, as an alternative to directly integrating the code snippet. To learn more about tag managers see <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers#website-code-implementation">here.</Anchor>
 * Running the script in an iFrame is not supported.
 
 </Accordion>
@@ -119,7 +118,7 @@ We implement multiple measures to ensure Smart Banners are secure from potential
 
 By default, Smart Banners do not use cookies. However, we provide an optional configuration to use first-party cookies for customers who prefer increased persistence (for example, to address storage volatility in Safari on iOS 26).
 
-The website owner must explicitly [enable this option](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#set-storage-mode-optional). If enabled, the website owner is also responsible for updating their cookie consent management and privacy disclosures as required by applicable regulations.
+The website owner must explicitly <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#set-storage-mode-optional">enable this option</Anchor>. If enabled, the website owner is also responsible for updating their cookie consent management and privacy disclosures as required by applicable regulations.
 
 </Accordion>
 

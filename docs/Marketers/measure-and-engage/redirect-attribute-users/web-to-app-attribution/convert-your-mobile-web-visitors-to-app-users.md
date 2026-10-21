@@ -1,8 +1,5 @@
 ---
 title: Convert your mobile web visitors to app users
-excerpt: >-
-  Use your mobile website to convert mobile web visitors into new mobile app
-  users.
 metadata:
   keywords:
     - OneLink
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001237818-Convert-your-mobile-web-visitors-to-app-users
 ---
+**At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
+
 ## Mobile web-to-app attribution solutions
 
 ![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
@@ -42,24 +41,24 @@ Using web-to-app campaigns helps you:
 
 ### Attribution solutions
 
-<Embed title="Convert your mobile web visitors to app users" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/kv67fa3rvn" height="417px" />
+<Image alt="" src="https://fast.wistia.com/embed/medias/kv67fa3rvn/swatch" width="100%" />
 
 For mobile web-to-app users, since there are two clicks (the first that directs to the web page and the second that directs from the web page to the app store), attribution and deep linking are problematic. Users who eventually download the app may be wrongfully attributed, or attributed as organic, even if the first click comes from an ad network, Google click, or owned media source. 
 
 AppsFlyer provides the following solutions for accurate web-to-app attribution:
 
-[Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers):
+<Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>:
 
 * Add the Smart Banner web SDK to your website, and then create dynamic banners on the AppsFlyer dashboard.
 * When a user clicks a URL and is directed to your mobile website, a Smart Banner pops up with a CTA to download the app from the app store.
 * The Smart Banner URL is populated based on the parameters/UTMs in the incoming link, and is used for attribution.
 
-[OneLink Smart Script](/docs/onelink-smart-script-overview):
+<Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>:
 
 * Runs a script on your mobile website.
 * When a user clicks a URL and is directed to your mobile website, they land on a page with buttons urging them to download your app.
 * The script on the web page dynamically generates the outgoing URLs on these buttons based on the incoming URL, which is used for attribution.
-* Replaces the previous mobile landing page attribution [script](/docs/deprecated-mobile-landing-page-attribution-script). If you are still using the previous script, you should migrate.
+* Replaces the previous mobile landing page attribution <Anchor target="_blank" href="/marketers/docs/deprecated-mobile-landing-page-attribution-script">script</Anchor>. If you are still using the previous script, you should migrate.
 
 Both solutions bridge the gap between the incoming campaign URLs to your website, and the outgoing OneLink URL created for correct attribution and deep linking of the mobile website users.
 
@@ -73,15 +72,15 @@ The following table compares the two solutions so that you can choose and implem
 | Change attribution link parameters | Fast change in AppsFlyer dashboard/wizard access. | Requires developer implementation in the script, but is totally flexible. |
 | Desktop users | Not supported | Supported |
 | Marketer setup | Uses wizard to set up Smart Banners. | Decides parameters and values to be set on the incoming and outgoing URLs (default values are supplied). |
-| Developer setup | <ul><li>Integrates web SDK.</li><li>Alternatively, can be [implemented by the marketer](/docs/smart-banners-website-code-implementation-for-marketers).</li></ul> | <ul><li>[Implements the script](https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator) that creates the outgoing URL.</li><li>Alternatively, can be implemented by the marketer via a [tag manager](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script).</li></ul> |
+| Developer setup | <ul><li>Integrates web SDK.</li><li>Alternatively, can be <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">implemented by the marketer</Anchor>.</li></ul> | <ul><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator">Implements the script</Anchor> that creates the outgoing URL.</li><li>Alternatively, can be implemented by the marketer via a <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script">tag manager</Anchor>.</li></ul> |
 | Ongoing campaign setup | For click ad networks, set up web campaign-to-app link. | Follow the instructions per media source type. |
 | Availability | Available with a paid subscription plan. | Available with a paid subscription plan. |
 
-**Note:** Smart Banners and OneLink Smart Script are available only with eligible paid [subscription plans](/docs/account-management-plans-payments-and-billing#appsflyer-plans). Feature access depends on your AppsFlyer plan.
+**Note:** Smart Banners and OneLink Smart Script are available only with eligible paid <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plans</Anchor>. Feature access depends on your AppsFlyer plan.
 
 ### Web-assisted installs
 
-Web-Assisted Installs occur when users download your app, but not necessarily because of a specific campaign. Before they download your app, they visited your website for whatever reason, perhaps days or weeks earlier. Use [PBA](/docs/people-based-attribution-pba-overview) Web-Assisted Installs to see a general breakdown of these *assist* touchpoints that eventually lead to the app install.  
+Web-Assisted Installs occur when users download your app, but not necessarily because of a specific campaign. Before they download your app, they visited your website for whatever reason, perhaps days or weeks earlier. Use <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">PBA</Anchor> Web-Assisted Installs to see a general breakdown of these *assist* touchpoints that eventually lead to the app install.  
 
 #### Web-to-app solutions vs. Web-Assisted Installs
 

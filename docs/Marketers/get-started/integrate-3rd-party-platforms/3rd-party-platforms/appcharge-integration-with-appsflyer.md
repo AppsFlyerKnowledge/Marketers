@@ -1,11 +1,5 @@
 ---
 title: Appcharge integration with AppsFlyer
-excerpt: >-
-  Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology
-  provider that specializes in processing payments outside traditional app store
-  ecosystems. Through its integration with AppsFlyer, Appcharge can
-  automatically send web store purchase and refund data to AppsFlyer, enabling a
-  more complete view of return on ad spend (ROAS) and lifetime value (LTV).
 metadata:
   keywords:
     - Marketers
@@ -26,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/36292113943825-Appcharge-integration-with-AppsFlyer
 ---
+**At a glance:** Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology provider that specializes in processing payments outside traditional app store ecosystems. Through its integration with AppsFlyer, Appcharge can automatically send web store purchase and refund data to AppsFlyer, enabling a more complete view of return on ad spend (ROAS) and lifetime value (LTV).
+
 ## About Appcharge
 
-[Appcharge](https://appcharge.com/) an integrated AppsFlyer partner, is a direct-to-consumer (D2C) platform built for mobile gaming publishers. The integration helps publishers monitor purchases from their web store, a critical revenue channel outside traditional app stores. By sending purchase and refund data directly to AppsFlyer, Appcharge enables accurate return on ad spend (ROAS) calculations based on net revenue, unlocking better insights into campaign performance and player lifetime value (LTV).
+<Anchor target="_blank" href="https://appcharge.com/">Appcharge</Anchor> an integrated AppsFlyer partner, is a direct-to-consumer (D2C) platform built for mobile gaming publishers. The integration helps publishers monitor purchases from their web store, a critical revenue channel outside traditional app stores. By sending purchase and refund data directly to AppsFlyer, Appcharge enables accurate return on ad spend (ROAS) calculations based on net revenue, unlocking better insights into campaign performance and player lifetime value (LTV).
 
 The Appcharge integration helps you:
 
@@ -69,16 +65,16 @@ On your first visit, you'll need to turn on the
 The toggle must remain on for as long as you work with Appcharge.
 Learn
 more about
-[partner activation](/docs/partner-activation-deactivation).
+<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
 #### Advanced Privacy
 
 For iOS apps, the
-[Advance Privacy](/docs/apply-aggregated-advanced-privacy-framework)
+<Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor>
 toggle appears. When turned on, it limits the sharing of user
 identifiers
 with the partner. Note that when the
-[Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) toggle
+<Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle
 is turned on in the App Settings,
 **Advanced Privacy (for iOS 14.5+ and later)** is
 turned on and locked by default.
@@ -88,7 +84,7 @@ turned on and locked by default.
 AppsFlyer sends default postbacks to Appcharge following user
 installs.
 Use this section to
-[define these postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">define these postbacks</Anchor>.
 
 * **Off:** Install postbacks aren't sent to Appcharge.  
   **Note:** Appcharge's integration with AppsFlyer
@@ -166,6 +162,6 @@ PC / Console support - the AppsFlyer integration with Appcharge does not support
 
 </Accordion>
 
-Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
 
 <div data-zendesk-anchors="integration-types=about-appcharge h_01J3DB8MCNQKKKCV1M39KN7Q0H=about-appcharge setting-up-appcharge=set-up-the-integration h_01HST42K52JKQ70F7Y5PHDZAZ5=set-up-the-integration h_01HST42K52YZMTE3C2TBTK865M=integration-tab h_01HST42K52RCTSGRNRCJ1C70NP=activate-partner h_01HST42K52BBJ6JS5KM0WCN6CF=advanced-privacy h_01HST47F5BXWV5W8BNHS9M2MTN=default-postbacks inapp-event-postbacks=in-app-event-postbacks h_01H9FKEAV3GG6X17X3NCCSWJAS=in-app-event-postbacks h_01HST42K53GSMD91ACXY9DMP7S=attribution-link-tab h_01HST42K53D0PPXTM7MHBQ8P04=cost-tab h_01HST42K53YS8N6G2V0279F5GA=ad-revenue-tab h_01H9FKEAV3ZNKMZSG76B61H2AS=permissions-tab identifying-appcharge-events-in-appsflyer=identify-appcharge-events-in-appsflyer h_01JMHXRGB60RVZ399FNHS18ZHZ=identify-appcharge-events-in-appsflyer h_01JN0HXSEJV9JPAXGSBM7B3X7X=traits-and-limitations" />

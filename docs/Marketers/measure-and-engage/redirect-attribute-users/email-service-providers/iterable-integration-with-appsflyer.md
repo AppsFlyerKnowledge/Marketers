@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002522337-Iterable-integration-with-AppsFlyer
 ---
-Integrate OneLink-based attribution links with Iterable system to [deep link from emails](/docs/email-service-provider-esp-integration-guide). The integration utilizes Iterable’s support for Universal Links on top of branded click recording domains.
+> **At a glance:** Integrate OneLink-based attribution links with Iterable system to <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">deep link from emails</Anchor>. The integration utilizes Iterable’s support for Universal Links on top of branded click recording domains.
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
@@ -39,19 +39,21 @@ With Iterable, which supports Universal Links on top of their click recording do
 
 ## Prerequisites
 
-<Accordion title="iOS">
+<Tabs>
+<Tab title="iOS">
 
 * AppsFlyer iOS SDK version 4.9.0
 
-</Accordion>
+</Tab>
 
-<Accordion title="Android">
+<Tab title="Android">
 
 * AppsFlyer Android SDK version 4.9.0
 
-Iterable doesn’t support Android App Links. However, [URI Scheme deep linking is still supported](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page). No special actions are required on Iterable side to support deep linking in Android.
+Iterable doesn’t support Android App Links. However, <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">URI Scheme deep linking is still supported</Anchor>. No special actions are required on Iterable side to support deep linking in Android.
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ## Setting up Iterable
 
@@ -59,11 +61,11 @@ Iterable doesn’t support Android App Links. However, [URI Scheme deep linking 
 
 Create a dedicated click recording domain and set a subdomain (for example, [click.example.com](http://click.example.com)). This can be done by purchasing a designated domain or using your own domain.
 
-For more information on setting a click recording domain with Iterable, see [here](https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains).
+For more information on setting a click recording domain with Iterable, see <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">here</Anchor>.
 
 ### Step 2: Uploading your SSL certificate to Iterable
 
-Your click recording domain must include your domain’s SSL certificate. The SSL certificate should be installed in your Iterable account. Instructions on installing your SSL certificates can be found [here](https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking).
+Your click recording domain must include your domain’s SSL certificate. The SSL certificate should be installed in your Iterable account. Instructions on installing your SSL certificates can be found <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">here</Anchor>.
 
 ### Step 2: Give Iterable an AASA (iOS) and an Asset Links file (Android)
 
@@ -78,8 +80,8 @@ When you set up OneLink with Universal Links, you already have an AASA associate
 1. Go to ***OneLink templates*** and find a OneLink that is configured with Universal Links.
 2. Add **/.well-known/apple-app-site-association** to the end of the OneLink URL.
 3. Paste the OneLink in the browser address bar and hit enter. For example: **`<OneLinkSubdomain>`.onelink.me/.well-known/apple-app-site-association**. When you do so, the AASA file is downloaded to your computer. You can open it using any simple text editor.
-4. Define link re-write rules. For more information see [here](https://support.iterable.com/hc/en-us/articles/360035496511).
-5. Send this AASA file to Iterable. For more information and to learn more about the contents of this file, see [Iterable's guide](https://support.iterable.com/hc/en-us/articles/360035496511-iOS-Universal-Lin).
+4. Define link re-write rules. For more information see <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/360035496511">here</Anchor>.
+5. Send this AASA file to Iterable. For more information and to learn more about the contents of this file, see <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/360035496511-iOS-Universal-Lin">Iterable's guide</Anchor>.
 
 </Accordion>
 
@@ -92,7 +94,7 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 1. Go to ***OneLink templates*** and find a OneLink that is configured with App Links.
 2. Add **/.well-known/assetlinks.json** to the end of the OneLink URL.
 3. Paste the OneLink in browser address bar and hit enter. For example:**`<OneLinkSubdomain>`.onelink.me/.well-known/assetlinks.json**. When you do so, the Asset Links file is downloaded to your computer. You can open it using any simple text editor.
-4. Send this Asset Links file to Iterable. For more information and to learn more about the contents of this file, see [Iterable's guide](https://support.iterable.com/hc/en-us/articles/360035127392).
+4. Send this Asset Links file to Iterable. For more information and to learn more about the contents of this file, see <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/360035127392">Iterable's guide</Anchor>.
 
 </Accordion>
 
@@ -108,7 +110,7 @@ See the following to set up your apps to support App and Universal links.
 
 In the Android manifest, add the click domain host and any prefix in the activity tag of the activity you want to deep link into.
 
-```xml
+```html
 <activity android:name=".DeepLinkActivity">
     <intent-filter  android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />
@@ -128,9 +130,9 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information, see the SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).  
+2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information, see the SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
 
-   ```
+   ```java
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
    ```
 
@@ -163,9 +165,9 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).  
+2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
 
-   ```
+   ```java
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("clickdomain.com", "myclickdomain.com", "anotherclickdomain.com");
    ```
 
@@ -180,31 +182,34 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).  
+2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information, see the SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
 
-   <Accordion title="Objective-C">
+   <Tabs>
+   <Tab title="Objective-C">
 
-   ```
+   ```objectivec
    [AppsFlyerLib shared].resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
    ```
 
-   </Accordion>
+   </Tab>
 
-   <Accordion title="Swift">
+   <Tab title="Swift">
 
-   ```
+   ```swift
    AppsFlyerLib.shared().resolveDeepLinkURLs = ["example.com", "click.example.com"]
    ```
 
-   </Accordion>
+   </Tab>
+   </Tabs>
 
 3. Add the following code so that the SDK can resolve the click recording domain:  
 
-   <Accordion title="Objective-C">
+   <Tabs>
+   <Tab title="Objective-C">
 
    Add this code in AppDelgate.m
 
-   ```
+   ```objectivec
    - (NSDictionary *) allHTTPHeaderFieldsForResolveDeepLinkURL:(NSURL *) URL {
        if ([URL.host  isEqual: @"click.example.com"]) {
            return [NSDictionary dictionary];
@@ -215,13 +220,13 @@ To resolve click domains:
    }
    ```
 
-   </Accordion>
+   </Tab>
 
-   <Accordion title="Swift">
+   <Tab title="Swift">
 
    Add this code in AppDelgate.swift
 
-   ```
+   ```swift
    func allHTTPHeaderFields(forResolveDeepLinkURL URL: URL!) -> [String : String]! {
        if (URL.host == "click.example.com") {
            /// Change User-Agent
@@ -232,13 +237,14 @@ To resolve click domains:
    }
    ```
 
-   </Accordion>
+   </Tab>
+   </Tabs>
 
 </Accordion>
 
 ## Sending your first email
 
-1. [Create a OneLink URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) on the Link Management page (or manually).
+1. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Create a OneLink URL</Anchor> on the Link Management page (or manually).
 2. When creating the OneLink URL make sure to URL encode all parameter values.
 3. The following parameters are highly recommended to use:
    * pid (media source) - Use a media source that signifies this usage such as Email.
@@ -249,21 +255,23 @@ To resolve click domains:
    * af\_android\_url - Where to redirect users that don’t have the app clicking the link on an Android device.
 4. Place the OneLink URL in the email that you create in Iterable. Example:
 
-   ```html
+   ```http
    <a href="greatapp.onelink.me/abcd/1234567">Download my great app!</a>
    ```
 
    At this stage, Iterable wraps the above link with the click domain that you set in the previous steps. Any click on the click domain redirects to the OneLink attribution link. If the app is installed on the user's device, the click domain deep links into the app.
 
-**Example**
-
-URL parameters are not URL encoded in this example, just for the sake of readability:
-
-```
-https://greatapp.onelink.me/abcd?pid=Email&c=Spring_Newsletter&is_retargeting=true&
-af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
-af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
-```
+> 📘 **Note**
+>
+> **Example**
+>
+> URL parameters are not URL encoded in this example, just for the sake of readability:
+>
+> ```http
+> https://greatapp.onelink.me/abcd?pid=Email&c=Spring_Newsletter&is_retargeting=true&
+> af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
+> af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
+> ```
 
 ### Testing your links
 

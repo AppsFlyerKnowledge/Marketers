@@ -1,9 +1,5 @@
 ---
 title: '[Closed beta] Implementing Series of Events Rule for advanced fraud prevention'
-excerpt: >-
-  Series of events in validation rules allows advertisers to define an event
-  sequence a real user should go through. Any deviation from your defined order,
-  or from the timing between events, is detected and blocked.
 metadata:
   keywords:
     - Marketers
@@ -26,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/26596474431761--Closed-beta-Implementing-Series-of-Events-Rule-for-advanced-fraud-prevention
 ---
 <span class="af-tag af-tag--closed-beta">Closed beta</span>
+
+> **At a glance:** Series of events in validation rules allows advertisers to define an event sequence a real user should go through. Any deviation from your defined order, or from the timing between events, is detected and blocked.
 
 ## Intro
 
@@ -68,7 +66,7 @@ Follow these instructions to set up a Series of events rule:
 11. Review the **Rule outcome** section to confirm the evaluation window state and the minimum total sequence time
 12. Click **Save**
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Don't select all your app's events. Only select the events where there usually could be fraud
 
@@ -194,7 +192,7 @@ Fraud. The user performed Event C before Event B which is out of the defined seq
 
 **Defined rule**
 
-The user was identified by the [Customer User ID (CUID)](/docs/customer-user-id-field-cuid).
+The user was identified by the <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID (CUID)</Anchor>.
 
 The user should perform events in this order:
 
@@ -215,7 +213,7 @@ The user does the events in this order:
 
 **Result:**
 
-Not fraud. Since the user was identified by the [Customer User ID (CUID)](/docs/customer-user-id-field-cuid) and the events were performed in order.
+Not fraud. Since the user was identified by the <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID (CUID)</Anchor> and the events were performed in order.
 
 </Accordion>
 

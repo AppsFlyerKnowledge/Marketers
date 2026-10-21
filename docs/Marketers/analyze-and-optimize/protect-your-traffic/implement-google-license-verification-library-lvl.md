@@ -1,9 +1,5 @@
 ---
 title: Implement Google License Verification Library (LVL)
-excerpt: >-
-  Protect your apps against unauthorized use by adding the Google License
-  Verification Library (LVL) to handle all license-related communication with
-  Google Play.
 metadata:
   keywords:
     - Premium
@@ -28,6 +24,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Protect your apps against unauthorized use by adding the Google License Verification Library (LVL) to handle all license-related communication with Google Play.
+
 ## Overview
 
 The License Verification Library (LVL) is a library you can add to your apps (downloadable from the Android SDK) that handles all of the licensing-related communication with the Google Play licensing service.
@@ -35,9 +33,9 @@ The License Verification Library (LVL) is a library you can add to your apps (do
 LVL  adds another layer of protection on top of Protect360 algorithms by verifying that installs are coming from real Google Play users. This helps reduce discrepancies between the number of installs visible on Google Play and the AppsFlyer dashboard.
 
 * LVL is available only for Protect360 clients. Without the P360 package, the module does not validate licenses.
-* LVLprevents revenue loss from unauthorized app usage, ensuring compliance and protecting your investment.
+* LVL prevents revenue loss from unauthorized app usage, ensuring compliance and protecting your investment.
 
-The Google Play Licensing service determines whether the user is licensed to use an app or not. Google Play considers users to be licensed if they are recorded purchasers of the app. The license is unique per app and can be used for enhanced protection. [Learn more](https://developer.android.com/google/play/licensing)
+The Google Play Licensing service determines whether the user is licensed to use an app or not. Google Play considers users to be licensed if they are recorded purchasers of the app. The license is unique per app and can be used for enhanced protection. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">Learn more</Anchor>
 
 The AppsFlyer SDK collects the data from the customer side, and Protect360 performs the server-side license verification, blocking fraudulent installs that fail verification for both organic and non-organic installs. The “Block reason” you will see in the Protect360 dashboard and reports will be “Bots”.
 
@@ -53,12 +51,12 @@ Currently, this is a manual process where you'll need to pass the below informat
 
 1. Define a property in the gradle.properties file called:
 
-   ```
+   ```http
    appsflyerSdkVersion = "YOUR_SDK_VERSION" // e.g., 6.15.2
    ```
 2. Reference the property dynamically in your build.gradle file:
 
-   ```
+   ```http
    dependencies {
        implementation("com.appsflyer:af-android-sdk:$appsflyerSdkVersion")
        implementation("com.appsflyer:lvl:$appsflyerSdkVersion")
@@ -66,7 +64,7 @@ Currently, this is a manual process where you'll need to pass the below informat
    ```
 3. For Kotlin DSL Users:
 
-   ```
+   ```http
    dependencies {
        val appsflyerSdkVersion = "<YOUR_SDK_VERSION>" // e.g., 6.15.2
        implementation("com.appsflyer:af-android-sdk:$appsflyerSdkVersion")
@@ -117,7 +115,7 @@ Once we get your request, the Protect360 team will configure LVL verification in
 
 When debugging the app, you should be able to see LVL information on the payload that is sent to AppsFlyer, like the example below:
 
-```
+```json
 "lvl":{
       "ttr":,<ttr>,
       "signature":"<signature>",

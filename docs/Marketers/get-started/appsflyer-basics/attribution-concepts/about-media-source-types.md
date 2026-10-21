@@ -1,6 +1,5 @@
 ---
 title: About media source types
-excerpt: Understand the basic media source types in AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -25,12 +24,14 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212188826-About-media-source-types
 ---
+**At a glance:** Understand the basic media source types in AppsFlyer.
+
 A media source is an entity that displays ads. The AppsFlyer platform enables attribution recording from different types of media sources.
 
 | Type of media source | Description |
 | --- | --- |
-| [Self-reporting network (SRN)](/docs/self-reporting-networks-srns) | <ul><li>Provide attribution confirmation and details via an API between AppsFlyer and the network</li><li>Examples: Meta ads, Google, Apple Search Ads</li></ul> |
-| Non-SRN | <ul><li>Provide attribution information contained in a click URL.</li><li>Also known as [attribution-link network](/docs/set-up-an-integrated-partner) or ad network.</li><li>Examples: Unity Ads, Tapjoy, Applovin</li></ul> |
-| Owned media | <ul><li>Owned media use [OneLink links](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink) for campaigns.</li><li>Examples: Email, SMS, social networks, landing pages, QR codes, and so on.</li></ul> |
+| <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">Self-reporting network (SRN)</Anchor> | <ul><li>Provide attribution confirmation and details via an API between AppsFlyer and the network</li><li>Examples: Meta ads, Google, Apple Search Ads</li></ul> |
+| Non-SRN | <ul><li>Provide attribution information contained in a click URL.</li><li>Also known as <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">attribution-link network</Anchor> or ad network.</li><li>Examples: Unity Ads, Tapjoy, Applovin</li></ul> |
+| Owned media | <ul><li>Owned media use <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink links</Anchor> for campaigns.</li><li>Examples: Email, SMS, social networks, landing pages, QR codes, and so on.</li></ul> |
 
-See also: [cross-promotion attribution](/docs/cross-promotion-attribution-for-marketers), [user invite attribution](/docs/user-invite-attribution), and [Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers)
+See also: <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">cross-promotion attribution</Anchor>, <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">user invite attribution</Anchor>, and <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>

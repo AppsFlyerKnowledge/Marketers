@@ -1,8 +1,5 @@
 ---
 title: Partner activation/deactivation
-excerpt: >-
-  Activate or deactivate partner integrations, allowing or denying them from
-  getting your data and performing actions.
 metadata:
   keywords:
     - Advertisers
@@ -28,13 +25,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000844778-Partner-activation-deactivation
 ---
+**At a glance:** Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions.
+
 ## Activation overview
 
 Partner integrations can be either active or inactive. An integration is first activated by turning on the **Activate partner** toggle from the main integration page. There are various integration types. An integration can also be considered active if any other [integration type](#id) (see table below) is turned on, even while the **Activate partner** toggle is turned off.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the [Aggregated Advanced Privacy framework](/docs/apply-aggregated-advanced-privacy-framework) and [Privacy preserving methods in the SDK](/docs/apply-privacy-preserving-sdk-methods) articles.
+> When enabling a partner integration, certain data, including personal information (e.g., Advertising ID, IP address), will, by default, be shared with them by you. Please ensure you have the appropriate legal basis and rights to share this data. You can limit data sharing with a partner by following the instructions provided in the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy framework</Anchor> and <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">Privacy preserving methods in the SDK</Anchor> articles.
 
 **To get to the partner integration page of the currently selected app:**
 
@@ -50,11 +49,11 @@ The primary integration (**Activate partner**) is activated on the first integra
 
 | Integration type | Description |
 | --- | --- |
-| **Main integration (**[**Activate partner**](/docs/set-up-an-integrated-partner#a-activate-partner)) | Enables conversions to be attributed and postbacks to be sent to partners |
-| [**Cost**](/docs/roi360-cost-aggregation-overview) (when applicable) | Enables getting data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries |
-| [**Ad revenue**](/docs/roi360-guide-ad-revenue-attribution) (when applicable) | Enables getting data on revenue from your ads |
-| [**SKAN**](/docs/skan-integrated-partners-list) (when applicable) | Enables getting SKAN postbacks from partners |
-| [**Permissions**](/docs/set-up-an-integrated-partner#permissions-tab) | Enables granting permissions for ad networks and agencies to access your data and perform actions in your integration |
+| **Main integration (**<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#a-activate-partner">**Activate partner**</Anchor>) | Enables conversions to be attributed and postbacks to be sent to partners |
+| <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">**Cost**</Anchor> (when applicable) | Enables getting data on cost, clicks, and impressions for your campaigns, adsets, ads, and geos/countries |
+| <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">**Ad revenue**</Anchor> (when applicable) | Enables getting data on revenue from your ads |
+| <Anchor target="_blank" href="/marketers/docs/skan-integrated-partners-list">**SKAN**</Anchor> (when applicable) | Enables getting SKAN postbacks from partners |
+| <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">**Permissions**</Anchor> | Enables granting permissions for ad networks and agencies to access your data and perform actions in your integration |
 
 </Accordion>
 
@@ -64,7 +63,7 @@ The primary integration (**Activate partner**) is activated on the first integra
 
 The following table presents the impact of partner activation settings on attribution and postbacks in various scenarios.
 
-<table><thead><tr><th>Scenario</th><th>Activate partner:<br/>On</th><th>Activate partner: Off</th></tr></thead><tbody><tr><td>Attribution and postbacks for new installs, <span>re-attributions, and re-engagements</span></td><td><p><strong>Attribution:</strong> Yes</p><p><strong>Postbacks:</strong> Yes</p></td><td><p><strong>Attribution:</strong> No</p><p><strong>Postbacks:</strong> No</p></td></tr><tr><td><span>Engagement (click) occurs before deactivation; install/re-attribution/re-engagement occurs after deactivation</span></td><td><p><span>Not applicable</span></p><p><strong> </strong></p></td><td><span>The deactivated partner is not attributed.</span></td></tr><tr><td>Clicks and impressions</td><td>The engagements can be attributed and displayed in the dashboard.</td><td><ul><li>The click redirects to a 403 forbidden page.</li><li>The engagements cannot be attributed and not displayed in the dashboard.</li></ul></td></tr><tr><td>SKAN attribution</td><td colspan="2"><p>Not applicable.</p><p>When SKAN attribution is configured, SKAN data is recorded whether <strong>Activate partner</strong> is turned on or off. </p></td></tr></tbody></table>
+<table><thead><tr><th>Scenario</th><th>Activate partner:<br/>On</th><th>Activate partner: Off</th></tr></thead><tbody><tr><td>Attribution and postbacks for new installs, <span>re-attributions, and re-engagements</span></td><td><p><strong>Attribution:</strong> Yes</p><p><strong>Postbacks:</strong> Yes</p></td><td><p><strong>Attribution:</strong> No</p><p><strong>Postbacks:</strong> No</p></td></tr><tr><td><span>Engagement (click) occurs before deactivation; install/re-attribution/re-engagement occurs after deactivation</span></td><td><p><span>Not applicable</span></p><p> <strong></strong></p></td><td><span>The deactivated partner is not attributed.</span></td></tr><tr><td>Clicks and impressions</td><td>The engagements can be attributed and displayed in the dashboard.</td><td><ul><li>The click redirects to a 403 forbidden page.</li><li>The engagements cannot be attributed and not displayed in the dashboard.</li></ul></td></tr><tr><td>SKAN attribution</td><td colspan="2"><p>Not applicable.</p><p>When SKAN attribution is configured, SKAN data is recorded whether <strong>Activate partner</strong> is turned on or off. </p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -73,14 +72,14 @@ The following table presents the impact of partner activation settings on attrib
 **To activate or edit the main integration (Integration tab) of the currently selected app:**
 
 1. **To activate:** In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Marketplace** tab.  
-   **To edit:** In AppsFlyer, from the side menu, select**Collaborate > Partner Integrations > Active integrations** tab.
+   **To edit:** In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Active integrations** tab.
 2. Search for the partner and select it. You’re directed to the integration setup page.
-3. From the **Integration**tab, turn on **Activate partner**.
+3. From the **Integration** tab, turn on **Activate partner**.
 4. Click **Save Integration**.
 
 See [other integration types](#id).
 
-> 📘 **Caution**
+> ❗️ **Caution**
 >
 > Make sure not to use the **Activate partner** setting to pause or end campaigns. Doing so could cause irreversible damage to active campaign measurement.
 
@@ -101,7 +100,7 @@ You can deactivate a partner integration of your app by turning off the **Activa
 
 1. In AppsFlyer, from the side menu, select **Collaborate > Partner Integrations > Active integrations** tab.
 2. Search for the partner and select it. You’re directed to the integration setup page.
-3. From the **Integration**tab, turn off **Activate partner**.
+3. From the **Integration** tab, turn off **Activate partner**.
 4. Click **Save Integration**.
 5. To completely deactivate the partner from all [other integration types](#id), go through each of the tabs on the integration page and disable them.  
    **Note:** For Google and Meta ads, to stop recording SKAN data, go to the SKAN tab and delete the connection.
@@ -134,7 +133,7 @@ You can grant agencies permission to work with your app and run traffic on your 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Active integrations**.
 2. Find the agency and select it.
 3. Go to the **Permissions** tab and turn on **Agency Permissions.**
-4. [Optional] Grant the agency additional [permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+4. [Optional] Grant the agency additional <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permissions</Anchor>.
 
 > 📘 **Note**
 >
@@ -154,7 +153,7 @@ When permissions are disabled for agencies:
 
 The following examples describe what happens to traffic that continues to be sent after a marketer removes agency permissions:
 
-> 📘 **Example 1**
+> 📄 **Example 1**
 >
 > **Agency campaign with a non-SRN (attribution link partner)**
 >
@@ -162,7 +161,7 @@ The following examples describe what happens to traffic that continues to be sen
 >
 > This example is also applicable to scenarios in which AppsFlyer receives click-through attribution links as well as querying the partner’s API
 
-> 📘 **Example 2**
+> 📄 **Example 2**
 >
 > **Agency campaign with an SRN (attribution link partner)**
 >

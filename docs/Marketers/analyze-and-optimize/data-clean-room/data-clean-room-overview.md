@@ -1,9 +1,5 @@
 ---
 title: Data Clean Room—Overview
-excerpt: >-
-  Enrich your user-level data by matching it with AppsFlyer user-level
-  attribution data to create aggregated reports and obtain insights that
-  leverage the value of the combined data.
 metadata:
   keywords:
     - Premium
@@ -28,6 +24,8 @@ x-zendesk:
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
 **![privacy_cloud_logo.png](https://files.readme.io/5862beb63a4b22f68fc230f89c3faa260a15ab40e1defa70c59604d5a81e759d-5583061038225.png)**
+
+**At a glance:** Enrich your user-level data by matching it with AppsFlyer user-level attribution data to create aggregated reports and obtain insights that leverage the value of the combined data.
 
 ## Introduction
 
@@ -83,11 +81,11 @@ The AppsFlyer Data Clean Room (DCR) is very flexible in terms of the types of da
 Follow these steps to set up the DCR to meet your organization's needs:
 
 1. Consider the reports you want to receive from the DCR. These reports are the result of enriching your advertiser data sources with AppsFlyer attribution data. Determine the first-party data sources you need to upload into the DCR in order to create these reports.
-2. [Create the basic cloud storage structure](/docs/data-clean-room-setting-up-cloud-services) to support those data sources and reports.
+2. <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">Create the basic cloud storage structure</Anchor> to support those data sources and reports.
 3. Define the queries that will pull the data and produce the data source files; produce prototypes of the data source files.
-4. Develop the automations that will pull the data, create the source subfolders, and upload the data sources and [\_SUCCESS files](/docs/data-clean-room-working-with-sources#_success-files) on a regular basis.
-5. Set up your [sources](/docs/data-clean-room-working-with-sources) in the AppsFlyer DCR platform.
-6. Set up your [reports](/docs/data-clean-room-working-with-reports) in the AppsFlyer DCR platform.
+4. Develop the automations that will pull the data, create the source subfolders, and upload the data sources and <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#_success-files">\_SUCCESS files</Anchor> on a regular basis.
+5. Set up your <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources">sources</Anchor> in the AppsFlyer DCR platform.
+6. Set up your <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-reports">reports</Anchor> in the AppsFlyer DCR platform.
 7. Develop the automations that will ingest the reports after they are delivered by the DCR to your cloud storage.
 
 <div data-zendesk-anchors="h_01HE7SDH5PWCW6YG00GC12W4BS=introduction h_01HE7SDH5PW64CHNJVJJ30V5ZY=how-does-it-work h_01HE7SDH5P82HCEN52ZBPMQV16=how-does-the-dcr-obtain-data h_01HE7SDH5PWDQ61389TT7V83F8=what-does-the-dcr-do-with-the-data h_01HE7SDH5P3QSG874XASXNH1YS=dcr-terminology h_01HE7SDH5P0S9542P2CB22KKVT=working-with-the-dcr-setup-workflow" />

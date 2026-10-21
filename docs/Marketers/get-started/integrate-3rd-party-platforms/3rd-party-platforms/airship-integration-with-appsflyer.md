@@ -1,12 +1,5 @@
 ---
 title: Airship integration with AppsFlyer
-excerpt: >-
-  Airship, an AppsFlyer integrated partner, provides the world’s leading mobile
-  engagement platform, helping thousands of businesses of all sizes form a
-  direct and lasting connection with their customers. With Airship, companies
-  gain total control of their mobile footprint — apps, wallets, and user-level
-  data — to deliver experiences that get noticed and drive action across mobile
-  or any other customer touch-point.
 metadata:
   keywords:
     - Attribution
@@ -34,9 +27,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033976-Airship-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Airship, an AppsFlyer integrated partner, provides the world’s leading mobile engagement platform, helping thousands of businesses of all sizes form a direct and lasting connection with their customers. With Airship, companies gain total control of their mobile footprint — apps, wallets, and user-level data — to deliver experiences that get noticed and drive action across mobile or any other customer touch-point.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Airship
 
@@ -49,7 +44,7 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below:
 
 <div id="integration-tab" />
@@ -61,7 +56,7 @@ The Integration tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. **The toggle must be on for as long as you work with the partner**.  
-Learn more about [partner activation](/docs/partner-activation-deactivation).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
 ### General settings
 
@@ -90,33 +85,42 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
    > Make sure the lines of code are inserted in the correct place – after Airship SDK is launched and before the start method is called on iOS or Android.
 
 
-   AndroidiOS
+   <Tabs>
+   <Tab title="Android">
 
-   For more details about the  `setAdditionalData` method, click [here](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata).
+   For more details about the  `setAdditionalData` method, click <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata">here</Anchor>.
 
-   ```
+   ```java
    HashMap<String, Object> customData = new HashMap<String,Object>();
    String channelId = UAirship.shared().getChannel().getId();
    customData.put("channelid", channelId);
    AppsFlyerLib.getInstance().setAdditionalData(customData);
    ```
 
-   For more details about the  `setAdditionalData` method, click [here](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata).
+   </Tab>
 
-   ```javascript
+   <Tab title="iOS">
+
+   For more details about the  `setAdditionalData` method, click <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata">here</Anchor>.
+
+   ```objectivec
    let channelID = UAirship.channel().identifier
    print("My Application Channel ID: \(channelID)")
    ```
+
+   </Tab>
+   </Tabs>
+
 2. Get the App Key from Airship:
    1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
-   2. On the left menu, go to **Settings >** **APIs &Integrations** and click **Airship API**.
+   2. On the left menu, go to **Settings >** **APIs &** **Integrations** and click **Airship API**.
 
       ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
    3. Copy the App Key.
    4. In AppsFlyer, paste the App Key in the App Key field.
 3. Get the Token from Airship:
    1. Login to your Airship account at: [go.airship.com](http://go.urbanairship.com/)
-   2. On the left menu, go to **Settings >** **APIs &Integrations** and click **Tokens**.
+   2. On the left menu, go to **Settings >** **APIs &** **Integrations** and click **Tokens**.
 
       ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
    3. Click **Create Token**.

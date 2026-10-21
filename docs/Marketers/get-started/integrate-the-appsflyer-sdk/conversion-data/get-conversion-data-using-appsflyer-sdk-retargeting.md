@@ -1,8 +1,5 @@
 ---
 title: Get conversion data using AppsFlyer SDK–Retargeting
-excerpt: >-
-  Learn how re-attributions and re-engagements reflect in the conversion data
-  for SRNs and non-SRN user journeys.
 metadata:
   keywords:
     - Developers
@@ -24,11 +21,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481260817-Get-conversion-data-using-AppsFlyer-SDK-Retargeting
 ---
+> **At a glance:** Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys.
+
 ## Retargeting conversion
 
 Retargeting includes two types of conversions, re-attribution or re-engagement.
 
-Conversion data for retargeting doesn't always give a clear indication as to the type of conversion. See [alternative conversion data sources](#alternative-conversion-data-sources).
+> 👍 **Tip**
+>
+> Conversion data for retargeting doesn't always give a clear indication as to the type of conversion. See [alternative conversion data sources](#alternative-conversion-data-sources).
 
 ## Re-attribution with SRNs
 
@@ -36,7 +37,9 @@ When a user is re-attributed through an SRN, the conversion data payload doesn't
 
 What this means is that there is no way to determine, on the SDK level, if an install comes from a retargeting campaign.
 
-Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
+> 📘 **Note**
+>
+> Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
 
 ## Re-attribution with regular ad networks
 
@@ -109,7 +112,8 @@ adgroup, to programmatically redirect your users.
 
 #### Conversion data for deferred deep linking with Meta ads
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
 ```json
 {
@@ -141,9 +145,9 @@ adgroup, to programmatically redirect your users.
   }
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
 ```json
   {
@@ -175,24 +179,27 @@ adgroup, to programmatically redirect your users.
   }
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 You can use the data in getConversionData response, such as campaign,
 adset, etc. to programmatically redirect your users and serve
 them
 with relevant content.
 
-The app is an eCommerce app that specializes in sportswear.
-A
-user who doesn't have the app installed engages with an ad
-and
-installs the app. Once the app launches, the SDK returns
-the
-conversion data. The developer makes the app open the
-**summer running shoe collection** (campaign)
-activity
-in the store and serves the **running shoes for women**
-category (adset).
+> 📘 **Note**
+>
+> The app is an eCommerce app that specializes in sportswear.
+> A
+> user who doesn't have the app installed engages with an ad
+> and
+> installs the app. Once the app launches, the SDK returns
+> the
+> conversion data. The developer makes the app open the
+> **summer running shoe collection** (campaign)
+> activity
+> in the store and serves the **running shoes for women**
+> category (adset).
 
 </Accordion>
 
@@ -314,16 +321,20 @@ are as follows:
   be
   used for this purpose.
 
-The field `shortlink` does not appear in the payload
-when using the long OneLink.
+> 🚧 **Important**
+>
+> The field `shortlink` does not appear in the payload
+> when using the long OneLink.
+>
+> In both cases (short or long OneLink) we recommend adding
+> a custom
+> parameter that indicates the activity. For example
+> `&deep_link_activity=shoes_cateogry`
 
-In both cases (short or long OneLink) we recommend adding
-a custom
-parameter that indicates the activity. For example
-`&deep_link_activity=shoes_cateogry`
-
-Using universal links and app links is only possible with
-OneLink.
+> 📘 **Note**
+>
+> Using universal links and app links is only possible with
+> OneLink.
 
 </Accordion>
 
@@ -367,7 +378,9 @@ Example:
 
 * The app developer can use such parameters, like `af_dp` and campaign name, to send the user to a specific activity and serve the relevant content.
 
-We recommend using the short version of OneLink. Click [here](/docs/understand-onelink-short-vs-long-urls) to learn more.
+> 🚧 **Important**
+>
+> We recommend using the short version of OneLink. Click <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">here</Anchor> to learn more.
 
 Another reason to use the short version of OneLink is the conversion data structure that the long version returns. When using the long version, the conversion data is a map with a single field called `link` that holds the entire long OneLink.
 
@@ -381,18 +394,20 @@ Another reason to use the short version of OneLink is the conversion data struct
 
 ## Alternative conversion data sources
 
-* Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our [Push API guide](/docs/push-api-streaming-raw-data).
+* Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API guide</Anchor>.
 * Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called ***Event Name***. The value in this column is either ***re-engagemen*t** or ***re-attribution*** according to the type of conversion.
 
 ## Examples of mixed user acquisition and re-attribution
 
-1. A user installs your app and then uninstalls it. The act of installation puts the user in a [re-attribution window](/docs/set-up-re-attribution-window). You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user. This is due to two factors:
-
-   1. The configuration with Meta ads allows retargeting
-   2. The user is in the re-attribution window
-
-   In this case, the campaign name doesn't indicate re-attribution.
-2. Let's take the same example, only this time the user is outside the re-attribution window. In this case, the install is a new non-organic install.
-3. Let's look at another example. You set a retargeting campaign on Meta ads. Some users come across the campaign and install the app. However, these users install the app for the first time. Such users are not considered re-attributed users. Instead, AppsFlyer considers them as users that come from a user acquisition campaign.
+> 📘 **Note**
+>
+> 1. A user installs your app and then uninstalls it. The act of installation puts the user in a <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor>. You set a user acquisition (not retargeting) campaign with Meta ads. You also set the AppsFlyer integration with Meta ads to allow retargeting.While still in the re-attribution window, the user sees the ad, clicks on it, and reinstalls the app. As far as AppsFlyer sees it, the user is a re-attributed user. This is due to two factors:
+>
+>    1. The configuration with Meta ads allows retargeting
+>    2. The user is in the re-attribution window
+>
+>    In this case, the campaign name doesn't indicate re-attribution.
+> 2. Let's take the same example, only this time the user is outside the re-attribution window. In this case, the install is a new non-organic install.
+> 3. Let's look at another example. You set a retargeting campaign on Meta ads. Some users come across the campaign and install the app. However, these users install the app for the first time. Such users are not considered re-attributed users. Instead, AppsFlyer considers them as users that come from a user acquisition campaign.
 
 <div data-zendesk-anchors="h_01EHQ74JS84509GT6M93SZA4HX=retargeting-conversion reattribution-with-srns=re-attribution-with-srns h_01JNBRN0TBCVKBP6X6GCK3ADG9=re-attribution-with-srns reattribution-with-regular-ad-networks=re-attribution-with-regular-ad-networks h_01JNBRN0TCF7YC76661XNS78AD=re-attribution-with-regular-ad-networks h_01JNBRN0TCP9CAHV3X4QD0AVRS=attribution-link h_01JNBRN0TCXAZKYVYY56Q4GVHN=conversion-data-payload reattribution-with-deferred-deep-linking=re-attribution-with-deferred-deep-linking h_01JNBRN0TCECNRZ5ZBH2WWAWHV=re-attribution-with-deferred-deep-linking conversion-data-for-deferred-deep-linking-with-facebook=conversion-data-for-deferred-deep-linking-with-meta-ads h_01JNBRN0TC3NAE862BG274DRWW=conversion-data-for-deferred-deep-linking-with-meta-ads h_01JNBRN0TC909V4TNCEK4ZP83H=uri-schemes h_01JNBRN0TCH7HYZ4BCZTNS89SS=ios-universal-links-and-android-app-links reengagement-with-srns=re-engagement-with-srns h_01JNBRN0TCT2F11CQ4H8208JCB=re-engagement-with-srns reengagement-with-regular-ad-networks=re-engagement-with-regular-ad-networks h_01JNBRN0TCNTAAD47ZTTK3NWYJ=re-engagement-with-regular-ad-networks reengagement-with-deep-linking=re-engagement-with-deep-linking h_01JNBRN0TCGN9Y8ZHSEC4HMKPM=re-engagement-with-deep-linking h_01JNBRN0TCZ8T35W3AAA4HVD9M=alternative-conversion-data-sources examples-of-mixed-user-acquisition-and-reattribution=examples-of-mixed-user-acquisition-and-re-attribution h_01JNBRN0TC13RAZ73AFV6G92VB=examples-of-mixed-user-acquisition-and-re-attribution" />

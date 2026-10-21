@@ -22,10 +22,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21334347923729-Bulletin-New-Cohort-and-Retention-dashboard
 ---
-| **What's new** | The [cohort dashboard](/docs/cohort-and-retention-dashboard) has been redesigned and improved. It also now includes retention data. |
+| **What's new** | The <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">cohort dashboard</Anchor> has been redesigned and improved. It also now includes retention data. |
 | --- | --- |
 | **Effective date** | December 26, 2023 |
-| **Where** | [Cohort dashboard](/docs/cohort-and-retention-dashboard) (now called Cohort and Retention dashboard) |
+| **Where** | <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor> (now called Cohort and Retention dashboard) |
 | **What you must know** | <ul><li>Retention dashboard will be deprecated (date to be decided).</li><li>We recommend using the new and improved Cohort and Retention dashboard.</li><li>For those used to using the old Cohort dashboard, please be aware that as one of the improvements to the dashboard, the old requirement to select a metric and function has largely been replaced. Now, except in a few cases, you only need to select a metric. You can use the table in the mapping section that follows to help you align your previous cohort reports in the new UI.</li></ul> |
 
 <div id="mapping-metrics-from-the-old-cohort-dashboard-ui-to-the-new-ui" />

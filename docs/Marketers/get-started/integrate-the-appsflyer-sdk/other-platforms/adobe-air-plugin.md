@@ -1,9 +1,5 @@
 ---
 title: Adobe AIR plugin
-excerpt: >-
-  Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR
-  development platform to measure installs, in-app events, media sources, and
-  more.
 metadata:
   keywords:
     - github
@@ -28,6 +24,8 @@ x-zendesk:
   section_id: 6551244207121
   url: https://support.appsflyer.com/hc/en-us/articles/207032226-Adobe-AIR-plugin
 ---
+**At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with Adobe AIR development platform to measure installs, in-app events, media sources, and more.
+
 ## Plugin information
 
 Supported platforms:
@@ -46,11 +44,11 @@ Based on:
 
 <Accordion title="Installation">
 
-Download the [AppsFlyerAIRExtension.ane](https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/AppsFlyerAIRExtension.ane "AppsFlyerAIRExtension.ane") file from the bin folder Add the ANE to your project and make sure the IDE is marked to package it.
+Download the <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/AppsFlyerAIRExtension.ane">AppsFlyerAIRExtension.ane</Anchor> file from the bin folder Add the ANE to your project and make sure the IDE is marked to package it.
 
 If the following was not added automatically, add it to the APP\_NAME-app.xml:
 
-```
+```html
 <extensions>
   <extensionID>com.appsflyer.adobeair</extensionID>
 </extensions>
@@ -61,7 +59,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 > * In the AppsFlyer dashboard you will need to add "air." prefix to the package name as this is added automatically by Air. For example - an app with the package name "**com.test.android**", should set the app id in the AppsFlyer Dashboard as "**air.com.test.android**".
 > * Add the following permissions to Android Manifest (in the app description `APP_NAME-app.xml`):
 >
->   ```xml
+>   ```html
 >   <uses-permission android:name="android.permission.INTERNET"/>
 >   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 >   <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
@@ -69,7 +67,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 > * Add the following metatag to Android Manifest within the application tag (in the app description `APP_NAME-app.xml`):
 >
 >
->   ```
+>   ```html
 >   meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 >   ```
 >
@@ -77,19 +75,19 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >
 > [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
 >
-> **Important:** Due to some limitations in the [ADT](https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html), after the APK is built, it is missing some important files.
+> **Important:** Due to some limitations in the <Anchor target="_blank" href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html">ADT</Anchor>, after the APK is built, it is missing some important files.
 >
 > To add those files (with the help of **automated** script):
 >
 > 1. Place into single directory of your choice:
 >    * APK file
 >    * Keystore that was used to sign the APK
->    * [af\_apk\_fix.sh script](https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/af_apk_fix.sh)
+>    * <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/blob/master/bin/af_apk_fix.sh">af\_apk\_fix.sh script</Anchor>
 > 2. Run `./af_apk_fix.sh` and enter requested info when prompted.
 >
 > Here is what the script is doing. In case of any issues, you can perform those steps manually:
 >
-> 1. Decode the APK using [apktool](https://ibotpeaches.github.io/Apktool/). This will create app\_name folder.
+> 1. Decode the APK using <Anchor target="_blank" href="https://ibotpeaches.github.io/Apktool/">apktool</Anchor>. This will create app\_name folder.
 >    `apktool d app_name.apk`
 > 2. Download the [AppsFlyer SDK jar/aar](https://repo.maven.apache.org/maven2/com/appsflyer/af-android-sdk/5.4.1/af-android-sdk-5.4.1.aar) of the same version that was used in the APK.
 > 3. Extract files `a-` and `b-` from the jar (by renaming jar into a zip) and place them into the folder with the decompiled apk to `app_name/unknown/com/appsflyer/internal`
@@ -107,17 +105,17 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >    `apktool b app`
 > 6. Sign the APK.
 >
->    ```
+>    ```html
 >    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore myKeystore.keystore app_name/dist/app_name.apk myKey
 >    ```
 > 7. Zipalign the apk (to be able to upload to Google Play)
 >
->    ```
+>    ```html
 >    zipalign -f -v 4 app_name/dist/app_name.apk app_name/dist/zipalign_app_name.apk
 >    ```
 > 8. Verify zipalignment
 >
->    ```
+>    ```html
 >    zipalign -c -v 4 app_name/dist/zipalign_app_name.apk
 >    ```
 > 9. Your apk `zipalign_app_name.apk` is ready to use!
@@ -130,32 +128,32 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 
 Import the AppsFlyer Extension into your project:
 
-```
+```html
 import AppsFlyerInterface;
 ```
 
 Construct the AppsFlyer interface:
 
-```
+```html
 private static var appsFlyer:AppsFlyerInterface; 
 appsFlyer = new AppsFlyerInterface();
 ```
 
 [Optional] If you want to perform deep linking or access AppsFlyer conversion data from the application, register Conversion Listener:
 
-```
+```html
 appsFlyer.registerConversionListener();
 ```
 
 Set the Developer key and iOS app ID (optional) and Initialise the SDK:
 
-```
+```html
 appsFlyer.appsFlyer.init("DevKey", "iOSAppID");
 ```
 
 Initialize session logging (automatically log app launches and background-to-foreground transitions) with DevKey and iOS app ID (optional):
 
-```
+```html
 appsFlyer.start("DevKey", "iOSAppID");
 ```
 
@@ -169,13 +167,13 @@ In order to receive the relevant AppsFlyer information from the deep link used:
 
 1. Register the following event listeners:
 
-   ```
+   ```html
    appsFlyer.addEventListener(AppsFlyerEvent.APP_OPEN_ATTRIBUTION, eventHandler); // success 
    appsFlyer.addEventListener(AppsFlyerEvent.ATTRIBUTION_FAILURE, eventHandler); // error
    ```
 2. Handle the response in a corresponding event handler:
 
-   ```
+   ```html
    private function eventHandler(event:AppsFlyerEvent):void {
    	log("AppsFlyer event: " + event.type + "; \nData: " + event.data);
    }
@@ -191,13 +189,13 @@ In order to receive the conversion data for the current install:
 
 1. Register the following event listeners:
 
-   ```
+   ```html
    appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_DATA_LOADED, eventHandler); // success
    appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_FAILED, eventHandler); //error
    ```
 2. Handle the response in a corresponding event handler:
 
-   ```
+   ```html
    private function eventHandler(event:AppsFlyerEvent):void {
    	log("AppsFlyer event: " + event.type + "; \nData: " + event.data);
    }
@@ -219,25 +217,25 @@ If the app does NOT contain Google Play Services, the IMEI and Android ID are co
 
 **Enable/disable IMEI collection (disabled by default)**
 
-```
+```html
 appsFlyer.setCollectIMEI(bool);
 ```
 
 **Manually set IMEI Data**
 
-```
+```html
 appsFlyer.setImeiData("imeiString");
 ```
 
 **Enable/disable Android ID collection (disabled by default)**
 
-```
+```html
 appsFlyer.setCollectAndroidID(bool);
 ```
 
 **Manually set Android ID data**
 
-```
+```html
 appsFlyer.setAndroidIdData("AndroidIDString");
 ```
 
@@ -249,14 +247,118 @@ appsFlyer.setAndroidIdData("AndroidIDString");
 
 <Accordion title="API methods">
 
-| Name | Description | Signature/example |
-| --- | --- | --- |
-| logEvent | Log in-app events. | ```<br />var param:String = "Deposit";<br />var value:String = '{"amount":10, "FTDLevel":"-"}';<br />appsFlyer.logEvent(param, value);<br />``` |
-| start | Send a session logging event, regardless of app state. | ```<br />appsFlyer.start();<br />``` |
-| setAppUserId | Get the user ID as used in the app. | ```<br />appsFlyer.setAppUserId("user_id_as_used_in_the_app");<br />``` |
-| setUserEmails | Get user email. | ```<br />appsFlyer.setUserEmails("example@example.com");<br />``` |
-| setCurrency | Set the currency for logging revenue events, for example, USD. | ```<br />appsFlyer.setCurrency("USD");<br />``` |
-| stop | Used when you want want to shut down all SDK logging due to legal and privacy compliance. Once this API is invoked, our SDK no longer communicates with our servers. | ```<br />appsFlyer.stop();<br />``` |
-| setDebug | Enable/disable AppsFlyer debug logs.<br /><br />**Important:** Do not release the app to app stores with debug logs enabled. | ```<br />appsFlyer.setDebug(bool);<br />``` |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Signature/example
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        logEvent
+      </td>
+      <td>
+        Log in-app events.
+      </td>
+      <td>
+        ```html
+        var param:String = "Deposit";
+        var value:String = '{"amount":10, "FTDLevel":"-"}';
+        appsFlyer.logEvent(param, value);
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        start
+      </td>
+      <td>
+        Send a session logging event, regardless of app state.
+      </td>
+      <td>
+        ```html
+        appsFlyer.start();
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        setAppUserId
+      </td>
+      <td>
+        Get the user ID as used in the app.
+      </td>
+      <td>
+        ```html
+        appsFlyer.setAppUserId("user_id_as_used_in_the_app");
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        setUserEmails
+      </td>
+      <td>
+        Get user email.
+      </td>
+      <td>
+        ```html
+        appsFlyer.setUserEmails("example@example.com");
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        setCurrency
+      </td>
+      <td>
+        Set the currency for logging revenue events, for example, USD.
+      </td>
+      <td>
+        ```html
+        appsFlyer.setCurrency("USD");
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        stop
+      </td>
+      <td>
+        Used when you want want to shut down all SDK logging due to legal and privacy compliance. Once this API is invoked, our SDK no longer communicates with our servers.
+      </td>
+      <td>
+        ```html
+        appsFlyer.stop();
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        setDebug
+      </td>
+      <td>
+        Enable/disable AppsFlyer debug logs.
+
+        **Important:** Do not release the app to app stores with debug logs enabled.
+      </td>
+      <td>
+        ```html
+        appsFlyer.setDebug(bool);
+        ```
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>

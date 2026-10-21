@@ -1,8 +1,5 @@
 ---
 title: Cordova
-excerpt: >-
-  Integrate AppsFlyer into your Cordova apps to measure installs, in-app events,
-  media sources, and more.
 metadata:
   keywords:
     - PhoneGap
@@ -30,10 +27,12 @@ x-zendesk:
   section_id: 6551244207121
   url: https://support.appsflyer.com/hc/en-us/articles/207032196-Cordova
 ---
-> 📘 **Important!**
->
-> On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click [here](/docs/sdk-integration-overview#about-the-sdk).
+**At a glance:** Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more.
 
-To use the Cordova AppsFlyer plugin for Android and iOS, follow the [instructions on the npm website](https://www.npmjs.com/package/cordova-plugin-appsflyer-sdk).
+> 🚧 **Important!**
+>
+> On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview#about-the-sdk">here</Anchor>.
+
+To use the Cordova AppsFlyer plugin for Android and iOS, follow the <Anchor target="_blank" href="https://www.npmjs.com/package/cordova-plugin-appsflyer-sdk">instructions on the npm website</Anchor>.
 
 <div data-zendesk-anchors="h_01HFCBA1TB8K4RVDEEVSD6CWMM=important" />

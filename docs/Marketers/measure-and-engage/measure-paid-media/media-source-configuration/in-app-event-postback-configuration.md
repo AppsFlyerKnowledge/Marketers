@@ -1,8 +1,5 @@
 ---
 title: In-app event postback configuration
-excerpt: >-
-  Measure app engagement and quality of your users, and optimize campaigns using
-  in-app events data.
 metadata:
   keywords:
     - In-App Events
@@ -26,9 +23,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208439256-In-app-event-postback-configuration
 ---
+**At a glance:** Measure app engagement and quality of your users, and optimize campaigns using in-app events data.
+
 ## Overview
 
-In-app events enable marketers to measure app engagement and user quality from different sources and to build an appropriate user acquisition strategy. Ad networks use in-app event information to optimize campaigns and run cost-per-action/event campaigns. Ad networks receive in-app event data via postbacks, which are sent in real time. [Learn more about rich in-app events](/docs/in-app-events-overview).
+In-app events enable marketers to measure app engagement and user quality from different sources and to build an appropriate user acquisition strategy. Ad networks use in-app event information to optimize campaigns and run cost-per-action/event campaigns. Ad networks receive in-app event data via postbacks, which are sent in real time. <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Learn more about rich in-app events</Anchor>.
 
 ## Postback in-app event selection
 
@@ -37,15 +36,15 @@ Marketers can select which in-app events they want to send postbacks to ad netwo
 > 📘 **Note**
 >
 > * In-app events include **rejected events**, meaning in-app events blocked by Protect360 or events found to be non-compliant with target validation rules.
-> * If the **In-app event postbacks** section doesn't appear in the **Integration** tab, it means the partner hasn't yet set up in-app event recordings with AppsFlyer during its preliminary configuration. The partner can contact AppsFlyer using the [partner assistant widget](https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif) to finish the integration.
+> * If the **In-app event postbacks** section doesn't appear in the **Integration** tab, it means the partner hasn't yet set up in-app event recordings with AppsFlyer during its preliminary configuration. The partner can contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to finish the integration.
 
 ## In-app event postback window
 
-The in-app event postback window allows marketers who work with networks on a [CPA (cost-per-action)](/docs/appsflyer-knowledge-base-glossary#cpa) basis to configure post-conversion windows after which event postbacks are no longer sent.
+The in-app event postback window allows marketers who work with networks on a <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#cpa">CPA (cost-per-action)</Anchor> basis to configure post-conversion windows after which event postbacks are no longer sent.
 
 For example, if you're charged for events happening within 15 days of a user install, set the window as follows:
 
-![In-app event postback window set to 15 days](https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png)
+<Image alt="In-app event postback window set to 15 days" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 Postbacks after this period are not sent, and the network is not notified, but AppsFlyer still records the events and attributes them to the network.
 
@@ -75,9 +74,9 @@ When starting to set up in-app event postbacks, the default window is automatica
 The following roles can configure postback windows:
 
 * Marketers
-* Agencies, if they're given the **Allow to configure in-app event postbacks** [permissions](/docs/set-up-an-integrated-partner#agency-permissions).  
+* Agencies, if they're given the **Allow to configure in-app event postbacks** <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permissions</Anchor>.  
   **Note:** A marketer and an agency working with the same ad network can configure postback windows separately, based on their contracts with the network.
-* Partners, if they're given the **Allow to configure in-app event postbacks** [permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+* Partners, if they're given the **Allow to configure in-app event postbacks** <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor>.
 
 ## Event mapping
 
@@ -89,7 +88,7 @@ To make sure that the marketer's events match the same events as the partners', 
 
 > 📘 **Note**
 >
-> Events mapped in the Integration tab for a specific partner apply to both standard and [SKAdNetwork (SKAN) postbacks.](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners)
+> Events mapped in the Integration tab for a specific partner apply to both standard and <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAdNetwork (SKAN) postbacks.</Anchor>
 
 ### Mapping methods
 
@@ -162,7 +161,7 @@ You can choose which unmapped events to send to the partner:
 
 </Accordion>
 
-For more information on mapping events, see [in-app event postbacks](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+For more information on mapping events, see <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks</Anchor>.
 
 ### Options for sending postbacks
 
@@ -204,7 +203,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > When choosing **No values & no revenue** or **Values & no revenue**, the respective parameters are masked with N/A.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > You can also configure your in-app event postbacks to send net revenue in place of gross revenue in the standard revenue (monetary) parameter. To get access to this configuration, contact your Customer Success Manager (CSM).
 
@@ -249,9 +248,9 @@ A marketer with a gaming app wants to optimize campaigns running through an ad n
 
 **To set up conditions for an event:**
 
-1. On the partner integration page, [define and map](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration) the required in-app events to send to the partner.
+1. On the partner integration page, <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">define and map</Anchor> the required in-app events to send to the partner.
 2. Click the Add condition![Add condition icon](https://files.readme.io/5e8fda784fcb306b07c9dd549abd608bdb23d0028fbeade731039e6e91dd44e4-33379700656401.png) icon of the required event.
-3. Enter the condition fields, as they appear in the [event value](/docs/raw-data-reporting-overview#event-values):
+3. Enter the condition fields, as they appear in the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#event-values">event value</Anchor>:
    * Property name
    * Value
    * Partner event to map the condition to (using any of these [mapping options](/docs/in-app-event-postback-configuration#mapping-methods))
@@ -284,7 +283,7 @@ When configuring conditions, make sure the following considerations are met for 
 > 📘 **Note**
 >
 > * It's recommended to test this feature with a test app or for minor events to understand its impact on campaign optimization.
-> * To see the [postback content](/docs/raw-data-reporting-overview), you can download the raw data postback report.
+> * To see the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">postback content</Anchor>, you can download the raw data postback report.
 
 ### Editing multiple events
 
@@ -323,14 +322,14 @@ The list of events available for mapping shows only the events already reported 
 
 > 📘 **Note**
 >
-> * Adding custom events on the postback page doesn't automatically pull them from your app. Events must be configured in the SDK or S2S for proper functionality. See [how to send events to AppsFlyer](/docs/in-app-events-overview#sending-events).
+> * Adding custom events on the postback page doesn't automatically pull them from your app. Events must be configured in the SDK or S2S for proper functionality. See <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#sending-events">how to send events to AppsFlyer</Anchor>.
 > * When a custom event is added under a specific partner, it is added to the list of events for all partners, so you can see it in any partner's event dropdown.
-> * See [tips](/docs/in-app-events-overview#tips) and [limitations](/docs/in-app-events-overview#limitations) for defining event names and parameters.
+> * See <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#tips">tips</Anchor> and <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#limitations">limitations</Anchor> for defining event names and parameters.
 
 **Agencies and ad networks:**
 
 * Can't add custom events
-* Can only view and/or map events after the marketer added the event and granted the necessary [permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+* Can only view and/or map events after the marketer added the event and granted the necessary <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor>.
 
 ## Event mapping by ad networks
 
@@ -341,7 +340,7 @@ Marketers can allow ad networks to map the events on their own. To do so, a mark
 
 ![Allow to configure in-app event postbacks permission toggle for an ad network](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
 
-Once the ad network has received the permissions, it can map the events by following the instructions in the[Type Event ID Into Text Field](#mapping-methods).
+Once the ad network has received the permissions, it can map the events by following the instructions in the [Type Event ID Into Text Field](#mapping-methods).
 
 ## Event mapping by agencies
 
@@ -362,7 +361,7 @@ Marketers can allow agencies to configure in-app event postbacks.
 
 <span id="h_01HDP3XHBPA5GZEVERMBN43JH0"></span>**See also**
 
-* [Rich in-app events, Overview](/docs/in-app-events-overview)
-* [Rich in-app events, Event structure](/docs/in-app-events-event-structure)
+* <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Rich in-app events, Overview</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure">Rich in-app events, Event structure</Anchor>
 
 <div data-zendesk-anchors="h_01HE0FQ1AB6NQCTKFTDW22SRYC=overview postback-inapp-event-selection=postback-in-app-event-selection h_01HBZCRNKGH1PAK8RC846PPRTS=postback-in-app-event-selection h_01HBZCRNKGQTJ4VJ00TVTS14N2=note inapp-event-postback-window=in-app-event-postback-window h_01HBZCRNKGS71QGK5506N07K84=in-app-event-postback-window h_01K9MBNYC6PPHXSZ3KNVNSDASJ=note-1 h_01HBZCRNKGV5CREN5K0RBDMBH6=default-postback-window h_01HBZCRNKGVXN233AFFHG42NW9=note-2 h_01HBZCRNKG7AECFSBXV2WDD9AR=who-can-configure-postback-windows h_01HBZCRNKG7SZ4T41BY60BAJZN=event-mapping h_01HBZCRNKGT64TE2XYK9VS4ATD=note-3 h_01HBZCRNKG4EF9MSY696SD5VQ9=mapping-methods h_01HBZCVAGPSNDJMWRWENEP45N7=note-4 h_01HBZCRNKG1E63DZRSDWTB8CJN=note-5 h_01HBZCRNKGXJ683VHFTE277ER9=note-6 h_01HBZCRNKG1VN7E6TVCPDW7M73=options-for-sending-postbacks h_01HBZCRNKGESY50NSZGTVPT25M=data-to-include-in-the-postbacks h_01KRKDVVV246YZYGM5G2ZJR63W=note-7 sharing-revenue=share-revenue 01J9Y0T400M5Z62Q9CKF8M75WR=share-revenue h_01KRKDVVV2YF4XMKNCVEG1FFSG=note-8 h_01KRKDVVV242YPHP2W8EWTBSMD=tip conditional-inapp-event-postbacks=conditional-in-app-event-postbacks h_01HBZCRNKG5X3B2NJZZP6ER2CX=conditional-in-app-event-postbacks h_01HBZCRNKHBR57YVHZQP7NJBAP=considerations h_01HBZCRNKHF6TFP0N302D7DCMD=note-9 h_01HBZCRNKHHD3WC4GTJT9NSJ4C=editing-multiple-events h_01HBZCRNKH754PANWSZ4FMXJVQ=custom-events h_01HBZCRNKH4PVR3FEMTMERW3M1=note-10 h_01HBZCRNKH1GCZY17R04WTZ0MQ=event-mapping-by-ad-networks h_01HBZCRNKHHF3E6CZNQQG0Q4VS=event-mapping-by-agencies h_01K5B6QS6YXKMJSEWE2WFT5AQC=note-11" />

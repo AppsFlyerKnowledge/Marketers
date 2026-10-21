@@ -1,9 +1,5 @@
 ---
 title: 'Product Line: Group apps for cross-platform attribution'
-excerpt: >-
-  Group platform-specific apps under a single brand using Product Line. Unlock
-  cross-platform attribution and user journey insights across mobile, web, and
-  CTV apps using a unified Customer User ID (CUID).
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39524780935185-Product-Line-Group-apps-for-cross-platform-attribution
 ---
+**At a glance:** Group platform-specific apps under a single brand using Product Line. Unlock cross-platform attribution and user journey insights across mobile, web, and CTV apps using a unified Customer User ID (CUID).
+
 ## About Product Line
 
 Product Line lets you organize different platform versions of the same app (like Android, iOS, web, and CTV) under one brand umbrella. This simplifies app management and enables seamless cross-platform attribution based on a customer user identifier (CUID).
@@ -35,11 +33,11 @@ With Product Lines, you can:
 * Internally group apps under the same brand
 * Opt in to cross-platform re-engagement measurement
 
-  Note: Cross-platform re-engagement measurement is optional. When you opt in, AppsFlyer can attribute eligible returning-user activity to the media source that re-engaged the user across platforms. For more information, see [Cross-platform re-engagement measurement](/docs/beta-user-based-cross-platform-re-engagement-attribution).
+  Note: Cross-platform re-engagement measurement is optional. When you opt in, AppsFlyer can attribute eligible returning-user activity to the media source that re-engaged the user across platforms. For more information, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-re-engagement-attribution">Cross-platform re-engagement measurement</Anchor>.
 
 For example, if a user installs your app on iOS, logs in on the PlayStation app, and streams content via their Samsung TV, you can view their full journey as a single user.
 
-For a more complete overview of Product Lines, see [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution).
+For a more complete overview of Product Lines, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
 
 ## How to set up a Product Line
 
@@ -66,13 +64,13 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 6. Click **Create**.
 7. Send the **CUID implementation instructions** to your developer.
 
-**Note:** Cross-platform re-engagement attribution works on top of cross-platform attribution. Before you can opt in to re-engagement, you must create a Product Line, activate cross-platform attribution, and send events with a valid CUID.To learn how re-engagement attribution works across platforms, see [Cross-platform re-engagement attribution](/docs/beta-user-based-cross-platform-re-engagement-attribution).
+**Note:** Cross-platform re-engagement attribution works on top of cross-platform attribution. Before you can opt in to re-engagement, you must create a Product Line, activate cross-platform attribution, and send events with a valid CUID.To learn how re-engagement attribution works across platforms, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-re-engagement-attribution">Cross-platform re-engagement attribution</Anchor>.
 
 <div id="how-to-remove-an-app-from-a-product-line" />
 
 <Accordion title="How to remove an app from a Product Line">
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > It is not recommended to remove an app from a Product Line. When an app is removed or moved, its cross-platform attribution settings are reset, and future events will not be eligible for cross-platform attribution until a new mapping is created.
 
@@ -100,7 +98,7 @@ For a more complete overview of Product Lines, see [User-based cross-platform at
 
 <Accordion title="How to delete a Product Line">
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > It is not recommended to delete a Product Line. When a Product Line is removed, its cross-platform attribution settings are reset, and future events will not be eligible for cross-platform attribution until a new mapping is created.
 

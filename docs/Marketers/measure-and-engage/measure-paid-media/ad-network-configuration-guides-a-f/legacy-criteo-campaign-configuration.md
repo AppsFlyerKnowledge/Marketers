@@ -1,11 +1,5 @@
 ---
 title: '[Legacy] Criteo campaign configuration'
-excerpt: >-
-  Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized
-  retargeting company that works with Internet retailers to serve personalized
-  online display advertisements to consumers who have previously visited the
-  advertiser's website. In addition to click-based mobile attribution, Criteo
-  (Legacy) also offers retargeting, which you can record with AppsFlyer.
 deprecated: true
 metadata:
   keywords:
@@ -32,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033946--Legacy-Criteo-campaign-configuration
 ---
+**At a glance:** Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website. In addition to click-based mobile attribution, Criteo (Legacy) also offers retargeting, which you can record with AppsFlyer.
+
 ## Setting up Criteo (legacy)
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -43,16 +39,16 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 The Criteo (legacy) configuration window includes 4 tabs: Integration, Attribution link, Data enrichment, and Permissions. Click on the items below to read about the tabs setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
+> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
 <div id="integration-tab" />
@@ -64,7 +60,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partners
 
 On the **first visit** here, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, click [here](/docs/partner-activation-deactivation).
+For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 > 📘 **Note**
 >
@@ -116,16 +112,16 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameter:** af\_adset
 * **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Criteo (Legacy).  
   **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub-site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub-site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
 ### Retargeting settings
 
-When enabled, AppsFlyer recognizes a link as a [retargeting](/docs/retargeting-attribution-guide) attribution link, instead of a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.  
+When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, instead of a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.  
 **Attribution link parameter:** is\_retargeting.
 
 The following setup is displayed when retargeting is enabled.
@@ -135,20 +131,20 @@ The following setup is displayed when retargeting is enabled.
 Select ***standard attribution link*** option if:
 
 * You don't need to deep link with the URL or
-* Plan to use only [URI schemes](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings) for deep linking
+* Plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI schemes</Anchor> for deep linking
 
 select ***Use OneLink*** for:
 
 * Using a single link for both Android and iOS apps or
 * Deep linking using Universal or app links
 
-Note that selecting OneLink changes the click recording link from app specific to a [OneLink URL](/docs/onelink-guide).
+Note that selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
 
 2. Deep Link URL
 
 Use this field if the link is meant to deep link users to any specific activity within your app.  
 **Attribution link parameter:** af\_dp  
-You can find more information about the AppsFlyer [deep linking solution in this guide.](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)
+You can find more information about the AppsFlyer <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking solution in this guide.</Anchor>
 
 3. Re-engagement Window
 
@@ -162,7 +158,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ### Click attribution link
 
@@ -192,11 +188,11 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
+* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
 * ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 ### Agency permissions
 
@@ -208,7 +204,7 @@ Use these toggles to give the agency permissions to handle its own configuration
 * ***Allow access to aggregate organic data***
 * ***Allow to configure in-app event postbacks*** - permit the agency to setup in-app event postbacks mapping to itself on the integration tab
 
-Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">agency permissions</Anchor>.
 
 </Accordion>
 

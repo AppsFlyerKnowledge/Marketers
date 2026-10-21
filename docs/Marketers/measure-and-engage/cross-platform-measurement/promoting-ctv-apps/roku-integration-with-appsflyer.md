@@ -1,9 +1,5 @@
 ---
 title: Roku integration with AppsFlyer
-excerpt: >-
-  Rokuads_int is an SRN integration that allows advertisers to integrate their
-  mobile or Roku CTV app with Roku Ads to receive attribution and event data for
-  their campaigns on Roku Ads.
 metadata:
   keywords:
     - Advertisers
@@ -26,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4404257169169-Roku-integration-with-AppsFlyer
 ---
+**At a glance** Rokuads\_int is an SRN integration that allows advertisers to integrate their mobile or Roku CTV app with Roku Ads to receive attribution and event data for their campaigns on Roku Ads.
+
 ## About Roku Ads Attribution
 
 Roku is a unique ad network that has ad inventory across both Connected TV (CTV) and mobile apps. The SRN integration between AppsFlyer and Roku Ads allows advertisers to measure multiple user journeys, including:
@@ -49,8 +47,8 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 **Note:** There are some differences between iOS, Android, and Roku app settings.
 
@@ -61,11 +59,11 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 #### General settings
 
 * **Event Group ID:** Enter the Event Group ID to connect your app to AppsFlyer.
-  * **Self-serve clients**: Obtain the Event Group ID from Roku Ads Manager. For more information, see [Roku ads documentation](https://help.ads.roku.com/en/articles/11885912-setting-up-an-integration-with-appsflyer-a-mobile-measurement-partner-mmp).
+  * **Self-serve clients**: Obtain the Event Group ID from Roku Ads Manager. For more information, see <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/11885912-setting-up-an-integration-with-appsflyer-a-mobile-measurement-partner-mmp">Roku ads documentation</Anchor>.
   * **Managed services clients**: Contact your Roku representative to obtain your Event Group ID.
 * **Advanced Data Sharing:**  When ON, Roku will receive postbacks and event data with IP addresses for all devices, including those that have not made their Advertising ID (IDFA) available. Keeping Advanced Sharing OFF ensures this partner will only receive postbacks and event data for devices that have made the IDFA available.
-* **Advanced Matching data sharing:** When on, Roku receives Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
-* **Limited Data Usage:** Turn ON to indicate that Roku Ads should limit its use of personal information for a given event, in specific US states. For more information, see [Roku ads documentation](https://help.ads.roku.com/en/articles/8766138-limited-data-use).
+* **Advanced Matching data sharing:** When on, Roku receives Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+* **Limited Data Usage:** Turn ON to indicate that Roku Ads should limit its use of personal information for a given event, in specific US states. For more information, see <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/8766138-limited-data-use">Roku ads documentation</Anchor>.
 
 #### Install attribution
 
@@ -84,7 +82,7 @@ Set the different attribution windows to attribute new installs (first launches)
 
 #### Ignore active users for retargeting
 
-Set a window timeframe to ignore re-engagements of users who launched your app within the timeframe. This means their activity during the window timeframe is not attributed. For more information, see [Inactivity period](/docs/set-retargeting-inactivity-window#inactivity-period).
+Set a window timeframe to ignore re-engagements of users who launched your app within the timeframe. This means their activity during the window timeframe is not attributed. For more information, see <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">Inactivity period</Anchor>.
 
 1. Turn on **Ignore active users for retargeting**.
 2. Set the **Inactivity window**.
@@ -106,7 +104,7 @@ Map AppsFlyer in-app events to Roku Ads events, sent via postbacks:
 | Parameter name | Description |
 | --- | --- |
 | **AppsFlyer event** | Name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events. |
-| **Mapped to partner event** | Select from Roku’s pre-defined event list. See [suggested mapping](/docs/in-app-events-event-structure#predefined-event-names) of Appsflyer events to Roku Ads events.  <br />**Note:** Roku does not support sending custom events. |
+| **Mapped to partner event** | Select from Roku’s pre-defined event list. See <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-names">suggested mapping</Anchor> of Appsflyer events to Roku Ads events.  <br />**Note:** Roku does not support sending custom events. |
 | **For users from** | <ul><li>**This partner only** (default): Send postbacks only when this event is attributed to this partner.<br />Or</li><li>**All media sources including organic:** Send postbacks for events attributed to any partner, as well as organic events.</li></ul> |
 | **Including** | <ul><li>**No values & no revenue** (default): Send only the event itself without any event values.</li><li>**Values & no revenue:** Send all the parameters excluding the revenue value.</li><li>**Values & revenue:** Send all the event parameters, including the revenue value (if it exists in the event).</li></ul> |
 
@@ -157,7 +155,7 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 2. Enter the ad network team member's email.
 3. Click **Add**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * When you give Roku Ads permissions to configure the integration and change in-app event postbacks, you allow them to potentially access all attribution events, including organic and non-organic traffic from all media sources.
 > * Changes that Roku Ads makes override the current configuration, even if you (the advertiser) set them.
@@ -170,7 +168,7 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 | Configure in-app event postbacks | Allow the partner to set up in-app event postback.<br /><br />**Caution!** Combined with "Configure integration", this grants access to all attribution events, including organic and non-organic traffic from all media sources. |
 | Access retention report | Allow access only to the partner's own retention data. |
 | Access aggregate loyal user data | Allow the partner to access your loyal users metric. |
-| Access aggregate conversion data | Allow access to metrics for installs, re-engagements, re-installs, and re-attributions. An example is [Aggregate campaign performance reports](/partners/docs/aggregated-campaign-performance-report-for-ad-networks). |
+| Access aggregate conversion data | Allow access to metrics for installs, re-engagements, re-installs, and re-attributions. An example is <Anchor target="_blank" href="/partners/docs/aggregated-campaign-performance-report-for-ad-networks">Aggregate campaign performance reports</Anchor>. |
 | Access aggregate in-app events data | Grant the partner access to all in-app events data, including Protect360 data—not just the events configured in the postback mapping.  <br />This also includes access to ad monetization data, which may contain events from other media sources. |
 | View validation rules | Allow the partner to view your validation rule details. |
 | Access aggregate revenue data | Allow access to ad revenue data for UA optimization. |
@@ -190,12 +188,12 @@ Agencies working on behalf of advertisers can turn on the Roku Ads integration a
 
 **To set up Roku Ads for agencies:**
 
-1. In AppsFlyer, from the sidebar, open ![collaborate.png](https://files.readme.io/70400e32ef967b981aabd47faf97880368585fdf52ad29c0d4c2d4c31751e6a3-37844129188753.png) **Collaborate** > **Partner Integrations**.
+1. In AppsFlyer, from the sidebar, open <Image alt="collaborate.png" src="https://files.readme.io/70400e32ef967b981aabd47faf97880368585fdf52ad29c0d4c2d4c31751e6a3-37844129188753.png" width="2%" /> **Collaborate** > **Partner Integrations**.
 2. Find **Roku Ads (rokuads\_int)** and select it.
 3. Enter your agency **Roku Ads Account ID**. This identifies agency traffic and distinguishes it from the advertiser's.
 4. Click **Save Integration**.
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > Roku Ads account IDs MUST NOT be shared between the advertiser and the agency. If shared, ALL the advertiser's installs are automatically attributed to the agency's dashboard.
 

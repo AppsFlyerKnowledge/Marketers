@@ -1,12 +1,5 @@
 ---
 title: '[Beta] Advanced Security Protect360 Module'
-excerpt: >-
-  Strengthen fraud protection for your Android app with the Advanced Security
-  Module. This real-time solution detects and blocks attribution spoofing and
-  manipulated traffic before installs are attributed. Designed for high-traffic
-  apps and Protect360 clients, especially those working with affiliates. The
-  module is fully configurable by you, allowing initial setup and ongoing
-  maintenance to adapt to evolving fraud patterns and protect data integrity.
 metadata:
   keywords:
     - Beta feature
@@ -30,7 +23,9 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-> 📘 **Important!**
+**At a glance:** Strengthen fraud protection for your Android app with the Advanced Security Module. This real-time solution detects and blocks attribution spoofing and manipulated traffic before installs are attributed. Designed for high-traffic apps and Protect360 clients, especially those working with affiliates. The module is fully configurable by you, allowing initial setup and ongoing maintenance to adapt to evolving fraud patterns and protect data integrity.
+
+> 🚧 **Important!**
 >
 > The Advanced Security Protect360 Module beta is available to all Protect360 customers. To join, contact your CSM.
 
@@ -55,14 +50,14 @@ The module is triggered after the first app launch (logged by the SDK) but befor
 Before you begin, make sure you have the following:
 
 * **Android SDK v6.15.2 or later** integrated in your app.
-* **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token) for how to retrieve or generate one.
-* **All certificate hashes (SHA-256)** for every certificate used to sign your app (debug and release). See [Generating a SHA256 fingerprint](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint).
+* **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token">Managing AppsFlyer tokens</Anchor> for how to retrieve or generate one.
+* **All certificate hashes (SHA-256)** for every certificate used to sign your app (debug and release). See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint">Generating a SHA256 fingerprint</Anchor>.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > If your account has already reached the two-token limit for API V2 tokens, you do not need to request a new one, an existing API V2 token can be reused for this integration. Contact your CSM if you have questions about token allocation.
 >
-> For the full technical integration steps, see the [Android security plugin developer guide](https://dev.appsflyer.com/hc/docs/android-security-plugin).
+> For the full technical integration steps, see the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin">Android security plugin developer guide</Anchor>.
 
 ## Set the Advanced Security Module
 
@@ -100,7 +95,7 @@ Note: Ask your developer for all the [certificate hashes](https://dev.appsflyer.
 
 > 📘 **Note**
 >
-> After you build, the detection mode is set to **Tagged** by default. In this mode, AppsFlyer flags suspicious traffic but doesn't block it. After the secured version is live, switch to **Implemented** mode to block spoofed traffic. For more information about the Tagged and Implemented modes, see [FPS Modes](/docs/beta-fraud-protection-studio#fps-modes).
+> After you build, the detection mode is set to **Tagged** by default. In this mode, AppsFlyer flags suspicious traffic but doesn't block it. After the secured version is live, switch to **Implemented** mode to block spoofed traffic. For more information about the Tagged and Implemented modes, see <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio#fps-modes">FPS Modes</Anchor>.
 
 </Accordion>
 
@@ -157,7 +152,7 @@ Data is broken up into two KPIs and a graph.
 
 * **Attribution spoofing trend**: Reflection of the advanced security module detection over time. This graph reflects the high-level status of the spoofing detection on the app/s level.
 
-![](https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png)
+<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -176,7 +171,7 @@ To access the Advanced Security Module:
 
 #### The Advanced Security Module page
 
-![](https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png)
+<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 The Advanced Security Module page is broken into three sections.
 
@@ -198,7 +193,7 @@ Note: To change the detection status, contact your CSM.
 
 Insights help you understand the breakdown of the chart. The three types of insights are:
 
-* **All traffic is blocked** -App versions that are 100% blocked may indicate that they were not added to the exclusion list. Please check the app version exclusion list with your CSM and consider adding the relevant app versions.
+* **All traffic is blocked** - App versions that are 100% blocked may indicate that they were not added to the exclusion list. Please check the app version exclusion list with your CSM and consider adding the relevant app versions.
 * **All traffic is tagged** - App versions that are 100% tagged may not have been added to the exclusion list. Please check the app versions exclusion list with your CSM and consider adding the relevant app versions.
 * **High rate of tagged detections** - One or more app versions are showing more than 20% advanced security module detections in tagged mode. It is highly recommended to contact your CSM to switch to implemented detection mode for the best results.
 

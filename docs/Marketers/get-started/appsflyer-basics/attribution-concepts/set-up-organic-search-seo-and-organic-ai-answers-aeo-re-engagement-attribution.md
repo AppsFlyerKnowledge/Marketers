@@ -2,10 +2,6 @@
 title: >-
   Set up organic search (SEO) and organic AI answers (AEO) re-engagement
   attribution
-excerpt: >-
-  Get detailed attribution data about re-engagements (users who already have
-  your app installed) from organic search engines and AI answer engines so that
-  you can optimize your organic search and AI-driven conversions.
 metadata:
   keywords:
     - Marketers
@@ -26,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15123194526353-Set-up-organic-search-SEO-and-organic-AI-answers-AEO-re-engagement-attribution
 ---
+> **At a glance:** Get detailed attribution data about re-engagements (users who already have your app installed) from organic search engines and AI answer engines so that you can optimize your organic search and AI-driven conversions.
+
 ## Overview
 
 Organic search (SEO) and Organic AI answers (AEO re-engagement attribution is an attribution solution that allows AppsFlyer customers to attribute re-engagements (meaning mobile app opens of users who already have your app installed) to various organic search engines and AI answer engines.
@@ -52,14 +50,16 @@ The organic search attribution flow works as follows:
 
 **To set up organic search attribution**:
 
-1. Tell your developers to enable app opening by following the instructions for [Android App Links](https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods) and [iOS Universal Links](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#app-opening-methods) (using the app's top-level domain).
-2. In AppsFlyer, from the side menu, select **Settings** > [App Settings](/docs/app-settings), and turn on:
+1. Tell your developers to enable app opening by following the instructions for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android App Links</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#app-opening-methods">iOS Universal Links</Anchor> (using the app's top-level domain).
+2. In AppsFlyer, from the side menu, select **Settings** > <Anchor target="_blank" href="/marketers/docs/app-settings">App Settings</Anchor>, and turn on:
    * **SEO (organic search) and AEO mobile app re-engagement attribution.**
    * **Re-engagement attribution**.
 
-**A note for your developer**
-
-performOnDeepLinking forcefully consumes and resolves the deep linking URL when invoked. This will prevent the SEO attribution feature from functioning properly and will result in attribution not being reported to the correct SEO media source.
+> 📘 **Note**
+>
+> **A note for your developer**
+>
+> performOnDeepLinking forcefully consumes and resolves the deep linking URL when invoked. This will prevent the SEO attribution feature from functioning properly and will result in attribution not being reported to the correct SEO media source.
 
 ## Data availability
 
@@ -91,9 +91,11 @@ Organic search attribution supports the following search engines:
 * Sogou
 * Yahoo Japan
 
-For other search engines, use the legacy organic search attribution solution (requires developer input).
-
-In dashboards and data reports, search engines display as `<search engine>`\_organic\_seo. For example: google\_organic\_seo.
+> 📘 **Note**
+>
+> For other search engines, use the legacy organic search attribution solution (requires developer input).
+>
+> In dashboards and data reports, search engines display as `<search engine>`\_organic\_seo. For example: google\_organic\_seo.
 
 </Accordion>
 
@@ -110,7 +112,9 @@ Organic search attribution also supports the following AI answer engines:
 * Grok
 * Deepseek
 
-In dashboards and data reports, AI answer engines display as `<AI engine>`\_organic\_aeo. For example: chatgpt\_organic\_aeo.
+> 📘 **Note**
+>
+> In dashboards and data reports, AI answer engines display as `<AI engine>`\_organic\_aeo. For example: chatgpt\_organic\_aeo.
 
 </Accordion>
 
@@ -142,7 +146,7 @@ No. In this case, AppsFlyer can't collect the required information for attributi
 
 <Accordion title="Is keyword data available?">
 
-Keyword data isn't available via this organic search attribution solution. However, there are rare instances where keyword data is available for Android. See [Android keyword data availability](/docs/evaluate-keyword-data#android-keywords).
+Keyword data isn't available via this organic search attribution solution. However, there are rare instances where keyword data is available for Android. See <Anchor target="_blank" href="/marketers/docs/evaluate-keyword-data#android-keywords">Android keyword data availability</Anchor>.
 
 </Accordion>
 
@@ -156,7 +160,7 @@ Smart Script does this by:
 * Creating a relevant `pid` (later displayed as the media source) based on the user's specific origin
 * Mapping it to a parameter key of your choosing, such as `af_sub1`, in the outgoing URL
 
-To learn how to set up Smart Script to collect the web referrer, see [OneLink Smart Script V2 setup guide](/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping).
+To learn how to set up Smart Script to collect the web referrer, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">OneLink Smart Script V2 setup guide</Anchor>.
 
 </Accordion>
 
@@ -168,7 +172,7 @@ To learn how to set up Smart Script to collect the web referrer, see [OneLink Sm
 | --- | --- |
 | Browsers | Organic search attribution isn't supported by:<ul><li>Firefox on Android</li><li>Any browser except for Safari on iOS.</li></ul> |
 | SwiftUI apps (iOS) | Organic search attribution is not supported for iOS apps built with SwiftUI. |
-| Reengagement window | Organic search has a fixed reengagement window of 30 days. The window size cannot be modified. For more information, see [Retargeting attribution guide](/docs/retargeting-attribution-guide#inclusion-windows). |
+| Reengagement window | Organic search has a fixed reengagement window of 30 days. The window size cannot be modified. For more information, see <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#inclusion-windows">Retargeting attribution guide</Anchor>. |
 
 </Accordion>
 

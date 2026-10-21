@@ -1,9 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Build and activate audiences
-excerpt: >-
-  Build high-value audiences in DCP collaborations using shared data and
-  activate them on media partner sites or cloud services for maximum campaign
-  impact.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24522739719057-Data-Collaboration-Platform-DCP-Build-and-activate-audiences
 ---
+**At a glance:** Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact.
+
 ## About DCP audiences
 
 Build audiences in a DCP collaboration by combining datasets to create enriched audience segments and reach specific consumer groups. Audiences can be based on one collaborator's data or on intersecting users across both collaborators' datasets, based on the permissions defined by the data source owner. After an audience is built, it can be sent to media partners for activation or to a cloud storage bucket.
@@ -43,7 +41,7 @@ The following tools are available for building your audiences:
 | <span id="supports-using-overlapping-data-only"></span>For one source for each collaborator, supports using overlapping data only | Supports querying all the data |
 | <span id="supports-retrieving-values-within-the-selected-attribute-range"></span>Supports retrieving values within the selected attribute range. | Supports querying values beyond the attribute range |
 
-Learn how to [prepare source data](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion) to maximize match rates between collaborator datasets.
+Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion">prepare source data</Anchor> to maximize match rates between collaborator datasets.
 
 <div id="visual-audience-builder" />
 
@@ -53,18 +51,18 @@ Learn how to [prepare source data](/docs/data-collaboration-platform-dcp-prepare
 
 > 📘 **Note**
 >
-> Make sure you have the Build audiences [permission](/docs/data-collaboration-platform-dcp-sharing-permissions) to create an audience.
+> Make sure you have the Build audiences <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">permission</Anchor> to create an audience.
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   ![Click Data Clean Room.png](https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png)
+   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="245px" />
 2. From the **Collaborations** tab, click the relevant collaboration.
 
-   ![Click the relevant collaboration.png](https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png)
+   <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. In the collaboration, click **New audience** > **Visual audience builder**.  
    **Note:** At least one source must be associated before you can build an audience.
 
-   ![New Aud Visual audience builder.png](https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png)
+   <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. Proceed with the **Audience builder** walkthrough steps below:
 
 #### Step 1: Details and sources
@@ -88,9 +86,9 @@ The audience can be created using data from a single collaborator or by merging 
    * **Users from my source only** - Includes only users unique to your source. Excludes all users appearing in your collaborator's source.
    * **Users from the collaborator's source only** - Includes only users unique to your collaborator's associated source. Excludes all users appearing in your source.  
 
-     **Note:** All three options will only be available if the source permissions have "**Build Audiences**" > "**Can use all data** - **Universal dataset**" enabled. [Learn more about source permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions)  
+     **Note:** All three options will only be available if the source permissions have "**Build Audiences**" > "**Can use all data** - **Universal dataset**" enabled. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">Learn more about source permissions</Anchor>  
 
-     ![can use all data permision enabled w arrow.png](https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png)
+     <Image alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. Click **Next**.
 
 #### Step 2: Define the audience
@@ -115,7 +113,7 @@ After the data sources are selected, this step involves choosing which attribute
 4. Click **Next**.
 5. Continue with the next step [Send the audience](#send-an-audience-for-activation) to activate the audience.
 
-![Definetheaudience.png](https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png)
+<Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
 #### Summary (Right-side preview pane)
 
@@ -179,12 +177,12 @@ Transactional data sources, such as purchases, orders, or events that contain mu
 
 To use transactional data for audience creation, you must first aggregate it into a user-level dataset using the Data View tool. **To aggregate:**
 
-1. Open the [**Data View**](/docs/data-collaboration-platform-dcp-create-customized-data-views) tool and create a Data View from the transactional source.
+1. Open the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views">**Data View**</Anchor> tool and create a Data View from the transactional source.
 2. Apply aggregation functions (such as Count, Sum, or Average) to produce one row per user.
 3. Associate the aggregated Data View with the collaboration.
 4. Use the aggregated Data View as your source in the Audience Builder.
 
-[Learn how to aggregate transactional data using a Data View](/docs/data-collaboration-platform-dcp-create-customized-data-views#transactional-data-sources)
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views#transactional-data-sources">Learn how to aggregate transactional data using a Data View</Anchor>
 
 </Accordion>
 
@@ -196,17 +194,17 @@ To use transactional data for audience creation, you must first aggregate it int
 
 > 📘 **Note**
 >
-> Make sure you have the [Build audiences](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source) permission to create an audience.
+> Make sure you have the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">Build audiences</Anchor> permission to create an audience.
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   ![Click Data Clean Room.png](https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png)
+   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="40.57%" />
 2. From the **Collaborations** tab, click the relevant collaboration.
 
-   ![Click the relevant collaboration.png](https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png)
+   <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. In the collaboration, click **New audience** > **SQL audience builder**.
 
-   ![New Aud SQL audience builder.png](https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png)
+   <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. Proceed with the **Audience builder** walkthrough steps:
 
 #### Set details
@@ -230,62 +228,52 @@ Name the audience, and click **Next**.
 > supported. See
 > [supported and unsupported query patterns](#transactional-data-in-sql-queries)
 > below.
->
->3. Click **Test** and review the query results
->    (audience sample) shown beneath the query statement.
-> 4. Click **Continue** and then **Next**
->    to
->    proceed with the next step of the **Audience builder**
->    walkthrough, or **Save as draft** and resume
->    later.
-> 5. Continue to
->    [Send the audience](#send-an-audience-for-activation).
->
-> #### The SQL audience builder
->
-> Use the SQL builder to query the data and create an audience. The following table outlines the sections in the builder:
->
->
->
-> | Section | Description |
-> | --- | --- |
-> | <span id="left-pane"></span>Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the [**Build audience**](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source) permission.<br /><br />Selecting a source expands it to reveal corresponding columns. |
-> | <span id="topmiddle-section-text-editor"></span>Top-middle section (query editor) | The query editor for writing your SQL statements. |
-> | <span id="bottommiddle-section-context-panel"></span>Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<br /><br />* **When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").<br />* **When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").<br />* **Following query execution:** Shows a sample of the query results.  <br />  **Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted". |
-> | <span id="right-pane"></span>Right pane | This section dynamically shows details based on the selected object:<br /><br />* **When selecting a source:** Shows the permissions granted for the source.<br />* **While writing the SQL query:**<br />  * Shows the query validity status on the top right of the page. This may include any of the following statuses:<br />  * **Ready to run:** No issues found. You can test the query and proceed to the next step.<br />  * **Syntax error:** An error in syntax was detected along with guidance on resolving it.<br />  * **Permission error:** Indicates a lack of required permissions, with a tooltip detailing which [access rights are provided for the source](/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source).<br />  * Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.  <br />    Click **Test** to test your query and examine the results. |
->
->
->
-> #### Transactional data in SQL queries
->
-> When working with transactional data sources in the SQL Builder, the following query patterns apply.
->
-> **Supported query patterns**
->
->
->
-> | Pattern | Description |
-> | --- | --- |
-> | <span id="single-transactional-source-with-aggregation"></span>Single transactional source with aggregation | A query that aggregates a transactional source into one row per user. For example, aggregating purchase records to produce a total purchase count per user. |
-> | <span id="transactional-source-joined-to-a-profileuserlevel-source"></span>Transactional source joined to a profile/user-level source | Allowed when the transactional side is aggregated before the join. For example, aggregating purchase history by user, then joining the result to a customer profile dataset. |
-> | <span id="aggregated-transactional-output-in-downstream-joins"></span>Aggregated transactional output in downstream joins | Once aggregated to the user level, the output can be used in further joins and audience-building workflows, and is treated similarly to a profile-level dataset. |
->
->
->
-> **Unsupported query patterns**
->
->
->
-> | Pattern | Description |
-> | --- | --- |
-> | <span id="transactional-source-joined-directly-to-another-transactional-source"></span>Transactional source joined directly to another transactional source | Direct joins between two transactional datasets, such as purchases joined to orders, aren't supported. These joins are blocked before execution because they can multiply records, produce incorrect audience results, and create transactional expansion. |
-> | <span id="nonaggregated-transactional-query"></span>Non-aggregated transactional query | Queries that use transactional records directly, without aggregation, aren't supported. |
+
+3. Click **Test** and review the query results
+   (audience sample) shown beneath the query statement.
+4. Click **Continue** and then **Next**
+   to
+   proceed with the next step of the **Audience builder**
+   walkthrough, or **Save as draft** and resume
+   later.
+5. Continue to
+   [Send the audience](#send-an-audience-for-activation).
+
+#### The SQL audience builder
+
+Use the SQL builder to query the data and create an audience. The following table outlines the sections in the builder:
+
+| Section | Description |
+| --- | --- |
+| <span id="left-pane"></span>Left pane | Presents all available sources for creating your audience. This may include your sources and those shared with you. You'll only be able to view sources to which you have the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">**Build audience**</Anchor> permission.<br /><br />Selecting a source expands it to reveal corresponding columns. |
+| <span id="topmiddle-section-text-editor"></span>Top-middle section (query editor) | The query editor for writing your SQL statements. |
+| <span id="bottommiddle-section-context-panel"></span>Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<ul><li>**When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").</li><li>**When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").</li><li>**Following query execution:** Shows a sample of the query results.<br />**Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted".</li></ul> |
+| <span id="right-pane"></span>Right pane | This section dynamically shows details based on the selected object:<ul><li>**When selecting a source:** Shows the permissions granted for the source.</li><li>**While writing the SQL query:**<ul><li>Shows the query validity status on the top right of the page. This may include any of the following statuses:</li><li>**Ready to run:** No issues found. You can test the query and proceed to the next step.</li><li>**Syntax error:** An error in syntax was detected along with guidance on resolving it.</li><li>**Permission error:** Indicates a lack of required permissions, with a tooltip detailing which <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source">access rights are provided for the source</Anchor>.</li><li>Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.<br />Click **Test** to test your query and examine the results.</li></ul></li></ul> |
+
+#### Transactional data in SQL queries
+
+When working with transactional data sources in the SQL Builder, the following query patterns apply.
+
+**Supported query patterns**
+
+| Pattern | Description |
+| --- | --- |
+| <span id="single-transactional-source-with-aggregation"></span>Single transactional source with aggregation | A query that aggregates a transactional source into one row per user. For example, aggregating purchase records to produce a total purchase count per user. |
+| <span id="transactional-source-joined-to-a-profileuserlevel-source"></span>Transactional source joined to a profile/user-level source | Allowed when the transactional side is aggregated before the join. For example, aggregating purchase history by user, then joining the result to a customer profile dataset. |
+| <span id="aggregated-transactional-output-in-downstream-joins"></span>Aggregated transactional output in downstream joins | Once aggregated to the user level, the output can be used in further joins and audience-building workflows, and is treated similarly to a profile-level dataset. |
+
+**Unsupported query patterns**
+
+| Pattern | Description |
+| --- | --- |
+| <span id="transactional-source-joined-directly-to-another-transactional-source"></span>Transactional source joined directly to another transactional source | Direct joins between two transactional datasets, such as purchases joined to orders, aren't supported. These joins are blocked before execution because they can multiply records, produce incorrect audience results, and create transactional expansion. |
+| <span id="nonaggregated-transactional-query"></span>Non-aggregated transactional query | Queries that use transactional records directly, without aggregation, aren't supported. |
 
 </Accordion>
 
 ## Send an audience for activation
 
-After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and [permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions).
+After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">permissions</Anchor>.
 
 * [**Connect an audience to media partners**](#connect-an-audience-to-media-partners) - Media partner platforms include Meta Ads, Google Ads, and many more. Connect your audience to media partners when you want to run paid campaigns, remarketing, or look-alike expansion.
 * [**Export an audience to cloud storage**](#export-to-cloud-storage) - Connect your audience to cloud storage when you need the file in BI models, CDPs, or internal enrichment pipelines.
@@ -299,11 +287,11 @@ After an audience is built, activate it where it can drive results. Select a des
 
 <Accordion title="Connect an audience to media partners">
 
-Send the audience for activation directly in your preferred media partner platforms, such as Meta Ads and [Google Ads](https://support.google.com/google-ads/answer/10010286?hl=en). The system forwards a CSV of user IDs, hashed automatically if the partner requires it.
+Send the audience for activation directly in your preferred media partner platforms, such as Meta Ads and <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>. The system forwards a CSV of user IDs, hashed automatically if the partner requires it.
 
 > 📘 **Note**
 >
-> * When you build an audience using your collaborator's source data, the activation options you see depend on the [permissions](/docs/data-collaboration-platform-dcp-sharing-permissions) granted by your collaborator. Only the activation partners they allowed for that source will be available to you during activation.
+> * When you build an audience using your collaborator's source data, the activation options you see depend on the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">permissions</Anchor> granted by your collaborator. Only the activation partners they allowed for that source will be available to you during activation.
 > * If your collaborator didn't grant you permissions to publish or export audiences, you can still submit an activation request. In this case, your activation request is sent to your collaborator for activation on their side.
 
 **To connect the audience to media partners:**
@@ -333,7 +321,7 @@ Send the audience directly to your cloud storage bucket. With every audience upd
 
 > 📘 **Note**
 >
-> Before exporting, make sure your cloud storage bucket is set up and connected to DCP. See [Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services) and [Add connections](/docs/data-collaboration-platform-dcp-add-connections) for instructions.
+> Before exporting, make sure your cloud storage bucket is set up and connected to DCP. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">Set up your cloud services</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Add connections</Anchor> for instructions.
 
 **To export the audience to cloud storage:**
 
@@ -356,7 +344,7 @@ View and manage audiences associated with a collaboration.
 
 1. In DCP, go to the **Collaborations** tab and click the relevant collaboration.
 2. Click the **Audiences** section.  
-   ![Audiences section new UI.png](https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png)
+   <Image alt="Audiences section new UI.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
 
 **What you can do from this page:**
 
@@ -413,7 +401,7 @@ You can delete an audience created in your account. Doing so removes it permanen
 
 You can view the **Last upload status** of audiences associated with a collaboration.
 
-![image (26).png](https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png)
+<Image alt="image (26).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
 
 There are various statuses an audience can have:
 

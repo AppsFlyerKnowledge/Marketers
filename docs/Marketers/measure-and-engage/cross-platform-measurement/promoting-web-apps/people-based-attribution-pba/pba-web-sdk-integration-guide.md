@@ -1,8 +1,5 @@
 ---
 title: PBA Web SDK integration guide
-excerpt: >-
-  Integrate AppsFlyer into websites using the Web SDK to record and measure
-  visits, events, conversions, and revenue.
 metadata:
   keywords:
     - Developers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001610038-PBA-Web-SDK-integration-guide
 ---
+> **At a glance:** Integrate AppsFlyer into websites using the Web SDK to record and measure visits, events, conversions, and revenue.
+
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
 ## Web SDK user and integration guide
@@ -34,7 +33,7 @@ x-zendesk:
   * is a website plug-in module that needs no programming. It is agnostic to the website visitor's operating system and browser.
   * Size: 40-60Kb.
 * Implement the Web SDK alongside the AppsFlyer mobile SDK to record and map user activity across your mobile app and web environments.
-* Events occurring outside of the website can be recorded using [Web server-to-server events API](/docs/web-server-to-server-events-api-for-pba-web-s2s) (Web S2S)
+* Events occurring outside of the website can be recorded using <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s">Web server-to-server events API</Anchor> (Web S2S)
 
 ## Selecting a code snippet
 
@@ -43,9 +42,11 @@ Choose the snippet that matches your integration type and security requirements.
 * [Standard Web SDK](#standard-web-sdk): The standard integration.
 * [Advanced SDK Verification](#advanced-sdk-verification): An enhanced integration that adds supply-chain protection for the Web SDK. Use this to add an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
 
-**Important!**
-
-If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
 
 ### Standard Web SDK
 
@@ -55,7 +56,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="Without Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -80,7 +81,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="With Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -119,7 +120,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="Without Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -151,7 +152,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="With Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -191,21 +192,21 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 | --- |
 | To ensure that visits and events are recorded, the Web SDK must be installed on all pages of the website. |
 | Place the snippet code [that you selected above](#selecting-a-code-snippet) so that it loads as early as possible in the page scope. Do so by placing the code near the top of the head tag. |
-| If you are integrating the SDK using Google Tag Manager (GTM):<ul><li>Ensure that the SDK loads once per page load.</li><li>Set the SDK to load as soon as the page loads using [GTM prioritization.](https://support.google.com/tagmanager/answer/2772421?hl=en)</li></ul> |
+| If you are integrating the SDK using Google Tag Manager (GTM):<ul><li>Ensure that the SDK loads once per page load.</li><li>Set the SDK to load as soon as the page loads using <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">GTM prioritization.</Anchor></li></ul> |
 | You can implement the Web SDK **with** or **without** Smart Banners. Follow the relevant instructions in the sections that follow. |
-| Integration mandatory requirements<ul><li>Visit recording</li><li>Event recording</li><li>Setting the [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) (CUID) : If you don't have a CUID, reach out to your CSM to discuss alternatives.</li></ul>Validate the integration using the [test tool](/docs/test-pba-web-sdk-integration) |
+| Integration mandatory requirements<ul><li>Visit recording</li><li>Event recording</li><li>Setting the [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) (CUID) : If you don't have a CUID, reach out to your CSM to discuss alternatives.</li></ul>Validate the integration using the <Anchor target="_blank" href="/marketers/docs/test-pba-web-sdk-integration">test tool</Anchor> |
 
 **Before you start**:
 
-* Verify with the marketer that they have created the [brand bundle.](/docs/pba-brand-bundles-and-settings)
-* For additional guidance see the [PBA onboarding guide](/docs/onboarding-guide-to-people-based-attribution).
+* Verify with the marketer that they have created the <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings">brand bundle.</Anchor>
+* For additional guidance see the <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution">PBA onboarding guide</Anchor>.
 * Consider: If you already have the standalone Smart Banners web SDK, remove it and replace it with the Web SDK for both Smart Banners and People-based Attribution; do not simply add the standalone Web SDK for PBA.
 
 **Do the following:**
 
 * Get the Web SDK Web Dev Key. **Note!** This is not the same key used by mobile apps.
   * **To get the Web Dev Key:**
-    1. In AppsFlyer, from the top menu, select the **My Apps**tab.
+    1. In AppsFlyer, from the top menu, select the **My Apps** tab.
     2. Click **View brand bundles.**
     3. Copy the required **Web Dev Key. (WEB\_DEV\_KEY)**
 * If you implement Smart Banners, get the Smart Banner key.
@@ -217,7 +218,8 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 **Proceed to integrate web SDK by using one of the following options.**
 
-<Accordion title="Native">
+<Tabs>
+<Tab title="Native">
 
 #### JavaScript code snippet
 
@@ -235,13 +237,13 @@ Integrate the web SDK using one of the following methods.
 2. In the code snippet [that you selected above](#selecting-a-code-snippet), replace the `WEB_DEV_KEY` and `YOUR_BANNER_KEY`using the keys specified in the prerequisites.
 3. Paste this code snippet into the website's head tag. Paste it near the top of the head tag.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Google Tag Manager">
+<Tab title="Google Tag Manager">
 
 **To implement the web SDK with Google Tag Manager (GTM):**
 
-1. [Go to Google Tag Manager.](https://developers.google.com/tag-manager/quickstart)
+1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Go to Google Tag Manager.</Anchor>
 2. Create a new tag for AppsFlyer web SDK.
 
    ![Create a new tag for the AppsFlyer Web SDK in Google Tag Manager](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
@@ -282,9 +284,9 @@ Integrate the web SDK using one of the following methods.
            ![Select the page view trigger created earlier in Google Tag Manager](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
         5. Click **Save**.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Adobe Launch Tag Manager">
+<Tab title="Adobe Launch Tag Manager">
 
 1. [Create a property in Adobe Experience Cloud](/docs/pba-web-sdk-integration-guide#create-a-property-in-adobe-experience-cloud)
 2. [Add the Web SDK to the Adobe Launch property](/docs/pba-web-sdk-integration-guide#add-the-web-sdk-to-the-adobe-launch-property)
@@ -297,7 +299,7 @@ Integrate the web SDK using one of the following methods.
 
 ![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
 
-1. Go to **Adobe Experience Cloud** >**Launch**.
+1. Go to **Adobe Experience Cloud** > **Launch**.
 2. Under **Adobe Experience Cloud Launch**, click **Go to Launch**.
 3. Click **New Property**.
 4. Name the property.
@@ -311,7 +313,7 @@ Integrate the web SDK using one of the following methods.
 
 <Accordion title="Add the Web SDK to the Adobe Launch property">
 
-![web_property_rules.png](https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png)
+<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. On the **My web property** page, select the **Rules** tab.
 2. Name the rule. Recommended to use, **Load web SDK**.
@@ -367,9 +369,10 @@ Integrate the web SDK using one of the following methods.
 
 </Accordion>
 
-When the website loads on a mobile device, the active creative displays in the banner. To display the banner on specific pages or according to user actions, see [Adobe Launch rules](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html).
+When the website loads on a mobile device, the active creative displays in the banner. To display the banner on specific pages or according to user actions, see <Anchor target="_blank" href="https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html">Adobe Launch rules</Anchor>.
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -392,7 +395,7 @@ Once installed verify that the AppsFlyer web SDK is called by the visitor's brow
 7. In the headers tab, (D) ensure that:
    * **Request URL** is wa.appsflyer.com/events.
    * site\_id query parameter= `WEB_DEV_KEY`.
-   * (E)**status code is 200**.
+   * (E) **status code is 200**.
 8. Verify that the value of site\_id is equal to the value of `WEB_DEV_KEY` in the brand bundle settings:
    1. In AppsFlyer, from the side menu, select **Settings** > **Brand Bundles.**
    2. Click **Web dev key,** doing so copies the key.
@@ -464,7 +467,7 @@ CSP policy compatibility
 
 <Accordion title="Without Smart Banners">
 
-```html
+```javascript
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -498,7 +501,7 @@ CSP policy compatibility
 
 <Accordion title="With Smart Banners">
 
-```html
+```javascript
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -554,9 +557,9 @@ You can implement the methods described in relation to urls, referrers, and head
 <Accordion title="Conversion and standard events">
 
 * User events are recorded by the SDK, which sends the event to the AppsFlyer platform.
-* Using the [conversion events](/docs/pba-brand-bundles-and-settings#web-event-settings) list, set by the marketer, AppsFlyer splits the events into standard and conversion events.
+* Using the <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#web-event-settings">conversion events</Anchor> list, set by the marketer, AppsFlyer splits the events into standard and conversion events.
 * Conversion event data is available in PBA dashboards.
-* Conversion and standard event data are available in [raw data reports.](/docs/pba-raw-data-reports)
+* Conversion and standard event data are available in <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">raw data reports.</Anchor>
 
 ### Conversion events
 
@@ -583,17 +586,17 @@ Trigger the web SDK to record events when certain conditions are met, for exampl
 <Accordion title="Identifying users using customer user ID (CUID)">
 
 * Web users are identified in AppsFlyer by using the unique CUID you allocate them. Typically the CUID is managed by your backend servers.
-* Use the same CUID value you use in the mobile environment. Doing so enables you to have a holistic view of user activity across multiple platforms. The function in the mobile SDK is setCustomerUserId function ([iOS](/docs/customer-user-id-field-cuid#setting-the-cuid), [Android, Unity](/docs/customer-user-id-field-cuid#setting-the-cuid)).
+* Use the same CUID value you use in the mobile environment. Doing so enables you to have a holistic view of user activity across multiple platforms. The function in the mobile SDK is setCustomerUserId function (<Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Android, Unity</Anchor>).
 * To set the CUID in the web SDK:
   * Set the CUID at the earliest point that you have access to it. Most times this means you need to wait for the user to identify via login or sign up.
   * Fire the JavaScript call to setCustomerUserId() as shown in the example that follows.   
     Note! Send the CUID as a string even if it is a number. Do so enclosing it in quotation marks.
-* If you implement web S2S, consider that you may need to notify PBA when you [associate](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) a CUID with a web visitor id in your backend.
-* CUIDs must not contain [directly identifiable personal information](/docs/customer-user-id-field-cuid#cuid-and-privacy) such as a phone number or email address.
+* If you implement web S2S, consider that you may need to notify PBA when you <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method">associate</Anchor> a CUID with a web visitor id in your backend.
+* CUIDs must not contain <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#cuid-and-privacy">directly identifiable personal information</Anchor> such as a phone number or email address.
 
 **Example: set the CUID**
 
-```
+```javascript
 // Associate all current user web events to distinct ID 663274 
 AF('pba', 'setCustomerUserId' , '663274')
 ```
@@ -611,7 +614,7 @@ AF('pba', 'setCustomerUserId' , '663274')
 | ~~eventCategory~~ | No | This parameter is deprecated and will be removed from the system at a date to be announced. Use the eventValue parameter instead. |
 | ~~eventLabel~~ | No | This parameter is deprecated and will be removed from the system at a date to be announced. Use the eventValue parameter instead. |
 | eventRevenue | No | Revenue assigned to a conversion event<br /><br />Format: Float |
-| eventRevenueCurrency | No | Revenue currency<ul><li>3 character [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code</li><li>Default: USD</li></ul>Format: String |
+| eventRevenueCurrency | No | Revenue currency<ul><li>3 character <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> currency code</li><li>Default: USD</li></ul>Format: String |
 | eventValue | No | Map of event parameters describing the event. Use this parameter to send rich in-app events like product SKU, line item price.<br /><br />Format: JSON<br /><br />**Example:** To send SKU ABC123, having blue color and a unit price of $3.99<br /><br />`{"sku": "ABC123", “color": "blue", "unit_price":3.99,"currency": "USD"}`<br /><br />**Limitation:** 1000 characters. Do not exceed this it will be truncated. |
 
 </Accordion>
@@ -622,7 +625,7 @@ AF('pba', 'setCustomerUserId' , '663274')
 
 Example event
 
-```
+```javascript
 // purchase event of shoes with associated revenue
 AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12, eventValue: {"key1": 123, "key2": "name"}});
 ```
@@ -653,14 +656,14 @@ Suppose you are managing a new outlet. Some events that you might want to record
 
 This part is intended for web developers.
 
-[Test PBA web SDK integration:](/docs/test-pba-web-sdk-integration) view test events in real-time.
+<Anchor target="_blank" href="/marketers/docs/test-pba-web-sdk-integration">Test PBA web SDK integration:</Anchor> view test events in real-time.
 
 **To ensure that events are sent to AppsFlye**r:
 
 1. Open the website.
 2. Open the browser developer tools.
-   * [How to open the developer tools in Chrome](https://developers.google.com/web/tools/chrome-devtools/open#console)
-   * [How to open the developer tools in Safari](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html)
+   * <Anchor target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/open#console">How to open the developer tools in Chrome</Anchor>
+   * <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/EnableWebInspector/EnableWebInspector.html">How to open the developer tools in Safari</Anchor>
 3. Switch to the Network tab.
 4. Trigger the event.
 5. Filter by message.
@@ -686,7 +689,8 @@ The code provided is for illustrative purposes only. Don't use this code as-is.
   * a landing page loads.
   * users interact with the website.
 
-<Accordion title="Native event recording">
+<Tabs>
+<Tab title="Native event recording">
 
 **Recording events when a landing page loads**
 
@@ -755,9 +759,9 @@ The preceding code above shows a basic HTML page. The web page needs to load th
   * calls the AF() method and passes data to it.
 * The AF() method sends the event to AppsFlyer.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Tag Manager event recording">
+<Tab title="Tag Manager event recording">
 
 **Recording events when a landing page loads**
 
@@ -800,7 +804,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
 3. Give the tag a distinct name and select the **Custom HTML** tag type option.
 4. Put the following code in the **Custom HTML**.
 
-   ```html
+   ```javascript
    <script> 
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
@@ -867,14 +871,15 @@ The preceding code above shows a basic HTML page. The web page needs to load th
    ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
 5. Create a new tag for the checkout action, choose type Custom HTML, and set the trigger to the checkout trigger.
 
-   ```html
+   ```javascript
    <script>
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
    ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
 
-</Accordion>
+</Tab>
+</Tabs>
 
 * Make sure the web SDK functions tag is loaded before the event is fired.
 * Don't send special characters in event values, like currency symbols in revenue value.
@@ -898,7 +903,8 @@ User scenario:
 * In the thank you page after signup, you query the server for the new CUID.
 * Using the server response, you set AppsFlyer CUID using the Web SDK setCustomerUserId() method.
 
-<Accordion title="Native">
+<Tabs>
+<Tab title="Native">
 
 Set up a signup page:
 
@@ -973,9 +979,9 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 The code makes use of the fetch API. It sends the server the email address entered by the user. Assuming that the server creates a user with a unique CUID upon signup, sending the email address to the server is for the purpose of receiving a unique CUID. The server responds with a unique CUID and this unique CUID is the value that is passed with the setCustomerUserId method.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Google Tag Manager">
+<Tab title="Google Tag Manager">
 
 1. Set up a signup page:
 
@@ -1054,7 +1060,7 @@ The code makes use of the fetch API. It sends the server the email address enter
 4. Give the tag a distinct name and select the “Custom HTML” tag type option
    ![GoogleTag.jpg](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
 
-   ```html
+   ```javascript
    <script>
            var userEmail = localStorage.getItem('user_email');
            fetch('users/' + userEmail).then(function (res) {
@@ -1072,11 +1078,12 @@ The code makes use of the fetch API. It sends the server the email address enter
 
    ![Trigger set to fire on the Thank You page load](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
 
-</Accordion>
+</Tab>
+</Tabs>
 
 The setCustomerUserId function can be sent at any stage in the user flow, for example, after user login and signup. AppsFlyer uses the most recent CUID sent to update the current observed user for past or future touchpoints and events.
 
-Use the same CUID value as you do in the setCustomerUserd function in the mobile app (see mobile setCustomerUserId for: [iOS](/docs/customer-user-id-field-cuid#setting-the-cuid), [Android,](/docs/customer-user-id-field-cuid#setting-the-cuid) Unity)
+Use the same CUID value as you do in the setCustomerUserd function in the mobile app (see mobile setCustomerUserId for: <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Android,</Anchor> Unity)
 
 </Accordion>
 

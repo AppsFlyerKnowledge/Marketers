@@ -1,6 +1,5 @@
 ---
 title: X Ads (formerly Twitter Ads) setup guide—overview
-excerpt: Learn the background of integrating your X Ads account with AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -22,7 +21,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410464316049-X-Ads-formerly-Twitter-Ads-setup-guide-overview
 ---
-![X Ads logo.png](https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png)
+**At a glance:** Learn the background of integrating your X Ads account with AppsFlyer.
+
+<Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
 ## Mobile app promotion on X Ads
 
@@ -47,7 +48,7 @@ For more detailed information, contact your X Ads Account Manager.
 
 ## X Ads and AppsFlyer SKAN interoperation
 
-X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer).
+X Ads sends SKAdNetwork postback data via a dedicated API. SKAN data from X Ads will be displayed in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN dashboard</Anchor>.
 
 X Ads enriches SKAN postbacks with the following data fields:
 

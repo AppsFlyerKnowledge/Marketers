@@ -1,10 +1,5 @@
 ---
 title: Amplitude integration with AppsFlyer
-excerpt: >-
-  Integrate AppsFlyer with Amplitude to share user attribution data and event
-  analytics for better insights into user engagement, retention, and revenue.
-  Choose between two integration versions, V1 or V2 , depending on your use case
-  and analytics needs.
 metadata:
   keywords:
     - Advertisers
@@ -29,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211200306-Amplitude-integration-with-AppsFlyer
 ---
+> **At a glance:** Integrate AppsFlyer with Amplitude to share user attribution data and event analytics for better insights into user engagement, retention, and revenue. Choose between **two integration versions, V1 or V2**, depending on your use case and analytics needs.
+
 ## About the integration
 
 Amplitude, an AppsFlyer integrated partner, is a product analytics platform used by product, growth, and marketing teams to understand user behavior across mobile and web. The integration allows AppsFlyer to send key event data to Amplitude post-install, enabling comprehensive user-level analysis.
@@ -36,9 +33,9 @@ Amplitude, an AppsFlyer integrated partner, is a product analytics platform used
 There are two Amplitude integration versions:
 
 * **Amplitude V1:**  
-  This version uses Amplitude's Attribution API. AppsFlyer sends install data collected after the integration is complete. Amplitude uses Ad ID as the identifier and discards the data if no matching user event is logged within 72 hours. [Learn more](https://amplitude.com/docs/apis/analytics/attribution)
+  This version uses Amplitude's Attribution API. AppsFlyer sends install data collected after the integration is complete. Amplitude uses Ad ID as the identifier and discards the data if no matching user event is logged within 72 hours. <Anchor target="_blank" href="https://amplitude.com/docs/apis/analytics/attribution">Learn more</Anchor>
 * **Amplitude V2 :**  
-  This version uses Amplitude's HTTP V2 API. AppsFlyer sends both installs and in-app event data after the integration is complete. Identifiers are prioritized (user\_id and device\_id), and if matching fails, a new user is logged. [Learn more](https://amplitude.com/docs/apis/analytics/http-v2)
+  This version uses Amplitude's HTTP V2 API. AppsFlyer sends both installs and in-app event data after the integration is complete. Identifiers are prioritized (user\_id and device\_id), and if matching fails, a new user is logged. <Anchor target="_blank" href="https://amplitude.com/docs/apis/analytics/http-v2">Learn more</Anchor>
 
 <span id="h_01JSE81SX1FR182N1CZJ5CQP5N"></span>**<span id="integration-methods"></span>Integration versions:**
 
@@ -47,10 +44,12 @@ There are two Amplitude integration versions:
 | **V1** | Attribution API | Advertising ID (AdID) | Installs only |
 | **V2** | HTTP V2 API | `user_id`, `device_id` (fallback logic) | Installs and in-app events |
 
-**Important!**
-
-* Choose either the Amplitude V1 or V2 integration. **Do not use both** simultaneously. Using both versions at the same time may result in duplicate events being sent to Amplitude.
-* Some media sources restrict data sharing with third parties. Postbacks for restricted events won't be sent to this partner, even if configured.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> * Choose either the Amplitude V1 or V2 integration. **Do not use both** simultaneously. Using both versions at the same time may result in duplicate events being sent to Amplitude.
+> * Some media sources restrict data sharing with third parties. Postbacks for restricted events won't be sent to this partner, even if configured.
 
 ## Prerequisites
 
@@ -73,45 +72,46 @@ The V2 integration requires setup of the:
 
 To enable user-level attribution, you must pass the Amplitude Device ID into the AppsFlyer SDK. This value is sent with each postback.
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```java
 AppsFlyerLib.getInstance().setAdditionalData("AmplitudeDeviceId", amplitude.getDeviceId())
 ```
 
 **Language:** Java/Kotlin
 
-**Documentation:** [Android SDK reference](https://dev.appsflyer.com/hc/docs/android-sdk-reference#setadditionaldata), [Amplitude](https://amplitude.com/docs/sdks/analytics/android/android-kotlin-sdk#get-device-id)
+**Documentation:** <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference#setadditionaldata">Android SDK reference</Anchor>, <Anchor target="_blank" href="https://amplitude.com/docs/sdks/analytics/android/android-kotlin-sdk#get-device-id">Amplitude</Anchor>
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS (Objective-C)">
+<Tab title="iOS (Objective-C)">
 
-```json
+```objectivec
 [[AppsFlyerLib shared] setAdditionalData:@{@"AmplitudeDeviceId": [[Amplitude instance] getDeviceId]}];
 ```
 
 **Language:** Objective-C
 
-**Documentation:** [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference#setadditionaldata), [Amplitude](https://amplitude.com/docs/sdks/analytics/ios/ios-sdk#get-device-id)
+**Documentation:** [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference#setadditionaldata), <Anchor target="_blank" href="https://amplitude.com/docs/sdks/analytics/ios/ios-sdk#get-device-id">Amplitude</Anchor>
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS (Swift)">
+<Tab title="iOS (Swift)">
 
-```
+```swift
 AppsFlyerLib.shared().customData = ["AmplitudeDeviceId": Amplitude.instance().getDeviceId()]
 ```
 
 **Language:** Swift
 
-**Documentation:** [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference#setadditionaldata), [Amplitude](https://amplitude.com/docs/sdks/analytics/ios/ios-sdk#get-device-id)
+**Documentation:** [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference#setadditionaldata), <Anchor target="_blank" href="https://amplitude.com/docs/sdks/analytics/ios/ios-sdk#get-device-id">Amplitude</Anchor>
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity">
+<Tab title="Unity">
 
-```
+```csharp
 Dictionary<string, string> customData = new Dictionary<string, string>();
 customData.Add("AmplitudeDeviceId", Amplitude.getInstance().getDeviceId());
 AppsFlyer.setAdditionalData(customData);
@@ -121,11 +121,11 @@ AppsFlyer.setAdditionalData(customData);
 
 **Documentation:** [Unity SDK reference](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin)
 
-</Accordion>
+</Tab>
 
-<Accordion title="React Native">
+<Tab title="React Native">
 
-```
+```javascript
 appsFlyer.setAdditionalData({"AmplitudeDeviceId": amplitude.getDeviceId()},
 (res) => {
 //...
@@ -137,11 +137,11 @@ appsFlyer.setAdditionalData({"AmplitudeDeviceId": amplitude.getDeviceId()},
 
 **Documentation:** [React Native SDK reference](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin)
 
-</Accordion>
+</Tab>
 
-<Accordion title="Cordova">
+<Tab title="Cordova">
 
-```
+```javascript
 appsFlyer.setAdditionalData({"AmplitudeDeviceId": amplitude.getDeviceId()});
 ```
 
@@ -149,11 +149,11 @@ appsFlyer.setAdditionalData({"AmplitudeDeviceId": amplitude.getDeviceId()});
 
 **Documentation:** N/A
 
-</Accordion>
+</Tab>
 
-<Accordion title="Flutter">
+<Tab title="Flutter">
 
-```javascript
+```
 var data = {"AmplitudeDeviceId": amplitude.getDeviceId()};
 appsFlyerSdk.setAdditionalData(data);
 ```
@@ -162,20 +162,22 @@ appsFlyerSdk.setAdditionalData(data);
 
 **Documentation:** [Flutter SDK reference](https://github.com/AppsFlyerSDK/appsflyer-flutter-plugin)
 
-</Accordion>
+</Tab>
+</Tabs>
 
 #### Customer user ID
 
 Set up the Customer User ID (CUID). This is a unique identifier typically generated and set  
-by the app owner during user registration. [Learn more](/docs/customer-user-id-field-cuid?utm_source=chatgpt.com)
+by the app owner during user registration. <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">Learn more</Anchor>
 
 #### Amplitude session ID
 
-Set up the Amplitude session ID and pass it to AppsFlyer. [Learn more](https://amplitude.com/docs/data/sources/instrument-track-sessions)
+Set up the Amplitude session ID and pass it to AppsFlyer. <Anchor target="_blank" href="https://amplitude.com/docs/data/sources/instrument-track-sessions">Learn more</Anchor>
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```java
 AppsFlyerLib.getInstance().setAdditionalData("AmplitudeSessionId", amplitude.getSessionId())
 ```
 
@@ -183,11 +185,11 @@ AppsFlyerLib.getInstance().setAdditionalData("AmplitudeSessionId", amplitude.get
 
 **Documentation:** [Android SDK reference](https://dev.appsflyer.com/hc/docs/android-sdk-reference#setadditionaldata)
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS (Objective-C)">
+<Tab title="iOS (Objective-C)">
 
-```json
+```objectivec
 [[AppsFlyerLib shared] setAdditionalData:@{@"AmplitudeSessionId": [[Amplitude instance] getSessionId]}];
 ```
 
@@ -195,11 +197,11 @@ AppsFlyerLib.getInstance().setAdditionalData("AmplitudeSessionId", amplitude.get
 
 **Documentation:** [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference#setadditionaldata)
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS (Swift)">
+<Tab title="iOS (Swift)">
 
-```
+```swift
 AppsFlyerLib.shared().customData = ["AmplitudeSessionId": Amplitude.instance().getSessionId()]
 ```
 
@@ -207,11 +209,11 @@ AppsFlyerLib.shared().customData = ["AmplitudeSessionId": Amplitude.instance().g
 
 **Documentation:** [iOS SDK reference](https://dev.appsflyer.com/hc/docs/ios-sdk-reference#setadditionaldata)
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity">
+<Tab title="Unity">
 
-```
+```csharp
 Dictionary<string, string> customData = new Dictionary<string, string>();
 customData.Add("AmplitudeSessionId", Amplitude.getInstance().getSessionId());
 AppsFlyer.setAdditionalData(customData);
@@ -221,11 +223,11 @@ AppsFlyer.setAdditionalData(customData);
 
 **Documentation:** [Unity SDK reference](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin)
 
-</Accordion>
+</Tab>
 
-<Accordion title="React Native">
+<Tab title="React Native">
 
-```
+```javascript
 appsFlyer.setAdditionalData({"AmplitudeSessionId": amplitude.getSessionId()},
 (res) => {
 //...
@@ -237,11 +239,11 @@ appsFlyer.setAdditionalData({"AmplitudeSessionId": amplitude.getSessionId()},
 
 **Documentation:** [React Native SDK reference](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin)
 
-</Accordion>
+</Tab>
 
-<Accordion title="Cordova">
+<Tab title="Cordova">
 
-```
+```javascript
 appsFlyer.setAdditionalData({"AmplitudeSessionId": amplitude.getSessionId()});
 ```
 
@@ -249,11 +251,11 @@ appsFlyer.setAdditionalData({"AmplitudeSessionId": amplitude.getSessionId()});
 
 **Documentation:** N/A
 
-</Accordion>
+</Tab>
 
-<Accordion title="Flutter">
+<Tab title="Flutter">
 
-```javascript
+```
 var data = {"AmplitudeSessionId": amplitude.getSessionId()};
 appsFlyerSdk.setAdditionalData(data);
 ```
@@ -262,7 +264,8 @@ appsFlyerSdk.setAdditionalData(data);
 
 **Documentation:** [Flutter SDK reference](https://github.com/AppsFlyerSDK/appsflyer-flutter-plugin)
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ## Set up the integration
 
@@ -271,11 +274,11 @@ appsFlyerSdk.setAdditionalData(data);
 1. In AppsFlyer, go to **Collaborate** > **Partner Integrations > Marketplace** tab.
 2. To set up the Amplitude V1 integration, select **Amplitude V1** (Tech partner).
 
-   ![Select Amplitude V1 doctored.png](https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png)
+   <Image alt="Select Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />
 
    To set up the Amplitude V2 integration, select **Amplitude V2** (Tech partner).
 
-   ![Select Amplitude V2.png](https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png)
+   <Image alt="Select Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
 3. Once you've selected your Amplitude version, click **Set up integration**.
 
    ![Click set up integration.png](https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png)
@@ -283,7 +286,7 @@ appsFlyerSdk.setAdditionalData(data);
    * Select your app.
    * Turn on the **Activate partner** toggle.
 
-     ![Activate partner blurred.png](https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png)
+     <Image alt="Activate partner blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
 5. Complete the configuration in the remaining tabs:
 
 <Accordion title="Integration tab">
@@ -293,7 +296,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to turn **Activate Partner** on to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
-Learn more about [partner activation](/docs/partner-activation-deactivation).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
 ### General settings
 
@@ -334,20 +337,20 @@ Amplitude connects with AppsFlyer via a unique API Key. If you don't already hav
 1. Log in to your Amplitude account.
 2. From the top right of the page, click the settings icon > **Organization Settings**.
 
-   ![Amplitude](https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png)
+   <Image alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
 3. Click **Projects** and select the project from which to send data to AppsFlyer.
 
    ![amplitude](https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png)
 4. From the **Project** tab, copy your API key.
 
-   ![Amplitude](https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png)
+   <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Proceed to configure Amplitude in AppsFlyer Dashboard.
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Amplitude following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking through a campaign. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+AppsFlyer can send automatic postbacks to Amplitude following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking through a campaign. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
-![Screenshot 2025-12-03 at 1.57.03 PM.png](https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png)
+<Image alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
 
 ### In-app event settings
 
@@ -361,11 +364,11 @@ Once you have saved the configuration, AppsFlyer sends the following data to Amp
 * Media Source
 * Campaign name
 
-Sending IDFA for iOS devices is subject to [ATT consent by the user and to Advanced Privacy settings](/docs/apply-aggregated-advanced-privacy-framework).
+Sending IDFA for iOS devices is subject to <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">ATT consent by the user and to Advanced Privacy settings</Anchor>.
 
 ### In-app event postbacks
 
-[Configure sending in-app event postbacks](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration) to Amplitude.
+<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">Configure sending in-app event postbacks</Anchor> to Amplitude.
 
 </Accordion>
 
@@ -399,12 +402,14 @@ Attribution data sent from AppsFlyer to Amplitude is displayed in your dashboard
 
 ![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
 
-**Important!**
-
-In some cases, Amplitude shows data coming from AppsFlyer as "Blocked". If you can't see AppsFlyer data in Amplitude, check if it's defined as a blocked event.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> In some cases, Amplitude shows data coming from AppsFlyer as "Blocked". If you can't see AppsFlyer data in Amplitude, check if it's defined as a blocked event.
 
 ## Sending Amplitude events to AppsFlyer
 
-The integration also allows sending your Amplitude events to AppsFlyer via a Server-to-server API. See [Amplitude documentation](https://www.docs.developers.amplitude.com/data/destinations/appsflyer/) on how to do this.
+The integration also allows sending your Amplitude events to AppsFlyer via a Server-to-server API. See <Anchor target="_blank" href="https://www.docs.developers.amplitude.com/data/destinations/appsflyer/">Amplitude documentation</Anchor> on how to do this.
 
 <div data-zendesk-anchors="h_01JSE81SX1B1RH978Y08W1XXX8=about-the-integration set-up-the-integration=prerequisites h_01JSE958V510B9P6VEQTXC55S7=prerequisites additional-prerequisites-for-the-v2-integration=additional-prerequisites-for-the-amplitude-v2-integration h_01JSKEMMEB00PERVQWPYNF5V2E=additional-prerequisites-for-the-amplitude-v2-integration h_01JSKFH7KPSE5P0CRPVJ3FJ2WN=amplitude-device-id h_01JSKFK4BFH3PP98XAZ0W8GG11=customer-user-id h_01JSKFQXPPJVCW68C4H9B4EJ76=amplitude-session-id set-up-the-integration::45aa5acf=set-up-the-integration h_01JSKFQAZ8Q76KF1JJKZTAPVBQ=set-up-the-integration 01H8KPA9JKDRA680Y0WPZ172EM=activate-partner 01H8KPA9JKF4VCA4S22SYT40WT=general-settings 01H8KPA9JKJ2XN1AEPV74QVJYZ=advanced-data-sharing amplitude-data-center=amplitude-eu-data-center 01H8KPA9JKP0T0FDND97VA23EY=amplitude-eu-data-center 01H8KPA9JKDYDPDGRXZSH2BAV8=api-key 01H8KPA9JK510YKV47816DT7E7=obtaining-the-api-key-from-amplitude 01H8KRBGYQ973CT3H8GHZ8R0BH=default-postbacks inapp-event-settings=in-app-event-settings 01H8KPA9JKM4S79160BEYN3B6V=in-app-event-settings inapp-event-postbacks=in-app-event-postbacks 01H8KSQ76XE9Z191P1RMANF6EQ=in-app-event-postbacks 01H8KPA9JK75TA0H8T4P65BMSE=viewing-attribution-data-in-the-amplitude-console h_01HPYFZDX1WWDWJEBZ4DK706B4=sending-amplitude-events-to-appsflyer" />

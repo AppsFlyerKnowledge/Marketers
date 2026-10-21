@@ -1,10 +1,5 @@
 ---
 title: Data collaboration platform (DCP) - Run and manage measurement
-excerpt: >-
-  After you configure on-site or off-site measurement, run it as either a live
-  measurement or a historical measurement. Choose the mode that best matches
-  your goal: measure performance continuously or validate results for a defined
-  period.
 metadata:
   keywords:
     - Marketers
@@ -25,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/44427723216017-Data-collaboration-platform-DCP-Run-and-manage-measurement
 ---
+**At a glance:** After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period.
+
 ## About the measurement run modes
 
-After you’ve [configured the on-site or off-site measurement](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement), you’re ready to choose how to run the measurement.
+After you’ve <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">configured the on-site or off-site measurement</Anchor>, you’re ready to choose how to run the measurement.
 
 You have two run modes available:
 
@@ -40,7 +37,7 @@ You have two run modes available:
 | --- | --- | --- |
 | When it runs | **On-demand** (manual) execution | **Automated** daily execution |
 | Data source | Uses **historical data uploads** | Requires **SDK/ETL setup** and runs at predefined time intervals |
-| Supported source types | [Append](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) and [Overwrite (snapshot)](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) | [Append-type custom sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) |
+| Supported source types | <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Append</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Overwrite (snapshot)</Anchor> | <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Append-type custom sources</Anchor> |
 | Time frame selection | Select a **start and end date** (from available data) | Select a **start date only** (the platform calculates the historical time frame on activation and continues accumulating data) |
 | How many per measurement | Multiple | One |
 
@@ -64,7 +61,7 @@ Use the guidance below to decide which measurement fits your goal.
 
 ## Run a live measurement
 
-**Before you begin:**  [Configure the on-site or off-site measurement campaign in the Measurement settings page](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement).
+**Before you begin:**  <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">Configure the on-site or off-site measurement campaign in the Measurement settings page</Anchor>.
 
 1. In the **Measurement settings** page, click **Run now**.
 
@@ -73,7 +70,7 @@ Use the guidance below to decide which measurement fits your goal.
 
    > 📘 **Note**
    >
-   > * If the measurement uses [Overwrite](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method) sources, only the **Historical dashboard** is available. **Live dashboard** requires **Append-type** sources (or AppsFlyer SDK in-app events) to refresh automatically.
+   > * If the measurement uses <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Overwrite</Anchor> sources, only the **Historical dashboard** is available. **Live dashboard** requires **Append-type** sources (or AppsFlyer SDK in-app events) to refresh automatically.
    > * Only **one live measurement** can run at a time in a collaboration. If you start a new live measurement while another one is already running, you’ll be prompted to pause the existing one.
 
 3. Rename the dashboard or keep the default name.
@@ -83,7 +80,7 @@ Use the guidance below to decide which measurement fits your goal.
 
 ## Run a historical measurement
 
-**Before you begin:**  [Configure the on-site or off-site measurement campaign in the Measurement settings page](/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement).
+**Before you begin:**  <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">Configure the on-site or off-site measurement campaign in the Measurement settings page</Anchor>.
 
 1. In **Measurement settings**, click **Run now**.  
    If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.

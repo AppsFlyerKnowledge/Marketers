@@ -1,8 +1,5 @@
 ---
 title: End-user events cross-platform report in Data Locker
-excerpt: >-
-  The Cross-platform end-user events report measures complete user journeys,
-  conversions, and LTV across platforms and devices
 metadata:
   keywords:
     - Marketers
@@ -23,15 +20,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39748676204817-End-user-events-cross-platform-report-in-Data-Locker
 ---
+**At a glance:** The Cross-platform end-user events report measures complete user journeys, conversions, and LTV across platforms and devices
+
 The Cross-platform end-user events report is a raw data report that provides event-level logs of sessions and in-app events for each user, linked across platforms using your Customer User ID (CUID). Each event includes the cross-platform attribution result, enabling you to analyze complete user journeys.
 
-For more information about the user-based attribution flow and configuration, see [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution).
+For more information about the user-based attribution flow and configuration, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
 
 ## Report fields
 
 To learn which fields are contained in the report, [download a report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
 
-The report sample includes all the report fields and their values. For the definitions of the fields, see [the field dictionary](/docs/raw-data-field-dictionary).
+The report sample includes all the report fields and their values. For the definitions of the fields, see <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">the field dictionary</Anchor>.
 
 ## Report data freshness
 
@@ -42,7 +41,7 @@ The report sample includes all the report fields and their values. For the defin
 * Events are allocated to their corresponding hourly buckets.
   * Example: Events that entered the database between 3:00 and 4:00 AM will appear in the 3:00 AM bucket.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > There is typically a short delay between an event's actual happening and its entry into the database. The report uses the database entry time to ensure accurate and consistent hourly grouping.
 

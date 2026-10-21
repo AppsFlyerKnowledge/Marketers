@@ -1,6 +1,5 @@
 ---
 title: Apply China Personal Information Protection Law (PIPL) solution
-excerpt: Improve flexibility while measuring with AppsFlyer and complying with PIPL.
 metadata:
   keywords:
     - Developers
@@ -22,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/6031419375377-Apply-China-Personal-Information-Protection-Law-PIPL-solution
 ---
+**At a glance:** Improve flexibility while measuring with AppsFlyer and complying with PIPL.
+
 ## Background
 
 In late 2021, China passed the Personal Information Protection Laws (PIPL) which regulates the collection, use, and transfer of user personal data. To provide customers with additional flexibility while using AppsFlyer and to support PIPL compliance, follow the step-by-step instructions described in this article.  
@@ -49,17 +50,17 @@ The following section describes the actions you have to take to apply the AppsFl
    Note that configuring these methods affects identifier collection not only in China. To disable identifiers specifically for the Chinese market, you must implement custom logic.
 2. Mask and hash clicks and impressions by using dedicated Chinese domains to pass these events to AppsFlyer.
    * Use the following Chinese domains for OneLink and attribution links:
-     * For single platform clicks - **hclicks.aflink.com**, don't use click signing. Make sure to [exclude the app from click signing](https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add).
+     * For single platform clicks - **hclicks.aflink.com**, don't use click signing. Make sure to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/click-signing-config-excluded-apps-add">exclude the app from click signing</Anchor>.
      * For single platform impressions - **himpressions.aflink.com**
      * For OneLink clicks - **`{subdomain}`.onelnk.com**
    * Send your CSM a list of relevant app IDs and OneLink subdomains.
    * If you’re using smart banners:
-     * [Send AppsFlyer the website key.](/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup)
+     * <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#1-website-workplace-setup">Send AppsFlyer the website key.</Anchor>
      * Use only `{subdomain}`.onelnk.com.
      * Note! Since PIPL requires masking and hashing of IP addresses, smart banners based on geolocation rules will not function as expected.
 3. Mask and hash SDK and S2S events and transfer them through a relay server in China
    * **SDK Events:**  
-     Set the domain for SDK events to **hevents.appsflyer-cn.com**. [Android instructions](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost). [iOS instructions](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#sethost).  
+     Set the domain for SDK events to **hevents.appsflyer-cn.com**. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">Android instructions</Anchor>. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#sethost">iOS instructions</Anchor>.  
      Using this domain ensures that the IP of all SDK events is masked and hashed.
    * **S2S Events:**  
      For S2S events, use the `api2.hevents.appsflyer-cn.com` domain to mask and hash IP events as follows:

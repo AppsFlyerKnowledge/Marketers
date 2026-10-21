@@ -1,10 +1,5 @@
 ---
 title: LINE Ads Platform campaign configuration
-excerpt: >-
-  LINE Ads Platform, an AppsFlyer integrated partner combines a bidding and
-  customized targeting system. In addition to click-based mobile attribution,
-  LINE Ads Platform also offers retargeting attribution, which you can record
-  with AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -27,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/213050543-LINE-Ads-Platform-campaign-configuration
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/lap.png)
+**At a glance:** LINE Ads Platform, an AppsFlyer integrated partner combines a bidding and customized targeting system. In addition to click-based mobile attribution, LINE Ads Platform also offers retargeting attribution, which you can record with AppsFlyer.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
 ## Setting up LINE Ads platform
 
@@ -40,8 +37,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -56,7 +53,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 
@@ -66,7 +63,7 @@ LINE Ads Platform connects with AppsFlyer via a unique account and app ID, LINE\
 **To connect your LINE Ads account to AppsFlyer:**
 
 * Enter your unique **LINE\_Ad\_account\_id** and your **LINE\_Ad\_app\_ID**.   
-  See [Line Line Ads documentation on creating a business ID](https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions).
+  See <Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions">Line Line Ads documentation on creating a business ID</Anchor>.
 
 #### Connect multiple accounts and apps
 
@@ -84,10 +81,10 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 
 **To connect multiple account ID and app ID parameters:**
 
-1. Set up one or more [attribution links](/docs/about-link-structure-and-parameters).
+1. Set up one or more <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution links</Anchor>.
 2. Add to each attribution link an account ID and app ID parameter, using lower-case letters. See the highlighted part in the example below.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > An example attribution link with an account ID and app ID parameters:
 >
@@ -112,8 +109,8 @@ In this section you can map your AppsFlyer events with LINE Ads Platform via pos
    **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
    **- Events attributed to any partner or organic** to have your entire user base available to be reported to the partner
 4. From the dropdown list select an ***SDK Event Name***.
-5. From the ***Partner Event Identifier***dropdown list, select the corresponding option.
-6. Click ***Add Event***to add additional Event Names.
+5. From the ***Partner Event Identifier*** dropdown list, select the corresponding option.
+6. Click ***Add Event*** to add additional Event Names.
 7. Complete the following parameters:
 
 | Parameter Name | Description |
@@ -134,12 +131,12 @@ The event name and the event value (including the event parameters) configured i
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
-[Follow these instructions](https://lineforbusiness.com/th-en/service/line-ads/manual) to activate the attribution link in LINE Ads Platform.
+<Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual">Follow these instructions</Anchor> to activate the attribution link in LINE Ads Platform.
 
 </Accordion>
 

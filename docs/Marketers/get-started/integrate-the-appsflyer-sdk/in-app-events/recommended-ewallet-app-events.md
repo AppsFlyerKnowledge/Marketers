@@ -1,8 +1,5 @@
 ---
 title: Recommended eWallet app events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your eWallet app .
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4402425586065-Recommended-eWallet-app-events
 ---
-## ![InApp_Events_eWallet.png](https://files.readme.io/4d2ed4994bbe8e8eca7009b8ec8f5dbf22a626421a7a1efb213ddb4a12c7b487-4402543191825.png) eWallet
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eWallet app.
+
+## <Image alt="InApp_Events_eWallet.png" src="https://files.readme.io/4d2ed4994bbe8e8eca7009b8ec8f5dbf22a626421a7a1efb213ddb4a12c7b487-4402543191825.png" width="67px" /> eWallet
 
 eWallet apps enable users to make digital payments or purchases from their devices. The typical events that we suggest recording include adding funds, viewing content, selecting merchants, viewing promotions, and completing transactions.
 
@@ -35,14 +34,14 @@ Recording these events can help you determine:
 * What are the most popular types of services users use eWallet for when making bill payments
 * Which merchants are the most popular
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=ewallet). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=ewallet&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ewallet">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=ewallet&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the  **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
 

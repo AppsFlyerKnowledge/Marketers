@@ -1,8 +1,5 @@
 ---
 title: User management
-excerpt: >-
-  Create and manage your account's AppsFlyer users, and assign them permissions
-  to access features, apps, and data.
 metadata:
   keywords:
     - Advertisers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4409128270481-User-management
 ---
+**At a glance:** Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
+
 ## Overview
 
 AppsFlyer accounts allow for multiple users, each with individually-managed permissions. The maximum number of users per account is determined by your subscription plan.
@@ -57,12 +56,12 @@ Tips for navigating the Users tab:
 
 * Click the **User** column heading to sort the table alphabetically (ascending/descending).
 * Use the search box to find and display specific users.
-* Click the filter icon ![filter_icon.png](https://files.readme.io/a71945008c33bf583972af260535d4681c833fc90a6919fbcd628078d6ed6840-31780969026321.png) in the **Role** column heading to filter users by their role (including temp roles).
+* Click the filter icon <Image alt="filter_icon.png" src="https://files.readme.io/a71945008c33bf583972af260535d4681c833fc90a6919fbcd628078d6ed6840-31780969026321.png" width="25px" /> in the **Role** column heading to filter users by their role (including temp roles).
   * To clear the filter, select **None** in the filter dropdown list.
 * Click the **Last login** column heading to sort users by the date they last logged in to AppsFlyer.
   * **Tip:** Use this feature to easily identify and [delete](#deleting-users) inactive users, keep your account secure from unauthorized logins.
 * Use the checkboxes to select and [edit multiple users](#multi-user-editing) at the same time.
-* Admins only: Click the download icon ![download_icon.png](https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png) in the upper-right corner of the page to download the full user table as a CSV file.
+* Admins only: Click the download icon <Image alt="download_icon.png" src="https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png" width="24px" /> in the upper-right corner of the page to download the full user table as a CSV file.
   * The downloaded file includes the same columns as the table in the **Users** tab.
 
 </Accordion>
@@ -109,13 +108,13 @@ The page for creating or editing a user includes a number of sections. Make sure
    * Two consecutive periods (..) and other special characters are not allowed.
    * Must end with a valid email domain.
 
-     > 📘 **Important!**
-     >
-     > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
-     >
-     > * It can't later be changed without deleting and recreating the user.
-     > * It must be a valid email address at which the user can receive emails.
-     > * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can-t-create-this-user) to resolve this issue.
+   > 🚧 **Important!**
+   >
+   > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
+   >
+   > * It can't later be changed without deleting and recreating the user.
+   > * It must be a valid email address at which the user can receive emails.
+   > * It can't be associated with another user in any AppsFlyer account, [except for users in multiple accounts](#multiple-accounts). If the email address is already in use (either in your account or a different one), you will see the message *Can't create this user.* Follow the [troubleshooting steps below](/docs/user-management#troubleshooting-can-t-create-this-user) to resolve this issue.
 
 4. [Optional] Select the user’s department.
 
@@ -198,11 +197,11 @@ Users can be added to multiple accounts and assigned to different roles in each 
 
 #### Log in to multiple accounts
 
-Users can log in to multiple accounts using all login methods: credentials (username and password), [2FA](/docs/implementing-and-using-2fa-login), and [SSO](/docs/set-up-sso-authentication-with-your-identity-provider-idp).
+Users can log in to multiple accounts using all login methods: credentials (username and password), <Anchor target="_blank" href="/marketers/docs/implementing-and-using-2fa-login">2FA</Anchor>, and <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO</Anchor>.
 
 > 📘 **Note**
 >
-> When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. [See this article for more information on how to switch accounts](/docs/welcome-to-appsflyer#switch-between-accounts).
+> When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. <Anchor target="_blank" href="/marketers/docs/welcome-to-appsflyer#switch-between-accounts">See this article for more information on how to switch accounts</Anchor>.
 
 #### Supported accounts and users
 
@@ -236,7 +235,7 @@ Users can be edited either one at a time or in groups.
 
 **To edit an individual user:**
 
-1. On the **Users** tab, click the **Actions** ![actions_icon.png](https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png) button on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** <Image alt="actions_icon.png" src="https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png" width="25px" /> button on the far-right side of the user’s row.
 2. Select **Edit** from the menu.
 3. Edit user settings as required.
 4. All settings other than email address are editable (including role, apps, media sources, and geos).
@@ -263,7 +262,7 @@ Multi-user editing is an efficient way to change the account permissions of seve
 5. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
 6. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Scenario:**
 >
@@ -273,7 +272,7 @@ Multi-user editing is an efficient way to change the account permissions of seve
 >
 > **Steps:**
 >
-> 1. Use the Role filter ![filter_icon.png](https://files.readme.io/a71945008c33bf583972af260535d4681c833fc90a6919fbcd628078d6ed6840-31780969026321.png) to see only the users in the **Marketing–limited** role.
+> 1. Use the Role filter <Image alt="filter_icon.png" src="https://files.readme.io/a71945008c33bf583972af260535d4681c833fc90a6919fbcd628078d6ed6840-31780969026321.png" width="25px" /> to see only the users in the **Marketing–limited** role.
 > 2. Change Alice, Bill, and Charlie to the **Marketing** role:
 >    * Select the checkboxes for Alice, Bill, and Charlie.
 >    * Click the **Role** button.
@@ -307,11 +306,11 @@ Multiple users can be deleted from the account in bulk.
 
 ### Manage users in bulk via API
 
-Some user-management actions can be done in bulk using [a dedicated API](https://dev.appsflyer.com/hc/reference/bulk-users-management-overview):
+Some user-management actions can be done in bulk using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-management-overview">a dedicated API</Anchor>:
 
 * [Create](https://dev.appsflyer.com/hc/reference/bulk-users-post) multiple users
-* [Delete](https://dev.appsflyer.com/hc/reference/bulk-users-delete) multiple users
-* [Get](https://dev.appsflyer.com/hc/reference/bulk-users-get) access details of multiple users
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-delete">Delete</Anchor> multiple users
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-get">Get</Anchor> access details of multiple users
 
 The API supports the main user management features on the platform and includes the same error verifications.
 
@@ -339,7 +338,7 @@ AppsFlyer is configured with many predefined roles:
 >
 > For each of these predefined roles, the functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by assigning them to a different predefined or custom role (except for the [account owner](#account-owner), as discussed below).
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You have assigned Bill Bates the role of **Team manager.** This role gives Bill the ability to manage **OneLink templates,** but it does not allow him access to the **My plan** and **Payments** pages.
 >
@@ -363,7 +362,7 @@ This "all-access" characteristic of the Admin role can't be changed or limited.
 
 #### Manage tokens
 
-Only a user with an Admin role can [manage tokens](/docs/managing-appsflyer-tokens): create, rename, and remove API and server-to-server tokens.
+Only a user with an Admin role can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">manage tokens</Anchor>: create, rename, and remove API and server-to-server tokens.
 
 #### Role duplication
 
@@ -371,7 +370,7 @@ The Admin role **can't be duplicated** when creating [custom roles](#manage-cust
 
 #### Invite new partners to AppsFlyer
 
-A user with an admin role can [send an invitation link](/docs/partner-integrations#invite-new-partners-to-appsflyer) via the Partner Marketplace to invite a partner that isn't integrated with AppsFlyer.
+A user with an admin role can <Anchor target="_blank" href="/marketers/docs/partner-integrations#invite-new-partners-to-appsflyer">send an invitation link</Anchor> via the Partner Marketplace to invite a partner that isn't integrated with AppsFlyer.
 
 ### Account owner
 
@@ -393,7 +392,7 @@ Learn more about [managing temp roles](#managing-temp-roles).
 
 ### Get roles data via API
 
-Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), you can retrieve a list of current roles and their corresponding attributes specific to your account.
+Through the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_roles">Get roles API</Anchor>, you can retrieve a list of current roles and their corresponding attributes specific to your account.
 
 ## Manage custom roles
 
@@ -424,13 +423,13 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 **To edit a custom role:**
 
 1. On the left panel of the **Roles** tab, click on the name of the custom role you want to edit.
-2. Click the **Edit** icon ![edit-icon.jpg](https://files.readme.io/d32f150cb5d0271c5504fb3c107e23f73e59c9a3be1630769ad309edf4e79ea0-31780971794321.jpg) from the top-right corner of the page. The display of the right panel changes, allowing you to edit the role permissions settings.
+2. Click the **Edit** icon <Image alt="edit-icon.jpg" src="https://files.readme.io/d32f150cb5d0271c5504fb3c107e23f73e59c9a3be1630769ad309edf4e79ea0-31780971794321.jpg" width="25px" /> from the top-right corner of the page. The display of the right panel changes, allowing you to edit the role permissions settings.
    * **Note:** The role name can't be edited. To change it, you must delete the role and recreate a new one with a different name.
 3. The permission levels of all editable capabilities are displayed as buttons. Click these buttons to change the permission levels for the new custom role. (Be sure to scroll down to see the full list of capabilities.)
 4. When you are satisfied with all of your selections, click the **Save role** button.
 5. The role's permission levels are changed for all new and existing users.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Any changes you make to a custom role are automatically applied to **all existing users** in that role.
 
@@ -443,7 +442,7 @@ Through the [Get roles API](https://dev.appsflyer.com/hc/reference/get_roles), y
 **To delete a custom role:**
 
 1. On the left panel of the **Roles** tab, click on the name of the custom role you want to delete.
-2. Click the **Delete** icon ![delete-icon.jpg](https://files.readme.io/87f206e21926af0836690be064a5af7cb3bce0007f0fc62301b2925701b1d9f9-31780971797265.jpg) from the top-right corner of the page.
+2. Click the **Delete** icon <Image alt="delete-icon.jpg" src="https://files.readme.io/87f206e21926af0836690be064a5af7cb3bce0007f0fc62301b2925701b1d9f9-31780971797265.jpg" width="24px" /> from the top-right corner of the page.
 3. Confirm that you wish to delete the role.
    * A custom role can be deleted only when there are no users assigned to it. If there are users currently assigned to a custom role, assign these users to a different role before deleting the custom role.
 
@@ -470,7 +469,7 @@ Temp roles were designed specifically to allow seamless transition from our prio
 * When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
 * If the last user in a temp role is removed from it, the role will no longer appear in your account.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Your account previously used our prior user management system. Diana and Edward were existing users at the time your account was moved to the new system. Diana is now in Temp role 1, and Edward is in Temp role 2.
 >
@@ -512,7 +511,7 @@ Additionally, the following AppsFlyer features are **not available** to these us
 
 When you grant a user access to a specific agency **and** a specific media source, their data access reflects only the overlap between the two. They don't see all of that agency's data across every media source, and they don't see all of that media source's data across every agency — only the portion where both permissions intersect.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You give a user access to Agency B and Media Source A. Agency B manages app installs coming from several media sources, including Media Source A. This user sees only the installs from Media Source A that Agency B manages — not Agency B's data from other media sources, and not Media Source A's data managed by other agencies.
 
@@ -524,7 +523,7 @@ When you grant a user access to a specific agency **and** a specific media sourc
 
 Because all Admins have essentially the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Changing the account owner must be completed manually according to the steps below. It can't be done from the **User management** page.
 
@@ -559,7 +558,7 @@ Use this sample email as a reference:
 Once the change has been processed, you'll receive an email notification from AppsFlyer.
 
 * If you want the prior account owner to continue using your AppsFlyer account, [create a new user](/docs/user-management#creating-users) for them and assign them a new role.
-* APIs using token v2 aren't affected by changing the account owner. [Learn more about managing tokens](/docs/managing-appsflyer-tokens).
+* APIs using token v2 aren't affected by changing the account owner. <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Learn more about managing tokens</Anchor>.
 
 </Accordion>
 
@@ -588,7 +587,7 @@ If the user’s email is used in a different account or you can’t determine th
 
 If a new user did not receive their [account activation invitation](#user-activation) or if they did not activate within 48 hours, you can resend the email as follows:
 
-1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png) on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png" width="25px" /> on the far-right side of the user’s row.
    * Note that the user is still shown with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/cd556e0b9137fbcfbf4bef574332622ca1e567ac76a041b7f7f3874052b037e6-31780969031825.png), indicating that they have not yet activated their account).
 2. Select **Resend email invite** from the menu.
 
@@ -600,7 +599,7 @@ If a new user did not receive their [account activation invitation](#user-activa
 
 If your account uses 2FA, there may be occasions on which you need to reset a user’s 2FA settings. Do so as follows:
 
-1. On the **Users** tab, click the **Actions** button ![actions_icon.png](https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png) on the far-right side of the user’s row.
+1. On the **Users** tab, click the **Actions** button <Image alt="actions_icon.png" src="https://files.readme.io/c7dc63f2be01982234448350bf3ad77bb3ce8ec81907755d7474b667602dab68-31780971791249.png" width="25px" /> on the far-right side of the user’s row.
 2. Select **Reset 2FA** from the menu.
 
 **Note:** An admin can reset any other admin's 2FA other than their own or the [account owner's](#account-owner). To reset the account owner's 2FA, contact the AppsFlyer Support team.

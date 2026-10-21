@@ -1,8 +1,5 @@
 ---
 title: Aura from Unity campaign configuration
-excerpt: >-
-  Aura from Unity, an AppsFlyer ad network integrated partner, is a platform
-  that allows advertisers to connect with users when they set up a new device.
 metadata:
   keywords:
     - Campaign
@@ -29,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360005208578-Aura-from-Unity-campaign-configuration
 ---
+**At a glance:** Aura from Unity, an AppsFlyer ad network integrated partner, is a platform that allows advertisers to connect with users when they set up a new device.
+
 ![aura_logo.png](https://files.readme.io/83bca93f3dfe8f6ce9bd74b9141b8c3b4dc01cfcf8f1904c0f992346beee5014-17313206447889.png)
 
 ## Aura from Unity integration in AppsFlyer
@@ -42,8 +41,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -59,7 +58,7 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
    * **Disable**: View-through installs from the partner are not attributed.
 3. **Default postbacks** are sent to Aura from Unity for:
    * **Installs**: Postbacks are sent every time a user installs the app. Choose if you want to send postbacks for users attributed to Aura from Unity or all users, including organic installs.
-   * **Rejected installs**: With **Protect360**, postbacks are sent when an [install is rejected due to fraud](/partners/docs/rejected-attribution-postbacks-to-integrated-partners). Only users attributed to Aura from Unity are reported.
+   * **Rejected installs**: With **Protect360**, postbacks are sent when an <Anchor target="_blank" href="/partners/docs/rejected-attribution-postbacks-to-integrated-partners">install is rejected due to fraud</Anchor>. Only users attributed to Aura from Unity are reported.
 4. **In-app events settings**: To send postbacks, map your in-app event IDs to Aura from Unity's in-app IDs. Configure the parameters as follows:
    * Enable **In-app event postbacks**.
    * Sending option: Select if you want to send **Only events attributed to this partner** or **Events attributed to any partners**, including organic installs.
@@ -77,7 +76,7 @@ Connect to Aura from Unity by activating and setting parameters in the Integrati
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide). [Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters). **To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>. **To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -85,15 +84,15 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
 
-For the full list of partners supporting cost data [go here](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api).
+For the full list of partners supporting cost data <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">go here</Anchor>.
 
 </Accordion>
 
@@ -124,10 +123,10 @@ You can give Aura from Unity permission to view information or configure changes
    * **Allow to configure integration*:*** Permit the partner to set up the integration tab (except in-app event postbacks).
    * **Allow to configure in-app event postbacks*:*** Permit the partner to map in-app event postbacks to itself on the integration tab.
    * **Allow access to your retention report*:*** Only permit access to the partner's own retention data.
-   * **Allow access to your aggregate loyal user data*:***Only permit access to the partner's own loyal user data.
+   * **Allow access to your aggregate loyal user data*:*** Only permit access to the partner's own loyal user data.
    * **Allow access to your aggregate in-app events data*:** O*nly permit access to the partner's own in-app events data.
    * **Allow access to your aggregate revenue data:** Only permit access to the revenue data attributed to the partner.
-   * **Allow spend ingestion*:***Permit the partner to upload ad spend data for this app.
+   * **Allow spend ingestion*:*** Permit the partner to upload ad spend data for this app.
    * **Allow access to your Protect360 dashboard*:*** Only to the partner's own **Protect360** data if the feature is enabled for the advertiser.
 
 </Accordion>

@@ -1,8 +1,5 @@
 ---
 title: Set up the Conversions task
-excerpt: >-
-  AAG: Learn how to configure conversion events for on-site and off-site
-  campaigns.
 metadata:
   keywords:
     - Marketers
@@ -23,7 +20,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38187770114449-Set-up-the-Conversions-task
 ---
-[Conversion events](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#conversions) capture valuable post-engagement actions—such as purchases—across various campaign setups. While the structure and content of each conversion event remain consistent, the way conversions are measured, attributed, and shared varies depending on whether it’s an [on-site](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns), [off-site](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns), or [on-site and off-site](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns) campaign. This article explains how to set the Conversion task for each campaign type.
+**At a glance:** :AAG: Learn how to configure conversion events for on-site and off-site campaigns.
+
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#conversions">Conversion events</Anchor> capture valuable post-engagement actions—such as purchases—across various campaign setups. While the structure and content of each conversion event remain consistent, the way conversions are measured, attributed, and shared varies depending on whether it’s an <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns">on-site</Anchor>, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site</Anchor>, or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">on-site and off-site</Anchor> campaign. This article explains how to set the Conversion task for each campaign type.
 
 ## Prerequisites
 
@@ -74,8 +73,8 @@ To set up on-site and off-site conversions, follow these steps:
 
 Before you set up the custom conversion source in DCP, you can provide conversion data in one of two ways:
 
-* **Custom source file:** Create a conversion source file and upload it to your cloud service. For more information, see [Prepare custom source files for conversions](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme).
-* **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app conversion events to DCP. For more information, see [Prepare in-app events for conversions.](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events)
+* **Custom source file:** Create a conversion source file and upload it to your cloud service. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-conversion-source-scheme">Prepare custom source files for conversions</Anchor>.
+* **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app conversion events to DCP. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-conversion-inapp-events">Prepare in-app events for conversions.</Anchor>
 
 </Accordion>
 
@@ -89,7 +88,7 @@ To open the **measurement settings** page, follow these steps:
 
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
-3. At the bottom of the collaboration page, click **Set up measurement.** (If the link is disabled, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).)
+3. At the bottom of the collaboration page, click **Set up measurement.** (If the link is disabled, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.)
 4. On the **Measurement Settings** page, click the **Conversions** pane to open the **Conversions** dialog.
 
    > 📘 **Note**
@@ -107,7 +106,7 @@ To open the **measurement settings** page, follow these steps:
 Conversion data is provided to DCP either via in-app events, custom source, or both:
 
 * **In-app events** — The origin of the conversion event data is the AppsFlyer SDK integrated into your mobile app. The SDK sends conversion events in real time from your app whenever the user performs a converting activity.
-* **Custom source**— The origin of the conversion events is a custom source file stored in your cloud.
+* **Custom source** — The origin of the conversion events is a custom source file stored in your cloud.
 
 To set up the conversion provision method in DCP, follow these steps:
 
@@ -119,7 +118,7 @@ To set up the conversion provision method in DCP, follow these steps:
      3. In the **Advertised item (SKU)** field, choose the parameter that contains the conversion event SKUs.
    * **Custom source:**
      1. Click on + **New conversion source**.
-     2. In the **New conversion source** dialog, enter the conversion source's name in the **Source name** field according to the [requirements and guidelines](/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines).
+     2. In the **New conversion source** dialog, enter the conversion source's name in the **Source name** field according to the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
 3. Click **Next**.
 
 </Accordion>
@@ -134,11 +133,11 @@ If a custom source is used to provide conversion events, enable DCP to access th
    * If your account does not have connections defined, the **New connection** dialog will open, prompting you to create one.
    * If you have existing connections but want to use a new one, open the **Select connection** list and select **+ New connection.**
 2. Set the source access details according to your cloud service:
-   * [BigQuery](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery)
-   * [Snowflake](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake)
-   * [Amazon S3 and GCS](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets)
-   * [Local file system](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files)
-3. Select how new data should be handled. For more information, see: [Set source sync method](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method).
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery">BigQuery</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake">Snowflake</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets">Amazon S3 and GCS</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">Local file system</Anchor>
+3. Select how new data should be handled. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Set source sync method</Anchor>.
 4. Click **Next**.
 
 </Accordion>
@@ -160,7 +159,7 @@ If the conversion source fields are not already loaded, you might have to load t
 To load conversion source fields, follow these steps:
 
 1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: [Load your source fields](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields).
+2. For information about how to manually load fields, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields">Load your source fields</Anchor>.
 
 **Auto-map conversion fields**
 
@@ -180,7 +179,7 @@ To map the conversion custom source fields, follow these steps
 
    > 📘 **Note**
    >
-   > If the campaign is combined withan Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
+   > If the campaign is combined with an Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
 
 4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)
 
@@ -203,7 +202,7 @@ If the conversion source fields are not already loaded, you might have to load t
 To load conversion source fields, follow these steps:
 
 1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: [Load your source fields](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields).
+2. For information about how to manually load fields, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields">Load your source fields</Anchor>.
 
 **Auto-map conversion fields**
 
@@ -240,13 +239,9 @@ The fields shown here depend on the conversion source types you selected during 
    * Map at least one identifier under **At least one is required**.
    * Expand **Optional enrichment data** to map recommended fields like revenue, client user agent, or hashed identifiers.
 
-     <br /><br />**Note**<br />
-
-
-   #### Note
-
-   If the campaign is combined withan Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
-
+   > 📘 **Note**
+   >
+   > If the campaign is combined with an Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
 
 3. Click **Save** to complete the source setup.
 

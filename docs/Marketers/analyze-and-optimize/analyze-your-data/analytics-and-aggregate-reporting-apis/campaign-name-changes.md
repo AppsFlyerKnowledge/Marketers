@@ -1,6 +1,5 @@
 ---
 title: Campaign name changes
-excerpt: Change the names of campaigns without creating duplicate data displays.
 metadata:
   keywords:
     - Aggregated Data
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14038324952465-Campaign-name-changes
 ---
+**At a glance:** Change the names of campaigns without creating duplicate data displays.
+
 ## Campaign name changes
 
 Changing the names of campaigns affects the display of **aggregate data** in dashboards and reports. AppsFlyer displays campaigns using the campaign ID as the key. If there is more than one name associated with the same campaign ID, the most recently reported name is used to display data.
@@ -52,10 +53,10 @@ The following table shows which dashboards and reports support campaign name cha
 | Cost ETL | Yes |
 | SKAN overview dashboard | No |
 
-> 📘 **Example**
+> 📄 **Example**
 >
-> * On January 1, campaign **example\_a1**began to run.
-> * On January 2, the campaign name was changed from **example\_a1**to **example\_a2**.
+> * On January 1, campaign **example\_a1** began to run.
+> * On January 2, the campaign name was changed from **example\_a1** to **example\_a2**.
 >
 > #### Example campaign data
 >

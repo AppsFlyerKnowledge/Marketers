@@ -1,8 +1,5 @@
 ---
 title: Measure assisted installs
-excerpt: >-
-  Measure the broader impact of media sources that engaged your users and
-  assisted before the last touch.
 metadata:
   keywords:
     - Attribution
@@ -32,9 +29,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040506-Measure-assisted-installs
 ---
+**At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
+
 ## Assisted installs
 
-[Assisted installs](https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/) (AKA multi-touch attribution) are installs where the media source/campaign didn't have the last touch but did touch the user before the install and during the attribution window. One install can have up to 3 assisted installs.
+<Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">Assisted installs</Anchor> (AKA multi-touch attribution) are installs where the media source/campaign didn't have the last touch but did touch the user before the install and during the attribution window. One install can have up to 3 assisted installs.
 
 Analytical data of assisted installs are available at both the media source and campaign levels to measure the broader impact of each media source and campaign.
 
@@ -70,15 +69,15 @@ For each of the contributing networks, the raw data report includes the followin
 * Engagement time (touch time)
 * Engagement type (click or impression)
 * Name of the involved agency (partner), if there was one
-* Match type ([The same as install match types.](/docs/raw-data-field-dictionary#attribution::cecc12c5))
+* Match type (<Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::cecc12c5">The same as install match types.</Anchor>)
 
-See [user journey raw data.](/docs/raw-data-reporting-overview#user-journey-reports)
+See <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#user-journey-reports">user journey raw data.</Anchor>
 
 > 📘 **Note**
 >
 > **Media sources with user-level data restrictions**
 > If a
-> [media source restricts user-level data](/docs/about-raw-data-identifier-restrictions),
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">media source restricts user-level data</Anchor>,
 > it cannot be attributed as a contributor or an assist to a winning attribution.
 > This means that certain sources, do not
 > appear as contributors even if they engaged the user before the install.
@@ -86,7 +85,7 @@ See [user journey raw data.](/docs/raw-data-reporting-overview#user-journey-repo
 > 📘 **Note**
 >
 > **Agency considerations**
-> Several major ad networks [restrict sharing their data with 3rd party platforms](/docs/user-level-data-retention), including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
+> Several major ad networks <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">restrict sharing their data with 3rd party platforms</Anchor>, including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
 
 In raw data reports, data on the contributing networks is broken down into separate fields for **Contributors 1–3**.
 

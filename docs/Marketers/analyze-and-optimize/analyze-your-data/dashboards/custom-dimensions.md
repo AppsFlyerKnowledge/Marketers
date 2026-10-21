@@ -1,8 +1,5 @@
 ---
 title: Custom dimensions
-excerpt: >-
-  Define your own dimensions and use them to group and view data in the Overview
-  dashboard.
 metadata:
   keywords:
     - dashboard
@@ -24,7 +21,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15920604187921-Custom-dimensions
 ---
-<Embed title="Custom dimensions" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/tvcdofnwjo" height="417px" />
+**At a glance:** Define your own dimensions and use them to group and view data in the Overview dashboard.
+
+<Image alt="" src="https://fast.wistia.com/embed/medias/tvcdofnwjo/swatch" width="100%" />
 
 ## Overview
 

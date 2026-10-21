@@ -14,10 +14,10 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6550753145745-Get-started
 ---
-- [Marketer onboarding](/docs/marketer-onboarding)
-- [Manage your account](/docs/manage-your-account)
-- [Manage your apps](/docs/manage-your-apps)
-- [Integrate the AppsFlyer SDK](/docs/integrate-the-appsflyer-sdk)
-- [Integrate 3rd-party platforms](/docs/integrate-3rd-party-platforms)
-- [AppsFlyer basics](/docs/appsflyer-basics)
-- [AI](/docs/ai)
+- <Anchor target="_blank" href="/marketers/docs/marketer-onboarding">Marketer onboarding</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/manage-your-account">Manage your account</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/manage-your-apps">Manage your apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/integrate-the-appsflyer-sdk">Integrate the AppsFlyer SDK</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/integrate-3rd-party-platforms">Integrate 3rd-party platforms</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/appsflyer-basics">AppsFlyer basics</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/ai">AI</Anchor>

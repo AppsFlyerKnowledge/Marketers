@@ -1,12 +1,5 @@
 ---
 title: AI Assistant
-excerpt: >-
-  The AI Assistant is your virtual analyst and platform knowledge helper in
-  AppsFlyer. Use it to uncover insights, measure performance, identify top and
-  low performers, explore campaign trends, and understand visual insights like
-  tables and charts, either by asking questions directly in the AI Assistant or
-  by using Analyze with AI from My Dashboards to investigate specific charts in
-  context.
 metadata:
   keywords:
     - Advertisers
@@ -27,13 +20,15 @@ x-zendesk:
   section_id: 36348470056081
   url: https://support.appsflyer.com/hc/en-us/articles/38423389662609-AI-Assistant
 ---
+> **At a glance:** The AI Assistant is your virtual analyst and platform knowledge helper in AppsFlyer. Use it to uncover insights, measure performance, identify top and low performers, explore campaign trends, and understand visual insights like tables and charts, either by asking questions directly in the AI Assistant or by using Analyze with AI from My Dashboards to investigate specific charts in context.
+
 <Embed title="AI Assistant" typeOfEmbed="youtube" url="https://www.youtube.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube.com" />
 
 ## **About AI Assistant**
 
 The AI Assistant is your self-service analytics and guidance companion, built to help you uncover insights and make smarter decisions with AppsFlyer. Use it side by side with your dashboard data to quickly explore and understand your marketing performance.
 
-![Animated demo of the AI Assistant chat window in AppsFlyer](https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif)
+<Image alt="Animated demo of the AI Assistant chat window in AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
 
 ## **What you can do**
 
@@ -42,7 +37,7 @@ Ask the AI Assistant plain-language questions to get:
 * **Data-related answers**: performance insights, campaign trends, top and low performers, and more, drawing on My Dashboards metrics and dimensions as well as AppsFlyer's growing set of connected data sources.
 * **How-to guidance**: platform navigation, feature explanations, and setup help based on AppsFlyer's documentation.
 * **Platform management, without switching screens**: check app settings, SDK integration status, audit OneLink templates and links, and review the health of your cost and ad revenue integrations, all from the chat.
-* **Agent Hub run analysis**: ask questions about a completed Agent Hub run, right from where you're reviewing it. See [Agent Hub overview [Beta]](/docs/beta-agent-hub-overview#analyze-activity-with-ai-assistant) to learn more.
+* **Agent Hub run analysis**: ask questions about a completed Agent Hub run, right from where you're reviewing it. See <Anchor target="_blank" href="/marketers/docs/beta-agent-hub-overview#analyze-activity-with-ai-assistant">Agent Hub overview [Beta]</Anchor> to learn more.
 
 Responses can appear as text, tables, or charts, depending on what best fits your question.
 
@@ -50,7 +45,7 @@ Responses can appear as text, tables, or charts, depending on what best fits you
 
 <Accordion title="How to use the AI assistant">
 
-1. Click the sparkle AI star ![ai_star.png](https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png) in the navigation bar to open the chat window.
+1. Click the sparkle AI star <Image alt="ai_star.png" src="https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png" width="5.74%" /> in the navigation bar to open the chat window.
 2. Ask a question. These can be:
    1. Picked from the suggested questions
    2. Type your own question. These can be:
@@ -59,7 +54,7 @@ Responses can appear as text, tables, or charts, depending on what best fits you
 3. View the responses in text, table, or charts.
 4. Use the follow-up suggestions to refine your analysis or question.
 
-> 📘 **Tip!**
+> 👍 **Tip!**
 >
 > The AI assistant will respond differently depending on which page you ask the question on.
 >
@@ -80,7 +75,7 @@ Responses can appear as text, tables, or charts, depending on what best fits you
 From any chart in My Dashboards
 
 1. Hover over a widget.
-2. Click the Analyze with AI ![ai_star.png](https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png) button.
+2. Click the Analyze with AI <Image alt="ai_star.png" src="https://files.readme.io/a370eeda521facc1222f69ce55c18be9b9d38f9153eb0c7f0ca0b52ea7c6d6d3-38724328822033.png" width="5.74%" /> button.
 3. Choose a predefined question (summary, trend explanation, comparison, etc.) or type your own.
 4. The AI Assistant sidebar opens with the answer and suggested follow-up questions.
 5. Continue the conversation to explore specific segments, metrics, or time ranges in more detail.
@@ -139,7 +134,7 @@ The AI Assistant is powered by OpenAI's large language models, combined with App
 The AI Assistant draws on several AppsFlyer data sets to generate its answers:
 
 * **Knowledge Base and Developer Hub**: combined with your account-level information to provide accurate, relevant answers to how-to and setup questions.
-* **AppsFlyer's platform data and tools**: the same dimensions and metrics available in My Dashboards, plus a growing set of MCP tools that connect the AI Assistant directly to live account data and platform actions, including My Apps and OneLink management, and analytics measurement. Learn more in [AppsFlyer MCP [Beta]](/docs/beta-appsflyer-mcp).
+* **AppsFlyer's platform data and tools**: the same dimensions and metrics available in My Dashboards, plus a growing set of MCP tools that connect the AI Assistant directly to live account data and platform actions, including My Apps and OneLink management, and analytics measurement. Learn more in <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">AppsFlyer MCP [Beta]</Anchor>.
 
 Any account, user, or app information used to generate answers is restricted and used only according to your permissions.
 

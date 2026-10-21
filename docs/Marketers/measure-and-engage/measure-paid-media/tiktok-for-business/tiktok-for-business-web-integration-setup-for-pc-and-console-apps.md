@@ -1,8 +1,5 @@
 ---
 title: TikTok for Business—Web integration setup for PC and console apps
-excerpt: >-
-  Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and
-  set up campaigns in TikTok Web.
 metadata:
   keywords:
     - Marketers
@@ -23,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40500157955601-TikTok-for-Business-Web-integration-setup-for-PC-and-console-apps
 ---
-> 📘 **Warning**
+**At a glance:** Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web.
+
+> ❗️ **Warning**
 >
-> This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the [TikTok ads integration setup](/docs/tiktok-for-business-advanced-srn-integration-setup) page.
+> This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok ads integration setup</Anchor> page.
 
 ## Overview
 
@@ -42,7 +41,7 @@ Before activating the TikTok Web integration, make sure you have a business acco
 1. In AppsFlyer, from the side menu, open **Collaborate** > **Partner Integrations > Marketplace** tab.
 2. Search for **TikTok Web** (`tiktokweb_int`).
 3. Click **Integrate**. You’re directed to the setup page.
-4. In the **Integration** tab, turn on **Activate partner**. The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
+4. In the **Integration** tab, turn on **Activate partner**. The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
 5. Complete the configuration using the relevant tabs, as described in the next section.
 
 ## Setting up TikTok Web in AppsFlyer
@@ -59,13 +58,13 @@ The **Integration** tab comprises several sections, as described below.
 
 #### Activate partner
 
-To configure the integration, you must first turn on the **Activate partner**toggle.
+To configure the integration, you must first turn on the **Activate partner** toggle.
 
 #### General settings
 
 * **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your TikTok Ads Manager by following the instructions detailed [HERE](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
 * **Access token:** Enter the access token. To generate it or retrieve it, follow [these instructions](https://business-api.tiktok.com/portal/docs?id=1771100865818625)
-* **Limit TikTok Ads’ use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
+* **Limit TikTok Ads’ use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">data protection laws</Anchor>.
 
   > 📘 **Note**
   >
@@ -83,7 +82,7 @@ To enable view-through attribution:
 1. In AppsFlyer, from the sidebar, open **Collaborate** > **Partner Integrations** > **Active Integrations** > **TikTok web ads**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Enable equal priority for cross-platform impressions</Anchor>.
 5. Open the **Attribution link** tab.
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
@@ -106,8 +105,8 @@ Configure mapping of in-app event postbacks sent to TikTok Web. These events can
 | for users from | This partner only: In-app event postbacks are sent only for events attributed to this partner—meaning, the user who performed it came from this partner. |
 | including | Values and revenue: All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
 
-3. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
-4. Set the **In-app event postback window**, if required (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+3. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
+4. Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
 5. Click **Save integration**.
 6. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
@@ -122,12 +121,77 @@ Configure mapping of in-app event postbacks sent to TikTok Web. These events can
 
 Generating an attribution link in the AppsFlyer UI isn't currently available. However, you can either use a cross-platform landing page with SmartScript or create a direct attribution link for your app (see table below).
 
-| Option | Actions | Who's involved |
-| --- | --- | --- |
-| Cross-platform landing page | **Recommended**: For when your campaign promotes an app that's also available on multiple platforms, like Epic and Steam.<br />[Learn about cross-platform landing pages](/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page)<br />[Learn how to set up a cross-platform landing page](/docs/cross-platform-landing-pages-with-smart-script)<ul><li>Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL</li><li>Make sure the script takes TTCLID from the incoming URL and adds it to the generated link. Meaning, map the outgoing TTCLID URL param ttclid to the incoming URL param ttclid. **Note**! To display in AppsFlyer raw data reports, the incoming ttclid param must also mapped to one of the outgoing params  `af_sub[1-5]`.</li><li>Optional: Use TikTok’s dynamic URL macros instead of hard-coding the values manually. [Learn more](https://ads.tiktok.com/help/article/track-offsite-web-events-with-utm-parameters)</li></ul> | Marketer (may require developer assistance) |
-| Direct attribution link | If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.<br />[Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)<ul><li>Make sure the mandatory parameters are included in your link:<ul><li>`af_media_source`</li><li>`af_campaign_id`</li><li>`af_r`</li></ul></li><li>Use the following recommended macros for the `af_os_version` parameter:<ul><li>Click: `__OS_VERSION__`</li><li>Impression: `__TPL_OS_VERSION__`</li></ul></li></ul>Template to use for TikTok Web ad link:<br /><br />```<br />https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=tiktokweb_int&af_campaign_id=__CAMPAIGN_ID__&af_campaign=__CAMPAIGN_NAME__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_r={encoded landing page and URL params}&af_os_version=__TPL_OS_VERSION__<br />```<br /><br />Sample link of a TikTok Web ad link leading to Steam:<br /><br />```<br />https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=tiktokweb_int&af_campaign_id=__CAMPAIGN_ID__&af_campaign=__CAMPAIGN_NAME__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello&af_os_version=__OS_VERSION__<br />```<br /><br />**Note**: The template includes some dynamic URL parameters supported by TikTok. If you prefer, you can replace them with real values manually. | Marketer |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Option
+      </th>
+      <th>
+        Actions
+      </th>
+      <th>
+        Who's involved
+      </th>
+    </tr>
+  </thead>
 
-> 📘 **Tip**
+  <tbody>
+    <tr>
+      <td>
+        Cross-platform landing page
+      </td>
+      <td>
+        **Recommended**: For when your campaign promotes an app that's also available on multiple platforms, like Epic and Steam.  
+        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor>  
+        <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor>
+
+        * Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL
+        * Make sure the script takes TTCLID from the incoming URL and adds it to the generated link. Meaning, map the outgoing TTCLID URL param ttclid to the incoming URL param ttclid. **Note**! To display in AppsFlyer raw data reports, the incoming ttclid param must also mapped to one of the outgoing params  `af_sub[1-5]`.
+        * Optional: Use TikTok’s dynamic URL macros instead of hard-coding the values manually. [Learn more](https://ads.tiktok.com/help/article/track-offsite-web-events-with-utm-parameters)
+      </td>
+      <td>
+        Marketer (may require developer assistance)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Direct attribution link
+      </td>
+      <td>
+        If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.   
+        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor>
+
+        * Make sure the mandatory parameters are included in your link:
+          * `af_media_source`
+          * `af_campaign_id`
+          * `af_r`
+        * Use the following recommended macros for the `af_os_version` parameter:
+          * Click: `__OS_VERSION__`
+          * Impression: `__TPL_OS_VERSION__`
+
+        Template to use for TikTok Web ad link:
+
+        ```
+        https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source=tiktokweb_int&af_campaign_id=__CAMPAIGN_ID__&af_campaign=__CAMPAIGN_NAME__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_r={encoded landing page and URL params}&af_os_version=__TPL_OS_VERSION__
+        ```
+
+        Sample link of a TikTok Web ad link leading to Steam:
+
+        ```
+        https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=tiktokweb_int&af_campaign_id=__CAMPAIGN_ID__&af_campaign=__CAMPAIGN_NAME__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello&af_os_version=__OS_VERSION__
+        ```
+
+        **Note**: The template includes some dynamic URL parameters supported by TikTok. If you prefer, you can replace them with real values manually.
+      </td>
+      <td>
+        Marketer
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+> 👍 **Tip**
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 

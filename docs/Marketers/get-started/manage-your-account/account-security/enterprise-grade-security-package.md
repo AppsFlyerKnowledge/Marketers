@@ -1,9 +1,5 @@
 ---
 title: Enterprise-Grade Security Package
-excerpt: >-
-  Enhance your account protection with the Enterprise-Grade Security Package, a
-  premium offering designed for enterprise-grade identity management, token
-  access control, and extended audit visibility.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34053592094737-Enterprise-Grade-Security-Package
 ---
+**At a glance:** Enhance your account protection with the **Enterprise-Grade Security Package,** a premium offering designed for enterprise-grade identity management, token access control, and extended audit visibility.
+
 ## Intro
 
 The Enterprise-Grade Security Package brings together three key features that elevate your organization’s security:
@@ -59,7 +57,7 @@ Create and manage up to **30 tokens** per type (API, S2S, OneLink) with **servic
 * Restrict a token to a specific app so the token can only access data or perform actions for that app.
 * Simplifies collaboration with internal teams and external partners through token-specific permissions.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Create two tokens to help maintain least-privilege access and prevent accidental data exposure.
 >
@@ -71,7 +69,7 @@ Create and manage up to **30 tokens** per type (API, S2S, OneLink) with **servic
 
 > 📘 **Note**
 >
-> For general information about standard tokens, see [managing AppsFlyer tokens](/docs/managing-appsflyer-tokens).
+> For general information about standard tokens, see <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">managing AppsFlyer tokens</Anchor>.
 
 #### How to access and control tokens
 
@@ -123,7 +121,7 @@ Enhancing the existing audit log capabilities, this feature introduces an API fo
 
 > 📘 **Note**
 >
-> For general information about the standard audit log, see [Standard audit log](/docs/audit-log).
+> For general information about the standard audit log, see <Anchor target="_blank" href="/marketers/docs/audit-log">Standard audit log</Anchor>.
 
 ### **How to access the audit log via API**
 
@@ -167,9 +165,9 @@ To start using SCIM provisioning in AppsFlyer, you need to:
 
 To set up SSO, you need to:
 
-* [Set up the IdP platform](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-1-set-up-the-idp-platform)
-* [Set up SSO in AppsFlyer](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer)
-* [Test the SSO configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration)
+* <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-1-set-up-the-idp-platform">Set up the IdP platform</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">Set up SSO in AppsFlyer</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">Test the SSO configuration</Anchor>
 
 #### Enable SCIM
 
@@ -187,7 +185,7 @@ To enable SCIM, there are a few steps that must be followed:
 
 #### IdP instruction links
 
-##### The instructions for the IdPs can be found below. [Okta](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm), [Entra ID (Azure)](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service), [OneLogin](https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298), [JumpCloud](https://jumpcloud.com/support/get-started-identity-management-connectors)
+##### The instructions for the IdPs can be found below. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor>, <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
 
 #### SCIM connections
 
@@ -197,7 +195,7 @@ In the SCIM connections, the following fields must be filled in:
 | --- | --- |
 | SCIM connector base URL (SCIM endpoint) | https://hq1.appsflyer.com/api/scim/v2 |
 | Unique identifier field for users | userName |
-| Authentication method: HTTP header called "Authorization" | Bearer &lt;[Your AppsFlyer API token](/docs/managing-appsflyer-tokens)> |
+| Authentication method: HTTP header called "Authorization" | Bearer &lt;<Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Your AppsFlyer API token</Anchor>> |
 
 #### SCIM attributes
 
@@ -209,7 +207,7 @@ In the SCIM connections, the following fields must be filled in:
 
 #### Roles
 
-The roles must match the [AppsFlyer roles](/docs/user-management#roles-tab). The table below shows the current AppsFlyer roles and their values. Custom roles can be added. For JumpCloud, see the [limitations](/docs/enterprise-grade-security-package#limitations) below.
+The roles must match the <Anchor target="_blank" href="/marketers/docs/user-management#roles-tab">AppsFlyer roles</Anchor>. The table below shows the current AppsFlyer roles and their values. Custom roles can be added. For JumpCloud, see the [limitations](/docs/enterprise-grade-security-package#limitations) below.
 
 | **Display name** | **Value** |
 | --- | --- |
@@ -228,7 +226,7 @@ The roles must match the [AppsFlyer roles](/docs/user-management#roles-tab). The
 
 | **Limitation** | **Description** |
 | --- | --- |
-| **JumpCloud - custom atttributes** | [Custom attributes aren’t supported](https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#attribute-considerations). As a workaround, map the Role field to the supported field Work Street Address. See [JumpCloud SCIM support](https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#custom-scim-user-attributes). |
+| **JumpCloud - custom atttributes** | <Anchor target="_blank" href="https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#attribute-considerations">Custom attributes aren’t supported</Anchor>. As a workaround, map the Role field to the supported field Work Street Address. See <Anchor target="_blank" href="https://jumpcloud.com/support/provision-and-manage-users-and-groups-in-apps-using-custom-scim-identity-management-integration#custom-scim-user-attributes">JumpCloud SCIM support</Anchor>. |
 
 </Accordion>
 
@@ -256,7 +254,7 @@ Enhanced IP allowlisting improves security by preventing unauthorized access, en
 4. Added IPs will be shown on the right side under **See your IPs in the IP allowlist**.
 5. Click **Save list**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * Make sure the IP addresses or ranges you add are correct. Incorrect entries may prevent you from accessing your account.
 > * The allowlist must contain at least one IP address or range before you can save and activate it, and you can add up to 100 IP addresses or ranges to the allowlist.

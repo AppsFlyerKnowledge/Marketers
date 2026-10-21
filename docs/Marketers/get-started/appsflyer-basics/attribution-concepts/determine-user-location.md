@@ -1,9 +1,5 @@
 ---
 title: Determine user location
-excerpt: >-
-  User location is determined using the device IP address which is mapped to the
-  general location of the user (city, state, country, and so on). User location
-  impacts creatives selection, campaign cost, engagement, and user quality.
 metadata:
   keywords:
     - IPs
@@ -35,6 +31,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000847378-Determine-user-location
 ---
+**At a glance:** User location is determined using the device IP address which is mapped to the general location of the user (city, state, country, and so on). User location impacts creatives selection, campaign cost, engagement, and user quality.
+
 ![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
 
 ## Determining user location
@@ -43,14 +41,14 @@ User actions in the device are reported to AppsFlyer. The actions (events) conta
 
 In some cases, the true device IP is masked by a VPN, mechanism like iOS 15 Private Relay, or SKAN postback proxy servers. Consequently, the IP address to geo-location conversion described in this article may be wrong or misleading. AppsFlyer has no control over this.
 
-The IP address is converted by AppsFlyer into geo-location information using data provided by [Digital Element](http://www.digitalelement.com/), the global IP location leader.
+The IP address is converted by AppsFlyer into geo-location information using data provided by <Anchor target="_blank" href="http://www.digitalelement.com/">Digital Element</Anchor>, the global IP location leader.
 
 * The geo-location information can include:
   * Territory (country): ISO 3166 (alpha-2) codes, or  EU (Europe) or AS (Asia) if no territory-specific information is available.
   * City: This can correlate to a neighborhood or district within the city without being directly related to the actual city boundaries.
-  * DMA (designated market area, regions, or geographic areas for television viewing measured by the [Nielsen](https://www.nielsen.com/us/en/solutions/nielsen-global-connect/) company. [Metro codes in CSV file.](https://support.appsflyer.com/hc/article_attachments/360012539677)
+  * DMA (designated market area, regions, or geographic areas for television viewing measured by the <Anchor target="_blank" href="https://www.nielsen.com/us/en/solutions/nielsen-global-connect/">Nielsen</Anchor> company. <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012539677">Metro codes in CSV file.</Anchor>
   * Region: The geographic region or continent.
-  * State or province: See table of [localized state names in CSV file](https://support.appsflyer.com/hc/article_attachments/360012615238). We use the region field in this table. This consists of up to 3 letters or numbers.
+  * State or province: See table of <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012615238">localized state names in CSV file</Anchor>. We use the region field in this table. This consists of up to 3 letters or numbers.
   * Postal code.
 * IP address to geo-location tables are updated at regular intervals, usually weekly.
 
@@ -71,6 +69,6 @@ In some cases, there may be differences in the derived location of users between
 * **ISP changes:** Digital Element databases change rapidly as service providers (ISPs) change their IP mappings.
 * **Different plans/methods:** Digital Element offers different package plans based on the required level of granularity. Other platforms using different Digital Element packages or different methods for defining a device's ID, may provide different results.
 * **Proxy, or VPN:** If a user implements a VPN or proxy, then we won't know the true user IP address. The Geo resolution will be according to the VPN/proxy address.
-* **To learn more:** [The tricky science behind IP geolocation](https://www.digitalelement.com/blog/the-tricky-science-behind-ip-geolocation/)
+* **To learn more:** <Anchor target="_blank" href="https://www.digitalelement.com/blog/the-tricky-science-behind-ip-geolocation/">The tricky science behind IP geolocation</Anchor>
 
 <div data-zendesk-anchors="h_01HDP1SA5YV96YMPPFGN9H6RGE=determining-user-location h_01HDP1SA5YR7JWDHX2BNXXTKT9=note-regarding-the-united-kingdom-uk h_01HDP1SA5YNA9N4P9AD4RHWS0J=location-discrepancies" />

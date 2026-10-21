@@ -1,6 +1,5 @@
 ---
 title: Using PBA dashboards
-excerpt: Get the most out of our PBA dashboard features.
 metadata:
   keywords:
     - pba
@@ -22,11 +21,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360007630318-Using-PBA-dashboards
 ---
+**At a glance:** Get the most out of our PBA dashboard features.
+
 ![AppsFlyer-People-Based-Attribution_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 
 ## PBA dashboards
 
-The following sections relate to the [Website Attribution](/docs/pba-website-attribution-dashboard) and [Web-Assisted Installs](/docs/pba-web-assisted-installs) dashboards.
+The following sections relate to the <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website Attribution</Anchor> and <Anchor target="_blank" href="/marketers/docs/pba-web-assisted-installs">Web-Assisted Installs</Anchor> dashboards.
 
 ## Settings
 
@@ -56,7 +57,7 @@ Refine PBA dashboard results by using the (A) date picker, (B) main filters, and
 
 #### Available filter dimensions per dashboard
 
-<table><tbody><tr><th>Filter</th><th>Description/values</th><th>Website Attribution </th><th>Web-Assisted Installs</th><th>Conversion<br/>Paths</th></tr><tr><td>Date picker</td><td><p>The date one of the following PBA conversion events occurred: </p><ul><li>App install</li><li>Web conversion</li><li>Mobile conversion</li></ul></td><td><p>Y</p></td><td><p>Y</p></td><td><p>Y</p></td></tr><tr><td>Geo </td><td><p>List of countries/territories </p></td><td>Y</td><td><span>Y (1)</span></td><td><p><span>Y (2)</span></p></td></tr><tr><td>Install type</td><td>Organic, smart banner, custom link, paid</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media channel</td><td>Ad, direct, email, referral, organic search, social</td><td>Y</td><td><span>Y</span></td><td><span>Y (2)</span></td></tr><tr><td>Mobile platform</td><td>Android, iOS</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media source </td><td><p>Media source to which the event is attributed<span></span></p></td><td><p>Y</p></td><td><span>Y(1)</span></td><td><span> <font>Y (2)</font> </span></td></tr><tr><td><p>Media type</p></td><td><p>Includes paid, <a href="./owned-media-attribution">owned</a>, earned</p></td><td><p>Y</p></td><td>Y</td><td>Y (2)</td></tr><tr><td><p>Conversion events</p></td><td><p>Show paths that lead to the conversion event for the conversion path</p></td><td><p>Y</p></td><td><p>--</p></td><td><p><span>Y</span></p></td></tr><tr><td><p>Path length (steps) </p></td><td><p>Number of steps in the current conversion path view: Media source, media channel, media type</p></td><td><p>--</p></td><td><p>--</p></td><td><p>Y</p></td></tr><tr><td><p>Path duration (days)</p></td><td>Duration of the conversion starting with the first touchpoint</td><td>--</td><td>--</td><td>Y</td></tr><tr><td colspan="5"><p><strong>(1) </strong>In the web-assisted installs dashboard, you associate the filter with the web media source or the mobile media source. You can set multiple instances of the filter. Example case</p></td></tr></tbody></table>
+<table><tbody><tr><th>Filter</th><th>Description/values</th><th>Website Attribution </th><th>Web-Assisted Installs</th><th>Conversion<br/>Paths</th></tr><tr><td>Date picker</td><td><p>The date one of the following PBA conversion events occurred: </p><ul><li>App install</li><li>Web conversion</li><li>Mobile conversion</li></ul></td><td><p>Y</p></td><td><p>Y</p></td><td><p>Y</p></td></tr><tr><td>Geo </td><td><p>List of countries/territories </p></td><td>Y</td><td><span>Y (1)</span></td><td><p><span>Y (2)</span></p></td></tr><tr><td>Install type</td><td>Organic, smart banner, custom link, paid</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media channel</td><td>Ad, direct, email, referral, organic search, social</td><td>Y</td><td><span>Y</span></td><td><span>Y (2)</span></td></tr><tr><td>Mobile platform</td><td>Android, iOS</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media source </td><td><p>Media source to which the event is attributed<span></span></p></td><td><p>Y</p></td><td><span>Y(1)</span></td><td><span> <font>Y (2)</font> </span></td></tr><tr><td><p>Media type</p></td><td><p>Includes paid, <a href="./owned-media-attribution" target="_blank">owned</a>, earned</p></td><td><p>Y</p></td><td>Y</td><td>Y (2)</td></tr><tr><td><p>Conversion events</p></td><td><p>Show paths that lead to the conversion event for the conversion path</p></td><td><p>Y</p></td><td><p>--</p></td><td><p><span>Y</span></p></td></tr><tr><td><p>Path length (steps) </p></td><td><p>Number of steps in the current conversion path view: Media source, media channel, media type</p></td><td><p>--</p></td><td><p>--</p></td><td><p>Y</p></td></tr><tr><td><p>Path duration (days)</p></td><td>Duration of the conversion starting with the first touchpoint</td><td>--</td><td>--</td><td>Y</td></tr><tr><td colspan="5"><p><strong>(1)</strong> In the web-assisted installs dashboard, you associate the filter with the web media source or the mobile media source. You can set multiple instances of the filter. Example case</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -71,7 +72,7 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 * Default group: **Media source/Campaign**
 * In the drop-down, select 1 or more of the options.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Scenario:** The same targeting campaign is run in both Net\_A and Net\_B.
 >
@@ -86,7 +87,7 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 | Geo | <ul><li>View traffic and engagement trends by country</li><li>Results can directly impact investment decisions per country</li></ul> | Y | Y |
 | Media source/campaign | **Media source**<br /><br />Media source attributed to a conversion<ul><li>To view in-depth campaign data click down through the campaign hierarchy: campaign > ad set > ad</li><li>Available hierarchy levels differ between the various media sources</li></ul>**Campaign names**<ul><li>Available campaign names based on URL parameters.</li><li>Campaign names aren't available in all cases.</li></ul> | Y | Y |
 | Media channel | Ad, direct, email, referral, organic search, social | N | Y |
-| Media type | Includes paid, [owned](/docs/owned-media-attribution), earned | N | Y |
+| Media type | Includes paid, <Anchor target="_blank" href="/marketers/docs/owned-media-attribution">owned</Anchor>, earned | N | Y |
 | Platform |  | N | Y |
 
 </Accordion>
@@ -97,7 +98,7 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 
 | Setting | Description |
 | --- | --- |
-| Brand bundle | PBA dashboards have brand-bundle level data. Bundles consist of a website, 1 Android app, and 1 iOS app.<ul><li>You can select bundles if your [permissions](/docs/pba-brand-bundles-and-settings#faq) let you view/edit the apps that form the bundle.</li><li>Use the selector to switch between bundles.</li><li>[Create and edit bundles.](/docs/pba-brand-bundles-and-settings)</li></ul> |
+| Brand bundle | PBA dashboards have brand-bundle level data. Bundles consist of a website, 1 Android app, and 1 iOS app.<ul><li>You can select bundles if your <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#faq">permissions</Anchor> let you view/edit the apps that form the bundle.</li><li>Use the selector to switch between bundles.</li><li><Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings">Create and edit bundles.</Anchor></li></ul> |
 | PBA settings | <ul><li>Set conversion events</li><li>Change bundle settings</li></ul> |
 
 </Accordion>
@@ -108,12 +109,12 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 
 <Accordion title="Traits and limitations">
 
-PBA dashboards and reports are updated [daily](/docs/about-data-freshness-and-timezone-support#eod) per the UTC time zone.
+PBA dashboards and reports are updated <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#eod">daily</Anchor> per the UTC time zone.
 
 * Daily processing includes events received during the previous day.
 * Data finalization:
   * In the case of Web-Assisted Installs, Website Attribution PBA identifies additional related events during the first 7 days after the conversion. This can change the media source identified as being ultimately responsible for driving the conversion.
-  * In the related raw-data reports, the *final\_data*field is false during the initial 7-day period.
+  * In the related raw-data reports, the *final\_data* field is false during the initial 7-day period.
 
 PBA dashboards don't support local currency and data will be shown in USD.
 

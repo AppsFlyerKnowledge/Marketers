@@ -1,8 +1,5 @@
 ---
 title: Server-to-server events API for mobile (S2S-mobile)
-excerpt: >-
-  Send events from your servers to AppsFlyer to measure mobile events that occur
-  outside the app.
 metadata:
   keywords:
     - iOS
@@ -31,20 +28,22 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034486-Server-to-server-events-API-for-mobile-S2S-mobile
 ---
+> **At a glance:** Send events from your servers to AppsFlyer to measure mobile events that occur outside the app.
+
 ![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
 ## Server-to-server events API for mobile
 
 For iOS apps, starting iOS 14, you must send the os (operating system) parameter.
 
-The AppsFlyer platform attributes and records mobile app events sent by the AppsFlyer SDK and by APIs. Use the S2S API to report events that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics. For PBA web events see [Web S2S for PBA.](/docs/web-server-to-server-events-api-for-pba-web-s2s)
+The AppsFlyer platform attributes and records mobile app events sent by the AppsFlyer SDK and by APIs. Use the S2S API to report events that take place outside the app; for example, a user renews their subscription using your web interface. S2S events, once recorded, are available across the platform, including dashboards, raw data, and analytics. For PBA web events see <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s">Web S2S for PBA.</Anchor>
 
 AppsFlyer populates S2S events with:
 
 * Values sent in the S2S message
 * Some AppsFlyer install attribution values like, install time and media source.
 
-To send events via API, tell your developer to follow their [server-to-server events API instructions](https://dev.appsflyer.com/hc/reference/s2s-events-api3-post).
+To send events via API, tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">server-to-server events API instructions</Anchor>.
 
 ## Populating parameters
 
@@ -56,13 +55,15 @@ When AppsFlyer processes S2S in-app events, attribution fields are populated by 
 
 What this means is that some data that AppsFlyer associates with non-organic S2S in-app events, is not associated with organic S2S in-app events.
 
-**Example**
-
-For example, if you compare raw data reports of non-organic and organic S2S in-app events, non-organic events contain data that organic in-app events do not.
-
-Non-organic in-app events include data about the media source, campaign, attributed touch type, and attributed touch time.
-
-Organic in-app events, on the other hand, follow an organic install. Organic installs don't have data related to campaign, media source, attributed touch type, and install time.
+> 📘 **Note**
+>
+> **Example**
+>
+> For example, if you compare raw data reports of non-organic and organic S2S in-app events, non-organic events contain data that organic in-app events do not.
+>
+> Non-organic in-app events include data about the media source, campaign, attributed touch type, and attributed touch time.
+>
+> Organic in-app events, on the other hand, follow an organic install. Organic installs don't have data related to campaign, media source, attributed touch type, and install time.
 
 </Accordion>
 
@@ -78,7 +79,7 @@ Backend logic is required to obtain values to populate parameter. The following 
 
 To make it easier for you to know which user performed which event, implement the flow that follows:
 
-* [Set customer user ID](/docs/customer-user-id-field-cuid) when the user installs the app.
+* <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Set customer user ID</Anchor> when the user installs the app.
 * AppsFlyer raw data reports contain the CUID and AppsFlyer ID. Use one of the data delivery tools to get this or AppsFlyer Push API.
 * Use the raw data reports to match the CUID with the AppsFlyer ID.
 * The AppsFlyer ID is available in the SDK integrated into your app (Android/iOS).
@@ -96,31 +97,33 @@ Once you map AppsFlyer ID with your CUID, you can match the user to events perfo
 
 * From the mobile device by calling the AppsFlyer SDK API:
 
-  <Accordion title="Android native">
+  <Tabs>
+  <Tab title="Android native">
 
-  [getAppsFlyerUID](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#getappsflyeruid)
+  <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#getappsflyeruid">getAppsFlyerUID</Anchor>
 
-  </Accordion>
+  </Tab>
 
-  <Accordion title="iOS native">
+  <Tab title="iOS native">
 
-  [getAppsFlyerUID](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#getappsflyeruid)
+  <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#getappsflyeruid">getAppsFlyerUID</Anchor>
 
-  </Accordion>
+  </Tab>
 
-  <Accordion title="Unity">
+  <Tab title="Unity">
 
-  [getAppsFlyerId](https://dev.appsflyer.com/hc/docs/api#getappsflyerid)
+  <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/api#getappsflyerid">getAppsFlyerId</Anchor>
 
-  </Accordion>
+  </Tab>
 
-  <Accordion title="React Native">
+  <Tab title="React Native">
 
-  [getAppsFlyerUID](https://dev.appsflyer.com/hc/docs/rn_api#getappsflyeruid)
+  <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#getappsflyeruid">getAppsFlyerUID</Anchor>
 
-  </Accordion>
+  </Tab>
+  </Tabs>
 
-* From the AppsFlyer platform using one of the following: [Pull API,](/docs/pull-api-raw-data?query=pull) [Push API,](/docs/push-api-streaming-raw-data) Export [raw data installation.](/docs/raw-data-reporting-overview)
+* From the AppsFlyer platform using one of the following: <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data?query=pull">Pull API,</Anchor> <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API,</Anchor> Export <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data installation.</Anchor>
 
 </Accordion>
 
@@ -173,9 +176,11 @@ AppsFlyer includes `ua` and `ip` automatically for events reported through the S
 
 </Accordion>
 
-**Note**
-
-In order to be measured in [Incrementality](/docs/incrementality-for-remarketing-overview), S2S events must include the advertising ID in their payload (IDFA for iOS, GAID for Android).
+> 📘 **Note**
+>
+> **Note**
+>
+> In order to be measured in <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality</Anchor>, S2S events must include the advertising ID in their payload (IDFA for iOS, GAID for Android).
 
 ## Increasing the volume of data transactions
 
@@ -214,7 +219,7 @@ When using gradual scaling, AppsFlyer can support a high volume of transactions 
 
 If you send S2S events but their revenue is not recorded, ensure that the JSON that you send is stringified. The most important part is the event value parameter in the JSON. It must be stringified as shown in the example that follows.
 
-```
+```json
 "{\"af_revenue\":\"6\" ,\"af_content_type\":\"wallets\"}"
 ```
 

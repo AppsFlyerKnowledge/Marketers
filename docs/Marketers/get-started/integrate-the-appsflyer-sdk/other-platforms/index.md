@@ -13,12 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551244207121-Other-platforms
 ---
-- [React Native plugin overview](/docs/react-native-plugin-overview)
-- [Flutter plugin](/docs/flutter-plugin)
-- [Unreal Engine plugin](/docs/unreal-engine-plugin)
-- [NativeScript plugin](/docs/nativescript-plugin)
-- [Xamarin Android/iOS plugin](/docs/xamarin-android-ios-plugin)
-- [Adobe Launch SDK extension](/docs/adobe-launch-sdk-extension)
-- [Adobe AIR plugin](/docs/adobe-air-plugin)
-- [Cordova](/docs/cordova)
-- [Cocos2ds](/docs/cocos2ds)
+- <Anchor target="_blank" href="/marketers/docs/react-native-plugin-overview">React Native plugin overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/flutter-plugin">Flutter plugin</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/unreal-engine-plugin">Unreal Engine plugin</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/nativescript-plugin">NativeScript plugin</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/xamarin-android-ios-plugin">Xamarin Android/iOS plugin</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/adobe-launch-sdk-extension">Adobe Launch SDK extension</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/adobe-air-plugin">Adobe AIR plugin</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cordova">Cordova</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cocos2ds">Cocos2ds</Anchor>

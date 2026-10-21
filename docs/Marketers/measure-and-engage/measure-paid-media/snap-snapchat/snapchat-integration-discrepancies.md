@@ -1,8 +1,5 @@
 ---
 title: Snapchat integration discrepancies
-excerpt: >-
-  Learn about the different discrepancies between Snapchat and AppsFlyer
-  dashboards and reposts.
 metadata:
   keywords:
     - Advertisers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417686973841-Snapchat-integration-discrepancies
 ---
+**At a glance:** Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reposts.
+
 In certain instances, advertisers can see fewer installs on AppsFlyer dashboard than on the Snapchat Ads Manager dashboard. Sometimes, the discrepancy can be addressed by making changes to the settings in the AppsFlyer dashboard or Snapchat Ads Manager (e.g timezone settings, attribution windows etc.). However, a discrepancy between the two dashboards is expected. Advertisers should rely on the AppsFlyer dashboard as the source of truth when evaluating CPI and performance.
 
 Advertisers should be aware of the following causes and consider taking the necessary actions.
@@ -41,7 +40,7 @@ By default, Snapchat Ads Manager and AppsFlyer have different attribution window
 | Click Attribution Lookback Window | 28 days | 7 days by default (can be configured to be 1-30 days) |
 | View-Through Attribution Lookback Window | 1 day | 1 day by default (can be configured to be 1-48 hours) |
 
-> 📘 **Solutions**
+> 👍 **Solutions**
 >
 > 1. Configure the attribution window in AppsFlyer to match Snapchat’s default values.
 > 2. Advertisers can select attribution windows in the Ads Manager dashboard to match what they have set as default in their attribution partner (MMP) dashboard. Contact your Snapchat CSM to have your account allowlisted to activate this feature.
@@ -50,9 +49,9 @@ By default, Snapchat Ads Manager and AppsFlyer have different attribution window
 
 By default, Ads Manager uses PST timezone whereas AppsFlyer uses UTC +0 by default. As a result, for example, Snapchat might attribute an install to Friday while AppsFlyer attributes it to Saturday.
 
-> 📘 **Solution**
+> 👍 **Solution**
 >
-> Configure PST as the timezone for each app in AppsFlyer. Click [here](/docs/changing-app-time-zone-settings) for details of how to change the time zone for existing apps.
+> Configure PST as the timezone for each app in AppsFlyer. Click <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">here</Anchor> for details of how to change the time zone for existing apps.
 
 ### Multi-channel source attribution
 
@@ -70,7 +69,7 @@ AppsFlyer:
 
 This can lead to discrepancies as high as 40% between AppsFlyer and Snapchat Ads Manager.
 
-> 📘 **Solution**
+> 👍 **Solution**
 >
 > Snapchat is just one mobile application, whereas other platforms own multiple mobile applications or mobile ad networks/exchanges. Due to their additional reach across multiple properties, it is possible that competitors might win the last touch, yet Snapchat is still driving significant value.
 >
@@ -80,10 +79,10 @@ This can lead to discrepancies as high as 40% between AppsFlyer and Snapchat Ads
 
 ### Fewer installs in raw data
 
-In certain instances, due to raw data restrictions from Snapchat, installs via [Aggregated Advanced Privacy](/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy) won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
+In certain instances, due to raw data restrictions from Snapchat, installs via <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy">Aggregated Advanced Privacy</Anchor> won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> [Snapchat and AppsFlyer SKAdNetwork interoperation](/docs/skan-interoperation-with-snapchat)
+> <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-snapchat">Snapchat and AppsFlyer SKAdNetwork interoperation</Anchor>
 
 <div data-zendesk-anchors="h_01HE7RM7ME5JTFFC2MYSBG6SWC=source-of-discrepancies-and-solutions h_01HE7RM7MEYAZ42A1Y7X8J008Q=different-lookback-windows h_01HE7RM7ME31WACZRZDXRW5CNR=solutions h_01HE7RM7METGPE38QV8FAMW9WA=time-zone-differences h_01HE7RM7MEC91WZDZQMXZ4Q7DV=solution multichannel-source-attribution=multi-channel-source-attribution h_01HE7RM7ME2NAB9ET38P5JD82E=multi-channel-source-attribution h_01HE7RM7MFP65KYHFDZZTC8K3J=solution-1 h_01HE7RM7MFR4CSEK2HCZWB8BT9=fewer-installs-in-raw-data h_01HE7RP6VPPAY2CCSNTJ0RVSXM=see-also" />

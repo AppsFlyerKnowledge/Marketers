@@ -1,6 +1,5 @@
 ---
 title: Pull API aggregate data
-excerpt: Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
 metadata:
   keywords:
     - Performance
@@ -32,16 +31,18 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034346-Pull-API-aggregate-data
 ---
+**At a glance:** Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
+
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
-> 📘 **Looking for Pull API raw data?**
+> 👍 **Looking for Pull API raw data?**
 >
-> Learn all about it [here](/docs/pull-api-raw-data).
+> Learn all about it <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">here</Anchor>.
 
 ## Pull API aggregate data
 
 * Pull API lets you get aggregate data reports for user acquisition (UA) and retargeting in CSV files.
-* [Data freshness rates](/docs/about-data-freshness-and-timezone-support#data-freshness-rates-and-timezone-support) are the same as the equivalent report on the Export Data page and Overview dashboard page. Consider that cost can update with a delay of several hours, depending on the partner providing the cost data.
+* <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#data-freshness-rates-and-timezone-support">Data freshness rates</Anchor> are the same as the equivalent report on the Export Data page and Overview dashboard page. Consider that cost can update with a delay of several hours, depending on the partner providing the cost data.
 * Filter by options available: Media source and date range.
 * Additional capabilities in Pull API are:
   * Add attribution touch type
@@ -60,7 +61,7 @@ x-zendesk:
 1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/5dd980a707877c2ab26826170f7f1313bffba1fed8ab3eacb59954770c302932-19754884868369.png) Get the API token. An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the [parameters](/docs/pull-api-aggregate-data#parameters) to input when they make the API call, as described in the section that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
-4. Tell your developer to follow their [Pull API aggregate data instructions](https://dev.appsflyer.com/hc/reference/overview-11) in the developer hub.
+4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-11">Pull API aggregate data instructions</Anchor> in the developer hub.
 
 </Accordion>
 
@@ -87,26 +88,26 @@ x-zendesk:
 
 | Trait | Comments |
 | --- | --- |
-| API token type required | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/5dd980a707877c2ab26826170f7f1313bffba1fed8ab3eacb59954770c302932-19754884868369.png)[V2.0 token](/docs/managing-appsflyer-tokens) |
+| API token type required | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/5dd980a707877c2ab26826170f7f1313bffba1fed8ab3eacb59954770c302932-19754884868369.png)<Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">V2.0 token</Anchor> |
 | Ad network access | N |
 | Agency access | Y |
 | Agency transparency | Y |
 | App-specific currency | Y |
 | App-specific timezone | Y |
 | Cost | Cost data is for UA campaigns only; not for retargeting or inactive campaigns (campaigns without any installs). |
-| Data freshness | [Continuous](/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime) |
+| Data freshness | <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Continuous</Anchor> |
 | Historical data | Aggregated LTV data is available for up to 25 months (2 years + 1 month) |
 | Non-organic data | Y |
 | Organic data | Y |
-| Rate limitations | [Limitation](/docs/report-generation-quotas-rate-limitations) |
+| Rate limitations | <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Limitation</Anchor> |
 | Size limitations | <ul><li>Pull API for **raw data** supports up to 1M rows. Pull API for **aggregated data** can aggregate up to 1M rows of raw data.</li><li>API calls return a max. of 200K rows.<ul><li>If a report has exactly 200K rows, then assume rows are missing.</li><li>Make multiple API calls, using from/to parameters that include the time of day.</li></ul></li></ul> |
 | Campaign name changes | Pull API reports don't support campaign name changes |
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Descriptions and examples of aggregate reports](/docs/aggregated-and-analytics-reporting-overview)
-> * [Selecting the right data delivery tool for aggregated data](/docs/aggregated-and-analytics-reporting-overview)
+> * <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">Descriptions and examples of aggregate reports</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">Selecting the right data delivery tool for aggregated data</Anchor>
 
 <div data-zendesk-anchors="h_01HE0YP82966QHRAEW979ABCTP=looking-for-pull-api-raw-data h_01HE0YP829WD5TDFHTPYAV30QN=pull-api-aggregate-data h_01HE0YP829EQ7N6CST352X917H=aggregate-performance-reports-available-via-pull-api h_01HE0YP82954F1ACVR2K4AFD5W=using-pull-api-aggregate-data h_01HE0YP8292131Q2561A4E1GYZ=parameters h_01HE0YP829ZPJAPHPDR9H4HMRT=traits-and-limitations h_01HE0Y2KTXS06WHN57MQ91AD09=see-also" />

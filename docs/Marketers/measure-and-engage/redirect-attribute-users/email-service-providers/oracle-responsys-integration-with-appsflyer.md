@@ -1,9 +1,5 @@
 ---
 title: Oracle Responsys integration with AppsFlyer
-excerpt: >-
-  Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer
-  OneLink within emails. Email recipients who click the link are deep linked
-  into your app.
 metadata:
   keywords:
     - Oracle Responsys
@@ -27,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360003798297-Oracle-Responsys-integration-with-AppsFlyer
 ---
+> **At a glance:** Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app.
+
 ![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
 
 ESPs (Email Service Providers) can be excellent sources for segmented user traffic.
@@ -37,20 +35,22 @@ However, deep linking and click recording are still possible with ESPs that supp
 
 ## Prerequisites
 
-* Configure your app to support [deep linking with OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink).
+* Configure your app to support <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking with OneLink</Anchor>.
 * Verify your SDK version (both Android and iOS)
 
-<Accordion title="iOS">
+<Tabs>
+<Tab title="iOS">
 
 * AppsFlyer iOS SDK version 4.9.0 (or above)
 
-</Accordion>
+</Tab>
 
-<Accordion title="Android">
+<Tab title="Android">
 
 * AppsFlyer Android SDK version 4.9.0 (or above)
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ## Setting up Oracle Responsys click domain
 
@@ -58,7 +58,7 @@ Follow this section to set up your click domain (click recording domain) in Orac
 
 ### Step 1: Set up a click domain in Oracle Responsys
 
-To set up a click domain, follow Oracle Responsys official guide on how to [create click domains](https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCEA/LinkTable_Main.htm?cshid=LinkTable_Main). Oracle Responsys uses Link Tables to help record clicks for a specific campaign
+To set up a click domain, follow Oracle Responsys official guide on how to <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCEA/LinkTable_Main.htm?cshid=LinkTable_Main">create click domains</Anchor>. Oracle Responsys uses Link Tables to help record clicks for a specific campaign
 
 **Note**, in Link tables, you can define **IOS link URL** to be the same as the Link URL:
 
@@ -79,7 +79,7 @@ When you set up OneLink with Universal Links, you already have an AASA associate
 1. Go to OneLink configuration and find a OneLink that is configured with Universal Links.
 2. Add **/.well-known/apple-app-site-association** to the end of the OneLink URL.
 3. Paste the OneLink in the browser address bar and hit enter. For example: **`<OneLinkSubdomain>`.onelink.me/.well-known/apple-app-site-association**. When you do so, the AASA file is downloaded to your computer. You can open it using any simple text editor.
-4. Send this AASA file to Responsys. For more information and to learn more about the contents of this file, see page 11 of [Oracle's guide](https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/pdf/ios-universal-links-dev-guide.pdf).
+4. Send this AASA file to Responsys. For more information and to learn more about the contents of this file, see page 11 of <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/pdf/ios-universal-links-dev-guide.pdf">Oracle's guide</Anchor>.
 
 </Accordion>
 
@@ -92,7 +92,7 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 1. Go to OneLink configuration and find a OneLink that is configured with App Links.
 2. Add **/.well-known/assetlinks.json** to the end of the OneLink URL.
 3. Paste the OneLink in the browser address bar and hit enter. For example:**`<OneLinkSubdomain>`.onelink.me/.well-known/assetlinks.json**. When you do so, the Asset Links file is downloaded to your computer. You can open it using any simple text editor.
-4. Send this Asset Links file to Responsys. For more information and to learn more about the contents of this file, see [this guide](https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/android/app-links/).
+4. Send this Asset Links file to Responsys. For more information and to learn more about the contents of this file, see <Anchor target="_blank" href="https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCFB/android/app-links/">this guide</Anchor>.
 
 </Accordion>
 
@@ -106,7 +106,7 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 
 In the Android manifest, add the click domain host and any prefix in the activity tag of the activity you want to deep link into.
 
-```xml
+```html
 <activity android:name=".DeepLinkActivity">
     <intent-filter  android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />
@@ -126,15 +126,15 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).  
+2. List the click domains in the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
 
-   ```
+   ```java
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
    ```
 
    * **Important!** If you are using Movable Ink (MI) in conjunction with Oracle, you need to get the MI CNAME and internal domains from your MI account manager and add them to `setResolveDeepLinkURLs`, in addition to the click link for Oracle. For example:
 
-     ```
+     ```java
      AppsFlyerLib.getInstance().setResolveDeepLinkURLs("oracle-click.example.com", "mi.example.com", "example.micpn.com");
      ```
 
@@ -163,23 +163,25 @@ The SDK needs to resolve the OneLink behind the click domain to get the campaign
 To resolve click domains:
 
 1. Make sure that your SDK version is at least 4.9.0.
-2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information please refer to SDK documentation [here](/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls).  
+2. List the click domains in the SDK property `resolveDeepLinkURLs`. This property needs to be set before SDK initialization. For more information please refer to SDK documentation <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">here</Anchor>.  
 
-   <Accordion title="Objective-C">
+   <Tabs>
+   <Tab title="Objective-C">
 
-   ```
+   ```objectivec
    [AppsFlyerTracker sharedTracker].resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
    ```
 
-   </Accordion>
+   </Tab>
 
-   <Accordion title="Swift">
+   <Tab title="Swift">
 
-   ```
+   ```swift
    AppsFlyerTracker.shared().resolveDeepLinkURLs = ["example.com", "click.example.com"]
    ```
 
-   </Accordion>
+   </Tab>
+   </Tabs>
 
    * **Important!** If you are using Movable Ink (MI) in conjunction with Oracle, you need to get the MI CNAME and internal domains from your MI account manager and add them to `setResolveDeepLinkURLs`, in addition to the click link for Oracle. Domain examples:
      * Oracle domain: oracle-click.example.com
@@ -187,11 +189,12 @@ To resolve click domains:
      * MI internal domain: example.micpn.com
 3. Add the following code so that the SDK can resolve the click recording domain:  
 
-   <Accordion title="Objective-C">
+   <Tabs>
+   <Tab title="Objective-C">
 
    Add this code in AppDelegate.m
 
-   ```
+   ```objectivec
    - (NSDictionary *) allHTTPHeaderFieldsForResolveDeepLinkURL:(NSURL *) URL {
        if ([URL.host  isEqual: @"click.example.com"]) {
            return [NSDictionary dictionary];
@@ -202,13 +205,13 @@ To resolve click domains:
    }
    ```
 
-   </Accordion>
+   </Tab>
 
-   <Accordion title="Swift">
+   <Tab title="Swift">
 
    Add this code in AppDelgate.swift
 
-   ```
+   ```swift
    func allHTTPHeaderFields(forResolveDeepLinkURL URL: URL!) -> [String : String]! {
        if (URL.host == "click.example.com") {
            /// Change User-Agent
@@ -219,7 +222,8 @@ To resolve click domains:
    }
    ```
 
-   </Accordion>
+   </Tab>
+   </Tabs>
 
 ## Sending your first email
 
@@ -234,21 +238,23 @@ To resolve click domains:
    * af\_android\_url - Where to redirect users that don't have the app click the link on an Android device.
 4. Place the OneLink URL in the email that you create in Responsys. Example:
 
-   ```html
+   ```http
    <a href="greatapp.onelink.me/abcd/1234567">Download my great app!</a>
    ```
 
    At this stage, Responsys wraps the above link with the click domain that you set in the previous steps. Any click on the click domain redirects to the OneLink attribution link. If the app is installed on the user's device, the click domain deep links into the app.
 
-**Example**
-
-URL parameters are not URL encoded in this example, just for the sake of readability:
-
-```
-https://greatapp.onelink.me/abcd?pid=Email&c=Spring_Newsletter&is_retargeting=true&
-af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
-af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
-```
+> 📘 **Note**
+>
+> **Example**
+>
+> URL parameters are not URL encoded in this example, just for the sake of readability:
+>
+> ```http
+> https://greatapp.onelink.me/abcd?pid=Email&c=Spring_Newsletter&is_retargeting=true&
+> af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
+> af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
+> ```
 
 ### Testing your links
 

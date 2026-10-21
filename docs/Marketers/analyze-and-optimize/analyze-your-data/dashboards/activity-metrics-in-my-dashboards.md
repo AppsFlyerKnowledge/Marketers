@@ -22,11 +22,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38874924986001-Activity-metrics-in-My-Dashboards
 ---
-**At a glance:** Use Activity metrics in [My Dashboards](/docs/my-dashboards) to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
+**At a glance:** Use Activity metrics in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
 
 > 📘 **Note**
 >
-> Net revenue metrics roll out gradually to clients throughout July - August 2026. If you don't see them yet, no action is needed; they will become available for your account during this period. See [Bulletin: Cohort and Activity metrics update in My Dashboards](/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards).
+> Net revenue metrics roll out gradually to clients throughout July - August 2026. If you don't see them yet, no action is needed; they will become available for your account during this period. See <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">Bulletin: Cohort and Activity metrics update in My Dashboards</Anchor>.
 
 ## About Activity metrics
 
@@ -47,7 +47,7 @@ The **Activity view** template helps marketers quickly assess app performance, s
 
 **Adding widgets to your dashboard**
 
-You can add widgets to your dashboard by clicking the **+ Create new** button in the top-right of the dashboard,and select the type of widget you want to create: Table, KPI, Chart, in-app events table, in-app events chart, text, or Custom metric. More detailed instructions can be found [here](/docs/my-dashboards#add-widget).
+You can add widgets to your dashboard by clicking the **+ Create new** button in the top-right of the dashboard,and select the type of widget you want to create: Table, KPI, Chart, in-app events table, in-app events chart, text, or Custom metric. More detailed instructions can be found <Anchor target="_blank" href="/marketers/docs/my-dashboards#add-widget">here</Anchor>.
 
 **Adding metrics to your chart or table**
 
@@ -55,7 +55,7 @@ In the Chart Settings or Table Settings dialog,  click the Metrics + plus sign.
 
 You can then add a Group by dimension and select Filters.
 
-More detailed instructions can be found [here](/docs/my-dashboards#add-metric).
+More detailed instructions can be found <Anchor target="_blank" href="/marketers/docs/my-dashboards#add-metric">here</Anchor>.
 
 ## Available Activity metrics
 
@@ -63,7 +63,7 @@ More detailed instructions can be found [here](/docs/my-dashboards#add-metric).
 
 | **Metric** | **Description** |
 | --- | --- |
-| Active Users | <ul><li>Number of unique Active users who opened the app at least once during the selected period, based on sessions, as per the selected time breakdown setting.</li><li>If daily is selected, it's shown as DAU.</li><li>If monthly is selected, it’s shown as MAU.</li><li>When viewed in line charts, column charts, or a table grouped by date, it is shown as DAU.</li><li>For information about querying raw data reports for DAU and MAU, see: [Calculate daily and monthly active users (DAU and MAU)](/docs/calculate-daily-and-monthly-active-users-dau-and-mau).</li></ul> |
+| Active Users | <ul><li>Number of unique Active users who opened the app at least once during the selected period, based on sessions, as per the selected time breakdown setting.</li><li>If daily is selected, it's shown as DAU.</li><li>If monthly is selected, it’s shown as MAU.</li><li>When viewed in line charts, column charts, or a table grouped by date, it is shown as DAU.</li><li>For information about querying raw data reports for DAU and MAU, see: <Anchor target="_blank" href="/marketers/docs/calculate-daily-and-monthly-active-users-dau-and-mau">Calculate daily and monthly active users (DAU and MAU)</Anchor>.</li></ul> |
 | Active Users Last 31 Days | Number of unique users (counted only once) who opened the app at least once during the previous 31 days (Not based on calendar month). |
 | DAU/MAU | The rate of returning users (stickiness).<br /><br />For example, a DAU/MAU rate of 50% means that the average user opened the app on 15 out of the previous 31 days.<br /><br />The DAU/MAU rate is a measure of user stickiness and provides a snapshot of user retention.<br /><br />Formula: Daily Active users / Active users in the last 31 days |
 | Sessions | Sessions during the selected date range. |
@@ -105,7 +105,7 @@ How the value is populated:
 * Otherwise, the value comes from the af\_net\_revenue parameter you send in the in-app event.
 * If net revenue is not provided by either, the metric shows N/A.
 
-See [About ROI360 store revenue](/docs/about-roi360-store-revenue) and [In-app events - Event structure](/docs/in-app-events-event-structure).
+See <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 store revenue</Anchor> and <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure">In-app events - Event structure</Anchor>.
 
 ## Supported filter and group by dimensions
 
@@ -152,7 +152,7 @@ You can group and filter Activity metrics using:
 | Ad revenue | Real-time data is not supported. |
 | Net revenue metrics - periods | Supported for Activity and Cohort metrics. Not supported for LTV. |
 | Net revenue metrics - data freshness | Real-time is not supported. Data is available starting the next day. |
-| Net revenue metrics - ad revenue | Ad revenue events are not included in net revenue metrics.<br /><br />**Tip:** To see net revenue that includes ad revenue, create a custom metric that adds ad revenue to net revenue, for example: Net revenue + Revenue (event: af\_ad\_revenue). See [Set up custom metrics in My Dashboards](/docs/beta-set-up-custom-metrics-in-my-dashboards). |
+| Net revenue metrics - ad revenue | Ad revenue events are not included in net revenue metrics.<br /><br />**Tip:** To see net revenue that includes ad revenue, create a custom metric that adds ad revenue to net revenue, for example: Net revenue + Revenue (event: af\_ad\_revenue). See <Anchor target="_blank" href="/marketers/docs/beta-set-up-custom-metrics-in-my-dashboards">Set up custom metrics in My Dashboards</Anchor>. |
 | Net revenue metrics - attribution source | Not supported for SKAN and SSOT. |
 | Net revenue metrics - platforms | Android and iOS (mobile) only. |
 | Timezones | All metrics are supported in local timezones except these that are UTC only:<ul><li>Active users last 31 days</li><li>DAU/MAU</li><li>Active users with a monthly grouping (MAU)</li></ul> |

@@ -1,9 +1,5 @@
 ---
 title: AppsFlyer attribution model
-excerpt: >-
-  AppsFlyer determines the media source motivating a user to install or
-  re-engage with an app and attributes the user action to that source using the
-  AppsFlyer attribution model.
 metadata:
   keywords:
     - Attribution
@@ -38,6 +34,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447053-AppsFlyer-attribution-model
 ---
+**At a glance:** AppsFlyer determines the media source motivating a user to install or re-engage with an app and attributes the user action to that source using the AppsFlyer attribution model.
+
 [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
 ## What is attribution?
@@ -68,7 +66,7 @@ In AppsFlyer, an attributable event occurs when any of the following occur:
 
 AppsFlyer uses a number of attribution methods, listed in the table that follows:
 
-<table><tbody><tr><td>Method</td><td>Uses device ID</td><td>Technique</td><td>Attributed by</td><td>Android (Google Play and third-party stores)</td><td>iOS</td><td>Universal Windows Platform (UWP)</td><td>CTV, PC, and console platforms (3)</td></tr><tr><td><a href="#install-referrer-android-only">Referrer</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes (2)</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td><a href="#device-id-matching">Device ID matching</a> (1)</td><td>Yes</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td><a href="#probabilistic-modeling">Probabilistic modeling</a> (1)</td><td>No</td><td>Probabilistic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td><a href="#preload-campaigns">Preload</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td><a href="./skadnetwork-skan-solution-guide">SKAdNetwork (SKAN)</a></td><td>No</td><td>Deterministic</td><td>Apple</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td><a href="./apple-ads-integration-setup">Apple Search Ads</a> (1)</td><td>No</td><td>Deterministic</td><td>Apple</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td><a href="#deep-link">Deep link</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td colspan="8">(1) Sometimes referred to as the "Classic" attribution method in AppsFlyer dashboards and reports.<br/>(2) Supported by some third-party stores.<br/>(3) See <a href="./ctv-pc-and-console-platform-attribution-concepts#supported-platforms">full list of CTV, PC, and console platforms</a>.</td></tr></tbody></table>
+<table><tbody><tr><td>Method</td><td>Uses device ID</td><td>Technique</td><td>Attributed by</td><td>Android (Google Play and third-party stores)</td><td>iOS</td><td>Universal Windows Platform (UWP)</td><td>CTV, PC, and console platforms (3)</td></tr><tr><td><a href="#install-referrer-android-only">Referrer</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes (2)</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td><a href="#device-id-matching">Device ID matching</a> (1)</td><td>Yes</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td><a href="#probabilistic-modeling">Probabilistic modeling</a> (1)</td><td>No</td><td>Probabilistic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td><a href="#preload-campaigns">Preload</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td><a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork (SKAN)</a></td><td>No</td><td>Deterministic</td><td>Apple</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td><a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a> (1)</td><td>No</td><td>Deterministic</td><td>Apple</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td><a href="#deep-link">Deep link</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td colspan="8">(1) Sometimes referred to as the "Classic" attribution method in AppsFlyer dashboards and reports.<br/>(2) Supported by some third-party stores.<br/>(3) See <a href="./ctv-pc-and-console-platform-attribution-concepts#supported-platforms" target="_blank">full list of CTV, PC, and console platforms</a>.</td></tr></tbody></table>
 
 ### Attribution method priorities (Attribution waterfall)
 
@@ -82,8 +80,8 @@ Find below detailed descriptions of AppsFlyer attribution models.
 
 <Accordion title="Install referrer (Android only)">
 
-* Android apps downloaded from Google Play and some other app stores are attributed by the install referrer method. The referrer provides the original URL, clicked before redirecting to the Android store. This is the primary method for Android attribution. Currently, Google Play, Huawei app store, Samsung Galaxy Store, and Xiaomi GetApps Store support install referrer attribution. [Alternative app store attribution using the referrer.](/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores)
-* [Meta install referrer:](/docs/meta-ads-integration-setup#Meta_install_referrer_anchor) AppsFlyer supports Meta ads attribution for Android apps by receiving ad campaign metadata from a device’s local storage. This data is used for attribution measurement (Meta on-device attribution).
+* Android apps downloaded from Google Play and some other app stores are attributed by the install referrer method. The referrer provides the original URL, clicked before redirecting to the Android store. This is the primary method for Android attribution. Currently, Google Play, Huawei app store, Samsung Galaxy Store, and Xiaomi GetApps Store support install referrer attribution. <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores">Alternative app store attribution using the referrer.</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#Meta_install_referrer_anchor">Meta install referrer:</Anchor> AppsFlyer supports Meta ads attribution for Android apps by receiving ad campaign metadata from a device’s local storage. This data is used for attribution measurement (Meta on-device attribution).
 
 </Accordion>
 
@@ -109,7 +107,7 @@ Device IDs can be hashed using SHA1 or MD5 on attribution links.
 
 <Accordion title="Device ID matching for self-reporting networks">
 
-A classic attribution method in which upon the first app launch, AppsFlyer checks in the app settings if traffic is expected from any of the [self-reporting networks](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer) (SRNs), like Meta ads, Snapchat, and Google Ads.
+A classic attribution method in which upon the first app launch, AppsFlyer checks in the app settings if traffic is expected from any of the <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">self-reporting networks</Anchor> (SRNs), like Meta ads, Snapchat, and Google Ads.
 
 AppsFlyer queries the relevant SRNs using the unique device ID of the new install, where the device ID is available, and ATT consent has been granted on iOS. The query uses Mobile Measurement Partners (MMP) APIs as defined by the SRNs. Based on the response, AppsFlyer may attribute the new uses to an SRN.
 
@@ -145,7 +143,7 @@ There are 3 methods to attribute preload campaigns. All three methods can be use
 
 The 3 methods and some of the main specifications are outlined in the table that follows. Click the links to learn more about each preload method.
 
-<table><thead><tr><th>Preload attribution method</th><th>Use case</th><th>Device activation-to-app launch info\*</th><th>Lookback window\*\*</th><th>Match-type in raw data</th></tr></thead><tbody><tr><td><a href="./set-up-appsflyer-preload-referrer-attribution">AppsFlyer referrer</a>\*</td><td><ul><li>Preloaded in factory</li><li>Preloaded upon device activation</li></ul></td><td>Yes</td><td><ul><li>Up to 180 days</li><li>Default is 90 days</li></ul></td><td><ul><li>Preload: preload_rfr</li><li>Click to download: af_referrer</li></ul></td></tr><tr><td><a href="./measure-preload-campaigns-with-google-play-install">Google Play auto-install</a>\*\*</td><td>Preloaded upon device activation (for Google Play apps)</td><td>No</td><td><ul><li>Up to 180 days</li><li>Default is 90 days</li></ul></td><td>preload_pai</td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android">Preload in factory via System Property or manifest (Android)</a>\*\*</td><td><ul><li>Preloaded in factory</li><li>Preloaded upon device activation</li></ul></td><td>No</td><td>No limit</td><td>preload_conf</td></tr><tr><td colspan="5"><p>\* The AppsFlyer referrer preload solution provides visibility and measurement capabilities between the first device activation and the first app launch. This lets you see how many devices were activated with the app preloaded on the devices by a specific partner, and then see when the app is launched for the first time.</p><p>For the two other methods, attribution is determined only after the user launches the app for the first time, the number of devices that had the app installed before the first launch isn't available.</p><p>\*\* It can take days or weeks, starting from the first time the user turns on their device until they launch the preloaded app for the first time. Consequently, AppsFlyer gives preload campaigns the highest priority in determining attribution, with longer lookback windows.</p></td></tr></tbody></table>
+<table><thead><tr><th>Preload attribution method</th><th>Use case</th><th>Device activation-to-app launch info\*</th><th>Lookback window\*\*</th><th>Match-type in raw data</th></tr></thead><tbody><tr><td><a href="./set-up-appsflyer-preload-referrer-attribution" target="_blank">AppsFlyer referrer</a>\*</td><td><ul><li>Preloaded in factory</li><li>Preloaded upon device activation</li></ul></td><td>Yes</td><td><ul><li>Up to 180 days</li><li>Default is 90 days</li></ul></td><td><ul><li>Preload: preload_rfr</li><li>Click to download: af_referrer</li></ul></td></tr><tr><td><a href="./measure-preload-campaigns-with-google-play-install" target="_blank">Google Play auto-install</a>\*\*</td><td>Preloaded upon device activation (for Google Play apps)</td><td>No</td><td><ul><li>Up to 180 days</li><li>Default is 90 days</li></ul></td><td>preload_pai</td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Preload in factory via System Property or manifest (Android)</a>\*\*</td><td><ul><li>Preloaded in factory</li><li>Preloaded upon device activation</li></ul></td><td>No</td><td>No limit</td><td>preload_conf</td></tr><tr><td colspan="5"><p>\* The AppsFlyer referrer preload solution provides visibility and measurement capabilities between the first device activation and the first app launch. This lets you see how many devices were activated with the app preloaded on the devices by a specific partner, and then see when the app is launched for the first time.</p><p>For the two other methods, attribution is determined only after the user launches the app for the first time, the number of devices that had the app installed before the first launch isn't available.</p><p>\*\* It can take days or weeks, starting from the first time the user turns on their device until they launch the preloaded app for the first time. Consequently, AppsFlyer gives preload campaigns the highest priority in determining attribution, with longer lookback windows.</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -169,7 +167,7 @@ See the sections that follow for a full breakdown of which particular attributio
 
 <Accordion title="Owned media">
 
-<table><thead><tr><th rowspan="2">Media source</th><th rowspan="2">Feature</th><th colspan="2">Attribution method</th></tr><tr><th>Android</th><th>iOS</th></tr></thead><tbody><tr><td>Owned media: email (including ESPs), SMS, social media posts, influencers/affiliates, print, etc.</td><td><a href="./onelink-guide"><span>OneLink</span></a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td rowspan="2">Owned mobile website/landing page with paid or organic incoming traffic</td><td><a href="./smart-banners-mobile-web-to-app-for-marketers">Smart Banners</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td><a href="./onelink-smart-script-overview">OneLink Smart Script</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td rowspan="2">Owned mobile apps</td><td><a href="./user-invite-attribution">User invites/referral</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td><a href="./cross-promotion-attribution-for-marketers">Cross-promotion</a></td><td><ul><li>Install referrer</li><li>Device ID matching</li></ul></td><td>Device ID matching (subject to ATT consent)</td></tr></tbody></table>
+<table><thead><tr><th rowspan="2">Media source</th><th rowspan="2">Feature</th><th colspan="2">Attribution method</th></tr><tr><th>Android</th><th>iOS</th></tr></thead><tbody><tr><td>Owned media: email (including ESPs), SMS, social media posts, influencers/affiliates, print, etc.</td><td><a href="./onelink-guide" target="_blank"><span>OneLink</span></a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td rowspan="2">Owned mobile website/landing page with paid or organic incoming traffic</td><td><a href="./smart-banners-mobile-web-to-app-for-marketers" target="_blank">Smart Banners</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td><a href="./onelink-smart-script-overview" target="_blank">OneLink Smart Script</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td rowspan="2">Owned mobile apps</td><td><a href="./user-invite-attribution" target="_blank">User invites/referral</a></td><td><ul><li>Install referrer</li><li>Probabilistic modeling</li></ul></td><td>Probabilistic modeling</td></tr><tr><td><a href="./cross-promotion-attribution-for-marketers" target="_blank">Cross-promotion</a></td><td><ul><li>Install referrer</li><li>Device ID matching</li></ul></td><td>Device ID matching (subject to ATT consent)</td></tr></tbody></table>
 
 </Accordion>
 
@@ -177,7 +175,7 @@ See the sections that follow for a full breakdown of which particular attributio
 
 <Accordion title="Paid media">
 
-<table><thead><tr><th rowspan="2">Media source</th><th colspan="3">Attribution method</th></tr><tr><th>Android</th><th>iOS</th><th><strong>CTV, PC, and console platforms</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns">SRNs</a></td><td>Device ID matching</td><td><ul><li>Device ID matching (subject to ATT consent)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td>Device ID matching</td></tr><tr><td><ul><li>Ad networks (non-SRNs) via <a href="./set-up-an-integrated-partner#attribution-link-tab">attribution links for partners</a></li><li><span>CTV, PC, and console platforms</span></li></ul></td><td><ul><li>Install referrer</li><li>Device ID matching</li><li>Probabilistic modeling</li></ul></td><td><ul><li>Device ID matching (subject to ATT consent)</li><li>Probabilistic modeling </li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android">Pre-installed on device</a></td><td>Pre-installs</td><td>--</td><td> </td></tr></tbody></table>
+<table><thead><tr><th rowspan="2">Media source</th><th colspan="3">Attribution method</th></tr><tr><th>Android</th><th>iOS</th><th><strong>CTV, PC, and console platforms</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRNs</a></td><td>Device ID matching</td><td><ul><li>Device ID matching (subject to ATT consent)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td>Device ID matching</td></tr><tr><td><ul><li>Ad networks (non-SRNs) via <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">attribution links for partners</a></li><li><span>CTV, PC, and console platforms</span></li></ul></td><td><ul><li>Install referrer</li><li>Device ID matching</li><li>Probabilistic modeling</li></ul></td><td><ul><li>Device ID matching (subject to ATT consent)</li><li>Probabilistic modeling </li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Pre-installed on device</a></td><td>Pre-installs</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
@@ -198,7 +196,7 @@ Upon the ad click, a click lookback window opens having a default duration of 7 
 
 <table><thead><tr><th rowspan="2"><strong>Attribution type</strong></th><th rowspan="2"><strong>Attribution method</strong></th><th rowspan="2">Range</th><th rowspan="2">Default</th></tr></thead><tbody><tr><td rowspan="2"><p>Click-Through</p><p>(All integrated partners)</p></td><td>Referrer, ID Matching</td><td>1–30 Days</td><td>7 Days</td></tr><tr><td>Probabilistic modeling</td><td>0–24 Hours</td><td><ul><li>Adaptive</li><li>Determined by AppsFlyer</li></ul></td></tr></tbody></table>
 
-[Learn more about lookback windows](/docs/set-up-lookback-windows)
+<Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Learn more about lookback windows</Anchor>
 
 </Accordion>
 
@@ -217,13 +215,13 @@ This is especially helpful for video ad networks that traditionally have low CTR
 
 In cases where both a click and an impression occur, the **click always prevails**, as it's an active engagement.
 
-<table><thead><tr><th><strong>Attribution type</strong></th><th><strong>Attribution method</strong></th><th><strong>Range</strong></th><th><strong>Default</strong><br/> </th></tr></thead><tbody><tr><td rowspan="2"><p>View-through (for <a href="./measure-view-through-engagements#view-vta-partner-list">selected integrated partners</a>)</p></td><td>ID Matching</td><td>0-24 Hours</td><td>1 Day</td></tr><tr><td>Probabilistic modeling</td><td>0-24 Hours</td><td><ul><li>Adaptive</li><li>Determined by AppsFlyer</li></ul></td></tr></tbody></table>
+<table><thead><tr><th><strong>Attribution type</strong></th><th><strong>Attribution method</strong></th><th><strong>Range</strong></th><th><strong>Default</strong><br/> </th></tr></thead><tbody><tr><td rowspan="2"><p>View-through (for <a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">selected integrated partners</a>)</p></td><td>ID Matching</td><td>0-24 Hours</td><td>1 Day</td></tr><tr><td>Probabilistic modeling</td><td>0-24 Hours</td><td><ul><li>Adaptive</li><li>Determined by AppsFlyer</li></ul></td></tr></tbody></table>
 
 **To enable the view-through attribution:**
 
-* Set the lookback window in the [configuration window](/docs/set-up-an-integrated-partner#view-through-attribution-lookback-window).
+* Set the lookback window in the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#view-through-attribution-lookback-window">configuration window</Anchor>.
 
-[Learn more about view-through attribution](/docs/measure-view-through-engagements)
+<Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements">Learn more about view-through attribution</Anchor>
 
 </Accordion>
 
@@ -231,7 +229,7 @@ In cases where both a click and an impression occur, the **click always prevails
 
 <Accordion title="Engaged click attribution">
 
-Engaged clicks occur when users click an ad and remain in the same context—engaging with the ad—without being redirected to the app store or launching the app. For example, interactions may include staying within a playable ad, interacting with in-ad elements, or continuing to browse content within the ad container. For more information, see: [About enhanced engagement types.](/docs/about-enriched-engagement-types)
+Engaged clicks occur when users click an ad and remain in the same context—engaging with the ad—without being redirected to the app store or launching the app. For example, interactions may include staying within a playable ad, interacting with in-ad elements, or continuing to browse content within the ad container. For more information, see: <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types">About enhanced engagement types.</Anchor>
 
 * The engaged click lookback window for ID matching attribution is 1–7 days. The default is 2 days.
 * The lookback window for probabilistic modeling is 0–24 hours. The default is adaptive.
@@ -244,7 +242,7 @@ Engaged clicks occur when users click an ad and remain in the same context—eng
 | Engaged click (for selected integrated partners) | ID Matching | 1–7 Days  <br />1-23 hours | 2 Days |
 |  | Probabilistic modeling | 0–24 Hours | <ul><li>Adaptive</li><li>Determined by AppsFlyer</li></ul> |
 
-[Learn more about lookback windows](/docs/set-up-lookback-windows)
+<Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Learn more about lookback windows</Anchor>
 
 </Accordion>
 
@@ -252,7 +250,7 @@ Engaged clicks occur when users click an ad and remain in the same context—eng
 
 <Accordion title="Engaged view attribution">
 
-Engaged views occur when users view an ad and take a qualifying action—such as watching a video beyond a certain threshold or interacting with an ad unit—without clicking. These actions signal intent and are used to attribute the install. For more information, see: [About enhanced engagement types.](/docs/about-enriched-engagement-types)
+Engaged views occur when users view an ad and take a qualifying action—such as watching a video beyond a certain threshold or interacting with an ad unit—without clicking. These actions signal intent and are used to attribute the install. For more information, see: <Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types">About enhanced engagement types.</Anchor>
 
 * The engaged view lookback window is 0–24 hours for both deterministic and probabilistic attribution.
 * The default lookback window for deterministic attribution is 2 days.
@@ -266,9 +264,9 @@ Engaged views occur when users view an ad and take a qualifying action—such as
 
 **To enable engaged view attribution:**
 
-* Set the lookback window in the [configuration window](/docs/set-up-an-integrated-partner#view-through-attribution-lookback-window).
+* Set the lookback window in the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#view-through-attribution-lookback-window">configuration window</Anchor>.
 
-[Learn more about view-through attribution](/docs/measure-view-through-engagements)
+<Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements">Learn more about view-through attribution</Anchor>
 
 </Accordion>
 
@@ -280,7 +278,7 @@ Engaged views occur when users view an ad and take a qualifying action—such as
 
 AppsFlyer uses the device ID or unique AppsFlyer ID for attributions (an app install, reinstall, or re-attribution) to **attribute in-app events to the media source**. Advertisers can use this information to follow user journeys in their app's raw data. In aggregate day, the device ID/AppsFlyer ID is used to calculate the number of unique users, for example the number of unique users that perform an in-app event.
 
-For more information about event attribution, click [here](/docs/in-app-events-overview?query=in%20app%20event#how-does-appsflyer-attribute-events).
+For more information about event attribution, click <Anchor target="_blank" href="/marketers/docs/in-app-events-overview?query=in%20app%20event#how-does-appsflyer-attribute-events">here</Anchor>.
 
 </Accordion>
 
@@ -294,7 +292,7 @@ Assisted Installs (AKA multi-touch attribution) are installs where the media sou
 
 Assisting networks are shown as contributors to the install in AppsFlyer.
 
-For more information, click [here](/docs/measure-assisted-installs).
+For more information, click <Anchor target="_blank" href="/marketers/docs/measure-assisted-installs">here</Anchor>.
 
 </Accordion>
 
@@ -302,16 +300,16 @@ For more information, click [here](/docs/measure-assisted-installs).
 
 <Accordion title="Reinstalls">
 
-A reinstall occurs when a user installs the app, uninstalls it, and then reinstalls it. Reinstall attribution is regulated by the [re-attribution window](/docs/set-up-re-attribution-window) as follows:
+A reinstall occurs when a user installs the app, uninstalls it, and then reinstalls it. Reinstall attribution is regulated by the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor> as follows:
 
 * If the reinstall occurs after the expiry of the re-attribution window: a new install is recorded.
 * If the reinstall occurs during the re-attribution window, one of the following applies:
-  * If the user engaged with a retargeting campaign before the reinstall: a [retargeting reinstall](/docs/retargeting-attribution-guide) (AKA re-attribution) is recorded.
-  * If the user did not engage with a campaign or engaged with a UA campaign: no install is recorded. Depending on the [**Post Reinstall Events Attribution**](/docs/measure-reinstalls#overview) state, in-app events of these reinstalling users are either attributed to organic or to the original install.
+  * If the user engaged with a retargeting campaign before the reinstall: a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting reinstall</Anchor> (AKA re-attribution) is recorded.
+  * If the user did not engage with a campaign or engaged with a UA campaign: no install is recorded. Depending on the <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#overview">**Post Reinstall Events Attribution**</Anchor> state, in-app events of these reinstalling users are either attributed to organic or to the original install.
 
-For device testing and multiple installs, [register](/docs/registering-test-devices) the device in AppsFlyer. If you don't register the device only the first install is recorded.
+For device testing and multiple installs, <Anchor target="_blank" href="/marketers/docs/registering-test-devices">register</Anchor> the device in AppsFlyer. If you don't register the device only the first install is recorded.
 
-Note that AppsFlyer enables better accuracy for attributing iOS reinstalls without advertiser ID. You can enable this feature on the [App Settings page](/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only).
+Note that AppsFlyer enables better accuracy for attributing iOS reinstalls without advertiser ID. You can enable this feature on the <Anchor target="_blank" href="/marketers/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">App Settings page</Anchor>.
 
 #### Reinstalling iOS apps that are backed up in iCloud
 
@@ -325,7 +323,7 @@ When an application is backed up using iCloud and later restored (on the same de
 
 ![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
-A user who re-installs an app within the [re-attribution window](/docs/set-up-re-attribution-window) (90 days by default) is considered a re-attribution. If this install occurs after engaging with a retargeting campaign, it is recorded as a retargeting reinstall AKA re-attribution and is reported in [retargeting](/docs/retargeting-attribution-guide).
+A user who re-installs an app within the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor> (90 days by default) is considered a re-attribution. If this install occurs after engaging with a retargeting campaign, it is recorded as a retargeting reinstall AKA re-attribution and is reported in <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor>.
 
 </Accordion>
 
@@ -334,7 +332,7 @@ A user who re-installs an app within the [re-attribution window](/docs/set-up-re
 <Accordion title="App updates">
 
 * When existing users update the app to a subsequent version, this is not treated as a countable attribution event, if the user was previously attributed by AppsFlyer. Note! If you migrate to AppsFlyer from a different MMP existing users on the first app-open, after migration, are attributed to organic.
-* Metrics relating to the number of users per app version are available in the [SDK Information dashboard.](/docs/sdk-information-version-consent-dashboard)
+* Metrics relating to the number of users per app version are available in the <Anchor target="_blank" href="/marketers/docs/sdk-information-version-consent-dashboard">SDK Information dashboard.</Anchor>
 
 </Accordion>
 

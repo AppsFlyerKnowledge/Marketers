@@ -1,8 +1,5 @@
 ---
 title: React Native plugin overview
-excerpt: >-
-  Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to
-  measure installs, in-app events, media sources, and more.
 metadata:
   keywords:
     - React Plugin
@@ -27,9 +24,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/217108646-React-Native-plugin-overview
 ---
-> 📘 **Important!**
+**At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more.
+
+> 🚧 **Important!**
 >
-> * The plugin is open-source and available on [GitHub](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin).
+> * The plugin is open-source and available on <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin">GitHub</Anchor>.
 > * Go to our [Dev Hub](https://dev.appsflyer.com/hc/docs/react-native-plugin) to learn how to install and integrate the React Native plugin in your app.
 
 <div data-zendesk-anchors="h_01HE7SAKK0E1HGGRGS6PMQ4Q28=important" />

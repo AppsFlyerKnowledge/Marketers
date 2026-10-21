@@ -1,8 +1,5 @@
 ---
 title: Google Ads (AdWords)—Create web campaigns for website apps
-excerpt: >-
-  Set up a Google Ads integration for your website app to send web conversion
-  signals to Google via the Offline Conversion API (OCI).
 metadata:
   keywords:
     - Advertisers
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45498975339537-Google-Ads-AdWords-Create-web-campaigns-for-website-apps
 ---
+> **At a glance:** Set up a Google Ads integration for your website app to send web conversion signals to Google via the Offline Conversion API (OCI).
+
 ## Overview
 
 AppsFlyer supports integration with Google Ads (`googleads_int`) for website app campaigns and reports conversion data through the Google Offline Conversion API (OCI).
@@ -39,7 +38,7 @@ The campaign flow starts when a user clicks a Google ad and lands on your websit
 Before activating the Google Ads integration for website app campaigns, make sure you have:
 
 * A website app set up in AppsFlyer
-* Either the AppsFlyer Web SDK deployed on your website, or a fully server-side integration using the server-to-server (S2S) API. For more information, see [Set up a fully server-side integration](/docs/server-to-server-s2s-api-for-web-performance-measurement#set-up-a-fully-server-side-integration)
+* Either the AppsFlyer Web SDK deployed on your website, or a fully server-side integration using the server-to-server (S2S) API. For more information, see <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement#set-up-a-fully-server-side-integration">Set up a fully server-side integration</Anchor>
 * An AppsFlyer account with appropriate roles or permissions
 
 ### How to set up a Google Ads web campaign
@@ -71,7 +70,7 @@ Start by activating the Google Ads integration for web campaigns and setting up 
    1. Log in to your Google Ads account.
    2. In the top-right corner, click the Google account icon and scroll down to where the Customer ID is displayed.
    3. Perform one of the following:
-      * If you have multiple Google Ads accounts running campaigns for your app, use the Customer ID from a Manager (MCC) account for cross-account conversion tracking. Paste the MCC ID (and not a specific account’s Customer ID) in the Customer ID field and also in the MCC Customer ID text box (same ID in both boxes).  For more information, see [Google's instructions on configuring an MCC account](https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC).
+      * If you have multiple Google Ads accounts running campaigns for your app, use the Customer ID from a Manager (MCC) account for cross-account conversion tracking. Paste the MCC ID (and not a specific account’s Customer ID) in the Customer ID field and also in the MCC Customer ID text box (same ID in both boxes).  For more information, see <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google's instructions on configuring an MCC account</Anchor>.
       * If you only use a single Google Ads account to run ads, paste the account ID in the Customer ID text box. Leave the MCC Customer ID text box empty.
 7. To allow AppsFlyer to upload conversions to Google Ads, click **Sign in with Google**.
 8. Select the admin account of the MCC account from which you retrieved the Customer ID.
@@ -113,7 +112,7 @@ Map your website events to Google Ads conversion actions. AppsFlyer sends these 
 
 > 📘 **Note**
 >
-> If you send S2S events and want AppsFlyer to send postbacks for them to Google Ads, make sure each event has at least one Google click ID: `gclid`, `gbraid`, or `wbraid`. If an event has none, AppsFlyer doesn't send the postback. For all supported event fields, see [Server-to-Server (S2S) API for Web Performance Measurement](/docs/server-to-server-s2s-api-for-web-performance-measurement#measure-an-event).
+> If you send S2S events and want AppsFlyer to send postbacks for them to Google Ads, make sure each event has at least one Google click ID: `gclid`, `gbraid`, or `wbraid`. If an event has none, AppsFlyer doesn't send the postback. For all supported event fields, see <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement#measure-an-event">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>.
 
 </Accordion>
 
@@ -149,9 +148,10 @@ For each website event you mapped in AppsFlyer, create a corresponding conversio
 5. In **Conversion goal**, select a conversion action category.
 6. Enter a **Conversion name** and click **Add**.
 
-   > 📘 **Important!**
+   > 🚧 **Important!**
    >
    > To use the Offline Conversions API with GBRAID/WBRAID (in addition to GCLID), make sure the **Count** field in the conversion action is set to **Every** (default) and not **One**.
+
 
    > 📘 **Note**
    >
@@ -167,17 +167,17 @@ For each website event you mapped in AppsFlyer, create a corresponding conversio
 
 <Accordion title="Step 3: Set the campaign's Final URL">
 
-Google [defines the Final URL](https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU) as "the URL address of the webpage in your website that people reach after they click your ad, also known as the 'landing page.'"
+Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">defines the Final URL</Anchor> as "the URL address of the webpage in your website that people reach after they click your ad, also known as the 'landing page.'"
 
 1. In Google Ads, open the **Campaigns > Ads** page.
 2. In the ad row, click the edit icon.
 3. In the **Final URL field**, enter the URL of your landing page.
 
-   > 📘 **Important!**
+   > 🚧 **Important!**
    >
    > The Final URL cannot be an AppsFlyer URL (OneLink or a single-platform attribution URL), as this might cause your campaign to be rejected. Only use a direct web address with no redirects.
    >
-   > You can add AF attribution parameters to the Final URL and map them to Google ValueTrack parameters, for example, `af_c_id={campaignid}`. Once the Google ad is clicked and the landing page is loaded, these parameters are available on the page. To learn about the available ValueTrack parameters, see the [Google documentation](https://support.google.com/google-ads/answer/6305348).
+   > You can add AF attribution parameters to the Final URL and map them to Google ValueTrack parameters, for example, `af_c_id={campaignid}`. Once the Google ad is clicked and the landing page is loaded, these parameters are available on the page. To learn about the available ValueTrack parameters, see the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348">Google documentation</Anchor>.
    >
    > For example:
    >
@@ -188,7 +188,7 @@ Google [defines the Final URL](https://support.google.com/google-ads/answer/6080
 
 > 📘 **Note**
 >
-> Google Web Ads campaigns can use two URLs per engagement: the Final URL and the Tracking Template URL. However, the Tracking Template URL is not required for website app campaigns where the ad destination is a website. A Tracking Template URL might be needed only when the campaign goal is web-to-mobile. For more information, see the [Google Ads web-to-app campaign article](/docs/google-ads-adwords-create-web-based-campaigns).
+> Google Web Ads campaigns can use two URLs per engagement: the Final URL and the Tracking Template URL. However, the Tracking Template URL is not required for website app campaigns where the ad destination is a website. A Tracking Template URL might be needed only when the campaign goal is web-to-mobile. For more information, see the <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-create-web-based-campaigns">Google Ads web-to-app campaign article</Anchor>.
 
 </Accordion>
 
@@ -196,8 +196,8 @@ Google [defines the Final URL](https://support.google.com/google-ads/answer/6080
 
 Web attribution data for Google Ads campaigns is available in the cross-platform dashboard and in raw data exports:
 
-* **Dashboard:** In [the cross-platform dashboard](/docs/my-dashboards#crossplatform-dashboard), web and app data are displayed side by side, giving you a unified view of campaign performance across platforms.
-* **Raw data exports:** Web attribution data is also available in the [Raw data exports page](/docs/raw-data-export-page).
+* **Dashboard:** In <Anchor target="_blank" href="/marketers/docs/my-dashboards#crossplatform-dashboard">the cross-platform dashboard</Anchor>, web and app data are displayed side by side, giving you a unified view of campaign performance across platforms.
+* **Raw data exports:** Web attribution data is also available in the <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Raw data exports page</Anchor>.
   * The `media_source` field shows `googleadwords_int` for web events attributed to Google Ads.
 
 > 📘 **Note**
@@ -206,9 +206,9 @@ Web attribution data for Google Ads campaigns is available in the cross-platform
 
 ## Measure web performance data with web cost
 
-You can get a complete performance view of web attribution data and web cost data from Google Ads in the dashboard and in [Cost ETL reports](/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl). To do this, make sure you have [the ROI360 package](/docs/roi360-onboarding-guide#about-roi360) and complete the following setup:
+You can get a complete performance view of web attribution data and web cost data from Google Ads in the dashboard and in <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">Cost ETL reports</Anchor>. To do this, make sure you have <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide#about-roi360">the ROI360 package</Anchor> and complete the following setup:
 
-1. Connect the cost to your website app via  `googleadwords_int` (not via `googleads_int`)  from the **Cost** tab or the **Cost Settings** page. For more information about how to connect to cost, see [Set up ROI360 cost API to measure cost data](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+1. Connect the cost to your website app via  `googleadwords_int` (not via `googleads_int`)  from the **Cost** tab or the **Cost Settings** page. For more information about how to connect to cost, see <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">Set up ROI360 cost API to measure cost data</Anchor>.
 2. Include the campaign ID (`af_c_id`) in the landing page URL. Make sure the URL includes the full campaign hierarchy to view cost, clicks, and impressions matched to web attribution at the most granular level.
 
 ## Troubleshooting in-app event postbacks
@@ -233,7 +233,7 @@ In Google Ads, make sure that your access token has the necessary permissions to
 
 <Accordion title="MCC customer ID">
 
-If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID of an MCC account. See [Google's instructions on configuring an MCC account](https://support.google.com/google-ads/answer/6139186).
+If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID of an MCC account. See <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186">Google's instructions on configuring an MCC account</Anchor>.
 
 </Accordion>
 
@@ -249,10 +249,10 @@ Make sure the postback in-app events are mapped to the correct conversion action
 
 | Trait | Remarks |
 | --- | --- |
-| Clicks and impressions | Clicks and impressions for web campaigns require an [ROI360 subscription](/docs/roi360-onboarding-guide). |
+| Clicks and impressions | Clicks and impressions for web campaigns require an <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide">ROI360 subscription</Anchor>. |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Web Performance Measurement - Overview](/docs/web-performance-measurement-overview)
+> * <Anchor target="_blank" href="/marketers/docs/web-performance-measurement-overview">Web Performance Measurement - Overview</Anchor>
 
 <div data-zendesk-anchors="h_01KNM00RR7V9BAA2BSPDECHC9F=overview h_01KNM00RR7H7A9CE06APEZSXKR=prerequisites h_01KNM00RR77P8VD2YJ2R7DZBVX=how-to-set-up-a-google-ads-web-campaign h_01KNM00RR7E8MFSTGYKFEJDS1C=set-up-the-google-ads-integration-in-appsflyer h_01KNM00RR71ZXB72H8X1YXWKED=step-1-activate-the-integration h_01KNM00RR84CCGBR3T5WG7C5VW=note h_01KNM00RR86C5VKBVTA9X6QRAS=note-1 h_01KNM00RR8BCJTMPZ29C841BY1=step-2-set-inapp-event-postbacks h_01KNM00RR8PSJ7FEAP7MMEJ1XG=note-2 h_01KNM00RR89XJ0BZKFDXVC4860=note-3 h_01M520ZTQ1QT2F03TMY9TZBPSY=note-4 h_01KNM00RR8SAS3TM1NG5DC58TF=set-up-a-web-conversion-campaign-in-google-ads h_01KNM00RR8S24AG7FMN6067PZ2=step-1-set-the-campaign-type-objective-and-goals h_01KNM00RR8H1ZFSHFT0DVB11GN=step-2-create-conversion-actions h_01KNM00RR8EV8XY02YJFV5XSX8=important h_01KNM00RR8N96SNP1YK0CTN6YZ=note-5 h_01KNM00RR82NZSKB7K06HCP1VE=step-3-set-the-campaigns-final-url h_01KNM00RR8EP6J43G29Q8VVA5B=important-1 h_01KNM00RR8A704MKGVVC6MQ2KN=note-6 view-web-attribution-data=view-web-performance-measurement-data h_01KNM00RR8EYJAX2KRGCM65E9M=view-web-performance-measurement-data h_01KNM00RR86Q2GTHVNC505KCXZ=note-7 measure-web-attribution-data-with-web-cost=measure-web-performance-data-with-web-cost h_01KNM00RR9TF8JRTJXWN23MF1S=measure-web-performance-data-with-web-cost h_01KNM00RR9Z0BM5EE62M17EE0F=troubleshooting-in-app-event-postbacks h_01KNM00RR9CJJQAP4GAXZ9KK8N=set-token-permissions h_01KNM00RR9215H3KB024BBFZX2=mcc-customer-id h_01KNM00RR9DBR5979GA0FVD5AK=conversion-action-id h_01KQAE3JKMQ6ZEATDAEXBC4PT6=traits-and-limitations h_01KQC2B644Y44631ZQKC1HPEF4=see-also" />

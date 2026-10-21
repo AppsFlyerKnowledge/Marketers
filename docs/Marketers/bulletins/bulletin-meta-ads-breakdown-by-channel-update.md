@@ -31,7 +31,7 @@ x-zendesk:
 
 To check whether Impression Device is already enabled for an ad account:
 
-1. Go to [Ads Manager](https://adsmanager.facebook.com/) and select **Settings**.
+1. Go to <Anchor target="_blank" href="https://adsmanager.facebook.com/">Ads Manager</Anchor> and select **Settings**.
 
 [![Ads Manager toolbar showing the Settings button](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
 

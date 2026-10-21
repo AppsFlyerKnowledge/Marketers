@@ -86,7 +86,7 @@ The required credentials for the Unity cost API integration are:
 7. Click **Test Connection.**  
    * The API is active. AppsFlyer collects data from the partner 6 times a day, on average once every four hours.
 
-[Learn more about connecting cost integrations](/docs/set-up-roi360-cost-api-to-measure-cost-data)
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data">Learn more about connecting cost integrations</Anchor>
 
 </Accordion>
 

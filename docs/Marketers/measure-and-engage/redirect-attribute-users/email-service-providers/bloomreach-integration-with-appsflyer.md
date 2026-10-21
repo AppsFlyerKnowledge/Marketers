@@ -1,9 +1,5 @@
 ---
 title: Bloomreach integration with AppsFlyer
-excerpt: >-
-  Set up an integration with Bloomreach to enable seamless deep linking from
-  email campaigns, measure traffic in both Bloomreach and AppsFlyer, and create
-  user experiences that drive conversion.
 metadata:
   keywords:
     - marketers
@@ -24,7 +20,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45235709425553-Bloomreach-integration-with-AppsFlyer
 ---
-![Bloomreach + AppsFlyer.png](https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png)
+**At a glance:** Set up an integration with Bloomreach to enable seamless deep linking from email campaigns, measure traffic in both Bloomreach and AppsFlyer, and create user experiences that drive conversion.
+
+<Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 
 ## About the integration
 
@@ -48,7 +46,7 @@ Define the redirection behavior for users who already have your app installed.
 
 **To define redirection behavior:**
 
-1. [Create a OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) and configure Universal Links/App Links. This template will be used later to create OneLink links for your email campaigns.
+1. <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">Create a OneLink template</Anchor> and configure Universal Links/App Links. This template will be used later to create OneLink links for your email campaigns.
 2. If you already have an existing OneLink template configured that enables Universal Links/App Links, you can use it.
 
 #### Hosting and SSL
@@ -56,7 +54,7 @@ Define the redirection behavior for users who already have your app installed.
 * OneLink links are SSL-secured and hosted by AppsFlyer.
 * The AASA file and App Link files are also hosted by AppsFlyer.
 
-See [additional information and instructions.](/docs/set-up-your-esp-integration-with-appsflyer#configure-your-app-to-support-deep-linking)
+See <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer#configure-your-app-to-support-deep-linking">additional information and instructions.</Anchor>
 
 #### App domain definition
 
@@ -66,7 +64,7 @@ Example: For iOS, define the associated domain as follows:
 applinks:<your-onelink-subdomain>.onelink.me
 ```
 
-See [additional information and instructions.](https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links)
+See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">additional information and instructions.</Anchor>
 
 </Accordion>
 
@@ -80,11 +78,11 @@ Domains defined in Bloomreach are not wrapped in a CDN click-tracking link when 
 
 An additional parameter is automatically appended to the original Universal Link to enable measurement through the Bloomreach web and mobile SDKs.
 
-See [additional information and instructions.](https://documentation.bloomreach.com/engagement/docs/universal-link)
+See <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/universal-link">additional information and instructions.</Anchor>
 
-![2026-03-31_09-28-18.png](https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png)
+<Image alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Below is an example of an unwrapped Universal Link with Bloomreach tracking parameters appended:
 >
@@ -102,21 +100,21 @@ Finally, implement the relevant Bloomreach SDKs to ensure click measurement work
 
 #### iOS
 
-Implement the Bloomreach [mobile SDK](https://documentation.bloomreach.com/engagement/docs/mobile-sdks) for iOS and ensure that Universal Link measurement is properly configured. The Bloomreach SDK supports measurement of Universal Links to capture user interactions initiated through email campaigns.
+Implement the Bloomreach <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDK</Anchor> for iOS and ensure that Universal Link measurement is properly configured. The Bloomreach SDK supports measurement of Universal Links to capture user interactions initiated through email campaigns.
 
-See additional information and instructions about [Universal Links](https://documentation.bloomreach.com/engagement/docs/ios-sdk-universal-links#track-universal-links) and [mobile SDKs.](https://documentation.bloomreach.com/engagement/docs/mobile-sdks)
+See additional information and instructions about <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/ios-sdk-universal-links#track-universal-links">Universal Links</Anchor> and <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDKs.</Anchor>
 
 #### Android
 
-Implement the Bloomreach [mobile SDK](https://documentation.bloomreach.com/engagement/docs/mobile-sdks) for Android and configure App Links similarly to iOS Universal Links to ensure click attribution and measurement consistency.
+Implement the Bloomreach <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDK</Anchor> for Android and configure App Links similarly to iOS Universal Links to ensure click attribution and measurement consistency.
 
-See additional information and instructions about [Android App Links](https://documentation.bloomreach.com/engagement/docs/android-sdk-app-links#track-android-app-links) and [mobile SDKs.](https://documentation.bloomreach.com/engagement/docs/mobile-sdks)
+See additional information and instructions about <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/android-sdk-app-links#track-android-app-links">Android App Links</Anchor> and <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDKs.</Anchor>
 
 #### Web
 
-Implement the Bloomreach [JavaScript web SDK](https://Mobile%20SDKs) to ensure that clicks for Universal Links are measured on your website as well. Click measurement for Universal Links on your website will work with no additional configuration required.
+Implement the Bloomreach <Anchor target="_blank" href="https://Mobile%20SDKs">JavaScript web SDK</Anchor> to ensure that clicks for Universal Links are measured on your website as well. Click measurement for Universal Links on your website will work with no additional configuration required.
 
-See [additional information and instructions.](https://documentation.bloomreach.com/engagement/docs/js-sdk)
+See <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/js-sdk">additional information and instructions.</Anchor>
 
 </Accordion>
 

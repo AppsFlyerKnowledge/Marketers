@@ -1,8 +1,5 @@
 ---
 title: Custom dashboards
-excerpt: >-
-  Build your own customized dashboards inside AppsFlyer. You can easily select,
-  name, and position the data in your own customized reports.
 metadata:
   keywords:
     - custom dashboard
@@ -24,6 +21,8 @@ x-zendesk:
   section_id: 6550925337873
   url: https://support.appsflyer.com/hc/en-us/articles/212750286-Custom-dashboards
 ---
+**At a glance:** Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports.
+
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
 ## Custom Dashboards
@@ -98,7 +97,7 @@ You can personalize a dashboard by moving and sizing widgets.
 | Group by | Select group by |
 | Show top | Enter the number of values to display. |
 | Pre-Covid | If selected, show data of a pre-COVID-19 date range of November 1-30, 2019. |
-| Filters | Use filters to limit data in the widget:<ul><li>**Countries (geo)**</li><li>**Media sources**</li><li>**Campaigns**</li><li>**Channels**</li></ul>Select **Exclude organic**to explicitly exclude data not attributed to a media source. |
+| Filters | Use filters to limit data in the widget:<ul><li>**Countries (geo)**</li><li>**Media sources**</li><li>**Campaigns**</li><li>**Channels**</li></ul>Select **Exclude organic** to explicitly exclude data not attributed to a media source. |
 
 </Accordion>
 
@@ -114,7 +113,7 @@ You can personalize a dashboard by moving and sizing widgets.
 2. Select **Actions** in a widget.
 3. Select **Export CSV**.  
    The file downloads.  
-   Dates in CSV files have the format dd/mm/yyyy. You can [convert them to a different format](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43), like mm/dd/yyyy in Excel.
+   Dates in CSV files have the format dd/mm/yyyy. You can <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">convert them to a different format</Anchor>, like mm/dd/yyyy in Excel.
 
 </Accordion>
 
@@ -131,11 +130,11 @@ You can personalize a dashboard by moving and sizing widgets.
 | Agency transparency | Yes |
 | App-specific timezone | If all apps housed in the account have the same timezone setting, data displays using the app-specific timezone. If this is not the case: data displays in UTC. |
 | App-specific currency | If all apps housed in the account have the same currency setting, data displays in app-specific currency. If this is not the case, data displays in USD. |
-| Cost data | Only available if there is at least 1 recorded install. [Learn more](/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports) |
+| Cost data | Only available if there is at least 1 recorded install. <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">Learn more</Anchor> |
 | Organic data | Available |
 | Non-organic data | Available |
 | eCPA | <ul><li>In Custom dashboards, the eCPA formula is: Total spend / Number of actions = eCPA</li><li>This differs from other dashboards, including Overview, where the formula is: Total spend / **unique users** who performed an action = eCPA</li></ul> |
-| Data freshness | [Real-time](/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime). Equivalent to the Overview Dashboard |
+| Data freshness | <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Real-time</Anchor>. Equivalent to the Overview Dashboard |
 | Account user access | Yes |
 | Limitations | <ul><li>Full page export to PDF option is not available.</li><li>Export to PNG is not supported in the following browsers: Edge, Firefox 69 (Max).</li><li>Searching for a specific campaign is limited to cases where there are less than 100 campaigns. If necessary, narrow the time period and search again.</li><li>KPI availability: User acquisition LTV KPIs are available. Retargeting, retention, activity, and Protect360 KPIs aren't available. Note! Don't compare Custom dashboard metrics to Overview unified or retargeting view metrics.</li><li>Campaign name changes aren't supported.</li></ul> |
 | Timezones | <ul><li>If all apps in the account have the same timezone name, data is displayed using the app timezone. If not, UTC will be used.</li></ul> |

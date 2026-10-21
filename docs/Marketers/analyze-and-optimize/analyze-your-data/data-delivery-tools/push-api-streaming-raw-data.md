@@ -1,6 +1,5 @@
 ---
 title: Push API streaming raw data
-excerpt: Stream raw data attribution events to your server-side endpoints.
 metadata:
   keywords:
     - Push API
@@ -29,6 +28,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Stream raw data attribution events to your server-side endpoints.
+
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 
 ## Push API
@@ -47,12 +48,12 @@ Message characteristics
 | --- | --- |
 | Message type segregation | <ul><li>Messages can be segregated by endpoint (maximum 6 endpoints per app) or you can determine the message type by examining the value of the fields listed:<ul><li>event\_name</li><li>conversion\_type</li><li>campaign\_type</li></ul></li><li>The values of the fields, per message type, are indicated in the table that follows.</li></ul>**Example:**<br /><br />A message contains the following:<ul><li>conversion\_type=install</li><li>campaign\_type=organic</li><li>event\_name=install</li></ul>Use the table to determine that this event is the install event of an organic user. |
 | Data freshness | Messages are sent soon after the event is recorded on the AppsFlyer platform. This is typically within minutes. |
-| Message contents (fields) | <ul><li>Messages have a `key:value` structure.</li><li>See AppsFlyer attribution [Push API](/docs/raw-data-field-dictionary#field-availability-by-reporting-tool) fields available.</li><li>Each key represents a raw data field. See [description of raw data fields in AppsFlyer](/docs/raw-data-field-dictionary#data-fields-dictionary).</li><li>Blank or null keys aren't sent at all.</li><li>The example contains both null and empty fields. Real postbacks have neither empty nor null fields. The example provided has a JSON format.<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
+| Message contents (fields) | <ul><li>Messages have a `key:value` structure.</li><li>See AppsFlyer attribution <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor> fields available.</li><li>Each key represents a raw data field. See <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#data-fields-dictionary">description of raw data fields in AppsFlyer</Anchor>.</li><li>Blank or null keys aren't sent at all.</li><li>The example contains both null and empty fields. Real postbacks have neither empty nor null fields. The example provided has a JSON format.<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | Format of timestamp fields | <ul><li>UTC timestamps: `yyyy-mm-dd hh:mm:ss.sss`. For example, displays as`2019-09-17 00:09:00.123`. An event took place at 18:00 Tokyo time. The event time is converted to UTC, which is 09:00. The time recorded is the UTC time.</li><li>Selected time zone (app-specific) timestamps: `yyyy-mm-dd hh:mm:ss.sss±th:tm`. For example `2019-09-17 18:00:16.000+0900`. An event took place at 18:00 Tokyo time. The event time shown is recorded as 18:00+09:00. 09:00 is the Tokyo time zone.</li></ul> |
 
 #### Available message types
 
-<table><thead><tr><th>Attribution context</th><th>Message type</th><th>conversion_type field</th><th>campaign_type field</th><th>event_name field</th><th>event_type field</th></tr></thead><tbody><tr><td>User acquisition</td><td>Install\*</td><td>install</td><td><p>Non-organic: UA</p><p>Organic: organic</p></td><td>install</td><td><ul><li>install</li><li>organic-install</li></ul></td></tr><tr><td>User acquisition </td><td>Install in-app events</td><td><span>install</span></td><td><p>Non-organic: UA</p><p>Organic: organic</p></td><td>Advertiser-defined event names</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>Retargeting</td><td>Re-engagement</td><td>re-engagement</td><td>retargeting</td><td>re-engagement</td><td>re-attribution</td></tr><tr><td>Retargeting </td><td>Re-engagement in-app events</td><td>re-engagement</td><td>retargeting</td><td>Advertiser-defined event names</td><td>re-engagement-in-app-event</td></tr><tr><td>Retargeting </td><td>Re-attribution </td><td>reinstall</td><td>retargeting</td><td>re-attribution</td><td>re-attribution</td></tr><tr><td>User acquisition </td><td>Reinstall</td><td>reinstall</td><td><p>Non-organic: UA</p><p>Organic: organic</p></td><td>reinstall</td><td><ul><li>reinstall</li><li>organic-reinstall</li></ul></td></tr><tr><td>Retargeting</td><td>Re-attribution in-app events</td><td>reinstall</td><td>retargeting</td><td>Advertiser-defined event names</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">\* Some installs relating to view-through attribution are attributed to the <a href="./about-raw-data-identifier-restrictions">restricted media source.</a></td></tr></tbody></table>
+<table><thead><tr><th>Attribution context</th><th>Message type</th><th>conversion_type field</th><th>campaign_type field</th><th>event_name field</th><th>event_type field</th></tr></thead><tbody><tr><td>User acquisition</td><td>Install\*</td><td>install</td><td><p>Non-organic: UA</p><p>Organic: organic</p></td><td>install</td><td><ul><li>install</li><li>organic-install</li></ul></td></tr><tr><td>User acquisition </td><td>Install in-app events</td><td><span>install</span></td><td><p>Non-organic: UA</p><p>Organic: organic</p></td><td>Advertiser-defined event names</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>Retargeting</td><td>Re-engagement</td><td>re-engagement</td><td>retargeting</td><td>re-engagement</td><td>re-attribution</td></tr><tr><td>Retargeting </td><td>Re-engagement in-app events</td><td>re-engagement</td><td>retargeting</td><td>Advertiser-defined event names</td><td>re-engagement-in-app-event</td></tr><tr><td>Retargeting </td><td>Re-attribution </td><td>reinstall</td><td>retargeting</td><td>re-attribution</td><td>re-attribution</td></tr><tr><td>User acquisition </td><td>Reinstall</td><td>reinstall</td><td><p>Non-organic: UA</p><p>Organic: organic</p></td><td>reinstall</td><td><ul><li>reinstall</li><li>organic-reinstall</li></ul></td></tr><tr><td>Retargeting</td><td>Re-attribution in-app events</td><td>reinstall</td><td>retargeting</td><td>Advertiser-defined event names</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">\* Some installs relating to view-through attribution are attributed to the <a href="./about-raw-data-identifier-restrictions" target="_blank">restricted media source.</a></td></tr></tbody></table>
 
 #### Unique fields
 
@@ -66,7 +67,7 @@ Message characteristics
 
 This section describes the messages (report types) available for SKAN and how to identify the messages. Read this section, then [Set up SKAN attribution endpoint.](/docs/push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint)
 
-Related reading: [SKAN raw data fields](/docs/skan-raw-data-reports). Push API messages have the equivalent structure and fields.
+Related reading: <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">SKAN raw data fields</Anchor>. Push API messages have the equivalent structure and fields.
 
 Message characteristics:
 
@@ -74,7 +75,7 @@ Message characteristics:
 | --- | --- |
 | Message type segregation | <ul><li>All messages are sent to 1 endpoint set by you.</li><li>To determine the message type, use the event\_type field.<br />Note: using the event\_type field, you can also determine the event\_name field and skad\_redownload field.</li><li>The values of the event\_type field, are indicated in the [table that follows](/docs/push-api-streaming-raw-data#message-types-for-skan-attribution).</li></ul>Example:<br /><br />A message contains the following:<ul><li>event\_type: skad-re-download</li></ul>From this, we can determine that:<ul><li>This is a re-download event</li><li>The event\_name: install</li><li>The skad\_redownload: true</li></ul> |
 | Data freshness | <ul><li>Installs, redownloads, and in-app events:<ul><li>Processed daily</li><li>Sent to your endpoint on the day following receipt of the iOS postback by AppsFlyer</li><li>Expect to receive event messages 08:00–11:00 UTC (exact times fluctuate)</li><li>Example: Postbacks received on Monday are sent starting Tuesday 08:00 UTC</li></ul></li><li>Postbacks from iOS and Postbacks copy: Messages are sent soon after they arrive in AppsFlyer</li></ul> |
-| Message examples | The spreadsheet contains message examples. The example provided has a JSON format.[SKAN example messages](https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx). |
+| Message examples | The spreadsheet contains message examples. The example provided has a JSON format. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">SKAN example messages</Anchor>. |
 
 #### Message types for SKAN attribution
 
@@ -84,19 +85,19 @@ Message characteristics:
 | Re-downloads | install | True | skad-re-download |
 | In-app events | The name of the event set by the advertiser | The name of the event set by the advertiser | skad-in-app-event |
 | Postbacks from iOS | Never available in this message | Sometimes available | skad-postback |
-| [Postbacks copy](/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15) | Never available in this message | Sometimes available | skad-postback-copy |
+| <Anchor target="_blank" href="/marketers/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">Postbacks copy</Anchor> | Never available in this message | Sometimes available | skad-postback-copy |
 
 </Accordion>
 
 ## Set up Push API endpoints
 
-> 📘 **Caution**
+> ❗️ **Caution**
 >
 > Don't use Push API for sending AppsFlyer-attributed data to third parties for the following reasons:
 >
 > * You can breach privacy regulations, like CCPA, if the user opted out of sending their data to third parties.
 > * Some media sources restrict how user-level data provided by them is used, shared with third parties, or both. Make sure that you comply with the media source's terms of use.
->   For example, [X Ads,](https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html) [Snapchat,](https://www.snap.com/en-US/privacy/privacy-policy/)[Pinterest.](https://policy.pinterest.com/en/privacy-policy)
+>   For example, [X Ads,](https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html) [Snapchat,](https://www.snap.com/en-US/privacy/privacy-policy/) [Pinterest.](https://policy.pinterest.com/en/privacy-policy)
 >
 > Note:  This caution doesn't apply to SKAN data. Use Push API to send SKAN data to third-party endpoints.
 
@@ -104,7 +105,7 @@ To set up Push API, complete the following action list.
 
 #### Push API setup checklist
 
-<table><thead><tr><th>Step No. </th><th>AppsFlyer attribution</th><th>SKAdNetwork attribution </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>If you already have an active Push API endpoint, you can skip this step. </p><p>Complete the <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">server-side requirements</a>.</p></td></tr><tr><td>2</td><td>For AppsFlyer attribution, plan the endpoint settings using the<a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution"> Push API planning checklist.</a></td><td>Not applicable</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Set up AppsFlyer attribution endpoint</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Set up SKAdNetwork attribution endpoint</a></td></tr></tbody></table>
+<table><thead><tr><th>Step No. </th><th>AppsFlyer attribution</th><th>SKAdNetwork attribution </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>If you already have an active Push API endpoint, you can skip this step. </p><p>Complete the <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">server-side requirements</a>.</p></td></tr><tr><td>2</td><td>For AppsFlyer attribution, plan the endpoint settings using the <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">Push API planning checklist.</a></td><td>Not applicable</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Set up AppsFlyer attribution endpoint</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Set up SKAdNetwork attribution endpoint</a></td></tr></tbody></table>
 
 <div id="serverside-requirements-your-server" />
 
@@ -117,8 +118,8 @@ Ensure that your server complies with the following requirements:
 | Endpoint URL | <ul><li>Valid domain name</li><li>Maximum number of unique endpoints per app:<ul><li>AppsFlyer: 6 endpoints</li><li>SKAdNetwork: 3 endpoints</li></ul></li></ul> |
 | --- | --- |
 | Endpoint return code | On receipt of a message, your endpoint must return an HTTP 200 status code. |
-| Allowlist AppsFlyer servers | Allowlist AppsFlyer server [IP addresses](/docs/appsflyer-server-ip-address-ranges-allowlisting) in your firewalls and security systems to ensure communication with the endpoint. |
-| TLS versions | <ul><li>TLS 1.1</li><li>TLS 1.2+ See [supported ciphers](/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client)</li></ul> |
+| Allowlist AppsFlyer servers | Allowlist AppsFlyer server <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">IP addresses</Anchor> in your firewalls and security systems to ensure communication with the endpoint. |
+| TLS versions | <ul><li>TLS 1.1</li><li>TLS 1.2+ See <Anchor target="_blank" href="/marketers/docs/appsflyer-https-ssl-encryption-policy-support#outgoing-messages-appsflyer-as-client">supported ciphers</Anchor></li></ul> |
 | Ports | Ports: 80, 443 |
 
 **Note**! A timeout mechanism, having a 4-second duration, is used. If AppsFlyer doesn't get an OK message during this time AppsFlyer regards this as a message send failure.
@@ -144,7 +145,7 @@ Ensure that your server complies with the following requirements:
 | 2 | Endpoint URL | - |  |
 | 3 | Event message types | <ul><li>Select at least one event message type.</li><li>To select in-app event messages, you need to record an in-app event. Until you do so, you can't select in-app event messages.</li></ul>[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png) |  |
 | 4 | <ul><li>Fields</li><li>The list of fields is common to all message types</li></ul> | **<span id="01H8E8DET2PBGQAKHJY40R1P9Z"></span>Warning**<br />Selecting all does not automatically include message fields that are added in the future. To include new fields, you must update the selection manually.<br /><br /><br /><br />Select the fields required.<ul><li>The most common fields are preselected by default.</li><li>We don't send empty/null fields</li></ul> |  |
-| 5 | In-app event type | Filter by in-app events to reduce traffic sent to your endpoint.<ul><li>Select one or more or all in-app events. Note! If the event does not display in the list search for it.</li><li>You can only select an in-app event after it has been recorded at least once. If necessary, use [S2S](/docs/server-to-server-events-api-for-mobile-s2s-mobile) to fire the event.</li><li>[![mceclip1.png](https://files.readme.io/b945d7bf1b8cebb3a4b925fb240e3e1976aee934f1179cca68680ae21d565bf3-360007337257.png)](https://files.readme.io/b945d7bf1b8cebb3a4b925fb240e3e1976aee934f1179cca68680ae21d565bf3-360007337257.png)</li></ul> |  |
+| 5 | In-app event type | Filter by in-app events to reduce traffic sent to your endpoint.<ul><li>Select one or more or all in-app events. Note! If the event does not display in the list search for it.</li><li>You can only select an in-app event after it has been recorded at least once. If necessary, use <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S</Anchor> to fire the event.</li><li>[![mceclip1.png](https://files.readme.io/b945d7bf1b8cebb3a4b925fb240e3e1976aee934f1179cca68680ae21d565bf3-360007337257.png)](https://files.readme.io/b945d7bf1b8cebb3a4b925fb240e3e1976aee934f1179cca68680ae21d565bf3-360007337257.png)</li></ul> |  |
 
 </Accordion>
 
@@ -159,14 +160,14 @@ All team members with permissions to access the API can make changes to Push API
 1. In AppsFlyer, from the sidebar, open **Export > API Access.** Scroll down to the Push API section.
 2. Click **Add Endpoint.**
 3. Select an HTTP method: **POST** or **GET**
-4. Enter the **Endpoint URL**.If you get the message *this URL is not safe*, contact AppsFlyer support.
+4. Enter the **Endpoint URL**. If you get the message *this URL is not safe*, contact AppsFlyer support.
 5. Select one or more event types. **Note**: If the in-app event messages are disabled, it means no in-app events have been recorded until now.
 6. Select the fields to populate the Push API message. Note:
    * Mandatory fields always sent: App ID, Event name, Event time, IDFA (iOS) or Advertising ID (Android)
    * Use the controls depicted in the following figure to select optional fields.  [![PushAPIFieldSelect1.jpg](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)
      * The most common fields are preselected by default. You can cancel the selections.
      * Select optional fields as needed.
-     * Use**Clear all**to clear all optional fields.
+     * Use **Clear all** to clear all optional fields.
      * We don't send null/empty fields and the associated key. Take this into account when planning your import/parsing processes.
 7. Select one or more (up to 52 events) or **All** in-app events.
    * The list is populated by event types that have already been recorded. If an event is missing, send an event having this type using a test device.
@@ -176,9 +177,9 @@ All team members with permissions to access the API can make changes to Push API
 
 #### Test the endpoint
 
-1. Click **Send Test.**  
-   A test result message displays below the **Send Test**button.   
-   A test message is sent to the endpoint. If the test fails, ensure that you have [allowlisted AppsFlyer IP addresses](/docs/appsflyer-server-ip-address-ranges-allowlisting).   
+1. Click **Send Test.**   
+   A test result message displays below the **Send Test** button.   
+   A test message is sent to the endpoint. If the test fails, ensure that you have <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">allowlisted AppsFlyer IP addresses</Anchor>.   
    **Note**! A timeout mechanism, having a 2-second duration, is used. If AppsFlyer doesn't get an OK message during this time AppsFlyer regards this as a message send failure.
 2. Verify that your endpoint received the test message.  
    [View a copy of the message sent.](https://docs.google.com/spreadsheets/d/e/2PACX-1vScQf189h3Ry0BU-ejbZYkMZCJRdXXYeOwuNxPEHwY77vCVYWW9P9xCTUSJKmTvVbp_yzLidXD0WGLm/pub?gid=0&single=true&output=csv)
@@ -195,10 +196,10 @@ All team members with permissions to access the API can make changes to Push API
 
 1. In AppsFlyer, from the sidebar, open **Export > API Access.** Scroll down to the Push API section.
 2. Select **SKAdNetwork** as the attributing entity.
-3. Click **Add Endpoint.**  
+3. Click **Add Endpoint.**   
    **Note**: You can define 1-3 SKAdNetwork endpoints per app.
 4. Select an HTTP method: **POST** or **GET**
-5. Enter the **EndpointURL**.If you get the message *this URL is not safe*, contact AppsFlyer support.
+5. Enter the **EndpointURL**. If you get the message *this URL is not safe*, contact AppsFlyer support.
 6. We don't send null/empty fields and the associated key. Take this into account when planning your import/parsing processes.
 7. Click **Save**.  
    The Push API is now active. Data is sent to the endpoint.
@@ -209,7 +210,7 @@ All team members with permissions to access the API can make changes to Push API
 
 <Accordion title="Configure authentication token">
 
-Using the [Push API Authentication Token](https://dev.appsflyer.com/hc/reference/put_tokens-app-app-id), clients can seamlessly integrate and secure their Push-API messages by adding a customizable authorization header with a requested token.  
+Using the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/put_tokens-app-app-id">Push API Authentication Token</Anchor>, clients can seamlessly integrate and secure their Push-API messages by adding a customizable authorization header with a requested token.  
 You can customize an authorization header that will be sent with your Push-API messages, by defining the token name and value associated with each app ID. This ensures that your messages are not only secure but also tailored to your specific requirements.
 
 </Accordion>
@@ -250,7 +251,7 @@ All team members with permissions to access the API can make changes to Push API
 
 <Accordion title="Test message fails">
 
-If you don't receive the test message and you restrict access to your servers by IP address, ensure that you have [allowlisted all the AppsFlyer IP addresses](/docs/appsflyer-server-ip-address-ranges-allowlisting).
+If you don't receive the test message and you restrict access to your servers by IP address, ensure that you have <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">allowlisted all the AppsFlyer IP addresses</Anchor>.
 
 </Accordion>
 
@@ -265,7 +266,7 @@ You will only get duplicate events if you have enabled both:
 * Install in-app events
 * Retargeting in-app events
 
-[Identify and deduplicate in-app events](/docs/resolve-retargeting-double-attribution)
+<Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">Identify and deduplicate in-app events</Anchor>
 
 </Accordion>
 
@@ -276,7 +277,7 @@ You will only get duplicate events if you have enabled both:
 [![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
 
 * In-app event messages can only be selected after one in-app event has been recorded.
-* Use a test device to generate an in-app event, or use the [S2S API](/docs/server-to-server-events-api-for-mobile-s2s-mobile) to do so manually.
+* Use a test device to generate an in-app event, or use the <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor> to do so manually.
 
 </Accordion>
 
@@ -284,7 +285,7 @@ You will only get duplicate events if you have enabled both:
 
 <Accordion title="Missing push messages and CloudFront">
 
-Are you using Amazon CloudFront as your endpoint? If so, check if CloudFront is rejecting the message with reject code 421. If this is the case, see [Choosing How CloudFront Serves HTTPS Requests](https://docs.aws.amazon.com/en_pv/AmazonCloudFront/latest/DeveloperGuide/cnames-https-dedicated-ip-or-sni.html).
+Are you using Amazon CloudFront as your endpoint? If so, check if CloudFront is rejecting the message with reject code 421. If this is the case, see <Anchor target="_blank" href="https://docs.aws.amazon.com/en_pv/AmazonCloudFront/latest/DeveloperGuide/cnames-https-dedicated-ip-or-sni.html">Choosing How CloudFront Serves HTTPS Requests</Anchor>.
 
 </Accordion>
 
@@ -332,9 +333,9 @@ https://your.server.com?consumer_key=abc456
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Comparing raw data delivery tools](/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features)
-> * [Set up the Push API using an API](https://dev.appsflyer.com/hc/reference/put_app-app-id)
+> * <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">Comparing raw data delivery tools</Anchor>
+> * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/put_app-app-id">Set up the Push API using an API</Anchor>
 
 <div data-zendesk-anchors="01H89PJFBPXVKJGGH18CJBJ41W=push-api 01H89PJFBP45FQDHT4YGS58NP8=appsflyer-attribution-messages 01H89PJFBP9DEX520BDGC5PANQ=available-message-types 01H89PJFBPBK09Q7CRPMM4G7PJ=unique-fields 01H89PJFBQM4NKFSFF8XGMX9XT=skan-attribution-messages 01H89PJFBQBFCK5QVWW2X09H28=message-types-for-skan-attribution 01H89PJFBQZ2FW3ST5V4FW91GS=set-up-push-api-endpoints 01H89PJFBQ6WP7ERP0DJ69QZ1G=caution 01H89PJFBQ625A7G3QT5HQJXMW=push-api-setup-checklist 01H89PJFBQGW8ZV76Z0HTNX2AB=serverside-requirements-your-server serverside-requirements=server-side-requirements 01H89PJFBQ2BC5GHX403RD2RAT=server-side-requirements 01H89PJFBQ4FXB7ABMFVHX326H=push-api-planning-checklist-for-appsflyer-attribution 01H89PJFBQJXWWPQDKZ387VYX3=endpoint-planning-table 01H89PJFBQZE6KJDHXRB8GK7TF=set-up-appsflyer-attribution-endpoint h_01JFSS65G8GTZNMY257QCV922M=add-an-appsflyer-attribution-endpoint test-the-endopoint=test-the-endpoint h_01JFSS6YVP1WFWXSZ7HP7GTDA2=test-the-endpoint 01H89PJFBQQS31C6AF245SSJ61=set-up-skadnetwork-attribution-endpoint h_01HSDW5XQ28T3SQJTN5PBSBCFT=configure-authentication-token additional-procedures%E2%80%94managing-endpoints=additional-proceduresmanaging-endpoints 01H89PJFBQ7WV3NM7JR5Z9QEFB=additional-proceduresmanaging-endpoints 01H89PJFBQ9RZXNHGNNYV5MP7P=change-an-endpoint 01H89PJFBQGE1WESD7ZEMBEFNE=delete-an-endpoint 01H89PJFBQJDGT1FVHKG9DETHJ=troubleshooting-traits-and-limitations 01H89PJFBQAAZYF7YWKC7TP884=test-message-fails 01H89PJFBQHQJSHE09GC599AQ6=duplicate-retargeting-inapp-events 01H89PJFBRDET8T8CTAP1GW0J9=inapp-event-message-selection-is-disabled 01H89PJFBRH58FX1FTH37DP3HC=missing-push-messages-and-cloudfront 01H89PJFBR3CJSR2AEFP3HT5JE=endpoint-error-messages 01H89PJFBRZXXEMPBGBPB35MQ9=specifications-and-limitations h_01JQY6KXYBGXTSVDC18H5CZCWR=can-i-include-custom-headers-with-the-push-api-request h_01HE7SH7XFMPJ13DKCZ04RCJDD=see-also" />

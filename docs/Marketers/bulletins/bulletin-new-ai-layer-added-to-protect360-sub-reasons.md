@@ -25,4 +25,4 @@ x-zendesk:
 | --- | --- |
 | **Effective date** | August 5th, 2024 |
 | **What you need to know** | <ul><li>The new AI detection layer is a new kind of approach rather than a new logic.</li><li>it will be reflected as a new fraud sub-reason in reporting and dashboard.</li></ul> |
-| **Implications** | The AI layer brings new and important protection capabilities. By constantly analyzing large amounts of data points it ensures the accuracy of the detection. It can be found in the dashboard or reports under the [block sub reasons](/docs/protect360-raw-data-reports#install-level-blocked-reasons) |
+| **Implications** | The AI layer brings new and important protection capabilities. By constantly analyzing large amounts of data points it ensures the accuracy of the detection. It can be found in the dashboard or reports under the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#install-level-blocked-reasons">block sub reasons</Anchor> |

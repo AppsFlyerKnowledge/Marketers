@@ -1,8 +1,5 @@
 ---
 title: Set up re-attribution window
-excerpt: >-
-  Learn about re-attribution window, during which reinstalls are not attributed
-  as new installs.
 metadata:
   keywords:
     - Retargeting
@@ -31,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115002587066-Set-up-re-attribution-window
 ---
+**At a glance:** Learn about re-attribution window, during which reinstalls are not attributed as new installs.
+
 ## Re-attribution window
 
 The re-attribution window is a time window that begins the first time a user installs the app and continues for a duration set by the advertiser (default 90 days.) During the re-attribution window app reinstalls aren't recorded as new installs and don't generate a new install postback unless they originate from a **retargeting** campaign.
@@ -41,7 +40,7 @@ The re-attribution window is a time window that begins the first time a user ins
 
 The re-attribution window:
 
-* is set in the [App Settings](/docs/app-settings) page
+* is set in the <Anchor target="_blank" href="/marketers/docs/app-settings">App Settings</Anchor> page
 * the default value is 90 days (3 months)
 * has a range of 1-24 months
 
@@ -84,7 +83,7 @@ The following happens:
 
 * The install is NOT attributed - it doesn't appear on the dashboard, nor on the data
 * NO install postback is sent to any media source
-* Depending on the [**Post Reinstall Events Attribution**](/docs/measure-reinstalls#overview) state, in-app events of these reinstalling users are either attributed to organic or to the original install.
+* Depending on the <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#overview">**Post Reinstall Events Attribution**</Anchor> state, in-app events of these reinstalling users are either attributed to organic or to the original install.
 
 </Accordion>
 
@@ -101,7 +100,7 @@ The following happens:
 * All following in-app events are attributed to the retargeting media source
 * An install postback is sent to the retargeting media source
 
-For more Retargeting Attribution information, click [here](/docs/retargeting-attribution-guide).
+For more Retargeting Attribution information, click <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">here</Anchor>.
 
 </Accordion>
 

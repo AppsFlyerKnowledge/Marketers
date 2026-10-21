@@ -1,10 +1,5 @@
 ---
 title: Yahoo integration setup
-excerpt: >-
-  Yahoo, an AppsFlyer ad network integrated partner, offers search and native
-  advertising in one advertising platform. In addition to click-based mobile
-  attribution, Yahoo offers cost and view-through attribution, which can be
-  recorded with AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -30,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212067546-Yahoo-integration-setup
 ---
+**At a glance:** Yahoo, an AppsFlyer ad network integrated partner, offers search and native advertising in one advertising platform. In addition to click-based mobile attribution, Yahoo offers cost and view-through attribution, which can be recorded with AppsFlyer.
+
 ## Setting up Yahoo
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -41,12 +38,12 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
-> The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory**. All other steps are descriptive or **optional**.
+> The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory**. All other steps are descriptive or **optional**.
 
 <div id="integration-tab" />
 
@@ -60,7 +57,7 @@ The Integration tab is divided into different sections as described below.
 
 On the **first visit** here, you will need to switch on the ***Activate Partner*** toggle to enable the setup of the Integration tab parameters. The toggle MUST be ON for as long as you work with the partner.
 
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 
@@ -72,7 +69,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 You can customize this value to 1-23 hours or 1-30 days. We recommend setting the Click-through lookback window to 7 days, to align with Yahoo.
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 **Enable View-Through attribution**
 
@@ -144,17 +141,17 @@ This tab is not applicable for Yahoo.
 
 The cost integration provides the following aggregated data:
 
-* Cost data for your campaigns, adsets, ads, and geos/countries. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features.  
-  **Note:** Cost data requires an [ROI360](/docs/roi360-cost-aggregation-overview?query=xpend) subscription.
+* Cost data for your campaigns, adsets, ads, and geos/countries. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
+  **Note:** Cost data requires an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription.
 * Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > Once you set Yahoo's cost do not change the name of any running campaign, ad set, or single ad, as it may cause serious discrepancies or missing cost data.
 
@@ -180,11 +177,11 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow to configure in-app event postbacks*** - permit the partner to set up in-app event postbacks mapping to itself on the integration tab
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
+* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
 * ***Allow access to your aggregate revenue data*** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 

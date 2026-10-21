@@ -1,8 +1,5 @@
 ---
 title: SplitMetrics Acquire (formerly SearchAdsHQ) setup
-excerpt: >-
-  Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured,
-  AppsFlyer sends postbacks to SplitMetrics Acquire.
 metadata:
   keywords:
     - Advertisers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002249257-SplitMetrics-Acquire-formerly-SearchAdsHQ-setup
 ---
+**At a glance:** Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured, AppsFlyer sends postbacks to SplitMetrics Acquire.
+
 ## Enabling Apple Ads attribution
 
 Both advertisers and agencies can enable Attribution for Apple Ads.
@@ -33,7 +32,7 @@ Both advertisers and agencies can enable Attribution for Apple Ads.
 > If the advertiser or the agency disables attribution for Apple Ads, attribution for this app, including postback sending to Apple Ads Marketing Partners stops.
 
 * **Advertisers**: follow the instructions below on how to enable attribution for Apple Ads.
-* **Agencies**: [follow these instructions](/docs/apple-ads-integration-setup#agency-setup) to enable attribution for Apple Ads.
+* **Agencies**: <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
 
 ## Setting up SplitMetrics Acquire on AppsFlyer
 

@@ -1,9 +1,5 @@
 ---
 title: Audiences - Import audience segments from internal systems
-excerpt: >-
-  Import predefined audience segments from your internal systems (such as BI and
-  CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and
-  maintain these segments with your advertising partners.
 metadata:
   keywords:
     - Developers
@@ -28,13 +24,15 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners.
+
 ## Why import audiences?
 
 In certain circumstances, you may have predefined audience segments in your internal systems. Importing these audiences (as lists of device and/or user identifiers) to AppsFlyer allows you to use Audiences as your central point for connecting and maintaining all of your audience segments with your advertising partners. Additionally, it enables you to take full advantage of other Audiences features, such as identifier matching/data enrichment and connected campaign metrics.
 
 Consider the following examples:
 
-> 📘 **Examples**
+> 📄 **Examples**
 >
 > **Promotional remarketing**
 > You want to target promotional offers to users during the month of their birthdays.
@@ -75,12 +73,12 @@ When you import an audience, you designate it as one of two types, which determi
 * Is uploaded to partners without reference to your account's user identifier policy (meaning all imported identifiers are uploaded to partners).
 * Can be imported using the V2.0 import feature (described in this article).
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * All audiences existing as of November 23, 2021, **are designated as-is audiences and cannot be changed to standard audiences.** You can continue to update these audiences as necessary using either the V2.0 import feature (described in this article).
 > * You can have up to 500 active imported audiences at any one time.
 > * Only an admin can designate a new imported audience as an as-is audience.
-> * When importing an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). [Learn more](/docs/customer-user-id-field-cuid#setting-the-cuid)
+> * When importing an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Learn more</Anchor>
 
 ## Audience import procedures
 
@@ -100,13 +98,13 @@ Prepare a CSV file, with the following specifications:
 * Maximum number of rows: 1 million
 * If you prepare the file using Excel, save it as a **CSV (Comma delimited) (*.csv)** file, as shown in the fol following image:
 
-![CSV.jpg](https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg)
+<Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
 #### identifier hash
 
 > 📘 **Note**
 >
-> This CSV format is for importing audience segments. If you're importing user attribute data instead, see [Create better audiences with user attribute data](/docs/audiences-create-better-audiences-with-user-attribute-data), which uses a different CSV format with no header row.
+> This CSV format is for importing audience segments. If you're importing user attribute data instead, see <Anchor target="_blank" href="/marketers/docs/audiences-create-better-audiences-with-user-attribute-data">Create better audiences with user attribute data</Anchor>, which uses a different CSV format with no header row.
 
 **Columns and identifiers**
 
@@ -132,19 +130,19 @@ Prepare a CSV file, with the following specifications:
 * Required identifiers:
   * For Android audiences: **app\_id** + one of: **gaid** OR **oaid** OR **imei** OR **cuid** OR **braze\_id** OR **amplitude\_id**
   * For iOS audiences: **app\_id** + one of: **idfv** OR **cuid** OR **braze\_id** OR **amplitude\_id**
-* In compliance with Google's enforcement of the [Digital Markets Act (DMA)](/docs/audiences-user-identifier-policy#eu-digital-markets-act) on March 6, 2024, when importing an “as is” audience, two additional AppsFlyer consent columns will need to be added. These are:
+* In compliance with Google's enforcement of the <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy#eu-digital-markets-act">Digital Markets Act (DMA)</Anchor> on March 6, 2024, when importing an “as is” audience, two additional AppsFlyer consent columns will need to be added. These are:
 
 | AppsFlyer consent columns | Google field | Values | Field explained |
 | --- | --- | --- | --- |
 | <span id="ad_personalization"></span>ad\_personalization\_enabled | ad\_personalization | true/false | Did the user give Google consent to use their data for personalized advertising? |
 | <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
 
-If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”, and will not likely be included in the audience on Google's side. Filling in these fields ensures maximum inclusion of users from the [European Economic Area (EEA)](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)) in your Google audiences.
+If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”, and will not likely be included in the audience on Google's side. Filling in these fields ensures maximum inclusion of users from the <Anchor target="_blank" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)">European Economic Area (EEA)</Anchor> in your Google audiences.
 
 **Example CSV files:**
 
-[new-import-android-example.csv](https://support.appsflyer.com/hc/article_attachments/4413851475729)  
-[new-import-ios-example.csv](https://support.appsflyer.com/hc/article_attachments/4413840980497)
+<Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/4413851475729">new-import-android-example.csv</Anchor>  
+<Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/4413840980497">new-import-ios-example.csv</Anchor>
 
 <span id="01ECF4ZD0RB90HZC6ZFNTKMDSG"></span>**To create and import a new audience using a CSV file:**
 
@@ -165,10 +163,10 @@ If the consent fields are not filled in with values, they will be sent to Google
     Wait for the confirmation message **Uploaded successfully.**
 12. Click **Next.**  
     The **Connect** tab is displayed.
-13. **(Optional)** Follow the instructions for [connecting an audience to partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
+13. **(Optional)** Follow the instructions for <Anchor target="_blank" href="/marketers/docs/audiences-guide#connect-an-audience-to-media-partners">connecting an audience to partners</Anchor>.
 14. Click **Done.**
 
-Your audience is now visible in the Audiences dashboard, and it has been imported and connected to partners. Note, however, that the newly-imported audience list is not yet available for upload to partners since imported audiences are processed with a [data freshness of daily](/docs/about-data-freshness-and-timezone-support#eod).
+Your audience is now visible in the Audiences dashboard, and it has been imported and connected to partners. Note, however, that the newly-imported audience list is not yet available for upload to partners since imported audiences are processed with a <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#eod">data freshness of daily</Anchor>.
 
 **To update an existing audience using a CSV file:**
 
@@ -184,10 +182,10 @@ Your audience is now visible in the Audiences dashboard, and it has been importe
    Wait for the confirmation message **Uploaded successfully.**
 9. Click **Next.**  
    The **Connect** tab is displayed.
-10. Make changes to [partner connections](/docs/audiences-guide#connect-an-audience-to-media-partners) for this audience if required.
+10. Make changes to <Anchor target="_blank" href="/marketers/docs/audiences-guide#connect-an-audience-to-media-partners">partner connections</Anchor> for this audience if required.
 11. Click **Done.**
 
-Your audience has been updated using the CSV file. Note, however, that the revised audience list is not yet uploaded to partners since imported audiences are processed with a [data freshness of daily](/docs/about-data-freshness-and-timezone-support#eod).
+Your audience has been updated using the CSV file. Note, however, that the revised audience list is not yet uploaded to partners since imported audiences are processed with a <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#eod">data freshness of daily</Anchor>.
 
 ### Error messages
 
@@ -218,15 +216,15 @@ The Import Audience API is used to either add or remove devices from an audience
 5. Select the audience platform: **Android** or **iOS.**
 6. Indicate whether this audience is a [**standard** audience or **as-is** audience](/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-types).
    * For a **standard audience**, leave the box unchecked.
-   * For an **as-is audience**, check the box (please note, this option is only available to admins). [Two additional consent fields](/docs/audiences-user-identifier-policy#importing-audiences) are required when importing an "as is" audience in compliance with Google's enforcement of the Digital Markets Act (DMA) on March 6, 2024. Filling in these fields ensures maximum inclusion of users from the [European Economic Area (EEA)](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)) in your Google audiences.
+   * For an **as-is audience**, check the box (please note, this option is only available to admins). <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy#importing-audiences">Two additional consent fields</Anchor> are required when importing an "as is" audience in compliance with Google's enforcement of the Digital Markets Act (DMA) on March 6, 2024. Filling in these fields ensures maximum inclusion of users from the <Anchor target="_blank" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)">European Economic Area (EEA)</Anchor> in your Google audiences.
 7. Click **Save**.  
    The Import page is displayed.
 8. In the **Import using API** section, keep the default of **Add new devices/users** (since this is a new audience).
-9. Copy the API request URL from the [Import a new audience API](https://dev.appsflyer.com/hc/reference/audience-import-post) page (the API token is already included).
+9. Copy the API request URL from the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/audience-import-post">Import a new audience API</Anchor> page (the API token is already included).
 10. Then copy and paste the API request body.
 11. Click **Done**.  
     The **Connect** tab is displayed.
-12. **(Optional)** Follow the instructions for [connecting an audience to partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
+12. **(Optional)** Follow the instructions for <Anchor target="_blank" href="/marketers/docs/audiences-guide#connect-an-audience-to-media-partners">connecting an audience to partners</Anchor>.
 13. Click **Done.**
 14. Prepare the API request including the user/device identifiers, and POST it to AppsFlyer.
 
@@ -239,11 +237,11 @@ The Import Audience API is used to either add or remove devices from an audience
 4. In the **Import using API** section, choose what to do with the uploaded list:
 5. **Add new devices/users:** Add device/user identifiers to the existing audience.
 6. **Remove devices/users from existing audience:** Remove device/user identifiers from the existing audience.
-7. Copy the **API request URL** from the [Import a new audience API](https://dev.appsflyer.com/hc/reference/audience-import-post) page(the API token is already included). **Note:** Changing this option changes the endpoint path in the code to be copied. Be sure to use the correct endpoint for the action you are taking (in this and future API requests).
+7. Copy the **API request URL** from the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/audience-import-post">Import a new audience API</Anchor> page(the API token is already included). **Note:** Changing this option changes the endpoint path in the code to be copied. Be sure to use the correct endpoint for the action you are taking (in this and future API requests).
 8. Then copy the **API request body.**
 9. Click **Next.**  
    The **Connect** tab is displayed.
-10. Make changes to [partner connections](/docs/audiences-guide#connect-an-audience-to-media-partners) for this audience if required.
+10. Make changes to <Anchor target="_blank" href="/marketers/docs/audiences-guide#connect-an-audience-to-media-partners">partner connections</Anchor> for this audience if required.
 11. Click **Done.**
 12. Prepare the API request including the user/device identifiers, and POST it to AppsFlyer.
 
@@ -278,7 +276,7 @@ The Import Audience API is used to either add or remove devices from an audience
 
 <Accordion title="Imported Audience Management API">
 
-The [Imported Audience Management API](https://dev.appsflyer.com/hc/reference/overview-2) allows advertisers to create and configure imported audiences, connect imported audiences to partners, upload imported audiences to partners, and more.
+The <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-2">Imported Audience Management API</Anchor> allows advertisers to create and configure imported audiences, connect imported audiences to partners, upload imported audiences to partners, and more.
 
 </Accordion>
 

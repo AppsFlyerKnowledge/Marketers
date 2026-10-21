@@ -1,8 +1,5 @@
 ---
 title: QR-to-app conversion
-excerpt: >-
-  Convert desktop, TV, CTV, or offline users, into mobile app users by using QR
-  codes generated with OneLink.
 metadata:
   keywords:
     - OneLink
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015119718-QR-to-app-conversion
 ---
+**At a glance:** Convert desktop, TV, CTV, or offline users, into mobile app users by using QR codes generated with OneLink.
+
 ![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
 
 ## Converting mobile, non-mobile and offline traffic into mobile app users
@@ -40,7 +39,7 @@ Posting OneLink-generated QR codes on ads for desktop, TV, CTV, or offline, such
 QR codes can be created either:
 
 * [Manually, in the AppsFlyer UI](/docs/qr-to-app-conversion#manual-qr-code-setup)
-* [Dynamically, using the OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#qr-codes) (specifically designed for web-to-app desktop flows)
+* <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#qr-codes">Dynamically, using the OneLink Smart Script</Anchor> (specifically designed for web-to-app desktop flows)
 
 <div id="qr-to-app-conversion" />
 
@@ -51,19 +50,19 @@ QR codes can be created either:
 **Prerequisites:**
 
 * An AppsFlyer account with at least one app.
-* For attribution: [The AppsFlyer SDK already integrated](/docs/integrate-the-appsflyer-sdk) in each of your mobile apps.
+* For attribution: <Anchor target="_blank" href="/marketers/docs/integrate-the-appsflyer-sdk">The AppsFlyer SDK already integrated</Anchor> in each of your mobile apps.
   * If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to deep link, deferred deep link, or measure installs in your dashboard.
 
-* A [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) set up.
+* A <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor> set up.
 
 **To set up a QR code for QR-to-app conversion**:
 
 1. Perform **one** of the following:
-   * [Create a single QR code image](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link)
+   * <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Create a single QR code image</Anchor>
      1. [Recommended] Create a new link and set the custom media source. For example, **desktop\_web**. Using a QR code from an existing link works. However, for reporting purposes, we recommend not sharing media sources with another link. Instead, use a separate link with the dedicated media source.
      2. After you click **Generate Link**, the QR code is displayed.
      3. Click the QR code to download it in full resolution, either in SVG or PNG format.
-   * [Create a collection of QR code images](/docs/perform-onelink-bulk-actions-via-csv#downloading-a-collection-of-qr-codes)
+   * <Anchor target="_blank" href="/marketers/docs/perform-onelink-bulk-actions-via-csv#downloading-a-collection-of-qr-codes">Create a collection of QR code images</Anchor>
      1. In the **Bulk Links** page, create a link collection.
      2. Download the QR images for the links in the collection.
 2. Add the QR code to your ad, the same way you would add any other image/content.
@@ -117,8 +116,8 @@ You can measure the performance of your QR code and its placement on different a
 1. In AppsFlyer, check the Overview dashboard or other AppsFlyer analytics tools, and record the total **clicks** and **installs** with you QR code media source (such as **desktop\_web**).
 2. Record the total desktop page views (impressions) using your web analytics software.
 3. Measure performance:
-   * [Click-through rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)
-   * [Click-to-install rate](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)
+   * <Anchor target="_blank" href="/marketers/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">Click-through rate</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">Click-to-install rate</Anchor>
 
 </Accordion>
 
@@ -180,7 +179,7 @@ You have the following options:
   * Exportable as SVG or PNG
   * Based on a short URL
 * **OneLink API v2 QR code:**
-  * Generates large volumes of QR codes using [OneLink API](https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview)
+  * Generates large volumes of QR codes using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">OneLink API</Anchor>
 * **Bulk QR code creation (via the Bulk Links page):**
   * Allows QR code customization
   * Exportable as SVG or PNG
@@ -199,8 +198,8 @@ You have the following options:
 
 Yes. You can:
 
-* [Bulk QR code creation feature](/docs/perform-onelink-bulk-actions-via-csv) available on the Bulk Links page.
-* Create large volumes of QR codes using [OneLink API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns).
+* <Anchor target="_blank" href="/marketers/docs/perform-onelink-bulk-actions-via-csv">Bulk QR code creation feature</Anchor> available on the Bulk Links page.
+* Create large volumes of QR codes using <Anchor target="_blank" href="/marketers/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">OneLink API</Anchor>.
 
 </Accordion>
 

@@ -1,6 +1,5 @@
 ---
 title: Set up ROI360 store revenue
-excerpt: Set up the AppsFlyer ROI360 store revenue solution.
 metadata:
   keywords:
     - Premium
@@ -25,7 +24,9 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> 📘 **Important!**
+**At a glance:** Set up the AppsFlyer ROI360 store revenue solution.
+
+> 🚧 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
 
@@ -33,7 +34,7 @@ x-zendesk:
 
 > 📘 **Note**
 >
-> For more information about ROI360, including how it works and how to enable it in AppsFlyer, see [About ROI360 Store revenue](/docs/about-roi360-store-revenue).
+> For more information about ROI360, including how it works and how to enable it in AppsFlyer, see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 Store revenue</Anchor>.
 
 To set up ROI360 Store Revenue, complete the following steps in order:
 
@@ -64,12 +65,12 @@ Setting the credentials involves steps performed in both App Store Connect and A
 
 <Accordion title="1.1 Create the App Store Connect keys">
 
-To set iOS credentials,follow these step:
+To set iOS credentials, follow these step:
 
 1. In the App Store Connect, go to **Users and Access**
 
    [![](https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png)](https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png)
-2. Go to **Users and Access**> **Integrations**, and from the **Keys**list, select **In-App Purchase**.
+2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.
 
    [![](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)
 3. Click **+** to generate a new In-App Purchase key.
@@ -77,7 +78,7 @@ To set iOS credentials,follow these step:
    [![](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)
 4. Enter a name for your API key.
 5. Click **Generate**.
-6. Click **Download In-App Purchase Key**next to the key you just generated to download it. **Note**: You can only download the key once.
+6. Click **Download In-App Purchase Key** next to the key you just generated to download it. **Note**: You can only download the key once.
 7. Copy the **Key ID** of the key you just generated and paste it into the AppsFlyer purchases & subscriptions setting for **Key ID**.
 
    [![](https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png)](https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png)
@@ -91,8 +92,8 @@ To set iOS credentials,follow these step:
 
 <Accordion title="1.2 Set the App Store Connect key in AppsFlyer">
 
-1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#activate-roi360-store-revenue).
-2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png) **Upload** in the **In-App Purchase key**field to upload the p8 file.
+1. <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#activate-roi360-store-revenue">Enable ROI360 Store revenue</Anchor>.
+2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png) **Upload** in the **In-App Purchase key** field to upload the p8 file.
 3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
 
    * **Key ID**
@@ -109,7 +110,7 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
 **Before you start**:
 
-* Setting up in-app purchase and subscription revenue measurement involves steps performed in the [Google Cloud Platform](https://cloud.google.com/), [Google Play Console](https://play.google.com/console/), and the [AppsFlyer UI](https://hq1.appsflyer.com/auth/login). We recommend keeping tabs on all three places open throughout the setup.
+* Setting up in-app purchase and subscription revenue measurement involves steps performed in the <Anchor target="_blank" href="https://cloud.google.com/">Google Cloud Platform</Anchor>, <Anchor target="_blank" href="https://play.google.com/console/">Google Play Console</Anchor>, and the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">AppsFlyer UI</Anchor>. We recommend keeping tabs on all three places open throughout the setup.
 * Setting up in the AppsFlyer UI requires admin permissions.
 
 <div id="11-link-your-google-play-developer-account-to-your-google-cloud-project" />
@@ -121,8 +122,8 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 **To link your Google Play Developer Account to your Google Cloud Project, follow these steps**:
 
 1. In the Google Play Console, go to your Google Play Developer Account.
-2. Link the account to your Google Cloud project. For instructions, see this [Google help topic](https://developers.google.com/android-publisher/getting_started#linking).
-3. Enable the Google Play Developer API. For instructions, see [this Google help topic](https://developers.google.com/android-publisher/getting_started#enable).
+2. Link the account to your Google Cloud project. For instructions, see this <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google help topic</Anchor>.
+3. Enable the Google Play Developer API. For instructions, see <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">this Google help topic</Anchor>.
 
    [![](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)
 
@@ -149,10 +150,10 @@ In step 1, you can obtain the following credentials from App Store Connect and i
    4. Click **Create and continue**.
 
       [![](https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png)](https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png)
-   5. In the **Grant this service account access to the project**step, select the **Pub/sub** subscriber role.
+   5. In the **Grant this service account access to the project** step, select the **Pub/sub** subscriber role.
 
       [![](https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png)](https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png)
-   6. Click **Continue**> **Done**.
+   6. Click **Continue** > **Done**.
 
       [![](https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png)](https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png)
 2. Download the **Service Account Private Key**:
@@ -215,10 +216,10 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 
 **To upload the Service Account Private Key to AppsFlyer, follow these steps**:
 
-1. [Enable ROI360 Store revenue](/docs/about-roi360-store-revenue#activate-roi360-store-revenue).
-2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key**field, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)  **(Upload icon).**
+1. <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#activate-roi360-store-revenue">Enable ROI360 Store revenue</Anchor>.
+2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key** field, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)  **(Upload icon).**
 3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
-4. Click **Validate Key.Note:**
+4. Click **Validate Key.** **Note:**
    * After setting service account credentials and permissions, it can take up to 24 hours to be able to use them. This may cause you to receive errors when trying to validate the key or perform a validation test.
    * To work around the 24-hour wait time, in the Google Play Console, navigate to any application, then go to **Monetize** > **Products** > **Subscriptions/In-app products**, and make a change. For example, edit the description of your product and save it. This should instantly update the account credentials and permissions. You can then undo the changes.
 5. Click **Save and Next**.
@@ -265,7 +266,7 @@ To use this option, skip steps 2.1, 2.2 and complete steps [2.3](#23--optional--
 
 To copy the AppsFlyer server notifications endpoint, follow these steps:
 
-1. **In AppsFlyer,** inthe **App Store server notifications** step, copy the AppsFlyer server notifications endpoint.
+1. **In AppsFlyer,** in the **App Store server notifications** step, copy the AppsFlyer server notifications endpoint.
 2. If you previously had another App Store server notifications endpoint and want AppsFlyer to forward notifications to it, select **Forward a copy of notifications to your server (relevant for option 1 only).**
 3. Enter your notification forwarding endpoint in the displayed text box.
 
@@ -318,7 +319,7 @@ To forward server notifications from your endpoint to AppsFlyer, follow these st
    [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
 7. Select **Version 2 Notifications. Note:** Version 1 notifications are **no longer supported**.
 8. Click **Save**.
-9. Configure your backend to forward Apple server notifications to the AppsFlyer notification endpoint URL. The requests must match the App Store payload exactly as received from Apple, see[Apple format requirements](https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion).
+9. Configure your backend to forward Apple server notifications to the AppsFlyer notification endpoint URL. The requests must match the App Store payload exactly as received from Apple, see <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">Apple format requirements</Anchor>.
 
 </Accordion>
 
@@ -389,7 +390,7 @@ If you want to set AppsFlyer as a subscriber to your existing PUB/SUB topic, con
 
 1. In AppsFlyer, from the side menu, go to **Settings** > **Revenue Settings**,
 2. Select your app,
-3. In the **Purchases & subscriptions**tab, select **Forward your RTDN topic messages to AppsFlyer**.
+3. In the **Purchases & subscriptions** tab, select **Forward your RTDN topic messages to AppsFlyer**.
 4. Copy the endpoint URL to the clipboard.
 5. In Google Cloud Platform, under your project, search for **Pub/Sub**.
 
@@ -442,7 +443,7 @@ To verify that Google Play real-time developer notifications (RTDN) are correctl
 
 1. Click **Send test notification**. This sends a test RTDN message to the Pub/Sub topic configured for AppsFlyer.
 
-   ![image (33).png](https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png)
+   <Image alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
 2. Under **Google Play Billing**, locate the Topic name section.
 3. In the left menu, navigate to **Monetise with Play** → **Monetisation setup**.
 4. Go to the Google Play Console.
@@ -471,7 +472,7 @@ To implement the SDK connector, follow these steps:
 1. In the **Implement SDK Connector** step, copy the **pre-written message** displayed in the dashboard.
 2. Send it to your developers. It includes:
    * The app name and App ID
-   * A link to [the SDK integration guide](https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation).
+   * A link to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">the SDK integration guide</Anchor>.
    * Instructions to configure the sandbox environment (`sandbox = true`)
    * Testing steps (using **TestFlight**)
 
@@ -479,7 +480,7 @@ This message provides all the information your developers need to complete the i
 
 > 📘 **Note**
 >
-> The connector uses automatic transaction detection. As an alternative, you can implement the `validateAndLog` SDK method to manually log each transaction. This method does not support all features available with the connector. For details on both SDK integration options, see [the DevHub documentation](https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation).
+> The connector uses automatic transaction detection. As an alternative, you can implement the `validateAndLog` SDK method to manually log each transaction. This method does not support all features available with the connector. For details on both SDK integration options, see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">the DevHub documentation</Anchor>.
 
 ## Step 4: Verify SDK implementation
 
@@ -546,15 +547,15 @@ Ensure that every sandbox purchase event includes:
 
 **To test in-app purchase and subscription revenue**:
 
-1. Tell your developers to follow their [Android](https://github.com/AppsFlyerSDK/appsflyer-android-purchase-connector#-testing-the-integration), [iOS](https://github.com/AppsFlyerSDK/appsflyer-apple-purchase-connector#-testing-the-implementation-in-sandbox), and [Unity](https://github.com/AppsFlyerSDK/appsflyer-unity-purchase-connector/blob/master/docs/purchaseConnectorUnity.md#testing-the-implementation-in-sandbox) instructions to configure the sandbox environment in the SDK Connector.
-2. Make test purchases or start a subscription using [License Tester in Google Play](https://support.google.com/googleplay/android-developer/answer/6062777?hl=en). For iOS, use [TestFlight](https://developer.apple.com/testflight/). **Note**: A subscription product can be tested only once per device. In practice, a device cannot register multiple test purchases of the same subscription. Additional attempts will not be recorded.
-3. Make a test refund, subscription renewal, or subscription cancellation event using [License Tester in Google Play](https://support.google.com/googleplay/android-developer/answer/6062777?hl=en) and [TestFlight in iOS](https://developer.apple.com/testflight/). **Note**: If you're testing a subscription product, allow time for AppsFlyer to receive a server notification from the store, which typically occurs within a few minutes after the initial purchase is made.
+1. Tell your developers to follow their <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-android-purchase-connector#-testing-the-integration">Android</Anchor>, <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-apple-purchase-connector#-testing-the-implementation-in-sandbox">iOS</Anchor>, and <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-purchase-connector/blob/master/docs/purchaseConnectorUnity.md#testing-the-implementation-in-sandbox">Unity</Anchor> instructions to configure the sandbox environment in the SDK Connector.
+2. Make test purchases or start a subscription using <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6062777?hl=en">License Tester in Google Play</Anchor>. For iOS, use <Anchor target="_blank" href="https://developer.apple.com/testflight/">TestFlight</Anchor>. **Note**: A subscription product can be tested only once per device. In practice, a device cannot register multiple test purchases of the same subscription. Additional attempts will not be recorded.
+3. Make a test refund, subscription renewal, or subscription cancellation event using <Anchor target="_blank" href="https://support.google.com/googleplay/android-developer/answer/6062777?hl=en">License Tester in Google Play</Anchor> and <Anchor target="_blank" href="https://developer.apple.com/testflight/">TestFlight in iOS</Anchor>. **Note**: If you're testing a subscription product, allow time for AppsFlyer to receive a server notification from the store, which typically occurs within a few minutes after the initial purchase is made.
 4. Under the **Verify SDK connector implementation** step, click **Test SDK implementation.** It indicates whether any SDK payloads were successfully received from Purchase Connector in the past 7 days.
 5. View that the test events are displayed in one of the following ways:
 
-   * View the event in the [Live event viewer](/docs/testing-the-sdk-integration-for-marketers#view-live-events).
+   * View the event in the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live event viewer</Anchor>.
 
-   * View the event data in [My Dashboards - Activity View](/docs/activity-metrics-in-my-dashboards).
+   * View the event data in <Anchor target="_blank" href="/marketers/docs/activity-metrics-in-my-dashboards">My Dashboards - Activity View</Anchor>.
 6. Verify that the event appears in the AppsFlyer Activity dashboard. In AppsFlyer, go to **Analyze > Activity**, and in the **Activity trend** chart, open the In-app events tab and select the event to test. An auto-renewable subscription purchase is called `af_ars_s2s_sandbox`. The event includes:
    * A revenue value of 0 (so as not to skew real AppsFlyer reports).
    * An `af_sandbox_revenue` parameter that includes the revenue value of the purchased product, ensuring the correct revenue is reported.
@@ -573,7 +574,7 @@ After you have completed configuring the settings above and saved the last step,
 3. Make sure that the **Measure and attribute revenue for auto-renewing subscriptions** toggle is turned on:
 4. The status of the following settings:
    * The **App Store key** setup
-   * The **Server notification endpoint**setup
+   * The **Server notification endpoint** setup
    * Implement & test SDK Connector
 
 ## Step 6: Release the app versions with the SDK connector
@@ -587,7 +588,7 @@ However, before the developer releases the new app version, make sure that:
 
 [![](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)
 
-Once the app with the SDK connector is released, [in-app purchase](/docs/about-roi360-store-revenue#iaprelated-events-and-parameters) and [subscription events](/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters) will be generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports, including [Revenue ETL](/docs/revenue-etl-reports).
+Once the app with the SDK connector is released, <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">in-app purchase</Anchor> and <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">subscription events</Anchor> will be generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports, including <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports">Revenue ETL</Anchor>.
 
 **Note:** Events will only be generated for users who have updated to a version of the app that includes the SDK connector. As a result, a discrepancy is expected between the revenue data from the app and the store data until the updated app version is fully adopted.
 

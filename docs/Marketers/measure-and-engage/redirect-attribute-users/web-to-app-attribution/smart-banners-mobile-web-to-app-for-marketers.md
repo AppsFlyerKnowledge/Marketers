@@ -1,6 +1,5 @@
 ---
 title: Smart Banners—mobile web-to-app (for marketers)
-excerpt: Convert your website visitors into mobile app users with Smart Banners.
 metadata:
   keywords:
     - Landing Page
@@ -29,11 +28,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000764837-Smart-Banners-mobile-web-to-app-for-marketers
 ---
+**At a glance:** Convert your website visitors into mobile app users with Smart Banners.
+
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
 > 📘 **Note**
 >
-> AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. [Learn more.](/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1)
+> AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. <Anchor target="_blank" href="/marketers/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Learn more.</Anchor>
 
 ## Smart Banners
 
@@ -42,7 +43,7 @@ Smart Banners:
 * **Display on your brand's mobile website** to increase conversion rates for high-intent users.
 * Measure the quality of app installs coming from visitors to the mobile website.
 * Enables accurate web campaign-to-app mobile attribution for ALL media sources, including SRNs.
-* Smart Banners can attribute using [view-through attribution, click-through attribution](/docs/appsflyer-attribution-model#user-engagement-attribution-types) and count impressions:
+* Smart Banners can attribute using <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#user-engagement-attribution-types">view-through attribution, click-through attribution</Anchor> and count impressions:
   * **Clicks:** A user clicks the Smart Banners and proceeds to install.
   * **Impressions:** When the banner loads (user sees the banner), it sends an impression count event to AppsFlyer.
 
@@ -58,7 +59,7 @@ The flow works as follows:
 
 **Who's involved**
 
-* The website developer only needs to [enter a code snippet into the HTML of the website](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#installation).
+* The website developer only needs to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#installation">enter a code snippet into the HTML of the website</Anchor>.
 * For all other actions, only the marketer is required.
 
 ---
@@ -66,7 +67,7 @@ The flow works as follows:
 **Prerequisites**
 
 * An AppsFlyer account with at least one app
-* [OneLink template](/docs/create-a-onelink-template) containing the app/s to be advertised using Smart Banners This is required by Smart Banners to direct your mobile web visitors to the correct app store pages according to the devices they use.
+* <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor> containing the app/s to be advertised using Smart Banners This is required by Smart Banners to direct your mobile web visitors to the correct app store pages according to the devices they use.
 
 ---
 
@@ -87,7 +88,7 @@ Approximately 20 minutes.
 
 ---
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Mark is a marketer working for the successful food delivery service "Feed Me".
 >
@@ -99,7 +100,7 @@ Approximately 20 minutes.
 >
 > AppsFlyer then **attributes the click/install to Mark's defined media source and campaign**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Use either AppsFlyer Smart Banner or iOS Safari smart app banner, but not both. Using both may cause display issues on your mobile website, and result in attribution discrepancies.
 
@@ -122,8 +123,8 @@ Complete the following procedures to set up a Smart Banner that:
 4. Click **Create**. The website workplace opens.
 5. Copy the banner **Code snippet**.
 6. Implement the code snippet on your website. This task is done only once per website.
-   * To add the code to your website via Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace, or WordPress, see [Smart Banners website code implementation for marketers](/docs/smart-banners-website-code-implementation-for-marketers).
-   * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see [Smart Banners website code implementation for developers](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2).
+   * To add the code to your website via Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace, or WordPress, see <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">Smart Banners website code implementation for marketers</Anchor>.
+   * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners website code implementation for developers</Anchor>.
 7. [optional] Copy **Web key**. (This key already exists as part of the code snippet.)
 8. Click **Continue**.
 
@@ -136,8 +137,8 @@ Complete the following procedures to set up a Smart Banner that:
 5. Click **Create**. The website workplace opens.
 6. Copy the banner **Code snippet**.
 7. Implement the code snippet on your website. This task is done only once per website.
-   * To add the code to your website via Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace, or WordPress, see [Smart Banners website code implementation for marketers](/docs/smart-banners-website-code-implementation-for-marketers).
-   * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see [Smart Banners website code implementation for developers](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2).
+   * To add the code to your website via Google Tag Manager, Adobe Tag Manager, Shopify, Wix, Squarespace, or WordPress, see <Anchor target="_blank" href="/marketers/docs/smart-banners-website-code-implementation-for-marketers">Smart Banners website code implementation for marketers</Anchor>.
+   * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners website code implementation for developers</Anchor>.
 8. [optional] Copy **Web key**. (This key already exists as part of the code snippet.)
 9. Click **Continue**.
 
@@ -185,13 +186,13 @@ Banner groups contain one or more banners. Here you can:
 | **Use default attribution parameters** | ◦ Select when:   ▪ Most mobile website visitors are organic.   ▪ Non-organic visitors don't get to the website from click ad networks or from sources with UTM parameters. ◦ You can customize the parameter values. | **Important:** Best practice is to select UTM or incoming attribution link parameters, since the default Smart Banner attribution parameters are anyway used on the custom link as a fallback if the media source, campaign, or channel names are not available. |
 
 9. [Recommended] Set the default attribution parameter **Channel name** to attribute all installs coming from the Smart Banner to the specified channel. This enables you to aggregate information from multiple media sources under the same channel in the **Cohort report**, **Overview dashboard**, **Retention report**, and more.
-10. <span id="2-banner-group-setup-step10"></span>[Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the [Retargeting attribution guide](/docs/retargeting-attribution-guide).
+10. <span id="2-banner-group-setup-step10"></span>[Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution guide</Anchor>.
 
-    > 📘 **Important**
+    > 🚧 **Important**
     >
     > For retargeting to work, you also need to:
     >
-    > * [Enable retargeting for the app](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app)
+    > * <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#enable-retargeting-for-the-app">Enable retargeting for the app</Anchor>
 
 
     Existing users who click on OneLink-powered non-retargeting banner links (UA) also launch the app and have the same user experience. However, their re-engagements are recorded as regular sessions, which means it's impossible to measure the success of the owned media campaign.
@@ -228,7 +229,7 @@ Banner groups contain one or more banners. Here you can:
 1. Click **Create Banner group**.
 2. [Optional] To edit the banner group again, hover over **Targeting & behavior** and click **Edit**.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Mark is the marketer for a food delivery service called "Feed Me". He decides to create a campaign for the app’s plum sale. Mark decides to use an SMS blast, as well as ad networks and Google for the campaign.
 >
@@ -301,9 +302,9 @@ The Targeting & behavior panel shows you the settings you configured for that ba
 5. After finishing and saving the new creative, the banner's status becomes active. Use the **Status** toggle to switch between **Active** and **Paused** statuses.
 6. Click **Save all** to save your work or **Save all and close** to save your work and close the banner setup page.
 
-> 📘 **Example**
+> 📄 **Example**
 >
-> For tips and tricks, see our [Smart Banners cheat sheet](https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing).
+> For tips and tricks, see our <Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">Smart Banners cheat sheet</Anchor>.
 
 </Accordion>
 
@@ -344,7 +345,7 @@ Banner performance data includes:
 **Note**:
 
 * Data is based on UTC timezone.
-* Data freshness is [continuous](/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime).
+* Data freshness is <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">continuous</Anchor>.
 * Data displayed is per banner and OneLink template. This means that if your banner and OneLink template are configured for more than one app (for example, both an Android and iOS app), the performance data that displays is for more than one app.
 * CVR may be higher than expected, sometimes even above 100%, as both view-through attributions and click-through attributions are counted.
 
@@ -435,8 +436,8 @@ Yes. you can set your own font used on your website for your banner using the [i
 
 Yes, by invoking the following two functions in your smart script:
 
-* [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner)
-* [updateParams](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams)
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner">showBanner</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams">updateParams</Anchor>
 
 </Accordion>
 
@@ -444,11 +445,11 @@ Yes, by invoking the following two functions in your smart script:
 
 <Accordion title="Do Smart Banners support deep linking?">
 
-Yes. To do so, add the [deep\_link\_value parameter](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking) in one of the following ways:
+Yes. To do so, add the <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">deep\_link\_value parameter</Anchor> in one of the following ways:
 
 * In the AppsFlyer UI, add a static custom attribution parameter during [banner setup](/docs/smart-banners-mobile-web-to-app-for-marketers#3-banner-setup).
 * Use additionalParams in the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function to add the parameter to the URL prior to displaying the banner.
-* Use the [updateParams](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams) function to add the parameter to the URL after the banner displays.
+* Use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#updateparams">updateParams</Anchor> function to add the parameter to the URL after the banner displays.
 
 Make sure your developer implements the desired behavior of the deep\_link\_value.
 
@@ -474,7 +475,7 @@ Yes. If the original incoming URL contains a utm\_source or pid parameter, the o
 
 <Accordion title="Can I set my banners to display on my mobile site but not on my wrapper/hybrid app?">
 
-Yes. To do so, when you implement Smart Banners in a wrapper/hybrid app and load the banner page from the app (and not from a web browser), don't use the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function, as this displays the banner in the app. Alternatively, use the [hideBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#hidebanner) function.
+Yes. To do so, when you implement Smart Banners in a wrapper/hybrid app and load the banner page from the app (and not from a web browser), don't use the [showBanner](https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#showbanner%20target=) function, as this displays the banner in the app. Alternatively, use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2#hidebanner">hideBanner</Anchor> function.
 
 </Accordion>
 

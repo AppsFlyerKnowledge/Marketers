@@ -12,14 +12,14 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551336428945-Audiences
 ---
-- [Audiences onboarding guide](/docs/audiences-onboarding-guide)
-- [Audiences guide <span class="af-star">★</span>](/docs/audiences-guide)
-- [\[Closed beta\] Use AI Predictive Audiences to reach high-intent users](/docs/closed-beta-use-ai-predictive-audiences-to-reach-high-intent-users)
-- [Audiences user identifier policy](/docs/audiences-user-identifier-policy)
-- [Audiences partner connections](/docs/audiences-partner-connections)
-- [Audiences - Import audience segments from internal systems](/docs/audiences-import-audience-segments-from-internal-systems)
-- [Audiences - Configure additional identifiers for partner audience creation](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation)
-- [Upload additional identifiers to Audiences via API](/docs/upload-additional-identifiers-to-audiences-via-api)
-- [Audiences - Create better audiences with user attribute data](/docs/audiences-create-better-audiences-with-user-attribute-data)
-- [Audiences - Use your Amplitude cohorts as audiences](/docs/audiences-use-your-amplitude-cohorts-as-audiences)
-- [Audiences - Use Braze events in audience creation](/docs/audiences-use-braze-events-in-audience-creation)
+- <Anchor target="_blank" href="/marketers/docs/audiences-onboarding-guide">Audiences onboarding guide</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences guide <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/closed-beta-use-ai-predictive-audiences-to-reach-high-intent-users">\[Closed beta\] Use AI Predictive Audiences to reach high-intent users</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">Audiences user identifier policy</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">Audiences partner connections</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems">Audiences - Import audience segments from internal systems</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">Audiences - Configure additional identifiers for partner audience creation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/upload-additional-identifiers-to-audiences-via-api">Upload additional identifiers to Audiences via API</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-create-better-audiences-with-user-attribute-data">Audiences - Create better audiences with user attribute data</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-use-your-amplitude-cohorts-as-audiences">Audiences - Use your Amplitude cohorts as audiences</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/audiences-use-braze-events-in-audience-creation">Audiences - Use Braze events in audience creation</Anchor>

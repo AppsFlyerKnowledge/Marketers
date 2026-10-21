@@ -1,9 +1,5 @@
 ---
 title: Implementing and using 2FA login
-excerpt: >-
-  Use two-factor authentication (2FA) to add an extra layer of security to the
-  login process. Login credentials for account users are supplemented by Google
-  or Microsoft Authenticator or SMS verification.
 metadata:
   keywords:
     - Advertisers
@@ -29,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360010178037-Implementing-and-using-2FA-login
 ---
+**At a glance:** Use two-factor authentication (2FA) to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator or SMS verification.
+
 ## Highlights
 
 * 2FA is an optional feature activated by an admin user.
@@ -52,7 +50,7 @@ If an admin activates **Google or Microsoft Authenticator** and **SMS verificati
 
 **To activate 2FA:**
 
-1. From the top bar, open the account menu (email address dropdown) >**Security center**.
+1. From the top bar, open the account menu (email address dropdown) > **Security center**.
 2. In the **Enhanced login security** section, click **Configure login method** to access the **Login security** page.
 3. In the **Two-factor authentication (2FA)** section, activate the toggle for **Google or Microsoft Authenticator** and/or **SMS verification.**
 
@@ -68,10 +66,10 @@ For accounts using 2FA, there may be occasions on which you need to reset a user
 
 1. In the menu bar, click on the email address dropdown.
 2. Select **User management**.
-3. On the **Users** tab, click the menu options ![actions_icon.png](https://files.readme.io/081e3baaa997a31ec2d420cdd05aa03973798a9e11238f418a5dc12f43fed373-19910370240913.png) on the far-right side of the user’s row.
+3. On the **Users** tab, click the menu options <Image alt="actions_icon.png" src="https://files.readme.io/081e3baaa997a31ec2d420cdd05aa03973798a9e11238f418a5dc12f43fed373-19910370240913.png" width="25px" /> on the far-right side of the user’s row.
 4. Select **Reset 2FA** from the menu.
 
-**Note:** An admin can reset any other user's 2FA (including [account owners](/docs/user-management#admin)) other than their own. In the case of no other admin users, to reset the account owner's 2FA, contact the AppsFlyer CS team.
+**Note:** An admin can reset any other user's 2FA (including <Anchor target="_blank" href="/marketers/docs/user-management#admin">account owners</Anchor>) other than their own. In the case of no other admin users, to reset the account owner's 2FA, contact the AppsFlyer CS team.
 
 </Accordion>
 
@@ -169,7 +167,7 @@ If you choose not to use **SMS verification**, then the setup and login screens
 
 **Follow these steps for ongoing use:**
 
-1. Log in to **AppsFlyer**(username and password), and you'll be redirected to the 2FA login page.
+1. Log in to **AppsFlyer** (username and password), and you'll be redirected to the 2FA login page.
 2. The **SMS verification** page will appear if it was used at your last login. If not, click the link at the bottom of the **Google or Microsoft Authenticator** 2FA page.
 3. Your phone number will automatically display. Click **Send code.**
 4. Enter the verification code sent by SMS.

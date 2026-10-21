@@ -15,8 +15,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/38035061674769-Set-up-the-measurement-data-tasks
 ---
-- [Set up the Campaigns task](/docs/set-up-the-campaigns-task)
-- [Set up the Conversions task](/docs/set-up-the-conversions-task)
-- [Set up the Engagements task](/docs/set-up-the-engagements-task)
-- [Set up the Media partners task](/docs/set-up-the-media-partners-task)
-- [Set up the Lookback windows task](/docs/set-up-the-lookback-windows-task)
+- <Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Set up the Campaigns task</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task">Set up the Conversions task</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Set up the Engagements task</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Set up the Media partners task</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Set up the Lookback windows task</Anchor>

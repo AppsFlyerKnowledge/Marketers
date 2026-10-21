@@ -1,8 +1,5 @@
 ---
 title: Bidalgo Apple Ads marketing partner—campaign configuration
-excerpt: >-
-  Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer
-  sends postbacks to Bidalgo.
 metadata:
   keywords:
     - Apple Search Ads
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001340429-Bidalgo-Apple-Ads-marketing-partner-campaign-configuration
 ---
+**At a glance:** Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer sends postbacks to Bidalgo.
+
 ## Enabling sending postbacks to Bidalgo (Apple Ads marketing partner)
 
 > 📘 **Note**
@@ -35,7 +34,7 @@ x-zendesk:
 Both advertisers and agencies can enable attribution for Apple Ads.
 
 * **Advertisers:** follow the instructions below on how to enable attribution for Apple Ads.
-* **Agencies:** [follow these instructions](/docs/apple-ads-integration-setup#agency-setup) to enable attribution for Apple Ads.
+* **Agencies:** <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
 
 ### Configuring Bidalgo
 

@@ -1,8 +1,5 @@
 ---
 title: Unreal Engine plugin
-excerpt: >-
-  Integrate AppsFlyer into games developed in Unreal Engine to measure app
-  installs, in-app events, media sources, and more.
 metadata:
   keywords:
     - Plugin
@@ -29,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001604157--Unreal-Engine-plugin
 ---
+**At a glance:** Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
+
 ![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png)
 
 The Unreal Engine lets you develop state-of-art mobile games that your users will never forget and will keep coming for more.
@@ -42,4 +41,4 @@ Here are just some of the things you can do with the AppsFlyer Unreal Engine plu
 * See which media sources bring the best users
 * Record and measure user activity to determine which users generate the most revenue
 
-To learn more about the AppsFlyer Unreal Engine plugin and how to implement it, follow the instructions on our [GitHub repository](https://github.com/AppsFlyerSDK/unreal_appsflyer_sdk).
+To learn more about the AppsFlyer Unreal Engine plugin and how to implement it, follow the instructions on our <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/unreal_appsflyer_sdk">GitHub repository</Anchor>.

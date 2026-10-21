@@ -1,8 +1,5 @@
 ---
 title: Redirect app users to a website
-excerpt: >-
-  Redirect app users to a web URL or social media page by using a URL generated
-  with OneLink.
 metadata:
   keywords:
     - OneLink
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website
 ---
+**At a glance:** Redirect app users to a web URL or social media page by using a URL generated with OneLink.
+
 ## Redirect app users to a web URL
 
 Advertisers can post OneLink URLs leading to external web pages or social media sites. AppsFlyer measures the clicks on the link inside the app, by which you can determine the efficacy of the ad.
@@ -32,12 +31,12 @@ Advertisers can post OneLink URLs leading to external web pages or social media 
 
 **To set up app-to-web redirection**:
 
-1. Set up a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template).
+1. Set up a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
    * In the **When app is installed** section, make sure you don't set up an app-opening method (Universal Links, App Links, or URI scheme).
-2. Create a [OneLink custom link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
+2. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink custom link</Anchor>.
    * In the **When app isn’t installed** section, make sure the redirection settings are to the desired web URL.
    * Don't add an `af_dp` parameter with a URI Scheme.
-3. Make sure the domain you're redirecting users to appears in your [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist).   
+3. Make sure the domain you're redirecting users to appears in your <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">redirect allowlist</Anchor>.   
    **Note:** Setting up a domain redirect allowlist is required to ensure users are redirected to verified, trustworthy domains.
 
 **To test your link**:

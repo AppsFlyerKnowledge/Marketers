@@ -13,8 +13,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551370375569-X-Ads-formerly-Twitter-Ads
 ---
-- [X Ads (formerly Twitter Ads) setup guide—overview](/docs/x-ads-formerly-twitter-ads-setup-guide-overview)
-- [X Ads (formerly Twitter Ads) integration setup](/docs/x-ads-formerly-twitter-ads-integration-setup)
-- [X Ads (formerly Twitter Ads) FAQ and discrepancies](/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies)
-- [X Ads (formerly Twitter Ads) paid vs. organic installs](/docs/x-ads-formerly-twitter-ads-paid-vs-organic-installs)
-- [\[Legacy\] X Ads (formerly Twitter Ads) integration setup](/docs/legacy-x-ads-formerly-twitter-ads-integration-setup)
+- <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview">X Ads (formerly Twitter Ads) setup guide—overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-integration-setup">X Ads (formerly Twitter Ads) integration setup</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies">X Ads (formerly Twitter Ads) FAQ and discrepancies</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-paid-vs-organic-installs">X Ads (formerly Twitter Ads) paid vs. organic installs</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/legacy-x-ads-formerly-twitter-ads-integration-setup">\[Legacy\] X Ads (formerly Twitter Ads) integration setup</Anchor>

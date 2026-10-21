@@ -37,7 +37,7 @@ N/A
 
 #### After the change
 
-* An additional KPI is available in the Retargeting dashboard: **Impressions**from ad networks (not SRNs.)
+* An additional KPI is available in the Retargeting dashboard: **Impressions** from ad networks (not SRNs.)
 * The remaining KPIs are unchanged.
 
 Summary of KPIs available in the Retargeting dashboard after the change:

@@ -1,8 +1,5 @@
 ---
 title: Mixpanel integration with AppsFlyer
-excerpt: >-
-  Learn how to automatically share data from AppsFlyer to Mixpanel, a product
-  analytics platform.
 metadata:
   keywords:
     - Attribution
@@ -31,13 +28,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447103-Mixpanel-integration-with-AppsFlyer
 ---
+**At a glance:** Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform.
+
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
 
 The integration between AppsFlyer and Mixpanel enables you to import the Acquisition Campaign information from AppsFlyer to Mixpanel.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Mixpanel
 
@@ -50,8 +49,8 @@ The integration between AppsFlyer and Mixpanel enables you to import the Acquisi
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -61,7 +60,7 @@ The Integration tab is divided into different sections as described below.
 
 ### General settings
 
-![mixpanel-general-settings.png](https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png)
+<Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * **EU Data Residency**: AppsFlyer send data to Mixpanel's US servers as a default. To send data to Mixpanel's EU servers instead, turn this toggle on.  
   ***token**: Mixpanel connects with AppsFlyer via a unique Token. If you don't already have it, you must obtain it from Mixpanel to continue with the integration.
@@ -78,7 +77,7 @@ The Integration tab is divided into different sections as described below.
 * **Send Advertiser ID**:
   * If you are using AppsFlyer customer\_user\_id parameter then it is sent to Mixpanel with every install (Leave **Send Advertiser ID** disabled).
   * If you are not using AppsFlyer customer\_user\_id - enable **Send Advertiser ID.** The device ID is sent to Mixpanel as the customer\_user\_id (unique\_id in Mixpanel).  
-    Learn more about the AppsFlyer SDK integration guide for [Android](/docs/sdk-integration-overview) and [iOS](/docs/sdk-integration-overview).
+    Learn more about the AppsFlyer SDK integration guide for <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">Android</Anchor> and <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>.
 * **Events:** Turn on to send install data to the Mixpanel Events endpoint.
 * **People:** Turn on this to send install data to the Mixpanel People endpoint.
 
@@ -90,7 +89,7 @@ The Integration tab is divided into different sections as described below.
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Mixpanel following user installs, including installs and re-engagements. Re-engagements occur when a user that already has the app installed, opens the app after a click through a campaign. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+AppsFlyer can send automatic postbacks to Mixpanel following user installs, including installs and re-engagements. Re-engagements occur when a user that already has the app installed, opens the app after a click through a campaign. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 [![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
@@ -104,7 +103,7 @@ In this section, you map AppsFlyer events with Mixpanel via postbacks.
 >
 > Mixpanel captures in-app events using their own SDK. The only event that can be sent to Mixpanel that is not captured by them is af\_uninstall.
 
-Learn more about [in-app event postbacks](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks</Anchor>.
 
 **To configure in-app events postbacks:**
 
@@ -171,15 +170,16 @@ The following shows an example of the integration steps:
 1. App has been launched (opened) by the user.
 2. The Mixpanel SDK generates a random distinct ID (**distinct\_id**).
 3. Get the Mixpanel distinct ID, and set it as the Customer user ID, using the Appsflyer SDK function **setCustomerUserId**.
-4. Send [**Start**](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#start). This API enables AppsFlyer to detect installations, sessions, and updates.
+4. Send <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#start">**Start**</Anchor>. This API enables AppsFlyer to detect installations, sessions, and updates.
 5. After the app installation is attributed, an **install** event is sent to Mixpanel with the Customer user ID, which includes the Mixpanel distinct ID.
 6. When the user registers or logs in, the Mixpanel identify() command is called with the user identifier (for example, email or customer ID). This will map the initial random distinct ID to the registered user ID.
 
-   AndroidObjective CSwiftUnity
+   <Tabs>
+   <Tab title="Android">
 
-   Mixpanel Android - [Combining anonymous and identifiable user data](https://developer.mixpanel.com/docs/android#section-combining-anonymous-and-identifiable-user-data)
+   Mixpanel Android - <Anchor target="_blank" href="https://developer.mixpanel.com/docs/android#section-combining-anonymous-and-identifiable-user-data">Combining anonymous and identifiable user data</Anchor>
 
-   ```
+   ```java
    MixpanelAPI mixpanel = MixpanelAPI.getInstance(context, MIXPANEL_TOKEN);
    mixpanel.identify("user@example.com");
 
@@ -187,24 +187,40 @@ The following shows an example of the integration steps:
    mixpanel.getPeople().identify(“user@example.com”);
    ```
 
-   Mixpanel iOS Objective C - [Combining anonymous and identifiable user data](https://developer.mixpanel.com/docs/ios#section-combining-anonymous-and-identifiable-user-data)
+   </Tab>
 
-   ```
+   <Tab title="Objective C">
+
+   Mixpanel iOS Objective C - <Anchor target="_blank" href="https://developer.mixpanel.com/docs/ios#section-combining-anonymous-and-identifiable-user-data">Combining anonymous and identifiable user data</Anchor>
+
+   ```objectivec
    [mixpanel identify:@“user@example.com”];
    ```
 
+   </Tab>
+
+   <Tab title="Swift">
+
    Mixpanel iOS Swift - [Combining anonymous and identifiable user data](https://developer.mixpanel.com/docs/swift#section-combining-anonymous-and-identifiable-user-data)
 
-   ```
+   ```swift
    mixpanel.identify(“user@example.com”);
    ```
 
+   </Tab>
+
+   <Tab title="Unity">
+
    Mixpanel Unity - [Combining anonymous and identifiable user data](https://developer.mixpanel.com/docs/unity#section-combining-anonymous-user-data-with-identifiable-user-data)
 
-   ```
+   ```csharp
    // set customer user id or device id
    Mixpanel.Identify(“user@example.com”);
    ```
+
+   </Tab>
+   </Tabs>
+
 7. Mixpanel receives the customer\_user\_id from AppsFlyer with the alias of the User ID (for example, email address).
 
 > 📘 **Note**

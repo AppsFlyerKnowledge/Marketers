@@ -1,8 +1,5 @@
 ---
 title: SKAN recommendations
-excerpt: >-
-  Use SKAN recommendations to optimize your conversion value settings and
-  receive more accurate post-install activity measurements .
 metadata:
   keywords:
     - Marketers
@@ -25,11 +22,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/7078169815057-SKAN-recommendations
 ---
+**At a glance**: Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements.
+
 ## Overview
 
 SKAdNetwork (SKAN), part of Apple iOS, lets advertisers measure campaign performance while simultaneously preserving user privacy. With SKAdNetwork, post-install activity is measured using only numbers—conversions values— between 0-63.
 
-The AppsFlyer [Conversion Studio](/docs/skan-conversion-studio) provides you with maximum flexibility to make every conversion value (CV) count. You determine precisely what measurement data should be encoded within the CV—including what activities should be measured during the post-install period, and for how long.
+The AppsFlyer <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">Conversion Studio</Anchor> provides you with maximum flexibility to make every conversion value (CV) count. You determine precisely what measurement data should be encoded within the CV—including what activities should be measured during the post-install period, and for how long.
 
 However, given the limited measurement capabilities of SKAN, it can be difficult to decide what to measure (for example, revenue, in-app events, or retention) and how to best utilize the CVs between 0-63. Decisions may be based on estimates, trial and error, or machine learning tools that use internal app data. And the measurements are not always as accurate as they could be.
 

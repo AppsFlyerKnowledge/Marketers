@@ -1,10 +1,5 @@
 ---
 title: Set up AppsFlyer preload referrer attribution
-excerpt: >-
-  AppsFlyer uses preload referrer to attribute installs to preload campaigns,
-  where marketers contract with Original Equipment Manufacturers (OEMs), mobile
-  carriers, and app discovery partners to preload their app at the factory or at
-  the time the device is first turned on by the user.
 metadata:
   keywords:
     - Advertisers
@@ -26,13 +21,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4543811207313-Set-up-AppsFlyer-preload-referrer-attribution
 ---
+**At a glance:** AppsFlyer uses preload referrer to attribute installs to preload campaigns, where marketers contract with Original Equipment Manufacturers (OEMs), mobile carriers, and app discovery partners to preload their app at the factory or at the time the device is first turned on by the user.
+
 ## Overview
 
 In preload campaigns, Original Device Manufacturers (OEMs), mobile carriers, and app discovery partners preload apps on devices before they reach the user. This can be done by the OEM at the factory or by providers upon first device activation.
 
 Preload campaigns allow advertisers to reach a potentially large audience without running online campaigns.
 
-Preload referrer attribution (1 of 3 [preload attribution methods](/docs/appsflyer-attribution-model#preload-campaigns)) gives marketers an accurate and privacy-preserving mechanism to measure the performance of preload campaigns. This method provides marketers with deterministic attribution results and simultaneously ensures that user privacy is preserved since attribution is performed via referrer matching with a referrer generated independently of the device and user identifiers.
+Preload referrer attribution (1 of 3 <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">preload attribution methods</Anchor>) gives marketers an accurate and privacy-preserving mechanism to measure the performance of preload campaigns. This method provides marketers with deterministic attribution results and simultaneously ensures that user privacy is preserved since attribution is performed via referrer matching with a referrer generated independently of the device and user identifiers.
 
 The solution provides:
 
@@ -67,7 +64,7 @@ Preload/click to download engagement campaign performance data is available as f
 
 **Prerequisites:**
 
-* Integrate AppsFlyer [Android SDK 6.10.1+](/docs/appsflyer-android-sdk-release-notes).
+* Integrate AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-android-sdk-release-notes">Android SDK 6.10.1+</Anchor>.
 * Contract with an AppsFlyer preload partner.
 
 **To set up preload referrer attribution**:

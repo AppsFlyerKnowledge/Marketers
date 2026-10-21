@@ -1,8 +1,5 @@
 ---
 title: SDK information (version & consent) dashboard
-excerpt: >-
-  Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS
-  ATT consent metrics.
 metadata:
   keywords:
     - SDK Information
@@ -26,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000805366-SDK-information-version-consent-dashboard
 ---
+**At a glance:** Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics.
+
 ## Version adoption and ATT consent dashboard
 
 Data in the dashboard is derived from the af\_open (session) event and isn't related to install events. The dashboard has the following main sections: 
@@ -60,7 +59,7 @@ The following shows the version metrics available for iOS and Android apps using
 
 The iOS version your users adopt can make a difference into what sort of data is available. For example, if users have iOS 16.1+, SKAN 4 data is potentially available.
 
-The [ATT status](/docs/att-implications-ios-14-and-deprecation-of-lat) is set by iOS and reported to AppsFlyer by your app. The possible ATT status values are:
+The <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat">ATT status</Anchor> is set by iOS and reported to AppsFlyer by your app. The possible ATT status values are:
 
 * **Authorized**: The user granted explicit agreement to be tracked
 * **Denied**: The user explicitly didn't agree to be tracked, or LAT was on before the user upgraded to iOS 14+
@@ -70,7 +69,7 @@ The [ATT status](/docs/att-implications-ios-14-and-deprecation-of-lat) is set by
 **Consider:**
 
 * Chart metrics are calculated using unique user app-open events on a given date. Meaning, if a user didn't open the app on a given date that user isn't counted in the metrics of that date.
-* iOS and ATT metrics only include the [ATT values defined by Apple](/docs/att-implications-ios-14-and-deprecation-of-lat#att-values-defined-by-apple); not additional values defined by AppsFlyer.
+* iOS and ATT metrics only include the <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat#att-values-defined-by-apple">ATT values defined by Apple</Anchor>; not additional values defined by AppsFlyer.
 * Consent rate metrics are calculated using the formula: Authorized / (Authorized + Denied) x 100
 
 #### ATT and iOS adoption metrics for iOS apps

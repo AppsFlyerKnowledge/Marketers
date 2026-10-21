@@ -1,9 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Create customized data views
-excerpt: >-
-  Create customized subsets of your existing source data with no SQL or
-  technical expertise needed. Data views let you modify, refine, and summarize
-  the data, so you can share only what's relevant with collaborators.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/30296051098897-Data-Collaboration-Platform-DCP-Create-customized-data-views
 ---
+**At a glance:** Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators.
+
 ## About data views
 
 **Data views** let you create customized subsets of your existing data sources that you can share in collaborations, without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what's relevant, keeping the data you share clear and focused, and all other data private and secure. Designed for non-technical users, no SQL knowledge, data expert, or data engineer is required.
@@ -40,7 +38,7 @@ With the data view builder, you can shape your data by applying the following ke
 
 ## The data view builder
 
-**![New data view - Default.png](https://files.readme.io/b34b61b2fbc092884270ce0daab9a86deae6b423775bcc648ee0eba6f319e8e5-41945719130897.png)**
+**<Image alt="New data view - Default.png" src="https://files.readme.io/b34b61b2fbc092884270ce0daab9a86deae6b423775bcc648ee0eba6f319e8e5-41945719130897.png" width="1598px" />**
 
 ## Create a data view
 
@@ -48,7 +46,7 @@ To get started creating a data view, follow the steps below:
 
 **Prerequisites**
 
-An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with DCP access.
+An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor> with DCP access.
 
 <div id="set-the-data-view-general-details" />
 
@@ -56,11 +54,11 @@ An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with DCP access.
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   ![Click Data Clean Room.png](https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png)
-2. From the main **Sources** tab (at the top), hover over the specific source you want to create the data view from, and click  ![ellipsis.png](https://files.readme.io/d3e33f1864edb1d9d2f8e18c9c7887454018a67e9f7fed054e7134231dba60a2-30296671836433.png)  (the Menu icon) at the end of the row.
+   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
+2. From the main **Sources** tab (at the top), hover over the specific source you want to create the data view from, and click  <Image alt="ellipsis.png" src="https://files.readme.io/d3e33f1864edb1d9d2f8e18c9c7887454018a67e9f7fed054e7134231dba60a2-30296671836433.png" width="0.6%" />  (the Menu icon) at the end of the row.
 3. Select **Create a data view**. You're directed to the **New data view** page.
 
-   ![Create a data view w arrow.png](https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png)
+   <Image alt="Create a data view w arrow.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
 4. Set the following fields:
    * **Data view name:** Enter a name for the data view. This can be any unique name that will help you identify it. See the [naming requirements and guidelines](#naming-requirements-and-guidelines) below.
    * **Description:** Enter a description (optional). This appears as a tooltip when hovering over the data view name under the **Sources** tab. It's recommended to highlight the primary objectives and data manipulations performed.
@@ -91,7 +89,7 @@ You can apply filters to narrow down the data by using selected attributes, help
 
 1. Under **Filters**, click **Filter data**.
 2. Click **Select column** and select the relevant column from the dropdown menu.
-3. Select anoperator.
+3. Select an operator.
 4. Enter a value.
 5. [Optional] Click **+ Condition** to add a condition to the filter.
 
@@ -121,9 +119,9 @@ Calculated fields enable you to use functions to add new fields, change data for
 
 Group your data into meaningful categories when applying an aggregation. When you add an aggregation function, the Group by section opens automatically and lets you select the field(s) that determines how the data is grouped. For example, you can group results by country, user ID, or product line to calculate totals or counts for each group.
 
-![Group by.png](https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png)  
+<Image alt="Group by.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />  
 
-**To select the fields to group by:**  
+**To select the fields to group by:**   
 Click  **+Field** to add fields.  
 **Note:** The first fields selected are the identifiers selected in the original source.
 
@@ -233,12 +231,12 @@ Click **Save** at the bottom of the page.
 
 <Accordion title="Step 6. Share your data view in a collaboration (optional)">
 
-You can [associate your data view with a collaboration](You%20can%20share%20(associate)%20your%20data%20view%20in%20a%20collaboration,%20enabling%20a%20brand%20collaborator%20to%20view%20and%20perform%20actions%20with%20it%20(based%20on%20the%20permissions%20you%20set).), enabling brand collaborators to view and perform actions with it (based on the permissions you set).  
+You can <Anchor target="_blank" href="You%20can%20share%20(associate)%20your%20data%20view%20in%20a%20collaboration,%20enabling%20a%20brand%20collaborator%20to%20view%20and%20perform%20actions%20with%20it%20(based%20on%20the%20permissions%20you%20set).">associate your data view with a collaboration</Anchor>, enabling brand collaborators to view and perform actions with it (based on the permissions you set).  
 **Note:** To associate a data view with a collaboration, you must either be the creator of the collaboration or be invited to it.
 
 > 📘 **Note**
 >
-> If you created this Data View to aggregate a transactional source for audience creation, make sure to associate it with the relevant collaboration. The aggregated Data View must be associated with the collaboration before it becomes available as a source in the Audience Builder. [Learn how to associate sources with a collaboration](/docs/data-collaboration-platform-dcp-create-a-collaboration).
+> If you created this Data View to aggregate a transactional source for audience creation, make sure to associate it with the relevant collaboration. The aggregated Data View must be associated with the collaboration before it becomes available as a source in the Audience Builder. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">Learn how to associate sources with a collaboration</Anchor>.
 
 </Accordion>
 
@@ -289,7 +287,7 @@ Transactional datasets can contain multiple records per user. Using them directl
 4. Associate the aggregated Data View with the collaboration (see [Step 6](#h_01JVSEG13462Z4XXD1NE8GW1HE) above).
 5. Use the aggregated Data View as the source in the Audience Builder.
 
-[Learn how to build audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences)
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Learn how to build audiences</Anchor>
 
 </Accordion>
 
@@ -339,10 +337,10 @@ Share your data view with the collaborator and grant them the necessary permissi
 1. In the Data Collaboration Platform, go to the **Collaborations** tab > specific collaboration.
 2. In the collaboration dashboard, click the action menu on the upper right > **Associated sources**.
 
-   ![Associate source new UI.png](https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png)
+   <Image alt="Associate source new UI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
 3. Select your data view (source) from the dropdown menu to associate it with the collaboration.  
 
-   ![select data view.png](https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png)  
+   <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="783px" />  
    Then click **Save**.
 4. **Optional:** Set custom data permissions on the data view source.
 
@@ -350,8 +348,8 @@ Share your data view with the collaborator and grant them the necessary permissi
 
    From the 3-dot menu next to the data view source, click **Edit permissions**.  
 
-   ![Edit permissions new.png](https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png)
-5. Set the permissions according to your preferences ([learn about permissions](/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source)), then click **Save**.
+   <Image alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
+5. Set the permissions according to your preferences (<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">learn about permissions</Anchor>), then click **Save**.
 
 > 📘 **Note**
 >

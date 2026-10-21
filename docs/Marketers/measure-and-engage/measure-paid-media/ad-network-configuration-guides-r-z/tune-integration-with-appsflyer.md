@@ -1,9 +1,5 @@
 ---
 title: TUNE integration with AppsFlyer
-excerpt: >-
-  TUNE, an AppsFlyer integrated partner, is a partner marketing platform.
-  Integrate with TUNE to measure incoming traffic and to enable deep linking
-  into your app.
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +21,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4406153487505-TUNE-integration-with-AppsFlyer
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png)
+**At a glance:** TUNE, an AppsFlyer integrated partner, is a partner marketing platform.  
+Integrate with TUNE to measure incoming traffic and to enable deep linking into your app.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 
 ## Setting up TUNE integration
 
@@ -43,11 +42,11 @@ AppsFlyer integration with TUNE supports click attribution.
 
 | Settings tab | Remarks |
 | --- | --- |
-| **Integration** | Configure additional [integration](/docs/set-up-an-integrated-partner) settings as required.<br /><br />The Custom\_TUNE\_tracking\_domain field is used to build your specific endpoint URL. For example, if you enter "**greatapp**", your endpoint URL will be:  <br />https://greatapp.go2cloud.org/aff_Isr?<br /><br />Use the same name for in-app events custom tracking domain. |
-| **Attribution link** | Generate [attribution links.](/docs/set-up-an-integrated-partner#attribution-link-tab) |
-| **Cost** | Get [cost data](/docs/set-up-an-integrated-partner#cost-tab). |
+| **Integration** | Configure additional <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">integration</Anchor> settings as required.<br /><br />The Custom\_TUNE\_tracking\_domain field is used to build your specific endpoint URL. For example, if you enter "**greatapp**", your endpoint URL will be:  <br />https://greatapp.go2cloud.org/aff_Isr?<br /><br />Use the same name for in-app events custom tracking domain. |
+| **Attribution link** | Generate <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">attribution links.</Anchor> |
+| **Cost** | Get <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#cost-tab">cost data</Anchor>. |
 | **Ad revenue** | Not available for this partner |
-| **Permissions** | Set ad network [permissions](/docs/set-up-an-integrated-partner#permissions-tab) as required. |
+| **Permissions** | Set ad network <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> as required. |
 
 **To edit an existing integration:**
 
@@ -55,7 +54,7 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 ## Enabling deep linking into your app
 
-Use [OneLink branded links](/docs/brand-onelink-with-your-domain) generated in AppsFlyer to measure clicks in TUNE. The following process enables deep linking users to a specific page in your app.
+Use <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">OneLink branded links</Anchor> generated in AppsFlyer to measure clicks in TUNE. The following process enables deep linking users to a specific page in your app.
 
 ### Prerequisite
 
@@ -66,8 +65,8 @@ Verify  AppsFlyer mobile SDK versions:
 
 ### Step 1: Configure links for your campaigns
 
-* Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template) for your email campaigns.
-* [Create a Branded link.](/docs/brand-onelink-with-your-domain)  
+* Create a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor> for your email campaigns.
+* <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">Create a Branded link.</Anchor>  
   When requested to add a CNAME to your domain, use `yourdomain.esplinks.appsflyer.com`, instead of the URL offered in the Branded Link creation page.  
   **Example:**
   * **Subdomain:** `click.example.com`
@@ -86,10 +85,10 @@ Verify  AppsFlyer mobile SDK versions:
 1. Go to the Attribution link tab and copy only the link parameters under **Click attribution link** as highlighted below.[![](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)
 2. Add the copied parameters to your branded link.
 
-   > 📘 **Example:**
+   > 📄 **Example:**
    >
    > ![TUNE-link-example2-en_us.png](https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png)
 
-3. To complete the setup, go to the [Managing Mobile Offers with AppsFlyer guide](https://support.tune.com/hc/en-us/articles/1500008336641-Managing-Mobile-Offers-with-Appsflyer) in TUNE's help center, scroll down to Universal Links via OneLink and follow the instructions.
+3. To complete the setup, go to the <Anchor target="_blank" href="https://support.tune.com/hc/en-us/articles/1500008336641-Managing-Mobile-Offers-with-Appsflyer">Managing Mobile Offers with AppsFlyer guide</Anchor> in TUNE's help center, scroll down to Universal Links via OneLink and follow the instructions.
 
 <div data-zendesk-anchors="h_01HJZRGVZ1VQF4N93THDRT5YCJ=setting-up-tune-integration h_01HJZRGVZ1KJ80ZA1THKFZ535P=enabling-deep-linking-into-your-app h_01HJZRGVZ1ZC9G7M72V2HW4XDS=prerequisite h_01HJZRGVZ1GPR3NQQAXRBXV09Z=step-1-configure-links-for-your-campaigns h_01HJZRGVZ2F83PHABEWJXMMJ22=step-2-set-up-the-attribution-link h_01HJZRGVZ2435CGWY4FZ5FKKHV=example" />

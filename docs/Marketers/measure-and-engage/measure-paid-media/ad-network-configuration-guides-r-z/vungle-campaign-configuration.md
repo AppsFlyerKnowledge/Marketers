@@ -1,10 +1,5 @@
 ---
 title: Vungle campaign configuration
-excerpt: >-
-  Vungle, an AppsFlyer ad network integrated partner, offers an in-app video
-  advertising platform for performance marketers. In addition to click-based
-  mobile attribution, Vungle offers cost and view-through attribution, which can
-  be recorded with AppsFlyer.
 metadata:
   keywords:
     - Vungle
@@ -27,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207990186-Vungle-campaign-configuration
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1)
+**At a glance:** Vungle, an AppsFlyer ad network integrated partner, offers an in-app video advertising platform for performance marketers. In addition to click-based mobile attribution, Vungle offers cost and view-through attribution, which can be recorded with AppsFlyer.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
 
 ## Setting up Vungle
 
@@ -45,14 +42,14 @@ an account, contact the partner to open one before setting up the integration.
    **Activate partner** toggle.   
    **Note:** The toggle
    **must stay on (active) as long as you work with the partner**.
-   [Learn more](/docs/partner-activation-deactivation)
+   <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn
    more about
-   [partner integrations.](/docs/set-up-an-integrated-partner)
+   <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
-> * The [General Settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners
+> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
 
 <div id="integration-tab" />
@@ -71,7 +68,7 @@ Connect to Vungle by activating and setting parameters in the integration tab. V
 
 **To configure the integration**:
 
-1. Enable ***Activate partner***. See more information about [partner activation](/docs/partner-activation-deactivation).
+1. Enable ***Activate partner***. See more information about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 2. **Under *General settings* enable/disable *View-through attribution*:**
    * [Default] **Enable**: Activate to attribute view-through installs to Vungle. The length of the lookback window is configured in the Attribution link tab.
    * **Disable**: View-through installs from the partner are not attributed.
@@ -97,10 +94,10 @@ Connect to Vungle by activating and setting parameters in the integration tab. V
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).  
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.  
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -108,13 +105,13 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -126,7 +123,7 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 **To enable the ad revenue API**:
 
-* Follow [these integration instructions](/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners).
+* Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
 </Accordion>
 
@@ -155,7 +152,7 @@ You can give Vungle permission to view information or configure changes in the i
 | Allow spend ingestion |  |
 | Allow access to your Protect360 dashboard | [If enabled] Partner’s Protect360 data |
 
-Learn more about giving [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about giving <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 ### Agency permissions
 
@@ -172,7 +169,7 @@ You can allow Vungle to configure your app as an agency.
 | **Allow access to aggregate organic data** | Agency’s aggregate organic data |
 | **Allow to configure in-app event postbacks** | Set up in-app event postbacks that are mapped to the integration tab. |
 
-Learn more about granting [agency permissions](/docs/set-up-an-integrated-partner#agency-permissions).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">agency permissions</Anchor>.
 
 </Accordion>
 

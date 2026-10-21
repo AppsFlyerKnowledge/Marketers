@@ -1,9 +1,5 @@
 ---
 title: '[Closed beta] Use AI Predictive Audiences to reach high-intent users'
-excerpt: >-
-  Predictive Audiences uses AI to create an audience of users most likely to
-  take a key action, such as purchasing, so you can reach high-intent users,
-  reduce wasted spend, and maximize campaign impact.
 metadata:
   keywords:
     - Premium
@@ -28,11 +24,13 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Predictive Audiences uses AI to create an audience of users most likely to take a key action, such as purchasing, so you can reach high-intent users, reduce wasted spend, and maximize campaign impact.
+
 <Embed title="[Closed beta] Use AI Predictive Audiences to reach high-intent users" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
 ## About Predictive Audiences
 
-Predictive Audiences, part of AppsFlyer [Audiences](/docs/audiences-guide), helps you create AI-powered audiences of users most likely to take a key action. Use it to predict who is most likely to purchase within the next 7 days, so you can focus your campaigns on high-intent users and improve campaign efficiency.
+Predictive Audiences, part of AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>, helps you create AI-powered audiences of users most likely to take a key action. Use it to predict who is most likely to purchase within the next 7 days, so you can focus your campaigns on high-intent users and improve campaign efficiency.
 
 You can adjust the likelihood range to create a narrower audience of higher-intent users or a broader audience with greater reach, then connect the audience to your partners for activation. Once created, the audience refreshes daily and is automatically and continuously sent to your connected partners.
 
@@ -42,7 +40,7 @@ You can adjust the likelihood range to create a narrower audience of higher-inte
 
 To get started using Predictive Audiences, follow the steps below:
 
-* **Prerequisite:** An AppsFlyer [Audiences](/docs/audiences-guide) subscription. Predictive Audiences is currently in beta and is enabled per account. To gain access, contact your CSM.
+* **Prerequisite:** An AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor> subscription. Predictive Audiences is currently in beta and is enabled per account. To gain access, contact your CSM.
 
 <div id="step-1-define-the-goal" />
 
@@ -80,7 +78,7 @@ You can select a suggested preset or drag the chart markers to customize the ran
 
 2. To customize the range, drag the minimum and maximum markers on the graph.
 
-   ![Set probability range Correct version.png](https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png)
+   <Image alt="Set probability range Correct version.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
 
    The **Estimated audience size** updates in real time based on your selections.
 

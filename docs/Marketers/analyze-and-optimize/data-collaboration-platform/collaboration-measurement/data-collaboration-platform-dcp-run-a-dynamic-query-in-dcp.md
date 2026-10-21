@@ -1,10 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Run a dynamic query in DCP
-excerpt: >-
-  Dynamic Query lets you run your own SQL queries directly on your Data
-  Collaboration Platform (DCP) data. Query your own data, your own AF
-  attribution data, or data shared inside a collaboration, to answer specific
-  questions without setting up a report.
 deprecated: false
 hidden: false
 x-zendesk:
@@ -19,6 +14,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/51953788887569-Data-Collaboration-Platform-DCP-Run-a-dynamic-query-in-DCP
 ---
+**At a glance:** Dynamic Query lets you run your own SQL queries directly on your Data Collaboration Platform (DCP) data. Query your own data, your own AF attribution data, or data shared inside a collaboration, to answer specific questions without setting up a report.
+
 ## About Dynamic Query
 
 Dynamic Query gives you the ability to run ad hoc, custom queries on your DCP data in real time to answer your specific collaboration questions quickly and efficiently.
@@ -30,7 +27,7 @@ Dynamic Query works differently depending on whether you are querying your own d
 
 ## Before you start
 
-Before you can run any query, [configure your cloud bucket destination](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services). This step is required, because every query runs against your own cloud bucket and writes results directly to your storage. AppsFlyer does not store your query results, so your data stays within your own cloud environment.
+Before you can run any query, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">configure your cloud bucket destination</Anchor>. This step is required, because every query runs against your own cloud bucket and writes results directly to your storage. AppsFlyer does not store your query results, so your data stays within your own cloud environment.
 
 ## Run a query on your own data
 
@@ -47,7 +44,7 @@ The following sections cover how to access and query data you own. The Sources p
 
    > 📘 **Note**
    >
-   > This helps your filters match real data before you write the query. For more information, see [Data Collaboration Platform (DCP) - Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources).
+   > This helps your filters match real data before you write the query. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Data Collaboration Platform (DCP) - Create and manage sources</Anchor>.
 
 2. Write your query freely, at raw level or aggregated, your choice. Every source here belongs to you, so there's no permission check and no GROUP BY requirement.
 
@@ -66,7 +63,7 @@ The following sections cover how to access and query data shared with you in a c
 2. Select the **Collaborations** tab, then select the relevant collaboration.
 3. Select the **Dynamic Query** tab.
 
-When you query data shared in a collaboration, Dynamic Query can access every source [added to that collaboration](/docs/data-collaboration-platform-dcp-create-a-collaboration#step-4-associate-sources-optional).
+When you query data shared in a collaboration, Dynamic Query can access every source <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration#step-4-associate-sources-optional">added to that collaboration</Anchor>.
 
 ### Write your query with collaboration data
 
@@ -74,9 +71,9 @@ When you query data shared in a collaboration, Dynamic Query can access every so
 
    > 📘 **Note**
    >
-   > This helps your filters match real data before you write the query. For more information, see [Data Collaboration Platform (DCP) - Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources).
+   > This helps your filters match real data before you write the query. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Data Collaboration Platform (DCP) - Create and manage sources</Anchor>.
 
-2. [Check the source's permission type](/docs/data-collaboration-platform-dcp-sharing-permissions) to determine whether your query needs a join. There are two permission types:
+2. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">Check the source's permission type</Anchor> to determine whether your query needs a join. There are two permission types:
 
    
 
@@ -87,7 +84,7 @@ When you query data shared in a collaboration, Dynamic Query can access every so
 
 3. Write your query with a GROUP BY clause or an aggregate function, such as `COUNT(*)`.
 
-   > 📘 **Important**
+   > 🚧 **Important**
    >
    > A source you do not own always returns aggregated results, no matter which permission type it is shared under. Raw-level results stay available only for sources you own.
 
@@ -198,7 +195,7 @@ Select **All runs** to see your query history, including status and duration for
 
 Results display in pages of 100 rows, up to 10 pages (1,000 rows total). To see everything, download the results. Your total result count always shows, even if it is larger than what is displayed. This count caps at 10 million, so if your actual result count is 20 million, the displayed count still shows 10 million.
 
-You can download up to 1 million rows directly. If your results are larger, Dynamic Query redirects you to your [cloud bucket](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services) instead. Your cloud bucket holds up to 10 million rows. If you need more, contact your Customer Success Manager (CSM) to expand this limit.
+You can download up to 1 million rows directly. If your results are larger, Dynamic Query redirects you to your <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">cloud bucket</Anchor> instead. Your cloud bucket holds up to 10 million rows. If you need more, contact your Customer Success Manager (CSM) to expand this limit.
 
 </Accordion>
 
@@ -221,10 +218,10 @@ Dynamic Query applies privacy protections at multiple levels:
 
 ## See also
 
-* [Data Clean Room Dynamic Query](/docs/data-clean-room-dynamic-query)
-* [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)
-* [Data Collaboration Platform (DCP) sharing permissions](/docs/data-collaboration-platform-dcp-sharing-permissions)
-* [Data Collaboration Platform (DCP) - Create a collaboration](/docs/data-collaboration-platform-dcp-create-a-collaboration#step-4-associate-sources-optional)
-* [Raw data field dictionary](/docs/raw-data-field-dictionary)
+* <Anchor target="_blank" href="/marketers/docs/data-clean-room-dynamic-query">Data Clean Room Dynamic Query</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP) guide</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">Data Collaboration Platform (DCP) sharing permissions</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration#step-4-associate-sources-optional">Data Collaboration Platform (DCP) - Create a collaboration</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">Raw data field dictionary</Anchor>
 
 <div data-zendesk-anchors="h_01M56WAZ8VZKYM6TP7AYGKQA52=about-dynamic-query h_01M56WAZ8VQ4D6NHCNJ463ZJE4=before-you-start h_01M56WAZ8VPZPM8P1H0DNVTTA6=run-a-query-on-your-own-data h_01M56WAZ8VQ4NNZEYAX4ZAZCFZ=access-dynamic-query h_01M56WAZ8VPG7QEAPSSBG11N11=write-your-query-on-your-own-data h_01M56WAZ8VDWA030BB53YP1TR2=note h_01M56WAZ8VBVRQV8B7J0TA21ZM=note-1 h_01M56WAZ8V82DRQ92ZPC3KFZYJ=run-a-query-with-collaboration-data h_01M56WAZ8VK33RR50SWQYV7KE0=access-dynamic-query-in-a-collaboration h_01M56WAZ8WXRM23PDCTA11APA2=write-your-query-with-collaboration-data h_01M56WAZ8WM0ZHFDKTT7AZ1CG8=note-2 h_01M56WAZ8W01XKEQDYVZCQ23ZZ=important h_01M56WAZ8W348ZTS79F23MAP3C=explore-sample-queries h_01M56WAZ8WZ23RCK7TYQC2FPZD=view-and-download-query-results h_01M56WAZ8WK936BRP4F7VHG954=note-3 h_01M56WAZ8W471Z9B14ZJ3V41VC=privacy-and-query-restrictions h_01M56WAZ8WCVFPD8JMHQ39HMEJ=traits-and-limitations h_01M56WAZ8WBY66ZBNHSNGFAJKD=see-also" />

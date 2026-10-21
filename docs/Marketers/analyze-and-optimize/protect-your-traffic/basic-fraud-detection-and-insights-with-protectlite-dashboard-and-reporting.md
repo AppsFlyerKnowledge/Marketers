@@ -1,9 +1,5 @@
 ---
 title: Basic fraud detection and insights​ with ProtectLITE dashboard and reporting
-excerpt: >-
-  ProtectLITE provides insights about fraudulent installs blocked by our basic,
-  free protection engine, and installs blocked due to the application of
-  validation rules.
 metadata:
   keywords:
     - Advertisers
@@ -26,19 +22,21 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017223058-Basic-fraud-detection-and-insights-with-ProtectLITE-dashboard-and-reporting
 ---
+**At a glance:** ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules.
+
 ## ProtectLITE
 
-ProtectLITE provides free, basic protection against install attribution fraud. Advanced fraud protection and detection are available with [Protect360](/docs/protect360-anti-fraud-guide).
+ProtectLITE provides free, basic protection against install attribution fraud. Advanced fraud protection and detection are available with <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
 
 When AppsFlyer identifies fraud, it is blocked in the traffic data (available via AppsFlyer dashboards and raw data reports), but it does not impact the end-user app experience. This means the app user can still use the app and generate revenue for the advertiser.
 
 The ProtectLITE dashboard:
 
-* Displays aggregate data for all your apps for installs blocked in real-time, either due to fraudulent installs, hijacked installs, or your [Validation Rules](/docs/implement-validation-rules-to-prevent-fraud).
+* Displays aggregate data for all your apps for installs blocked in real-time, either due to fraudulent installs, hijacked installs, or your <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules</Anchor>.
 * Allows you to drill down to further examine identified installs by using the filtering and grouping options.
 * Shows you additional anti-fraud capabilities that can be accessed only with a Protect360 subscription, including: Advanced real-time fraud, post-attribution fraud, in-app events fraud, in-app events Validation Rules, and anomalies analysis tools.
 
-ProtectLITE [raw data](/docs/protect360-raw-data-reports):
+ProtectLITE <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">raw data</Anchor>:
 
 * Is available in the Protect360 Installs report via the Export Data page and Pull API.
 
@@ -61,14 +59,14 @@ The following filtering and grouping options are available:
   * Source type: Non-organic and/or organic
   * Media source
   * Geo
-  * Date range ([see time zone support](/docs/about-data-freshness-and-timezone-support#protect360-dashboard))
+  * Date range (<Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#protect360-dashboard">see time zone support</Anchor>)
 * Expanded filters - click on the blue arrow, to the right of the date picker:
   * Agencies
   * Channels
   * Minimum cohort size
 * Grouping options - choose different dimensions to group the fraud data by to get the specific insights you need:
   * **Application:** compare the total amount of fraud per each of your apps.
-  * **Media Source**(default): compare the handled fraud from each of the media sources used by your apps.
+  * **Media Source** (default): compare the handled fraud from each of the media sources used by your apps.
   * **Media Source + Campaign**: compare the handled fraud from all your campaigns across all media sources used by your apps.
   * **Media Source + Site ID**: compare the handled fraud from all publishers (site IDs) across all media sources used by your apps.
   * **Media Source + Site ID + Campaign**: compare the handled fraud from all publishers (site IDs) across all media sources used by your apps, associated with the relevant campaign names.
@@ -101,7 +99,7 @@ Estimated savings metrics:
 * Uses the formula: Estimated Savings = number of blocked installs X app average eCPI.
 * Are not relevant for organic traffic.
 
-For more details on how this amount is calculated read this [FAQ](/docs/protect360-anti-fraud-guide#faq).
+For more details on how this amount is calculated read this <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>.
 
 #### Identified installs
 
@@ -160,7 +158,7 @@ The dynamic table structure lets you:
 | **Installs** | **Headline breakdown of installs blocked due to fraud and Validation Rules** |
 | Total (A) | <ul><li>Total installs = All app installs including fraudulent installs and installs identified via Validation Rules.</li><li>Regular installs are available per media source (non-organic) in the Overview dashboard.</li></ul> |
 | Identified installs (B) | <ul><li>Total number of installs identified and blocked in real-time</li><li>Organic blocked installs are not shown in the dashboard. To see organic blocked installs, use raw data reports.</li><li>[Default] The table is sorted in descending order using this KPI.</li></ul> |
-| **Identified installs %**(B/A) | Identified installs / Total installs |
+| **Identified installs %** (B/A) | Identified installs / Total installs |
 | **Identified post-attribution (C)** | Requires Protect360 |
 | **Identified post-attribution % (C/A)** | Requires Protect360 |
 | **Fake installs** | **Fraudulent installs simulating real user activity.** |
@@ -188,8 +186,8 @@ The dynamic table structure lets you:
 | Trait | Remarks |
 | --- | --- |
 | Advertiser access | All account users. |
-| Ad network access | <ul><li>ProtectLITE dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions)</li><li>Advertiser must have the ad network as an integrated partner.</li></ul> |
-| Agency access | ProtectLITE dashboard and raw data access require [advertiser permission.](/docs/set-up-an-integrated-partner#ad-network-permissions) |
+| Ad network access | <ul><li>ProtectLITE dashboard and raw data access require <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">advertiser permission.</Anchor></li><li>Advertiser must have the ad network as an integrated partner.</li></ul> |
+| Agency access | ProtectLITE dashboard and raw data access require <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#ad-network-permissions">advertiser permission.</Anchor> |
 | Agency transparency | Transparent agency: Can see specific media sources<br /><br />Non-transparent agency: Cannot see specific media sources |
 
 </Accordion>

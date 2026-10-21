@@ -1,8 +1,5 @@
 ---
 title: Report generation quotas (rate limitations)
-excerpt: >-
-  A quota (rate limitation) mechanism limits the number of reports you can
-  generate per day through both Pull API and the data export pages.
 metadata:
   keywords:
     - Advertisers
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034366-Report-generation-quotas-rate-limitations
 ---
+> **At a glance:** A quota (rate limitation) mechanism limits the number of reports you can generate per day through both Pull API and the data export pages.
+
 ## Rate limits for reports
 
 The quota limits the number of reports you can generate per day per report type. The quota varies according to your subscription plan.
@@ -92,8 +91,8 @@ Ad networks can pull the following postback report types:
 * Q: Do agency-generated Pull API reports count against the advertiser's quota?  
   A: No. Agencies and advertisers have separate Pull API quotas. Agency-generated reports don't count against the advertiser quota. The only exception is when an agency uses the advertiser's API token instead of their own, in which case those requests count as advertiser requests.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Data availability windows](/docs/data-availability-windows)
+> * <Anchor target="_blank" href="/marketers/docs/data-availability-windows">Data availability windows</Anchor>
 
 <div data-zendesk-anchors="h_01H9JNZFPSVXPKMEVR1ZR6PSYG=rate-limits-for-reports h_01H9JNZFPS62A5CFWSXVPN8XM5=aggregated-and-analytics-reports h_01H9JNZFPSPYWBB2MCZV2R2KX1=raw-data h_01M4WW4PAZ64FXVR1QPKE53DS7=pull-api-raw-data-daily-quota h_01M4WW4PAZFMX9X0DFX1E6F9M0=note h_01H9JNZFPSYXZNW81BZTRDS576=ad-network-postback-reports-daily-quota h_01H9JNZFPT76RAV8JBTY2K75V4=faq h_01HE7SW3VWRNVY1WFB4YCSAVY6=see-also" />

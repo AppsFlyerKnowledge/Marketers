@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551378485649-Incrementality-for-remarketing
 ---
-- [Incrementality for remarketing overview](/docs/incrementality-for-remarketing-overview)
-- [Run an Incrementality for remarketing experiment](/docs/run-an-incrementality-for-remarketing-experiment)
-- [Understand Incrementality for remarketing experiment alerts](/docs/understand-incrementality-for-remarketing-experiment-alerts)
+- <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality for remarketing overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/run-an-incrementality-for-remarketing-experiment">Run an Incrementality for remarketing experiment</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/understand-incrementality-for-remarketing-experiment-alerts">Understand Incrementality for remarketing experiment alerts</Anchor>

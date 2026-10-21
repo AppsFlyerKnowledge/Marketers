@@ -1,8 +1,5 @@
 ---
 title: User-level data retention
-excerpt: >-
-  Retention and user-level (raw data) use policies are determined by AppsFlyer,
-  relevant laws, and SRNs (" Partners ") terms of use.
 metadata:
   keywords:
     - Advertisers
@@ -29,7 +26,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006091197-User-level-data-retention
 ---
-> 📘 **Caution**
+**At a glance:** Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs ("**Partners**") terms of use.
+
+> ❗️ **Caution**
 >
 > AppsFlyer provides the data restriction explanations, in this article, for information purposes only.  *Nothing stated here is legal advice. It is provided for your information and convenience.*
 
@@ -39,7 +38,7 @@ AppsFlyer receives user-level data from apps, partners, and other sources.
 
 ### Availability of user-level data to advertisers
 
-Typically, user-level data is made available to advertisers via raw data reporting tools if their subscription package includes raw data during a 90-day access window (See [data availability windows](/docs/data-availability-windows)). In some cases, there are also [raw data restrictions](/docs/about-raw-data-identifier-restrictions).
+Typically, user-level data is made available to advertisers via raw data reporting tools if their subscription package includes raw data during a 90-day access window (See <Anchor target="_blank" href="/marketers/docs/data-availability-windows">data availability windows</Anchor>). In some cases, there are also <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">raw data restrictions</Anchor>.
 
 ### Data retention
 
@@ -52,7 +51,7 @@ Before the end of the retention period, user events are attributed to the media 
 
 The retention period is determined according to the following:
 
-* [AppsFlyer Services Privacy Policy](https://www.appsflyer.com/legal/processing-customer-data/)
+* <Anchor target="_blank" href="https://www.appsflyer.com/legal/processing-customer-data/">AppsFlyer Services Privacy Policy</Anchor>
 * As directed, required, or allowed by law
 * Partner terms of use and retention period as listed in the table that follows.
 
@@ -61,9 +60,9 @@ Consider the following:
 * The access window and retention period may differ
 * AppsFlyer, in some cases, may extend the access window
 * The retention period can vary per partner, bringing the user
-* Some user-level data is attributed to the [restricted media source](/docs/about-raw-data-identifier-restrictions), which means that raw data doesn't contain the attribution data. This can occur in the following instances:
+* Some user-level data is attributed to the <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">restricted media source</Anchor>, which means that raw data doesn't contain the attribution data. This can occur in the following instances:
   * Partner data sharing policy
-  * [Aggregated Advanced Privacy](/docs/apply-aggregated-advanced-privacy-framework) is on
+  * <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> is on
 
 #### Partner data retention periods
 
@@ -79,11 +78,11 @@ Consider the following:
 | Microsoft | microsoftdisplay\_int and bingsearch\_int | 13 |
 | Pinterest | pinterest\_int | 6 |
 | Samsung DSP | samsungdsp\_int | 3 |
-| Snapchat* ([TOS](https://businesshelp.snapchat.com/en-US/article/attribution-terms)) | snapchat\_int | 6 |
+| Snapchat* (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) | snapchat\_int | 6 |
 | TikTok for Business* | tiktokglobal\_int | 13 |
 | X Ads (formerly Twitter) | twitter\_int | 3 |
 
-> 📘 **Note**
+> 📘 **Note***
 >
 > For SRNs, the retention periods in this table apply only to data provided by the SRN directly. They do not apply to attribution made via AppsFlyer W2A attribution links (`googleads_int`, `metaweb_int`, `tiktokweb_int`, `snapweb_int`).
 

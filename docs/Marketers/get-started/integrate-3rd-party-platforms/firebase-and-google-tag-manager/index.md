@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551267006225-Firebase-and-Google-Tag-Manager
 ---
-- [Using Firebase and Google Tag Manager with AppsFlyer—Overview](/docs/using-firebase-and-google-tag-manager-with-appsflyer-overview)
-- [Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup](/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup)
-- [Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events](/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events)
+- <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-overview">Using Firebase and Google Tag Manager with AppsFlyer—Overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">Using Firebase and Google Tag Manager with AppsFlyer—Google Tag Manager setup</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-sending-installs-and-events">Using Firebase and Google Tag Manager with AppsFlyer—Sending installs and events</Anchor>

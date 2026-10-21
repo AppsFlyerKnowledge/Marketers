@@ -1,6 +1,5 @@
 ---
 title: Google Ads postback partners—Configuration
-excerpt: Enable Google Ads postback partners to help run your Google Ads campaigns.
 metadata:
   keywords:
     - postbacks
@@ -27,15 +26,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4411047077905-Google-Ads-postback-partners-Configuration
 ---
+**At a glance:** Enable Google Ads postback partners to help run your Google Ads campaigns.
+
 Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
 
 These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](/docs/google-ads-postback-partners-configuration#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
 
-The advertiser needs an active Google Ads account [set up](/docs/google-ads-adwords-integration-setup-for-advertisers) in AppsFlyer, and also to set up the specific GAPP in AppsFlyer to enable sending postbacks to it.
+The advertiser needs an active Google Ads account <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">set up</Anchor> in AppsFlyer, and also to set up the specific GAPP in AppsFlyer to enable sending postbacks to it.
 
 Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
 
@@ -45,7 +46,7 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 2. Type the name of the GAPP you would like to work with into the search box and select it from the dropdown list.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > Enter "Google Ads" in the search box and press Enter to receive the list of GAPPs.
 
@@ -57,7 +58,7 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 5. Paste the number in the **Google Ads Customer ID** field.
 
-6. Configure the [In-App Events Postback section](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration).
+6. Configure the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">In-App Events Postback section</Anchor>.
 
 7. Click **Save**.
 
@@ -77,7 +78,7 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 An advertiser is running Google Ads campaigns and wants the traffic from its Google Ads accounts to be sent to GAPP X.
 
-1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
+1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
 2. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
 
 The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google Ads configuration.
@@ -90,8 +91,8 @@ The advertiser must enter all its CIDs (Ads Account IDs) in the GAPP X - Google 
 
 An advertiser and an agency are both running Google Ads campaigns, the advertiser wants only its traffic to be sent to GAPP X.
 
-1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
-2. Agency [configures](/docs/google-ads-adwords-integration-setup-for-agencies) Google Ads (just for their traffic to be attributed to them as an agency)
+1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
+2. Agency <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">configures</Anchor> Google Ads (just for their traffic to be attributed to them as an agency)
 3. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
 
 The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration.
@@ -104,8 +105,8 @@ The advertiser must enter ONLY its CIDs in the GAPP X - Google Ads configuration
 
 An advertiser and agency are running Google Ads campaigns, the agency wants only its traffic to be sent to GAPP X.
 
-1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
-2. Agency [configures](/docs/google-ads-adwords-integration-setup-for-agencies) Google Ads
+1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
+2. Agency <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">configures</Anchor> Google Ads
 3. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads
 
 The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
@@ -118,8 +119,8 @@ The agency must enter ONLY their CIDs in the GAPP X - Google Ads configuration
 
 An advertiser and agency are running Google Ads campaigns, both the advertiser and agency want their traffic to be sent to GAPP X.
 
-1. Advertiser [configures](/docs/google-ads-adwords-integration-setup-for-advertisers) Google Ads
-2. Agency [configures](/docs/google-ads-adwords-integration-setup-for-agencies) Google Ads
+1. Advertiser <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">configures</Anchor> Google Ads
+2. Agency <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">configures</Anchor> Google Ads
 3. Advertiser [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
 4. Agency [configures](/docs/google-ads-postback-partners-configuration#google-ads-postback-partner-setup) GAPP X - Google Ads for their CIDs
 
@@ -135,8 +136,8 @@ For example, `campaign type`, `city`, `carrier` and `ad_type` are parameters, 
 
 There are two sources for GAPP postback parameters:
 
-1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click [here](/partners/docs/postback-macros-for-ad-networks).
-2. **Google Response** - with every install attributed to Google Ads, AppsFlyer receives relevant information from Google. The following are available parameters on GAPPs postbacks, as received by AppsFlyer from Google Ads (for detailed parameter descriptions, click [here](https://developers.google.com/app-conversion-tracking/api/request-response-specs#sample_responses))
+1. **AppsFlyer macros** - for details of all the macros available on AppsFlyer's postbacks, click <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks">here</Anchor>.
+2. **Google Response** - with every install attributed to Google Ads, AppsFlyer receives relevant information from Google. The following are available parameters on GAPPs postbacks, as received by AppsFlyer from Google Ads (for detailed parameter descriptions, click <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs#sample_responses">here</Anchor>)
    * Ad Events ID
    * Campaign ID
    * Campaign Name

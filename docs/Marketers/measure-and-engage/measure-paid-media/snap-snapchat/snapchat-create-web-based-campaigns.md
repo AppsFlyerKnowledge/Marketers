@@ -1,8 +1,5 @@
 ---
 title: Snapchat—Create web-based campaigns
-excerpt: >-
-  Use Snapchat Ads Web campaigns to attribute web-to-app conversions from
-  Snapchat Ads
 metadata:
   keywords:
     - Marketers
@@ -23,11 +20,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41365000854161-Snapchat-Create-web-based-campaigns
 ---
+**At a glance:** Use Snapchat Ads Web campaigns to attribute web-to-app conversions from Snapchat Ads
+
 ## Overview
 
 AppsFlyer supports integration with Snapchat Ads (`snapweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through Snapchat's Events API. Snapchat can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > At present, the integration with Snapchat Web does not support sending re-engagement postbacks to CAPI.
 
@@ -62,9 +61,9 @@ To activate the Snapchat Ads web integration:
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
 2. Search for **Snapchat Web** and select it.
 3. Click **Set up integration**. You’re directed to the **Active Integrations** setup page.
-4. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
-5. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
-6. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Snapchat, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+4. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
+5. Turn off **Advanced Privacy** (if you are setting an iOS app integration).
+6. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Snapchat, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 7. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your Snapchat Ads Manager by following the instructions detailed in the [Snapchat Ads official documentation](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US)
 8. **Access token:** Enter the access token. To generate it or retrieve it, follow the [instructions in the Snapchat Ads official documentation](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
 
@@ -83,7 +82,7 @@ If available, the `ScCid` will be included in the postback to Snapchat to enha
 1. In AppsFlyer, from the sidebar, open **Active Integrations** > **Snapchat Ads web**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Enable equal priority for cross-platform impressions</Anchor>.
 5. Open the **Attribution link** tab.
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
@@ -99,19 +98,19 @@ Installs are currently the only events that trigger automatic default postbacks 
 To set in-app events postbacks, perform the following:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in [In-app event postback configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">In-app event postback configuration</Anchor>).
 3. Click **Add event** to add an event to the list.
-4. In the **AppsFlyer event**column, select the event name from the list. AppsFlyer receives the event's name either from the SDK integrated into your app or from server-to-server events.
-5. In the **Mapped to Partner Event** column,select the most suitable predefined partner event from the list.
+4. In the **AppsFlyer event** column, select the event name from the list. AppsFlyer receives the event's name either from the SDK integrated into your app or from server-to-server events.
+5. In the **Mapped to Partner Event** column, select the most suitable predefined partner event from the list.
 6. In the **For Users From** column, select **This Partner Only** to ensure that in-app event postbacks are sent only for events performed by users who originated from this partner.
-7. In the **including** column, select whether to send events with their revenue values. See [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
+7. In the **including** column, select whether to send events with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
 
    > 📘 **Note**
    >
    > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option causes the postback to fail.
    > * Currently, you can set only the purchase event to include revenue.
 
-8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
+8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
 10. [Optional] After you save the integration, and while you remain on the configuration page, you can integrate additional apps with the partner:
     1. From the top-left corner, select the app name under the partner name to open the list of apps.
@@ -130,7 +129,7 @@ Perform the next steps in Snapchat Ads Manager.
 
 You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign goal, or choose “PAGE\_VIEW” if you want to optimize for mobile App Installs.
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
 > Make sure that you do not choose **App Events;** otherwise, Snapchat will claim those conversions using the SRN API, which can lead to misalignments in reporting and optimization.
 
@@ -140,7 +139,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
 <Accordion title="2. Set destination URL">
 
-1. Under **Destination,** in the **Website URL**field, enter the URL that serves as the destination for your ad. The URL should be for one of the following:
+1. Under **Destination,** in the **Website URL** field, enter the URL that serves as the destination for your ad. The URL should be for one of the following:
    * **Web landing page:** Using a landing page is recommended when:
 
      * You have an app on multiple platforms.
@@ -175,14 +174,14 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
      * If your app’s APK is NOT hosted in Google Play Store, add the [`af_r`](/docs/about-link-structure-and-parameters#af_r) parameter and map to it the store URL, e.g, `https://Add-your-store-url.com`
 
-* If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information, see: [CTV, PC, and console platform direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)
+* If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information, see: <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, PC, and console platform direct attribution links</Anchor>
 
 | Attribution link structure |  |
 | --- | --- |
 | Base URL | engagements.appsflyer.com/v1.0/c2s/click/app/ |
 | Mandatory path parameters | ▪ platformExample: steam  <br />▪ app\_idExample: 123456 |
 | Mandatory query parameters | ▪ af\_media\_source  <br />▪ af\_campaign\_id  <br />▪ af\_r |
-| Other parameters | [See all parameters](/docs/ctv-pc-and-console-platform-direct-attribution-links#parameters) |
+| Other parameters | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links#parameters">See all parameters</Anchor> |
 | URL structure | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 
   Map the following AppsFlyer parameters to their Snapchat counterparts:
@@ -210,9 +209,10 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
   >
   > Snapchat adds the `ScCid={{ScCid}}` to the destination URL automatically when the ad is clicked
 
-  > 📘 **Note**
+
+  > 📄
   >
-  > For a comprehensive guide on the AF link parameters, see [Attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters).
+  > For a comprehensive guide on the AF link parameters, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">Attribution link parameters</Anchor>.
 
 
 </Accordion>
@@ -229,7 +229,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
 1. The Snapchat ad URL includes the `pid=snapweb_int` parameter. When the user clicks on the ad, an `ScCid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.
-3. When the landing page loads, Smart Script fires an impression to AppsFlyer containing the incoming URL parameters. The impression will allow view-through attribution from the web landing page. To learn about impressions and view-through attribution, see [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url).
+3. When the landing page loads, Smart Script fires an impression to AppsFlyer containing the incoming URL parameters. The impression will allow view-through attribution from the web landing page. To learn about impressions and view-through attribution, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">here</Anchor>.
 4. Smart Script generates the outgoing URLs for the CTA buttons on the page based on the incoming URL parameters, including the `ScCid` parameter. The buttons can lead to:
    * Google Play and App Store via a OneLink attribution link.
    * Multiple platform stores (e.g., CTV, Epic, and Steam). In this use case, Smart Script generates a single platform attribution link for each platform, leading to the specified platform's store.
@@ -248,12 +248,12 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
 To set up your smart script Snapchat Ads campaigns, perform the following:
 
-1. Set up the template for the campaign’s OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
-2. Create a smart script. For more information, see [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script).
+1. Set up the template for the campaign’s OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
+2. Create a smart script. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">How to create a OneLink Smart Script</Anchor>.
 
    > 📘 **Note**
    >
-   > The instructions below outline the specific steps required to set up a Snapchat Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns, see the [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) section of the [OneLink Smart Script V2 setup](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) article.
+   > The instructions below outline the specific steps required to set up a Snapchat Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns, see the <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">How to create a OneLink Smart Script</Anchor> section of the <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Script V2 setup</Anchor> article.
 
 3. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Snapchat Ads Manager and check the URL parameters you set when creating the destination URL. For more information, see  [Set destination URL](#2-set-destination-url).
 4. Map the incoming URL parameters required for the Snapchat Ads campaign to the outgoing URL parameters. Those parameters are sent to AppsFlyer when the user clicks the CTA button:
@@ -263,13 +263,9 @@ To set up your smart script Snapchat Ads campaigns, perform the following:
      1. In **Mapping for**, select **Custom parameter**.
      2. In the **Outgoing URL parameter** and the **Incoming URL parameters,** enter **ScCid**.
 
-        <br /><br />**Note**<br />
-
-
-     #### Note
-
-     To display in AppsFlyer raw data reports, you must also map the incoming `ScCid` parameter, separately from the outgoing `ScCid` parameter, to one of the outgoing `af_sub[1–5]` parameters.
-
+     > 📘 **Note**
+     >
+     > To display in AppsFlyer raw data reports, you must also map the incoming `ScCid` parameter, separately from the outgoing `ScCid` parameter, to one of the outgoing `af_sub[1–5]` parameters.
 
 
 </Accordion>
@@ -280,8 +276,8 @@ To set up your smart script Snapchat Ads campaigns, perform the following:
 
 To set up your smart script Snapchat Ads campaigns for cross-platform landing pages, perform the following:
 
-1. Set up the template for the campaign’s OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
-   * Enable your OneLink template for cross-platform attribution. For more information, see [Create a OneLink template for cross-platform attribution](/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution).
+1. Set up the template for the campaign’s OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
+   * Enable your OneLink template for cross-platform attribution. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution">Create a OneLink template for cross-platform attribution</Anchor>.
 2. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open Snapchat Ads Manager and examine the URL parameters you set when building the destination URL. For more information, see [Set destination URL](#2-set-destination-url).
 3. Decide for each incoming parameter the outgoing parameter to which it will be mapped. for example, the incoming `af_site_id` parameter in the incoming URL will be mapped to the  `af_site_id` parameter in the outgoing URL.
 4. Determine the default value for the mandatory outgoing parameters that cannot be left empty.
@@ -312,7 +308,7 @@ To set up your smart script Snapchat Ads campaigns for cross-platform landing pa
 
 1. The Snapchat ad URL includes the `pid=snapweb_int` parameter. When the user clicks on the ad, an `ScCid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Banner.
-3. When the landing page loads, the Smart Banner fires an [impression](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url) event to AppsFlyer, which includes the incoming URL parameters. This impression enables view-through attribution for the landing page. To learn about impressions and view-through attribution, see [Create a custom impression URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url).
+3. When the landing page loads, the Smart Banner fires an <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">impression</Anchor> event to AppsFlyer, which includes the incoming URL parameters. This impression enables view-through attribution for the landing page. To learn about impressions and view-through attribution, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">Create a custom impression URL</Anchor>.
 4. The Smart Banner generates the outgoing URL for the CTA button on the banner. The outgoing URL is based on the incoming URL parameters, including the `ScCid` parameter. The Smart banner can generate only OneLink-based links.
 5. When the user clicks the Smart Banner CTA button, the click is fired and registered in AppsFlyer.
 6. The user is redirected to the store and downloads the app.
@@ -328,25 +324,21 @@ To set up your smart script Snapchat Ads campaigns for cross-platform landing pa
 
 To set up your Smart Banners Snapchat Ads campaigns, perform the following:
 
-1. Set up the template for the campaign’s OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
+1. Set up the template for the campaign’s OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
 2. Create a Smart Banner.
 
    > 📘 **Note**
    >
-   > The instructions below outline the specific steps required to set up a Snapchat Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the [setup section](/docs/smart-banners-mobile-web-to-app-for-marketers#setup) of the [Smart Banners—mobile web-to-app (for marketers)](/docs/smart-banners-mobile-web-to-app-for-marketers) article.
+   > The instructions below outline the specific steps required to set up a Snapchat Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#setup">setup section</Anchor> of the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners—mobile web-to-app (for marketers)</Anchor> article.
 
 3. Set the Smart Banner parameters for Snapchat Ads campaigns:
 
    * Make sure all relevant URL parameters are appended to the incoming URL.
    * To review the parameters appended to the incoming URL, open Snapchat Ads Manager and review the URL parameters you set when [creating the destination URL](#2-set-destination-url).
 
-     <br /><br />**Note**<br />
-
-
-   #### Note
-
-   Most importantly the `pid=snapweb_int` and `ScCid` are available in the incoming URL to allow the Smart Banner to collect them. These two parameters are necessary for attribution and for sending postbacks to Snapchat Ads.
-
+   > 📘 **Note**
+   >
+   > Most importantly the `pid=snapweb_int` and `ScCid` are available in the incoming URL to allow the Smart Banner to collect them. These two parameters are necessary for attribution and for sending postbacks to Snapchat Ads.
 
 
 </Accordion>
@@ -363,14 +355,14 @@ All Snapchat web-to-app attributions appear under `snapchat_int` in the Overvi
 
 ### **View in raw data and API reports**
 
-* **Raw data exports and API responses**include the `snapchat_int` PID in the `media_source` field for Google web activity. To verify web campaign setup details, refer to the `original_url` field that shows `snapchat_int` as the PID used during the creation of web campaigns.
+* **Raw data exports and API responses** include the `snapchat_int` PID in the `media_source` field for Google web activity. To verify web campaign setup details, refer to the `original_url` field that shows `snapchat_int` as the PID used during the creation of web campaigns.
 * **Postback reports** show `snapweb_int` as the original media source to which the postback was sent.
 
 ## Traits and Limitations
 
 | Trait | Remarks |
 | --- | --- |
-| Cost data | Cost data for Snapchat Ads (`snapweb_int`) web-based campaigns isn’t retrieved automatically. Instead, it must be imported manually using one of [two supported methods: email-based file upload or manual upload via the AppsFlyer UI](/docs/import-cost-data#procedures). This applies to all users, including ROI360 subscribers. |
+| Cost data | Cost data for Snapchat Ads (`snapweb_int`) web-based campaigns isn’t retrieved automatically. Instead, it must be imported manually using one of <Anchor target="_blank" href="/marketers/docs/import-cost-data#procedures">two supported methods: email-based file upload or manual upload via the AppsFlyer UI</Anchor>. This applies to all users, including ROI360 subscribers. |
 | Clicks and impressions (temporary limitation) | Clicks and impressions for web campaigns are temporarily unavailable from Snapchat SRN (`snapchat_int`). |
 
-<div data-zendesk-anchors="h_01KB2W28THC55F0AJ0KZJPQ6S5=overview h_01KB2W28THSST3148Y5Y07PJ7S=important h_01KB2W28THW7E6TRVTTHJZ9BP4=prerequisites h_01KB2W28THTST7HWTJA9TTGPGG=how-to-create-a-snapchat-ads-web-campaign h_01KB2W28THQJF8K4AWTRXNA3RX=set-up-snapchat-ads-web-integration-in-appsflyer h_01KB2W28TH6NZCGCJAN8K3WFGA=1-activate-the-snapchat-ads-web-integration h_01KB2W28TJ6XY7WKR4VC5XS7DS=2-enable-viewthrough-attribution h_01KB2W28TJGRKP3C50ZPQAWAS9=3-set-inapp-event-postbacks h_01KB2W28TJ14KC606KE82Q7BB7=note h_01KB2W28TJVZ1BX94SZYH1K5EM=set-up-appsflyer-integration-in-snapchat-ads h_01KB2W28TJ2R95JK7C1PQE644C=1-set-the-campaign-type-objective-and-goals h_01KB2W28TJ4BK88DVYJG4XYE0S=warning h_01KB2W28TJB1V382HD09M9Y0C3=2-set-destination-url h_01KB2W28TJT7QZ2P7AZ5X61ZXV=note-1 h_01KB2W28TJQA1TBXXQ7MA1F0CB=create-a-landing-page-with-onelink-smart-script h_01KB2W28TJ4J426HD3ZFHXAV4J=endtoend-data-flow h_01KB2W28TJR8S029FJ3Y81MG8Y=set-up-a-smart-script-landing-page h_01KB2W28TJBYHKYNQRMJ4ZGWYD=note-6 h_01KB2W28TJZMQEDSNVWRZCNXYD=note-4 h_01KB2W28TJT0TEFB97RXEGDVRM=set-up-a-smart-script-crossplatform-landing-page h_01KB2W28TJ6XWR7GW4SQQAKZH9=note-5 h_01KB2W28TJM0X7K5Z7M2120MT9=create-a-landing-page-with-onelink-smart-banners h_01KB2W28TKJZBNFR335SXKY6FC=endtoend-data-flow::b905b9a5 h_01KB2W28TKKA9NTQEC7ZA9E6EA=set-up-a-smart-banners-landing-page h_01KB2W28TKW8B6H4W0R9YJM3ZE=note-6 h_01KB2W28TKRH3NC73J2JHNSMWD=note-7 view-webtoapp-attribution-data=view-web-to-app-attribution-data h_01KB2W28TKDAV34JGYJKF2VT43=view-web-to-app-attribution-data h_01KB2W28TKNWYXJX189EP2HPN2=view-in-the-dashboard h_01KB2W28TKJ1MAMM00KY3M3S2W=view-in-raw-data-and-api-reports h_01KB2W28TKFY74YBXHD91QP9V0=traits-and-limitations" />
+<div data-zendesk-anchors="h_01KB2W28THC55F0AJ0KZJPQ6S5=overview h_01KB2W28THSST3148Y5Y07PJ7S=important h_01KB2W28THW7E6TRVTTHJZ9BP4=prerequisites h_01KB2W28THTST7HWTJA9TTGPGG=how-to-create-a-snapchat-ads-web-campaign h_01KB2W28THQJF8K4AWTRXNA3RX=set-up-snapchat-ads-web-integration-in-appsflyer h_01KB2W28TH6NZCGCJAN8K3WFGA=1-activate-the-snapchat-ads-web-integration h_01KB2W28TJ6XY7WKR4VC5XS7DS=2-enable-viewthrough-attribution h_01KB2W28TJGRKP3C50ZPQAWAS9=3-set-inapp-event-postbacks h_01KB2W28TJ14KC606KE82Q7BB7=note h_01KB2W28TJVZ1BX94SZYH1K5EM=set-up-appsflyer-integration-in-snapchat-ads h_01KB2W28TJ2R95JK7C1PQE644C=1-set-the-campaign-type-objective-and-goals h_01KB2W28TJ4BK88DVYJG4XYE0S=warning h_01KB2W28TJB1V382HD09M9Y0C3=2-set-destination-url h_01KB2W28TJT7QZ2P7AZ5X61ZXV=note-1 h_01KB2W28TJQA1TBXXQ7MA1F0CB=create-a-landing-page-with-onelink-smart-script h_01KB2W28TJ4J426HD3ZFHXAV4J=endtoend-data-flow h_01KB2W28TJR8S029FJ3Y81MG8Y=set-up-a-smart-script-landing-page h_01KB2W28TJBYHKYNQRMJ4ZGWYD=note-5 h_01KB2W28TJZMQEDSNVWRZCNXYD=note-3 h_01KB2W28TJT0TEFB97RXEGDVRM=set-up-a-smart-script-crossplatform-landing-page h_01KB2W28TJ6XWR7GW4SQQAKZH9=note-4 h_01KB2W28TJM0X7K5Z7M2120MT9=create-a-landing-page-with-onelink-smart-banners h_01KB2W28TKJZBNFR335SXKY6FC=endtoend-data-flow::b905b9a5 h_01KB2W28TKKA9NTQEC7ZA9E6EA=set-up-a-smart-banners-landing-page h_01KB2W28TKW8B6H4W0R9YJM3ZE=note-5 h_01KB2W28TKRH3NC73J2JHNSMWD=note-6 view-webtoapp-attribution-data=view-web-to-app-attribution-data h_01KB2W28TKDAV34JGYJKF2VT43=view-web-to-app-attribution-data h_01KB2W28TKNWYXJX189EP2HPN2=view-in-the-dashboard h_01KB2W28TKJ1MAMM00KY3M3S2W=view-in-raw-data-and-api-reports h_01KB2W28TKFY74YBXHD91QP9V0=traits-and-limitations" />

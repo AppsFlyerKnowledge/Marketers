@@ -1,8 +1,5 @@
 ---
 title: Recommended P2P lending app events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your peer-to-peer (P2P) lending app.
 metadata:
   keywords:
     - Advertisers
@@ -25,20 +22,22 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019614017-Recommended-P2P-lending-app-events
 ---
-## ![InApp_Events_lending.png](https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png) P2P lending
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your peer-to-peer (P2P) lending app.
+
+## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> P2P lending
 
 P2P lending is a way for individuals and businesses to lend and borrow money from one another. The typical events that we suggest recording are the activities of individual lenders and borrowers, the types of loans people offer, and loan acceptance and rejection rates.
 
 The data that you gather from event recording can highlight trustworthy borrowers and offer them better interest rates. Similarly, you can see who the most active lenders are and offer them lower fees. In addition, once you know what type of loans are most popular with your users, you can launch marketing campaigns that target these audiences.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=p2p_lending). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=p2p_lending&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=p2p_lending">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=p2p_lending&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the  **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
 
@@ -131,7 +130,7 @@ Can be sent without any additional parameters
 
 > 📘 **Note**
 >
-> It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. [Setting the Customer User ID](/docs/customer-user-id-field-cuid) is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
+> It is highly recommended that you associate loans with lenders. To do so, make sure to set the Customer User ID. <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Setting the Customer User ID</Anchor> is your way to match lenders with users of your app as they appear in AppsFlyer. By setting the Customer User ID you make sure that any event is sent with the Customer User ID.
 
 <div id="submit-loan-application-submit_loan_application" />
 

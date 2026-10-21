@@ -13,7 +13,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551113099153-AppsFlyer-basics
 ---
-- [Attribution concepts](/docs/attribution-concepts)
-- [Attribution scenarios](/docs/attribution-scenarios)
-- [The AppsFlyer platform](/docs/the-appsflyer-platform)
-- [Working with agencies](/docs/working-with-agencies)
+- <Anchor target="_blank" href="/marketers/docs/attribution-concepts">Attribution concepts</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/attribution-scenarios">Attribution scenarios</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/the-appsflyer-platform">The AppsFlyer platform</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/working-with-agencies">Working with agencies</Anchor>

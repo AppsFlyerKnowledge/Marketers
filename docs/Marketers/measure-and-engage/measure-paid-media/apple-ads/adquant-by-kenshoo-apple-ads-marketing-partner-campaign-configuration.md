@@ -1,8 +1,5 @@
 ---
 title: Adquant by Kenshoo Apple Ads marketing partner—campaign configuration
-excerpt: >-
-  Optimize Apple Ads campaigns by using Adquant by Kenshoo. When configured,
-  AppsFlyer sends postbacks to Adquant.
 metadata:
   keywords:
     - kenshoo
@@ -29,6 +26,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001491269-Adquant-by-Kenshoo-Apple-Ads-marketing-partner-campaign-configuration
 ---
+**At a glance:** Optimize Apple Ads campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
+
 ## Enabling sending postbacks to Adquant (Apple Ads marketing partner)
 
 Both advertisers and agencies can enable Attribution for Apple Ads.
@@ -38,7 +37,7 @@ Both advertisers and agencies can enable Attribution for Apple Ads.
 > If the advertiser or the agency disables attribution for Apple Ads, attribution for this app, including postback sending to Apple Ads Marketing Partners stops.
 
 * **Advertisers:** follow the instructions below on how to enable attribution for Apple Ads.
-* **Agencies:** [follow these instructions](/docs/apple-ads-integration-setup#agency-setup) to enable attribution for Apple Ads.
+* **Agencies:** <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
 
 ### Configuring Adquant by Kenshoo
 
@@ -80,10 +79,10 @@ The displayed postbacks are sent automatically when the partner is activated.
 
 | Parameter name | Description |
 | --- | --- |
-| <span id="appsflyer-event"></span>**AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you're looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about [custom event mapping.](/docs/in-app-event-postback-configuration#custom-events)</li></ul> |
-| <span id="mapped-to-partner-event"></span>**mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. [Possible mapping configurations](/docs/in-app-event-postback-configuration#mapping-methods) are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined partner event.</li><li>**As is**: Send the events as they are, without mapping the event name.</li></ul> |
+| <span id="appsflyer-event"></span>**AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<br />**Tip**: Don't see the event you're looking for?<ul><li>Make sure to activate the event on a device with a non-organic installation, and recheck.</li><li>Type it in **AppsFlyer event**, then click **Create custom**. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping.</Anchor></li></ul> |
+| <span id="mapped-to-partner-event"></span>**mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">Possible mapping configurations</Anchor> are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined partner event.</li><li>**As is**: Send the events as they are, without mapping the event name.</li></ul> |
 | <span id="for-users-from"></span>**for users from** | Select the sending option for the event:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.</li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, when the user who performed it came from any media source.</li></ul> |
-| <span id="including"></span>**including** | Select [which event data](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) to share with the partner in the postback:<ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
+| <span id="including"></span>**including** | Select <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">which event data</Anchor> to share with the partner in the postback:<ul><li>**No values & no revenue**: Send just the event itself without any parameters (values or revenue).</li><li>**Values & no revenue**: Send all the parameters **excluding** the revenue value.</li><li>**Values & revenue**: Send all the event parameters, **including** the revenue value (if exists in the event).</li></ul> |
 
 5. Click **Save Integration**.
 

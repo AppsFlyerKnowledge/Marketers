@@ -2,11 +2,6 @@
 title: >-
   iOS metrics in the Overview dashboard (SKAN and AppsFlyer metrics
   side-by-side)
-excerpt: >-
-  View metrics of SKAdNetwork (SKAN) and AppsFlyer attribution frameworks
-  side-by-side in the Overview dashboard. Identify the framework with the best
-  campaign performance metric for you, then leverage it to gain insights and
-  optimize campaigns.
 metadata:
   keywords:
     - Advertisers
@@ -28,13 +23,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4404976682257-iOS-metrics-in-the-Overview-dashboard-SKAN-and-AppsFlyer-metrics-side-by-side
 ---
+**At a glance**: View metrics of SKAdNetwork (SKAN) and AppsFlyer attribution frameworks side-by-side in the Overview dashboard. Identify the framework with the best campaign performance metric for you, then leverage it to gain insights and optimize campaigns.
+
 **Attribution metrics display side-by-side in the Overview V2.0 dashboard**
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
 ## Finding the best iOS 14+ campaign performance metrics
 
-Starting iOS 14+, both SKAN attribution and [AppsFlyer attribution](/docs/appsflyer-attribution-model) frameworks generate campaign performance metrics. They attribute differently, have different traits and limitations, and discrepancies between them often occur. For example, SKAN now contains metrics of Apple Ads (Search Ads) campaigns but not that of owned media. Conversely, AppsFlyer metrics from SRNs don't include installs of non-consenting users. Furthermore, SKAN measures performance during an initial post-install window of 1-3 days, whereas AppsFlyer measures lifetime value ([LTV](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports)).
+Starting iOS 14+, both SKAN attribution and <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">AppsFlyer attribution</Anchor> frameworks generate campaign performance metrics. They attribute differently, have different traits and limitations, and discrepancies between them often occur. For example, SKAN now contains metrics of Apple Ads (Search Ads) campaigns but not that of owned media. Conversely, AppsFlyer metrics from SRNs don't include installs of non-consenting users. Furthermore, SKAN measures performance during an initial post-install window of 1-3 days, whereas AppsFlyer measures lifetime value (<Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV</Anchor>).
 
 In side-by-side, you view campaign performance using data provided by both frameworks. Compare the metrics of each framework and decide which metric best represents the actual campaign performance.
 
@@ -58,7 +55,7 @@ This article contains guidance based on our market knowledge and observations on
   * AppsFlyer: New installs and re-attributions
   * SKAN: New installs and re-downloads
 * **Actual:** Actual means the metric best representing the data, even though it may not include all data.
-* **Consenting user:** An iOS 14+ user who grants [ATT authorization](/docs/about-att-and-skan#att-principles) in both the publisher and advertised app.
+* **Consenting user:** An iOS 14+ user who grants <Anchor target="_blank" href="/marketers/docs/about-att-and-skan#att-principles">ATT authorization</Anchor> in both the publisher and advertised app.
 
 <div id="campaign-precision" />
 
@@ -74,7 +71,7 @@ This article contains guidance based on our market knowledge and observations on
 | Question | Why do the SKAN and AppsFlyer metrics differ? |
 | --- | --- |
 | Symptom | Install metrics differ. |
-| Explanation | <ul><li>The AppsFlyer framework determines installs according to the AppsFlyer [attribution model](/docs/appsflyer-attribution-model) covering different campaign types and attribution methods, whereas SKAN measures installs in the context of paid app-to-app campaigns.</li><li>Typically, SKAN metrics of SRN campaign installs are higher than those of AppsFlyer, because AppsFlyer only records consenting users.</li><li>In the case of non-SRN networks (click networks), there is often a much closer alignment between the metrics per framework.</li></ul> |
+| Explanation | <ul><li>The AppsFlyer framework determines installs according to the AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution model</Anchor> covering different campaign types and attribution methods, whereas SKAN measures installs in the context of paid app-to-app campaigns.</li><li>Typically, SKAN metrics of SRN campaign installs are higher than those of AppsFlyer, because AppsFlyer only records consenting users.</li><li>In the case of non-SRN networks (click networks), there is often a much closer alignment between the metrics per framework.</li></ul> |
 
 </Accordion>
 
@@ -172,7 +169,7 @@ In the case of cost metrics, the following apply:
 | --- | --- | --- |
 | Platform | All | iOS |
 | Attribution types | <ul><li>Installs</li><li>Re-engagements</li><li>Re-attributions</li></ul> | <ul><li>Installs</li><li>Re-downloads</li></ul> |
-| Ad revenue | Available | [Limited; depends on the mediation partner](/docs/skadnetwork-skan-solution-guide#recording-ad-revenue). |
+| Ad revenue | Available | <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">Limited; depends on the mediation partner</Anchor>. |
 | Apple Ads (Search Ads) | Available | Supported for SKAN attribution |
 | Owned media | Available | Not applicable to SKAN attribution |
 | Web-to-app | Available | Available for SKAN 4 attribution |
@@ -184,7 +181,7 @@ In the case of cost metrics, the following apply:
 
 <Accordion title="Matching considerations">
 
-<table><thead><tr><th>Consideration</th><th>AppsFlyer</th><th>SKAN</th></tr></thead><tbody><tr><td>Agency transparency</td><td>Supported</td><td><p>Attributed to the media source bringing the install. Agencies can instruct media sources to prefix campaign names with their <em><a href="/partners/docs/getting-started-agency-onboarding">prt</a>, </em>in which case you can identify agency-driven traffic.</p></td></tr><tr><td>Campaign name changes</td><td><ul><li>Supported</li><li>The most recent name reported by the ad network determines the campaign name used for all installs associated with a given campaign ID. This includes previously recorded installs. </li></ul></td><td><ul><li>Not supported</li><li>The campaign name reported when the user installs the app is used. This doesn't change over time. Consequently, multiple names can be associated with a given campaign ID. </li></ul></td></tr><tr><td>Dimensions supported</td><td>No limitation</td><td><p><strong>Available</strong>: Geo, ad, ad ID, channel, adset, site ID.</p><p><strong>Agency:</strong> Not currently.</p><p>If you select a dimension that isn't supported, SKAN data is displayed as none.</p></td></tr><tr><td>SRN install metrics</td><td>Limited to consenting users; as a result, expect the AppsFlyer-reported metrics to be lower than SKAN-reported metrics and the metrics provided by the SRN itself. </td><td>All SKAN-attributed installs. Usually higher than the AppsFlyer metric. </td></tr><tr><td>Hidden SKAN campaigns</td><td colspan="2"><p>The table in the dashboard contains a limited number of rows. The remaining rows are combined in the row designated <em>others</em>.</p><p>To view a breakdown of this row, export the entire table to a spreadsheet. </p></td></tr></tbody></table>
+<table><thead><tr><th>Consideration</th><th>AppsFlyer</th><th>SKAN</th></tr></thead><tbody><tr><td>Agency transparency</td><td>Supported</td><td><p>Attributed to the media source bringing the install. Agencies can instruct media sources to prefix campaign names with their <em><a href="/partners/docs/getting-started-agency-onboarding" target="_blank">prt</a>,</em> in which case you can identify agency-driven traffic.</p></td></tr><tr><td>Campaign name changes</td><td><ul><li>Supported</li><li>The most recent name reported by the ad network determines the campaign name used for all installs associated with a given campaign ID. This includes previously recorded installs. </li></ul></td><td><ul><li>Not supported</li><li>The campaign name reported when the user installs the app is used. This doesn't change over time. Consequently, multiple names can be associated with a given campaign ID. </li></ul></td></tr><tr><td>Dimensions supported</td><td>No limitation</td><td><p><strong>Available</strong>: Geo, ad, ad ID, channel, adset, site ID.</p><p><strong>Agency:</strong> Not currently.</p><p>If you select a dimension that isn't supported, SKAN data is displayed as none.</p></td></tr><tr><td>SRN install metrics</td><td>Limited to consenting users; as a result, expect the AppsFlyer-reported metrics to be lower than SKAN-reported metrics and the metrics provided by the SRN itself. </td><td>All SKAN-attributed installs. Usually higher than the AppsFlyer metric. </td></tr><tr><td>Hidden SKAN campaigns</td><td colspan="2"><p>The table in the dashboard contains a limited number of rows. The remaining rows are combined in the row designated <em>others</em>.</p><p>To view a breakdown of this row, export the entire table to a spreadsheet. </p></td></tr></tbody></table>
 
 </Accordion>
 

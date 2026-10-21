@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Integration with Salesforce Data Cloud
-excerpt: >-
-  The Salesforce Data Cloud integration allows you to bring your first-party
-  data to the AppsFlyer Data Collaboration Platform with a click of a button.
 metadata:
   keywords:
     - Premium
@@ -26,13 +23,15 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-> 📘 **Before you begin**
+**At a glance:** The Salesforce Data Cloud integration allows you to bring your first-party data to the AppsFlyer Data Collaboration Platform with a click of a button.
+
+> 🚧 **Before you begin**
 >
 > Before integrating Salesforce Data Cloud, you must **install the AppsFlyer app extension** from the Salesforce AppExchange. This must be performed by a Salesforce admin user with permission to download AppExchange packages.
 >
-> 1. Go to the [AppsFlyer listing](https://appexchange.salesforce.com/appxListingDetail?listingId=6c756ddf-777c-42fc-9eaf-d96ca36ed2e3) on the Salesforce AppExchange.
+> 1. Go to the <Anchor target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=6c756ddf-777c-42fc-9eaf-d96ca36ed2e3">AppsFlyer listing</Anchor> on the Salesforce AppExchange.
 > 2. Click **Get It Now**.
-> 3. Follow the steps described in the [Application Installation Guide](https://developer.salesforce.com/docs/atlas.en-us.appExchangeInstallGuide.meta/appExchangeInstallGuide/appexchange_install_installation.htm).
+> 3. Follow the steps described in the <Anchor target="_blank" href="https://developer.salesforce.com/docs/atlas.en-us.appExchangeInstallGuide.meta/appExchangeInstallGuide/appexchange_install_installation.htm">Application Installation Guide</Anchor>.
 >
 > Upon successful installation, the process is complete and there's no need for any additional package configuration.
 
@@ -50,7 +49,7 @@ The integration involves creating a Salesforce Data Cloud connection and then cr
 2. From the top-right of the page, click **Manage connections** > **+ New connection**.
 3. In the **New connection** dialog, select **Data providers** > **Salesforce Data Cloud**.  
 
-   ![salesforce-data-cloud-new-connection.jpg](https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg)
+   <Image alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
 4. Click **Log in to Salesforce**.
 5. Proceed with the authentication process and allow Salesforce access to AppsFlyer.   
    **Note:** If the authentication is unsuccessful, you're returned to the **New connection** dialog to try again.
@@ -72,7 +71,7 @@ Access the **Sources** tab using the following methods:
 
 **To create a source:**
 
-1. **Set source name:** Enter a [name for the source](/docs/data-clean-room-working-with-sources#1-name-the-source), and click **Next**.
+1. **Set source name:** Enter a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#1-name-the-source">name for the source</Anchor>, and click **Next**.
 2. **Set source location:**
    * **Select connection:** Salesforce Data Cloud is auto-populated after adding the connection. If not, choose it from the connection list.
    * **Table or View:** After the Salesforce Data Cloud connection is selected, table names and views from your Salesforce account are auto-populated. Select the table or view, and click **Next**.  

@@ -1,8 +1,5 @@
 ---
 title: AppsFlyer SDK version control policy
-excerpt: >-
-  Learn about the AppsFlyer SDK version control policy and what versions we
-  maintain.
 metadata:
   keywords:
     - iOS
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4412316953105-AppsFlyer-SDK-version-control-policy
 ---
+**At a glance:** Learn about the AppsFlyer SDK version control policy and what versions we maintain.
+
 ## About versioning
 
 Throughout the years, AppsFlyer has released many versions of the SDK. Each SDK version calls a specific API version. The intent of the version control policy is to define how long an API will serve the SDK versions.
@@ -46,7 +45,7 @@ An API version is guaranteed to run for 2.5 years. Whenever a new major or minor
 
 **Legacy SDK versions for iOS and Android will stop being supported on a fixed six-month cycle.** This cycle is designed to provide advanced notice, helping teams plan ahead and maintain full app functionality without disruption. Upgrading to the latest SDK ensures access to the newest features, improved stability, and ongoing support.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > To ensure a smooth transition, app developers are encouraged to update to the latest SDK version before the End-of-Support date.
 
@@ -63,9 +62,9 @@ Once a version of the SDK has reached its end-of-support date, AppsFlyer servers
 
 Since adoption takes time, it is **highly recommended** that your developer upgrade to the latest SDK version well in advance of the end-of-support date.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [AppsFlyer Android SDK release notes](/docs/appsflyer-android-sdk-release-notes)
-> * [AppsFlyer iOS SDK release notes](/docs/appsflyer-ios-sdk-release-notes)
+> * <Anchor target="_blank" href="/marketers/docs/appsflyer-android-sdk-release-notes">AppsFlyer Android SDK release notes</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/appsflyer-ios-sdk-release-notes">AppsFlyer iOS SDK release notes</Anchor>
 
 <div data-zendesk-anchors="h_01HE7RHYC4YGZWF9EKK96RPMAN=about-versioning h_01HE7RHYC4QSVTA4ZCHTKYQSAT=why-do-we-need-version-control h_01HE7RHYC41QN657ZTEQ0P45GD=sdk-version-lifecycles h_01JVHFG6PN34YFWNZKX2CYHJV8=important h_01JVHEKR4MTFV0FDHMTQW00BCS=end-of-support-vs-deprecated what-happens-when-an-sdk-version-is-sunset=what-happens-when-an-sdk-version-has-reached-its-end-of-support-date h_01HE7RHYC4EVSNA2F4DQ1594DH=what-happens-when-an-sdk-version-has-reached-its-end-of-support-date h_01HE7RPQBD858TQSF27NFGGP43=see-also" />

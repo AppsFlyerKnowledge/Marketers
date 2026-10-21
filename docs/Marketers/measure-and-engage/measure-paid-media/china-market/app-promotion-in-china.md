@@ -1,6 +1,5 @@
 ---
 title: App promotion in China
-excerpt: Promote your app in the Chinese market.
 metadata:
   keywords:
     - Advertisers
@@ -27,13 +26,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004656946-App-promotion-in-China
 ---
+**At a glance:** Promote your app in the Chinese market.
+
 [**China Internet Report**](https://www.scmp.com/china-internet-report) 2020 presented by SCMP with an overview of the Chinese market
 
 * China At A Glance
 * Top trends for 2020
 * Deep-dive by sector
 
-**[The China Opportunity - 2020 Edition](https://www.appsflyer.com/resources/beyond-great-app-wall-china-guide/)**   
+**<Anchor target="_blank" href="https://www.appsflyer.com/resources/beyond-great-app-wall-china-guide/">The China Opportunity - 2020 Edition</Anchor>**   
 Use the playbook to understand:
 
 * Latest market insights, many based on Chinese sources
@@ -42,7 +43,7 @@ Use the playbook to understand:
 * Step-by-step instructions on how to set up an app in China
 * Success stories from Gismart, Lightricks, SKYROCKET, and Ubisoft
 
-**[Android attribution guide for out-of-store-markets](/docs/measure-attribution-in-the-chinese-domestic-market):**
+**<Anchor target="_blank" href="/marketers/docs/measure-attribution-in-the-chinese-domestic-market">Android attribution guide for out-of-store-markets</Anchor>:**
 
 * Out-of-market challenges
 * Integrating the AppsFlyer SDK
@@ -50,11 +51,11 @@ Use the playbook to understand:
 * Record app store traffic
 * Identify store hijacking
 
-**[Key media source partners configuration guide](/docs/china-domestic-market-ad-network-configuration)**: AppsFlyer is integrated and pre-configured with all the major Chinese media sources. Meaning that both AppsFlyer and the media sources are ready and able to support your user acquisition campaigns in China.
+**<Anchor target="_blank" href="/marketers/docs/china-domestic-market-ad-network-configuration">Key media source partners configuration guide</Anchor>**: AppsFlyer is integrated and pre-configured with all the major Chinese media sources. Meaning that both AppsFlyer and the media sources are ready and able to support your user acquisition campaigns in China.
 
 App promotion in China guides :
 
-* EN: [iOS](/docs/ios-app-promotion-in-china), [Android](/docs/android-app-promotion-in-china)
+* EN: <Anchor target="_blank" href="/marketers/docs/ios-app-promotion-in-china">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/android-app-promotion-in-china">Android</Anchor>
 * CN: iOS, Android
 
 **Leading media sources in China**

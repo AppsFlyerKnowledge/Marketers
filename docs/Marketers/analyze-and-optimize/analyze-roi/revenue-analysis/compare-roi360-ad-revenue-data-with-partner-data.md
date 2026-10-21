@@ -1,8 +1,5 @@
 ---
 title: Compare ROI360 ad revenue data with partner data
-excerpt: >-
-  Compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition
-  partner data.
 metadata:
   keywords:
     - ad revenue
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/19287636823953-Compare-ROI360-ad-revenue-data-with-partner-data
 ---
+**At a glance:** Compare AppsFlyer ROI360 ad revenue data with mediation and user acquisition partner data.
+
 Data needs to be received and processed before it becomes available in dashboards and reports. The time it takes for data to become available depends on the ROI360 package you have, as well as partner integration type, data freshness, and report type.
 
 The following sections explain when and how to compare ROI360 ad revenue data in AppsFlyer reports to the data you may see in partner dashboards and reports.

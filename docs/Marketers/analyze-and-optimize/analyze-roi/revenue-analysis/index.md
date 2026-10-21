@@ -13,12 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551069075089-Revenue-analysis
 ---
-- [Purchase and subscription validation](/docs/purchase-and-subscription-validation)
-- [ROI360 - revenue attribution overview](/docs/roi360-revenue-attribution-overview)
-- [ROI360 guide - ad revenue attribution](/docs/roi360-guide-ad-revenue-attribution)
-- [Set up tax and store commission rates with the Net Revenue API](/docs/set-up-tax-and-store-commission-rates-with-the-net-revenue-api)
-- [Integrate the ROI360 ad revenue SDK API](/docs/integrate-the-roi360-ad-revenue-sdk-api)
-- [Revenue ETL reports](/docs/revenue-etl-reports)
-- [Share ad revenue data with partners](/docs/share-ad-revenue-data-with-partners)
-- [Compare ROI360 ad revenue data with partner data](/docs/compare-roi360-ad-revenue-data-with-partner-data)
-- [Set up ROI360 ad revenue partner integrations via API](/docs/set-up-roi360-ad-revenue-partner-integrations-via-api)
+- <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation">Purchase and subscription validation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/roi360-revenue-attribution-overview">ROI360 - revenue attribution overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">ROI360 guide - ad revenue attribution</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-tax-and-store-commission-rates-with-the-net-revenue-api">Set up tax and store commission rates with the Net Revenue API</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/integrate-the-roi360-ad-revenue-sdk-api">Integrate the ROI360 ad revenue SDK API</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports">Revenue ETL reports</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/share-ad-revenue-data-with-partners">Share ad revenue data with partners</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/compare-roi360-ad-revenue-data-with-partner-data">Compare ROI360 ad revenue data with partner data</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-roi360-ad-revenue-partner-integrations-via-api">Set up ROI360 ad revenue partner integrations via API</Anchor>

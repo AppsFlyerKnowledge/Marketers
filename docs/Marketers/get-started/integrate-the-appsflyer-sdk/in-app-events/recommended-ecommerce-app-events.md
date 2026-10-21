@@ -1,8 +1,5 @@
 ---
 title: Recommended eCommerce app events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your eCommerce app.
 metadata:
   keywords:
     - Advertisers
@@ -25,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019347957-Recommended-eCommerce-app-events
 ---
-## ![InApp_Events_ecommerce.png](https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png) eCommerce
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app.
+
+## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" /> eCommerce
 
 eCommerce apps allow buyers to easily search for and buy goods online. The typical events that we suggest recording are search, purchase, adding to cart, and adding to wishlist.
 
@@ -36,14 +35,14 @@ Recording events can help you determine:
 * How many buyers completed a checkout
 * How many buyers are recurring buyers and how many are just one-time buyers
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * To streamline the implementation process, use our [In-app event generator](https://evgen.appsflyer.com/?vertical=ecommerce). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](https://evgen.appsflyer.com/?vertical=ecommerce&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the [**AppsFlyer developer hub**](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * To streamline the implementation process, use our <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=ecommerce">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="https://evgen.appsflyer.com/?vertical=ecommerce&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">**AppsFlyer developer hub**</Anchor>.
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
 
@@ -261,7 +260,7 @@ When the user lands on the thank you page after a successful purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Estimated revenue from the purchase | 1205.99 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Estimated revenue from the purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
 | af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br /><br />**Required parameter for Meta ads** **dynamic ads** | ABC123 |
 | af\_content\_id | Item ID<br /><br />**Required parameter for Meta ads dynamic ads** | 121, 262 |
@@ -297,7 +296,7 @@ When the user completes their first purchase
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Revenue from purchase | 1205.99 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Revenue from purchase | 1205.99 |
 | af\_price | Overall purchase sum | 4000 |
 | af\_content | International Article Number (EAN) when applicable, or other product or content identifier<br /><br />**Required parameter for Meta ads dynamic ads** | ABC123 |
 | af\_content\_id | Item ID<br /><br />**Required parameter for Meta ads dynamic ads** | 121, 262 |

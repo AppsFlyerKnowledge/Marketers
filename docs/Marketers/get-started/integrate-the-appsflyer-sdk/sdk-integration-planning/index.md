@@ -13,10 +13,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551182964369-SDK-integration-planning
 ---
-- [SDK integration overview](/docs/sdk-integration-overview)
-- [Basic SDK integration guide](/docs/basic-sdk-integration-guide)
-- [Additional SDK integration guide](/docs/additional-sdk-integration-guide)
-- [For iOS and Android: The SDK integration wizard](/docs/for-ios-and-android-the-sdk-integration-wizard)
-- [Testing the SDK integration for marketers](/docs/testing-the-sdk-integration-for-marketers)
-- [Registering test devices](/docs/registering-test-devices)
-- [SDK integration general FAQ](/docs/sdk-integration-general-faq)
+- <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">SDK integration overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">Basic SDK integration guide</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide">Additional SDK integration guide</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/for-ios-and-android-the-sdk-integration-wizard">For iOS and Android: The SDK integration wizard</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers">Testing the SDK integration for marketers</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Registering test devices</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/sdk-integration-general-faq">SDK integration general FAQ</Anchor>

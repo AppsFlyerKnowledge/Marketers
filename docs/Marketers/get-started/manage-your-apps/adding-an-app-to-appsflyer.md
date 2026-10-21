@@ -1,9 +1,5 @@
 ---
 title: Adding an app to AppsFlyer
-excerpt: >-
-  Learn how to add your app to AppsFlyer so you can get attribution data on
-  installs and in-app events, and analyze the data using the different tools on
-  AppsFlyer.
 metadata:
   keywords:
     - Add App
@@ -29,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207377436-Adding-an-app-to-AppsFlyer
 ---
+**At a glance:** Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer.
+
 ## Overview
 
 If you haven't yet added an app to your dashboard, the app onboarding page will display when you log into AppsFlyer. App onboarding guides you through all the steps to add your app and also get it ready for attribution.
@@ -51,9 +49,9 @@ You can enter the wizard for adding apps from the platform or you can add your a
 
 * From the top menu bar > **My Apps,** click **+ Add app**
 * From the AppsFlyer Homepage, click **+ Add app**
-* From the top bar, open the account menu (email address dropdown) >**App onboarding**, click **+ Onboard another app**
+* From the top bar, open the account menu (email address dropdown) > **App onboarding**, click **+ Onboard another app**
 
-![add an app (1).png](https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png)
+<Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 ## Adding an app
 
@@ -62,12 +60,12 @@ After you've [entered the Add an app wizard](#entering-the-wizard-for-adding-an-
 1. [Enter the app details](#enter-app-details).
 2. [Enter additional information](#enter-additional-information-not-applicable-to-web-apps).
 3. Click **Add my app**.
-4. Copy the Dev key, to be used in the [SDK integration](/docs/getting-started-onboarding-for-marketers#step-2-sdk--api-integration) (you can retrieve it later from the [App Settings](/docs/app-settings#general-app-settings) page).
+4. Copy the Dev key, to be used in the <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers#step-2-sdk--api-integration">SDK integration</Anchor> (you can retrieve it later from the <Anchor target="_blank" href="/marketers/docs/app-settings#general-app-settings">App Settings</Anchor> page).
 5. Click **Done** or **+ Add another app** to add more apps. Repeat the process for adding more apps.
 
 > 📘 **Note**
 >
-> * Only admins and [account users with the necessary permissions](/docs/user-management) are able to add apps.
+> * Only admins and <Anchor target="_blank" href="/marketers/docs/user-management">account users with the necessary permissions</Anchor> are able to add apps.
 > * As you follow the steps for adding an app (below), the available options will vary depending on the previous options you've selected.
 
 After registering the app, it will appear on the dashboard. To have installs and in-app events recorded and attributed to the correct media sources, you'll need to:
@@ -75,7 +73,7 @@ After registering the app, it will appear on the dashboard. To have installs and
 * Integrate the SDK
 * Connect the app to partners in the Partner Marketplace
 
-See [all the steps](/docs/getting-started-onboarding-for-marketers) for completing the onboarding process.
+See <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers">all the steps</Anchor> for completing the onboarding process.
 
 ### Enter app details
 
@@ -93,11 +91,96 @@ Use this option for the following platforms:
 * Amazon Fire TV
 * Kindle
 
-| Google Play status | When to use it | Required details |
-| --- | --- | --- |
-| <span id="in-store"></span>In store | Your app is currently available in the Google Play store | **Google Play URL** (copied from Google Play)<ul><li>**Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=en&gl=GB</li><li>**Important!**<ul><li>If your app is **not** listed in the US Google Play store:<ul><li>The URL must include the country code of any store in which it is listed, as shown in the example above: **&gl=`{country_code}.** If you do not include the country code, you will receive an error when trying to add the app.</li><li>The language code is optional: **&hl={language_code}`**</li></ul></li><li>If your store **is** listed in the US Google Play store, both the country and language codes are optional.</li></ul></li></ul> |
-| <span id="pending-approval-not-published"></span>Pending approval/not published | Your app is not yet published or is pending approval from Google Play | **Android package name**<ul><li>**Example:** com.appsflyer.adNetworkTest</li><li>**Note:** Package name is case sensitive</li><li>**Format:**<ul><li>At least two segments (one or more dots)</li><li>Each segment must start with a letter</li><li>All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)</li><li>Maximum length of 100 characters</li></ul></li></ul>For more information, see [Android developer documentation](https://developer.android.com/studio/build/application-id) |
-| <span id="third-party-store-out-of-store"></span>3rd-party store/out-of-store | Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store | <ul><li>**Android package name:** For detailed requirements, see previous row.</li><li>**App URL:** (copied from the 3rd-party app store or out-of-store location)</li><li>**Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:<ul><li>case-sensitive</li><li>identical to the name you entered in [the **Channel name** field when you added the app](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app).</li></ul></li></ul>```<br />&lt;application><br />...<br /><br />...<br />&lt;/application><br />```<br /><br />Note<br /><br /><br />**<span id="h_01KRB930DZ2NRYBZSERSG7WB3A"></span>Note**<br />Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.<br /><br /><br /><br /><br />**<span id="01H815FE641Q6N5JY5846QE59Y"></span>Important!**<br />If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for [setting up multi-store Android attribution](/docs/set-up-multi-store-android-attribution). |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Google Play status
+      </th>
+      <th>
+        When to use it
+      </th>
+      <th>
+        Required details
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><span id="in-store"></span>
+        In store
+      </td>
+      <td>
+        Your app is currently available in the Google Play store
+      </td>
+      <td>
+        **Google Play URL** (copied from Google Play)
+
+        * **Example:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest **&hl=en&gl=GB**
+        * **Important!**
+          * If your app is **not** listed in the US Google Play store:
+            * The URL must include the country code of any store in which it is listed, as shown in the example above: **&gl=`{country_code}`.** If you do not include the country code, you will receive an error when trying to add the app.
+            * The language code is optional: **&hl=`{language_code}`**
+          * If your store **is** listed in the US Google Play store, both the country and language codes are optional.
+      </td>
+    </tr>
+    <tr>
+      <td><span id="pending-approval-not-published"></span>
+        Pending approval/not published
+      </td>
+      <td>
+        Your app is not yet published or is pending approval from Google Play
+      </td>
+      <td>
+        **Android package name**
+
+        * **Example:** com.appsflyer.adNetworkTest
+        * **Note:** Package name is case sensitive
+        * **Format:**
+          * At least two segments (one or more dots)
+          * Each segment must start with a letter
+          * All characters must be alphanumeric or underscore (a-z, A-Z, 0-9, or \_)
+          * Maximum length of 100 characters
+
+        For more information, see <Anchor target="_blank" href="https://developer.android.com/studio/build/application-id">Android developer documentation</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td><span id="third-party-store-out-of-store"></span>
+        3rd-party store/out-of-store
+      </td>
+      <td>
+        Your app is in an Android app store other than Google Play, and/or it can be downloaded from a location other than an app store
+      </td>
+      <td>
+        * **Android package name:** For detailed requirements, see previous row.
+        * **App URL:** (copied from the 3rd-party app store or out-of-store location)
+        * **Channel name: (optional)** a unique name you set in the AndroidManifest.xml of the individual APK prepared for that store/location, e.g. my\_apk. The name must be:
+          * case-sensitive
+          * identical to the name you entered in <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app">the **Channel name** field when you added the app</Anchor>.
+
+        ```xml
+        <application>
+             ...
+             <meta-data android:name="CHANNEL" android:value="my_apk"/>
+             ...
+        </application>
+        ```
+
+        Note
+
+        > 📘 **Note**
+        >
+        > Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.
+
+        > 🚧 **Important!**
+        >
+        > If your app is available from more than one source (in other words, any combination of Google Play, 3rd-party stores, or out-of-store locations), it is vital to consider the options for <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">setting up multi-store Android attribution</Anchor>.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
@@ -143,9 +226,9 @@ Use this option for the following platforms:
 > A web app is where you define a website to include in a brand bundle for our People-Based Attribution (PBA) feature.
 >
 > * This option is available only to customers who have subscribed to PBA.
-> * [Learn more](/docs/people-based-attribution-pba-overview) about PBA and attributing web visits, web events, and website-assisted installs to obtain a unified view of customer journeys across channels, platforms, and devices.
+> * <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">Learn more</Anchor> about PBA and attributing web visits, web events, and website-assisted installs to obtain a unified view of customer journeys across channels, platforms, and devices.
 
-**Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the [PBA Web SDK](/docs/onboarding-guide-to-people-based-attribution#2).
+**Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution#2">PBA Web SDK</Anchor>.
 
 [![URL_diagram](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
 
@@ -162,15 +245,15 @@ Include –
 * Maximum length: 100 characters
 * XSS tags not permitted
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** [**delete the brand bundle**](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) **of which it is a part.**
+> Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">**delete the brand bundle**</Anchor> **of which it is a part.**
 
 **Next steps:**
 
-* Add your newly-created web app to a [PBA brand bundle](/docs/pba-brand-bundles-and-settings) to see it on the PBA dashboard.
+* Add your newly-created web app to a <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings">PBA brand bundle</Anchor> to see it on the PBA dashboard.
   * Make sure all the mobile apps you want to include in the brand bundle have been added to your account before creating the bundle.
-* [Integrate the PBA Web SDK](/docs/pba-web-sdk-integration-guide) to the website specified in the web app to get the measurement data flowing.
+* <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide">Integrate the PBA Web SDK</Anchor> to the website specified in the web app to get the measurement data flowing.
 
 </Accordion>
 
@@ -269,7 +352,7 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
 
 > 📘 **Note**
 >
-> For full information on Web attribution settings [see here](/docs/configure-web-performance-measurement-settings).
+> For full information on Web attribution settings <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings">see here</Anchor>.
 
 </Accordion>
 
@@ -277,7 +360,7 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
 
 <Accordion title="Roku">
 
-**App name:** Channel name copied from the [Roku Developer Dashboard](https://developer.roku.com/developer).
+**App name:** Channel name copied from the <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>.
 
 * **Example:** My Roku channel
 * **Format:**
@@ -290,7 +373,7 @@ Each legacy **Web Dev Key can be reused for only one** new Web app.
   * Numeric characters (0-9)
   * Maximum length: 50 characters
 * **How do I find it?**
-  * From the [Roku Developer Dashboard](https://developer.roku.com/developer), click on the name of the channel you are adding to AppsFlyer. This opens the Roku Preview & Publish page for the channel.
+  * From the <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>, click on the name of the channel you are adding to AppsFlyer. This opens the Roku Preview & Publish page for the channel.
   * The number at the end of the URL page is the Channel ID:
 
     ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
@@ -308,7 +391,7 @@ Must contain a minimum of 2 segments. Each segment must start with a letter foll
 
 Example: com.company.my\_app
 
-For more information, see the “id” field in the [Amazon Vega OS documentation](https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields).
+For more information, see the “id” field in the <Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">Amazon Vega OS documentation</Anchor>.
 
 </Accordion>
 
@@ -403,7 +486,7 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 **App ID:** The Meta Quest app ID, as it appears at the end of the Meta app store URL from which the app is downloaded. Includes 3-50 characters from: `A-Z` `a-z0-9._-`.
 
-![](https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png)
+<Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
 </Accordion>
 
@@ -457,13 +540,13 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 ### Enter additional information (not applicable to web apps):
 
-![](https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png)
+<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 #### **Select currency**
 
-Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. [Learn more](/docs/app-settings#localization-currency) about an app's currency setting and its impact.
+Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. <Anchor target="_blank" href="/marketers/docs/app-settings#localization-currency">Learn more</Anchor> about an app's currency setting and its impact.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Use care in selecting the currency you want to use for the app. You won't be able to change it once cost and revenue have been recorded.
 
@@ -474,24 +557,24 @@ Align the timezone you select here with the timezone you set with other attribut
 > 📘 **Note**
 >
 > * Once the timezone is set, it remains locked and can't be changed until the following day.
-> * [Learn more](/docs/changing-app-time-zone-settings) about app timezone setting and its impact.
+> * <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">Learn more</Anchor> about app timezone setting and its impact.
 
 #### **Define app audience**
 
 Select **Yes** or **No** to indicate whether or not your app is directed toward children or a mixed audience (both children and adults).  
 If you've selected **Yes:**
 
-1. Open and read the [guide](https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf) about implementing compliance with child-directed apps.
+1. Open and read the <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guide</Anchor> about implementing compliance with child-directed apps.
 2. Select the box to confirm you've read the guide and will implement the controls it specifies.
 
 > 📘 **Note**
 >
-> * Two weeks after adding the app, you'll get a notification asking you to confirm you've implemented privacy controls for your child-directed apps. After confirming, you'll get a confirmation message. You can always access the confirmation message from the Notification center or see the confirmation details in the [Audit log](/docs/audit-log).
-> * See [frequently asked questions about child-directed apps](/docs/child-directed-apps-faq).
+> * Two weeks after adding the app, you'll get a notification asking you to confirm you've implemented privacy controls for your child-directed apps. After confirming, you'll get a confirmation message. You can always access the confirmation message from the Notification center or see the confirmation details in the <Anchor target="_blank" href="/marketers/docs/audit-log">Audit log</Anchor>.
+> * See <Anchor target="_blank" href="/marketers/docs/child-directed-apps-faq">frequently asked questions about child-directed apps</Anchor>.
 
 #### Manage your apps in bulk via API
 
-Account admins can [manage multiple apps in bulk](https://dev.appsflyer.com/hc/reference/app-management-v2-overview) using a dedicated API that supports the main features of the UI. This includes adding and deleting apps, and updating the app settings. The API also incorporates the same error verification mechanisms.
+Account admins can <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">manage multiple apps in bulk</Anchor> using a dedicated API that supports the main features of the UI. This includes adding and deleting apps, and updating the app settings. The API also incorporates the same error verification mechanisms.
 
 > 📘 **Note**
 >
@@ -507,8 +590,8 @@ If your developer creates a **debug**, **sandbox**, or **testing app**, you must
 
 For developer instructions on how to create a debug app and add it to the dashboard, see:
 
-* [Android instructions](https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app)
-* [iOS instructions](https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app)
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Android instructions</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">iOS instructions</Anchor>
 
 ## About pending apps
 
@@ -516,7 +599,7 @@ Working with an app in pending status can be useful when you are debugging it to
 
 The status of the app as pending on the dashboard has no effect on data collection and measurement. Whether an app is pending or live on an app store, if users install and interact with it, install and in-app event data is recorded on the dashboard just the same.
 
-Once your pending app goes live, AppsFlyer will detect and automatically update its status, so you don't need to add it again. [Learn more](/docs/why-is-my-app-still-pending) about pending apps and the optional procedure for manually refreshing status.
+Once your pending app goes live, AppsFlyer will detect and automatically update its status, so you don't need to add it again. <Anchor target="_blank" href="/marketers/docs/why-is-my-app-still-pending">Learn more</Anchor> about pending apps and the optional procedure for manually refreshing status.
 
 ## Troubleshooting
 
@@ -572,8 +655,8 @@ This happens because users can reinstall an app via the operating system if it p
 
 <Accordion title="Product Line">
 
-You can add or remove apps from a Product Line. For more information on Product Lines and what they offer, [see here](/docs/product-line-group-apps-for-cross-platform-attribution).
+You can add or remove apps from a Product Line. For more information on Product Lines and what they offer, <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution">see here</Anchor>.
 
 </Accordion>
 
-<div data-zendesk-anchors="01H8Y09SSKZS2RHM35JT16ESKM=overview 01H8Y0K9EHWH05DB5K02ASJG11=entering-the-wizard-for-adding-an-app 01H8F2TENNWXADKVZFHY9SE8JC=note 01H8ECFB7V0DCNE0ZKPZ2GCVMP=adding-an-app 01H81661SR41SQFZZ0AW6K2EDM=note-1 01H815FE64VZZS9WGJSC8VY74D=enter-app-details 01H815FE64CXEHWTV40NVYQHGJ=android-androidtv-fire 01H815FE64X0SPA71TBQ9T4ZVB=ios-tvos-macos 01H815FE64ZZA2N1XQFBRXVF41=windows-xbox 01H815FE64XZKDJW1CX5R1JE1T=web-pba 01H815FE646GWA7KJ83KTGHH05=note-2 01H815FE65R1Z06TJR0DNC8PFY=important h_01KGEPG8V7ZZ6V2EYYPES0QM77=web h_01KGPM33BA6AJSX32CTN808AXM=before-you-begin h_01KGPM3GTYJJ0ARD3R1XHVAQ8F=to-add-a-web-app h_01KGPM5TTNSECSWEAQY5VH7DTY=note-3 01H815FE65X37H40AN99EZJ940=roku h_01KDJP1G4QZHAKH13M5D3CD793=amazon-vega-os 01H815FE654W6D4FCANR1DET8A=vizio-smartcast 01H815FE65J6T610QQXWJS0CJS=samsung-tizen 01H815FE65CRW81AD1006KHGV4=lg-webos 01H815FE65ESQZ56C8B4HG9P8M=playstation 01H815FE65483DV8MD4STH3QTR=vidaa 01H815FE655PZS1H9YW95X1R53=steam 01H815FE655XP075WYRVVFKD4F=meta-quest 01H815FE65XJEVHNT45SHGWJS4=nintendo-switch 01H815FE6598PD87PNBE7MFEQ8=xbox 01H815FE658WJCB1ZCPGAD4GGS=epic-games 01H815FE652P3HCWY2PEDJJARM=native-pc 01H815FE65AWE8VKV9FYJ7N8MV=enter-additional-information-not-applicable-to-web-apps h_01HHCFD94K6PGQRED6Z6KXKRQF=select-currency 01H815FE65X7BCFKH1EEFA91GQ=important-1 h_01HHCFDE25S92GZ9TPGQW4PXHV=select-timezone h_01HMNSSBP2EFXCVW290MKW1EFV=note-4 h_01HHCFDRNFDERZZV3TT8BVXMB4=define-app-audience h_01H9MYF17VNBETQ0HS745EJ85H=note-5 h_01HR3Z81NXCAZKK26HWCN5VD9D=manage-your-apps-in-bulk-via-api h_01HR3ZJW7YD4B8WV0NW9MX6EVP=note-6 add-debug-or-testing-app=add-a-debug-or-testing-app h_01K2F8JX66F614HF8D5MWQ26P7=add-a-debug-or-testing-app ios-dummy-app-id-note=note-7 h_01K2F8JX662XEY0A47DZG6DHWQ=note-7 01H815FE65MYPABC3DTVEMA8E9=about-pending-apps 01H815FE655HS8EA4R00D0VCYD=troubleshooting 01H815FE65V2GYP0Q612512DE0=app-wasnt-added 01H815FE65A0HPTVVCT42QQA6M=app-not-in-the-store 01H815FE65EN3PBSH5BKRGNNXD=cant-access-marketplace 01H815FE65FR4ATDA4CVX2FW9N=something-went-wrong h_01JNK9HB2ZWQ78XK9B33QWHV49=my-ios-app h_01K7KSRWCB1Y89T21JFJR42VAJ=other-information h_01K7KSPDSSG8CRCQB5V545Y12Z=product-line" />
+<div data-zendesk-anchors="01H8Y09SSKZS2RHM35JT16ESKM=overview 01H8Y0K9EHWH05DB5K02ASJG11=entering-the-wizard-for-adding-an-app 01H8F2TENNWXADKVZFHY9SE8JC=note 01H8ECFB7V0DCNE0ZKPZ2GCVMP=adding-an-app 01H81661SR41SQFZZ0AW6K2EDM=note-1 01H815FE64VZZS9WGJSC8VY74D=enter-app-details 01H815FE64CXEHWTV40NVYQHGJ=android-androidtv-fire h_01KRB930DZ2NRYBZSERSG7WB3A=note-2 01H815FE641Q6N5JY5846QE59Y=important 01H815FE64X0SPA71TBQ9T4ZVB=ios-tvos-macos 01H815FE64ZZA2N1XQFBRXVF41=windows-xbox 01H815FE64XZKDJW1CX5R1JE1T=web-pba 01H815FE646GWA7KJ83KTGHH05=note-3 01H815FE65R1Z06TJR0DNC8PFY=important-1 h_01KGEPG8V7ZZ6V2EYYPES0QM77=web h_01KGPM33BA6AJSX32CTN808AXM=before-you-begin h_01KGPM3GTYJJ0ARD3R1XHVAQ8F=to-add-a-web-app h_01KGPM5TTNSECSWEAQY5VH7DTY=note-4 01H815FE65X37H40AN99EZJ940=roku h_01KDJP1G4QZHAKH13M5D3CD793=amazon-vega-os 01H815FE654W6D4FCANR1DET8A=vizio-smartcast 01H815FE65J6T610QQXWJS0CJS=samsung-tizen 01H815FE65CRW81AD1006KHGV4=lg-webos 01H815FE65ESQZ56C8B4HG9P8M=playstation 01H815FE65483DV8MD4STH3QTR=vidaa 01H815FE655PZS1H9YW95X1R53=steam 01H815FE655XP075WYRVVFKD4F=meta-quest 01H815FE65XJEVHNT45SHGWJS4=nintendo-switch 01H815FE6598PD87PNBE7MFEQ8=xbox 01H815FE658WJCB1ZCPGAD4GGS=epic-games 01H815FE652P3HCWY2PEDJJARM=native-pc 01H815FE65AWE8VKV9FYJ7N8MV=enter-additional-information-not-applicable-to-web-apps h_01HHCFD94K6PGQRED6Z6KXKRQF=select-currency 01H815FE65X7BCFKH1EEFA91GQ=important-2 h_01HHCFDE25S92GZ9TPGQW4PXHV=select-timezone h_01HMNSSBP2EFXCVW290MKW1EFV=note-5 h_01HHCFDRNFDERZZV3TT8BVXMB4=define-app-audience h_01H9MYF17VNBETQ0HS745EJ85H=note-6 h_01HR3Z81NXCAZKK26HWCN5VD9D=manage-your-apps-in-bulk-via-api h_01HR3ZJW7YD4B8WV0NW9MX6EVP=note-7 add-debug-or-testing-app=add-a-debug-or-testing-app h_01K2F8JX66F614HF8D5MWQ26P7=add-a-debug-or-testing-app ios-dummy-app-id-note=note-8 h_01K2F8JX662XEY0A47DZG6DHWQ=note-8 01H815FE65MYPABC3DTVEMA8E9=about-pending-apps 01H815FE655HS8EA4R00D0VCYD=troubleshooting 01H815FE65V2GYP0Q612512DE0=app-wasnt-added 01H815FE65A0HPTVVCT42QQA6M=app-not-in-the-store 01H815FE65EN3PBSH5BKRGNNXD=cant-access-marketplace 01H815FE65FR4ATDA4CVX2FW9N=something-went-wrong h_01JNK9HB2ZWQ78XK9B33QWHV49=my-ios-app h_01K7KSRWCB1Y89T21JFJR42VAJ=other-information h_01K7KSPDSSG8CRCQB5V545Y12Z=product-line" />

@@ -1,11 +1,5 @@
 ---
 title: Eulerian integration with AppsFlyer
-excerpt: >-
-  Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and
-  real-time optimization of e-marketing operations. Based on an exhaustive data
-  collection system, Eulerian marketing suite provides a combination of
-  marketing web attribution and data management solutions. This technology
-  enables users to centralize, analyze, manage and activate data in real-time.
 metadata:
   keywords:
     - Advertisers
@@ -30,9 +24,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001521405-Eulerian-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and real-time optimization of e-marketing operations. Based on an exhaustive data collection system, Eulerian marketing suite provides a combination of marketing web attribution and data management solutions. This technology enables users to centralize, analyze, manage and activate data in real-time.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Eulerian
 
@@ -45,12 +41,12 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 Eulerian's configuration window includes 4 tabs: **Integration, Attribution link, Data Enrichment**, and **Permissions**. Click on the items below to read about the tab setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/user-level-data-retention).
+For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
 
 <div id="integration-tab" />
 
@@ -61,7 +57,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation, click [here](/docs/partner-activation-deactivation).
+For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 

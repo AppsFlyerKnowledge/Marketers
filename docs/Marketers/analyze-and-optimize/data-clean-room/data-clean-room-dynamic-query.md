@@ -1,9 +1,5 @@
 ---
 title: Data Clean Room—Dynamic Query
-excerpt: >-
-  Run custom DCR queries in real time on your attribution data in the AppsFlyer
-  system, your custom sources, or a combination. Preview the results of your
-  queries or download the full results.
 metadata:
   keywords:
     - Premium
@@ -27,6 +23,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Run custom DCR queries in real time on your attribution data in the AppsFlyer system, your custom sources, or a combination. Preview the results of your queries or download the full results.
+
 ## Overview
 
 ### Why use Dynamic Query?
@@ -34,7 +32,7 @@ x-zendesk:
 Dynamic Query gives you the ability to run ad hoc, custom queries on your DCR data in real time to answer your specific marketing questions quickly and efficiently.
 
 * Incorporating the power and flexibility of SQL, it allows you to perform advanced research and complex calculations that can't be accomplished in any other way. With Dynamic Query, you can bring your business logic to data that would otherwise be inaccessible.
-* In addition, Dynamic Query makes it possible to obtain efficient answers to one-time or occasional questions without the need to set up reports. (Of course, [traditional DCR reports](/docs/data-clean-room-working-with-reports) are still the right solution for ongoing data retrieval and ingestion.)
+* In addition, Dynamic Query makes it possible to obtain efficient answers to one-time or occasional questions without the need to set up reports. (Of course, <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-reports">traditional DCR reports</Anchor> are still the right solution for ongoing data retrieval and ingestion.)
 
 Dynamic Query is available to **all DCR customers,** giving you the ability to run queries and preview the results without using credits from your DCR package. You'll only be charged credits if you decide to download the full results. In this way, you can be sure you've set up your queries correctly and that you'll get the answers you need before you incur any charges.
 
@@ -42,8 +40,8 @@ Dynamic Query is available to **all DCR customers,** giving you the ability to r
 
 Dynamic Query utilizes SQL **(Spark SQL dialect)** and supports:
 
-* [SELECT statements](https://spark.apache.org/docs/3.2.1/sql-ref-syntax-qry-select.html)
-* [Standard SQL functions](https://spark.apache.org/docs/3.2.1/api/sql/)
+* <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/sql-ref-syntax-qry-select.html">SELECT statements</Anchor>
+* <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/api/sql/">Standard SQL functions</Anchor>
 * User-defined functions (UDFs), upon customer request
   * If you require a non-standard SQL function, contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com,) and we'll make every effort to add it.
 
@@ -53,7 +51,7 @@ Dynamic Query allows you to perform custom queries on the following data sources
 
 * Your attribution data in the AppsFlyer system
   * [Learn more](#querying-attribution-data) about attribution data tables and how to query them
-* [Custom sources](/docs/data-clean-room-working-with-sources) you've set up in the DCR
+* <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources">Custom sources</Anchor> you've set up in the DCR
 
 You can query these sources individually, or [combine 2 or more](#combining-sources) using **JOIN** or **UNION** statements. This flexibility makes Dynamic Query useful in a variety of scenarios, for example:
 
@@ -64,7 +62,7 @@ Based on the types of sources used in a query, [rules are applied](#preserving-p
 
 > 📘 **Note**
 >
-> Currently, Dynamic Query does not query attribution data or return results from Meta (Facebook, Instagram, etc.) To query this data, set up [DCR reports](/docs/data-clean-room-working-with-reports).
+> Currently, Dynamic Query does not query attribution data or return results from Meta (Facebook, Instagram, etc.) To query this data, set up <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-reports">DCR reports</Anchor>.
 
 ### Preserving privacy
 

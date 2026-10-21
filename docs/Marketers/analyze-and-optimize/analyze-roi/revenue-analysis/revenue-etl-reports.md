@@ -1,9 +1,5 @@
 ---
 title: Revenue ETL reports
-excerpt: >-
-  Learn about ROI360 revenue reports, their sources, how they are generated,
-  when they are available, and how you can access them. Learn more about the
-  fields and structure of the reports by downloading the data sample.
 metadata:
   keywords:
     - Marketers
@@ -28,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16464765619985-Revenue-ETL-reports
 ---
+**At a glance:** Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them. Learn more about the fields and structure of the reports by downloading the data sample.
+
 ## Revenue ETL
 
 With ROI360 Revenue ETL, your revenue data is sent via Data Locker to cloud storage for loading into your BI systems.
@@ -36,9 +34,9 @@ The following table shows the available revenue reports. **Note**: With the exce
 
 | Report | Integration type | Description | Data freshness |
 | --- | --- | --- | --- |
-| [Legacy ad revenue [single version]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [single version x+1]</li><li>Organic ad revenue [single version x+1]</li><li>Retargeting ad revenue [single version x+1]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue data.</li><li>Single version (no further data updates).</li><li>If there are both API and SDK integrations, reports contain only API data.</li></ul> | <ul><li>Daily (Available on Day x+1) [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness)</li></ul> |
-| [Ad revenue [versioned]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [versioned]</li><li>Organic ad revenue [versioned]</li><li>Retargeting ad revenue [versioned]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains the most up-to-date ad revenue data.</li><li>[Versioned](/docs/data-locker-for-marketers#version-folders)</li></ul> | <ul><li>Intraday. [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness)</li><li>Data updates from 4 hours to 14 days after the ad impression.</li></ul> |
-| [Ad revenue [SDK impression level]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Impression-level (via SDK)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue SDK data.</li><li>Provides maximum data freshness and granularity.</li></ul> | Hourly. [Learn more](/docs/roi360-guide-ad-revenue-attribution#data-freshness) |
+| [Legacy ad revenue [single version]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [single version x+1]</li><li>Organic ad revenue [single version x+1]</li><li>Retargeting ad revenue [single version x+1]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue data.</li><li>Single version (no further data updates).</li><li>If there are both API and SDK integrations, reports contain only API data.</li></ul> | <ul><li>Daily (Available on Day x+1) <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor></li></ul> |
+| [Ad revenue [versioned]](/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level):<ul><li>Attributed ad revenue [versioned]</li><li>Organic ad revenue [versioned]</li><li>Retargeting ad revenue [versioned]</li></ul> | <ul><li>Impression-level (via SDK)</li><li>Device-level (via S2S API)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains the most up-to-date ad revenue data.</li><li><Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#version-folders">Versioned</Anchor></li></ul> | <ul><li>Intraday. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor></li><li>Data updates from 4 hours to 14 days after the ad impression.</li></ul> |
+| [Ad revenue [SDK impression level]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Impression-level (via SDK)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue SDK data.</li><li>Provides maximum data freshness and granularity.</li></ul> | Hourly. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor> |
 | [Transaction-level stores revenue](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the transaction level.</li><li>Provides maximum data freshness and data granularity.</li><li>Includes unique ROI360 monetization-related data and net revenue.</li></ul> | Hourly |
 | [Device-level stores revenue [versioned]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the device level.</li><li>Includes unique ROI360 net revenue data.</li></ul> | Every 8 hours |
 

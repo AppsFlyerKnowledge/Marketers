@@ -1,8 +1,5 @@
 ---
 title: Set up the Engagements task
-excerpt: >-
-  Learn how to configure engagement events for on-site and combined campaigns
-  (on-site and off-site campaigns).
 metadata:
   keywords:
     - Marketers
@@ -23,7 +20,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38188042548113-Set-up-the-Engagements-task
 ---
-[Engagement events](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements) capture user interactions—such as ad views or clicks—that occur before a conversion. They are configured only for on-site campaigns, either alone or combined with off-site campaigns. (For off-site campaigns, engagement data is provided directly by external partners such as Meta or Google. This article explains how to configure engagements by campaign type.
+**At a glance:** Learn how to configure engagement events for on-site and combined campaigns (on-site and off-site campaigns).
+
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Engagement events</Anchor> capture user interactions—such as ad views or clicks—that occur before a conversion. They are configured only for on-site campaigns, either alone or combined with off-site campaigns. (For off-site campaigns, engagement data is provided directly by external partners such as Meta or Google. This article explains how to configure engagements by campaign type.
 
 ## Prerequisites
 
@@ -39,8 +38,8 @@ In the context of on-site and combined campaigns, all engagement events originat
 
 Before you set up the custom engagement source in DCP, you can provide engagement data in one of two ways:
 
-* **Custom source file:** Create an engagement source file and upload it to your cloud service. For more information, see [Prepare custom source files for engagements](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme).
-* **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app engagement events to DCP. For more information, see [Prepare in-app events for engagements](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events).
+* **Custom source file:** Create an engagement source file and upload it to your cloud service. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#the-engagement-source-scheme">Prepare custom source files for engagements</Anchor>.
+* **AppsFlyer SDK:** Integrate the AppsFlyer SDK into your app to automatically send in-app engagement events to DCP. For more information, see <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement#prepare-engagement-inapp-events">Prepare in-app events for engagements</Anchor>.
 
 </Accordion>
 
@@ -55,13 +54,13 @@ To open the **Measurement settings** page, follow these steps:
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
 3. At the bottom of the collaboration page, click **Set up measurement.**
-   * If the link is grayed out, set up the collaboration's [data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) and [audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences).
+   * If the link is grayed out, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
 4. On the **Measurement Setting** page, click the **Engagements** pane to open the **Engagements** dialog.
 
    > 📘 **Note**
    >
    > * If the **Engagements** dialog is locked, it means that the Engagements task has been assigned to your collaborator and that you cannot view its content. If you are the collaboration owner, you can unlock it by reassigning the task to yourself. However, any previous settings will be deleted, and the task will be reset.
-   > * If the **Engagements** pane is grayed out, ask the collaboration ownerto assign you the Engagements task.
+   > * If the **Engagements** pane is grayed out, ask the collaboration owner to assign you the Engagements task.
 
 
 </Accordion>
@@ -85,7 +84,7 @@ To set up the engagement provision method in DCP, follow these steps:
      3. In the **Select advertised item (SKU)** list, select the parameter in the in-app event that contains the SKU value.
    * **Custom source:**
      1. Click + **New engagement source**.
-     2. In the **New engagement source** dialog, enter the engagement source's name in the **Source name** field according to the [requirements and guidelines](/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines).
+     2. In the **New engagement source** dialog, enter the engagement source's name in the **Source name** field according to the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#requirements-and-guidelines">requirements and guidelines</Anchor>.
 3. Click **Next**.
 
 </Accordion>
@@ -100,11 +99,11 @@ If a custom source is used to provide engagement events to DCP, set the details 
    * If your account does not have connections defined, the **New connection** dialog will open, prompting you to create one.
    * If you have existing connections but want to use a new one, open the **Select connection** list and select **+ New connection.**
 2. Set the source access details according to your cloud service:
-   * [BigQuery](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery)
-   * [Snowflake](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake)
-   * [Amazon S3 and GCS](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets)
-   * [Local file system](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files)
-3. Select how new data should be handled. For more information, see: [Set source sync method](/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method).
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-bigquery">BigQuery</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-snowflake">Snowflake</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-locations-in-cloud-storage-buckets">Amazon S3 and GCS</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">Local file system</Anchor>
+3. Select how new data should be handled. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Set source sync method</Anchor>.
 4. Click **Next**.
 
 </Accordion>
@@ -126,7 +125,7 @@ If the engagement source fields are not already loaded, you might have to load t
 To load engagement source fields, follow these steps:
 
 1. In the **Map source fields** step, click **Load fields from source**.
-2. For information about how to manually load fields, see: [Load your source fields](/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields).
+2. For information about how to manually load fields, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#1-load-your-source-fields">Load your source fields</Anchor>.
 
 **Auto-map engagement fields**
 

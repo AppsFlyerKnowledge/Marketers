@@ -1,8 +1,5 @@
 ---
 title: SKAN CV schema API for advertisers
-excerpt: >-
-  View your current SKAdNetwork (SKAN) conversion value (CV) schema as
-  configured in AppsFlyer Conversion Studio.
 metadata:
   keywords:
     - Developers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/8610329713553-SKAN-CV-schema-API-for-advertisers
 ---
+**At a glance:** View your current SKAdNetwork (SKAN) conversion value (CV) schema as configured in AppsFlyer Conversion Studio.
+
 ## SKAN conversion value schema API
 
 <div id="api-basics" />
@@ -36,13 +35,13 @@ x-zendesk:
 | Path parameters (mandatory) | `<app_id>`: Is the app identifier as found in the AppsFlyer dashboard. Insert it exactly as it displays in the dashboard. Example: id123456789 |
 | HTTP method | `GET` |
 | Response content type | `text/plain` |
-| Authorization | `Authorization` HTTP header containing API V2.0 token (Bearer token) is required.<br /><br />![AppsFlyerAdmin_us-en.png](https://files.readme.io/466e632ed4068c94ee10e1f72e3451e6133f7029554358d60b7433c267538bba-21590572168721.png)An admin user [gets the V2 token in the dashboard,](/docs/managing-appsflyer-tokens) from the top bar, open the account menu (email address dropdown) > **Security Center** > **AppsFlyer API and S2S tokens**. |
+| Authorization | `Authorization` HTTP header containing API V2.0 token (Bearer token) is required.<br /><br />![AppsFlyerAdmin_us-en.png](https://files.readme.io/466e632ed4068c94ee10e1f72e3451e6133f7029554358d60b7433c267538bba-21590572168721.png)An admin user <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">gets the V2 token in the dashboard,</Anchor> from the top bar, open the account menu (email address dropdown) > **Security Center** > **AppsFlyer API and S2S tokens**. |
 | Rate limitation | <ul><li>Queries return up to 50K rows</li><li>10 calls per minute</li></ul> |
 | Date of last  configuration change | <ul><li>For decode mode, the date displays in the filename.</li><li>For all other modes, the date displays in the last\_config\_change column.</li></ul> |
 
 ### Request example (cURL)
 
-```bash
+```shell
 curl --request \
 GET 'https://hq1.appsflyer.com/api/skan-pull-cs-api/v1/conversion-studio-schema/app/<app_id>' \
 --header 'Authorization: Bearer <V2_AUTH_TOKEN_HERE (700+ characters string)>'
@@ -85,7 +84,7 @@ For all other modes: `conversion_schema_report_custom_encode`
 | 401 | Unauthorized | Authorization token is missing or invalid<br /><br />Make sure you use the token correctly |
 | 401 | Too many requests | Exceeded rate limitation |
 | 403 | No permission | You don't have permission to access this report. If you are an analytics partner ask the advertiser to give you permission. |
-| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer [IP addresses are allowlisted](/docs/appsflyer-server-ip-address-ranges-allowlisting)</li></ul> |
+| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">IP addresses are allowlisted</Anchor></li></ul> |
 
 </Accordion>
 

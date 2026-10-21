@@ -1,9 +1,5 @@
 ---
 title: Redirect users to custom app store product pages
-excerpt: >-
-  Redirect users to your app's custom store listings in Google Play or custom
-  product pages in the App Store. Use AppsFlyer data about the custom store
-  pages to optimize your campaigns.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4406217556625-Redirect-users-to-custom-app-store-product-pages
 ---
+**At a glance:** Redirect users to your app's custom store listings in Google Play or custom product pages in the App Store. Use AppsFlyer data about the custom store pages to optimize your campaigns.
+
 ## Overview
 
 Google Play custom store listings and Apple App Store custom product pages (referred to collectively in this article as custom store product pages), allow app owners to create additional versions of their Google Play and App Store pages that showcase different features or content within their app. Custom store product pages can have promotional text, screenshots, and previews that are different from those on the default store page.
@@ -56,7 +54,7 @@ Aggregate data for App Store custom product pages is available in the Overview d
 
 <Accordion title="Raw data">
 
-Raw data is available via the [AppsFlyer reporting tools](/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features).
+Raw data is available via the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">AppsFlyer reporting tools</Anchor>.
 
 In the reports, the `store_product_page` field indicates which custom page a given user was redirected to.
 
@@ -81,8 +79,8 @@ Prerequisites:
 
 * Custom store listing created in Google Console.  
   **Note**: In Google Console, the custom listing must be set to be via a unique URL param.
-* [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template)
-* [OneLink custom link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link)
+* <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink custom link</Anchor>
 
 **To add a redirection to a custom store listing to a OneLink custom link**:
 
@@ -111,8 +109,8 @@ To set up redirections to a custom product page in the App Store, you can either
 Prerequisites:
 
 * Custom product page created in App Store Connect
-* [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template)
-* [OneLink custom link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link)
+* <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink custom link</Anchor>
 
 **To add a redirection to a custom product page to a OneLink custom link**:
 

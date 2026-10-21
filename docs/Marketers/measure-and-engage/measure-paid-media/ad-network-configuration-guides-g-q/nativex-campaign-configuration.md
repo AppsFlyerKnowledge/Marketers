@@ -1,11 +1,5 @@
 ---
 title: NativeX campaign configuration
-excerpt: >-
-  NativeX, an AppsFlyer integrated partner, is a mobile advertising network
-  specializing in native ad formats that seamlessly blend in with the user’s
-  game or app, delivering higher revenues for developers. In addition to
-  click-based mobile attribution, NativeX also offers cost and view-through
-  attribution, which you can record with AppsFlyer.
 metadata:
   keywords:
     - Advertisers
@@ -28,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208209876-NativeX-campaign-configuration
 ---
-![](https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1%0A)
+**At a glance:** NativeX, an AppsFlyer integrated partner, is a mobile advertising network specializing in native ad formats that seamlessly blend in with the user’s game or app, delivering higher revenues for developers. In addition to click-based mobile attribution, NativeX also offers cost and view-through attribution, which you can record with AppsFlyer.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1%0A" width="150px" />
 
 ## Setting up NativeX
 
@@ -41,13 +37,15 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 NativeX's configuration window includes 4 active tabs: Integration, Attribution link, Cost, and Permissions. Click on the items below to read about the tabs setup.
 
-* The General Settings step in the Integration tab is **mandatory** for all partners
-* All the rest of the steps are either descriptive or **optional**
+> 📘 **Note**
+>
+> * The General Settings step in the Integration tab is **mandatory** for all partners
+> * All the rest of the steps are either descriptive or **optional**
 
 <div id="integration-tab" />
 
@@ -56,7 +54,7 @@ NativeX's configuration window includes 4 active tabs: Integration, Attribution 
 ### Activate partners
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable set up of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 General Settings
 
@@ -114,12 +112,12 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameter:** af\_adset
 * **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns NativeX.  
   **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the subsite ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
 ### Click-through attribution
 
@@ -127,7 +125,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ### Click attribution link
 
@@ -141,7 +139,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 **Attribution link parameter:** af\_viewthrough\_lookback
 
-More details about the [view-through attribution here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
 ### Impressions attribution link
 
@@ -179,11 +177,11 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
+* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
 * ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 

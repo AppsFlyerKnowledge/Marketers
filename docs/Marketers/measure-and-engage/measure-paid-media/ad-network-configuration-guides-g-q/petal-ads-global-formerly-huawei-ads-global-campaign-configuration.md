@@ -1,13 +1,5 @@
 ---
 title: Petal Ads Global (formerly HUAWEI Ads global) campaign configuration
-excerpt: >-
-  Petal Ads Global, an AppsFlyer integrated partner, is a paid presentation
-  service, which provided by Huawei for pan-ecosystem partners. It aims to help
-  partners set up a communication bridge with Huawei device users so they can
-  provide valuable information and quality services for users. Petal Ads Global
-  provides slots for displaying mainstream ads such as native ads, rewarded
-  video ads, banner ads, and interstitial ads to more than 570 million Huawei
-  device users around the world.
 metadata:
   keywords:
     - integrated partner
@@ -33,7 +25,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360010605858-Petal-Ads-Global-formerly-HUAWEI-Ads-global-campaign-configuration
 ---
-![huaweiadsglobal.png](https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png)
+**At a glance:** Petal Ads Global, an AppsFlyer integrated partner, is a paid presentation service, which provided by Huawei for pan-ecosystem partners. It aims to help partners set up a communication bridge with Huawei device users so they can provide valuable information and quality services for users. Petal Ads Global provides slots for displaying mainstream ads such as native ads, rewarded video ads, banner ads, and interstitial ads to more than 570 million Huawei device users around the world.
+
+<Image alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
 
 ## Petal Ads Global introduction
 
@@ -41,13 +35,13 @@ Petal Ads Global is integrated into several third-party apps and Huawei apps suc
 
 ## Setting up Petal Ads Global
 
-Petal Ads Global requires to use **OAID** for attribution. Refer to [**our Android OAID Implementation in the SDK guide**](/docs/android-oaid-implementation-in-the-sdk) for fetching OAID on HUAWEI devices. In addition, Petal Ads Global highly recommends **HUAWEI App Gallery referrer attribution** for the apps in the store, to enable the huawei referrer attribution, please upgrade the Android SDK to 6.14.0 above.
+Petal Ads Global requires to use **OAID** for attribution. Refer to <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">**our Android OAID Implementation in the SDK guide**</Anchor> for fetching OAID on HUAWEI devices. In addition, Petal Ads Global highly recommends **HUAWEI App Gallery referrer attribution** for the apps in the store, to enable the huawei referrer attribution, please upgrade the Android SDK to 6.14.0 above.
 
 | Traffic source | Channel value | Attribution methods | Note |
 | --- | --- | --- | --- |
-| Display Ads | huaweiadsglobal | ID-Matching (OAID or GAID), Probabilistic Modeling, Huawei Referrer | Click [here](/docs/android-oaid-implementation-in-the-sdk) to check OAID implementation guide in the Android SDK. Huawei referrer attribution requires Android SDK 6.14.0 |
+| Display Ads | huaweiadsglobal | ID-Matching (OAID or GAID), Probabilistic Modeling, Huawei Referrer | Click <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">here</Anchor> to check OAID implementation guide in the Android SDK. Huawei referrer attribution requires Android SDK 6.14.0 |
 | App Gallery | huaweiappgalleryglobal | ID-Matching (OAID or GAID), Huawei Referrer | Huawei referrer attribution requires Android SDK 6.14.0 |
-| Petal Search | empty value | ID-Matching (OAID or GAID), Probabilistic Modeling | Click [here](/docs/android-oaid-implementation-in-the-sdk) to check OAID implementation guide in the Android SDK |
+| Petal Search | empty value | ID-Matching (OAID or GAID), Probabilistic Modeling | Click <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">here</Anchor> to check OAID implementation guide in the Android SDK |
 
 ### Setting up the Petal Ads Global integration
 
@@ -60,8 +54,8 @@ Petal Ads Global requires to use **OAID** for attribution. Refer to [**our Andro
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -71,7 +65,7 @@ The **Integration Tab** is divided into different sections:
 
 #### Activate partner
 
-To enable the configuration, [activate the partner](/docs/partner-activation-deactivation#activate-a-partner-integration).
+To enable the configuration, <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activate the partner</Anchor>.
 
 This toggle must be turned on for as long as you work with the partner.
 
@@ -83,7 +77,7 @@ To attribute view-through installs from Petal Ads Global, turn this toggle on. T
 
 #### Default postbacks
 
-Send automatic postbacks to Petal Ads Global following user installs from users attributed to Petal Ads Global only. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+Send automatic postbacks to Petal Ads Global following user installs from users attributed to Petal Ads Global only. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 #### In-app events settings
 
@@ -92,7 +86,7 @@ Configure in-app event postbacks that are sent to Petal Ads Global.
 **To configure in-app event postbacks:**
 
 1. Turn on **In-app event postbacks**.
-2. Set the [**In-app events postback window**](/docs/in-app-event-postback-configuration#in-app-event-postback-window).
+2. Set the <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">**In-app events postback window**</Anchor>.
 3. To add an SDK Event to the list, click **Add event**.
 4. Select the following parameters for each event:
 
@@ -111,10 +105,10 @@ Configure in-app event postbacks that are sent to Petal Ads Global.
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[More about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">More about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).  
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.  
 When generating the attribution link, select parameters from the list below and map them to the Petal Ads Global parameters name detailed in the table.
 
 **Attribution link parameters**
@@ -124,7 +118,7 @@ When generating the attribution link, select parameters from the list below and 
 | Campaign | c  <br />af\_c\_id | \_\_CID\_\_ | Add it to compare different campaigns running with Petal Ads Global. |
 | Adset | af\_adset  <br />af\_adset\_id | \_\_ADSETID\_\_ | Use to differentiate adsets. |
 | Ad | af\_ad  <br />af\_ad\_id | \_\_ADID\_\_ | Use to differentiate between creatives within the adset. |
-| Site and subsite ID | af\_siteid  <br />af\_subsiteid | \_\_SITEID\_\_ | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<ul><li>Limit the number of site IDs in use.</li><li>Use the subsite ID parameter to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitation.</li></ul> |
+| Site and subsite ID | af\_siteid  <br />af\_subsiteid | \_\_SITEID\_\_ | Use to attribute installs to specific publishers.<br /><br />**Good practice!** If there are multiple publishers,<ul><li>Limit the number of site IDs in use.</li><li>Use the subsite ID parameter to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitation.</li></ul> |
 | Channel | af\_channel | \_\_CHANNEL\_\_ | Use to differentiate the ad placements.<br /><br />huaweiadsglobal<br /><br />huaweiappgalleryglobal<br /><br />If blank value, then huawei search ads. |
 | Subscriber parameters | af\_sub1, af\_sub2, af\_sub3, af\_sub4, and af\_sub5 |  | Use to insert additional useful values.<ul><li>Parameters are parsed and included in the raw data report.</li><li>Use them to perform data aggregation or filtering.</li></ul> |
 | Ad type | af\_ad\_type | \_\_APP\_STATUS\_\_ | used to distinguish whether the app activated before.<ul><li>if the campaign is used to targeting the users who installed but never open, the parameter will be</li></ul>af\_ad\_type=installed<ul><li>if the campaign is used to targeting the users who never install the App, the parameter will be</li></ul>af\_ad\_type=notinstalled |
@@ -153,7 +147,7 @@ Ad revenue data is not supported by this partner.
 
 In this tab, you can select the permissions to grant Petal Ads Global. Note that even if attribution is disabled for Petal Ads Global, the permissions tab is active and you can grant control to Petal Ads Global.
 
-[Learn how to give permissions to Petal Ads Global.](/docs/set-up-an-integrated-partner#permissions-tab)
+<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Learn how to give permissions to Petal Ads Global.</Anchor>
 
 </Accordion>
 

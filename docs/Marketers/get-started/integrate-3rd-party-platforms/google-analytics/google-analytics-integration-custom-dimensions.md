@@ -1,6 +1,5 @@
 ---
 title: Google Analytics integration—Custom dimensions
-excerpt: Set up the integration with Google Analytics using custom dimensions.
 metadata:
   keywords:
     - Analytics
@@ -23,27 +22,33 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4413033740817-Google-Analytics-integration-Custom-dimensions
 ---
+> **At a glance:** Set up the integration with Google Analytics using custom dimensions.
+
 ## Custom dimensions on Google Analytics
 
 There is another method for sending AppsFlyer's attribution data to Google analytics, that is set up on GA and not on AppsFlyer's dashboard.
 
-**Important!**
+> 🚧 **Important**
+>
+> **Important!**
+>
+> The Custom Dimensions method **IS NOT RECOMMENDED** due to the following:
+>
+> * Integrating Google Analytics through AppsFlyer dashboard is simple, quick and easy
+> * Integrating Google Analytics using Custom Dimensions is complicated and error-prone
+> * Using Custom Dimensions requires you to use both AppsFlyer SDK and Google Analytics SDK
+> * Using Custom Dimensions has a greater potential of causing discrepancies
 
-The Custom Dimensions method **IS NOT RECOMMENDED** due to the following:
+Advertisers that use the new <Anchor target="_blank" href="/marketers/docs/google-analytics-ga4-integration">integration with Google Analytics</Anchor> don't need to use the custom dimensions method.
 
-* Integrating Google Analytics through AppsFlyer dashboard is simple, quick and easy
-* Integrating Google Analytics using Custom Dimensions is complicated and error-prone
-* Using Custom Dimensions requires you to use both AppsFlyer SDK and Google Analytics SDK
-* Using Custom Dimensions has a greater potential of causing discrepancies
-
-Advertisers that use the new [integration with Google Analytics](/docs/google-analytics-ga4-integration) don't need to use the custom dimensions method.
-
-**Note**
-
-This method requires you to integrate GA SDK into your app.
-
-* [GA SDK for Android](https://developers.google.com/analytics/devguides/collection/android/v4/)
-* [GA SDK for iOS](https://developers.google.com/analytics/devguides/collection/ios/v3/)
+> 📘 **Note**
+>
+> **Note**
+>
+> This method requires you to integrate GA SDK into your app.
+>
+> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">GA SDK for Android</Anchor>
+> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">GA SDK for iOS</Anchor>
 
 ### Setting media source as a custom dimension on Google Analytics
 
@@ -69,13 +74,14 @@ Google Analytics has a powerful tool to create user-level segmentation called cu
 
 First, you need to get the media source value from AppsFlyer SDK. You can do this using the method `onConversionDataSuccess`.
 
-**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded` in Android and `onConversionDataReceived` in iOS. We recommend that you upgrade to SDK 5.0.0. To learn more, click [here](/docs/links-to-appsflyer-sdk-release-notes).
+**Note:** Starting SDK V5, `onConversionDataSuccess` is the name of the method for getting conversion data. If you are using an SDK version lower than 5.0.0, the name of the method is `onInstallConversionDataLoaded` in Android and `onConversionDataReceived` in iOS. We recommend that you upgrade to SDK 5.0.0. To learn more, click <Anchor target="_blank" href="/marketers/docs/links-to-appsflyer-sdk-release-notes">here</Anchor>.
 
 Then, you can set the media source as custom dimension using Google Analytics SDK. See the following code samples to learn how to do it:
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```objectivec
 private static Tracker sTracker;
 @Override
 public void onConversionDataSuccess(Map<String, String> conversionData)
@@ -94,11 +100,11 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 }
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-```
+```objectivec
 -(void) onConversionDataSuccess:(NSDictionary*) installData {
   id status = [installData objectForKey:@"af_status"];
   if([status isEqualToString:@"Non-organic"]) {
@@ -121,7 +127,8 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 }
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ### Step 3: See the results in Google Analytics
 

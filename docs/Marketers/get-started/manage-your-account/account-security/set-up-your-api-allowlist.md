@@ -1,6 +1,5 @@
 ---
 title: Set up your API allowlist
-excerpt: Protect your AppsFlyer account by defining an API allowlist.
 metadata:
   keywords:
     - OneLink
@@ -29,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4406016140817-Set-up-your-API-allowlist
 ---
+**At a glance:** Protect your AppsFlyer account by defining an API allowlist.
+
 ## [![API allowlist](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)
 
 ## Overview
@@ -95,7 +96,7 @@ You can add or delete IP addresses from the allowlist at any time (whether or no
 <Accordion title="Allowlist specifications">
 
 * To protect your account from unauthorized API calls, the allowlist must be set to **Active** and include at least one IP address or range.
-* The allowlist applies to all [AppsFlyer APIs that utilize the V2.0 token](/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token). Calls from APIs that use the V1.0 API token will be permitted from all API addresses.
+* The allowlist applies to all <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token">AppsFlyer APIs that utilize the V2.0 token</Anchor>. Calls from APIs that use the V1.0 API token will be permitted from all API addresses.
 * Up to 20 IP addresses or ranges can be added to the allowlist.
 
 </Accordion>

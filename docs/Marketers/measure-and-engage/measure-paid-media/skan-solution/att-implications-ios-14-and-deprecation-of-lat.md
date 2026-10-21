@@ -1,8 +1,5 @@
 ---
 title: ATT implications (iOS 14+) and deprecation of LAT
-excerpt: >-
-  Starting iOS 14 iOS uses ATT to determine user privacy preferences and Limit
-  ad tracking (LAT) is deprecated.
 metadata:
   keywords:
     - Advertisers
@@ -27,14 +24,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360014090597-ATT-implications-iOS-14-and-deprecation-of-LAT
 ---
+**At a glance**: Starting iOS 14 iOS uses ATT to determine user privacy preferences and Limit ad tracking (LAT) is deprecated.
+
 ### ATT values
 
-* Starting iOS 14: Apple [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) (ATT) provides the status values for app tracking authorization.
+* Starting iOS 14: Apple <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> (ATT) provides the status values for app tracking authorization.
 * AppsFlyer gets ATT from the following sources:
   * AppsFlyer SDK V6+ embedded in the app.
   * By API from advertisers. For example, S2S API.
 * ATT is available in raw data reports. You need to explicitly request it as follows:
-  * Pull API: Add ATT *to*the additional\_ fields parameter in your Pull API requests.
+  * Pull API: Add ATT *to* the additional\_ fields parameter in your Pull API requests.
   * Export Data page: In the report fields tab, explicitly select ATT.
   * Data Locker: In the Data Locker configuration page, explicitly add ATT to the field list.
   * Push API: In the API Access page, explicitly add ATT to the field list.
@@ -54,7 +53,7 @@ x-zendesk:
 
 | ATT status | Remark | IDFA availability |
 | --- | --- | --- |
-| af\_unknown | ATT value was reported by the advertiser but is not a known value per the [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) specification | iOS version-dependent |
+| af\_unknown | ATT value was reported by the advertiser but is not a known value per the <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> specification | iOS version-dependent |
 | af\_authorized | IDFA use is permitted for one of the following reasons:<ul><li>Device iOS version: prior to iOS 14.</li><li>The event reported contained IDFA but not ATT. For example, an app having SDK V5.X on a device running an iOS version before iOS 14.</li></ul> | Available |
 | af\_unavailable | <ul><li>ATT was not reported in the event by the advertiser and IDFA is not available.</li><li>AppsFlyer SDK version V5.X is unable to get ATT and did not get IDFA</li></ul> | Not available |
 
@@ -62,8 +61,8 @@ x-zendesk:
 
 | iOS version | Use of Is LAT |
 | --- | --- |
-| Until iOS 13 | ![IsLatTrue_us-en.png](https://files.readme.io/28440075d9c3913a148228a85ede15048d76f24913b48799ec4de3952d8f33e7-360011938457.png)<br /><br />If true, the user-enabled Limit Ad Tracking, IDFA is not available. |
-| Starting in iOS 14 | [Apple deprecated I*s LAT*](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled). Disregard the *Is LAT* value and use ATT instead. |
+| Until iOS 13 | <Image alt="IsLatTrue_us-en.png" src="https://files.readme.io/28440075d9c3913a148228a85ede15048d76f24913b48799ec4de3952d8f33e7-360011938457.png" width="221px" /><br /><br />If true, the user-enabled Limit Ad Tracking, IDFA is not available. |
+| Starting in iOS 14 | <Anchor target="_blank" href="https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled">Apple deprecated I*s LAT*</Anchor>. Disregard the *Is LAT* value and use ATT instead. |
 
 **How LAT translates to ATT in iOS 14**
 

@@ -1,9 +1,5 @@
 ---
 title: PBA media source attribution rules
-excerpt: >-
-  Measure the impact of marketing efforts to drive effective website traffic.
-  Which media sources, types, and channels are responsible for visits and
-  conversion events. Ad level metrics available.
 metadata:
   keywords:
     - media source
@@ -26,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002386997-PBA-media-source-attribution-rules
 ---
+**At a glance:** Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits and conversion events. Ad level metrics available.
+
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 
 ## Website visits and web events
@@ -34,17 +32,17 @@ x-zendesk:
 * **Visit attribution**
   * To determine the media source responsible for bringing a user to the website, PBA analyzes the query parameters on the URL and the HTTP document referrers collected by the web SDK*.*
   * Rules-based media source determination uses the data collected as detailed in this article. Similarly, media type and media channel are determined.
-  * The visit is recorded in [PBA raw data](/docs/pba-raw-data-reports).
+  * The visit is recorded in <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">PBA raw data</Anchor>.
 * **Campaign** information is extracted from:
   * Query parameters using the media source
-  * Gclid (if available) using [Google ads integration](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba)
+  * Gclid (if available) using <Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google ads integration</Anchor>
 * **Web event**
   * A web event occurs when a visitor performs an action on the website, for example, product search, product selection, or purchase.
   * Events are attributed to the visit of the most recent non-direct web visit, occurring during a 30-day look-back window.
   * Events are sub-divided into:   
     * **Conversion events**: Significant events designated by the marketer. For example, purchase or registration.
     * **Standard events**: Other events.
-  * Learn more about [PBA website attribution URL best practices](/docs/pba-website-attribution-url-best-practices).
+  * Learn more about <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-url-best-practices">PBA website attribution URL best practices</Anchor>.
 
 PBA dashboards and raw data reports make use of the attributed media sources, types, channels, and campaigns.
 
@@ -72,7 +70,7 @@ PBA determines the media source, media type, and media channel in a hierarchical
 
 Media source rules as shown in the following table are ranked from high to low priority:
 
-<table><tbody><tr><th>Media source rule </th><th>Resolving the media source </th></tr><tr><td>Prevent self-attribution</td><td><p>To prevent attributing events to the website itself (self-attribution), and other related domains, a <a href="./pba-brand-bundles-and-settings#domain-exclusion">domain exclusion</a> list is used. The list consists of:</p><ul><li>Primary domain: Determined by the URL of the web app included in the brand bundle</li><li>Internal domains: Domains forming part of the brand</li><li>External domains: Payment gateways and payment processing sites set by you and some domains, like PayPal and Stripe, set by AppsFlyer are automatically excluded</li></ul></td></tr><tr><td>pid</td><td><p>Resolve to the pid value in the URL. For some SRNs, resolve the pid to the SRNs commercial name for consistency and clarity. For example, pid=facebook_int resolves to Facebook Ads, twitter_int resolves to Twitter.</p></td></tr><tr><td>Click IDs</td><td><p>Major ad networks, like Google, use click IDs to auto-tag campaigns. Click IDs resolve as follows:</p><ul><li><strong><span>gclid: </span></strong><a href="https://support.google.com/searchads/answer/7342044?hl=en"><span>Google click ID</span></a> resolves to <em>googleadwords_int</em><span>. Note!<em> The GCLID solution is not officially supported by Google, who may deprecate it in the future.</em></span></li><li><strong><span>dclid</span></strong><span>: DoubleClick click ID resolves to <em>doubleclick_int.</em></span></li><li><strong><span>msclkid: </span></strong><a href="http://help.ads.microsoft.com/apex/index/3/en/60000"><span>Bing click ID </span></a>resolves to<span> <em>bingsearch_int</em>.</span></li></ul></td></tr><tr><td>UTM parameters</td><td><strong>UTM custom rules</strong><table><tbody><tr><th>utm_source</th><th>utm_medium</th><th>Media source</th></tr><tr><td>\*</td><td><ul><li>email, mail, e-mail</li><li>Note! If utm_medium contains one of these values, the utm_source is ignored.</li></ul></td><td>Email</td></tr><tr><td>google</td><td>cpc/ppc/paidsearch/search</td><td>googleadwords_int</td></tr><tr><td>google</td><td>cpm/display/banner/video/listing</td><td>doubleclick_int</td></tr><tr><td>dfa / dbm</td><td>cpm</td><td>doubleclick_int</td></tr><tr><td><p>facebook</p></td><td>cpc/ppc/cpm/cpa/paidsocial/paid-social</td><td>Facebook Ads</td></tr><tr><td>bing</td><td>cpc</td><td>bingsearch_int</td></tr><tr><td>yahoo / gemini</td><td>cpc/display/listing</td><td>yahoogemini_int</td></tr><tr><td>twitter</td><td>cpc</td><td>X Ads</td></tr><tr><td>snapchat</td><td>swipe</td><td>snapchat_int</td></tr><tr><td>pinterest</td><td>cpc</td><td>pinterest_int</td></tr></tbody></table><p><span>If there is no custom rule match, the media source resolves to the value of the utm_source parameter.</span><span></span><span></span></p><p><a href="https://en.wikipedia.org/wiki/UTM_parameters"><span>Information about UTM parameters</span></a></p></td></tr><tr><td>Referrer</td><td><span>The referrer is the HTTP source that sent the user to the website. The media source is the domain name of the referrer.</span></td></tr></tbody></table>
+<table><tbody><tr><th>Media source rule </th><th>Resolving the media source </th></tr><tr><td>Prevent self-attribution</td><td><p>To prevent attributing events to the website itself (self-attribution), and other related domains, a <a href="./pba-brand-bundles-and-settings#domain-exclusion" target="_blank">domain exclusion</a> list is used. The list consists of:</p><ul><li>Primary domain: Determined by the URL of the web app included in the brand bundle</li><li>Internal domains: Domains forming part of the brand</li><li>External domains: Payment gateways and payment processing sites set by you and some domains, like PayPal and Stripe, set by AppsFlyer are automatically excluded</li></ul></td></tr><tr><td>pid</td><td><p>Resolve to the pid value in the URL. For some SRNs, resolve the pid to the SRNs commercial name for consistency and clarity. For example, pid=facebook_int resolves to Facebook Ads, twitter_int resolves to Twitter.</p></td></tr><tr><td>Click IDs</td><td><p>Major ad networks, like Google, use click IDs to auto-tag campaigns. Click IDs resolve as follows:</p><ul><li><strong><span>gclid: </span></strong><a href="https://support.google.com/searchads/answer/7342044?hl=en" target="_blank"><span>Google click ID</span></a> resolves to <em>googleadwords_int</em><span>. Note! <em>The GCLID solution is not officially supported by Google, who may deprecate it in the future.</em></span></li><li><strong><span>dclid</span></strong><span>: DoubleClick click ID resolves to <em>doubleclick_int.</em></span></li><li><strong><span>msclkid: </span></strong><a href="http://help.ads.microsoft.com/apex/index/3/en/60000" target="_blank"><span>Bing click ID </span></a>resolves to<span> <em>bingsearch_int</em>.</span></li></ul></td></tr><tr><td>UTM parameters</td><td><strong>UTM custom rules</strong><table><tbody><tr><th>utm_source</th><th>utm_medium</th><th>Media source</th></tr><tr><td>\*</td><td><ul><li>email, mail, e-mail</li><li>Note! If utm_medium contains one of these values, the utm_source is ignored.</li></ul></td><td>Email</td></tr><tr><td>google</td><td>cpc/ppc/paidsearch/search</td><td>googleadwords_int</td></tr><tr><td>google</td><td>cpm/display/banner/video/listing</td><td>doubleclick_int</td></tr><tr><td>dfa / dbm</td><td>cpm</td><td>doubleclick_int</td></tr><tr><td><p>facebook</p></td><td>cpc/ppc/cpm/cpa/paidsocial/paid-social</td><td>Facebook Ads</td></tr><tr><td>bing</td><td>cpc</td><td>bingsearch_int</td></tr><tr><td>yahoo / gemini</td><td>cpc/display/listing</td><td>yahoogemini_int</td></tr><tr><td>twitter</td><td>cpc</td><td>X Ads</td></tr><tr><td>snapchat</td><td>swipe</td><td>snapchat_int</td></tr><tr><td>pinterest</td><td>cpc</td><td>pinterest_int</td></tr></tbody></table><p><span>If there is no custom rule match, the media source resolves to the value of the utm_source parameter.</span><span></span><span></span></p><p><a href="https://en.wikipedia.org/wiki/UTM_parameters" target="_blank"><span>Information about UTM parameters</span></a></p></td></tr><tr><td>Referrer</td><td><span>The referrer is the HTTP source that sent the user to the website. The media source is the domain name of the referrer.</span></td></tr></tbody></table>
 
 </Accordion>
 
@@ -108,7 +106,7 @@ The media channel is determined by rules as listed here.
 
 * Campaigns are determined using: 
   * Campaign URL parameters, per media source URL parameters.
-  * Gclid click ID and using [Google Ads](/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba) integration
+  * Gclid click ID and using <Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads</Anchor> integration
 * If the relevant campaign parameter is not found on the URL, then the campaign is not derived.
 
 | Media source parameter used | Campaign parameter used |
@@ -127,7 +125,7 @@ The media channel is determined by rules as listed here.
 
 A visit to the website is recorded using the following rules and considering the current session status. An active session is a session having less than 30 minutes of inactivity.
 
-* Don't record a visit if the user came from an [external excluded](/docs/pba-brand-bundles-and-settings#domain-exclusion) domain.
+* Don't record a visit if the user came from an <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#domain-exclusion">external excluded</Anchor> domain.
 * During an active session: record a visit if the page load includes a media source.
 * If there is no active session: record a visit.
 * There is no minimum visit time.
@@ -144,7 +142,7 @@ A visit to the website is recorded using the following rules and considering the
 
 * Data finalization:
   * For Web-Assisted Installs, Website Attribution, PBA identifies additional related events during the first 7 days after the conversion. This can change the media source identified as being ultimately responsible for driving the conversion.
-  * In the related raw-data reports, the *final\_data*field is false during the initial 7-day period.
+  * In the related raw-data reports, the *final\_data* field is false during the initial 7-day period.
 
 </Accordion>
 

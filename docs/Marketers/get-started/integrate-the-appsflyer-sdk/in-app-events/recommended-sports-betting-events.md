@@ -1,8 +1,5 @@
 ---
 title: Recommended sports betting events
-excerpt: >-
-  Measure the quality of your users throughout their user journey by recording
-  these suggested in-app events for your sports betting app.
 metadata:
   keywords:
     - Developers
@@ -24,7 +21,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410672219025-Recommended-sports-betting-events
 ---
-## ![soccer_ball.png](https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png) Sports betting
+**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your sports betting app.
+
+## <Image alt="soccer_ball.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Sports betting
 
 Sports betting apps allow bettors to place bets on a range of sports markets. The typical events that we suggest recording are deposits, placing bets, and withdrawals.
 
@@ -35,14 +34,14 @@ Recording events can help you determine:
 * Revenue that is generated through bets
 * What type of bets generate the lowest or highest revenue
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> * Make sure to read the [instructions](/docs/in-app-events-overview#setting-up-in-app-events) for marketers about implementing in-app events.
-> * (Coming soon) To streamline the implementation process, use our [In-app event generator](http://evgen.appsflyer.com/?vertical=gaming). This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
-> * For each recommended event included in this article, there are [code samples](http://evgen.appsflyer.com/?vertical=gaming&view=code) for iOS, Android, and Unity developers.
-> * Detailed instructions for your developer can be found in the  **[AppsFlyer developer hub](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions).**
+> * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
+> * (Coming soon) To streamline the implementation process, use our <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming">In-app event generator</Anchor>. This tool includes all of the typical in-app events described in this article and lets you modify the events according to your business needs. Once complete, share the file with your developer.
+> * For each recommended event included in this article, there are <Anchor target="_blank" href="http://evgen.appsflyer.com/?vertical=gaming&view=code">code samples</Anchor> for iOS, Android, and Unity developers.
+> * Detailed instructions for your developer can be found in the  **<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#understanding-event-structure-definitions">AppsFlyer developer hub</Anchor>.**
 >
-> For more information about recording in-app events, see the [In-app events guide](/docs/in-app-events-overview).
+> For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
 
@@ -113,7 +112,7 @@ First time the user makes a deposit into their betting account
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Monetary value of the deposit that was made | 200 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Monetary value of the deposit that was made | 200 |
 | af\_currency | Currency in which the deposit was made | AUD |
 
 </Accordion>
@@ -134,7 +133,7 @@ Subsequent deposit the user makes after the first time deposit
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Monetary value of the deposit that was made | 200 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Monetary value of the deposit that was made | 200 |
 | af\_currency | Currency in which the deposit was made | AUD |
 
 </Accordion>
@@ -180,7 +179,7 @@ When a user withdraws money from their betting account
 
 | Name | Description | Example value |
 | --- | --- | --- |
-| [af\_revenue](/docs/in-app-events-overview#revenue-in-in-app-events) | Monetary value of the withdrawal. Record as a negative revenue value. | -100 |
+| <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#revenue-in-in-app-events">af\_revenue</Anchor> | Monetary value of the withdrawal. Record as a negative revenue value. | -100 |
 | af\_currency | Currency that was withdrawn | AUD |
 
 </Accordion>

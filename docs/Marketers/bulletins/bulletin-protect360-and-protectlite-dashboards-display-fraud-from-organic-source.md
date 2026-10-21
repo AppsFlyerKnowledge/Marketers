@@ -29,6 +29,6 @@ x-zendesk:
 | **What's new** | Protect360 and ProtectLITE dashboards display fraud from organic sources |
 | --- | --- |
 | **Effective date** | December 20, 2021 |
-| **Where** | [Protect360](/docs/protect360-dashboard) and [ProtectLITE](/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting) dashboards |
+| **Where** | <Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect360</Anchor> and <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor> dashboards |
 | **What** | **Before the change:** Fraud from organic sources was only available in raw data reports.<br /><br />**After the change:** Fraud for installs from organic sources is also displayed in the Protect360 and ProtectLITE dashboards. In-app event fraud from organic sources is not supported. |
 | **What you must know** | <ul><li>Main dashboard filter: You can now filter by organic and/or non-organic traffic.</li><li>Identified fraud trend chart: Can be filtered by source type organic.</li><li>Estimated savings chart: Is not relevant for organic traffic.</li><li>Hijacked installs attribution correction chart: Can display correction to organic, but not from organic.</li><li>Identified fraud breakdown table: Includes data for organic traffic.</li><li>Agencies and ad networks: Cannot view data for organic traffic.</li></ul>Recommended: Don't name owned media sources as organic, as they can be confused and interfere with genuine organic data. |

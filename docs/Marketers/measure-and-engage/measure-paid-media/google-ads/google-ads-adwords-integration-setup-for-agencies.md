@@ -1,6 +1,5 @@
 ---
 title: Google Ads (AdWords)—Integration setup for agencies
-excerpt: Setting up Google Ads integration with AppsFlyer — as an agency.
 metadata:
   keywords:
     - Google
@@ -28,11 +27,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003669983-Google-Ads-AdWords-Integration-setup-for-agencies
 ---
+**At a glance:** Setting up Google Ads integration with AppsFlyer — as an agency.
+
 Both advertisers and agencies must actively configure the system. The following video shows the steps required by both the advertiser and agency to enable the agency to measure and attribute mobile traffic to the advertiser's app using Google Ads.
 
 The configuration enables AppsFlyer to attribute conversions to an agency from within the AppsFlyer dashboard.
 
-Before the Agency can begin the process, the Advertiser must first configure the Google Ads integration. For details, click [here](/docs/google-ads-adwords-integration-setup-for-advertisers).
+Before the Agency can begin the process, the Advertiser must first configure the Google Ads integration. For details, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">here</Anchor>.
 
 ## Enabling agency attribution of Google Ads
 
@@ -44,7 +45,7 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 <Accordion title="Watch">
 
-<Embed title="Google Ads (AdWords)—Integration setup for agencies" typeOfEmbed="iframe" url="https://fast.wistia.net/embed/iframe/fzihkki0qd" height="556px" />
+<Image alt="" src="https://fast.wistia.com/embed/medias/fzihkki0qd/swatch" width="100%" />
 
 </Accordion>
 
@@ -56,8 +57,8 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 **Prerequisites:**
 
-* In AppsFlyer, grant the agency access to the app using the instructions [here](/docs/set-up-an-integrated-partner#agency-permissions).
-* In AppsFlyer, [activate](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) the Google Ads partner.
+* In AppsFlyer, grant the agency access to the app using the instructions <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">here</Anchor>.
+* In AppsFlyer, <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">activate</Anchor> the Google Ads partner.
 
 **To share the advertiser's Link ID:**
 
@@ -85,7 +86,7 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 The advertiser can now see that the invitation request has been sent to the Agency. When the Agency accepts the invite, the status changes to Sharing.
 
-For more details on sharing your Google Ads Link ID, click [here](https://support.google.com/adwords/answer/7365001).
+For more details on sharing your Google Ads Link ID, click <Anchor target="_blank" href="https://support.google.com/adwords/answer/7365001">here</Anchor>.
 
 ![Google_Ag_6.png](https://files.readme.io/b205e5b2771a128846b22d653998da09f8d600b6b60efb6ca1e90042ffba5ee7-50897694593041.png)
 
@@ -157,7 +158,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 4. Click ***Save***.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Import the first-open and in-app actions to Google Ads to begin counting conversions in both Google Ads and your AppsFlyer dashboard.
 >
@@ -166,7 +167,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 > 📘 **Note**
 >
 > * It may take up to 6 hours until the new conversions change status from No Recent Conversion to Recording Conversion.
-> * If an agency works with an MCC account and the app is promoted via several MCC sub-accounts all sub-accounts must be configured in the **Google Ads Customer ID**field (as seen on above screenshot).
+> * If an agency works with an MCC account and the app is promoted via several MCC sub-accounts all sub-accounts must be configured in the **Google Ads Customer ID** field (as seen on above screenshot).
 >   In such a case there is no need to configure the customer id of the MCC account.
 
 </Accordion>
@@ -177,9 +178,9 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 **(Google Ads** **admin only)**
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> For Google Ads to register your new conversions, you must**launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
+> For Google Ads to register your new conversions, you must **launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
 
 1. Return to your Google Ads account (**Overview** page and go to **TOOLS AND SETTINGS** > **Measurement** > **Conversions**.  
    [![conversions_overview_en-us__1_.png](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)
@@ -204,19 +205,19 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 > 📘 **Note**
 >
-> Please ensure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the Google documentation [here](https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false).
+> Please ensure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the Google documentation <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">here</Anchor>.
 
 </Accordion>
 
 </Accordion>
 
-To watch the video "Setting-Up Google Ads Attribution for Advertisers" [click here](/docs/google-ads-adwords-integration-setup-for-advertisers#configuring-google-ads-attribution-for-advertisers).
+To watch the video "Setting-Up Google Ads Attribution for Advertisers" <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#configuring-google-ads-attribution-for-advertisers">click here</Anchor>.
 
-For details of how advertisers can attribute multiple agencies/MCC Google Ads accounts, click [here](/docs/recording-multiple-agency-mcc-google-ads-accounts).
+For details of how advertisers can attribute multiple agencies/MCC Google Ads accounts, click <Anchor target="_blank" href="/marketers/docs/recording-multiple-agency-mcc-google-ads-accounts">here</Anchor>.
 
 ## Agencies: collecting cost, clicks, and impression data
 
-Agencies can [retrieve cost data](/docs/set-up-an-integrated-partner#cost-tab) from Google Ads, which also includes the clicks and impressions data.
+Agencies can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#cost-tab">retrieve cost data</Anchor> from Google Ads, which also includes the clicks and impressions data.
 
 The cost data is displayed on both the agency and advertiser dashboards, at the campaign level.
 

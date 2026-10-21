@@ -1,8 +1,5 @@
 ---
 title: Cross-promotion attribution for developers
-excerpt: >-
-  Implement additional code in the AppsFlyer SDK to enable cross-promotion
-  attribution.
 metadata:
   keywords:
     - tracking
@@ -27,27 +24,32 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410480466065-Cross-promotion-attribution-for-developers
 ---
+> **At a glance:** Implement additional code in the AppsFlyer SDK to enable cross-promotion attribution.
+
 ## Implementing cross-promotion attribution in the SDK
 
-**Note**
-
-Regular mobile ads activate a URL when clicked. Cross-promotion mobile ads don't have a link, but instead, they activate the AppsFlyer SDK ***logAndOpenStore*** method.
+> 📘 **Note**
+>
+> **Note**
+>
+> Regular mobile ads activate a URL when clicked. Cross-promotion mobile ads don't have a link, but instead, they activate the AppsFlyer SDK ***logAndOpenStore*** method.
 
 Attributing cross-promotion clicks and impressions is performed by using two separate API calls as described below. Each API call can also be passed a map of key values, which can be anything that fits your cross-promotion use case.
 
 For example, using the map of parameters you can set the click lookback window and other parameters such as ad IDs, ad sets. You can also mark the campaign as incentivized campaigns. See AppsFlyer attribution parameter for more information.
 
-For a list of standard parameters that you can pass to the API method, see [AppsFlyer attribution parameter.](/docs/about-link-structure-and-parameters)
+For a list of standard parameters that you can pass to the API method, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer attribution parameter.</Anchor>
 
-With the first launch of the promoted app, all the original parameters can be accessed via the SDK's conversion data API, for [Android](https://dev.appsflyer.com/hc/docs/conversion-data-android) or [iOS](https://dev.appsflyer.com/hc/docs/conversion-data-ios).
+With the first launch of the promoted app, all the original parameters can be accessed via the SDK's conversion data API, for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor>.
 
 ### Attribute cross-promotion clicks
 
 Use the following code to attribute the click and launch the app store's app page. The code creates an attribution link and adds the device advertising ID to it.
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```java
 String campaign = "Cross Promo Campaign";
 Map<String, String> parameters = new HashMap();
 parameters.put("af_sub1", "val");
@@ -55,13 +57,13 @@ parameters.put("custom_param", "val2");
 CrossPromotionHelper.logAndOpenStore(this, "com.mygosoftware.android.loginbox", campaign, parameters);
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-iOS allows you to utilize the StoreKit component to open the App Store while remaining in the context of your app. The following code snippet demonstrates how to open the StoreKit class and check that it has been properly initialized. You can read more about the StoreKit documentation [here](https://developer.apple.com/reference/storekit/skstoreproductviewcontroller).
+iOS allows you to utilize the StoreKit component to open the App Store while remaining in the context of your app. The following code snippet demonstrates how to open the StoreKit class and check that it has been properly initialized. You can read more about the StoreKit documentation <Anchor target="_blank" href="https://developer.apple.com/reference/storekit/skstoreproductviewcontroller">here</Anchor>.
 
-```
+```objectivec
 static NSString *const kCrossPromotedAppId = @"123456789";
 static NSString *const kCrossPromotedCampaign = @"test campaign";
 - (void) crossPromotion {
@@ -112,11 +114,11 @@ static NSString *const kCrossPromotedCampaign = @"test campaign";
   }];
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity - Android">
+<Tab title="Unity - Android">
 
-```
+```csharp
 Dictionary<string,string> parameters = new Dictionary<string,string>();
 parameters.Add("af_sub1","val");
 parameters.Add("custom_param","val2");
@@ -125,11 +127,11 @@ AppsFlyer.attributeAndOpenStore("com.mygosoftware.android.loginbox","test campai
 
 In Android, the call for this method should result in opening the Play Store and redirecting to the relevant app.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity - iOS">
+<Tab title="Unity - iOS">
 
-```
+```csharp
 Dictionary<string,string> parameters = new Dictionary<string,string>();
 parameters.Add("af_sub1","val");
 parameters.Add("custom_param","val2")
@@ -138,19 +140,23 @@ AppsFlyer.attributeAndOpenStore("123456789","test campaign",parameters);
 
 In iOS, an attribution Link is generated and returned to the `onOpenStoreLinkGenerated` method in the `IAppsFlyerUserInvite` interface.
 
-</Accordion>
+</Tab>
+</Tabs>
 
-**Note**
-
-You can add any of these [attribution link parameters](/docs/about-link-structure-and-parameters#attribution-link-parameters) to the generated link.
+> 📘 **Note**
+>
+> **Note**
+>
+> You can add any of these <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">attribution link parameters</Anchor> to the generated link.
 
 ### Attribute cross-promotion impressions
 
 To attribute an impression use the following API call. Make sure to use the promoted App ID as it appears within the AppsFlyer dashboard.
 
-<Accordion title="Java">
+<Tabs>
+<Tab title="Java">
 
-```
+```java
 String appID = "com.app";
 String campaign = "Cross Promo Campaign";
 Map<String, String> parameters = new HashMap();
@@ -159,11 +165,11 @@ parameters.put("custom_param", "val2");
 CrossPromotionHelper.logCrossPromoteImpression(this, appID, campaign, parameters);
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Kotlin">
+<Tab title="Kotlin">
 
-```
+```java
 val appID = "com.app"
 val campaign = "Cross Promo Campaign"
 val parameters = HashMap<String, String>()
@@ -177,11 +183,11 @@ CrossPromotionHelper.logCrossPromoteImpression(
 )
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Objective C">
+<Tab title="Objective C">
 
-```
+```objectivec
 static NSString *const kCrossPromotedAppId = @"123456789";
 static NSString *const kCrossPromotedCampaign = @"test campaign";
 /*...*/
@@ -194,11 +200,11 @@ static NSString *const kCrossPromotedCampaign = @"test campaign";
  }
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Swift">
+<Tab title="Swift">
 
-```javascript
+```swift
 var appID = "com.app"
 var campaign = "Cross Promo Campaign"
 var parameters = [String : String]()
@@ -207,15 +213,16 @@ parameters["custom_param"] = "val2"
 AppsFlyerCrossPromotionHelper.logCrossPromoteImpression(appID, campaign: campaign, parameters: parameters)
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity">
+<Tab title="Unity">
 
-```
+```csharp
 AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ### Attribute cross-promotion with non-native platforms
 
@@ -225,14 +232,14 @@ Currently, the cross-promotion attribution APIs are available only for native An
 
 Clicks cross-promotion URL format:
 
-```
+```http
 https://app.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```
 
 Impressions cross-promotion URL format:
 
-```
+```http
 https://impression.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```

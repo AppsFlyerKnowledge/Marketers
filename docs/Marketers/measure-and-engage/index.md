@@ -12,8 +12,8 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551006275729-Measure-Engage
 ---
-- [Measure paid media](/docs/measure-paid-media)
-- [Redirect & attribute users](/docs/redirect-attribute-users)
-- [Retarget users](/docs/retarget-users)
-- [Cross-platform measurement](/docs/cross-platform-measurement)
-- [Preserve user privacy](/docs/preserve-user-privacy)
+- <Anchor target="_blank" href="/marketers/docs/measure-paid-media">Measure paid media</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/redirect-attribute-users">Redirect & attribute users</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/retarget-users">Retarget users</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cross-platform-measurement">Cross-platform measurement</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/preserve-user-privacy">Preserve user privacy</Anchor>

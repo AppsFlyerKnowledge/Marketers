@@ -1,8 +1,5 @@
 ---
 title: Data Clean Room—Working with sources
-excerpt: >-
-  Set up the custom data sources you share with the Data Clean Room (DCR) for
-  matching with attribution data and creating DCR reports.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+> **At a glance:** Set up the custom data sources you share with the Data Clean Room (DCR) for matching with attribution data and creating DCR reports.
+
 ## Introduction
 
 Many DCR reports are designed to match your **attribution data** with data from your **custom data sources.** This article contains everything you need to know about working with your custom data sources, including how to:
@@ -40,15 +39,17 @@ Many DCR reports are designed to match your **attribution data** with data from 
 * [Update source data](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) on a regular basis to trigger report processing
 * [Work with existing sources](/docs/data-clean-room-working-with-sources#working-with-existing-sources)
 
-**Before you begin**
-
-Before you create custom data sources, you should first:
-
-* [Required] [Set up the cloud services](/docs/data-clean-room-setting-up-cloud-services) from which the DCR will retrieve the data. Two types of cloud services are supported:
-  * **Data warehouses:** BigQuery and Snowflake
-  * **Cloud storage buckets:** Amazon S3 (AWS) and GCS
-* [Optional] [Create inbound connections](/docs/data-clean-room-working-with-connections#creating-inbound-connections) in the AppsFlyer platform to connect these cloud services to the DCR.
-  * If these connections were not set up previously, you will be prompted to set them up during source creation.
+> 🚧 **Important**
+>
+> **Before you begin**
+>
+> Before you create custom data sources, you should first:
+>
+> * [Required] <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">Set up the cloud services</Anchor> from which the DCR will retrieve the data. Two types of cloud services are supported:
+>   * **Data warehouses:** BigQuery and Snowflake
+>   * **Cloud storage buckets:** Amazon S3 (AWS) and GCS
+> * [Optional] <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#creating-inbound-connections">Create inbound connections</Anchor> in the AppsFlyer platform to connect these cloud services to the DCR.
+>   * If these connections were not set up previously, you will be prompted to set them up during source creation.
 
 ## Source requirements
 
@@ -81,7 +82,7 @@ In addition to data shared for processing, source tables in BigQuery or Snowflak
   * **Column header:** `dt`
   * **Column type:** date
   * **Data format:** yyyy-mm-dd (*for example*, `2023-04-18`)
-  * **Additional:** BigQuery tables must be [partitioned](https://cloud.google.com/bigquery/docs/partitioned-tables) by this column
+  * **Additional:** BigQuery tables must be <Anchor target="_blank" href="https://cloud.google.com/bigquery/docs/partitioned-tables">partitioned</Anchor> by this column
 * **Version:**
   * **Column header:** `v`
   * **Column type:** string
@@ -96,7 +97,7 @@ In addition to data shared for processing, source tables in BigQuery or Snowflak
 
 Data source files stored in Amazon S3 or GCS must meet these file name and format requirements:
 
-* File name must comply with [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements)
+* File name must comply with <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>
 * CSV or GZIP format
   * The file underlying GZIP compression must be a CSV file.
 * Number of data source files per [data folder](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version):
@@ -138,9 +139,9 @@ The process of creating a source consists of **all the steps described below.** 
 
 **To specify the data source location:**
 
-1. Select the [connection](/docs/data-clean-room-setting-up-cloud-services#overview) in which the source will be (or has been) created.
-   * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection) to create it.
-   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_button.png](https://files.readme.io/0a6766bcb5deef0b2264b372592b82485cc59b11e454cdcbd4a1718de4df951d-14989643499153.png) button to open the **New connection** dialog. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection) to create it.
+1. Select the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#overview">connection</Anchor> in which the source will be (or has been) created.
+   * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection">these instructions</Anchor> to create it.
+   * If you have existing connections but want to use a new one, click the ![dcr_new_connection_button.png](https://files.readme.io/0a6766bcb5deef0b2264b372592b82485cc59b11e454cdcbd4a1718de4df951d-14989643499153.png) button to open the **New connection** dialog. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection">these instructions</Anchor> to create it.
 2. Continue with the relevant instructions below based on where the data for your source is located.
 
 #### Source locations in BigQuery
@@ -168,7 +169,7 @@ Source locations in Amazon S3 or GCS consist of the cloud storage bucket specifi
 
 Once you have specified the connection, AppsFlyer can automatically generate the required underlying folder path as part of the source creation process.
 
-* Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions [detailed here](/docs/data-clean-room-setting-up-cloud-services).
+* Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">detailed here</Anchor>.
 
 - or -
 
@@ -182,14 +183,16 @@ If AppsFlyer generates the folders, the only additional information required is 
 **To complete specifying a source location in a cloud storage bucket, enter the source folder name.**
 
 * By default, the displayed source folder name:
-  * Is based on the [name you gave the source](/docs/data-clean-room-working-with-sources#1-name-the-source). You can change the folder name to meet your needs, so long as it complies with the [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements).
+  * Is based on the [name you gave the source](/docs/data-clean-room-working-with-sources#1-name-the-source). You can change the folder name to meet your needs, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
   * Indicates that it will be generated within a parent folder named **input.** This folder serves as the parent folder for all sources you upload to the DCR.
-    * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements).
+    * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
     * Although this folder is not required, having an **input** folder (or an equivalent folder of a different name) is considered best practice. It is even more highly recommended when you are using the same cloud storage bucket both for uploading data files (input) and receiving reports (output).
 
-**Important!**
-
-If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
 
 </Accordion>
 
@@ -215,9 +218,11 @@ Load source fields using the relevant instructions below:
 
 To load fields from a data source located in a data warehouse (BigQuery or Snowflake), click the ![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png) button.
 
-**Important!**
-
-If the selected source table does not include the required [date and version columns](/docs/data-clean-room-working-with-sources#table-columns), you will receive an error.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> If the selected source table does not include the required [date and version columns](/docs/data-clean-room-working-with-sources#table-columns), you will receive an error.
 
 **Cloud storage bucket sources**
 
@@ -237,37 +242,39 @@ For purposes of defining the source structure:
 
 **To upload your prototype source file, follow the instructions in the relevant tab below:**
 
-<Accordion title="Local file">
+<Tabs>
+<Tab title="Local file">
 
-1. In the **Source structure** section, click the ![DCR_load_fields_from_file.png](https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png) button.
+1. In the **Source structure** section, click the <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" /> button.
 2. In the window that opens, select **Upload a local file.**
 3. Specify the CSV or GZIP file you want to upload, then click OK.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Connection (automatic creation)">
+<Tab title="Connection (automatic creation)">
 
 **To load the file from its connection and allow AppsFlyer to create the source folder structure:**
 
-1. In the **Source structure** section, click the ![DCR_load_fields_from_file.png](https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png) button.
+1. In the **Source structure** section, click the <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" /> button.
 2. In the window that opens, select **Load from connection.**
 3. Click the **Generate folders** link.
    * AppsFlyer automatically creates the required folder structure and source folder (on the connection you specified, with the source folder name you specified).
 4. After the source folder structure has been created, a confirmation message is displayed, including a link to the source folder. Click the provided link to upload your prototype file to the source folder.
 5. Once the file has finished uploading, click **OK.**
 
-</Accordion>
+</Tab>
 
-<Accordion title="Connection (manual creation)">
+<Tab title="Connection (manual creation)">
 
 **To upload the source file from a structure you created manually:**
 
-1. In the **Source structure** section, click the ![DCR_load_fields_from_file.png](https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png) button.
+1. In the **Source structure** section, click the <Image alt="DCR_load_fields_from_file.png" src="https://files.readme.io/544a069a05fd1afed0b4d9935ccea11dafae6afc78c09491b27809dd52daa373-11240944795025.png" width="125px" /> button.
 2. In the window that opens, select **Load from connection.**
 3. **DO NOT** click **Generate folders.** Instead, upload the file directly to the source folder you created for it.
 4. Once the file has finished uploading, click **OK.**
 
-</Accordion>
+</Tab>
+</Tabs>
 
 #### Categorize fields
 
@@ -285,9 +292,11 @@ After you load the fields, AppsFlyer analyzes the file, and a list of all data f
    * Note that reloading the source will overwrite the field names in the Available fields list. Any fields that you previously categorized will remain in the **Identifiers, Dimensions,** or **Metrics** lists.
    * If a previously categorized field is not found in the reloaded source data, it will still display in the relevant category list, but it will be marked with an error icon.
 
-**Note**
-
-If you decide to use additional fields from this source after saving it, you can do so by [editing the source structure](/docs/data-clean-room-working-with-sources#editing-the-source-structure).
+> 📘 **Note**
+>
+> **Note**
+>
+> If you decide to use additional fields from this source after saving it, you can do so by [editing the source structure](/docs/data-clean-room-working-with-sources#editing-the-source-structure).
 
 </Accordion>
 
@@ -297,7 +306,7 @@ If you decide to use additional fields from this source after saving it, you can
 
 **To save the source:**
 
-1. [Optional] Click ![DCR_test_source.png](https://files.readme.io/c8d2bb2e7062d062a2ed7ddb84472c5acd02fc93b178b2299515b2374a3ad3e3-11240865384849.png) to check for errors in the format or validity of the source fields.
+1. [Optional] Click <Image alt="DCR_test_source.png" src="https://files.readme.io/c8d2bb2e7062d062a2ed7ddb84472c5acd02fc93b178b2299515b2374a3ad3e3-11240865384849.png" width="43px" /> to check for errors in the format or validity of the source fields.
 2. Click **Save** to save the source.
 
    The source is created and a confirmation message is displayed.
@@ -331,7 +340,7 @@ The structure of nested subfolders is as follows:
   * **Format:** `data/`
   * The data folder is the location to which the source file is uploaded.
 
-In most cases, you use API calls or other available programmatic means to create the date/version/data folders automatically each time the data source file is uploaded. For additional information, see the API reference for your cloud service: [AWS](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html), [GCS](https://cloud.google.com/storage/docs/reference/libraries).
+In most cases, you use API calls or other available programmatic means to create the date/version/data folders automatically each time the data source file is uploaded. For additional information, see the API reference for your cloud service: <Anchor target="_blank" href="https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html">AWS</Anchor>, <Anchor target="_blank" href="https://cloud.google.com/storage/docs/reference/libraries">GCS</Anchor>.
 
 </Accordion>
 
@@ -408,12 +417,14 @@ To edit the source structure:
 8. Select one or more fields in the **Available fields** list on the left and use the buttons in the middle of the screen to categorize them as identifiers, dimensions, or metrics.
 9. Once you have made all necessary changes, click the **Save** button to save the source with the updated structure or **Cancel** to undo your changes.
 
-**Important!**
-
-Don't forget to make corresponding changes reflecting the new source structure in any reports for which this source is used:
-
-* Fields that were removed, uncategorized, or changed from their previous categories are automatically removed from any reports in which they are used.
-* Newly added or categorized fields are not automatically included in existing reports until you edit report definitions to include them.
+> 🚧 **Important**
+>
+> **Important!**
+>
+> Don't forget to make corresponding changes reflecting the new source structure in any reports for which this source is used:
+>
+> * Fields that were removed, uncategorized, or changed from their previous categories are automatically removed from any reports in which they are used.
+> * Newly added or categorized fields are not automatically included in existing reports until you edit report definitions to include them.
 
 </Accordion>
 
@@ -460,7 +471,7 @@ Though it is not required, best practice is to create a top-level input folder d
 The top-level input folder is generally created manually using the interface of your selected cloud service.
 
 * This practice is even more highly recommended when you are using the same bucket both for uploading data files (input) and receiving reports (output).
-* You can name this folder anything you want, so long as it complies with the [DCR naming requirements](/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements). For ease of identification, it is usually named `input/`.
+* You can name this folder anything you want, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>. For ease of identification, it is usually named `input/`.
 
 After creating the top-level input folder, your bucket/folder structure might look something like this:
 

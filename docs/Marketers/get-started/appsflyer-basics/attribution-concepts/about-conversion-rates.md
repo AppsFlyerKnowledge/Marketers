@@ -1,8 +1,5 @@
 ---
 title: About conversion rates
-excerpt: >-
-  Find conversion rate KPIs in AppsFlyer to understand the strengths and
-  weaknesses found at different stages in your marketing funnel.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000610363-About-conversion-rates
 ---
+**At a glance:** Find conversion rate KPIs in AppsFlyer to understand the strengths and weaknesses found at different stages in your marketing funnel.
+
 ## Marketing funnel stages
 
 New users go through a marketing funnel, from the first ad view until revenue is generated. Each of the funnel stages has its own level of success. The more progress a user makes, the better the results for the mobile advertiser. The following image sets out marketing funnel stages.
@@ -42,7 +41,7 @@ See the table that follows for:
 
 * Descriptions of the marketing funnel stages and conversion rates
 * Where the metrics are available, marked as:
-  * **AppsFlyer**: Overview dashboard and [aggregate reports and analytics](/docs/aggregated-and-analytics-reporting-overview)
+  * **AppsFlyer**: Overview dashboard and <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate reports and analytics</Anchor>
   * **App store**: The data is available only from the app store
 * How advertisers can use the metrics to improve their marketing results
 
@@ -60,10 +59,10 @@ See the table that follows for:
 | 5 | Install | User installs and opens the app on their device.<ul><li>~10% fewer installs compared to downloads.</li><li>Example: If AppsFlyer shows 200 campaign installs, then approx. 220 users downloaded the app.</li></ul> | AppsFlyer |  |
 | Conversion rate | **Click-to-install rate (installs/clicks)*100** | Measures how many users installed the app after clicking the ad. | AppsFlyer | <ul><li>Improve audience targeting.</li><li>Reduce app install time.</li></ul> |
 | 6 | In-app event | User performs an in-app action such as a purchase. | AppsFlyer |  |
-| Conversion rate | **Event conversion rate (Event CVR)**<br /><br />**(in-app events/installs)*100** | <ul><li>Measures how many users perform an in-app event after install. [[Article]](/docs/appsflyer-knowledge-base-glossary#event-cvr)</li><li>Examples: Register, make a purchase, complete a level, etc.</li><li>Enables Cost per Action (CPA) calculations.</li></ul> | AppsFlyer | <ul><li>Provide timely messaging and calls to action.</li><li>Improve the user interface.</li><li>Organize retargeting campaigns using deep links. [[Article]](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)</li></ul> |
+| Conversion rate | **Event conversion rate (Event CVR)**<br /><br />**(in-app events/installs)*100** | <ul><li>Measures how many users perform an in-app event after install. <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#event-cvr">[Article]</Anchor></li><li>Examples: Register, make a purchase, complete a level, etc.</li><li>Enables Cost per Action (CPA) calculations.</li></ul> | AppsFlyer | <ul><li>Provide timely messaging and calls to action.</li><li>Improve the user interface.</li><li>Organize retargeting campaigns using deep links. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Article]</Anchor></li></ul> |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Everything you need to know about app marketing KPIs](https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/)
+> * <Anchor target="_blank" href="https://www.appsflyer.com/blog/measurement-analytics/mobile-app-metrics/">Everything you need to know about app marketing KPIs</Anchor>
 
 <div data-zendesk-anchors="h_01HE0CXZY2STAERN0SYZJ2QY4K=marketing-funnel-stages h_01HE0CXZY2PZH6WAEEZFNFVT45=marketing-funnel-stages-and-conversion-rates marketing-funnel-stages-and-conversion-rates::74b1530a=marketing-funnel-stages-and-conversion-rates-1 h_01HE0CXZY24CB2YHT4ZQEKQAXX=marketing-funnel-stages-and-conversion-rates-1 h_01HE0CYPNSBRP4JYZV4NDV2HX8=see-also" />

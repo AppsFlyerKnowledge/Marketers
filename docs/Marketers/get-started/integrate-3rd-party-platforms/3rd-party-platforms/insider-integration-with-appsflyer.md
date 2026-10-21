@@ -1,10 +1,5 @@
 ---
 title: Insider integration with AppsFlyer
-excerpt: >-
-  Insider, an AppsFlyer integrated partner, is a marketing and analytics
-  platform for mobile and web apps. Insider delivers real-time predictive
-  segmentation and personalization across web, mobile web, mobile app and ad
-  channels.
 metadata:
   keywords:
     - Advertisers
@@ -26,11 +21,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016827838-Insider-integration-with-AppsFlyer
 ---
+**At a glance:** Insider, an AppsFlyer integrated partner, is a marketing and analytics platform for mobile and web apps. Insider delivers real-time predictive segmentation and personalization across web, mobile web, mobile app and ad channels.
+
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Insider
 
@@ -43,7 +40,7 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 <div id="integration-tab" />
@@ -55,7 +52,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 This toggle must be enabled for as long as you work with the partner.  
-Learn more about [partner activation](/docs/partner-activation-deactivation#activate-a-partner-integration).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
 
 ### General settings
 
@@ -67,7 +64,7 @@ Insider connects with AppsFlyer via a unique partner identifier.
 
 ### Default postbacks
 
-AppsFlyer can send automatic postbacks to Insider following user installs. Use this section to define the source of the users that the postbacks are sent to for each event. Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+AppsFlyer can send automatic postbacks to Insider following user installs. Use this section to define the source of the users that the postbacks are sent to for each event. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 **To send postbacks for any user that downloads the app to Insider**, select **All media sources, including organic**.
 
@@ -75,7 +72,7 @@ AppsFlyer can send automatic postbacks to Insider following user installs. Use t
 
 ![insider-partner-field.png](https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png)
 
-In this section, you map AppsFlyer events with the partner via postbacks. Learn more about [in-app event postbacks.](/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration)
+In this section, you map AppsFlyer events with the partner via postbacks. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks.</Anchor>
 
 **To configure in-app events postbacks:**
 

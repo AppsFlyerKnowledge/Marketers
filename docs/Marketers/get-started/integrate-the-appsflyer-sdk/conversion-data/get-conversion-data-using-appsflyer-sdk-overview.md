@@ -1,8 +1,5 @@
 ---
 title: Get conversion data using AppsFlyer SDK–Overview
-excerpt: >-
-  Use conversion data to identify various conversion scenarios, customize user
-  experience, and more.
 metadata:
   keywords:
     - Developers
@@ -24,12 +21,14 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481069969-Get-conversion-data-using-AppsFlyer-SDK-Overview
 ---
+**At a glance:** Use conversion data to identify various conversion scenarios, customize user experience, and more.
+
 Use conversion data to:
 
 * Send users to specific activities
 * Serve them with customized content
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > **Limitations of SDK conversion data**
 >
@@ -44,8 +43,8 @@ Use conversion data to:
 The AppsFlyer SDK returns conversion data using the following:
 
 * * `onConversionDataSuccess`: User Acquisition (UA) and re-attribution conversions
-    * Android: [onConversionDataSuccess](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerconversionlistener#onconversiondatasuccess)
-    * iOS: [onConversionDataSuccess](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlibdelegate#onconversiondatasuccess)
+    * Android: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerconversionlistener#onconversiondatasuccess">onConversionDataSuccess</Anchor>
+    * iOS: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlibdelegate#onconversiondatasuccess">onConversionDataSuccess</Anchor>
     * Unity: loadConversionData
   * `onAppOpenAttribution`: For re-engagement conversions
 

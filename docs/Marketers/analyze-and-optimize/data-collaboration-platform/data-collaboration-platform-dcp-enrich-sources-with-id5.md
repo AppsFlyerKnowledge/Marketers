@@ -1,9 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Enrich sources with ID5
-excerpt: >-
-  Enrich your first-party data with ID5 identifiers to unify fragmented user
-  data and improve match rates with activation partners, resulting in larger
-  audiences.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42626850533137-Data-Collaboration-Platform-DCP-Enrich-sources-with-ID5
 ---
+**At a glance:** Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.
+
 ## About ID5 enrichment
 
 AppsFlyer’s Data Collaboration Platform integrates with ID5, a leading identity solution provider for the open web. ID5 connects disparate identifiers such as IP addresses, hashed emails (HEM), and mobile advertising IDs (MAIDs) into a unified, privacy-first ID. This increases match rates across collaborators’ datasets, enabling more users to be recognized, joined, and activated in audiences. This guide explains how ID5 enrichment works in DCP, how to set it up, and how to use it for collaborations and activation.
@@ -70,14 +68,14 @@ To use ID5 enrichment, first create a **Data & Identity** connection in DCP.
 
 1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room**, in the AppsFlyer side menu.
 
-   ![Click Data Clean Room.png](https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png)
+   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png" width="33.49%" />
 2. Go to **Manage connections** (on the upper-right).
 3. Under the **Data & Identity** tab, select **+ New connection**.
 
-   **![+New connection.png](https://files.readme.io/815ec20e84d85da413dfe9c9358b54d772461e1eeb3dff3ff7c5c31ced1088ac-42729247721873.png)**
+   **<Image alt="+New connection.png" src="https://files.readme.io/815ec20e84d85da413dfe9c9358b54d772461e1eeb3dff3ff7c5c31ced1088ac-42729247721873.png" width="72.63%" />**
 4. Select **ID5.**
 
-   **![Select ID5.png](https://files.readme.io/a0c53243318fa7eed48ac5886ff5f3272bec0e6fd83a41117d53473757ab16d7-42729260095633.png)**
+   **<Image alt="Select ID5.png" src="https://files.readme.io/a0c53243318fa7eed48ac5886ff5f3272bec0e6fd83a41117d53473757ab16d7-42729260095633.png" width="66.76%" />**
 5. Enter your ID5 token (if relevant).
 6. Click **Save**.
 
@@ -97,7 +95,7 @@ You can enrich your sources using the S2S flow.
 2. Go to the **Sources** tab and hover over the relevant source.
 3. From the action menu, select **Enrich**.
 
-   ![Enrich.png](https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png)
+   <Image alt="Enrich.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
 4. Click **Start enrichment**.
 5. After the enrichment flow is done, you will have a new source that is connected to the original source with the addition of ID5 IDs.  
    **Note:** If the original source is ever deleted, the new source will also be deleted.
@@ -113,19 +111,19 @@ Collaboration owners can allow collaborators to use an ID5 connection in a colla
 **To grant ID5 permissions to a collaborator:**
 
 1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room** in the AppsFlyer side menu.
-2. In the **Collaborations** tab, open an existing collaboration or [create a new one](/docs/data-collaboration-platform-dcp-create-a-collaboration).
+2. In the **Collaborations** tab, open an existing collaboration or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">create a new one</Anchor>.
 3. Click **Collaboration with “your collaborator”.**
 
-   **![Update collaboration policy.png](https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png)**
+   **<Image alt="Update collaboration policy.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
 4. Click **Edit collaboration policy**.
 
-   ![Click Edit collaboration policy.png](https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png)
+   <Image alt="Click Edit collaboration policy.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
 5. Click **Access permissions**.
 
-   **![Click Access permissions.png](https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png)**
+   **<Image alt="Click Access permissions.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
 6. Enable **ID5 connection**.
 
-   ![ID5 permissions.png](https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png)
+   <Image alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
 7. Click **Save**.
 
 Collaborators can then associate their own sources with the collaboration and enrich them using the partner’s ID5 connection.

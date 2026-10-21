@@ -1,8 +1,5 @@
 ---
 title: Measure podcast-based campaigns
-excerpt: >-
-  Overcome the attribution challenge of mobile app advertising on podcasts by
-  using one of several AppsFlyer solutions.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +24,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004494318-Measure-podcast-based-campaigns
 ---
+**At a glance:** Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions.
+
 ## Podcast attribution methods
 
 Podcasts are a relatively untapped source of mobile user traffic. Podcast users may react favorably to mobile app ads, but attribution is a challenge. That is because podcasts don’t have a visual interface that generates user impressions or clicks.
@@ -41,10 +40,10 @@ However, there are options that bypass these limitations to successfully perform
 A podcast call-to-action (CTA), when it advertises a mobile app, usually involves mentioning an app name so users can search for it.
 
 * In a dedicated landing-page scenario, the CTA is a specific web destination on a landing page.
-* This page includes a web element (button, banner, etc.), powered by OneLink. To easily create dynamic landing-page banners without coding, we recommend using [Smart Banners](/docs/smart-banners-mobile-web-to-app-for-marketers).
+* This page includes a web element (button, banner, etc.), powered by OneLink. To easily create dynamic landing-page banners without coding, we recommend using <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>.
 * Users who engage with this element, and install the mobile app, are attributed according to the OneLink parameters.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You decide to promote your app on Joe Rogan's podcast and use a dedicated landing page.
 >
@@ -62,7 +61,7 @@ This method overcomes the lack of visual interface and allows user attribution w
 * Normally this occurs at the end of an ad, but it can be timed differently.
 * Users, who install an app after listening to a podcast ad, are attributed according to the OneLink parameters.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You decide to promote your app on the "Making history" podcast, which supports firing OneLink directly after users listen to the ad.
 >
@@ -72,6 +71,6 @@ This method overcomes the lack of visual interface and allows user attribution w
 
 #### Who gets the attribution?
 
-In AppsFlyer, the "podcast" media source is considered a custom media source, and not an integrated partner. However, by integrating with AppsFlyer, Podcast app owners can receive postbacks for installs attributed to them. Podcast app owners are welcome to [contact](https://www.appsflyer.com/get-started/partners) AppsFlyer's partner development group.
+In AppsFlyer, the "podcast" media source is considered a custom media source, and not an integrated partner. However, by integrating with AppsFlyer, Podcast app owners can receive postbacks for installs attributed to them. Podcast app owners are welcome to <Anchor target="_blank" href="https://www.appsflyer.com/get-started/partners">contact</Anchor> AppsFlyer's partner development group.
 
 <div data-zendesk-anchors="01JB9NB6DY4ZTS1VAK9S0QSM2R=podcast-attribution-methods 01JB9NB6E5BHETTEY7Q0WD8JXE=dedicated-landing-page 01JB9NB6E9DZXTJTGDPT6HA3FS=example 01JB9NB6EANCCA0FG7ZQY48VSB=firing-onelink-click-from-a-podcast-app 01JB9NB6EDW22XGAM2HCA3CY9Q=example-1 01JB9NB6EDFJ3YNP1JYKDGPHEX=who-gets-the-attribution" />

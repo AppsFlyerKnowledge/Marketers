@@ -1,11 +1,5 @@
 ---
 title: GameAnalytics integration with AppsFlyer
-excerpt: >-
-  Game Analytics, an AppsFlyer integrated partner, is a powerful free tool that
-  helps developers understand player behavior so they can improve engagement,
-  reduce churn, and perfect monetization. It helps to visualize core gaming KPIs
-  in one convenient view and offers in-game benchmarking to see how your metrics
-  stack up against more than 14,000 similar titles.
 metadata:
   keywords:
     - GameAnalytics
@@ -33,13 +27,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447143-GameAnalytics-integration-with-AppsFlyer
 ---
+**At a glance:** Game Analytics, an AppsFlyer integrated partner, is a powerful free tool that helps developers understand player behavior so they can improve engagement, reduce churn, and perfect monetization. It helps to visualize core gaming KPIs in one convenient view and offers in-game benchmarking to see how your metrics stack up against more than 14,000 similar titles.
+
 It takes just a few minutes to set up and it’s totally free of charge – no usage caps or hidden premium features! If you’d rather see the platform in action before integrating it with your title, just sign up to see a demo game with pre-populated data.
 
 The platform is trusted by more than 40,000 game developers worldwide, from indies to world-renowned studios, and handles over five billion unique events every day across 2+ billion devices. GameAnalytics is widely integrated, with SDKs for every major game engine and platform. You can sign up for free today at https://gameanalytics.com/
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up GameAnalytics
 
@@ -52,7 +48,7 @@ The platform is trusted by more than 40,000 game developers worldwide, from indi
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below:
 
 The Game Analytics configuration window uses only the ***Integration*** tab.
@@ -66,7 +62,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 

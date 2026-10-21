@@ -25,4 +25,4 @@ x-zendesk:
 | --- | --- |
 | **Update date** | October 10, 2024 |
 | **What you need to know** | <ul><li>Unity is introducing a new API integration.</li><li>The old API integration is able to get data until its sunset date of November 14, 2024.</li></ul> |
-| **What you need to do** | You must update your service account organization role in Unity to include the "Advertisers API Stats Viewer" role in addition to another role to continue getting data after November 14, 2024.<br /><br />[Follow our instructions to update the Unity role](/docs/creative-optimization-partner-integrations#to-select-a-service-account-organization-role) |
+| **What you need to do** | You must update your service account organization role in Unity to include the "Advertisers API Stats Viewer" role in addition to another role to continue getting data after November 14, 2024.<br /><br /><Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations#to-select-a-service-account-organization-role">Follow our instructions to update the Unity role</Anchor> |

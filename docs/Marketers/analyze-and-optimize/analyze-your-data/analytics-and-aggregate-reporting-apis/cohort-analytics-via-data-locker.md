@@ -1,11 +1,5 @@
 ---
 title: Cohort analytics via Data Locker
-excerpt: >-
-  Cohort analytics in Data Locker contains aggregated data of all elements in
-  the advertising hierarchy. Reports contain data of users attributing in the
-  previous 365 days. This report is available to advertisers who have raw data
-  or Cohort API, or both as part of their subscription. It means that a Data
-  Locker subscription isn't required for this report.
 metadata:
   keywords:
     - Advertisers
@@ -28,22 +22,24 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4408945472529-Cohort-analytics-via-Data-Locker
 ---
+**At a glance**: Cohort analytics in Data Locker contains aggregated data of all elements in the advertising hierarchy. Reports contain data of users attributing in the previous 365 days. This report is available to advertisers who have raw data or Cohort API, or both as part of their subscription. It means that a Data Locker subscription isn't required for this report.
+
 ## Cohort analytics in Data Locker
 
-In some cases, attribution raw data in AppsFlyer is [restricted](/docs/about-raw-data-identifier-restrictions) due to media source data-sharing policies or your [privacy-preserving policies.](/docs/apply-aggregated-advanced-privacy-framework) The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.
+In some cases, attribution raw data in AppsFlyer is <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">restricted</Anchor> due to media source data-sharing policies or your <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">privacy-preserving policies.</Anchor> The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.
 
-[Download example report](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8q_4xv83wHkl4fs6jndEffRu-RHsPobBRfxDG-bUNXb0pOnvJH4QT0nXKdWvi3JPtVUBegTFbxIEe/pub?output=xlsx)
+<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8q_4xv83wHkl4fs6jndEffRu-RHsPobBRfxDG-bUNXb0pOnvJH4QT0nXKdWvi3JPtVUBegTFbxIEe/pub?output=xlsx">Download example report</Anchor>
 
 <div id="enable-data-locker" />
 
 <Accordion title="Enable Data Locker">
 
-The report is available to Data Locker, Cohort API, and raw data subscribers. To enable the report in [Data Locker,](/docs/data-locker-for-marketers) complete one of the following procedures.
+The report is available to Data Locker, Cohort API, and raw data subscribers. To enable the report in <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker,</Anchor> complete one of the following procedures.
 
 | Do you currently get data via Data Locker? | Procedure |
 | --- | --- |
 | Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)To add the Cohort reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Report > Data Locker**.</li><li>Select all the reports in the **Cohort analytics** section.</li><li>Click **Save configuration**.<br />The reports will be available on the next day by 10:00 UTC.</li></ol> |
-| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker ( [advertiser](/docs/data-locker-for-marketers#set-up-data-locker) \| [partner](/partners/docs/data-locker-for-partners) ) setup.</li><li>Add the Cohort reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Report > Data Locker**.</li><li>Select all the reports in the **Cohort analytics** section.</li><li>Click **Save configuration**.<br />The reports will be available on the next day by 10:00 UTC.</li></ol></li></ol> |
+| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/13d984aa18df9aacf5a8977c7dd3f8ca950df5a34e371014a72836981718399c-33338207213329.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker ( <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">advertiser</Anchor> \| <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">partner</Anchor> ) setup.</li><li>Add the Cohort reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Report > Data Locker**.</li><li>Select all the reports in the **Cohort analytics** section.</li><li>Click **Save configuration**.<br />The reports will be available on the next day by 10:00 UTC.</li></ol></li></ol> |
 
 </Accordion>
 
@@ -51,13 +47,13 @@ You can load the data into your BI systems and use them as part of your campaign
 
 **Metrics available**
 
-The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by [ROI360 Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports).
+The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
 
 <div id="facts" />
 
 <Accordion title="Cohort analytics facts">
 
-| Reports available | The following reports are available for download. The reports types are described in more detail in [Cohort dashboard.](/docs/cohort-and-retention-dashboard#cohort-principles)<ul><li>**User acquisition:** attributed to a user acquisition media source including LTV occurring during re-engagement windows.</li><li>**Retargeting:** attributed to a retargeting media source for events occurring:<ul><li>During a re-engagement window</li><li>As a result of re-attributions</li></ul></li><li>**Unified:** display data under the last touch media source bringing the user according to AppsFlyer [double attribution](/docs/resolve-retargeting-double-attribution) rules. Meaning that LTV occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
+| Reports available | The following reports are available for download. The reports types are described in more detail in <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard#cohort-principles">Cohort dashboard.</Anchor><ul><li>**User acquisition:** attributed to a user acquisition media source including LTV occurring during re-engagement windows.</li><li>**Retargeting:** attributed to a retargeting media source for events occurring:<ul><li>During a re-engagement window</li><li>As a result of re-attributions</li></ul></li><li>**Unified:** display data under the last touch media source bringing the user according to AppsFlyer <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double attribution</Anchor> rules. Meaning that LTV occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
 | --- | --- |
 | Reporting period | Users converting during the previous 365 days. In other words, each day the reports include the user converting during the previous 365 days. |
 | Report structure | The schema of each report (the dimensions and metrics included) is fixed and can't be edited. See [report structure](/docs/cohort-analytics-via-data-locker#report-structure). |
@@ -106,7 +102,7 @@ The format of the fields is as follows:
 | is\_primary\_attribution | Use to identify and deduplicate retargeting data. |
 | geo | The ISO country code derived from the user IP address. |
 | agency | <ul><li>Agency transparency supported.</li><li>In the case of non-transparent agencies, there can be multiple rows containing the same campaign name if the advertiser and the agency both run campaigns with the same name. Don't worry. The rows aren't duplicated.</li></ul> |
-| install\_app\_store | Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing [multi-store Android attribution](/docs/set-up-multi-store-android-attribution). If blank, it means Google Play Store. |
+| install\_app\_store | Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store Android attribution</Anchor>. If blank, it means Google Play Store. |
 | keywords | Word(s) used in the user's online search. As reported by the ad network |
 | keyword\_id | [Field available starting April 27, 2022] Keyword ID returned by the ad network. |
 
@@ -117,7 +113,7 @@ The format of the fields is as follows:
 | unique\_users | Number of on-day unique users performing the event. | Number |
 | revenue\_usd | <ul><li>Amount of revenue in USD. For example, $100.56 is reflected as 100.56.</li><li>Maximum of 2 places after the decimal point.</li></ul> | Number |
 | event\_count | Number of event occurrences. | Number |
-| selected\_currency | 3-letter currency code (USD, EUR) set by you in the app settings. Format [ISO-4217](http://www.xe.com/symbols.php#section1). This is the same currency used to display revenue in Cohort in the user interface. | String |
+| selected\_currency | 3-letter currency code (USD, EUR) set by you in the app settings. Format <Anchor target="_blank" href="http://www.xe.com/symbols.php#section1">ISO-4217</Anchor>. This is the same currency used to display revenue in Cohort in the user interface. | String |
 | revenue\_selected\_currency | <ul><li>Amount of revenue in the selected currency. For example, if the selected currency is EUR, then €1234.56 is reflected as 1234.56</li><li>Maximum of 2 places after the decimal point</li></ul> | Number |
 
 </Accordion>
@@ -136,7 +132,7 @@ You can load unified, user acquisition, and retargeting reports separately or to
 * For user acquisition, use conversion\_type=Install.
 * For retargeting, use conversion\_type=re-engagement or re-attribution.
 
-If you just use the unified view in your data loading process, you can use logic to split the data between campaign types, which means, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type=install, install\_unified, re-engagement, or re-attribution. See [Double attribution of retargeting events.](/docs/resolve-retargeting-double-attribution)
+If you just use the unified view in your data loading process, you can use logic to split the data between campaign types, which means, user attribution (installs) and retargeting (re-engagements). To do so, use the conversion\_type=install, install\_unified, re-engagement, or re-attribution. See <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">Double attribution of retargeting events.</Anchor>
 
 **Field-level considerations**
 
@@ -357,7 +353,7 @@ group by 1
 
 #### **7. Calculating ARPU Days 7 by attribution time per geo**
 
-The following example illustrates how to use [KPIs by attribution time](/docs/cohort-and-retention-dashboard#trend-type%E2%80%94kpi-by-attribution-time). In the example, we:
+The following example illustrates how to use <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard#trend-type%E2%80%94kpi-by-attribution-time">KPIs by attribution time</Anchor>. In the example, we:
 
 * Calculate ARPU Days 7 by attribution date per geo.
 * Results are sorted by the number of conversions, with the top 20 geos displaying.
@@ -406,24 +402,24 @@ limit 20
 
 | Trait |  |
 | --- | --- |
-| Cost data | <ul><li>Not available. [Use Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports).</li><li>See also [combine Cost ETL with cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker).</li></ul> |
+| Cost data | <ul><li>Not available. <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Use Cost ETL</Anchor>.</li><li>See also <Anchor target="_blank" href="/marketers/docs/combine-cost-etl-and-cohort-reports-via-data-locker">combine Cost ETL with cohort reports</Anchor>.</li></ul> |
 | Campaign name changes | Not supported. |
 | Data freshness | Daily UTC. Reports are in the Data Locker date-time (dt) folder of the reporting day by 10:00 UTC of the next day. |
 | Ad revenue | <ul><li>Available</li><li>For af\_ad\_revenue events, the unique users metric isn't available for dates between October 5, 2022-February 16, 2023.</li></ul> |
 | Currency | USD and app-specific currency are both available per row |
-| Timezone | <ul><li>UTC</li><li>App-specific timezone is available with the [Advanced aggregated cohort timezone versioned report](/docs/advanced-aggregated-reports-in-data-locker).</li></ul> |
+| Timezone | <ul><li>UTC</li><li>App-specific timezone is available with the <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated cohort timezone versioned report</Anchor>.</li></ul> |
 | Organic data | Available |
-| Days post-conversion (install, re-attribution, re-engagement) | <ul><li>365 days of post-install data is available.</li><li>1,095 days is available with [advanced aggregated reports](/docs/advanced-aggregated-reports-in-data-locker).</li></ul> |
+| Days post-conversion (install, re-attribution, re-engagement) | <ul><li>365 days of post-install data is available.</li><li>1,095 days is available with <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">advanced aggregated reports</Anchor>.</li></ul> |
 | Agency transparency | <ul><li>Supported</li><li>X Ads and Meta ads data is always transparent</li></ul> |
 | App segregation | Supported |
 | SKAN data | Not included. Meaning, the data provided by iOS postbacks. |
-| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. [Learn more](/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events)</li><li>The install time is based on the [device\_download\_time](/docs/raw-data-field-dictionary#device-info::dfd9504e) field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. [Learn more](/docs/unique-users)</li></ul> |
+| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Combine Cost ETL and cohort reports](/docs/combine-cost-etl-and-cohort-reports-via-data-locker)
-> * [Cohort dashboard](/docs/cohort-and-retention-dashboard)
+> * <Anchor target="_blank" href="/marketers/docs/combine-cost-etl-and-cohort-reports-via-data-locker">Combine Cost ETL and cohort reports</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor>
 
 <div data-zendesk-anchors="01H7WG3CA1DDAN79D1PBPE0RJ3=cohort-analytics-in-data-locker 01H7WG3CA1ZMNTGZ5B8FNXNC4A=enable-data-locker 01H7WG3CA179D6VCWYPCJ1G49M=facts 01H7WG3CA1R3PZCKSGWC90E7RC=report-structure 01H7WG3CA14PQ2PJ58FX8TE6ZH=dimensions 01H7WG3CA24VQKFVP99S82GCXZ=metrics 01H7WG3CA2C3HV8YT5ZMP9E0QY=bi-developer-considerations 01H7WG3CA2YF03SC6RBMCJYYVX=use-cases h_01HMTZ0DZWN54HBQ0ZTY0VFNFM=1-calculating-retention 2-calculating-arpu-of-multiple-inapp-events=2-calculating-arpu-of-multiple-in-app-events h_01HMTZ0DZWHZ77RYWYAQEJV7X5=2-calculating-arpu-of-multiple-in-app-events 3-calculating-inapp-event-conversion-rate-for-a-specific-cohort-day=3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZW7VA6T6MQY7BY1JZT=3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day h_01HMTZ0DZWARZFAQ9R4VF56YN3=4-calculating-daily-installs h_01HMTZ0DZW74HWW6Z3VDWDMGRF=5-calculating-revenue-from-facebook-ads h_01HMTZ0DZWSN83V0TEHVM2H5XS=6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days calculating-arpu-days-0-7-by-attribution-time-per-geo=7-calculating-arpu-days-7-by-attribution-time-per-geo 01H8XYTJVQ1YFBHPWVPP9D7MJ8=7-calculating-arpu-days-7-by-attribution-time-per-geo 01H7WG3CA255TG9HW150RW1QTX=additional-information 01H7WG3CA2Y59D2EVMN3YFFY1W=traits-and-limitations h_01HDNZ8A0QH74CGSEG6TKKARJP=see-also" />

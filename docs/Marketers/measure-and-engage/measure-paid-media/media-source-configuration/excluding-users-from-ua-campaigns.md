@@ -1,8 +1,5 @@
 ---
 title: Excluding users from UA campaigns
-excerpt: >-
-  Exclude existing users from user acquisition (UA) campaigns to obtain more
-  installs with the same budget and improve ROAS.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360007949158-Excluding-users-from-UA-campaigns
 ---
+**At a glance:** Exclude existing users from user acquisition (UA) campaigns to obtain more installs with the same budget and improve ROAS.
+
 ## Issues and consequences
 
 If your app receives traffic from multiple media sources, then these sources can target your existing users in their UA campaigns.
@@ -38,7 +37,7 @@ Campaign performance can suffer for the following reasons:
 * **Distorted conversion rates** - UA campaigns seem less successful. There are fewer installs as impressions are wasted on existing users.
 * **Loss of alternative users** - Non-users could have seen the ads and become your mobile users.
 
-[SRN mistargeting](/docs/self-reporting-networks-srns#what-is-srn-mistargeting) is a similar and common performance issue. This significant issue may happen if both your UA and retargeting campaigns are with the same SRN. [Learn more](/docs/self-reporting-networks-srns#is-mistargeting-a-problem) 
+<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#what-is-srn-mistargeting">SRN mistargeting</Anchor> is a similar and common performance issue. This significant issue may happen if both your UA and retargeting campaigns are with the same SRN. <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#is-mistargeting-a-problem">Learn more</Anchor> 
 
 ## Solutions
 
@@ -61,7 +60,7 @@ There are several ways to add this raw data to your BI system:
 
 ### Audiences
 
-**[Audiences](/docs/audiences-guide)** is an AppsFlyer premium feature. Every day, selected segments of your user base are sent automatically to multiple ad networks, as chosen by you.
+**<Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>** is an AppsFlyer premium feature. Every day, selected segments of your user base are sent automatically to multiple ad networks, as chosen by you.
 
 **Audiences** is very useful for maintaining exclude lists:
 

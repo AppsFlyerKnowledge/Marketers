@@ -1,9 +1,5 @@
 ---
 title: CTV, PC, and console platform attribution concepts
-excerpt: >-
-  Learn about how attribution works for CTV, PC, and console platforms to allow
-  AppsFlyer to receive attribution and event data for your campaigns on these
-  cross-platform devices.
 metadata:
   keywords:
     - Attribution
@@ -28,7 +24,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4404083608849-CTV-PC-and-console-platform-attribution-concepts
 ---
-![Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console](https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png)
+> **At a glance:** Learn about how attribution works for CTV, PC, and console platforms to allow AppsFlyer to receive attribution and event data for your campaigns on these cross-platform devices.
+
+<Image alt="Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 ## The AppsFlyer cross-platform solution
 
@@ -38,7 +36,7 @@ AppsFlyer offers an extensive cross-platform solution that complements conventio
 
 Advertisers can promote an app on the same or different platforms as the ad displays. For example, an advertiser can display an ad for a Steam app on the Steam platform. They can also display an ad for a Steam app on the desktop web, for example, via Google Ads. <span id="tv-screens"></span>CTV campaigns specifically entail ads delivered on TV screens and TV-like displays.
 
-Whatever their marketing strategy, advertisers integrate with AppsFlyer to receive attribution data and performance measurements about sources (non-organic or organic) and campaigns driving CTV, PC, and console platform app installs and post-install events. Marketers use these insights to calculate user lifetime value (LTV) and measure and optimize marketing activities. [Learn more about AppsFlyer attribution](/docs/appsflyer-attribution-model)
+Whatever their marketing strategy, advertisers integrate with AppsFlyer to receive attribution data and performance measurements about sources (non-organic or organic) and campaigns driving CTV, PC, and console platform app installs and post-install events. Marketers use these insights to calculate user lifetime value (LTV) and measure and optimize marketing activities. <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">Learn more about AppsFlyer attribution</Anchor>
 
 ### Supported platforms
 
@@ -46,7 +44,7 @@ Whatever their marketing strategy, advertisers integrate with AppsFlyer to recei
 
 ### Integrate with ad networks that support specified CTV, PC, and Console platforms
 
-Integrate with ad networks that display ads on CTV, PC, and console platforms in [Partner Integrations](/docs/partner-integrations).
+Integrate with ad networks that display ads on CTV, PC, and console platforms in <Anchor target="_blank" href="/marketers/docs/partner-integrations">Partner Integrations</Anchor>.
 
 ## Cross-platform attribution flows
 
@@ -63,7 +61,7 @@ Each app, advertiser, and platform can have 1 or more of these flows implemented
 
 Direct attribution links are AppsFlyer links that support redirection and attribution for a single destination app on a single platform at a time. They're typically utilized for:
 
-* Same platform to same platform advertising. Meaning the platform displaying the ad and the platform supporting the app are identical. For example, an advertiser can display an ad for a Samsung TV app on a Samsung TV. Both probabilistic modeling and deterministic matching are supported (deterministic matching is performed when [a supported ID](/docs/about-device-identifiers#ctv--pc-and-console-app-device-identifiers) is provided in the link).
+* Same platform to same platform advertising. Meaning the platform displaying the ad and the platform supporting the app are identical. For example, an advertiser can display an ad for a Samsung TV app on a Samsung TV. Both probabilistic modeling and deterministic matching are supported (deterministic matching is performed when <Anchor target="_blank" href="/marketers/docs/about-device-identifiers#ctv--pc-and-console-app-device-identifiers">a supported ID</Anchor> is provided in the link).
 * Any platform to any platform advertising, with the destination/platform predetermined. For example, a desktop web landing page displays an ad with one or more buttons, each redirecting to a specific platform store/marketplace. Attribution is performed by probabilistic modeling.
 
  The attribution flow is illustrated in the diagram that follows.
@@ -74,7 +72,7 @@ Because direct attribution links point to an app on a specific, predetermined pl
 
 Sample direct attribution link: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/1234561?&af_media_source=game_media_source&af_campaign=campaign_yellow&af_campaign_id=1234&af_ad=game_ad_name&af_adset=game_adset_name&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F1176160%2FSpace_Wars%2F`
 
-[Learn how to set up direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links#attribution-link).
+<Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links#attribution-link">Learn how to set up direct attribution links</Anchor>.
 
 </Accordion>
 
@@ -97,7 +95,7 @@ Sample cross-platform OneLink link:
 https://impressions.onelink.me/ch/AG7A?pid=game_media_source&c=game_landing_page&af_ad=game_ad_name&af_adset=game_adset_name&af_xplatform=true
 ```
 
-[Learn how to set up cross-platform OneLink links](/docs/set-up-cross-platform-links-for-multi-device-campaigns)
+<Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns">Learn how to set up cross-platform OneLink links</Anchor>
 
 </Accordion>
 
@@ -143,8 +141,8 @@ For example:
 
 Additional information:
 
-* [See sample cross-platform landing page](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/)
-* [Learn how to set up cross-platform landing pages with Smart Script](/docs/cross-platform-landing-pages-with-smart-script)
+* <Anchor target="_blank" href="https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/">See sample cross-platform landing page</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up cross-platform landing pages with Smart Script</Anchor>
 
 </Accordion>
 
@@ -156,27 +154,27 @@ Data is available as follows:
 
 * Aggregate data via the Overview dashboard.
 * Raw data via:
-  * [Data Locker](/docs/ctv-pc-and-console-data-via-data-locker)
-  * [Export](/docs/raw-data-export-page)
-  * [Pull API](/docs/pull-api-raw-data)
-* **Impressions from cross-platform campaigns** (for example, CTV-to-mobile) don't display in app-level dashboards. A single CTV impression can lead to multiple mobile conversions, making it impossible to split impressions accurately across apps. To access total impression counts, use the [Cross-platform engagements report via Data Locker](/docs/ctv-pc-and-console-data-via-data-locker).
+  * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-data-via-data-locker">Data Locker</Anchor>
+  * <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Export</Anchor>
+  * <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API</Anchor>
+* **Impressions from cross-platform campaigns** (for example, CTV-to-mobile) don't display in app-level dashboards. A single CTV impression can lead to multiple mobile conversions, making it impossible to split impressions accurately across apps. To access total impression counts, use the <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-data-via-data-locker">Cross-platform engagements report via Data Locker</Anchor>.
 
 > 📘 **Note**
 >
-> For platforms with Android and iOS operating systems, the availability of [aggregate](/docs/aggregated-and-analytics-reporting-overview) and [raw data reports](/docs/raw-data-reporting-overview) is the same as for mobile apps.
+> For platforms with Android and iOS operating systems, the availability of <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate</Anchor> and <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data reports</Anchor> is the same as for mobile apps.
 
 <Accordion title="Traits and limitations">
 
 | Trait | Remarks |
 | --- | --- |
 | Re-attribution window | For CTV, PC, and console platforms, the re-attribution window is based on a defined period of inactivity (default 90 days). |
-| Post-reinstall events | Attributed to the first install. [Learn more](/docs/measure-reinstalls#attributed-to-the-first-install) |
+| Post-reinstall events | Attributed to the first install. <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">Learn more</Anchor> |
 | Retargeting | <ul><li>Re-attribution: Supported for all platforms.</li><li>Re-engagement: Supported in any platform that isn't Android, iOS, Windows Phone, or website. In practice, this means CTV, PC, and Console apps.</li></ul> |
-| Attribution method | [See CTV, PC, and console platform attribution methods](/docs/appsflyer-attribution-model#attribution-methods) |
+| Attribution method | <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-methods">See CTV, PC, and console platform attribution methods</Anchor> |
 | Currency | USD or as defined in AppsFlyer app settings |
 | Timezone | UTC |
-| Cost data | For apps on these platforms, import cost data via [Cost Import](/docs/import-cost-data) using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok for the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Windows Phone</li><li>Tizen</li><li>Quest</li></ul> |
-| Data freshness | In My Dashboards, the Installs, re-engagements, and re-attributions metrics for CTV, PC, and console platforms are served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously. See [My Dashboards traits and limitations](/docs/my-dashboards#traits-and-limitations) for details. |
+| Cost data | For apps on these platforms, import cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload-by-email method.<br /><br />You can also pull data via API for Google, Meta, or TikTok for the following platforms:<ul><li>Steam</li><li>Native PC</li><li>Smart Cast</li><li>Windows Phone</li><li>Tizen</li><li>Quest</li></ul> |
+| Data freshness | In My Dashboards, the Installs, re-engagements, and re-attributions metrics for CTV, PC, and console platforms are served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously. See <Anchor target="_blank" href="/marketers/docs/my-dashboards#traits-and-limitations">My Dashboards traits and limitations</Anchor> for details. |
 
 </Accordion>
 

@@ -25,6 +25,6 @@ x-zendesk:
 
 #### See also
 
-* [Apple Ads integration setup](/docs/apple-ads-integration-setup)
+* <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup">Apple Ads integration setup</Anchor>
 
 <div data-zendesk-anchors="h_01M0YZSHS593T92XC58PR1FXYY=see-also" />

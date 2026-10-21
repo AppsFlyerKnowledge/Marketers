@@ -1,8 +1,5 @@
 ---
 title: Bidalgo - Google Ads—Campaign configuration
-excerpt: >-
-  Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial
-  Intelligence solutions to help app marketers scale their growth.
 metadata:
   keywords:
     - Advertisers
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001325405-Bidalgo-Google-Ads-Campaign-configuration
 ---
+**At a glance:** Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
+
 ## Set up Bidalgo integration
 
 **Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.

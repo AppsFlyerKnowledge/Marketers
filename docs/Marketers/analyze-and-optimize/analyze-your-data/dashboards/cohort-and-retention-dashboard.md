@@ -1,10 +1,5 @@
 ---
 title: Cohort and retention dashboard
-excerpt: >-
-  The Cohort and retention dashboard (also referred to as simply "Cohort")
-  groups app users by acquisition date. Perform performance analysis across user
-  life cycles (LTV). Use the dashboard to gain insights as to how campaign
-  differences alter campaign metrics.
 metadata:
   keywords:
     - Cohort
@@ -28,17 +23,19 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040496-Cohort-and-retention-dashboard
 ---
+**At a glance:** The Cohort and retention dashboard (also referred to as simply "Cohort") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics.
+
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
 ## Cohort and retention dashboard
 
-Related reading: [Differences between Cohort flavors](/docs/aggregated-and-analytics-reporting-overview#cohort-flavors)
+Related reading: <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">Differences between Cohort flavors</Anchor>
 
-To use Cohort and retention, select users from one or more apps and segment them by conversion time. Cohort metrics like revenue, ROI, and event conversion rates are available. Break the cohort down, for comparison purposes, into dimensions like campaign or media source. Doing so can uncover patterns or changes in performance over user or campaign life cycles. See [Cohort use cases](https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689).
+To use Cohort and retention, select users from one or more apps and segment them by conversion time. Cohort metrics like revenue, ROI, and event conversion rates are available. Break the cohort down, for comparison purposes, into dimensions like campaign or media source. Doing so can uncover patterns or changes in performance over user or campaign life cycles. See <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Cohort use cases</Anchor>.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
-> Want to know more about cohort reports? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports).
+> Want to know more about cohort reports? Check out this short, informative <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">course on the AppsFlyer Learning Portal</Anchor>.
 
 ## Using Cohort
 
@@ -46,7 +43,7 @@ To use Cohort and retention, select users from one or more apps and segment them
 
 <Accordion title="Setting up an analysis">
 
-1. In AppsFlyer, from the side menu, select **Analyze** >**Cohort & Retention**.  
+1. In AppsFlyer, from the side menu, select **Analyze** > **Cohort & Retention**.  
    The Cohort dashboard opens. The granularity and conversion date range display.  
    ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
 2. Select the [cohort period granularity](/docs/cohort-and-retention-dashboard#cohort-periods):
@@ -57,17 +54,17 @@ To use Cohort and retention, select users from one or more apps and segment them
 3. Set the attribution period (user acquisition or retargeting engagement). Data relating to the most recent dates can result in [partial data](/docs/cohort-and-retention-dashboard#partial-data) indicated by dashes in charts and tables.
 4. Click **Edit Cohort**.  
    The Cohort setup window opens.  
-   ![CohortSetup.jpg](https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg)
+   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Complete the following:
    * [**Cohort view type**](/docs/cohort-and-retention-dashboard#view-types):
      * **User acquisition.**
      * **Retargeting**
-     * **Unified:** Includes the in-app events of both user attribution and retargeting attributions. **Note**: Retargeting events take precedence over user acquisition events meaning the report contains events where [is\_primary\_attribution=true](/docs/raw-data-reporting-overview).
+     * **Unified:** Includes the in-app events of both user attribution and retargeting attributions. **Note**: Retargeting events take precedence over user acquisition events meaning the report contains events where <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">is\_primary\_attribution=true</Anchor>.
    * [**Trend type**](/docs/cohort-and-retention-dashboard#trend-types):
      * **User lifetime performance**.
      * **KPI by attribution time**.
    * **Users of**: Select 1 or more apps. **All** means the top 100 apps in your account. **Note**: Agencies can only select one app.
-   * **Grouped by**:Select one or more [dimensions](/docs/cohort-and-retention-dashboard#list-of-dimensions-for-grouping-and-filtering) [Default: Media Source].
+   * **Grouped by**: Select one or more [dimensions](/docs/cohort-and-retention-dashboard#list-of-dimensions-for-grouping-and-filtering) [Default: Media Source].
    * **Minimum cohort size**: Set the minimum cohort size. This avoids cluttering your report with insignificant (small) cohorts. [Default=1]
    * Optional fields:
      * **Filtered by**: Select one or more [dimensions](/docs/cohort-and-retention-dashboard#list-of-dimensions-for-grouping-and-filtering) to filter by. There are no default filters.
@@ -110,7 +107,7 @@ To use Cohort and retention, select users from one or more apps and segment them
 
 **To export cohort reports to CSV files:**
 
-* In the upper-right side of the Cohort reports window, click ![Download.png](https://files.readme.io/50af9c6cde00dada58a1bb89a9eb3e566f316c0e7336af68f4ce403584047a5b-32127933341969.png) (export).  
+* In the upper-right side of the Cohort reports window, click <Image alt="Download.png" src="https://files.readme.io/50af9c6cde00dada58a1bb89a9eb3e566f316c0e7336af68f4ce403584047a5b-32127933341969.png" width="21px" />(export).  
   The cohort report CSV file is downloaded.
 
 </Accordion>
@@ -142,8 +139,8 @@ There are 3 cohort view types:
 
 * **Unified**:
   * The combined performance of user acquisition and retargeting campaigns (including cost and revenue).
-  * If an event is attributed to both conversion types, only the retargeting event is included. Meaning, the report is generated using the actual last touch media source. If you are familiar with raw data, it means events where [is\_primary\_attribution=true](/docs/raw-data-reporting-overview).
-* **User acquisition:** Performance data from installs (reinstalls excluded unless [specially enabled](/docs/measure-reinstalls#attributed-to-the-first-install))
+  * If an event is attributed to both conversion types, only the retargeting event is included. Meaning, the report is generated using the actual last touch media source. If you are familiar with raw data, it means events where <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">is\_primary\_attribution=true</Anchor>.
+* **User acquisition:** Performance data from installs (reinstalls excluded unless <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">specially enabled</Anchor>)
 * **Retargeting: P**erformance data from re-attributions or re-engagements
 
 [![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
@@ -213,7 +210,7 @@ Use the partial/complete data control to select the data display mode:
 | <span id="conversion-type"></span>Conversion type | Cohort type dependant:<ul><li>**User acquisition**: Install</li><li>**Retargeting**: Re-engagement, Re-attribution</li></ul> | **✓** | **✓** |
 | <span id="country-geo"></span>Geo | Based on user IP address | **✓** | **✓** |
 | <span id="time-in-the-case-of-daily-granularity-is-the-date-hourly-granularity-is-the-hour-of-the-day-weekly-granularity-is-the-week-of-the-year-monthly-granularity-is-the-month-of-the-year"></span>Time. In the case of:<ul><li>Daily granularity is the date</li><li>Hourly granularity is the hour of the day</li><li>Weekly granularity is the week of the year</li><li>Monthly granularity is the month of the year</li></ul> | Cohort type dependant:<ul><li>**User acquisition and unified**: The time the app was launched for the first time.</li><li>**Retargeting**: The time the app was launched for the first time after re-engagement.</li></ul> | **✓** | **x** |
-| <span id="install-app-store"></span>Install app store | Relevant for apps implementing Android [multi-store attribution.](/docs/set-up-multi-store-android-attribution)Reach out to your CSM to enable this dimension. | **✓** | **✓** |
+| <span id="install-app-store"></span>Install app store | Relevant for apps implementing Android <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store attribution.</Anchor> Reach out to your CSM to enable this dimension. | **✓** | **✓** |
 | <span id="keywords"></span>Keywords | Search keywords provided by the integrated partners | **✓** | **✓** |
 | <span id="media-source"></span>Media source |  | **✓** | **✓** |
 | <span id="revenue-type"></span>Revenue type | In-app purchase or Ad revenue | **x** | **✓** |
@@ -300,10 +297,10 @@ An advertiser defines the in-app event af\_purchase. The cohort table displays t
 
 | Question | Answer |
 | --- | --- |
-| Can I view Apple Search Ads [keyword Cost and ROI](/docs/apple-ads-integration-setup#analyze-keyword-cost)? | Yes, you can.  <br />Apple Search Ads provides us with the cost for each keyword per day broken down by Campaign/Adset/Ad. **Note:** Breakdown by geo is not available. |
+| Can I view Apple Search Ads <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#analyze-keyword-cost">keyword Cost and ROI</Anchor>? | Yes, you can.  <br />Apple Search Ads provides us with the cost for each keyword per day broken down by Campaign/Adset/Ad. **Note:** Breakdown by geo is not available. |
 | For a given media source, why does the same campaign name display more than once? | <ul><li>If you use the same campaign name with campaigns having different campaign IDs then the name displays more than once.</li><li>You should allocate campaign IDs unique names</li><li>When changing campaign names, data is aligned to the last name used.</li></ul> |
 | Can I view organic users? | Organic users, by default, are included in Cohort reports.<br /><br />**To limit the Cohort report to organic users only:**<ol><li>In the **Cohort dashboard**, click the **Edit cohort** button.</li><li>In the Cohort setup window set **Filter by** > **Media source** is **Organic**: [![cohort_setup_filtered_by_media_source_is_organic.png](https://files.readme.io/ba95397eac2b66a365a2aabb2f56587e78624be5ecd06dd6c0463e19dfe9e26a-32127949503889.png)](https://files.readme.io/ba95397eac2b66a365a2aabb2f56587e78624be5ecd06dd6c0463e19dfe9e26a-32127949503889.png)</li><li>Click **Apply changes**</li></ol> |
-| Can I see data from deleted installs? | Deleted installs, such as installs from SRNs that were deleted due to data retention policies or GDPR deleted installs, can not be seen in the cohort dashboard.<br /><br />For more information [click here.](/docs/user-level-data-retention#partner-data-retention-periods) |
+| Can I see data from deleted installs? | Deleted installs, such as installs from SRNs that were deleted due to data retention policies or GDPR deleted installs, can not be seen in the cohort dashboard.<br /><br />For more information <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">click here.</Anchor> |
 | Can I compare data for daily view to data in weekly or monthly views? | It’s not easy to compare data from a daily granularity to a weekly or monthly granularity, because the cohort LTVs don't align.<br /><br />When viewing cohorts in daily granularity, **Day 0** displays data for the day of the installs. Day 1 is the day after the install, Day 2 is 2 days post-install, etc.<br /><br />When viewing cohorts in weekly granularity, data displays for all installs made in the **entire Week 0**. Week 1 is the week after the install, Week 2 is 2 weeks post-install, etc.<br /><br />When viewing cohorts in monthly granularity, data displays for all installs made in the **entire Month 0**. Month 1 is the month after the install, Month 2 is 2 months post-install, etc.<br /><br />This means the LTV timelines don’t align. For example, if you look at data for January 9-15: If you use daily granularity, **Day 0** contains data for the first day of all **installs made January 9-15.** And **Day 6** contains data for the first 6 days post-install of all installs made **January 9-15**. Meanwhile, in **weekly granularity**, **Week 0** contains data for the **entire period** for all installs **made January 9-15**. So for installs on **January 9**, the data is like **Day 6**. But for installs on **January 15**, it’s like **Day 0**. |
 | Why is there a decrease in the cumulative revenue from between cohort periods? | Usually, cumulative revenue increases with each cohort period, for example, D2 is higher than D1. However, sometimes it actually decreases because of negative revenue, for example, from return events. You can verify this by checking the on day (hour/day/week/month) data to see whether there's negative revenue for a specific cohort period. |
 
@@ -324,11 +321,11 @@ An advertiser defines the in-app event af\_purchase. The cohort table displays t
 | CSV file download | <ul><li>Maximum 10,000 rows.</li><li>Only available for user lifetime performance reports. Not available for the KPI by attribution time trend.</li><li>Limit of 10 CSV exports per minute and 100 per day (per user).</li></ul> |
 | Charts | Charts display the top 5 or 10 ranked by the number of app users in the cohort. This is irrespective of the dimension displayed. |
 | Table | Tables display up to 200 rows. Installs, retargeting conversions, or attributions (depending on the cohort view type), cost, and average eCPI (effective cost per install) always display irrespective of the metric selected. |
-| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. [Learn more](/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events)</li><li>The install time is based on the [device\_download\_time](/docs/raw-data-field-dictionary#device-info::dfd9504e) field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. [Learn more](/docs/unique-users)</li></ul> |
+| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
 | Data queries | Limit of 20 data queries per minute and 500 per day (per user). Changing time period, grouping, KPI, etc. is considered a new query. |
 | Organic data | Included |
 | Non-organic data | Included |
-| Data freshness | <ul><li>[Real-time](/docs/about-data-freshness-and-timezone-support#eod)</li><li>Exceptions:<ul><li>Daily cohorts:<ul><li>Cost, ad revenue, and uninstall metrics update Daily.</li><li>Uninstalls are calculated once a day using the UTC clock.</li></ul></li><li>Weekly and monthly cohorts:<ul><li>Real-time data is not available. The data will only show after it has been completed (meaning at the end of the week or month).<br />However, data, where some of the install data has been completed, such as some data has finished (post-install time) and others haven't started yet, will be displayed.</li></ul></li></ul></li></ul> |
+| Data freshness | <ul><li><Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#eod">Real-time</Anchor></li><li>Exceptions:<ul><li>Daily cohorts:<ul><li>Cost, ad revenue, and uninstall metrics update Daily.</li><li>Uninstalls are calculated once a day using the UTC clock.</li></ul></li><li>Weekly and monthly cohorts:<ul><li>Real-time data is not available. The data will only show after it has been completed (meaning at the end of the week or month).<br />However, data, where some of the install data has been completed, such as some data has finished (post-install time) and others haven't started yet, will be displayed.</li></ul></li></ul></li></ul> |
 | Historical data | <ul><li>Daily cohort: 2 years</li><li>Weekly/monthly cohorts: 3 years</li></ul> |
 | Geo | <ul><li>Available</li><li>When geo is unknown (N/A), ad revenue data doesn't display when grouping by geo.</li></ul> |
 | Session count | Session count for Day 0 in the Retargeting view might be lower than the user count.<br />There are a few reasons this can happen. The most common are:<ul><li>The  re-engagement session has already been attributed before the re-engagement is recorded. In this case, it will not be attributed to retargeting session</li><li>Filtering by other settings such as the **Minimum time between sessions**. In this case, the re-engagement is recorded. However, the sessions are filtered and won’t be recorded</li></ul> |

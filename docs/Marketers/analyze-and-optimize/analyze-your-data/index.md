@@ -13,9 +13,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550901627921-Analyze-your-data
 ---
-- [Dashboards](/docs/dashboards)
-- [Analytics and aggregate reporting/APIs](/docs/analytics-and-aggregate-reporting-apis)
-- [Raw data reporting/APIs](/docs/raw-data-reporting-apis)
-- [Data delivery tools](/docs/data-delivery-tools)
-- [Data Locker](/docs/data-locker)
-- [Creative Optimization](/docs/creative-optimization)
+- <Anchor target="_blank" href="/marketers/docs/dashboards">Dashboards</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/analytics-and-aggregate-reporting-apis">Analytics and aggregate reporting/APIs</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-apis">Raw data reporting/APIs</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/data-delivery-tools">Data delivery tools</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/data-locker">Data Locker</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/creative-optimization">Creative Optimization</Anchor>

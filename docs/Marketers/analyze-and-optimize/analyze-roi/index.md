@@ -12,6 +12,6 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551026275217-Analyze-ROI
 ---
-- [Cost aggregation](/docs/cost-aggregation)
-- [Overview](/docs/overview-analyze-roi)
-- [Revenue analysis](/docs/revenue-analysis)
+- <Anchor target="_blank" href="/marketers/docs/cost-aggregation">Cost aggregation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/overview-analyze-roi">Overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/revenue-analysis">Revenue analysis</Anchor>

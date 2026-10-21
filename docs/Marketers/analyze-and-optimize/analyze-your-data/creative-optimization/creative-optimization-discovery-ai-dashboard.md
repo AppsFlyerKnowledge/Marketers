@@ -1,9 +1,5 @@
 ---
 title: Creative Optimization Discovery AI dashboard
-excerpt: >-
-  Use the Creative Optimization Discovery AI dashboard to analyze the
-  performance of your creatives and the scenes and elements they're built from,
-  to produce and maintain data-driven, winning creatives.
 metadata:
   keywords:
     - Premium
@@ -28,22 +24,24 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
+
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
 ## About the Creative Optimization Discovery AI dashboard
 
-The [**Creative Optimization**](/docs/creative-optimization-guide) dashboards let you measure the performance of your creatives by pulling all your creatives from all media channels into one place. Analyze their performance by selected dimensions, across multiple campaigns, channels, and more, to gain critical insights before planning, selecting, and producing your next batch of creatives.
+The <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">**Creative Optimization**</Anchor> dashboards let you measure the performance of your creatives by pulling all your creatives from all media channels into one place. Analyze their performance by selected dimensions, across multiple campaigns, channels, and more, to gain critical insights before planning, selecting, and producing your next batch of creatives.
 
 The AI-powered **Creative Optimization** **Discovery AI dashboard** gives your creative team all the info they need to produce winning creatives. It provides granular performance data, enabling informed decisions based on the specific elements or features within a creative that contribute to its effectiveness. With this dashboard, you can consistently produce and maintain successful creatives that are data-driven and optimized for maximum impact. Based on the main filter selections, you can view a gallery of your creatives, or break them down into individual scenes and elements.
 
 ## Get started
 
-If you haven't configured Creative Optimization yet, you can find instructions on how to do so [here](/docs/creative-optimization-guide#get-started). Once set up, the Creative Optimization dashboards are updated [daily](/docs/creative-optimization-guide#dashboard-updates).
+If you haven't configured Creative Optimization yet, you can find instructions on how to do so <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#get-started">here</Anchor>. Once set up, the Creative Optimization dashboards are updated <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#dashboard-updates">daily</Anchor>.
 
 **Note:**
 
-* Cost data metrics are displayed differently in the dashboards depending on whether or not you have an AppsFlyer ROI360 subscription. [Learn more](/docs/creative-optimization-guide#creative-optimization-roi360)
-* Impressions and clicks data requires cost to be turned on in the partner integrations. [Learn more](/docs/set-up-an-integrated-partner#cost-tab)
+* Cost data metrics are displayed differently in the dashboards depending on whether or not you have an AppsFlyer ROI360 subscription. <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#creative-optimization-roi360">Learn more</Anchor>
+* Impressions and clicks data requires cost to be turned on in the partner integrations. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#cost-tab">Learn more</Anchor>
 
 ## Procedures—Using the Discovery AI dashboard
 
@@ -54,7 +52,7 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 **To set up the Discovery AI dashboard to view data about specific creatives**:
 
 1. In the AppsFlyer side menu, go to **Optimize** > **Creative Optimization**, and click the **Discovery AI** tab.
-2. In the top-level filter bar, select the apps, date range, and other filters for which you want to get data about. [Learn more](/docs/creative-optimization-guide#filter-bar)
+2. In the top-level filter bar, select the apps, date range, and other filters for which you want to get data about. <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#filter-bar">Learn more</Anchor>
 3. Use the search bar or the preset [quick queries](/docs/creative-optimization-discovery-ai-dashboard#quick-queries), to find specific creatives, or specific elements, texts, etc. that appear within creatives.
 4. [Coming soon] Use the Discovery AI search to find specific creatives, or specific elements, texts, etc. that appear within creatives. [Learn more about Discovery AI search](/docs/creative-optimization-discovery-ai-dashboard#discovery-ai-search).
    1. Write a search term/element description in the search bar and click **Enter**.
@@ -65,7 +63,7 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 6. View the discovery card gallery of all the creatives, elements, scenes, or texts that match your filters and search settings.
    1. [Optional] To change the metrics displayed on the cards, click the **Settings** icon, and select up to 5 metrics to display. [Learn more about discovery card settings](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs).
    2. Sort the gallery tiles from highest to lowest (or the reverse) by the metrics. Metrics available to sort by are those selected in the discovery card settings.  
-      ![Sort by new.jpg](https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg)
+      <Image alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. Click on a specific card to drill down deeper and get additional performance data and insights.
 
 </Accordion>
@@ -78,9 +76,9 @@ You can customize which metrics you see on the Discovery tiles.
 
 **To customize:**
 
-1. Click the![Gear icon.jpg](https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg) icon on the upper right (next to **Sort by**).
+1. Click the<Image alt="Gear icon.jpg" src="https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg" width="31px" />icon on the upper right (next to **Sort by**).
 2. Select the desired metrics (up to 5) and click **Apply**.  
-   ![Discovery card settings.jpg](https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg)  
+   <Image alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />  
    The selected metrics will appear on the tiles.
 
 **Available metrics include:**
@@ -99,11 +97,11 @@ You can customize which metrics you see on the Discovery tiles.
 * Retention (D1, D3, D7, D14, D30, D60, D90)
 * Revenue (D1, D3, D7, D14, D30, D60, D90)
 * ROAS (D1, D3, D7, D14, D30, D60, D90)
-* [Custom metrics](/docs/creative-optimization-guide#custom-metrics)
-* [Partner metrics](/docs/creative-optimization-guide#partner-metrics::e592ecd3)
-* [In-app events](/docs/creative-optimization-overview-dashboard#in-app-events)
+* <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#custom-metrics">Custom metrics</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#partner-metrics::e592ecd3">Partner metrics</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/creative-optimization-overview-dashboard#in-app-events">In-app events</Anchor>
 
-See an in-depth [list](/docs/creative-optimization-guide#standard-metrics-and-dimensions) of metric definitions.
+See an in-depth <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#standard-metrics-and-dimensions">list</Anchor> of metric definitions.
 
 </Accordion>
 
@@ -120,7 +118,7 @@ Use it to isolate patterns, validate hypotheses, and identify which elements dri
 **To use search:**
 
 1. Use the filters at the top to define the creatives you want to analyze, for example, by app or date range.  
-   **Note:** The top-level Creative Optimization [filter](/docs/creative-optimization-guide#filter-bar) is the primary one. Search filters those results further. This means that the top-level filter will override search in case of conflicting requests.
+   **Note:** The top-level Creative Optimization <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#filter-bar">filter</Anchor> is the primary one. Search filters those results further. This means that the top-level filter will override search in case of conflicting requests.
 2. Enter a natural language query in the Discovery AI search bar describing what you want to explore.
 
 Search queries should refer only to creative content, such as visuals, text, audio, themes, or story elements. Do not search by performance metrics, for example, "creatives with IPM above 2," or by creative name.
@@ -206,7 +204,7 @@ Combining attributes helps isolate clearer creative patterns and reduces noise i
 
 Smart tags are saved searches that you can refer back to whenever you need. Perhaps even more importantly, they tag all creatives with the name and search term, so you can use these Smart tags as group by dimensions for your creatives in the Overview dashboard. For example, if you create Smart tags called "Gameplay scenes" and "Animated scenes" in the Creative Optimization Overview dashboard you can group data by Smart Tags and get separate data rows for Gameplay scenes and Animated scenes.
 
-**Note:** The top-level Creative Optimization [filter](/docs/creative-optimization-guide#using-the-dashboard) is the primary one. Smart tags filter those results further. This means that the top-level filter will override Smart tags in case of conflicting requests.
+**Note:** The top-level Creative Optimization <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#using-the-dashboard">filter</Anchor> is the primary one. Smart tags filter those results further. This means that the top-level filter will override Smart tags in case of conflicting requests.
 
 **Example common queries you can use to create Smart tags:**
 
@@ -237,8 +235,8 @@ There are preset quick queries that you can use for searching creatives, scenes,
 * Gameplay scenes
 * UGC scenes/elements (content that is created and shared by users)  
   **Note:** A UGC is determined on the creative level, so if an animated scene is part of a UGC, that scene (and the elements in the creative as well) will be considered a UGC.
-* Shown on [SRNs](/docs/self-reporting-networks-srns)
-* Shown on [non-SRNs](/docs/about-media-source-types)
+* Shown on <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>
+* Shown on <Anchor target="_blank" href="/marketers/docs/about-media-source-types">non-SRNs</Anchor>
 * Opening scenes
 * End cards
 * And more
@@ -275,11 +273,11 @@ See a gallery of all your creatives, along with their performance data. The tile
 
 <Accordion title="Scenes">
 
-Powered by AI, video creatives are automatically broken down into scenes and displayed along with their performance data—without any manual process. Scene performance data is taken from the creative it comes from. If the same scene appears in more than one video, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature is **available with Creative Optimization Advanced and Premium subscription plans only.**
+Powered by AI, video creatives are automatically broken down into scenes and displayed along with their performance data—without any manual process. Scene performance data is taken from the creative it comes from. If the same scene appears in more than one video, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">partner integration</Anchor>. This feature is **available with Creative Optimization Advanced and Premium subscription plans only.**
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-![](https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png)
+<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |
@@ -296,7 +294,7 @@ Powered by AI, video creatives are automatically broken down into scenes and dis
 
 <Accordion title="Elements">
 
-Our fully automated AI algorithms further break down video creatives into significant elements (basic visual components) which are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same element appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
+Our fully automated AI algorithms further break down video creatives into significant elements (basic visual components) which are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same element appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">partner integration</Anchor>. This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
@@ -316,11 +314,11 @@ Our fully automated AI algorithms further break down video creatives into signif
 
 <Accordion title="Texts">
 
-Our fully automated AI algorithms break down video creatives into significant text strings that occur throughout the video. These are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same text string appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after [partner integration](/docs/creative-optimization-partner-integrations). This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
+Our fully automated AI algorithms break down video creatives into significant text strings that occur throughout the video. These are identified and displayed to enable the most granular analysis. The performance data is taken from the creative it comes from. If the same text string appears in more than one creative, the data is an aggregate of all the creatives it appears in. The data is available in the dashboard about 24 hours after <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">partner integration</Anchor>. This feature **is available with Creative Optimization Advanced and Premium subscription plans only.**
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-![creative text card.png](https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png)
+<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |

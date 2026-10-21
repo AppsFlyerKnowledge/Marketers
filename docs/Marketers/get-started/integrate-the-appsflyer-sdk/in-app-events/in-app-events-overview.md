@@ -1,8 +1,5 @@
 ---
 title: In-app events—Overview
-excerpt: >-
-  Record post-install in-app events (such as login, register, or in-app
-  purchase) attributed to media sources and campaigns.
 metadata:
   keywords:
     - ios
@@ -33,6 +30,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005544169-In-app-events-Overview
 ---
+> **At a glance:** Record post-install in-app events (such as login, register, or in-app purchase) attributed to media sources and campaigns.
+
 ## Why record in-app events?
 
 In-app events provide insight into what is happening in your app and are the ideal tool to determine the value of app users and the **quality of traffic originating from different media sources**. Recording in-app events helps you measure key performance indicators (KPIs) such as ROI (Return on Investment) and LTV (Lifetime Value).
@@ -45,22 +44,22 @@ An in-app event comprises an event name and can include event parameters. When y
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
-> Want to know more about in-app events? Check out this short, informative [course on the AppsFlyer Learning Portal](https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1).
+> Want to know more about in-app events? Check out this short, informative <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">course on the AppsFlyer Learning Portal</Anchor>.
 
 ### Predefined and custom events
 
 In-app events that you want to send require your developer to implement code where applicable in your app. Event names and event parameters are classified as follows:
 
-* **Predefined**: These are event names and event parameters that are commonly used among different apps. We highly recommend using [predefined event names](/docs/in-app-events-event-structure#predefined-event-names) and [event parameters](/docs/in-app-events-event-structure#predefined-event-parameters) as much as possible for the following reasons:
+* **Predefined**: These are event names and event parameters that are commonly used among different apps. We highly recommend using <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-names">predefined event names</Anchor> and <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-parameters">event parameters</Anchor> as much as possible for the following reasons:
   * Predefined naming allows for smooth mapping of events to partners.
   * If AppsFlyer decides to change the name of any event or event parameter, your implementation is backward compatible.
 * **Custom:** These are event names and parameters that you define for specific user scenarios that occur in your app. You can use any custom event name or parameter name string, but keep in mind that custom events need maintenance by your developer. See [Tips](/docs/in-app-events-overview#tips) and [Limitations](/docs/in-app-events-overview#limitations).
 
 ## Revenue in in-app events
 
-The information in the following few sections explains how you can send revenue events to AppsFlyer and map the parameters the events include. However, it's important to note that with a ROI360 subscription, you get the most accurate and up-to-date cost and revenue data available (including revenue data from in-app purchases, subscriptions, and ads). [Learn more about ROI360](/docs/roi360-guide-cost-and-revenue-data)
+The information in the following few sections explains how you can send revenue events to AppsFlyer and map the parameters the events include. However, it's important to note that with a ROI360 subscription, you get the most accurate and up-to-date cost and revenue data available (including revenue data from in-app purchases, subscriptions, and ads). <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">Learn more about ROI360</Anchor>
 
 <Accordion title="Event revenue">
 
@@ -68,14 +67,14 @@ The information in the following few sections explains how you can send revenue 
 
 If you also want to report revenue with your own logic applied, for example, after app store fees and tax deductions, you can additionally send `af_net_revenue`. It is an addition to `af_revenue`, not a replacement. See [Net revenue](#net-revenue) below.
 
-* [Recording revenue in the SDK](/docs/basic-sdk-integration-guide#record-revenue)
+* <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#record-revenue">Recording revenue in the SDK</Anchor>
 * Recording Revenue in Unity
 
 You can also record negative revenue when a user cancels a purchase or when you issue a refund. To record negative revenue, all you have to do is append the minus sign (-) to the revenue value that you pass to `af_revenue`
 
 The revenue value must contain only numbers (and a decimal point, if required):
 
-* **Don't**include any other characters or format the revenue value in any other way. This means no commas, currency signs, for example, ($), special characters, or text.
+* **Don't** include any other characters or format the revenue value in any other way. This means no commas, currency signs, for example, ($), special characters, or text.
 * AppsFlyer provides revenue value with **up to 5 decimal places of precision**.
 * The range of this value should be -1,000,000 to 1,000,000 in dollars or the equivalent original currency amount. Values outside of this range are included in raw data reports but not in aggregate reports.
 * Example: 1234.56
@@ -99,11 +98,11 @@ The `af_net_revenue` parameter provides an optional, additional way to report re
 
 * Currency follows `af_currency` (default USD), similar to `af_revenue`.
 * Since there is no predefined SDK constant for `af_net_revenue`, you must send it as a custom parameter with the key `af_net_revenue`.
-* Net revenue powers the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, and Net profit) in [My Dashboards](/docs/my-dashboards#metrics).
+* Net revenue powers the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, and Net profit) in <Anchor target="_blank" href="/marketers/docs/my-dashboards#metrics">My Dashboards</Anchor>.
 
 > 📘 **Note**
 >
-> If you use [ROI360 store revenue](/docs/about-roi360-store-revenue) `af_net_revenue` is populated automatically for in-app purchase and subscription events, so you do not need to send `af_net_revenue` for those events. Net revenue equals gross revenue minus app store fees and taxes.
+> If you use <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">ROI360 store revenue</Anchor> `af_net_revenue` is populated automatically for in-app purchase and subscription events, so you do not need to send `af_net_revenue` for those events. Net revenue equals gross revenue minus app store fees and taxes.
 
 </Accordion>
 
@@ -123,7 +122,7 @@ The diagram above demonstrates the following process:
 4. Revenue data in the dashboard is displayed in app settings currency
 5. AppsFlyer populates revenue data in raw data reports in both event and app settings currency
 
-AppsFlyer uses [Open Exchange Rates](https://openexchangerates.org/) for currency conversion. The exchange rate is updated on an hourly basis. Whenever AppsFlyer performs currency conversion, it uses the exchange rate of the last hourly update.
+AppsFlyer uses <Anchor target="_blank" href="https://openexchangerates.org/">Open Exchange Rates</Anchor> for currency conversion. The exchange rate is updated on an hourly basis. Whenever AppsFlyer performs currency conversion, it uses the exchange rate of the last hourly update.
 
 #### Currency conversion
 
@@ -144,7 +143,7 @@ In this case, AppsFlyer converts revenue from EUR to USD and then to GBP. Let's 
 
 #### Currency display
 
-[Currency is set in the app settings](/docs/app-settings#localization-currency). The currency that you set in the app settings, is the currency that appears in the dashboard. No matter what currency you send in-app events, the revenue in the dashboard always appears in the currency that you set in the app settings.
+<Anchor target="_blank" href="/marketers/docs/app-settings#localization-currency">Currency is set in the app settings</Anchor>. The currency that you set in the app settings, is the currency that appears in the dashboard. No matter what currency you send in-app events, the revenue in the dashboard always appears in the currency that you set in the app settings.
 
 <span id="h_01HDBZW9XEQNG1RDH7A8H002ZD"></span>**Example**
 
@@ -188,10 +187,10 @@ The in-app events raw data report displays the event and revenue as follows:
 
 There are several ways to send in-app events to AppsFlyer:
 
-* [**AppsFlyer SDK:**](/docs/sdk-integration-overview) This is the most common way to send events. You can send in-app events that record user actions in the app using the AppsFlyer in-app events API at the SDK level.
-* [**Server-to-server (S2S) API:**](/docs/server-to-server-events-api-for-mobile-s2s-mobile) Use the server-to-server (S2S) API to send events that occur outside the mobile app, directly to AppsFlyer. For example, if you have a user who is active on both web and mobile interfaces, you can record events from both sources and attribute them to the same user in AppsFlyer. It can be either an in-app event or other events, such as website events, call-center events, or purchases in your brick-and-mortar store.
-* [**Receipt validation**](/docs/purchase-and-subscription-validation-overview): This is a secure mechanism where the payment platform, for example, Apple and Google, validate that the in-app purchase took place as reported. Validating purchases is the primary tool to prevent fraudulent revenue events. It also helps you see what the real revenue is, and filters out incomplete in-app purchases.
-* [**Hybrid apps:**](/docs/in-app-events-for-hybrid-apps) These apps combine native views and HTML content and can also record in-app events. However, because the SDK can only send events from the native side, developers have to forward all event data to native code.
+* <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">**AppsFlyer SDK:**</Anchor> This is the most common way to send events. You can send in-app events that record user actions in the app using the AppsFlyer in-app events API at the SDK level.
+* <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">**Server-to-server (S2S) API:**</Anchor> Use the server-to-server (S2S) API to send events that occur outside the mobile app, directly to AppsFlyer. For example, if you have a user who is active on both web and mobile interfaces, you can record events from both sources and attribute them to the same user in AppsFlyer. It can be either an in-app event or other events, such as website events, call-center events, or purchases in your brick-and-mortar store.
+* <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">**Receipt validation**</Anchor>: This is a secure mechanism where the payment platform, for example, Apple and Google, validate that the in-app purchase took place as reported. Validating purchases is the primary tool to prevent fraudulent revenue events. It also helps you see what the real revenue is, and filters out incomplete in-app purchases.
+* <Anchor target="_blank" href="/marketers/docs/in-app-events-for-hybrid-apps">**Hybrid apps:**</Anchor> These apps combine native views and HTML content and can also record in-app events. However, because the SDK can only send events from the native side, developers have to forward all event data to native code.
 
 ## Setting up in-app events
 
@@ -199,14 +198,14 @@ The process of setting up in-app events requires that the marketer and the devel
 
 | Step | Role | Task | Details |
 | --- | --- | --- | --- |
-| 1 | Marketer | Determine the in-app events that you want to measure. [Define](/docs/in-app-events-overview#defining-an-inapp-event) and communicate the [event names](/docs/in-app-events-event-structure#predefined-event-names) and [event parameters](/docs/in-app-events-event-structure#predefined-event-parameters) to your developer. | It is recommended to start with 3-5 events that you can use as KPIs to measure the quality of your users (for example, purchases, registration, and sharing). Event parameters are optional, and you can use any event parameter with any event name.<br /><br />See [Recommended events by business vertical](/docs/in-app-events-overview#recommended-events-by-business-vertical) for typical in-app events. |
-| 2 | Developer | Implement code in your app where applicable. | Developer documentation is [here](https://dev.appsflyer.com/hc/docs/in-app-events-sdk). |
-| 3 [Optional] | Marketer | Work with your developer to set the [Customer User ID field (CUID)](/docs/customer-user-id-field-cuid). | This field helps enrich in-app events data by cross-referencing AppsFlyer attribution data with your other data using the CUID as a key. |
-| 4 [Optional] | Marketer | [Map events](/docs/in-app-event-postback-configuration#event-mapping) to relevant partners in the dashboard. | This is an ongoing task, depending on the partners you integrate with. |
+| 1 | Marketer | Determine the in-app events that you want to measure. [Define](/docs/in-app-events-overview#defining-an-inapp-event) and communicate the <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-names">event names</Anchor> and <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-parameters">event parameters</Anchor> to your developer. | It is recommended to start with 3-5 events that you can use as KPIs to measure the quality of your users (for example, purchases, registration, and sharing). Event parameters are optional, and you can use any event parameter with any event name.<br /><br />See [Recommended events by business vertical](/docs/in-app-events-overview#recommended-events-by-business-vertical) for typical in-app events. |
+| 2 | Developer | Implement code in your app where applicable. | Developer documentation is <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk">here</Anchor>. |
+| 3 [Optional] | Marketer | Work with your developer to set the <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer User ID field (CUID)</Anchor>. | This field helps enrich in-app events data by cross-referencing AppsFlyer attribution data with your other data using the CUID as a key. |
+| 4 [Optional] | Marketer | <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">Map events</Anchor> to relevant partners in the dashboard. | This is an ongoing task, depending on the partners you integrate with. |
 
 <Accordion title="Defining an in-app event">
 
-Once you determine the in-app events that you want to measure, use our [In-app event generator](https://evgen.appsflyer.com/) to define the events and parameters as follows:
+Once you determine the in-app events that you want to measure, use our <Anchor target="_blank" href="https://evgen.appsflyer.com/">In-app event generator</Anchor> to define the events and parameters as follows:
 
 1. Select an event name that is most suitable to the scenario you want to record.
 2. Select the event parameters that you want to associate with the event. Choose parameters that will provide additional context to the event and enrich the data.
@@ -228,32 +227,32 @@ The following table provides links to articles that include examples and flows o
 
 | Business vertical | Article title |
 | --- | --- |
-| ![InApp_Events_games.png](https://files.readme.io/b077409a6be4b2fe917978ce4646c38e5dce7babccb23a3395d38da879d7ccde-46334674329489.png) | [Recommended gaming app events](/docs/recommended-gaming-app-events) |
-| ![InApp_Events_ecommerce.png](https://files.readme.io/05ed5dbfbc47a56b0bd0b780d8e1682d147a6fbde2153ad741b5f42a03ac1348-46334674333713.png) | [Recommended eCommerce app events](/docs/recommended-ecommerce-app-events) |
-| ![InApp_Events_streaming.png](https://files.readme.io/dd262ea557b66aad0583b1c4aa58f38ac686e4e0a853bfc9aa8aa02532c81e53-46334666560017.png) | [Recommended entertainment app events](/docs/recommended-entertainment-app-events) |
-| ![banking.png](https://files.readme.io/8db0cf094393a560239c2c622f201d038798bcc7c28ed6f791b9a19c697fa98e-46334674335633.png) | [Recommended finance and banking app events](/docs/recommended-finance-and-banking-app-events) |
-| ![InApp_Events_lending.png](https://files.readme.io/b3ef67b1390852ea37db2e73af92d8750bb37b2c70839abba2638e20c23d0f31-46334666567185.png) | [Recommended P2P lending app events](/docs/recommended-p2p-lending-app-events) |
-| ![education.png](https://files.readme.io/a797d05a1db9c815987db4f65d5fb520769e2b61efdaf73c9274a431c9b19d1c-46334666568209.png) | [Recommended online education app events](/docs/recommended-online-education-app-events) |
-| ![InApp_Events_ride.png](https://files.readme.io/c8d61bcdf3c222aac97586c03f95fab8a9dd4a11711112e609451930d54468bb-46334666569873.png) | [Recommended ride-hailing app events](/docs/recommended-ride-hailing-app-events) |
-| ![InApp_Events_flight.png](https://files.readme.io/7c866bcfe74ce340d04436f9065bacb50b871c812ee96011842dcc4c8070dfa4-46334666570641.png) | [Recommended flight booking app events](/docs/recommended-flight-booking-app-events) |
-| ![InApp_Events_hotel.png](https://files.readme.io/0a9fc3b486c7ce9c7204427b665d796a6030aa625abac6737e2529dd6f755476-46334674345105.png) | [Recommended hotel booking app events](/docs/recommended-hotel-booking-app-events) |
-| ![5669_Healthcare_icon_3.png](https://files.readme.io/78a16579f1e661fe0fd1b42625ccfb08fac114ad8caff79105fb3e0f1e4c0fd9-46334674349073.png) | [Recommended healthcare app events](/docs/recommended-healthcare-app-events) |
-| ![telecommunications_icon.png](https://files.readme.io/3ae58c98d9eb0e2e5cab51a281ad0b7d51862651d876a9a6c2a52a0ed30a7680-46334674351761.png) | [Recommended telecommunication app events](/docs/recommended-telecommunication-app-events) |
-| ![InApp_Events_eWallet.png](https://files.readme.io/a4530bf762ecdf3082590731542a7deff87cf539a082128e0378cf70196554bc-46334674353809.png) | [Recommended eWallet app events](/docs/recommended-ewallet-app-events) |
-| ![soccer_ball.png](https://files.readme.io/9df8f3a86da52422c5114143e141fc525c4a45906fc32f6c523c6a66b1c0e9e5-46334666576273.png) | [Recommended sports betting events](/docs/recommended-sports-betting-events) |
+| <Image alt="InApp_Events_games.png" src="https://files.readme.io/b077409a6be4b2fe917978ce4646c38e5dce7babccb23a3395d38da879d7ccde-46334674329489.png" width="38px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-gaming-app-events">Recommended gaming app events</Anchor> |
+| <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/05ed5dbfbc47a56b0bd0b780d8e1682d147a6fbde2153ad741b5f42a03ac1348-46334674333713.png" width="37px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-ecommerce-app-events">Recommended eCommerce app events</Anchor> |
+| <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/dd262ea557b66aad0583b1c4aa58f38ac686e4e0a853bfc9aa8aa02532c81e53-46334666560017.png" width="39px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-entertainment-app-events">Recommended entertainment app events</Anchor> |
+| <Image alt="banking.png" src="https://files.readme.io/8db0cf094393a560239c2c622f201d038798bcc7c28ed6f791b9a19c697fa98e-46334674335633.png" width="36px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-finance-and-banking-app-events">Recommended finance and banking app events</Anchor> |
+| <Image alt="InApp_Events_lending.png" src="https://files.readme.io/b3ef67b1390852ea37db2e73af92d8750bb37b2c70839abba2638e20c23d0f31-46334666567185.png" width="36px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-p2p-lending-app-events">Recommended P2P lending app events</Anchor> |
+| <Image alt="education.png" src="https://files.readme.io/a797d05a1db9c815987db4f65d5fb520769e2b61efdaf73c9274a431c9b19d1c-46334666568209.png" width="37px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-online-education-app-events">Recommended online education app events</Anchor> |
+| <Image alt="InApp_Events_ride.png" src="https://files.readme.io/c8d61bcdf3c222aac97586c03f95fab8a9dd4a11711112e609451930d54468bb-46334666569873.png" width="37px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-ride-hailing-app-events">Recommended ride-hailing app events</Anchor> |
+| <Image alt="InApp_Events_flight.png" src="https://files.readme.io/7c866bcfe74ce340d04436f9065bacb50b871c812ee96011842dcc4c8070dfa4-46334666570641.png" width="38px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-flight-booking-app-events">Recommended flight booking app events</Anchor> |
+| <Image alt="InApp_Events_hotel.png" src="https://files.readme.io/0a9fc3b486c7ce9c7204427b665d796a6030aa625abac6737e2529dd6f755476-46334674345105.png" width="37px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-hotel-booking-app-events">Recommended hotel booking app events</Anchor> |
+| <Image alt="5669_Healthcare_icon_3.png" src="https://files.readme.io/78a16579f1e661fe0fd1b42625ccfb08fac114ad8caff79105fb3e0f1e4c0fd9-46334674349073.png" width="37px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-healthcare-app-events">Recommended healthcare app events</Anchor> |
+| <Image alt="telecommunications_icon.png" src="https://files.readme.io/3ae58c98d9eb0e2e5cab51a281ad0b7d51862651d876a9a6c2a52a0ed30a7680-46334674351761.png" width="39px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-telecommunication-app-events">Recommended telecommunication app events</Anchor> |
+| <Image alt="InApp_Events_eWallet.png" src="https://files.readme.io/a4530bf762ecdf3082590731542a7deff87cf539a082128e0378cf70196554bc-46334674353809.png" width="39px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-ewallet-app-events">Recommended eWallet app events</Anchor> |
+| <Image alt="soccer_ball.png" src="https://files.readme.io/9df8f3a86da52422c5114143e141fc525c4a45906fc32f6c523c6a66b1c0e9e5-46334666576273.png" width="39px" /> | <Anchor target="_blank" href="/marketers/docs/recommended-sports-betting-events">Recommended sports betting events</Anchor> |
 
 </Accordion>
 
 <Accordion title="View in-app event data">
 
-In-app events are attributed to the media source responsible for the install throughout the lifetime of the user. Event data is presented as [Life Time Value or Activity data](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports).
+In-app events are attributed to the media source responsible for the install throughout the lifetime of the user. Event data is presented as <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">Life Time Value or Activity data</Anchor>.
 
 You can view your in-app event data in these locations:
 
-* Dashboard overview page: Displays real-time LTV user acquisition (UA) performance. **Note**: This includes revenue divided between organic and non-organic users reported via in-app events, and retargeting revenue that is [double-attributed.](/docs/resolve-retargeting-double-attribution)
+* Dashboard overview page: Displays real-time LTV user acquisition (UA) performance. **Note**: This includes revenue divided between organic and non-organic users reported via in-app events, and retargeting revenue that is <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double-attributed.</Anchor>
 * Events page: Displays LTV in-app event performance across media sources
-* [Activity page](/docs/activity-dashboard): Displays in-app activities for the selected date range.
-* [Raw data in-app event report](/docs/raw-data-reporting-overview): Displays activity data, meaning, a chronological list of the actions performed by your entire user base. This report includes event parameter values, for example:
+* <Anchor target="_blank" href="/marketers/docs/activity-dashboard">Activity page</Anchor>: Displays in-app activities for the selected date range.
+* <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data in-app event report</Anchor>: Displays activity data, meaning, a chronological list of the actions performed by your entire user base. This report includes event parameter values, for example:
 
   ```json
   {
@@ -268,7 +267,7 @@ You can view your in-app event data in these locations:
 
 > 📘 **Note**
 >
-> In-app event parameter values are available exclusively in [raw-data in-app event reports](/docs/raw-data-reporting-overview#in-app-events). They are not displayed in the Overview, Event, or Activity dashboards, nor in Aggregate data reports.
+> In-app event parameter values are available exclusively in <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#in-app-events">raw-data in-app event reports</Anchor>. They are not displayed in the Overview, Event, or Activity dashboards, nor in Aggregate data reports.
 
 </Accordion>
 
@@ -278,8 +277,8 @@ Keep in mind the following when defining event names and parameters in the app:
 
 * For data consistency in raw-data reporting, we recommend defining and using the same in-app event names and structures across all platforms.
 * Use a minimal number of events to make it easier to compare the quality of users coming from different sources.
-* **It is important that you ensure the privacy of your users.** **Don't populate in-app event values with restricted data that can directly identify them**. **For example, email address, name, identity number, and in some locations postal code. For more information about restricted data, read the** [**services privacy policy**](https://www.appsflyer.com/legal/services-privacy-policy/).
-* Note that AppsFlyer includes the IP address of devices during [engagements](https://www.appsflyer.com/services-privacy-policy/#engagementinformation). In some jurisdictions or use scenarios, the IP address can be regarded as personally identifiable information (PII). We use the IP address to derive the broad geographic location (city, district level) of the device but not the specific address. If needed, you can select to [mask IP addresses](/docs/apply-ip-masking-to-user-data) so that they don't appear in raw data reports.
+* **It is important that you ensure the privacy of your users.** **Don't populate in-app event values with restricted data that can directly identify them**. **For example, email address, name, identity number, and in some locations postal code. For more information about restricted data, read the** <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">**services privacy policy**</Anchor>.
+* Note that AppsFlyer includes the IP address of devices during <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/#engagementinformation">engagements</Anchor>. In some jurisdictions or use scenarios, the IP address can be regarded as personally identifiable information (PII). We use the IP address to derive the broad geographic location (city, district level) of the device but not the specific address. If needed, you can select to <Anchor target="_blank" href="/marketers/docs/apply-ip-masking-to-user-data">mask IP addresses</Anchor> so that they don't appear in raw data reports.
 * In-app events are the only source of revenue data in AppsFlyer. You can attach a specific revenue value to each event, and view it on your app's dashboard. Learn more about the [monetizing parameters](/docs/in-app-events-overview#revenue-in-in-app-events). ![revenue_data.png](https://files.readme.io/9ada01568583ef5eb7d39ca09b2ae9dd68afb9415859574f35c477cf46d6272c-46334666577425.png)
 
 </Accordion>
@@ -289,14 +288,14 @@ Keep in mind the following when defining event names and parameters in the app:
 Keep in mind the following when defining event names and parameters in the app:
 
 * We recommend using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names. Event names are case-sensitive, meaning that af\_purchase and af\_PURCHASE are two different events in the raw data. However, in aggregate reports and dashboards (for example, Overview or Events), only lowercase letters are permitted, and therefore, they can be displayed as a single event.
-* There is a cardinality limit of 300 unique events per day. [Learn more](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_events_limit)
+* There is a cardinality limit of 300 unique events per day. <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_events_limit">Learn more</Anchor>
 * Unique users are only counted for the first 100 events after they install the app.
 * Event names cannot begin with these characters: **" = + -**
-* Event values should not contain the **+** character, except in encoded URLs or encoded as per [ASCII](https://www.w3schools.com/tags/ref_urlencode.ASP).
+* Event values should not contain the **+** character, except in encoded URLs or encoded as per <Anchor target="_blank" href="https://www.w3schools.com/tags/ref_urlencode.ASP">ASCII</Anchor>.
 * Event names cannot contain empty spaces. You can use underlined spaces (low dashes) before or after the name of the event.
 * Event values should not exceed 2,000 characters to avoid being shortened in raw data reports. However, if the event originates from the SDK, it is recommended to keep it under 1,000 characters to make sure that the payload is not truncated when sent in the HTTP request.
-* If you include the referring URL as an event value, it must be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.ASP).
-* Meta ads have some limitations about event names and parameters. Read about the limitations [here](https://developers.facebook.com/docs/app-events/faq#limits).
+* If you include the referring URL as an event value, it must be <Anchor target="_blank" href="https://www.w3schools.com/tags/ref_urlencode.ASP">URL encoded</Anchor>.
+* Meta ads have some limitations about event names and parameters. Read about the limitations <Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/faq#limits">here</Anchor>.
 
 </Accordion>
 
@@ -318,11 +317,11 @@ If you also want to report revenue with your own logic applied, for example, aft
 
 In-app events are attributed to the original media source of the app install.
 
-Upon the install of an app (first app launch) AppsFlyer uses various [attribution methods](/docs/appsflyer-attribution-model#attribution-methods) to determine the attribution of the install. At the same time, the AppsFlyer SDK creates a new unique [AppsFlyer ID](/docs/about-device-identifiers#appsflyer-id), which is associated with the attribution details.
+Upon the install of an app (first app launch) AppsFlyer uses various <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-methods">attribution methods</Anchor> to determine the attribution of the install. At the same time, the AppsFlyer SDK creates a new unique <Anchor target="_blank" href="/marketers/docs/about-device-identifiers#appsflyer-id">AppsFlyer ID</Anchor>, which is associated with the attribution details.
 
 Every consequent in-app event performed by the same device in the app has this ID. This lets AppsFlyer attribute the event to the original media source. Advertisers can use this to follow the full user journey in their app.
 
-Events of recently retargeted users might have [double attribution](/docs/resolve-retargeting-double-attribution).
+Events of recently retargeted users might have <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double attribution</Anchor>.
 
 AppsFlyer attributes events of attributed installs as **organic** when:
 
@@ -352,7 +351,7 @@ If a user initiates an event when the internet connection is unavailable, AppsFl
 
 Complex in-app events let you send multiple items in a single API call. They're useful when you want to group several closely related user actions together, for example, adding multiple products to a cart in one session.
 
-We recommend using the `af_order_info` object to send complex in-app events to supported ad networks. For details, see [Item-level order data for ad networks (af\_order\_info)](/docs/item-level-order-data-for-ad-networks-af-order-info).
+We recommend using the `af_order_info` object to send complex in-app events to supported ad networks. For details, see <Anchor target="_blank" href="/marketers/docs/item-level-order-data-for-ad-networks-af-order-info">Item-level order data for ad networks (af\_order\_info)</Anchor>.
 
 **Example** (recommended format, one field per item array):
 
@@ -366,7 +365,7 @@ We recommend using the `af_order_info` object to send complex in-app events to s
 }
 ```
 
-See [Item-level order data for ad networks (af\_order\_info)](/docs/item-level-order-data-for-ad-networks-af-order-info) for the full field list (up to 7 fields per item) and the alternative one-object-per-item format.
+See <Anchor target="_blank" href="/marketers/docs/item-level-order-data-for-ad-networks-af-order-info">Item-level order data for ad networks (af\_order\_info)</Anchor> for the full field list (up to 7 fields per item) and the alternative one-object-per-item format.
 
 As an alternative, you can still structure the event using `af_content` as a JSON array. Each object in the array must include `id` and `quantity`. `af_content_list` is optional and can be omitted.
 
@@ -381,13 +380,13 @@ As an alternative, you can still structure the event using `af_content` as a JSO
 }
 ```
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > If the `af_content` string exceeds 1,000 characters, AppsFlyer might send the event to Meta without the `fb_content` parameter. If `af_content_list` is also absent in that case, Meta receives no product identification data. Keep `af_content` under 1,000 characters for events that include many items.
 
-For full details about sending complex in-app events to Meta, see [Send complex in-app events to Meta ads](/docs/meta-ads-in-app-event-mapping#send-complex-in-app-events-to-meta-ads).
+For full details about sending complex in-app events to Meta, see <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#send-complex-in-app-events-to-meta-ads">Send complex in-app events to Meta ads</Anchor>.
 
-**Note:** In AppsFlyer [Audiences](/docs/audiences-guide#limitations), arrays are not supported within event attributes, only numbers or strings.
+**Note:** In AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide#limitations">Audiences</Anchor>, arrays are not supported within event attributes, only numbers or strings.
 
 </Accordion>
 
@@ -403,11 +402,11 @@ In the same transaction, Mr. Smith purchases two identical shirts, one pair of s
 "{\"af_content_id\": [\"123\",\"988\",\"399\"], \"af_quantity\": [\"2\",\"1\",\"1\"], \"af_price\": [\"25\",\"50\",\"10\"], \"af_revenue\": \"110\", \"af_currency\": \"USD\"}"
 ```
 
-Multiple items are sent onward as an array in [postbacks](/docs/in-app-event-postback-configuration). Currently, Meta ads and X Ads can't parse array parameters correctly. To assist with this issue, AppsFlyer sums up the number of items (`af_quantity`) instead of sending it to these self-reporting networks (SRNs) as an array. In our example, Meta ads would get `af_quantity=4`.
+Multiple items are sent onward as an array in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">postbacks</Anchor>. Currently, Meta ads and X Ads can't parse array parameters correctly. To assist with this issue, AppsFlyer sums up the number of items (`af_quantity`) instead of sending it to these self-reporting networks (SRNs) as an array. In our example, Meta ads would get `af_quantity=4`.
 
 > 📘 **Notes**
 >
-> * In AppsFlyer [Audiences](/docs/audiences-guide#limitations), arrays are not supported within event attributes, only numbers or strings.
+> * In AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide#limitations">Audiences</Anchor>, arrays are not supported within event attributes, only numbers or strings.
 > * Multiple items can be used with the following in-app events:
 >   `af_add_to_cart`, `af_add_to_wishlist`, `af_tutorial_completion`, `af_initiated_checkout`, `af_purchase`, `af_rate`, `af_spent_credits`, `af_content_view`, `af_travel_booking`, `af_update`
 
@@ -438,14 +437,14 @@ AppsFlyer retains raw user-level data based on integration type and partner requ
 
 Retention periods can vary across media sources and delivery methods (for example, Data Locker or Pull API), and might change due to legal, contractual, or partner obligations.
 
-After deletion, events related to deleted users display as organic. Past aggregate data is not changed. For more information, see [Data retention and deletion obligations](/docs/user-level-data-retention#data-retention-and-deletion-obligations).
+After deletion, events related to deleted users display as organic. Past aggregate data is not changed. For more information, see <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#data-retention-and-deletion-obligations">Data retention and deletion obligations</Anchor>.
 
 </Accordion>
 
 <Accordion title="Do I need to add the OS (operating system) parameter to my events?">
 
 * The Android SDK and iOS SDK automatically add the OS (operating system) parameter.
-* For the [S2S API](/docs/server-to-server-events-api-for-mobile-s2s-mobile), starting July 1, 2021, you must send the OS (operating system) parameter for iOS apps. If you do not send this parameter, data is regarded as having come from an iOS 14.5 user, and this impacts the way [raw data is made available](/docs/apply-aggregated-advanced-privacy-framework).
+* For the <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor>, starting July 1, 2021, you must send the OS (operating system) parameter for iOS apps. If you do not send this parameter, data is regarded as having come from an iOS 14.5 user, and this impacts the way <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">raw data is made available</Anchor>.
 
 </Accordion>
 
@@ -459,6 +458,6 @@ This solution is supported for `metaweb_int`, `tiktokweb_int`, `snapweb_int`, `p
 
 ## See also
 
-* [In-app event postback configuration](/docs/in-app-event-postback-configuration)
+* <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">In-app event postback configuration</Anchor>
 
 <div data-zendesk-anchors="why-record-inapp-events=why-record-in-app-events h_01HDBZW9XEBTY13MG4AN93RNCD=why-record-in-app-events about-inapp-events=about-in-app-events h_01HDBZW9XEBDSDA9T5X5B6KGTG=about-in-app-events h_01HDBZW9XE3Z40JE9576C4XSF4=tip predefind-and-custom-events=predefined-and-custom-events 01J9XGXGC7R9B19MMX4CQV7DAY=predefined-and-custom-events revenue-in-inapp-events=revenue-in-in-app-events 01J9XGXGC990R3AG0R0XT9E5Y7=revenue-in-in-app-events h_01M43GXKW5NCRE5MJG45EG9AYX=note h_NETREVENUE0002=note-1 h_01HDBZW9XEMGA5RAW0DBBPV3FQ=currency-conversion h_01HDBZW9XE85YC3JHG58YYAB8F=currency-display h_01HDBZW9XEVWB9045N0YEVWE6Z=revenue-data-in-the-dashboard h_01HDBZW9XEGYFD3W9FT1N3ZGQW=revenue-data-in-raw-data-reports h_01HDBZW9XFESG6MP9QF1XCJKE6=sending-events setting-up-inapp-events=setting-up-in-app-events h_01HDBZW9XF13AGRCN2HJ18RHS2=setting-up-in-app-events 01JEWW8YB6A91VT8Z4PM9NCV00=note-2 h_01HDBZW9XF5H24H2HCJKKHCRTE=faq h_01HDBZW9XFCDMKNWJ75AWHC2Y0=note-3 h_01KSMX2ECGNMX39RD2F6ZHQEK4=important h_01HDBZW9XFJ68WSM3066NVRATS=notes h_01HDBZW9XFWKN7W90PSVMX73FS=note-4 h_01HDNZ708FN0N286R5HDQGMNGZ=see-also" />

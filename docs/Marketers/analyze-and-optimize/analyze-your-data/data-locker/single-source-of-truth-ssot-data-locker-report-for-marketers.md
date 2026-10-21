@@ -1,11 +1,5 @@
 ---
 title: Single Source of Truth (SSOT) Data Locker report for marketers
-excerpt: >-
-  The Single Source of Truth (SSOT) report in Data Locker offers a unified and
-  accurate overview of app campaign performances by merging data from various
-  attribution methods, such as ID matching and SKAN. It provides a way to
-  consume data into internal BI systems, enhancing your analysis and reporting
-  capabilities.
 metadata:
   keywords:
     - Marketers
@@ -26,15 +20,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/26542697382417-Single-Source-of-Truth-SSOT-Data-Locker-report-for-marketers
 ---
+**At a glance:** The Single Source of Truth (SSOT) report in Data Locker offers a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN.  It provides a way to consume data into internal BI systems, enhancing your analysis and reporting capabilities.
+
 <span id="ssot-reports-in-data-locker"></span>Note: The SSOT Data Locker report contains LTV-based data, not activity-based data. This means the data reflects users’ lifetime value across all touchpoints, rather than their in-app or event activity
 
 ## What is Data Locker
 
-Data Locker is a secure solution that delivers your data directly to main cloud platforms, such as AWS, GCS, and Snowflake. This allows marketers to easily integrate and consume data into their internal BI systems for comprehensive analysis and reporting. [Learn more](/docs/data-locker-advertiser-reports?query=data%20locker).
+Data Locker is a secure solution that delivers your data directly to main cloud platforms, such as AWS, GCS, and Snowflake. This allows marketers to easily integrate and consume data into their internal BI systems for comprehensive analysis and reporting. <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports?query=data%20locker">Learn more</Anchor>.
 
 ## What is Single Source of Truth (SSOT)
 
-The Single Source of Truth (SSOT) solution aims to solve data fragmentation issues by offering a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN. [Learn more](/docs/single-source-of-truth-ssot-guide-for-ios-attribution).
+The Single Source of Truth (SSOT) solution aims to solve data fragmentation issues by offering a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN. <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Learn more</Anchor>.
 
 ## Benefits of SSOT reports in Data Locker
 
@@ -53,7 +49,7 @@ To enable Single Source of Truth or SSOT reports, complete one of the following 
 | Do you currently get data via Data Locker? | Procedure |
 | --- | --- |
 | Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)To add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol> |
-| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker ([advertiser](/docs/data-locker-for-marketers#set-up-data-locker) \| [partner](/partners/docs/data-locker-for-partners)) setup.</li><li>Add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol></li></ol> |
+| No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/06f3ff8ccacda390fa259853b93e8b0e4ad01a692272f945fd71ca913e445bbb-30159015098129.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker (<Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">advertiser</Anchor> \| <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">partner</Anchor>) setup.</li><li>Add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol></li></ol> |
 
 </Accordion>
 
@@ -63,7 +59,7 @@ To enable Single Source of Truth or SSOT reports, complete one of the following 
 
 | Name | Description |
 | --- | --- |
-| Reports available | The following reports are available:<ul><li>User acquisition: attributes conversions to user acquisition channels. This includes post-install activity occurring during re-engagement windows.</li><li>Retargeting: attributes conversions to retargeting channels for events occurring:<ul><li>As a result of re-attributions</li><li>During a re-engagement window</li></ul></li><li>Unified: attributes conversions to the last touch channel, according to the AppsFlyer [double attribution](/docs/resolve-retargeting-double-attribution) rules. This means that post-install activity occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
+| Reports available | The following reports are available:<ul><li>User acquisition: attributes conversions to user acquisition channels. This includes post-install activity occurring during re-engagement windows.</li><li>Retargeting: attributes conversions to retargeting channels for events occurring:<ul><li>As a result of re-attributions</li><li>During a re-engagement window</li></ul></li><li>Unified: attributes conversions to the last touch channel, according to the AppsFlyer <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">double attribution</Anchor> rules. This means that post-install activity occurring during re-engagements displays under the retargeting media source and not under the UA media source.</li></ul> |
 | Reporting period | The report provides cohort revenue metrics up to 30 days post-install (D7, D14, D21, D30). Note: Only revenue metrics are supported beyond D7. |
 | Directory structure | The directory structure is organized by install date. Each install date folder includes multiple versions created daily. Each version reflects the updated cumulative data for this install date. This means you should only process the latest available report version. [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#directory-structure) |
 | Report structure | The schema of the report (the dimensions and metrics included) is fixed and can't be modified. |
@@ -161,21 +157,98 @@ The report is comprised of dimensions and metrics.
 
 The metrics covers data of attributions, revenue, and the unique users performing an event. To calculate cost-related metrics (e.g. ROI, and ROAS) you need both revenue and cost metrics. Revenue metrics are in SSOT report, and cost metrics are provided by ROI360 Cost ETL.
 
-[Download sample report](https://docs.google.com/spreadsheets/d/1e32M7XW7Lr7s7LTZUKO4EGwm4VrbbfwT/pub?output=xlsx)
+<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/1e32M7XW7Lr7s7LTZUKO4EGwm4VrbbfwT/pub?output=xlsx">Download sample report</Anchor>
 
 <div id="field-formats" />
 
 <Accordion title="Field formats">
 
-| Format name | Description |
-| --- | --- |
-| String [n] | The maximum length of the string. We don't usually enforce field length limitations on receipt of the data, but data may be truncated thereafter. |
-| Time string | Strings have the format,<br /><br />```<br />yyyy-mm-dd hh:mm:ss.<br />```<br /><br />For example,<br /><br />```<br />2019-09-17 00:09:25<br />``` |
-| Enum [n] | Enum fields can only contain specific values. For example, selected\_currency has 3 characters and can contain only currency codes as specified. |
-| Timestamp | 10-digit UNIX timestamp. Example:  <br />August 4, 2020, 07:25 UTC translates to<br /><br />```<br /> "timestamp": "1596525944"<br />``` |
-| Boolean | The value of the field can be either *TRUE* or *FALSE* |
-| Integer | Integer |
-| Float | Real floating number that can have a decimal point and values after the decimal point. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Format name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        String [n]
+      </td>
+      <td>
+        The maximum length of the string. We don't usually enforce field length limitations on receipt of the data, but data may be truncated thereafter.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Time string
+      </td>
+      <td>
+        Strings have the format,
+
+        ```
+        yyyy-mm-dd hh:mm:ss.
+        ```
+
+        For example,
+
+        ```
+        2019-09-17 00:09:25
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Enum [n]
+      </td>
+      <td>
+        Enum fields can only contain specific values. For example, selected\_currency has 3 characters and can contain only currency codes as specified.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Timestamp
+      </td>
+      <td>
+        10-digit UNIX timestamp. Example:  
+        August 4, 2020, 07:25 UTC translates to
+
+        ```
+         "timestamp": "1596525944"
+        ```
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Boolean
+      </td>
+      <td>
+        The value of the field can be either \*TRUE\* or \*FALSE\*
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Integer
+      </td>
+      <td>
+        Integer
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Float
+      </td>
+      <td>
+        Real floating number that can have a decimal point and values after the decimal point.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
@@ -207,10 +280,10 @@ The metrics covers data of attributions, revenue, and the unique users performin
 
 AppsFlyer models data that basic SKAdNetwork reporting cannot provide.
 
-* Null Conversion Values (CV): In SKAN, Apple may replace actual data with a "Null" value to maintain user privacy. To ensure no data is omitted, these null values are modeled in SSOT. [Learn more](/docs/skan-modeled-data#null-conversion-values).
-* Longer Post-Install Metrics: SKAN's data granularity for post-install periods beyond the first two days is limited, which may lead to inaccuracies. To maintain high data quality, we model revenue and unique in-app event users for days\_post\_attribution greater than 2. [Learn more](/docs/skan-modeled-data#revenue-ltv).
+* Null Conversion Values (CV): In SKAN, Apple may replace actual data with a "Null" value to maintain user privacy. To ensure no data is omitted, these null values are modeled in SSOT. <Anchor target="_blank" href="/marketers/docs/skan-modeled-data#null-conversion-values">Learn more</Anchor>.
+* Longer Post-Install Metrics: SKAN's data granularity for post-install periods beyond the first two days is limited, which may lead to inaccuracies. To maintain high data quality, we model revenue and unique in-app event users for days\_post\_attribution greater than 2. <Anchor target="_blank" href="/marketers/docs/skan-modeled-data#revenue-ltv">Learn more</Anchor>.
 
-Geo Data: SKAN limits data granularity, often making geo data unavailable. In such cases, we model the data to enable efficient performance analysis. [Learn more](/docs/skan-modeled-data#geo).
+Geo Data: SKAN limits data granularity, often making geo data unavailable. In such cases, we model the data to enable efficient performance analysis. <Anchor target="_blank" href="/marketers/docs/skan-modeled-data#geo">Learn more</Anchor>.
 
 **Organic geo in the first report version**
 
@@ -267,7 +340,7 @@ You can load unified, user acquisition, and retargeting reports separately or to
 * Unified View: If you use the unified view in your data loading process, you can split the data between campaign types:
 
 * Use conversion\_type=install, re-engagement, or re-attribution (re-downloads in SKAN).
-* Refer to [Double attribution of retargeting events](/docs/resolve-retargeting-double-attribution) for more details
+* Refer to <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">Double attribution of retargeting events</Anchor> for more details
 
 </Accordion>
 
@@ -275,7 +348,7 @@ You can load unified, user acquisition, and retargeting reports separately or to
 
 <Accordion title="Days post-attribution">
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > The report includes a dimension, days\_post\_attribution, which associates revenue and unique user data with the specific number of days post-install
 
@@ -583,7 +656,7 @@ GROUP BY install_date;
 
 | Name | Description |
 | --- | --- |
-| Cost data | <ul><li>Cost data is not available. [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports) can be used instead.</li><li>To add the cost to the SSOT report, merge the Cost ETL data using the **Campaign ID** dimension.</li></ul> |
+| Cost data | <ul><li>Cost data is not available. <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor> can be used instead.</li><li>To add the cost to the SSOT report, merge the Cost ETL data using the **Campaign ID** dimension.</li></ul> |
 | Report availability per day | Only installation days where the SSOT toggle was turned on at the end of the day will have an SSOT report for that day |
 | Two days post-install metrics | <ul><li>For SKAN 4 in Conversion Studio: Data is for 2 days post-install.</li><li>For SKAN 3 in Conversion Studio: Data is based on the defined SKAN activity window.<br />Example: If the activity window is 24 hours, events occurring within this window (even on Day X+1) are counted.</li></ul> |
 | In-app events availability | Available only for events that occurred during the Window 1 period. |
@@ -594,9 +667,9 @@ GROUP BY install_date;
 | Days post-conversion (install, re-attribution, re-engagement) data | Revenue metrics available for D7, D14, D21, D30. D14-D30 are delivered only via the SSOT Data Locker report. |
 | Agency transparency | Supported. X Ads and Meta ads data is always transparent. |
 | Campaign name changes | Not supported. Use campaign ID for grouping and filtering if campaign names were changed. |
-| Ad networks | <ul><li>Can access SSOT DataLocker reports to see data attributed to their media source if:<ul><li>The advertiser has SSOT turned on in Conversion Studio.</li><li>The ad network is running SKAN campaigns.</li><li>The ad network has the required [permissions](/docs/set-up-an-integrated-partner#permissions-tab) from the advertiser to access aggregate data.</li></ul></li></ul> |
+| Ad networks | <ul><li>Can access SSOT DataLocker reports to see data attributed to their media source if:<ul><li>The advertiser has SSOT turned on in Conversion Studio.</li><li>The ad network is running SKAN campaigns.</li><li>The ad network has the required <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor> from the advertiser to access aggregate data.</li></ul></li></ul> |
 | Agency access | Not available. Agency users can view SSOT data in the SSOT dashboard. |
-| D7 metrics | <ul><li>D7 metrics for organic traffic are available starting February 16, 2025.</li><li>May be missing or less than D2 metrics if:<ul><li>The date range includes dates for which 8 days haven't passed.</li><li>Modeled data isn't available (e.g., fewer than 14 days of revenue data). [Learn more](/docs/skan-modeled-data#revenue-ltv).</li><li>SKAN Conversion Studio configuration changed in the past 14 days.</li><li>There are fewer than 10 installs for a given date.</li></ul></li></ul> |
+| D7 metrics | <ul><li>D7 metrics for organic traffic are available starting February 16, 2025.</li><li>May be missing or less than D2 metrics if:<ul><li>The date range includes dates for which 8 days haven't passed.</li><li>Modeled data isn't available (e.g., fewer than 14 days of revenue data). <Anchor target="_blank" href="/marketers/docs/skan-modeled-data#revenue-ltv">Learn more</Anchor>.</li><li>SKAN Conversion Studio configuration changed in the past 14 days.</li><li>There are fewer than 10 installs for a given date.</li></ul></li></ul> |
 | Predefined event name | Since the event name ‘af\_conversion’ is used to indicate different types of conversions, apps that have an event specifically named ‘af\_conversion’ will see their original event renamed to ‘af\_conversion\_event’. |
 | Local currency difference | As the SSOT dashboard and SSOT DataLocker report are not calculated simultaneously, minor discrepancies may occur when comparing revenue in local currency on the dashboard to the selected currency in the report. This is due to the slightly different currency rates used at the times the data were calculated. |
 | SKAN D7 partial data | As SKAN D7 data is modeled and the initial version is ready 7 days post-install, when analyzing D7 metrics for days within the last 7 days, the D7 data will be partial. For records where the attribution method is SKAN, the D7 metrics will be lower than the D2 metrics. |

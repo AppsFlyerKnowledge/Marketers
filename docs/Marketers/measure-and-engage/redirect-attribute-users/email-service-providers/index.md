@@ -13,12 +13,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551247620881-Email-service-providers
 ---
-- [Email service provider (ESP) integration guide](/docs/email-service-provider-esp-integration-guide)
-- [Set up your ESP integration with AppsFlyer](/docs/set-up-your-esp-integration-with-appsflyer)
-- [Adobe ESP integration with AppsFlyer](/docs/adobe-esp-integration-with-appsflyer)
-- [Bloomreach integration with AppsFlyer](/docs/bloomreach-integration-with-appsflyer)
-- [EmailLabs integration with AppsFlyer](/docs/emaillabs-integration-with-appsflyer)
-- [Iterable integration with AppsFlyer](/docs/iterable-integration-with-appsflyer)
-- [Movable Ink integration with AppsFlyer](/docs/movable-ink-integration-with-appsflyer)
-- [Oracle Responsys integration with AppsFlyer](/docs/oracle-responsys-integration-with-appsflyer)
-- [Salesforce Marketing Cloud (SFMC) integration with AppsFlyer](/docs/salesforce-marketing-cloud-sfmc-integration-with-appsflyer)
+- <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">Email service provider (ESP) integration guide</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer">Set up your ESP integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/adobe-esp-integration-with-appsflyer">Adobe ESP integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/bloomreach-integration-with-appsflyer">Bloomreach integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/emaillabs-integration-with-appsflyer">EmailLabs integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/iterable-integration-with-appsflyer">Iterable integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/movable-ink-integration-with-appsflyer">Movable Ink integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/oracle-responsys-integration-with-appsflyer">Oracle Responsys integration with AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/salesforce-marketing-cloud-sfmc-integration-with-appsflyer">Salesforce Marketing Cloud (SFMC) integration with AppsFlyer</Anchor>

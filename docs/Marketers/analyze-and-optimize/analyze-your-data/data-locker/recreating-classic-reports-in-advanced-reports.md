@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/47741416390161-Recreating-classic-reports-in-advanced-reports
 ---
-**At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in [Advanced Reports](/docs/about-data-locker-advanced-reports).
+**At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">Advanced Reports</Anchor>.
 
 ## Overview
 
@@ -32,7 +32,7 @@ The three Advanced Reports and the classic topics they replace are:
 * The **Conversions** **advanced report** replaces the classic installs, retargeting conversions, and CTV installs topics.
 * The **End-user events** **advanced report** replaces the classic in-app events, sessions, CTV in-app events, CTV sessions, and uninstalls topics.
 
-To recreate a specific classic report, apply the report-level filters described in the sections below. For the full list of available filters per report, see [Report-level filters](/docs/about-data-locker-advanced-reports#report-level-filters).
+To recreate a specific classic report, apply the report-level filters described in the sections below. For the full list of available filters per report, see <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports#report-level-filters">Report-level filters</Anchor>.
 
 ## Recreate classic reports in the Engagements advanced report
 
@@ -74,8 +74,8 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 | --- | --- |
 | Reports not reproducible | Cross-platform engagements, reinstalls, and organic reinstalls are not reproducible using Advanced Reports. |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [About Data Locker Advanced Reports](/docs/about-data-locker-advanced-reports)
+> * <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">About Data Locker Advanced Reports</Anchor>
 
 <div data-zendesk-anchors="about-recreating-classic-reports=overview h_01KV55PGFSSE3GWZ9ZW0TXSVNB=overview reproduce-classic-reports-in-the-engagements-advanced-report=recreate-classic-reports-in-the-engagements-advanced-report h_01KV55PGFSBHV59ZA7KFVQVM1S=recreate-classic-reports-in-the-engagements-advanced-report reproduce-classic-reports-in-the-conversions-advanced-report=recreate-classic-reports-in-the-conversions-advanced-report h_01KV55PGFSK35M9XC7EHVDX53X=recreate-classic-reports-in-the-conversions-advanced-report reproduce-classic-reports-in-the-end-user-events-advanced-report=recreate-classic-reports-in-the-end-user-events-advanced-report h_01KV55PGFSCD4AQQWRBY0MHJGK=recreate-classic-reports-in-the-end-user-events-advanced-report h_01KV55PGFSF8QVSBAWA3XN7A8W=traits-and-limitations h_01KV8SEHV9KVY6R5HQA6K2M2JZ=see-also" />

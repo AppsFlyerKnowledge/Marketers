@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Set up your cloud services
-excerpt: >-
-  Set up your cloud services so you can connect your source data to DCP and
-  export audiences to your cloud storage buckets.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24604528827921-Data-Collaboration-Platform-DCP-Set-up-your-cloud-services
 ---
+**At a glance:** Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets.
+
 ## About cloud service setup
 
 DCP uses two types of connections to move data between your cloud services and the platform:
@@ -33,7 +32,7 @@ DCP uses two types of connections to move data between your cloud services and t
 Setting up a connection is a two-step process:
 
 * **Step 1:** Use your cloud service's interface to prepare it for use with DCP.
-* **Step 2:** Connect it to DCP in the AppsFlyer platform. See [Data Collaboration Platform (DCP) - Add connections](/docs/data-collaboration-platform-dcp-add-connections).
+* **Step 2:** Connect it to DCP in the AppsFlyer platform. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Data Collaboration Platform (DCP) - Add connections</Anchor>.
 
 The table below shows which services are supported for each connection type:
 
@@ -109,7 +108,7 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 5. In the snippet, replace `af-dcr-mybucket` (in the two lines in which it appears) with the name of the bucket you created.
 6. Click **Save changes**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > When replacing the bucket name in the snippet, do not overwrite `/*` in the second line in which the bucket name appears.
 
@@ -198,7 +197,7 @@ Snowflake supports source connections only. Use the following instructions to cr
 
 **To create a private share:**
 
-1. [Log in to the Snowflake account](https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface) that contains the data you want to share with DCP.
+1. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/connecting.html#logging-in-using-the-web-interface">Log in to the Snowflake account</Anchor> that contains the data you want to share with DCP.
 2. Switch your role to **Account admin**.
 3. From the left-side panel, select **Private Sharing**.
 4. On the page that opens, select the **Shared By Your Account** tab.
@@ -221,7 +220,7 @@ Snowflake supports source connections only. Use the following instructions to cr
 
 <Accordion title="Salesforce Cloud/CRM">
 
-Salesforce Cloud/CRM supports source connections only. See [DCP - Integration with Salesforce Data Cloud](/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud) for setup instructions.
+Salesforce Cloud/CRM supports source connections only. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">DCP - Integration with Salesforce Data Cloud</Anchor> for setup instructions.
 
 </Accordion>
 
@@ -231,14 +230,14 @@ Salesforce Cloud/CRM supports source connections only. See [DCP - Integration wi
 | --- | --- |
 | Supported cloud services | Amazon S3 and GCS support both source and cloud storage connections. BigQuery, Snowflake, and Salesforce Cloud/CRM support source connections only. |
 | Bucket use | S3 and GCS buckets must be for the exclusive use of DCP. No other service can write data to the bucket. |
-| <span id="dcr-naming-requirements"></span>DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<ul><li>**Maximum length:** 200 characters</li><li>**Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)</li><li>**Invalid characters:** spaces, and all other symbols or special characters</li><li>Numbers and hyphens cannot be the first character of a name</li><li>**Special-purpose characters only:**<ul><li>Equal signs (=): only in [date and version folder names](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)</li><li>Underscores (\_): only in [multi-part GZIP file names](/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format) or [\_SUCCESS files](/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files)</li><li>Dots (.): only directly before filename extensions (.csv, .gzip)</li></ul></li></ul> |
+| <span id="dcr-naming-requirements"></span>DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<ul><li>**Maximum length:** 200 characters</li><li>**Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)</li><li>**Invalid characters:** spaces, and all other symbols or special characters</li><li>Numbers and hyphens cannot be the first character of a name</li><li>**Special-purpose characters only:**<ul><li>Equal signs (=): only in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">date and version folder names</Anchor></li><li>Underscores {"(_):"} only in <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format">multi-part GZIP file names</Anchor> or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files">{"_SUCCESS"} files</Anchor></li><li>Dots (.): only directly before filename extensions (.csv, .gzip)</li></ul></li></ul> |
 | Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`.<br /><br />[PENDING R&D: confirm whether af-datalocker- prefix should still be listed as an allowed alternative, or removed] |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [DCP - Add connections](/docs/data-collaboration-platform-dcp-add-connections)
-> * [DCP - Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences)
-> * [DCP - Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources)
-> * [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">DCP - Add connections</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">DCP - Build and activate audiences</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">DCP - Create and manage sources</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP) guide</Anchor>
 
 <div data-zendesk-anchors="h_01KY1VRHDTX2W1YC4QX1N093GF=about-cloud-service-setup h_01KY1VRHDT63WWBPNNN3QC9N49=set-up-your-cloud-services h_01KY1VRHDT2GRP2MMYTKFNRN3P=amazon-s3 h_01KY1VRHDTYMG39CRENZC971RS=note h_01KY1VRHDVV1ZHTVV5SXGXRZ59=important h_01KY1VRHDVS3S0F22T0EQ5MCKY=google-cloud-storage-gcs h_01KY1VRHDVX4KYCT627NN92TCT=note-2 h_01KY1VRHDVR3CZAZK0PGXDBWRC=bigquery h_01KY1VRHDV8Q3TRG7TBM5TRDYM=note-2 h_01KY1VRHDVSE9WJSDFXYV7W2R3=snowflake h_01KY1VRHDVDDK9B8Y7DKA5GA75=note-3 h_01KY1VRHDV9PJQMAGBY52G9RS8=salesforce-cloudcrm h_01KY1VRHDVT3PYP5QVKNKQ803G=traits-and-limitations h_01KY1VRHDVEWNCDKZYCGWD1SRM=see-also" />

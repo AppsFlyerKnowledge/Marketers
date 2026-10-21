@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25676426941457-Bulletin-First-install-attribution-for-post-reinstall-in-app-events
 ---
-| **What's new** | This enhancement attributes all [in-app events](/docs/measure-reinstalls#post-reinstall-in-app-events) and sessions following a re-engagements or a [re-attribution](/docs/measure-reinstalls#reattribution) to the original media source that drove it (’first install’) rather than labeling them ‘organic unattributed.’<br /><br />![Screenshot 2024-06-11 at 8.44.30.png](https://files.readme.io/42a96ec533d217ee4dadad71592023d1fd0c977557308638f3553660a95fc7b5-25827620446353.png) |
+| **What's new** | This enhancement attributes all <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#post-reinstall-in-app-events">in-app events</Anchor> and sessions following a re-engagements or a <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#reattribution">re-attribution</Anchor> to the original media source that drove it (’first install’) rather than labeling them ‘organic unattributed.’<br /><br />![Screenshot 2024-06-11 at 8.44.30.png](https://files.readme.io/42a96ec533d217ee4dadad71592023d1fd0c977557308638f3553660a95fc7b5-25827620446353.png) |
 | --- | --- |
 | **Effective date** | July 31, 2024. The first-install mode automatically applies only to apps added to AppsFlyer on or after the effective date. For apps added before July 31, 2024, we recommend contacting AppsFlyer to migrate your existing apps to the first-install mode. |
 | **Prerequisites** | None |

@@ -1,11 +1,5 @@
 ---
 title: Braze (formerly Appboy) integration with AppsFlyer
-excerpt: >-
-  Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform
-  for marketing, growth, and engagement teams. The platform enables marketers to
-  connect human-to-human, at scale, with their customers, driving deep
-  engagement and ROI. The center of our platform is the holistic user profile,
-  which provides a single view of the customer.
 metadata:
   keywords:
     - Appboy
@@ -30,12 +24,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001603343-Braze-formerly-Appboy-integration-with-AppsFlyer
 ---
-Learn more at [braze.com](https://www.braze.com/).
+> **At a glance:** Braze, an AppsFlyer integrated partner, offers a lifecycle engagement platform for marketing, growth, and engagement teams. The platform enables marketers to connect human-to-human, at scale, with their customers, driving deep engagement and ROI. The center of our platform is the holistic user profile, which provides a single view of the customer.
 
-**Important notes**
+Learn more at <Anchor target="_blank" href="https://www.braze.com/">braze.com</Anchor>.
 
-* [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
-* Postbacks won't be sent if the source is organic.
+> 🚧 **Important**
+>
+> **Important notes**
+>
+> * <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> * Postbacks won't be sent if the source is organic.
 
 ## Integration overview
 
@@ -43,27 +41,30 @@ Follow the instructions below to configure the integration with Braze.
 
 Minimum requirements - AppsFlyer SDK:
 
-* [Android](/docs/sdk-integration-overview) (Android SDK – version 2.3.1.18 and above)
-* [iOS](/docs/sdk-integration-overview)
+* <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">Android</Anchor> (Android SDK – version 2.3.1.18 and above)
+* <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>
 
-On Android, integrating with Braze requires that the Braze [Device ID](https://www.braze.com/docs/partners/advertising_technologies/attribution/appsflyer/#integration) (Braze unique user identifier) is populated in AppsFlyer Android SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+On Android, integrating with Braze requires that the Braze <Anchor target="_blank" href="https://www.braze.com/docs/partners/advertising_technologies/attribution/appsflyer/#integration">Device ID</Anchor> (Braze unique user identifier) is populated in AppsFlyer Android SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
 
-**Important Note**
+> 📘 **Note**
+>
+> **Important Note**
+>
+> Make sure the lines of code are inserted at the correct place – after Braze SDK is launched and before the initialization code for AppsFlyer SDK (see the Initializing the SDK section in our Android SDK Integration Guide).
 
-Make sure the lines of code are inserted at the correct place – after Braze SDK is launched and before the initialization code for AppsFlyer SDK (see the Initializing the SDK section in our Android SDK Integration Guide).
+<Tabs>
+<Tab title="Android">
 
-<Accordion title="Android">
-
-```
+```java
 HashMap<String, Object> customData = new HashMap<String,Object>();
 String deviceId =(Braze.getInstance(MyActivity.this).getDeviceId());
 customData.put("brazeCustomerId", deviceId);
 AppsFlyerLib.getInstance().setAdditionalData(customData);
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
 **Swift**
 
@@ -71,7 +72,7 @@ There are two Swift APIs, one with a completion handler and another using the ne
 
 **Swift completion handler**
 
-```javascript
+```swift
 let configuration = Braze.Configuration(
     apiKey: "<BRAZE_API_KEY>",
     endpoint: "<BRAZE_ENDPOINT>")
@@ -85,7 +86,7 @@ braze.deviceId {
 
 **Swift await**
 
-```javascript
+```swift
 let configuration = Braze.Configuration(
     apiKey: "<BRAZE_API_KEY>",
     endpoint: "<BRAZE_ENDPOINT>")
@@ -97,7 +98,7 @@ AppsFlyerLib.shared().customData = ["brazeDeviceId": brazeDeviceId]
 
 **Objective-C**
 
-```
+```objectivec
 BRZConfiguration *configurations = [[BRZConfiguration alloc] initWithApiKey:@"BRAZE_API_KEY" endpoint:@"BRAZE_END_POINT"];
 [configurations setUseUUIDAsDeviceId:NO];
 Braze *braze = [[Braze alloc] initWithConfiguration:configurations];
@@ -109,18 +110,19 @@ Braze *braze = [[Braze alloc] initWithConfiguration:configurations];
 }];
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Unity">
+<Tab title="Unity">
 
-```
+```csharp
 Appboy.AppboyBinding.getDeviceID()
 Dictionary<string, string> customData = new Dictionary<string, string>();
 customData.Add("brazeCustomerId", Appboy.AppboyBinding.getDeviceId());
 AppsFlyer.setAdditionalData(customData);
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 ## Setting up Braze
 
@@ -133,8 +135,8 @@ AppsFlyer.setAdditionalData(customData);
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.  
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations](/docs/set-up-an-integrated-partner).
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations</Anchor>.
 
 <Accordion title="Integration tab">
 
@@ -143,7 +145,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you must ***Activate the Partner*** to enable the setup of the integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 
@@ -178,9 +180,11 @@ Select **Events attributed to any partner or organic** to send postbacks to Braz
 
 Click **Save.**
 
-**Note**
-
-Although all events are sent by AppsFlyer, organic installs are not counted by Braze and therefore are ignored by the Braze API.
+> 📘 **Note**
+>
+> **Note**
+>
+> Although all events are sent by AppsFlyer, organic installs are not counted by Braze and therefore are ignored by the Braze API.
 
 </Accordion>
 

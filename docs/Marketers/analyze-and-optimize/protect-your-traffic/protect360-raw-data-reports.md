@@ -1,8 +1,5 @@
 ---
 title: Protect360 raw data reports
-excerpt: >-
-  Raw data reports describe installs and in-app events blocked by the Protect360
-  engine, as well as from manually added Validation Rules.
 metadata:
   keywords:
     - Advertisers
@@ -31,6 +28,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Raw data reports describe installs and in-app events blocked by the Protect360 engine, as well as from manually added Validation Rules.
+
 ## About Protect360 raw data reports
 
 Raw data reports:
@@ -40,7 +39,7 @@ Raw data reports:
   * Installs and in-app events identified via Validation Rules.
 * Include the block reason for each click, install, or in-app event.
 * Are used by advertisers to reconcile ad network accounts, for optimization, and to adjust attribution dashboards for post-attribution fraud.
-* May have [some fields are restricted or not available](/docs/about-raw-data-identifier-restrictions) if [AppsFlyer Aggregated Advanced Privacy (AAP)](/docs/apply-aggregated-advanced-privacy-framework).
+* May have <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">some fields are restricted or not available</Anchor> if <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">AppsFlyer Aggregated Advanced Privacy (AAP)</Anchor>.
 * Report types and their availability by download, API, and Data Locker (S3 bucket) are described in the sections that follow.
 * Historical raw data report retention is up to 90 days, depending on the reporting tool and origin of the raw data.
 
@@ -71,7 +70,7 @@ Raw data reports:
 
 * Post-attribution raw data fraud reports have the same structure as the blocked fraud reports.
 * The current month (by install date) post-attribution report continues to be updated until the seventh day of the following month (detection date).
-* Post attribution raw data reports are limited to advertisers. Agencies need [permissions](/partners/docs/protect360-for-integrated-partners) enabled to access.
+* Post attribution raw data reports are limited to advertisers. Agencies need <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners">permissions</Anchor> enabled to access.
 * Reports contain post-attribution fraud events identified by Protect360 and include all media sources in a single report. **Note**: If no post attribution fraud events are identified for the selected date range, the report returns empty,
 * Post-attribution raw data fraud reports are available as follows:
   * Dashboard user interface: limited to one media source during one calendar month.
@@ -87,7 +86,7 @@ Raw data reports:
   * Set the detect-from/detect-to range to the day before the current day.  
     This means you will get the list of post-attribution frauds detected yesterday. If you didn't pull the report for a few days, adjust the detect date range, and pull the report.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Example A**: During December (install date) 15 installs are attributed to example\_media. On January 3 (detection date), Protect360 identifies example\_media as a fraudster. As a result, the 15 installs attributed to example\_media are listed as fraudulent in the post-attribution fraud report for further action by the app owner.
 >
@@ -107,7 +106,7 @@ Raw data reports:
 
 ## Getting raw data reports
 
-Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also [give partners access to reports](/partners/docs/protect360-for-integrated-partners).
+Raw data reports are available by download, Pull API, and Data Locker (S3 bucket). You can also <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners">give partners access to reports</Anchor>.
 
 <div id="download" />
 
@@ -136,9 +135,9 @@ Raw data reports are available by download, Pull API, and Data Locker (S3 bucket
 
 **Before you begin:**
 
-You need a Pull API token. Get the token from an [admin user](/docs/managing-appsflyer-tokens).
+You need a Pull API token. Get the token from an <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">admin user</Anchor>.
 
-1. Go to **Report > API Access.** The [Pull API](/docs/pull-api-raw-data) page opens.
+1. Go to **Report > API Access.** The <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API</Anchor> page opens.
 2. In the Protect360 fraud reports section, select the necessary Pull API call.
 3. Populate the parameters as required. The table that follows lists the parameters.
 4. Pull the report.
@@ -152,7 +151,7 @@ You need a Pull API token. Get the token from an [admin user](/docs/managing-app
 | from | Start of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
 | to | End of the date range:<ul><li>For installs, this is the install date.</li><li>For in-app events, this is the date of the event.</li></ul> | YYYY-MM-DD | Yes |
 | event\_name | [Optional for Post-attribution in-app events fraud]<br /><br />Filter events by in-app event. Limit the report to specific events.  One or more events can be included.<br /><br />Example usage: `&event_name=af_purchase,af_login` | String | No |
-| additional\_fields=rejected\_reason\_value | [Optional for Post-attribution in-app events fraud]<br /><br />**[rejected\_reason\_value](/docs/raw-data-field-dictionary#protect360)** displays the valid contributor (media source) for hijacked installs/in-app events. Populated with either [**contributor[1-3]**](/docs/raw-data-field-dictionary#attribution::2a6fd501) or **organic**. | String | No |
+| additional\_fields=rejected\_reason\_value | [Optional for Post-attribution in-app events fraud]<br /><br />**<Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor>** displays the valid contributor (media source) for hijacked installs/in-app events. Populated with either <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::2a6fd501">**contributor[1-3]**</Anchor> or **organic**. | String | No |
 | detect-from | [Optional for Post-attribution installs]<br /><br />Start of the fraud detect date range. (Default is from.) (Used in Post-attribution install fraud.) (Used in Post-attribution install fraud.) | YYYY-MM-DD | No |
 | detect-to | [Optional for Post-attribution installs]<br /><br />End of the fraud detection date range. (Default is to.) | YYYY-MM-DD | No |
 
@@ -164,9 +163,9 @@ You need a Pull API token. Get the token from an [admin user](/docs/managing-app
 
 Data Locker writes raw-data to an AWS S3 bucket.
 
-[See list of available Protect360 reports](/docs/data-locker-advertiser-reports#protect360). 
+<Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports#protect360">See list of available Protect360 reports</Anchor>. 
 
-[See Data Locker configuration instructions](/docs/data-locker-for-marketers#aws-cli).
+<Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#aws-cli">See Data Locker configuration instructions</Anchor>.
 
 </Accordion>
 
@@ -174,7 +173,7 @@ Data Locker writes raw-data to an AWS S3 bucket.
 
 Protect360 reports have the same general structure as user acquisition reports fields.
 
-In addition to the regular [raw data report fields](/docs/raw-data-field-dictionary), Protect360 reports also have retargeting and blocked reason fields, as follows:
+In addition to the regular <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data report fields</Anchor>, Protect360 reports also have retargeting and blocked reason fields, as follows:
 
 ### Blocked reasons
 
@@ -186,9 +185,9 @@ At the click level, clicks are blocked, and the attribution process ignores them
 
 | Blocked reason | Description |
 | --- | --- |
-| ip\_blacklist | Based on a dynamically created list ([details](/docs/protect360-anti-fraud-guide#ip-denylists)) |
-| click\_capping | Extremely high rates of click fraud are detected from that ad network. [Learn more](/partners/docs/protect360-for-integrated-partners#impression-capping) |
-| click\_signing | Signature on the click is not validated. [Learn more](/partners/docs/click-signing-for-ad-networks) |
+| ip\_blacklist | Based on a dynamically created list (<Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#ip-denylists">details</Anchor>) |
+| click\_capping | Extremely high rates of click fraud are detected from that ad network. <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#impression-capping">Learn more</Anchor> |
+| click\_signing | Signature on the click is not validated. <Anchor target="_blank" href="/partners/docs/click-signing-for-ad-networks">Learn more</Anchor> |
 | input\_validation | Invalid media source name |
 
 </Accordion>
@@ -280,14 +279,14 @@ The following table lists possible in-app level blocked reasons.
 | --- | --- | --- |
 | Inherits from install | Inherits from install | Initial install identified as fake based on [install](/docs/protect360-raw-data-reports#install-level-blocked-reasons) or [denylisted](/docs/protect360-raw-data-reports#cluster-level-blocked-reasons) level reason |
 | inapps\_bots | fake\_device\_parameters | AppsFlyer algorithm detects fraud |
-| in\_app\_store\_validation | - | [Receipt validation](/docs/legacy-receipt-validation-for-in-app-purchases) for in-app purchase fails. |
+| in\_app\_store\_validation | - | <Anchor target="_blank" href="/marketers/docs/legacy-receipt-validation-for-in-app-purchases">Receipt validation</Anchor> for in-app purchase fails. |
 | validation\_inapps | validation\_rules | Based on manually defined validation rule |
 
 </Accordion>
 
 ### Retargeting
 
-Protect360 raw data includes fraudulent installs and sessions from retargeting campaigns (known as re-attributions and re-engagements, respectively). Data displays using the [event name](/docs/raw-data-field-dictionary#event) and [retargeting conversion type](/docs/raw-data-field-dictionary#attribution::e9c68f6c) fields. They are marked as either an:
+Protect360 raw data includes fraudulent installs and sessions from retargeting campaigns (known as re-attributions and re-engagements, respectively). Data displays using the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#event">event name</Anchor> and <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::e9c68f6c">retargeting conversion type</Anchor> fields. They are marked as either an:
 
 * Install (applies to event name, but not retargeting conversion type)
 * Re-attribution
@@ -302,9 +301,9 @@ Protect360 retargeting raw data is available for real-time blocks and fraud iden
 
 For hijacked installs, AppsFlyer blocks attribution to the fraudulent network and instead attributes the last legitimate contributor source.
 
-For hijacked installs use the [rejected\_reason\_value](/docs/raw-data-field-dictionary#protect360) field to identify the valid contributor (media source), meaning the contributor that should have originally received attribution.
+For hijacked installs use the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor> field to identify the valid contributor (media source), meaning the contributor that should have originally received attribution.
 
-* The **rejected\_reason\_value** is populated with either [**contributor[1-3]**](/docs/raw-data-field-dictionary#attribution::2a6fd501) or **organic**. Check the **contributor[1-3]** **media source/partner**fields to view the contributor details and reconcile.
+* The **rejected\_reason\_value** is populated with either <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::2a6fd501">**contributor[1-3]**</Anchor> or **organic**. Check the **contributor[1-3]** **media source/partner** fields to view the contributor details and reconcile.
 * If the contributor fields are not displayed in your report, they are available to be added from the **Export data** page.
 
 **Note**: When hijacked installs are blocked in real-time, the correct attributions display in AppsFlyer dashboards and reports (not just Protect360). When hijacked installs are identified post-attribution, the correct attributions are displayed only in Protect360 raw data.

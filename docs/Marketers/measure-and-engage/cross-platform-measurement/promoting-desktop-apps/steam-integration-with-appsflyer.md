@@ -1,9 +1,5 @@
 ---
 title: Steam integration with AppsFlyer
-excerpt: >-
-  Integrate your Steam game/app with AppsFlyer to receive attribution and event
-  data for your Steam campaigns. The Steam integration supports attribution and
-  in-app event recording for Steam apps on a user's Steam device.
 metadata:
   keywords:
     - CTV
@@ -25,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/11241130508433-Steam-integration-with-AppsFlyer
 ---
+**At a glance:** Integrate your Steam game/app with AppsFlyer to receive attribution and event data for your Steam campaigns. The Steam integration supports attribution and in-app event recording for Steam apps on a user's Steam device.
+
 ## About Steam attribution
 
 Steam runs across Windows and Mac devices, Steam Deck, and other Steam OS devices.
@@ -48,13 +46,131 @@ The following is an example flow that highlights the most important steps in a u
 
 The following table lists the tasks required to integrate your Steam app with AppsFlyer.
 
-| Task | Actions | Who's involved |
-| --- | --- | --- |
-| App setup | <ul><li>[Create an AppsFlyer account](https://www.appsflyer.com/get-started/)</li><li>[Add account users with appropriate permissions](/docs/user-management)</li><li>[Add your Steam app to AppsFlyer](/docs/adding-an-app-to-appsflyer)</li></ul> | Marketer |
-| SDK integration with your app (via S2S or SDK) | There are two methods of integration you can use: S2S and SDK.<br /><br />For the S2S method, [integrate the AppsFlyer API](https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview) into your app with commands to report the following events to AppsFlyer.<ul><li>First opens</li><li>In-app events</li><li>Sessions</li></ul>**Note**:<ul><li>First app opens must be reported before in-app events and sessions.</li><li>For the `platform` parameter, select `steam`.</li><li>For the `device_ids` parameter, select the type `custom` or `steamid`.<ul><li>The `custom` or `steamid` for [first opens](https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id) should match your [in-app events](https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id), and [sessions](https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id) ID.</li></ul></li><li>Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.</li><li>To report owned media engagements, integrate the [impression engagement API.](https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id)</li></ul>For the SDK method, there are three versions: native [C++](https://dev.appsflyer.com/hc/docs/steam-vanilla), [Unreal](https://dev.appsflyer.com/hc/docs/unreal-steam), and [Unity](https://dev.appsflyer.com/hc/docs/unity-steam).<br /><br />**Note**:<br /><br />If you have an existing user base and therefore want the first session to be considered a session and not an install, the developer can use the method `skipFirst=true`. | App developer |
-| Cross-platform landing page setup | **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Native PC.<br /><br />[Learn about cross-platform landing pages](/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page)<br /><br />[Learn how to set up a cross-platform landing page](/docs/cross-platform-landing-pages-with-smart-script)<br /><br />**Note**:<br /><br />For Steam, the following parameters are required:<ul><li>**platform**: steam</li><li>**steam\_app\_id**: The ID of the app page.</li></ul>You can find your unique app ID by copying it from the URL bar or by going to [https://steamdb.info/](https://steamdb.info/) and searching for your game. For example,<br /><br />```<br />https://store.steampowered.com/app/12345678/<br />```<br /><br />where **12345678** is your unique app ID.<ul><li>**media\_source**</li></ul>The following parameters are not required but recommended:<ul><li>**campaign**</li><li>**ad**</li><li>**ad\_set**</li><li>**storefront\_redirect\_url**: The full URL of the Steam storefront for your app including your **steam\_app\_id**. For example, `https://store.steampowered.com/app/12345678/`</li></ul> | Marketer (may require developer assistance) |
-| Link setup | If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.<br /><br />[Learn how to create direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links) | Marketer |
-| Report setup/view data | [Learn about data availability in dashboards and reports](/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability) | Marketer/Data engineer |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Task
+      </th>
+      <th>
+        Actions
+      </th>
+      <th>
+        Who's involved
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        App setup
+      </td>
+      <td>
+        * <Anchor target="_blank" href="https://www.appsflyer.com/get-started/">Create an AppsFlyer account</Anchor>
+        * <Anchor target="_blank" href="/marketers/docs/user-management">Add account users with appropriate permissions</Anchor>
+        * <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">Add your Steam app to AppsFlyer</Anchor>
+      </td>
+      <td>
+        Marketer
+      </td>
+    </tr>
+    <tr>
+      <td>
+        SDK integration with your app (via S2S or SDK)
+      </td>
+      <td>
+        There are two methods of integration you can use: S2S and SDK.
+
+        For the S2S method, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview">integrate the AppsFlyer API</Anchor> into your app with commands to report the following events to AppsFlyer.
+
+        * First opens
+        * In-app events
+        * Sessions
+
+        **Note**:
+
+        * First app opens must be reported before in-app events and sessions.
+        * For the `platform` parameter, select `steam`.
+        * For the `device_ids` parameter, select the type `custom` or `steamid`.
+          * The `custom` or `steamid` for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id">first opens</Anchor> should match your <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id">in-app events</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_session-app-platform-app-id">sessions</Anchor> ID.
+        * Send events using the API. Tell your developer which events to send. Verify that when you set up the API, you set up and map the events to send to AppsFlyer.
+        * To report owned media engagements, integrate the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API.</Anchor>
+
+        For the SDK method, there are three versions: native <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/steam-vanilla">C++</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unreal-steam">Unreal</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unity-steam">Unity</Anchor>.
+
+        **Note**:
+
+        If you have an existing user base and therefore want the first session to be considered a session and not an install, the developer can use the method `skipFirst=true`.
+      </td>
+      <td>
+        App developer
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cross-platform landing page setup
+      </td>
+      <td>
+        **Recommended**: A cross-platform landing page running the AppsFlyer Smart Script lets you perform web-to-app attribution. It's most recommended when your campaign promotes an app that's also available on other platforms, like Epic and Native PC.
+
+        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor>
+
+        <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor>
+
+        **Note**:
+
+        For Steam, the following parameters are required:
+
+        * **platform**: steam
+        * **steam\_app\_id**: The ID of the app page.
+
+          You can find your unique app ID by copying it from the URL bar or by going to <Anchor target="_blank" href="https://steamdb.info/">https://steamdb.info/</Anchor> and searching for your game. For example,
+
+          ```
+          https://store.steampowered.com/app/12345678/
+          ```
+
+          where **12345678** is your unique app ID.
+        * **media\_source**
+
+        The following parameters are not required but recommended:
+
+        * **campaign**
+        * **ad**
+        * **ad\_set**
+        * **storefront\_redirect\_url**: The full URL of the Steam storefront for your app including your **steam\_app\_id**. For example, `https://store.steampowered.com/app/12345678/`
+      </td>
+      <td>
+        Marketer (may require developer assistance)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Link setup
+      </td>
+      <td>
+        If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.
+
+        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor>
+      </td>
+      <td>
+        Marketer
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Report setup/view data
+      </td>
+      <td>
+        <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor>
+      </td>
+      <td>
+        Marketer/Data engineer
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Removing AppsFlyer data when uninstalling the app
 
@@ -65,10 +181,10 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 | Trait | Remarks |
 | --- | --- |
 | Retargeting | Not currently supported |
-| Cost data | Import cost data via [Cost Import](/docs/import-cost-data) using the upload file **by email** method. You can also pull data **via API** for Google, Meta, or TikTok. |
+| Cost data | Import cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file **by email** method. You can also pull data **via API** for Google, Meta, or TikTok. |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [CTV, PC, and console platform attribution](/docs/ctv-pc-and-console-platform-attribution-concepts)
+> * <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform attribution</Anchor>
 
 <div data-zendesk-anchors="01H7Z1DJRW1KPJQ4CZ6T85ASRK=about-steam-attribution flow=example-attribution-flow 01H7Z1DJRWHB8TQC15WW4FVSHG=example-attribution-flow 01H7Z1DJRWX54DN2SNS21GPGXB=integration-procedures h_01J3349MAA4J231B6FJ74V3PTB=removing-appsflyer-data-when-uninstalling-the-app h_01HDEHMH0HF201TH4XDW691STH=traits-and-limitations h_01HDP1K6FDDEED5P2WNESST7GE=see-also" />

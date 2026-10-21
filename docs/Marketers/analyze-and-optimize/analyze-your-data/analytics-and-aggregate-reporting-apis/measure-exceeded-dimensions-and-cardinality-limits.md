@@ -1,8 +1,5 @@
 ---
 title: Measure exceeded dimensions and cardinality limits
-excerpt: >-
-  Why some aggregate data dimensions display as exceeded and how to prevent
-  reaching cardinality limits.
 metadata:
   keywords:
     - performance reports
@@ -32,13 +29,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005099063-Measure-exceeded-dimensions-and-cardinality-limits
 ---
+**At a glance:** Why some aggregate data dimensions display as *exceeded* and how to prevent reaching cardinality limits.
+
 ## What are exceeded dimensions?
 
 AppsFlyer collects your install and event data and aggregates it. Data is aggregated using unique values populating a given dimension. The number of unique values in a dimension is called cardinality. Most analytics and aggregated reporting tools have cardinality limits per dimension. When the number of unique values in a dimension exceeds the cardinality limit, the remaining data is grouped in an *exceeded* group. And when the number of unique values in the media source dimension exceeds the cardinality limit, the remaining media source data **as well as all dimensions based on the remaining media sources** are grouped in *exceeded* groups.
 
 The examples that follow illustrate cardinality and how it affects your reports.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > **Example A: Campaign ID cardinality limit**
 >
@@ -75,7 +74,7 @@ The table that follows lists the cardinality limits per day, per app.
 * Up to 1000 unique adset names and 1000 unique ad names per media source are available.
   * On a given day, ad set information from the 1001st ad set and above is grouped in the **Exceeded\_AdSet\_Limit** source. The same applies to the **Exceeded\_Ad\_Limit** source.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > "Divide and Conquer" again. Define a small number of general ad set names (ideally up to 50), and assign all previous ad set names as single ads. You could also use the **af\_sub** parameters on AppsFlyer attribution links. This enables you to:
 > 1. Prevent seeing **Exceeded\_AdSet\_Limit** or **Exceeded\_Ad\_Limit.** 2. Efficiently optimize according to significant ad sets and ad traffic.
@@ -101,7 +100,7 @@ The table that follows lists the cardinality limits per day, per app.
 * Up to 3000 unique campaign names per day are available.
   * On a day campaign information from the 3001st campaign and above is grouped in the **Exceeded\_Campaign\_Limit** source.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > Define a small number of general campaign names (ideally up to 300), and assign all previous campaign names as ad sets. On AppsFlyer attribution links the parameter is **af\_adset**. This enables you to:
 > 1. Prevent seeing **Exceeded\_Campaign\_Limit**.2. Efficiently optimize according to significant adset traffic.
@@ -134,16 +133,16 @@ The table that follows lists the cardinality limits per day, per app.
 * Up to 300 unique event names per day are available.
   * On a day, all event information from the 301st event and above is attributed to the event name called **Exceeded\_Events\_Limit**.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > To stop seeing **Exceeded\_Events\_Limit**, consider using:
 >
-> * [Rich in-app events](/docs/in-app-events-overview). Instead of reporting on hundreds of different events define a small number of general event names (ideally up to 20). Use dynamic event values to differentiate between these events. This lets you optimize according to value parameters, and perform analysis based on the event values, which are available via the [in-app events raw data report.](/docs/raw-data-reporting-overview)
-> * [Validation Rules](/docs/implement-validation-rules-to-prevent-fraud) to remove unneeded in-app events from the AppsFlyer platform.
+> * <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Rich in-app events</Anchor>. Instead of reporting on hundreds of different events define a small number of general event names (ideally up to 20). Use dynamic event values to differentiate between these events. This lets you optimize according to value parameters, and perform analysis based on the event values, which are available via the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">in-app events raw data report.</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules</Anchor> to remove unneeded in-app events from the AppsFlyer platform.
 
-> 📘 **Example**
+> 📄 **Example**
 >
-> Your app com.greatapp sends a purchase in-app event for every color of socks it sells, for example, buy\_red\_socks, buy\_blue\_socks, buy\_white\_socks, etc. To avoid this inflation of different events narrow them all down to a single event, buy\_socks, and insert the color as an [event parameter](/docs/in-app-events-overview).
+> Your app com.greatapp sends a purchase in-app event for every color of socks it sells, for example, buy\_red\_socks, buy\_blue\_socks, buy\_white\_socks, etc. To avoid this inflation of different events narrow them all down to a single event, buy\_socks, and insert the color as an <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">event parameter</Anchor>.
 
 </Accordion>
 
@@ -161,7 +160,7 @@ The table that follows lists the cardinality limits per day, per app.
 <Accordion title="Exceeded_MediaSource_Limit">
 
 * Up to 1000 unique media source names per day are available.
-  * On a day,  campaign information from the 1001st media source name and above is grouped in the **Exceeded\_MediasSource\_Limit**source.
+  * On a day,  campaign information from the 1001st media source name and above is grouped in the **Exceeded\_MediasSource\_Limit** source.
 
 </Accordion>
 
@@ -175,7 +174,7 @@ Site ID (per clicks, impressions, installs, and in-app events) has 2 thresholds,
   * On a day, site ID information from the 1001st site ID and above per media source is grouped into a single site ID titled **Exceeded\_SiteID\_Limit.** Therefore, if you do see the site ID **Exceeded\_SiteID\_Limit**, it means there are too many used site IDs per the media source in question, and trying to optimize the source's traffic according to site IDs becomes less accurate and less effective.
 * From August 19, 2024, if there are more than 5000 site IDs per day per media source, only 10 site IDs display. All other site IDs are grouped into a single site ID titled **Exceeded\_SiteID\_Limit**.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > "Divide and Conquer". Instead of using thousands of site IDs per media source, which distorts your aggregate data, use a second parameter on your attribution links called **af\_sub\_siteid.** Define a small number of general site IDs (ideally up to 50), and assign all previous site IDs as sub-site IDs under these general site IDs. This enables you to:
 > 1. Prevent seeing **Exceeded\_SiteID\_Limit**2. Efficiently optimize according to significant site IDs traffic
@@ -195,7 +194,7 @@ Most advertisers won't encounter **Exceeded** sources as they don't normally def
 
 If you do encounter **Exceeded** sources it's probably because one or more media sources is using dynamic values for names of campaigns, site IDs, ad sets, or ads. Dynamic in-app events within the app code may cause the **Exceeded\_Events\_Limit** source data to appear.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > Use only static values for names of in-app events, campaigns, site IDs, ad sets, and ads to avoid getting **Exceeded** sources.
 >
@@ -209,7 +208,7 @@ But what if you want to look at your data right now?
 
 As explained, an **Exceeded** source occurs when AppsFlyer receives the N+1 click (or event) source during a single day. It is possible that the more prominent media sources you use arrive later in the day, and therefore are combined with an **Exceeded** source's data. Here's a simple trick to minimize the effect of any **Exceeded** source you see:
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > Forget today and look only at data from yesterday and beforehand. Every day an aggregation process recalculates the last day's data and in retrospect assigns only the smallest (not most late) sources, to any **Exceeded** source. This ensures that the distortion caused by the overflow of clicks is minimal!
 

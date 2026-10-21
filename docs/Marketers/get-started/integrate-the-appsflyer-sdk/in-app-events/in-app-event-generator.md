@@ -1,9 +1,5 @@
 ---
 title: In-app event generator
-excerpt: >-
-  Automatically create the app code (native Android and iOS, Unity) for sending
-  in-app events by defining the event names and content according to your
-  business needs.
 metadata:
   keywords:
     - Developers
@@ -25,13 +21,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/10457123447953-In-app-event-generator
 ---
+**At a glance:** Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs.
+
 ## Introduction
 
 In-app events are a major tool for **app owners to measure the quality of their users coming from different sources** based on the actions they take after app installation. Events are also often used for performing CPA-based marketing campaigns.
 
 However, more than one person is often involved in the definition and integration of in-app events into the apps. While the marketer/product manager defines the event set content according to business needs, one or more mobile developers are generally required to implement the in-app events API in their apps.
 
-AppsFlyer's [In-app event generator](https://evgen.appsflyer.com/) **solves the challenges inherent in this essential collaboration between marketer and developer**.
+AppsFlyer's <Anchor target="_blank" href="https://evgen.appsflyer.com/">In-app event generator</Anchor> **solves the challenges inherent in this essential collaboration between marketer and developer**.
 
 By using the In-app event generator marketers can:
 
@@ -48,7 +46,7 @@ By using the In-app event generator marketers can:
 
 **To create a new event set:**
 
-1. Go to the [In-app event generator](https://evgen.appsflyer.com/) and enter the name of your app.
+1. Go to the <Anchor target="_blank" href="https://evgen.appsflyer.com/">In-app event generator</Anchor> and enter the name of your app.
 2. Select a vertical or import the event set of a similar app that was previously exported to a JSON file.
 3. Add or remove events and parameters, according to your business needs.
 4. Click the **`</>` Code** button to view and copy the generated code for your developers: Java (native Android), Obj-C/Swift (native iOS), or C# (Unity).
@@ -58,7 +56,7 @@ By using the In-app event generator marketers can:
 
 **To update an existing event set:**
 
-1. Go to the [In-app event generator](https://evgen.appsflyer.com/).
+1. Go to the <Anchor target="_blank" href="https://evgen.appsflyer.com/">In-app event generator</Anchor>.
 2. Import an event set of your app that was previously exported to a JSON file.
 3. Add or remove events and parameters, according to your business needs.
 4. Click the **`</>` Code** button to view and copy the generated code for your developers: Java (native Android), Obj-C/Swift (native iOS), or C# (Unity).
@@ -84,9 +82,9 @@ By using the In-app event generator marketers can:
 4. Type one or more typical parameter values for reference.
 5. To help your developers, type a general description, field type, or the corresponding source for the parameter value in your app. This appears as a comment for each event parameter in the generated code.
 
-**Note**: [Predefined naming](/docs/in-app-events-overview#predefined-and-custom-events) allows automatic mapping of events and parameters to partners and is the recommended method.
+**Note**: <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#predefined-and-custom-events">Predefined naming</Anchor> allows automatic mapping of events and parameters to partners and is the recommended method.
 
-> 📘 **See also**
+> 📄 **See also**
 >
 > * Events dashboard
 

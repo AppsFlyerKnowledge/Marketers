@@ -1,8 +1,5 @@
 ---
 title: Account settings
-excerpt: >-
-  Use the Account settings page to manage your personal profile, account-level
-  settings, and AI capabilities from one single place.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/44784756352273-Account-settings
 ---
+**At a glance:** Use the **Account settings** page to manage your personal profile, account-level settings, and AI capabilities from one single place.
+
 ## **About Account settings**
 
 The **Account settings** page has three tabs:
@@ -41,7 +40,7 @@ Use this section to review your account information and update supported profile
 
 The **Account** section includes account-level security settings. Additional self-service account settings may be added over time
 
-### [**Unique Dev Key**](/docs/dev-key-management)
+### <Anchor target="_blank" href="/marketers/docs/dev-key-management">**Unique Dev Key**</Anchor>
 
 The **Unique Dev Key** setting controls whether AppsFlyer creates a unique Dev key for each new app.
 
@@ -53,11 +52,11 @@ Note: This setting applies only to apps created after the setting is turned on. 
 
 The **AI capabilities** section lets admins manage which supported AI-powered products are available for the account.
 
-### [AI Assistant](/docs/ai-assistant)
+### <Anchor target="_blank" href="/marketers/docs/ai-assistant">AI Assistant</Anchor>
 
 The AI Assistant is your own virtual analyst and platform knowledge helper in AppsFlyer. Use it to uncover insights, measure performance, identify top and low performers, uncover campaign trends, and explore visual insights like tables and charts, right from any page in the platform.
 
-### [AppsFlyer MCP](/docs/beta-appsflyer-mcp)
+### <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">AppsFlyer MCP</Anchor>
 
 The AppsFlyer MCP connects your AppsFlyer data to any large language model (LLM), like Claude or VS Code. Ask questions, get performance insights, and take action directly in your AI chat
 
@@ -74,7 +73,7 @@ When the MCP is disabled:
 
 **Important:** If an MCP token is in use, you must delete it first in **Security Center > AppsFlyer Tokens**.
 
-### [Agent Hub](/docs/beta-agent-hub-overview)
+### <Anchor target="_blank" href="/marketers/docs/beta-agent-hub-overview">Agent Hub</Anchor>
 
 The Agent Hub is AppsFlyer’s centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment.
 

@@ -29,11 +29,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207032106--Legacy-Receipt-validation-for-in-app-purchases
 ---
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> This article describes the deprecated Receipt validation feature. For more information, see [Bulletin: Legacy Receipt validation is deprecated](/docs/bulletin-legacy-receipt-validation-is-deprecated)
+> This article describes the deprecated Receipt validation feature. For more information, see <Anchor target="_blank" href="/marketers/docs/bulletin-legacy-receipt-validation-is-deprecated">Bulletin: Legacy Receipt validation is deprecated</Anchor>
 
-**At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved [in-app purchase validation mechanism](/docs/purchase-and-subscription-validation-overview).
+**At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">in-app purchase validation mechanism</Anchor>.
 
 ## Receipt validation flow
 
@@ -51,21 +51,21 @@ The receipt validation flow is as follows:
 6. Upon success, AppsFlyer internally creates a regular af\_purchase event. Otherwise, the created event is marked as fraudulent (available via Protect360).
 7. The AppsFlyer validation service transfers the response to the SDK.
 8. The SDK transfers the receipt validation response to the app (either success or fail).  
-   If receipt validation fails, the event displays in the [blocked in-app events raw-data](/docs/protect360-raw-data-reports#inapp-level-blocked-reasons) report (available to Protect360 subscribers).
+   If receipt validation fails, the event displays in the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#inapp-level-blocked-reasons">blocked in-app events raw-data</Anchor> report (available to Protect360 subscribers).
 
 For details about the implementation of receipt validation, see our developer SDK documentation:
 
-* [Android](https://dev.appsflyer.com/hc/docs/in-app-events-android#validating-purchases)
-* [iOS](https://dev.appsflyer.com/hc/docs/in-app-events-ios#purchase-validation-using-validateandloginapppurchase)
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#validating-purchases">Android</Anchor>
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#purchase-validation-using-validateandloginapppurchase">iOS</Anchor>
 
 **Notes:**
 
-* For iOS sandbox apps, meaning apps that are not live in the App Store, receipt validation requires [some additional code](https://dev.appsflyer.com/hc/docs/validate-and-log-purchase-ios#testing-purchase-validation-in-sandbox-mode).
+* For iOS sandbox apps, meaning apps that are not live in the App Store, receipt validation requires <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/validate-and-log-purchase-ios#testing-purchase-validation-in-sandbox-mode">some additional code</Anchor>.
 * Purchases made in the sandbox environment are recorded as regular af\_purchase events, and their revenue is reflected in AppsFlyer dashboards and reports.
 * The AppsFlyer receipt validation service is free of charge to all account plans.
 * For Android, receipt validation may return a `null` result and consider the validation failed if the end user doesn't have internet access during the purchase.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Calling `validateAndLogInAppPurchase` also generates an **af\_purchase** in-app event. As such, don't generate an af\_purchase event when validating. Doing so results in duplicate revenue events.
 

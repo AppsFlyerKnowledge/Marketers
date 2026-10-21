@@ -1,11 +1,5 @@
 ---
 title: Set up tax and store commission rates with the Net Revenue API
-excerpt: >-
-  Configure how AppsFlyer calculates net revenue for in-app purchases and
-  subscriptions by using the Net Revenue API to customize store commission rates
-  and tax rules per app. This ensures that your reports accurately reflect
-  actual earnings, including cases with non-standard commission fees or specific
-  tax rules.
 metadata:
   keywords:
     - Revenue
@@ -30,6 +24,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Configure how AppsFlyer calculates net revenue for in-app purchases and subscriptions by using the Net Revenue API to customize store commission rates and tax rules per app. This ensures that your reports accurately reflect actual earnings, including cases with non-standard commission fees or specific tax rules.
+
 The ROI360 store revenue product calculates the net revenue of in-app purchases and subscriptions by automatically deducting store commission and tax from gross revenue. The default configuration reflects standard commission fees and tax rules applied by the App Store and Google Play. If your store commission differs or if you operate in a country with special tax treatment, use the Net Revenue API to override the default configuration.
 
 The Net Revenue API is implemented through two REST APIs that let you configure store commission rates and tax rules for individual apps.
@@ -37,7 +33,7 @@ The Net Revenue API is implemented through two REST APIs that let you configure 
 * [Store commission rates](https://dev.appsflyer.com/hc/reference/post_store-commission-rates): Create, update, get, or delete store commission rates for one or more apps. Each app can have a specific commission rate based on various store programs.
 * [Tax rate rules](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id): Create or get custom tax rate rules for a specific app.
 
-For more information about how net revenue is calculated, see [Net revenue](/docs/about-roi360-store-revenue#true-revenue).
+For more information about how net revenue is calculated, see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#true-revenue">Net revenue</Anchor>.
 
 > 📘 **Note**
 >
@@ -55,8 +51,8 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 
    <Accordion title="iOS">
 
-   * [Step 1. Set up App Store Connect keys](/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys)
-   * [Step 2. Set up App Store Server Notifications](/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications)
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys">Step 1. Set up App Store Connect keys</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications">Step 2. Set up App Store Server Notifications</Anchor>
 
    </Accordion>
 
@@ -64,13 +60,13 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 
    <Accordion title="Android">
 
-   * [Step 1. Set up service account key and permissions](/docs/set-up-roi360-store-revenue#step-1-android-set-up-service-account-key-and-permissions)
-   * [Step 2. Set up Google Play Server Notifications](/docs/set-up-roi360-store-revenue#step-2-android-set-up-google-play-server-notifications)
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-android-set-up-service-account-key-and-permissions">Step 1. Set up service account key and permissions</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-android-set-up-google-play-server-notifications">Step 2. Set up Google Play Server Notifications</Anchor>
 
    </Accordion>
 
 2. Give your developer the following:
-   * The [API V2 token](/docs/managing-appsflyer-tokens) to use as the authorization key.
+   * The <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API V2 token</Anchor> to use as the authorization key.
    * The parameters and values that specify which taxes to calculate are outlined in the table that follows.
 3. Instruct your developer to use the [Tax rates REST API](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id) to create tax rate rules. The API accepts a JSON file in the body of the POST request. [This JSON file](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub) includes all supported countries and their default tax rates. Your developer can edit the file or use it as-is in the API.
 
@@ -88,7 +84,7 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 
 ## Set up store commission rates
 
-By default, AppsFlyer applies standard store commission logic when calculating net revenue. App Store defaults are region-specific (see [About ROI360 store revenue](/docs/about-roi360-store-revenue#true-revenue) for the current rates per storefront). If your app operates under reduced or non-standard store fees, use the Net Revenue API to override the store commission rate at the app level.
+By default, AppsFlyer applies standard store commission logic when calculating net revenue. App Store defaults are region-specific (see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#true-revenue">About ROI360 store revenue</Anchor> for the current rates per storefront). If your app operates under reduced or non-standard store fees, use the Net Revenue API to override the store commission rate at the app level.
 
 A few examples:
 
@@ -115,8 +111,8 @@ Before using the API:
 
    <Accordion title="iOS">
 
-   * [Step 1. Set up App Store Connect keys](/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys)
-   * [Step 2. Set up App Store Server Notifications](/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications)
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-ios-set-up-app-store-connect-keys">Step 1. Set up App Store Connect keys</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-ios-set-up-app-store-server-notifications">Step 2. Set up App Store Server Notifications</Anchor>
 
    </Accordion>
 
@@ -124,8 +120,8 @@ Before using the API:
 
    <Accordion title="Android">
 
-   * [Step 1. Set up service account key and permissions](/docs/set-up-roi360-store-revenue#step-1-android-set-up-service-account-key-and-permissions)
-   * [Step 2. Set up Google Play Server Notifications](/docs/set-up-roi360-store-revenue#step-2-android-set-up-google-play-server-notifications)
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-1-android-set-up-service-account-key-and-permissions">Step 1. Set up service account key and permissions</Anchor>
+   * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue#step-2-android-set-up-google-play-server-notifications">Step 2. Set up Google Play Server Notifications</Anchor>
 
    </Accordion>
 

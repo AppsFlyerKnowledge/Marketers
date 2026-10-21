@@ -1,6 +1,5 @@
 ---
 title: Data Clean Room—Working with reports
-excerpt: Work with the reports you have set up in the Data Clean Room (DCR).
 metadata:
   keywords:
     - Premium
@@ -24,14 +23,16 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Work with the reports you have set up in the Data Clean Room (DCR).
+
 ## Introduction
 
 This article covers working with the reports you have already created. You can view the full list of these reports and their status in the **Reports** tab of the DCR.  
   
 If you are looking for instructions on creating new DCR reports, you can find them in these articles:
 
-* [Creating Attribution data reports](/docs/data-clean-room-creating-attribution-data-reports)
-* [Creating In-app event reports](/docs/data-clean-room-creating-in-app-event-reports)
+* <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports">Creating Attribution data reports</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-in-app-event-reports">Creating In-app event reports</Anchor>
 
 ## Editing or deleting a report
 

@@ -13,6 +13,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551287787537-Conversion-data
 ---
-- [Get conversion data using AppsFlyer SDK–Overview](/docs/get-conversion-data-using-appsflyer-sdk-overview)
-- [Get conversion data using AppsFlyer SDK–Retargeting](/docs/get-conversion-data-using-appsflyer-sdk-retargeting)
-- [Conversion data payloads and scenarios](/docs/conversion-data-payloads-and-scenarios)
+- <Anchor target="_blank" href="/marketers/docs/get-conversion-data-using-appsflyer-sdk-overview">Get conversion data using AppsFlyer SDK–Overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/get-conversion-data-using-appsflyer-sdk-retargeting">Get conversion data using AppsFlyer SDK–Retargeting</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/conversion-data-payloads-and-scenarios">Conversion data payloads and scenarios</Anchor>

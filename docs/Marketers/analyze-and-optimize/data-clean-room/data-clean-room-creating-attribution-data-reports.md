@@ -1,8 +1,5 @@
 ---
 title: Data Clean Room—Creating Attribution data reports
-excerpt: >-
-  Create Attribution data reports to match user-level data from
-  installs/retargeting events with data from your systems.
 metadata:
   keywords:
     - Premium Feature
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/9035047905297-Data-Clean-Room-Creating-Attribution-data-reports
 ---
+**At a glance:** Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems.
+
 ## Creating an Attribution data report
 
 **To create an Attribution data report, follow the steps detailed in the tabs below.**
@@ -74,7 +73,7 @@ Specify the data to be used for the report:
 
 #### **Custom sources**
 
-When defining report structure, you can choose to use data from any of the [custom sources you have set up](/docs/data-clean-room-working-with-sources).
+When defining report structure, you can choose to use data from any of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources">custom sources you have set up</Anchor>.
 
 </Accordion>
 
@@ -82,7 +81,7 @@ When defining report structure, you can choose to use data from any of the [cust
 
 <Accordion title="Join sources">
 
-To match data among sources, each of the **custom** sources used in the report must include an [identifier](/docs/data-clean-room-setting-up-cloud-services) mapped to a **key identifier** in the attribution data.
+To match data among sources, each of the **custom** sources used in the report must include an <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">identifier</Anchor> mapped to a **key identifier** in the attribution data.
 
 #### **What is a key identifier?**
 
@@ -92,9 +91,9 @@ You can map to either of these attribution data identifiers as **key identifiers
   * This ID appears in all events recorded by AppsFlyer.
   * A new AppsFlyer ID is generated if an app is deleted and then reinstalled.
 * **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
-  * Using CUID to map data requires that your app is configured to [send the CUID to AppsFlyer](/docs/customer-user-id-field-cuid) via the SDK or the server-to-server API (S2S).
+  * Using CUID to map data requires that your app is configured to <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">send the CUID to AppsFlyer</Anchor> via the SDK or the server-to-server API (S2S).
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
 
@@ -102,7 +101,7 @@ You can map to either of these attribution data identifiers as **key identifiers
 
 If the report uses more than one custom source, only one of them needs to be mapped **directly** to an attribution data key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > ![dcr_mapping_identifiers_attribution_data.png](https://files.readme.io/18d1ddd8305f790dc621f871695b8cfb30f5e5a5d758c219e76ec7822ec18f2f-9969690360849.png)
 >
@@ -168,7 +167,7 @@ A dimension is generally an attribute by which you categorize app users (for exa
 Attribution data report dimensions can include:
 
 * Any [available attribution data dimension](/docs/data-clean-room-creating-attribution-data-reports#available-attribution-data-dimensions)
-* Any field in the report's custom sources that has been [categorized as a dimension](/docs/data-clean-room-working-with-sources#3-define-the-source-structure)
+* Any field in the report's custom sources that has been <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#3-define-the-source-structure">categorized as a dimension</Anchor>
 
 **To select the dimensions to include in your report:**
 
@@ -198,7 +197,7 @@ Depending on the size of your data set, the number of dimensions you choose, and
 
 However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
 
-> 📘 **Regrouping example**
+> 📄 **Regrouping example**
 >
 > Assume you have set up a report according to the following dimensions (in order):
 >
@@ -319,7 +318,7 @@ By default, each row of the report ends with a column containing a count of the 
 
 <Accordion title="Set the report destination and save the report">
 
-The DCR delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
 
 * **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
@@ -328,10 +327,10 @@ The DCR delivers reports to your selected cloud services using [AppsFlyer Data 
 1. Select from the list of Data Locker connections available in your AppsFlyer account.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
+     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_data_locker_button.png](https://files.readme.io/9850a4b8ea4f40f6320903c545c51add7b90207538a27c83a3b02a41197ba567-14995870859281.png) button:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
+     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
    * After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
 2. Click **Save** to save the report.
 3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
@@ -344,7 +343,7 @@ Once you have created and saved a report, the report runs whenever new versions 
 
 * For sources located in **data warehouses** (BigQuery and Snowflake), the DCR recognizes that a new version of a source has been created when it detects a new value in [the `v` column of the source table](/docs/data-clean-room-working-with-sources#table-columns).
   * **Important!** Whenever the column value changes, be sure to populate the source table with a complete set of data to ensure the completeness of your report.
-* The DCR recognizes that a new version of a source has been created when it detects that a [new version of a source file has been uploaded](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) to a connected cloud account, along with its accompanying \_SUCCESS file.
+* The DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> to a connected cloud account, along with its accompanying \_SUCCESS file.
 
 AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
 

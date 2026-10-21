@@ -1,9 +1,5 @@
 ---
 title: Integrate AppsFlyer Web SDK
-excerpt: >-
-  Install the AppsFlyer Web SDK (also known as the pixel) on your website to
-  report user visits and events to AppsFlyer, and set a persistent customer user
-  ID (CUID) to unify journeys across platforms.
 deprecated: false
 hidden: false
 x-zendesk:
@@ -18,6 +14,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/50896216552337-Integrate-AppsFlyer-Web-SDK
 ---
+**At a glance:** Install the AppsFlyer Web SDK (also known as the pixel) on your website to report user visits and events to AppsFlyer, and set a persistent customer user ID (CUID) to unify journeys across platforms.
+
 ## Overview
 
 The Web SDK lets you record how visitors interact with your website and sends this information to AppsFlyer. It is a 40–60 KB plug-in module that reports user visits and actions on your website to the AppsFlyer platform.
@@ -60,18 +58,20 @@ Before copying the prompt, replace:
   for
   post-deploy verification.
 
-The AI tool builds an event plan from your codebase and waits for
-your
-approval
-before implementing it. Review the plan, confirm that revenue and
-currency
-values appear only on realized-revenue events, and verify the results
-using
-the post-deploy verification steps in the prompt.
+> 📘 **Note**
+>
+> The AI tool builds an event plan from your codebase and waits for
+> your
+> approval
+> before implementing it. Review the plan, confirm that revenue and
+> currency
+> values appear only on realized-revenue events, and verify the results
+> using
+> the post-deploy verification steps in the prompt.
 
 <Accordion title="AI implementation prompt">
 
-```
+```markdown
 # **AppsFlyer Web SDK - AI implementation prompt**
 
 Copy the prompt below into an AI coding tool that can edit your project (Cursor, Claude Code, Codex, Copilot). Before copying, replace two placeholders:
@@ -356,7 +356,9 @@ Choose the snippet that matches your integration type and security requirements.
 * [Standard Web SDK](#standard-web-sdk): The standard integration.
 * [Advanced SDK Verification](#advanced-sdk-verification): An enhanced integration that adds supply-chain protection for the Web SDK. Use this to add an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
 
-If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
+> ❗️ **Warning**
+>
+> If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
 
 ### Standard Web SDK
 
@@ -364,7 +366,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="Without Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -389,7 +391,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="With Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -428,7 +430,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="Without Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -459,7 +461,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="With Smart Banners">
 
-```html
+```javascript
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -532,7 +534,9 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
         4. Select the page view trigger you created earlier.
         5. Click **Save**.
 
-GTM Custom Templates are not supported for Advanced SDK Verification, because their sandboxed environment does not allow setting the integrity attribute required for verification. Use the **Custom HTML** tag type instead.
+> 📘 **Note**
+>
+> GTM Custom Templates are not supported for Advanced SDK Verification, because their sandboxed environment does not allow setting the integrity attribute required for verification. Use the **Custom HTML** tag type instead.
 
 </Accordion>
 
@@ -611,7 +615,9 @@ After installation, verify that the SDK sends requests by checking network reque
 8. Verify `site_id` matches the `WEB_DEV_KEY` in AppsFlyer > top menu > **My Apps**.
 9. Verify that the SDK loads only once. Multiple SDK loading can cause the SDK to stop functioning.
 
-For a real-time, visual way to confirm your Web SDK installation and validate that your events fire correctly, use the Web SDK Test page.
+> 📘 **Note**
+>
+> For a real-time, visual way to confirm your Web SDK installation and validate that your events fire correctly, use the Web SDK Test page.
 
 ## 5. Set and record events
 
@@ -649,7 +655,9 @@ This is the standard approach for conversions that end with a redirect, like a *
 
 You can implement this trigger either by adding a window loading method to your **native JavaScript** or by configuring a page view trigger within **Google Tag Manager**.
 
-The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
+> 🚧 **Important**
+>
+> The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
 
 <div id="example-record-event-via-af-web-sdk" />
 
@@ -685,7 +693,7 @@ This approach is used to record successful conversions, such as a newsletter sub
 
 The following HTML structure loads GTM, which in turn loads the Web SDK. It also demonstrates how data can be made available to GTM via functions or `localStorage`.
 
-```html
+```javascript
 <html>
 <head>
     <script>
@@ -731,7 +739,9 @@ Use this to measure actions without a page reload (button clicks, downloads, add
 
 These interactions are typically handled by binding a click listener to a **native HTML element** or by using **Google Tag Manager** variables to identify and measure specific element IDs or CSS selectors.
 
-The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
+> 🚧 **Important**
+>
+> The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
 
 <div id="example-record-event-via-af-web-sdk-interaction" />
 
@@ -743,7 +753,7 @@ Use this method to measure specific actions users take on a page, such as clicki
 
 **Native user interaction example:**
 
-```html
+```javascript
 <html>
 <head>
     <script>
@@ -778,7 +788,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 
 #### 1. Set up a checkout page
 
-```html
+```javascript
 <html>
 <head>
     <script>
@@ -810,7 +820,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 1. Create a new **Custom HTML** tag for the checkout action.
 2. Paste the interaction script:
 
-   ```html
+   ```javascript
    <script>
      AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'});
    </script>
@@ -840,7 +850,7 @@ After the implementation of event measurement, set a persistent identity to link
 
 **Key rules**
 
-* **Consistency:** Use the same CUID value as your mobile app implementations (see mobile `setCustomerUserId` for: [iOS](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk), [Android](https://dev.appsflyer.com/hc/docs/integrate-android-sdk#setting-the-customer-user-id), [Unity](https://dev.appsflyer.com/hc/docs/basicintegration#set-customer-user-id)).
+* **Consistency:** Use the same CUID value as your mobile app implementations (see mobile `setCustomerUserId` for: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk">iOS</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-android-sdk#setting-the-customer-user-id">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#set-customer-user-id">Unity</Anchor>).
 * **Timing:** You can send CUID at any stage (for example, after login or signup). Set the CUID as early as possible, once you have access to it. Most of the time, this means you need to wait for the user to identify via login or sign-up.
 * **Syntax:** Send the value as a string (enclosed in quotation marks). **Example:** `AF('pba', 'setCustomerUserId', '663274')`
 * **Privacy:** Do not include personally identifiable information (PII) such as email addresses or phone numbers.
@@ -863,7 +873,7 @@ User scenario:
 
 The code below is a simple signup form. When the form is submitted, the email address is stored in `localStorage`. When the user reaches the thank-you page, the user's email address is sent to the server to get the unique CUID for that email.
 
-```html
+```javascript
 <html>
 <head>
     <script>
@@ -897,7 +907,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 The code uses the Fetch API. It sends the server the email address entered by the user. Assuming the server creates a user with a unique CUID upon signup, sending the email address to the server returns a unique CUID. The server responds with a unique CUID, and this unique CUID is the value that is passed with the `setCustomerUserId` method.
 
-```html
+```javascript
 <html>
 <head>
     <script>
@@ -933,7 +943,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
    The code example below is a simple signup form. When the form is submitted, the email address is stored in `localStorage`. When the user reaches the thank-you page, the user's email address is sent to the server to get the unique CUID for that email.
 
-   ```html
+   ```javascript
    <html>
    <head>
        <script>
@@ -964,7 +974,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 2. Set up a thank-you page for users who sign up. The code below is a thank-you page with a GTM trigger that sends the server the email address provided by the user in the signup form. Assuming that on signup the server creates a user with a unique CUID, sending the email to the server returns a unique CUID. The server responds with a unique CUID, which is sent using the `setCustomerUserId()` method.
 
-   ```html
+   ```javascript
    <script>
        window.onload = function () {
            var userEmail = localStorage.getItem('user_email');
@@ -984,7 +994,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
    [![Naming the tag and selecting the Custom HTML tag type in GTM](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)](https://files.readme.io/fddcd6db6025b5e50b69c2071134f7d587bb277d57f7a284d579b5655a16e738-50896216533393.jpg)
 
-   ```html
+   ```javascript
    <script>
        var userEmail = localStorage.getItem('user_email');
        fetch('users/' + userEmail).then(function (res) {
@@ -1019,7 +1029,9 @@ Determines whether the SDK sends events when the web page first loads or waits u
 * Send events: `{pba: {webAppId: "...", measurementStatus:true}}`
 * Do not send events: `{pba: {webAppId: "...", measurementStatus:false}}`
 
-If measurementStatus is empty or NULL, AppsFlyer regards it as if measurementStatus:true.
+> 📘 **Note**
+>
+> If measurementStatus is empty or NULL, AppsFlyer regards it as if measurementStatus:true.
 
 #### Explicit control
 
@@ -1064,7 +1076,7 @@ CSP policy compatibility
 
 <Accordion title="Without Smart Banners">
 
-```html
+```javascript
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -1099,7 +1111,7 @@ CSP policy compatibility
 
 <Accordion title="With Smart Banners">
 
-```html
+```javascript
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -1152,9 +1164,9 @@ The Web SDK sets or uses the following cookies:
 | --- | --- | --- | --- | --- |
 | afUserid | Your website domain | 395 days | Non-Accelerated Mobile Pages | Identifies a user in the context of web page load and navigation events. |
 | AF\_SYNC | Your website domain | 1 week | Non-Accelerated Mobile Pages | Indicates that a final user identifier is set. Used to reduce site load times. |
-| af\_id | [appsflyer.com](http://appsflyer.com/) | 395 days | Non-Accelerated Mobile Pages when third-party cookies are permitted | Identifies a user in the context of app launch and navigation events. |
-| af\_id | [onelink.me](http://onelink.me/) | 395 days | Non-Accelerated Mobile Pages when third-party cookies are permitted | Links link banner engagements, OneLink engagements, or both, to app launch events. |
+| af\_id | <Anchor target="_blank" href="http://appsflyer.com/">appsflyer.com</Anchor> | 395 days | Non-Accelerated Mobile Pages when third-party cookies are permitted | Identifies a user in the context of app launch and navigation events. |
+| af\_id | <Anchor target="_blank" href="http://onelink.me/">onelink.me</Anchor> | 395 days | Non-Accelerated Mobile Pages when third-party cookies are permitted | Links link banner engagements, OneLink engagements, or both, to app launch events. |
 | amp-afUserid | AMP CDN or your website domain | 1 year | Accelerated Mobile Pages |  |
-| AF\_DEFAULT\_MEASUREMENT\_STATUS | Your website domain | 395 days | Non-Accelerated Mobile Pages | Stores the consent state. Prevents the SDK from operating until the user grants consent. Not set by default. Used only when [consent gating](/docs/pba-web-sdk-integration-guide#sending-events-optinoptout) is configured. |
+| AF\_DEFAULT\_MEASUREMENT\_STATUS | Your website domain | 395 days | Non-Accelerated Mobile Pages | Stores the consent state. Prevents the SDK from operating until the user grants consent. Not set by default. Used only when <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#sending-events-optinoptout">consent gating</Anchor> is configured. |
 
 <div data-zendesk-anchors="h_01KGJCGCPZDJ446QHW80H9Z4C3=overview h_01M11M9ZXB0PFFPKVDCGVD0RFT=integrate-the-sdk-manually ai-prompt=integrate-the-sdk-with-an-ai-coding-agent h_01UJZDE8GXD6NCF10EPF91DH=integrate-the-sdk-with-an-ai-coding-agent step-1-obtain-your-keys=1-obtain-your-keys h_01KP11XJV8B56W7FK2KAAFH0NE=1-obtain-your-keys step-2-select-a-code-snippet=2-select-a-code-snippet h_01KP11XJV8RDV378GMFF0DVZ8V=2-select-a-code-snippet standard=standard-web-sdk h_01KP11XJV8MN64YV17D1M0T5B9=standard-web-sdk h_01KP11XJV8ZGF4SDXJH6FKX18E=advanced-sdk-verification step-3-deploy-the-snippet=3-deploy-the-snippet h_01KP11XJV8JQ5S2BBS18RV2H2R=3-deploy-the-snippet h_01KP11XJV9RWY4TTWACW69YGJH=create-a-property-in-adobe-experience-cloud h_01KP11XJV9ZHMP9M85S3KG0V6R=add-the-snippet-to-the-adobe-launch-property h_01KP11XJVBV5J9E0HV5DM9HS7B=add-the-adobe-launch-tag-to-the-website h_01KP11XJVB0Y4RCBS9QCFBAKRD=publish-the-adobe-launch-environment 2-make-sure-the-sdk-is-working=4-make-sure-the-sdk-is-working h_01KGJCGCPZ38XZAY8SXB48YWBD=4-make-sure-the-sdk-is-working 3-set-and-record-events=5-set-and-record-events h_01KGJCGCPZMPX1FH58MVGM9VQS=5-set-and-record-events h_01KP3CJBZXV66CCP4N0482DG1N=web-sdk-event-parameters-table h_01KP3CJBZXB328CABH2QCRXTHX=example-record-event-via-af-web-sdk h_01KP3CJBZXM3WK0JYB6S8P6SMQ=example-record-event-via-gtm h_01KGJCGCPZQDP9KVBSE1Z1GT48=1-set-up-a-thank-you-page h_01KGJCGCPZ2YVRY6VYJ0BTC14N=2-configure-the-gtm-tag h_01KP3CJBZXD6MPTQ0KCPMTM1Y9=example-record-event-via-af-web-sdk-interaction h_01KP3CJBZX53G1HABG3TKN2X6S=example-record-event-via-gtm-interaction h_01KGJCGCQ0858AAJC82Y2G0GNP=1-set-up-a-checkout-page h_01KGJCGCQ0GGYDQBP9CJNM9AXQ=2-configure-gtm-variables-and-triggers h_01KGJCGCQ0EV557QF3CGZ6YB4X=3-create-the-interaction-tag 4-set-customer-user-id=6-set-customer-user-id h_01KGJCGCQ0RNBW7V5T4PXVXQW1=6-set-customer-user-id h_01KGJCGCQ0M0ESXFMK45PJ3SX9=a-sign-up-form-example h_01KGJCGCQ0FMKFKM2SWV2794T5=a-thank-you-page-example 5-manage-privacy=7-manage-privacy h_01KGJCGCQ01PQWT44ZWE329DWX=7-manage-privacy h_01KGJCGCQ0AQM3Y9NNCJF2XP9G=sdk-initial-state-setting-in-the-snippet h_01KGJCGCQ07KKYGN5JZF41A6W7=explicit-control h_01KGJCGCQ0QB7NK6YNZT5XJVJY=content-security-policy-csp h_01KP11XJV88YB2NSBZJTX9K7ZQ=advanced-sdk-verification-with-csp-nonce-snippets h_01KP3CJBZXQ4D538H0T7N9FZ6Z=nonce-without-smart-banners h_01KP3CJBZX8K3WK6RHQMB029VN=nonce-with-smart-banners h_01KGJCGCQ010K4RMFMGHD5NDC3=discard-query-parameters h_01KGJCGCQ03A1H7NA5ZGPSGKP3=web-sdk-cookies-reference" />

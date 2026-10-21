@@ -1,10 +1,5 @@
 ---
 title: '[Beta] Fraud protection studio'
-excerpt: >-
-  Fraud protection studio (FPS) provides greater control over how fraud
-  detection is applied than usual methods. With FPS, you can choose whether
-  fraud detection data is blocked and reported as fraud or tagged, empowering
-  tailored fraud management.
 metadata:
   keywords:
     - Marketers
@@ -28,6 +23,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
+**At a glance:** Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management.
+
 ## About fraud protection studio
 
 Fraud protection studio introduces a tagged detection status.
@@ -38,9 +35,9 @@ This status enables advertisers to detect fraud without automatically implementi
 * Control: Tailor fraud detection to your business model and needs.
 * Transparency: Tagged data provides insights on additional fraud protection layers.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
-> Only the Admin, Marketing lead, Team manager, and Security [permissions roles](/docs/user-management#manage-roles) are able to access the Fraud protection Studio.
+> Only the Admin, Marketing lead, Team manager, and Security <Anchor target="_blank" href="/marketers/docs/user-management#manage-roles">permissions roles</Anchor> are able to access the Fraud protection Studio.
 
 ## How the fraud protection studio works
 
@@ -59,7 +56,7 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
   * **Blocked** In real-time
   * **Reported** as post-attribution fraud
 
-[![Image description](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)  
+[![Image description](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
 **Mechanism with FPS:** Installs are either considered:
 
 * **Valid** attribution
@@ -128,7 +125,7 @@ On the click flood card page you can [see and adjust the detection status](/docs
 
 Download the Click flood report data sample
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * When tagged detection is selected they are reported in raw data reports, meaning, not in fraud reports.
 > * Tagging the click flood is on the app level and will prevent blocking or post-attribution implementation. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
@@ -235,7 +232,7 @@ Future Releases allow you to set the number of days you want future detection pa
 1. In the New Release window, from the dropdown box, select the number of days you want to mark new packages as tagged before they get implemented (default: 14 days, adjustable up to 14 days)
 2. Click the **Save**.
 
-![futrele.png](https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png)
+<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 > 📘 **Note**
 >
@@ -276,7 +273,7 @@ Tagging a detection on the App Detection Evaluation Card impacts all Protect360 
 
 On the App detection evaluation page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * When tagged detection is selected, they are reported in raw data reports, meaning not in fraud reports.
 > * Tagging the app detection evaluation is on the app level and will prevent blocking or post-attribution implementation of Protect360 logics. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
@@ -358,7 +355,7 @@ The Re-engagement hijacking page is broken into two sections.
     * Rate out of total attributions - the portion of re-engagement attributions out of all app’s attributions
   * Re-engagement detection by media source - The number of re-engagement hijacking detections for the top detected media sources
 
-![](https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png)
+<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -396,7 +393,7 @@ This section is further broken up into:
 
 * **In-app based detection by media source** - The number of installs by the top media sources.
 
-![](https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png)
+<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 
@@ -427,7 +424,7 @@ Detections are shown as one of the following:
 
 > 📘 **Note**
 >
-> For full setup, requirements, and detailed reporting, see [[Beta] Advanced Security Protect360 Module](/docs/beta-advanced-security-protect360-module).
+> For full setup, requirements, and detailed reporting, see <Anchor target="_blank" href="/marketers/docs/beta-advanced-security-protect360-module">[Beta] Advanced Security Protect360 Module</Anchor>.
 
 </Accordion>
 
@@ -491,7 +488,7 @@ Yes. In-app events that are connected to a tagged install by the same AppsFlyer 
 
 <Accordion title="Who can change, set up, or view FPS?">
 
-Only the admin can change the set up of FPS. FPS is visible according to the [permissions page](/docs/manage-data-access-permissions).
+Only the admin can change the set up of FPS. FPS is visible according to the <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">permissions page</Anchor>.
 
 </Accordion>
 

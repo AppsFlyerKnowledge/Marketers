@@ -1,6 +1,5 @@
 ---
 title: App list API for app owners
-excerpt: Retrieve active and pending apps associated with your AppsFlyer account.
 metadata:
   keywords:
     - Advertisers
@@ -22,11 +21,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011999877-App-list-API-for-app-owners
 ---
+**At a glance:** Retrieve active and pending apps associated with your AppsFlyer account.
+
 ![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
 
-If you are an ad network, use the [app list for ad networks](/partners/docs/app-list-api-for-ad-networks) API.
+If you are an ad network, use the <Anchor target="_blank" href="/partners/docs/app-list-api-for-ad-networks">app list for ad networks</Anchor> API.
 
-**Further reading**: [API list for advertisers](/docs/about-advertiser-apis)
+**Further reading**: <Anchor target="_blank" href="/marketers/docs/about-advertiser-apis">API list for advertisers</Anchor>
 
 ## Get app list API
 
@@ -38,7 +39,7 @@ The following sections include information necessary for using the API.
 
 <Accordion title="Get API list basics">
 
-<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>An admin user gets the token in the dashboard as follows: <a href="./managing-appsflyer-tokens">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token </a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in a JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to return, use follow-on pagination requests described in this article.</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Item</th><th><span>Description</span></th></tr></thead><tbody><tr><td rowspan="3">Request</td><td>HTTP method</td><td><code>GET</code></td></tr><tr><td>Path</td><td><span>https://hq1.appsflyer.com/api/mng/apps</span></td></tr><tr><td>Authorization header </td><td><ul><li>The mandatory authorization header contains a Bearer token. </li><li>An admin user gets the token in the dashboard as follows: <a href="./managing-appsflyer-tokens" target="_blank">The Admin goes to email drop-down list &gt; API tokens to get the V2.0 token</a></li></ul></td></tr><tr><td rowspan="3"> Response</td><td>Results</td><td>Return in a JSON</td></tr><tr><td>Request limit</td><td><ul><li>20 requests/minute</li><li>100 requests/day</li></ul></td></tr><tr><td>Record limit</td><td>1,000 records/request. If more than 1,000 records are to return, use follow-on pagination requests described in this article.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -68,15 +69,15 @@ A pagination mechanism, always operational, is implemented.
 
 * Returns up to 1,000 records per request (page).
 * Response JSONs contain the following pagination-related keys:
-  * **meta.total\_items**: The number of records to be returned by all pages combined. This represents the number of apps for which you have been granted the *capabilities*being queried.
+  * **meta.total\_items**: The number of records to be returned by all pages combined. This represents the number of apps for which you have been granted the *capabilities* being queried.
   * Pagination links (depicted in the JSON that follows) have the following keys:
     * **links.prev**: If there was a previous request: the request used to generate the previous page.
     * **links.self**: The current request: the request used to generate the current JSON (page)
-    * **links.next**: The request required to get the next page. If there is no *next*key, this is the last page.
+    * **links.next**: The request required to get the next page. If there is no *next* key, this is the last page.
 
 **Use one of the following pagination control methods:**
 
-* [Best practice] Use the *links* in the JSON: If the *links.next* key exists, use it to create a request to get the next page. Continue to do so until you receive a JSON without a*links.next* key*.*
+* [Best practice] Use the *links* in the JSON: If the *links.next* key exists, use it to create a request to get the next page. Continue to do so until you receive a JSON without a *links.next* key*.*
 * Programmatically implement *limit* and *offset* parameters in conjunction with the *total\_items* key.
 
 **Pagination links JSON example**
@@ -196,7 +197,7 @@ cURL --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?limit=1000
 | 200 | OK | **Symptom**: No data returns<br /><br />**Action**: Make sure the authentication token is in the bearer header. |
 | 400 | Bad request | See the message contained in the JSON |
 | 401 | Unauthorized | **Message**: Authorization token is malformed<br /><br />Make sure you have the correct token; token must have 700+ characters. |
-| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer [IP addresses are allowlisted](/docs/appsflyer-server-ip-address-ranges-allowlisting)</li><li>Make sure you use the most recently-issued token.</li><li>No data found: No apps found.</li></ul> |
+| 404 | Not found | <ul><li>Handle any network or firewall-related problems.</li><li>Make sure that AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-server-ip-address-ranges-allowlisting">IP addresses are allowlisted</Anchor></li><li>Make sure you use the most recently-issued token.</li><li>No data found: No apps found.</li></ul> |
 | 429 | Too many requests | Exceeded rate limitation |
 
 </Accordion>

@@ -1,8 +1,5 @@
 ---
 title: OneLink Smart Script overview
-excerpt: >-
-  Use OneLink Smart Script to convert and attribute your mobile website
-  visitors, coming from any source, into mobile app users.
 metadata:
   keywords:
     - OneLink
@@ -34,6 +31,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000677217-OneLink-Smart-Script-overview
 ---
+**At a glance:** Use OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
+
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
 ## About OneLink Smart Script
@@ -57,17 +56,17 @@ OneLink Smart Script solves these problems in that it:
 
 There are two versions of OneLink Smart Script:
 
-[**OneLink Smart Script V2 (recommended)**](/docs/set-up-smart-script-to-convert-web-visitors): If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be configured in the AppsFlyer UI, the developer work portion is easier, and it can also be set up using Google Tag Manager.
+<Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">**OneLink Smart Script V2 (recommended)**</Anchor>: If you are setting up OneLink Smart Script for the first time, this is the preferred version to use. It can be configured in the AppsFlyer UI, the developer work portion is easier, and it can also be set up using Google Tag Manager.
 
-[**OneLink Smart Script V1 (legacy)**](/docs/legacy-onelink-smart-script-v1-setup): If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2. 
+<Anchor target="_blank" href="/marketers/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (legacy)**</Anchor>: If you already have Onelink Smart Script set up, use the documentation for this version to maintain and edit this script. **Note**: Although not mandatory, consider migrating to V2. 
 
 > 📘 **Note**
 >
-> Not sure whether OneLink Smart Script is the right solution for you? [Compare](/docs/convert-your-mobile-web-visitors-to-app-users) OneLink Smart Script with other AppsFlyer web-to-app solutions.
+> Not sure whether OneLink Smart Script is the right solution for you? <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">Compare</Anchor> OneLink Smart Script with other AppsFlyer web-to-app solutions.
 
 ### Examples
 
-The examples in this section demonstrate how OneLink Smart Script is used to generate outgoing OneLink URLs that provide accurate attribution, or deep linking functionality. For use cases of campaign types with particular media sources, see [Use cases](/docs/set-up-smart-script-to-convert-web-visitors#use-cases).
+The examples in this section demonstrate how OneLink Smart Script is used to generate outgoing OneLink URLs that provide accurate attribution, or deep linking functionality. For use cases of campaign types with particular media sources, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#use-cases">Use cases</Anchor>.
 
 <div id="attribution" />
 
@@ -95,7 +94,7 @@ When she clicks the link, it redirects her to the hotel’s mobile website. Ther
 
 > 📘 **Note**
 >
-> The deep linking is in accordance with the app settings implemented by the app developers. [Learn more](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link).
+> The deep linking is in accordance with the app settings implemented by the app developers. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Learn more</Anchor>.
 
 </Accordion>
 

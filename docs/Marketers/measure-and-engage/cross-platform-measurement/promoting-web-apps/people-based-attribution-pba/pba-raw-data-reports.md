@@ -1,6 +1,5 @@
 ---
 title: PBA raw data reports
-excerpt: PBA raw data reports are available via Data Locker.
 metadata:
   keywords:
     - Data Locker
@@ -23,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001917778-PBA-raw-data-reports
 ---
+**At a glance**: PBA raw data reports are available via Data Locker.
+
 ## PBA raw data reports
 
 Use PBA raw data reports to analyze user journeys and actions.
@@ -34,7 +35,7 @@ PBA raw data report topics
 | Raw data report topic | Description |
 | --- | --- |
 | <span id="website-visits"></span>[Website visits](#website-visits-and-website-events) | <ul><li>Visits to the website.</li><li>Measure user exposure and engagement with web traffic campaigns.</li></ul> |
-| <span id="website-events"></span>[Website events](/docs/pba-website-attribution-dashboard) | <ul><li>Contain the actions performed by website visitors like subscribe or purchase.</li><li>Events are attributed to the last non-direct web visit occurring in the previous 30 days.</li><li>Attribution parameters associated with the event can include media source, media channel, campaign, and so on.</li><li>Use these parameters to optimize your marketing efforts.</li><li>Analyze user behavior per media source.</li><li>The values for these fields are determined through the attributed visit using [PBA media source attribution rules.](/docs/pba-media-source-attribution-rules)</li><li>The intent is to associate events with a specific website visit and not a specific page view.</li><li>Use this to find out which sources and campaigns drive users and what actions the users perform.</li></ul> |
+| <span id="website-events"></span><Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website events</Anchor> | <ul><li>Contain the actions performed by website visitors like subscribe or purchase.</li><li>Events are attributed to the last non-direct web visit occurring in the previous 30 days.</li><li>Attribution parameters associated with the event can include media source, media channel, campaign, and so on.</li><li>Use these parameters to optimize your marketing efforts.</li><li>Analyze user behavior per media source.</li><li>The values for these fields are determined through the attributed visit using <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source attribution rules.</Anchor></li><li>The intent is to associate events with a specific website visit and not a specific page view.</li><li>Use this to find out which sources and campaigns drive users and what actions the users perform.</li></ul> |
 
 ## Raw-data report fields
 
@@ -44,7 +45,7 @@ PBA raw data report topics
 
 #### Sample reports
 
-* Website events: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vTAWrfTDOJmY04jkFNd0OJ3TcQgPiybcMkdQF7XLmIt33HV09GFYy7KwsmWN3Z8TT2JhStf3uQHfH2E/pub?gid=1096347999&single=true&output=csv)
+* Website events: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAWrfTDOJmY04jkFNd0OJ3TcQgPiybcMkdQF7XLmIt33HV09GFYy7KwsmWN3Z8TT2JhStf3uQHfH2E/pub?gid=1096347999&single=true&output=csv">CSV</Anchor>
 * Website visits: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vTAWrfTDOJmY04jkFNd0OJ3TcQgPiybcMkdQF7XLmIt33HV09GFYy7KwsmWN3Z8TT2JhStf3uQHfH2E/pub?gid=432734495&single=true&output=csv)
 
 Raw data fields are populated in part from data originating in the mobile app user attribution link and app install event.
@@ -128,7 +129,7 @@ Raw data fields are populated in part from data originating in the mobile app us
 2. Select all the reports in the People-Based Attribution section.
 3. Click **Save configuration**.
 
-**To download reports, see** [**accessing Data Locker reports**](/docs/data-locker-for-marketers).
+**To download reports, see** <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">**accessing Data Locker reports**</Anchor>.
 
 **Data Locker** PBA raw data reports are made available in the h=23 folder.
 
@@ -146,8 +147,8 @@ Combine mobile app and website data.
 
 **Solution:**
 
-* Combine reports using [customer user ID](/docs/customer-user-id-field-cuid) (CUID)
-  * Use the same CUID for both mobile and [web](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) and combine reports using CUID as the key.
+* Combine reports using <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">customer user ID</Anchor> (CUID)
+  * Use the same CUID for both mobile and <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">web</Anchor> and combine reports using CUID as the key.
   * Then, combine reports using the CUID field
 * PBA cross-platform user identification:
   * PBA can determine that a web and a mobile user are the same person.
@@ -181,7 +182,7 @@ Use this procedure to:
 
 **Before you begin**:
 
-* [Install and set up Cyber-Duck.](/docs/data-locker-for-marketers#cyberduck)
+* <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#cyberduck">Install and set up Cyber-Duck.</Anchor>
 
 **To copy data using Cyber Duck:**
 
@@ -192,7 +193,7 @@ Use this procedure to:
 2. **Double-click** on a PBA report type and choose from web\_events, web\_to\_app, or web\_touch\_points.  
    The list of report dates available displays.
 3. **Right-click** on a given date.
-4. Select **Download to a specific location and complete the location.**  
+4. Select **Download to a specific location and complete the location.**   
    The files download.
 5. Repeat the above steps to copy data from other report types. Each report type and date must be stored in a different directory on your computer.
 
@@ -200,7 +201,7 @@ Use this procedure to:
 
 **Before you begin:**
 
-Install [Q](http://harelba.github.io/q/) on your computer.
+Install <Anchor target="_blank" href="http://harelba.github.io/q/">Q</Anchor> on your computer.
 
 **To combine the data in a CSV file using Q**:
 

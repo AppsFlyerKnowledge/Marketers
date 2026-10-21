@@ -14,7 +14,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/15323134852497-Platforms
 ---
-- [Promoting CTV apps](/docs/promoting-ctv-apps)
-- [Promoting Console apps](/docs/promoting-console-apps)
-- [Promoting Desktop apps](/docs/promoting-desktop-apps)
-- [Promoting Web apps](/docs/promoting-web-apps)
+- <Anchor target="_blank" href="/marketers/docs/promoting-ctv-apps">Promoting CTV apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/promoting-console-apps">Promoting Console apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/promoting-desktop-apps">Promoting Desktop apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/promoting-web-apps">Promoting Web apps</Anchor>

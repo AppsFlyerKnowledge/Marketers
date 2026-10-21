@@ -1,9 +1,5 @@
 ---
 title: Use the Web SDK Test page
-excerpt: >-
-  Use the Web SDK Test page to validate the Web SDK installation and event
-  recording in real time. Run it when you first integrate the SDK and whenever
-  you add or change an event.
 metadata:
   keywords:
     - SDK Test
@@ -21,6 +17,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/50118956978577-Use-the-Web-SDK-Test-page
 ---
+> **At a glance:** Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event.
+
 ## Overview
 
 The Web SDK Test page opens your website in a new browser tab with a dedicated test session. Every Web SDK activity in that tab, including page loads, events, and identity calls, streams live into the test page, where you can inspect each event and its properties. This lets you verify your implementation in minutes, without waiting for data to appear in reports.
@@ -37,8 +35,8 @@ Run a test whenever you first integrate the SDK or change your event setup.
 
 Before you run a test, make sure you have:
 
-* A web app in AppsFlyer. For more information, see [Create a web app in AppsFlyer](/docs/adding-an-app-to-appsflyer#web) in Onboard Web Performance Measurement.
-* The AppsFlyer Web SDK is deployed on the pages you want to test. For more information, see the [Integrate AppsFlyer Web SDK](/docs/integrate-appsflyer-web-sdk) section.
+* A web app in AppsFlyer. For more information, see <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Create a web app in AppsFlyer</Anchor> in Onboard Web Performance Measurement.
+* The AppsFlyer Web SDK is deployed on the pages you want to test. For more information, see the <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">Integrate AppsFlyer Web SDK</Anchor> section.
 
 ## Run a test
 
@@ -52,7 +50,9 @@ Once your prerequisites are in place, run a test as follows:
 4. Click **Start test**. Your website opens in a new browser tab with a dedicated test session. You don't need to do anything there.
 5. Return to the Web SDK Test page. Events from the test tab appear automatically in the **Live events** table as you browse and interact with your website.
 
-The test captures only activity from the browser tab it opens. Visiting your website directly without starting a test doesn't display events on this page.
+> 📘 **Note**
+>
+> The test captures only activity from the browser tab it opens. Visiting your website directly without starting a test doesn't display events on this page.
 
 ## View the Live events table
 

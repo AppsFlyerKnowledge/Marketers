@@ -1,8 +1,5 @@
 ---
 title: Adobe Launch SDK extension
-excerpt: >-
-  Send data to Adobe Launch SDK and AppsFlyer SDK with the single implementation
-  of AppsFlyer Adobe Launch SDK Extension.
 metadata:
   keywords:
     - SDK
@@ -29,13 +26,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000939097-Adobe-Launch-SDK-extension
 ---
+> **At a glance:** Send data to Adobe Launch SDK and AppsFlyer SDK with the single implementation of AppsFlyer Adobe Launch SDK Extension.
+
 ## Overview
 
 The Adobe Launch SDK is an integral part of the Adobe Experience Platform. Adobe Experience Platform helps businesses gather, consolidate, and analyze data from multiple apps and platforms. It allows business owners and developers to better understand customer behavior in order to optimize experience and content delivery. If your app implements both the Adobe Launch SDK and the AppsFlyer SDK, you can send data to both with a single implementation of **AppsFlyer Adobe Launch SDK Extension**. It reduces the overall complexity of your development process and makes for a cleaner and maintainable codebase.
 
-**Note**
-
-If you're using the Adobe Launch extension, there's no need for the standard [Adobe Analytics integration](/docs/adobe-analytics-integration-with-appsflyer).
+> 📘 **Note**
+>
+> **Note**
+>
+> If you're using the Adobe Launch extension, there's no need for the standard <Anchor target="_blank" href="/marketers/docs/adobe-analytics-integration-with-appsflyer">Adobe Analytics integration</Anchor>.
 
 ## Prerequisites
 
@@ -96,7 +97,7 @@ Install the following extensions in Adobe Launch:
 #### Installing Adobe Analytics extension
 
 1. Log in to Adobe Analytics.
-2. [Create a report suite](https://docs.adobe.com/help/en/analytics/admin/admin-console/create-report-suite.html).
+2. <Anchor target="_blank" href="https://docs.adobe.com/help/en/analytics/admin/admin-console/create-report-suite.html">Create a report suite</Anchor>.
 3. Log back into Adobe Launch.
 4. From the list of properties, click on the property that you created earlier.
 5. Click ***Extensions***.
@@ -110,7 +111,7 @@ Install the following extensions in Adobe Launch:
 2. Search for and install ***AppsFlyer SDK Extension***.
 3. Under ***AppsFlyer iOS App ID***, specify the iOS app ID that you got in the prerequisites step.
 4. Under ***AppsFlyer Dev Key*** specify the dev key that you got in the prerequisites step.
-5. Enable ***Send attribution data to Adobe Analytics***. Note that there are some [restrictions on sharing user-level data with 3rd-party analytics platforms](/docs/user-level-data-retention).
+5. Enable ***Send attribution data to Adobe Analytics***. Note that there are some <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">restrictions on sharing user-level data with 3rd-party analytics platforms</Anchor>.
 6. Click ***Save***.
 
 #### Install Profile and Mobile Core extension
@@ -164,25 +165,28 @@ To complete the SDK implementation, you need to publish the environment to a lib
 
 The Android Install Referrer improves attribution accuracy, protects from install fraud, and more. It is supported from AppsFlyer Android SDK version 4.8.6.
 
-**Note**
-
-Google deprecated the [BroadcastReceiver](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) in March 2020.
-
-* This change does not affect the app.
-* You may still need the BroadcastReceiver for out-of-store attribution. Check with the store where the app is listed to make sure.
-* Implementing the install referrer is now mandatory.
+> 📘 **Note**
+>
+> **Note**
+>
+> Google deprecated the [BroadcastReceiver](https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html) in March 2020.
+>
+> * This change does not affect the app.
+> * You may still need the BroadcastReceiver for out-of-store attribution. Check with the store where the app is listed to make sure.
+> * Implementing the install referrer is now mandatory.
 
 There are two ways to add the install referrer to your app:
 
 * Using Gradle (recommended)
 * Manually adding the install referrer
 
-<Accordion title="Adding the install referrer using Gradle">
+<Tabs>
+<Tab title="Adding the install referrer using Gradle">
 
-Add the Android Install Referrer as a dependency. You can find the latest version [here](https://mvnrepository.com/artifact/com.android.installreferrer/installreferrer/1.0).
+Add the Android Install Referrer as a dependency. You can find the latest version <Anchor target="_blank" href="https://mvnrepository.com/artifact/com.android.installreferrer/installreferrer/1.0">here</Anchor>.
 
 1.
-   ```
+   ```java
    dependencies {
    //make sure to use the latest SDK version: https://mvnrepository.com/artifact/com.appsflyer/af-android-sdk
    	implementation 'com.appsflyer:af-android-sdk:5.+'
@@ -194,15 +198,16 @@ Add the Android Install Referrer as a dependency. You can find the latest versio
 
 If you are using ProGuard and want to use Google's new referrer API, set the following ProGuard rule: `-dontwarn com.android.installreferrer`
 
-</Accordion>
+</Tab>
 
-<Accordion title="Manually adding the install referrer">
+<Tab title="Manually adding the install referrer">
 
-1. [Download the Install Referrer aar](https://mvnrepository.com/artifact/com.android.installreferrer/installreferrer/1.0)
-2. [Add it to the project](https://stackoverflow.com/questions/16682847/how-to-manually-include-external-aar-package-using-new-gradle-android-build-syst)
+1. <Anchor target="_blank" href="https://mvnrepository.com/artifact/com.android.installreferrer/installreferrer/1.0">Download the Install Referrer aar</Anchor>
+2. <Anchor target="_blank" href="https://stackoverflow.com/questions/16682847/how-to-manually-include-external-aar-package-using-new-gradle-android-build-syst">Add it to the project</Anchor>
 3. Add the following permission to the manifest: `com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE`
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -210,13 +215,13 @@ If you are using ProGuard and want to use Google's new referrer API, set the fol
 
 <Accordion title="2.4 Setting required permissions">
 
-Adding permissions helps increase the rate of [Probabilistic modeling attribution](/docs/appsflyer-attribution-model#probabilistic-modeling). It also allows the SDK to send more data like Wifi and carrier network data. You can find this data in [raw data reports](/docs/raw-data-reporting-overview) and use it for analysis and optimization of campaigns.
+Adding permissions helps increase the rate of <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">Probabilistic modeling attribution</Anchor>. It also allows the SDK to send more data like Wifi and carrier network data. You can find this data in <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data reports</Anchor> and use it for analysis and optimization of campaigns.
 
 #### Add Required Permissions
 
 1. Add the following permissions to AndroidManifest.xml:  
 
-   ```xml
+   ```html
    <uses-permission android:name="android.permission.INTERNET" />
    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -230,9 +235,11 @@ Adding permissions helps increase the rate of [Probabilistic modeling attributio
 
 Now you can start using the Adobe SDK extension to send data to Adobe and AppsFlyer.
 
-**Note**
-
-Currently, the Adobe Launch SDK extension only supports getting conversion data and sending events. However, when you add Adobe Launch SDK extension to your app, AppsFlyer SDK is also added. Therefore, any functionality currently missing from Adobe SDK extension can be implemented using AppsFlyer SDK.
+> 📘 **Note**
+>
+> **Note**
+>
+> Currently, the Adobe Launch SDK extension only supports getting conversion data and sending events. However, when you add Adobe Launch SDK extension to your app, AppsFlyer SDK is also added. Therefore, any functionality currently missing from Adobe SDK extension can be implemented using AppsFlyer SDK.
 
 <div id="sending-events" />
 
@@ -242,9 +249,10 @@ In-App events provide insight into what is happening in your app. We recommend t
 
 Adobe Launch SDK extension allows you to send in-app event data to both Adobe and AppsFlyer. You can then use Adobe Analytics to analyze user behavior and AppsFlyer to analyze ROI and LTV.
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
-```
+```java
 final Map<String,String> eventMap = new HashMap<>();
 eventMap.put("currency", "USD");
 eventMap.put("revenue", "200");
@@ -253,19 +261,20 @@ eventMap.put("freehand", "param");
 MobileCore.trackAction("af_purchase", eventMap);
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
-```
+```java
 [ACPCore trackAction:@"af_purchase data:@{@"revenue":@"200",@"currency":@"USD"];
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 Sending the events as specified in the code above creates an event in AppsFlyer dashboard called af\_purchase with a revenue of 200 USD. This event is also sent to and appears in Adobe Analytics.
 
-All [conversion data](https://dev.appsflyer.com/docs/direct-deep-linking-1) that is sent with events is prefixed by ***appsflyer***. See the following table for examples:
+All <Anchor target="_blank" href="https://dev.appsflyer.com/docs/direct-deep-linking-1">conversion data</Anchor> that is sent with events is prefixed by ***appsflyer***. See the following table for examples:
 
 | Prefixed conversion data variables |
 | --- |
@@ -290,11 +299,12 @@ Deep linking and deferred deep linking allow you to improve your user experience
 
 To get data from deep linking, implement the extension callbacks.
 
-<Accordion title="Android">
+<Tabs>
+<Tab title="Android">
 
 In the global application class, implement the following code:
 
-```
+```java
 AppsFlyerAdobeExtension.registerAppsFlyerExtensionCallbacks(new AppsFlyerExtensionCallbacksListener() {
 		@Override
 		public void onCallbackReceived(Map<String, String> callback) {
@@ -319,13 +329,13 @@ AppsFlyerAdobeExtension.registerAppsFlyerExtensionCallbacks(new AppsFlyerExtensi
 	});
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="iOS">
+<Tab title="iOS">
 
 In AppDelegate.m, implement the following code:
 
-```
+```objectivec
 [AppsFlyerAdobeExtension registerCallbacks:^(NSDictionary *dictionary) {
         NSLog(@"[AppsFlyerAdobeExtension] Received callback: %@", dictionary);
         if([[dictionary objectForKey:@"callback_type"] isEqualToString:@"onConversionDataReceived"]){
@@ -344,7 +354,8 @@ In AppDelegate.m, implement the following code:
     }];
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 

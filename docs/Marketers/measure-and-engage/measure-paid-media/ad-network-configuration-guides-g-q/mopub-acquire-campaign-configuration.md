@@ -1,11 +1,5 @@
 ---
 title: MoPub Acquire campaign configuration
-excerpt: >-
-  MoPub Acquire (formerly Crossinstall, an X Ads company), is an AppsFlyer
-  integrated partner. MoPub Acquire is a mobile-only demand-side platform
-  specializing in playable ads at scale. In addition to click-based mobile
-  attribution, MoPub Acquire also offers cost and view-through attribution,
-  which you can record with AppsFlyer.
 metadata:
   keywords:
     - CrossInstall
@@ -28,7 +22,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211187263-MoPub-Acquire-campaign-configuration
 ---
-![MoPub Acquire, a Twitter Company](https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png)
+**At a glance:** MoPub Acquire (formerly Crossinstall, an X Ads company), is an AppsFlyer integrated partner. MoPub Acquire is a mobile-only demand-side platform specializing in playable ads at scale. In addition to click-based mobile attribution, MoPub Acquire also offers cost and view-through attribution, which you can record with AppsFlyer.
+
+<Image alt="MoPub Acquire, a Twitter Company" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="104px" />
 
 ## Setting up MoPub Acquire
 
@@ -41,8 +37,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -53,7 +49,7 @@ The Integration tab is divided into different sections as described below.
 ### Activate partner
 
 **To enable the integration of this partner**, turn on **Activate partner**.  
-The toggle must be on for as long as you work with the partner. Learn more about [partner activation](/docs/partner-activation-deactivation#activate-a-partner-integration).
+The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
 
 **Enable View-Through attribution**
 
@@ -72,13 +68,13 @@ In this section, you can map your AppsFlyer events with MoPub Acquire via postba
 **To configure in-app events postback:**
 
 1. Turn **In-app event postback** on.
-2. Set the **In-app event postback window** (read more about[in-app event postback window configuration](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+2. Set the **In-app event postback window** (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).
 3. Click **Add event** to add an SDK event to the list.
 4. Complete the parameters required:
 
 | Parameter name | Description |
 | --- | --- |
-| SDK event name | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about [custom event mapping](/docs/in-app-event-postback-configuration#custom-events). |
+| SDK event name | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server-to-server events.  <br />**Tip**: Don't see the event you are looking for? Type in its SDK Event Name, click **Create custom**, and map normally. Read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">custom event mapping</Anchor>. |
 | Sending option | Select the sending option for the event:<ul><li>**Only events attributed to this partner** for events coming **only** from users attributed to this partner.</li><li>**Events attributed to any partner or organic** to have your entire user base available to be reported to the partner.</li></ul> |
 | Send revenue | <ul><li>**No values & no revenue:** sends only the event itself without the event value.</li><li>**Values & no revenue:** sends all the parameters excluding the revenue value.</li><li>**Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).</li></ul> |
 
@@ -104,12 +100,12 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameter:** af\_adset
 * **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns MoPub Acquire.  
   **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about [**AppsFlyer's Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
 ### Click-through attribution
 
@@ -117,7 +113,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ### Click attribution link
 
@@ -131,7 +127,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 **Attribution link parameter:** af\_viewthrough\_lookback
 
-More details about the [view-through attribution here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
 ### Impressions attribution link
 
@@ -143,13 +139,13 @@ The impression attribution link contains similar attribution data to the click r
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -165,7 +161,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 <Accordion title="Permissions tab">
 
-In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. [Learn what permission can you give to MoPub Acquire](/docs/set-up-an-integrated-partner#permissions-tab).
+In this tab, you can select the permissions to grant MoPub Acquire. Note that even if attribution is disabled for MoPub Acquire, the permissions tab is active and you can grant control to MoPub Acquire. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">Learn what permission can you give to MoPub Acquire</Anchor>.
 
 </Accordion>
 

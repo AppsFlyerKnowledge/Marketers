@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Configure collaboration measurement
-excerpt: >-
-  Learn how to configure DCP to perform SKU-level attribution based on the
-  conversion, engagement, and campaign mapping data.
 metadata:
   keywords:
     - Marketers
@@ -23,14 +20,16 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32147174933905-Data-Collaboration-Platform-DCP-Configure-collaboration-measurement
 ---
+**At a glance:** Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.
+
 ## Overview
 
-After [preparing the conversion, engagement, and campaign-mapping](/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement) data, you can configure DCP to use them for measurement and attribution:
+After <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement">preparing the conversion, engagement, and campaign-mapping</Anchor> data, you can configure DCP to use them for measurement and attribution:
 
 1. [**Define campaign type**](#select-campaign-type-on-site-off-site-or-both) – Choose on-site, off-site, or combined. This determines how DCP processes your data and sets the required configuration tasks.
 2. [**Assign tasks**](#assign-configuration-task) – The owner assigns each configuration task to the collaborator with access to the relevant data.
 3. [**Configure tasks**](#configure-on-site-and-off-site-campaign-measurement) – Collaborators configure conversions, engagements, and campaign mapping. This includes setting up on-site and off-site campaigns so all data is connected, mapped, and ready for attribution.
-4. [**Run and manage measurements**](/docs/data-collaboration-platform-dcp-run-and-manage-measurement) - Run measurements live or historical, duplicate them, re-run them, or change their scope.
+4. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-run-and-manage-measurement">**Run and manage measurements**</Anchor> - Run measurements live or historical, duplicate them, re-run them, or change their scope.
 
 ## Start the measurement setup
 
@@ -46,12 +45,12 @@ To start the measurement setup, follow these steps:
 
 ## Select campaign type: on-site, off-site, or both
 
-Because on-site and off-site campaign types differ by where the conversion occurs and how attribution is handled, the collaboration owner must specify the campaign type before configuring collaboration measurement. For more information, see:[On-site vs. Off-site campaign measurement](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement).
+Because on-site and off-site campaign types differ by where the conversion occurs and how attribution is handled, the collaboration owner must specify the campaign type before configuring collaboration measurement. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">On-site vs. Off-site campaign measurement</Anchor>.
 
 To select the campaign type, follow these steps:
 
 1. [Start the measurement setup](#start-the-measurement-setup).
-2. On the **Create Measurement** page, choose  ![on-site icon.png](https://files.readme.io/c9ff0bb1e2c31527ee38a9403a6180e3ecd4c3ad105935fb59ed14c2474f6039-32148924980113.png) **On-site, ![off-site icon.png](https://files.readme.io/6de5841985237de221c74d427ad06f719572000aafe8077c7cef64e53ee8caf5-32156666763921.png) Off-site**, or both. Continue to **one** of the following:
+2. On the **Create Measurement** page, choose  <Image alt="on-site icon.png" src="https://files.readme.io/c9ff0bb1e2c31527ee38a9403a6180e3ecd4c3ad105935fb59ed14c2474f6039-32148924980113.png" width="3.27%" /> **On-site, <Image alt="off-site icon.png" src="https://files.readme.io/6de5841985237de221c74d427ad06f719572000aafe8077c7cef64e53ee8caf5-32156666763921.png" width="3.3%" /> Off-site**, or both. Continue to **one** of the following:
    * [Configure on-site campaign](#configure-on-site-and-off-site-campaign-measurement),
    * [Configure off-site campaign](#configure-offsite-campaign-measurement),
    * [Configure a combined on-site and off-site campaign](#configure-combined-onsite-and-offsite-campaign-measurement).
@@ -74,7 +73,7 @@ To assign any of the above tasks, follow the steps below:
    * **Campaigns task:** Assign to the collaborator whose platform hosts conversions.
    * **Engagements task:** Assign to the collaborator where user engagement occurs.
    * **Media partners task:** Assign to the collaborator whose media partner account is used for off-site campaigns
-   * **Lookback windows task**– Automatically assigned to the collaboration owner. You may optionally assign the other collaborator.
+   * **Lookback windows task** – Automatically assigned to the collaboration owner. You may optionally assign the other collaborator.
 
 </Accordion>
 
@@ -103,13 +102,13 @@ Configure the campaign measurement setup in Measurement settings. Use the steps 
 
 <Accordion title="Configure on-site campaign measurement">
 
-To set up an [on-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns), follow these steps:
+To set up an <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns">on-site campaign</Anchor>, follow these steps:
 
 1. [Start the measurement setup](#start-the-measurement-setup).
-2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
-3. [Set up the conversions task](/docs/set-up-the-conversions-task)
-4. [Set up the engagements task](/docs/set-up-the-engagements-task)
-5. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
+2. <Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Set up the campaigns task</Anchor>
+3. <Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task">Set up the conversions task</Anchor>
+4. <Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Set up the engagements task</Anchor>
+5. <Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Set up the lookback windows task</Anchor>
 
 </Accordion>
 
@@ -117,13 +116,13 @@ To set up an [on-site campaign](/docs/data-collaboration-platform-dcp-collaborat
 
 <Accordion title="Configure off-site campaign measurement">
 
-To set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns), follow these steps:
+To set up an <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site campaign</Anchor>, follow these steps:
 
 1. [Start the measurement setup](#start-the-measurement-setup).
-2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
-3. [Set up the conversions task](/docs/set-up-the-conversions-task)
-4. [Set up the media partners task](/docs/set-up-the-media-partners-task)
-5. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
+2. <Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Set up the campaigns task</Anchor>
+3. <Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task">Set up the conversions task</Anchor>
+4. <Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Set up the media partners task</Anchor>
+5. <Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Set up the lookback windows task</Anchor>
 
 </Accordion>
 
@@ -131,14 +130,14 @@ To set up an [off-site campaign](/docs/data-collaboration-platform-dcp-collabora
 
 <Accordion title="Configure combined on-site and off-site campaign measurement">
 
-To set up a [combined on-site and off-site campaign](/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns), follow these steps:
+To set up a <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">combined on-site and off-site campaign</Anchor>, follow these steps:
 
 1. [Start the measurement setup](#start-the-measurement-setup).
-2. [Set up the campaigns task](/docs/set-up-the-campaigns-task)
-3. [Set up the conversions task](/docs/set-up-the-conversions-task)
-4. [Set up the engagements task](/docs/set-up-the-engagements-task)
-5. [Set up the media partners task](/docs/set-up-the-media-partners-task)
-6. [Set up the lookback windows task](/docs/set-up-the-lookback-windows-task)
+2. <Anchor target="_blank" href="/marketers/docs/set-up-the-campaigns-task">Set up the campaigns task</Anchor>
+3. <Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task">Set up the conversions task</Anchor>
+4. <Anchor target="_blank" href="/marketers/docs/set-up-the-engagements-task">Set up the engagements task</Anchor>
+5. <Anchor target="_blank" href="/marketers/docs/set-up-the-media-partners-task">Set up the media partners task</Anchor>
+6. <Anchor target="_blank" href="/marketers/docs/set-up-the-lookback-windows-task">Set up the lookback windows task</Anchor>
 
 </Accordion>
 

@@ -1,9 +1,5 @@
 ---
 title: Apply Aggregated Advanced Privacy framework
-excerpt: >-
-  Advertisers use the Aggregated Advanced Privacy (AAP) framework to control
-  which attribution data is made available to partners and ad networks via the
-  AppsFlyer platform.
 metadata:
   keywords:
     - Advertisers
@@ -29,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018515798-Apply-Aggregated-Advanced-Privacy-framework
 ---
+**At a glance:** Advertisers use the Aggregated Advanced Privacy (AAP) framework to control which attribution data is made available to partners and ad networks via the AppsFlyer platform.
+
 ## Aggregated Advanced Privacy (AAP) framework
 
 The AppsFlyer Aggregated Advanced Privacy (AAP) framework prevents tracking across apps and websites owned by different companies, and the ability to uniquely identify a user or device. AAP utilizes the Apple App Tracking Transparency privacy levels as a minimum benchmark for its privacy-preserving thresholds.
@@ -48,13 +46,13 @@ If AAP is on, the raw data is affected, and some fields are restricted or unavai
 * Push API
 * Dashboard export page
 * Postbacks to networks
-* [Get conversion data (GCD) API](https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking) in the context of the client-side user-level data API.
+* <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#legacy-use-only-gcd-api-for-deep-linking">Get conversion data (GCD) API</Anchor> in the context of the client-side user-level data API.
 
 Data availability is affected when AAP is on as follows:
 
-* **Attribution data and fraud (Protect360):** [Some attribution fields are restricted or not available.](/docs/about-raw-data-identifier-restrictions)
-* **Click, impression, and blocked clicks (fraud) data:** [User and device-related identifiers](/docs/about-raw-data-identifier-restrictions#identifier-restriction) aren't available.
-* **Deferred deep linking**: If you implement deferred deep linking in paid media, use the [unified deep linking API (UDL).](https://dev.appsflyer.com/hc/docs/unifieddeeplink) The legacy API, which uses GCD, can't be used in the context of non-consenting users. In the case of owned media, deferred deep linking for owned media is supported via GCD and the most recent deferred deep linking API.
+* **Attribution data and fraud (Protect360):** <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">Some attribution fields are restricted or not available.</Anchor>
+* **Click, impression, and blocked clicks (fraud) data:** <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#identifier-restriction">User and device-related identifiers</Anchor> aren't available.
+* **Deferred deep linking**: If you implement deferred deep linking in paid media, use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">unified deep linking API (UDL).</Anchor> The legacy API, which uses GCD, can't be used in the context of non-consenting users. In the case of owned media, deferred deep linking for owned media is supported via GCD and the most recent deferred deep linking API.
 
 ## Data availability principles in Aggregated Advanced Privacy
 
@@ -65,7 +63,7 @@ When AAP applies to a given user's data, data availability depends on that user'
 * **User-level attribution data:** Data records containing device-level identifiers tied to attribution at the user level
 * **Limited attribution data for advertisers:**
   * Available: Device-level identifiers. (IDFA is available if user consent is given.)
-  * Unavailable: Attribution parameters received via publisher attribution link (for example, `pid` and `c`). [List of fields restricted and unavailable to advertisers](/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields) AKA restricted media source.
+  * Unavailable: Attribution parameters received via publisher attribution link (for example, `pid` and `c`). <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#unavailable-attribution-fields">List of fields restricted and unavailable to advertisers</Anchor> AKA restricted media source.
 * **Limited attribution data for partners:**
   * Available: Aggregated campaign details.
   * Unavailable: User-level data that can help identify the user such as AppsFlyer ID, Custom data, Customer user ID (CUID), Click ID, IDFA, IDFV, User-agent, and IP address.
@@ -74,7 +72,7 @@ The terms defined are used in the figure and sections that follow to describe th
 
 ![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
 ### Paid and owned media data availability
 
@@ -164,7 +162,7 @@ As previously stated, the AAP setting overrides the Advanced Privacy (AP) settin
 
 #### **Postbacks to ad network partners**
 
-[AAP affects ad networks](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks) in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
+<Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">AAP affects ad networks</Anchor> in relation to data shared with them and is aligned with the AAP principles that apply to advertisers in the context of an ad network. Data shared with ad networks is via postbacks which differ between the attributed ad network and the unattributed ad network.
 
 Data sharing rules described apply to a given ad network if either of the following toggles is on:
 
@@ -184,11 +182,11 @@ The various user consent scenarios and postback types used are illustrated in th
 
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
 #### **Postbacks for unattributed partners**
 
-Unattributed postbacks are sent to a network when the sending option in the integrated partner's integration tab is set to *all media sources, including organic*and that partner is not attributed to the event as illustrated in the figure that follows.
+Unattributed postbacks are sent to a network when the sending option in the integrated partner's integration tab is set to *all media sources, including organic* and that partner is not attributed to the event as illustrated in the figure that follows.
 
 ![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
 
@@ -196,7 +194,7 @@ The various user consent scenarios and postback type used are illustrated in the
 
 ![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
 </Accordion>
 
@@ -217,7 +215,7 @@ The various user consent scenarios and postback type used are illustrated in the
 
 ![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
 
-Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See [here](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns) for more information.
+Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
 </Accordion>
 
@@ -245,8 +243,8 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Advanced Privacy guide & postback macros for ad networks](/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks)
+> * <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy guide & postback macros for ad networks</Anchor>
 
 <div data-zendesk-anchors="aggregated-advanced-privacy-framework=aggregated-advanced-privacy-aap-framework h_01HDPDE0H3SYFWBHK59HBV2P6N=aggregated-advanced-privacy-aap-framework aapimpacted-features=aap-impacted-features h_01HDPDE0H339BPACN235V70MWW=aap-impacted-features h_01HDPDE0H3QBE60DVBZ1MWNB9N=data-availability-principles-in-aggregated-advanced-privacy h_01HDPDE0H326EXNCQHPVJWXK3H=paid-and-owned-media-data-availability h_01HDPDE0H3TBDSXCNW5Q3E1Q7P=paid-media h_01HDPDE0H3SACYAV19WQD9TCQ3=paid-media-data-availability-by-att-status h_01HDPDE0H4M4XPE1C54K284BGW=owned-media controlling-aap=controlling-advanced-aggregated-privacy h_01HDPDE0H4VQC2DWAV68Q9VDVQ=controlling-advanced-aggregated-privacy h_01HDPDE0H4BHG114REGTWCDBP9=aap-central-switch h_01HDPDE0H4SC810EBK7ZGQ02K0=aap-enabled h_01HKHPGQ1R6HZEXSRTX7ATVWE9=aap-disabled h_01HDPDE0H4FRDXWRCYAWTPZZWE=partner-advanced-privacy-switch 01HKHPEBBFGQ5ZX4J6G50GEN64=advanced-aggregated-privacy-implications-for-your-partners h_01HDPDE0H4PDJ4TC02TED0DB8P=ad-networks h_01HDPDE0H47ENYTWRVFPX0VTZC=postbacks-to-ad-network-partners h_01HDPDE0H4B01YG577QZCG7TA7=postbacks-for-attributed-ad-networks h_01HDPDE0H63ZMV255SN7EKDRMV=postbacks-for-unattributed-partners h_01HDPDE0H67T1XFTEB2N0NN6YN=analytics-partners h_01HDPDE0H6AM91W49W2G2Z94DM=agencies h_01HDPDMX05ZZCAMW4TTWF4M4YN=see-also" />

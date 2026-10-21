@@ -1,10 +1,5 @@
 ---
 title: Implement Privacy Manifest in your app
-excerpt: >-
-  At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app
-  developers are able to provide more accurate descriptions of their apps
-  privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer
-  SDK and the details are explained below.
 metadata:
   keywords:
     - Developers
@@ -26,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21677433322641-Implement-Privacy-Manifest-in-your-app
 ---
+**At a glance:** At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below.
+
 ## Background
 
 With Privacy Manifests, an app developer will be able to create a record of the categories of data that it collects through its app independently and through its use of third-party dependencies, such as third-party SDKs used by the app. This information helps app developers accurately represent privacy practices in their apps including through the nutrition labels they provide to their users.
@@ -34,11 +31,11 @@ In many cases, app developers are not aware of what data third-party SDKs are co
 
 ### What are nutrition labels?
 
-Nutrition Labels provide information about an apps' privacy practices in an easy-to-read and understandable format. End users have more transparency into what data the app is collecting and for what purpose. For more information on Nutrition Labels see [here](/docs/preparing-for-the-app-store-review-nutrition-labels).
+Nutrition Labels provide information about an apps' privacy practices in an easy-to-read and understandable format. End users have more transparency into what data the app is collecting and for what purpose. For more information on Nutrition Labels see <Anchor target="_blank" href="/marketers/docs/preparing-for-the-app-store-review-nutrition-labels">here</Anchor>.
 
 ## What is in the AppsFlyer Privacy Manifest?
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > In addition to the AppsFlyer SDK, you will have to determine your own data collection, Required Reason API, and usage in your app or other SDKs and report that information in the Nutrition Labels
 
@@ -67,10 +64,10 @@ Following are the Data Types collected by the AppsFlyer SDK, that are included i
 
 ### Required Reason APIs
 
-Apple provided a list of APIs that require reasoning for their use. Apps and SDKs that use these APIs should detail them in the Required Reson API section of the Privacy Manifest. These APIs are divided into categories based on their functionality and the information they provide according to [Apple’s list of topics.](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api?language=objc) These are the APIs that are included in the AppsFlyer SDK version 6.14.0 Privacy Manifest:
+Apple provided a list of APIs that require reasoning for their use. Apps and SDKs that use these APIs should detail them in the Required Reson API section of the Privacy Manifest. These APIs are divided into categories based on their functionality and the information they provide according to <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api?language=objc">Apple’s list of topics.</Anchor> These are the APIs that are included in the AppsFlyer SDK version 6.14.0 Privacy Manifest:
 
-* [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393)
-* [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401)
+* <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393">File Timestamp APIs</Anchor>
+* <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401">User defaults APIs</Anchor>
 
 To clarify the usage of Required Reason APIs, app developers will be required to declare the API category and specify the reasons for using the API. Below are the AppsFlyer APIs and their usage.
 
@@ -80,8 +77,8 @@ To clarify the usage of Required Reason APIs, app developers will be required to
 
 | API Category | API Category Type | Reason | Comments |
 | --- | --- | --- | --- |
-| [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the [NSFileCreationDate](https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc) and [NSFileModificationDate](https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc) APIs to determine the app installation date and the app update date. |
-| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
+| <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393">File Timestamp APIs</Anchor> | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the <Anchor target="_blank" href="https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc">NSFileCreationDate</Anchor> and <Anchor target="_blank" href="https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc">NSFileModificationDate</Anchor> APIs to determine the app installation date and the app update date. |
+| <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401">User defaults APIs</Anchor> | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
 
 </Accordion>
 
@@ -91,9 +88,9 @@ To clarify the usage of Required Reason APIs, app developers will be required to
 
 | API Category | API Category Type | Reason | Comments |
 | --- | --- | --- | --- |
-| [File Timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the [NSFileCreationDate](https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc) and [NSFileModificationDate](https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc) APIs to determine the app installation date and the app update date. |
-| [System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394) | NSPrivacyAccessedAPICategorySystemBootTime | 35F9.1 | Measure SDK performance (time it took to execute a request etc.) |
-| [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
+| <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393">File Timestamp APIs</Anchor> | NSPrivacyAccessedAPICategoryFileTimestamp | C617.1 | The SDK is using the <Anchor target="_blank" href="https://developer.apple.com/documentation/foundation/nsfilecreationdate?language=objc">NSFileCreationDate</Anchor> and <Anchor target="_blank" href="https://developer.apple.com/documentation/foundation/nsfilemodificationdate?language=objc">NSFileModificationDate</Anchor> APIs to determine the app installation date and the app update date. |
+| <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394">System boot time APIs</Anchor> | NSPrivacyAccessedAPICategorySystemBootTime | 35F9.1 | Measure SDK performance (time it took to execute a request etc.) |
+| <Anchor target="_blank" href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401">User defaults APIs</Anchor> | NSPrivacyAccessedAPICategoryUserDefaults | CA92.1<br /><br />notionvc: 8aa85ca2-5648-4caa-9cac-b5b5df9ac883 | The SDK stores data that is needed for its operation. For example - maintaining how many times the app was launched. |
 
 For your convenience, you can copy the following code snippet which includes the Required Reasons above, and paste it within your PrivacyInfo.xcprivacy file.
 

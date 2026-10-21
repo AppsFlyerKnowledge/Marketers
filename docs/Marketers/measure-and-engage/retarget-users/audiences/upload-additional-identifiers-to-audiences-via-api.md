@@ -1,10 +1,5 @@
 ---
 title: Upload additional identifiers to Audiences via API
-excerpt: >-
-  Use the Audiences Additional Identifiers API to bulk upload user identifiers
-  from your internal systems (such as BI and CRM) to AppsFlyer Audiences,
-  enabling broader audience communication to relevant partners based on these
-  identifiers.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +23,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4411552670993-Upload-additional-identifiers-to-Audiences-via-API
 ---
+**At a glance:** Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers.
+
 ## About the API
 
 The Audiences Additional Identifiers API can be used to add the following user identifiers from your internal systems to AppsFlyer Audiences:
@@ -36,13 +33,13 @@ The Audiences Additional Identifiers API can be used to add the following user i
 * Hashed telephone number
 * Hashed E164 telephone number
 
-You can then choose to send these identifiers to your Audiences partners (subject to your [account-level user identifier policy](/docs/audiences-user-identifier-policy)), allowing them to more accurately identify your target audiences. Note that not all advertising partners support all identifiers.
+You can then choose to send these identifiers to your Audiences partners (subject to your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor>), allowing them to more accurately identify your target audiences. Note that not all advertising partners support all identifiers.
 
 ### When should I use this API?
 
-This API was designed to be used when you want to upload a large volume of identifier data. Typically, this means data collected over time (for example, hashed emails collected from all users of an app over the last 12 months). For real-time, individual updates of identifiers from specific devices, [configure additional identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation) in the AppsFlyer SDK or S2S-mobile API.
+This API was designed to be used when you want to upload a large volume of identifier data. Typically, this means data collected over time (for example, hashed emails collected from all users of an app over the last 12 months). For real-time, individual updates of identifiers from specific devices, <Anchor target="_blank" href="/marketers/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">configure additional identifiers</Anchor> in the AppsFlyer SDK or S2S-mobile API.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > **Encryption:** All additional identifier values **must** be encrypted with SHA256 hashing. Unencrypted identifiers will not be processed.
 >
@@ -55,7 +52,7 @@ This API was designed to be used when you want to upload a large volume of ident
 
 ## Authentication
 
-The request must include an HTTP header containing your account's [AppsFlyer V2.0 API token](/docs/managing-appsflyer-tokens). Ask your account admin to obtain this token from the AppsFlyer dashboard.
+The request must include an HTTP header containing your account's <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer V2.0 API token</Anchor>. Ask your account admin to obtain this token from the AppsFlyer dashboard.
 
 ## API Specifications and sample code
 
@@ -65,7 +62,7 @@ The request must include an HTTP header containing your account's [AppsFlyer V2.
 
 <span id="01ECF4ZD0T03JBV8DDH25MM01W"></span>**API request URL**
 
-```
+```json
 https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
 ```
 
@@ -119,7 +116,7 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 > 📘 **Notes**
 >
 > * Different advertising partners support different phone number formats. So, if you choose to add a phone number, sending both identifiers is recommended: *phone\_number\_sha256* and *phone\_number\_e164\_sha256*.
-> * `customer_user_id` is the same identifier referred to elsewhere in this section as CUID (Customer User ID). When `key_type` is `customer_user_id`, use the account's CUID value as the `key_value`. See [Audiences user identifier policy](/docs/audiences-user-identifier-policy) for more on this and other supported identifiers.
+> * `customer_user_id` is the same identifier referred to elsewhere in this section as CUID (Customer User ID). When `key_type` is `customer_user_id`, use the account's CUID value as the `key_value`. See <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">Audiences user identifier policy</Anchor> for more on this and other supported identifiers.
 
 **Restrictions**
 
@@ -130,7 +127,7 @@ The following restrictions apply to the **Add/modify identifiers** request:
 
 **Sample request to add identifiers**
 
-```
+```json
 HTTP PUT
 body:
 {
@@ -160,7 +157,7 @@ body:
 
 **API request URL**
 
-```
+```json
 https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{app-id}
 ```
 
@@ -208,7 +205,7 @@ The `{data}` object can include a maximum of 4,000 rows (key\_values) per reques
 
 **Sample request to remove identifiers**
 
-```
+```json
 HTTP PUT
 body:
 {
@@ -240,7 +237,7 @@ body:
 | 400 | Request must have ‘data’ with at least 1 element | Data list can not be empty. |
 | 400 | Request ‘data’ should not exceed the size of 4000 in a single request | Data list can include a maximum of 4,000 rows. |
 | 400 | Request data has too many invalid ‘data’ elements | More than 10% of the data to modify is not valid according to the specification. |
-| 404 | AppsFlyer - Page Not Found | Check that:<ul><li>The `{app-id}` as specified in the API request URL is correct.</li><li>The HTTP header contains the correct [AppsFlyer V2.0 API token](/docs/managing-appsflyer-tokens). Your account admin can obtain this token from the AppsFlyer dashboard.</li></ul> |
+| 404 | AppsFlyer - Page Not Found | Check that:<ul><li>The `{app-id}` as specified in the API request URL is correct.</li><li>The HTTP header contains the correct <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer V2.0 API token</Anchor>. Your account admin can obtain this token from the AppsFlyer dashboard.</li></ul> |
 
 **Response examples**
 

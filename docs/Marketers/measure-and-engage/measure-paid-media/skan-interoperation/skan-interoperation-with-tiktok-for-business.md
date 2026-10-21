@@ -1,9 +1,5 @@
 ---
 title: SKAN interoperation with TikTok for Business
-excerpt: >-
-  SKAN interoperability enables TikTok to share SKAN postbacks with AppsFlyer
-  and enables AppsFlyer to share your conversion value measurement mapping with
-  TikTok.
 metadata:
   keywords:
     - Advertisers
@@ -26,19 +22,21 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018499098-SKAN-interoperation-with-TikTok-for-Business
 ---
+**At a glance:** SKAN interoperability enables TikTok to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with TikTok.
+
 ## SKAN interoperability: AppsFlyer &lt;-> TikTok
 
 If you work with multiple ad network partners, the best practice is to set it up in AppsFlyer. By doing so, SKAN performance metrics, enriched with other metrics like cost, are available via the AppsFlyer platform.
 
 ### Scope of SKAN interoperability with TikTok
 
-The interoperation allows AppsFlyer and TikTok to share the SKAN conversion value mapping (set in AppsFlyer). This enables both sides to provide performance metrics. When enabling the TikTok for Business integration (either the legacy or the [Advanced SRN](/docs/tiktok-for-business-advanced-srn-integration-setup) integration), AppsFlyer provides TikTok events for optimization purposes. See the [list of enrichment fields](/docs/skan-integrated-partners-list) supported by TikTok.
+The interoperation allows AppsFlyer and TikTok to share the SKAN conversion value mapping (set in AppsFlyer). This enables both sides to provide performance metrics. When enabling the TikTok for Business integration (either the legacy or the <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">Advanced SRN</Anchor> integration), AppsFlyer provides TikTok events for optimization purposes. See the <Anchor target="_blank" href="/marketers/docs/skan-integrated-partners-list">list of enrichment fields</Anchor> supported by TikTok.
 
 ### TikTok for Business guidance
 
-In configuring your TikTok for Business campaigns, read TikTok's [iOS 14 Impact & Guidance](https://ads.tiktok.com/help/article?aid=10000858) and take into account the following:
+In configuring your TikTok for Business campaigns, read TikTok's <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10000858">iOS 14 Impact & Guidance</Anchor> and take into account the following:
 
-* Make sure that the [AppsFlyer SDK](/docs/sdk-integration-overview) is up to date.
+* Make sure that the <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">AppsFlyer SDK</Anchor> is up to date.
 * [Configure a TikTok App ID](https://ads.tiktok.com/help/article?aid=10001060) for each app you advertise on TikTok for Business.
   * TikTok App ID is a unique code generated in TikTok Ads Manager and is used by TikTok to confirm advertiser ownership of their apps.
   * Although not mandatory, it is recommended to enter your App ID of all your apps.  
@@ -77,11 +75,11 @@ Interoperation is achieved via settings in the AppsFlyer and TikTok for Business
 | Step | Action | Details |
 | --- | --- | --- |
 | <span id="1"></span>1 | App prerequisites | <ul><li>Integrate the latest AppsFlyer SDK into your app.</li></ul> |
-| <span id="2"></span>2 | SKAN settings review | Set up and turn on AppsFlyer [SKAN solution.](/docs/skadnetwork-skan-solution-guide)<br /><br />**To view SKAN settings**:<ol><li>In AppsFlyer, go to **Settings** > **SKAN Conversion Studio**.</li><li>Click options (**⋮**), and make sure that **SKAN measurement** is on.<br />![skan-settings.png](https://files.readme.io/87c05b45d44f266785b3d8df57267fb3103543c9bae9b7764e58867e38c8dcdf-4406446668049.png)</li><li>Select your preferred measurement mode.<br />Learn more about [SKAN Conversion Studio](/docs/skan-conversion-studio).</li><li>Make a note of the exact event names set. You'll need them in the next step.</li></ol> |
-| <span id="3"></span>3 | In-app event mapping | Review, and if necessary, make changes to your TikTok for Business in-app event mappings.<br /><br />**To view and set in-app event mappings**:<ol><li>In AppsFlyer, Go to **Settings** > **Active Integrations**.</li><li>Search for and select **TikTok for Business**.</li><li>From the **Integration** tab, make sure the [integration with TikTok for Business is activated and configured](/docs/tiktok-for-business-advanced-srn-integration-setup).</li><li>In the **In-app events postback section:**<ol><li>[Mandatory] If not on, turn on **In-app events postback**.</li><li>Verify that the in-app events you set in [SKAN conversion studio](/docs/skan-conversion-studio) are mapped to TikTok for Business event names or to the events in your [custom conversion map](/docs/skan-cv-decode-map-your-cv-to-events).<br />**Note:** Only map `af_skad_revenue` to TikTok’s `Purchase` event when your SKAN conversion schema measures overall revenue.<br />[![](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)</li></ol></li><li>Click **Save integration**.</li></ol> |
+| <span id="2"></span>2 | SKAN settings review | Set up and turn on AppsFlyer <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN solution.</Anchor><br /><br />**To view SKAN settings**:<ol><li>In AppsFlyer, go to **Settings** > **SKAN Conversion Studio**.</li><li>Click options (**⋮**), and make sure that **SKAN measurement** is on.<br />![skan-settings.png](https://files.readme.io/87c05b45d44f266785b3d8df57267fb3103543c9bae9b7764e58867e38c8dcdf-4406446668049.png)</li><li>Select your preferred measurement mode.<br />Learn more about <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.</li><li>Make a note of the exact event names set. You'll need them in the next step.</li></ol> |
+| <span id="3"></span>3 | In-app event mapping | Review, and if necessary, make changes to your TikTok for Business in-app event mappings.<br /><br />**To view and set in-app event mappings**:<ol><li>In AppsFlyer, Go to **Settings** > **Active Integrations**.</li><li>Search for and select **TikTok for Business**.</li><li>From the **Integration** tab, make sure the <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">integration with TikTok for Business is activated and configured</Anchor>.</li><li>In the **In-app events postback section:**<ol><li>[Mandatory] If not on, turn on **In-app events postback**.</li><li>Verify that the in-app events you set in <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">SKAN conversion studio</Anchor> are mapped to TikTok for Business event names or to the events in your <Anchor target="_blank" href="/marketers/docs/skan-cv-decode-map-your-cv-to-events">custom conversion map</Anchor>.<br />**Note:** Only map `af_skad_revenue` to TikTok’s `Purchase` event when your SKAN conversion schema measures overall revenue.<br />[![](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)</li></ol></li><li>Click **Save integration**.</li></ol> |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [AppsFlyer SKAN solution guide](/docs/skadnetwork-skan-solution-guide)
+> * <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">AppsFlyer SKAN solution guide</Anchor>
 
 <div data-zendesk-anchors="skan-interoperability-appsflyer-tiktok=skan-interoperability-appsflyer---tiktok h_01HDNYZ0CT1MGCRSSP3MXTJK5V=skan-interoperability-appsflyer---tiktok h_01HDNYZ0CT5NZHDHDBDSCFG911=scope-of-skan-interoperability-with-tiktok 01HR1TPFCSXRGYC610AR7KMTS5=tiktok-for-business-guidance h_01HDNYZ0CT7RNDAEWYKBHS6PET=campaign-limits-for-dedicated-ios-14-campaigns h_01HDNYZ0CTJGY3GPC9F907NEPT=enabling-interoperation h_01HDNZ1BW5EBP0JCX84MTYPQ6K=see-also" />

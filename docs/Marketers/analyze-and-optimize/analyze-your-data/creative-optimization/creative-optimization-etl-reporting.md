@@ -1,11 +1,5 @@
 ---
 title: Creative Optimization ETL reporting
-excerpt: >-
-  Creative Optimization ETL streams your creative performance data to cloud
-  storage daily for direct loading into your business intelligence (BI) systems,
-  with no manual exports needed. Choose between Standard Creative ETL , which
-  delivers a fixed report structure, and Custom Creative ETL , which lets you
-  choose exactly which dimensions, metrics, and events to include.
 metadata:
   keywords:
     - Premium
@@ -28,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/19253873174801-Creative-Optimization-ETL-reporting
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance:** Creative Optimization ETL streams your creative performance data to cloud storage daily for direct loading into your business intelligence (BI) systems, with no manual exports needed. Choose between **Standard Creative ETL**, which delivers a fixed report structure, and **Custom Creative ETL**, which lets you choose exactly which dimensions, metrics, and events to include.
 
 ## About Creative Optimization ETL reporting
 
@@ -61,7 +57,7 @@ This section describes how to set up Data Locker for Creative Optimization repor
 
 **To set up Data Locker:**
 
-1. Follow the [Data Locker setup instructions](/docs/data-locker-cloud-service-setup).
+1. Follow the <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup">Data Locker setup instructions</Anchor>.
 2. When setting up Data Locker, select **Creative Optimization** under **Select reports** on the Data Locker configuration page.
 
 #### Edit Data Locker configuration
@@ -147,7 +143,7 @@ The following Creative data is available in Data Locker.
 | partner\_installs | String |
 | partner\_ecpi | String |
 
-See [definitions for standard metrics and metrics unique to Creative Optimization](/docs/creative-optimization-guide#standard-metrics-and-dimensions).
+See <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#standard-metrics-and-dimensions">definitions for standard metrics and metrics unique to Creative Optimization</Anchor>.
 
 > 📘 **Note**
 >
@@ -182,7 +178,7 @@ Before setting up Custom Creative ETL, make sure the following are in place:
 
 * **Creative Optimization Premium subscription.** Custom Creative ETL is available exclusively on the Premium plan. Contact your AppsFlyer representative to confirm your subscription.
 * **Admin permissions.** Only admin users can create, edit, or delete ETL report configurations.
-* **Data Locker destination.** Custom Creative ETL delivers data to a Data Locker connection. You must have at least one connection already configured, or create one as part of the report setup (see Step 1 below). Supported destinations include AWS S3, GCS, BigQuery, Snowflake, Azure Blob [beta], and Yandex [beta]. See [Set up a Data Locker connection](/docs/data-locker-cloud-service-setup).
+* **Data Locker destination.** Custom Creative ETL delivers data to a Data Locker connection. You must have at least one connection already configured, or create one as part of the report setup (see Step 1 below). Supported destinations include AWS S3, GCS, BigQuery, Snowflake, Azure Blob [beta], and Yandex [beta]. See <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup">Set up a Data Locker connection</Anchor>.
 
 #### Set up Custom Creative ETL
 
@@ -245,7 +241,7 @@ Select the dimensions, metrics, AI dimensions, and in-app events to include in y
 11. Under **Metrics**, select the performance KPIs to include.
 12. Under **In-app events**, select the events to include. Each selected event automatically includes four sub-metrics in the report output: event count, unique users, revenue, and CPA.
 
-    > 📘 **Important!**
+    > 🚧 **Important!**
     >
     > You can include a maximum of **30 in-app events** per report.
 
@@ -272,7 +268,7 @@ You can modify an existing Custom Creative ETL report, including its schema, rep
 
 You can also **duplicate** or **delete** a report using the action icons on each row.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Deleting a report permanently removes the report configuration and all associated run history. This action can't be undone.
 
@@ -310,7 +306,7 @@ Data files are organized within your delivery folder based on the setting you ch
 * **Unified (default):** All apps are included in unified data files. Use the row-level `app_id` field to distinguish between apps when consuming the data.
 * **By app:** Data is organized into subfolders, one per app.
 
-See [app segregation in Data Locker](/docs/data-locker-for-marketers#app-segregation) to learn more.
+See <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#app-segregation">app segregation in Data Locker</Anchor> to learn more.
 
 #### Schema reference
 
@@ -526,11 +522,11 @@ If a report is re-run (typically during a backfill), each run receives an increm
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Creative Optimization guide](/docs/creative-optimization-guide)
-> * [Data Locker advertiser reports](/docs/data-locker-advertiser-reports)
-> * [Set up a Data Locker connection](/docs/data-locker-cloud-service-setup)
-> * [Set up and use ROI360 cost ETL reports](/docs/set-up-and-use-roi360-cost-etl-reports)
+> * <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">Creative Optimization guide</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports">Data Locker advertiser reports</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup">Set up a Data Locker connection</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Set up and use ROI360 cost ETL reports</Anchor>
 
 <div data-zendesk-anchors="h_01KW7A0CWMCFQA7K6YE909BVW4=about-creative-optimization-etl-reporting h_01KW7A0CWMH2SCPQ917TKASCC7=standard-creative-etl h_01KW7A0CWMJDR014M6JSA2HBHY=note h_01KW7A0CWM2SPE4RYFJKZBDKJG=get-started h_01KW7A0CWMAR0E52M7T6PXMCKT=edit-data-locker-configuration h_01KW7A0CWM9K9J7X64S14TX2AE=data-freshness h_01KW7A0CWM1JYVQXKBDH06X1BA=available-data h_01KW7A0CWMT7Q8BFTB8WAT7M0W=note-1 h_01KW7A0CWNZMPD7RSX41VNGSCF=custom-creative-etl h_01KW7A0CWNK0R6XAB37E5ZP7KG=before-you-begin h_01KW7A0CWN2DZFZP3YK23ZW9EH=set-up-custom-creative-etl h_01KW7A0CWNQJT83A9KAE8E7XHD=step-1---destination h_01KW7A0CWNH69H47EF7FAV1FRF=step-2---details h_01KW7A0CWN0M4ZFRPQ7BN9TRTC=note-2 h_01KW7A0CWNG5PVQNC8ED1RXV28=step-3---schema h_01KW7A0CWNER5KD46VJHE1X0VH=what-is-a-schema h_01KW7A0CWNJYPD5TXZ301PMF7S=note-3 h_01KW7A0CWN4NWNP10TAYD26GCQ=note-4 h_01KW7A0CWNFWY5BYGVPPXTYQ1X=important h_01KW7A0CWNVJJTVW1MP0V25ZC5=edit-an-existing-report h_01KW7A0CWNFZCW1NNBY2H0BSDS=note-5 h_01KW7A0CWNY50EV4EDS3BWGP6S=important-1 h_01KW7A0CWNRKGS9TJ4Y2H7JD5S=report-management h_01KW7A0CWNN3MN0S8Z563BYQ97=note-6 h_01KW7A0CWNS62EYWZ8V41E7RRY=data-delivery h_01KW7A0CWNWM3JTMEFF8B3SPXG=schema-reference h_01KW7A0CWNP32RKD6YW1GNPNEE=mandatory-fields h_01KW7A0CWNJRT87NYJQ19YHSSG=dimensions h_01KW7A0CWNTSGC4BPEBME4WWNC=ai-dimensions h_01KW7A0CWNNA03BG2BAQ4MGGMX=note-7 h_01KW7A0CWN6H39Q9D7SX2TFXAF=metrics h_01KW7A0CWP4JQSDP8E2BQESE2A=in-app-events h_01KW7A0CWPJ8W3ZE2JZ9YTZFQF=limitations h_01KW9K4YXMJ14TX6FMGYY4811K=faq h_01KW9K4YXM8E6ZF226DTTVZHK8=whats-the-difference-between-standard-creative-etl-and-custom-creative-etl h_01KW9K4YXMNDT73BPAV1CC5JZ5=can-i-run-both-standard-creative-etl-and-custom-creative-etl-at-the-same-time h_01KW9K4YXM3F3W45MTNDHS9DM9=can-i-have-multiple-custom-creative-etl-reports-with-different-report-types h_01KW9K4YXMVH2NSM46S63EVX01=how-do-i-add-new-inapp-events-to-an-existing-custom-creative-etl-report h_01KW9K4YXMDQZHF5TZGQE1NR0P=what-happens-if-a-report-runs-more-than-once-on-the-same-day h_01KW7A0CWP90HES8D1S2A1PF6X=see-also" />

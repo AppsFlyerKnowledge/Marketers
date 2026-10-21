@@ -1,8 +1,5 @@
 ---
 title: Evaluate Keyword data
-excerpt: >-
-  Get detailed keyword data that lets you see which search terms are most
-  popular, so you can optimize organic conversions.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17255366785553-Evaluate-Keyword-data
 ---
+**At a glance:** Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.
+
 ## Keyword data
 
 Organic search is a valuable traffic source for your apps. Organic users don't incur acquisition costs and are usually among the most engaged cohorts.
@@ -31,7 +30,7 @@ With a few tweaks to your app page, it is possible to increase the amount of new
 
 ### iOS keywords
 
-If you work with Apple Ads, you can get [detailed keyword data](/docs/apple-ads-integration-setup#get-keyword-data) for your **non-organic** users attributed to Apple Ads. In iOS, **organic** keyword data is not available.
+If you work with Apple Ads, you can get <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#get-keyword-data">detailed keyword data</Anchor> for your **non-organic** users attributed to Apple Ads. In iOS, **organic** keyword data is not available.
 
 ### Android keywords
 
@@ -60,13 +59,13 @@ Organic keyword data is found in the following:
 * **Raw organic data reports**  
   In AppsFlyer, from the side menu, select **Export** > **Raw Data Export** to view the breakdown of used organic keywords.
 * **Advanced reports**   
-  Go to [Pivot](/docs/pivot-table-user-metrics), [Retention, and Cohort](/docs/cohort-and-retention-dashboard) reports and group by keywords.  
+  Go to <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot</Anchor>, <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Retention, and Cohort</Anchor> reports and group by keywords.  
   Compare the quality of organic users based on their keywords.
-* [Push API](/docs/push-api-streaming-raw-data) messages
+* <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor> messages
 
 ### Testing organic keyword data
 
-1. Use an [allowlisted](/docs/registering-test-devices) Android device.
+1. Use an <Anchor target="_blank" href="/marketers/docs/registering-test-devices">allowlisted</Anchor> Android device.
 2. Open Chrome browser and go to Google.com.
 3. Use a strong keyword to search for your app.   
    This example uses "**hotels tonight**".  

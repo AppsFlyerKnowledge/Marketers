@@ -1,8 +1,5 @@
 ---
 title: Purchase and subscription validation - Overview
-excerpt: >-
-  Understand how AppsFlyer validates purchases and subscriptions, and compare
-  the two available solutions: Receipt validation and ROI360 store revenue.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42120228484241-Purchase-and-subscription-validation-Overview
 ---
+> **At a glance:** Understand how AppsFlyer validates purchases and subscriptions, and compare the two available solutions: Receipt validation and ROI360 store revenue.
+
 ## About purchase and subscription validation
 
 Purchase and subscription validation is essential for ensuring the accuracy and reliability of your revenue data. When users make purchases in your app, whether one-time or subscription-based, validating those transactions with the app stores (Apple App Store and Google Play) ensures that only legitimate, paid transactions are measured and attributed.
@@ -43,12 +42,12 @@ Use Receipt validation to make informed decisions and optimize campaigns based o
 
 For more information, see:
 
-* [About Receipt validation](/docs/about-receipt-validation)
-* [Set up Receipt validation](/docs/set-up-receipt-validation)
+* <Anchor target="_blank" href="/marketers/docs/about-receipt-validation">About Receipt validation</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation">Set up Receipt validation</Anchor>
 
 ### ROI360 store revenue Premium
 
-> 📘 **Important**
+> 🚧 **Important**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
 
@@ -60,8 +59,8 @@ Use this solution if you need complete revenue accuracy, subscription lifecycle 
 
 For more information, see:
 
-* [About ROI360 store revenue](/docs/about-roi360-store-revenue)
-* [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue)
+* <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 store revenue</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue">Set up ROI360 store revenue</Anchor>
 
 ## Compare Receipt validation and ROI360 store revenue
 

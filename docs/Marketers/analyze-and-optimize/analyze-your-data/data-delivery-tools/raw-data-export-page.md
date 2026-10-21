@@ -1,8 +1,5 @@
 ---
 title: Raw data export page
-excerpt: >-
-  Download raw data reports in CSV files. Up to 1M rows per download. Limit
-  reports to the data you need by using filters.
 metadata:
   keywords:
     - ad networks
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008613838-Raw-data-export-page
 ---
+**At a glance:** Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
+
 The following visual displays the first time you go to the **Raw data export** page; the **My reports** page displays if you have reports ready for download or duplication.
 
 [![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
@@ -36,7 +35,7 @@ The following visual displays the first time you go to the **Raw data export** p
 
 The **My reports** page lists reports previously generated and ready download, duplication, or both. The reports listed were generated during the previous 90 days; their download period is 7 days. After 7 days, if you still need the report, you must generate it again.
 
-For a description of the raw data reports, see [Raw data reporting overview](/docs/raw-data-reporting-overview)
+For a description of the raw data reports, see <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reporting overview</Anchor>
 
 To generate or download reports, see the procedures section of this article.
 
@@ -48,7 +47,7 @@ To generate or download reports, see the procedures section of this article.
 
 The raw data export page provides reports having the features listed in the following table.
 
-<table><thead><tr><th>Feature</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="report-categories"></span>Report categories </td><td>Differ according to your subscription plan</td></tr><tr><td><span id="date-range"></span>Date range</td><td>Raw data reports are filtered by activity dates (event occurrence). You can also add a filter for install dates. See list of filter options in the table that follows.</td></tr><tr><td><span id="maximum-number-of-rows"></span>Maximum number of rows</td><td>1M rows</td></tr><tr><td><span id="rate-limitation"></span>Rate limitation</td><td>A <a href="./report-generation-quotas-rate-limitations">quota mechanism</a> limits the number of reports that can be generated per day.</td></tr><tr><td><span id="retentionreport-window"></span>Retention/report window</td><td><p>Install-related reports (installs, install postbacks)<strong> 60 </strong>out of the previous 90 days in a single download. </p><p>In-app event-related reports: 31 out of the previous 90 days in a single download.</p></td></tr><tr><td><span id="filter-options"></span>Filter options</td><td>The filters listed are available for use. In some cases, depending on the filter, filter options are populated. For example, when filtering by Geo the list of available countries is listed.</td></tr><tr><td><span id="field-selection"></span>Field selection</td><td><p>The most important fields are pre-selected. You can add/clear select fields in the<strong> Report fields</strong> tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) </p><p>For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. </p></td></tr><tr><td><span id="report-csv-field-order"></span>Report (CSV) field order</td><td><p>Columns in reports are arranged according to the field order setting. The column sequence <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx">listed in a spreadsheet </a>contains separate tabs for the legacy and default options. </p><figure><table><thead><tr><th>Setting</th><th>Field selection allowed</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="default"></span>Default</td><td>Yes</td><td><ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul></td></tr><tr><td><span id="alphabetical-az"></span>Alphabetical (A-Z)</td><td>Yes</td><td>Selected fields are ordered alphabetically (ascending).</td></tr><tr><td><span id="alphabetical-za"></span>Alphabetical (Z-A)</td><td>Yes</td><td>Selected fields are ordered in reverse order alphabetically (descending).</td></tr><tr><td><span id="legacy"></span>Legacy</td><td>No</td><td><ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report</li></ul></td></tr></tbody></table></figure></td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="report-categories"></span>Report categories </td><td>Differ according to your subscription plan</td></tr><tr><td><span id="date-range"></span>Date range</td><td>Raw data reports are filtered by activity dates (event occurrence). You can also add a filter for install dates. See list of filter options in the table that follows.</td></tr><tr><td><span id="maximum-number-of-rows"></span>Maximum number of rows</td><td>1M rows</td></tr><tr><td><span id="rate-limitation"></span>Rate limitation</td><td>A <a href="./report-generation-quotas-rate-limitations" target="_blank">quota mechanism</a> limits the number of reports that can be generated per day.</td></tr><tr><td><span id="retentionreport-window"></span>Retention/report window</td><td><p>Install-related reports (installs, install postbacks) <strong>60</strong> out of the previous 90 days in a single download. </p><p>In-app event-related reports: 31 out of the previous 90 days in a single download.</p></td></tr><tr><td><span id="filter-options"></span>Filter options</td><td>The filters listed are available for use. In some cases, depending on the filter, filter options are populated. For example, when filtering by Geo the list of available countries is listed.</td></tr><tr><td><span id="field-selection"></span>Field selection</td><td><p>The most important fields are pre-selected. You can add/clear select fields in the <strong>Report fields</strong> tab. Some fields may not have relevance to a given report. Nevertheless, you can select the field. We do this so that you can have consistent report formats (columns) </p><p>For example, selecting fraud (Protect360) related fields in the user acquisition in-app events report returns blank columns. These fields are populated only in the context of explicit Protect360 reports. </p></td></tr><tr><td><span id="report-csv-field-order"></span>Report (CSV) field order</td><td><p>Columns in reports are arranged according to the field order setting. The column sequence <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGYcMOgC5yy_82yn3DWd3ucLE5KtuTA72eJfvu5KVB9fFH_mYwzM3KpR_inQOnat-KzgVjuuvXa6_g/pub?output=xlsx">listed in a spreadsheet</a> contains separate tabs for the legacy and default options. </p><figure><table><thead><tr><th>Setting</th><th>Field selection allowed</th><th>Remarks</th></tr></thead><tbody><tr><td><span id="default"></span>Default</td><td>Yes</td><td><ul><li>Selected fields are ordered according to an AppsFlyer template.</li><li>Going forward, the sequence will be preserved. Future fields will be appended to the right of the existing fields.</li></ul></td></tr><tr><td><span id="alphabetical-az"></span>Alphabetical (A-Z)</td><td>Yes</td><td>Selected fields are ordered alphabetically (ascending).</td></tr><tr><td><span id="alphabetical-za"></span>Alphabetical (Z-A)</td><td>Yes</td><td>Selected fields are ordered in reverse order alphabetically (descending).</td></tr><tr><td><span id="legacy"></span>Legacy</td><td>No</td><td><ul><li>Fields are ordered according to the sequence of columns in reports prepared using the previous version of the export data page.</li><li>Field selection is fixed and can't be changed.</li><li>There is some variation of the reports per field depending on the actual report</li></ul></td></tr></tbody></table></figure></td></tr></tbody></table>
 
 | Filter | Advertiser | Ad network | Agency |
 | --- | --- | --- | --- |
@@ -115,10 +114,10 @@ You can create a custom report by setting its filters and fields.
    * **Geo:** [Optional] Only the events that were attributed to the selected geographical areas will be included in the report.
    * **Report-type specific filter**: Each report type may have its own filter from which you can select a filtering criteria.
 6. [Optional]: Reports are populated automatically with the necessary fields. You can add or remove fields as follows:
-   1. Go to the **Report fields**tab.The list of selected fields displays. You can't change the selection of mandatory fields.
+   1. Go to the **Report fields** tab.The list of selected fields displays. You can't change the selection of mandatory fields.
    2. Select or clear select fields as required.
-   3. [Optional] Set **Report (CSV) field Order**to set the sequence of columns.
-   4. [Option] Click **Restore defaults**if needed.
+   3. [Optional] Set **Report (CSV) field Order** to set the sequence of columns.
+   4. [Option] Click **Restore defaults** if needed.
 7. Click **Create.**
    * The **My reports** page displays. Initially, the status indicates that the report is generating.
    * Generation can take up to 10 minutes.
@@ -169,7 +168,7 @@ You can create a custom report by setting its filters and fields.
 | Non-organic data | Available |
 | Data freshness | Report dependent |
 | Historical data | Previous 90 days |
-| Account user access | Users in [roles with required permissions](/docs/user-management) |
+| Account user access | Users in <Anchor target="_blank" href="/marketers/docs/user-management">roles with required permissions</Anchor> |
 | Email delivery | Not supported |
 | Install date range | The install date range must be earlier than the activity date range. |
 | Raw data postback reports | Postbacks sent to partners due to events attributed to agencies are not included in the Advertiser's Raw Data Postback reports. |

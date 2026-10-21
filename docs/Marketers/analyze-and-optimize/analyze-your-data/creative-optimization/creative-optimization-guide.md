@@ -1,11 +1,5 @@
 ---
 title: Creative Optimization guide
-excerpt: >-
-  Creative Optimization enables you to pull all creative asset data from all
-  your campaigns into a single platform, so you can analyze their performance,
-  discover which creatives work best, and make better data-driven decisions.
-  Data is LTV, meaning the metrics are for conversions that occurred from
-  creatives during the selected date range.
 metadata:
   keywords:
     - Premium
@@ -30,6 +24,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
+
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
 ## About Creative Optimization
@@ -38,11 +34,11 @@ x-zendesk:
 
 The Creative Optimization dashboards let you measure the performance of videos, images, HTML, and text, and see how well they’re doing over time and across channels. Each creative is analyzed, aggregated, and matched using powerful AI algorithms. This means that the same creatives used for different campaigns and media sources are identified and displayed as one in the dashboards regardless of their naming convention, ad ID, or any other metadata.
 
-Use the [Creative Optimization Overview dashboard](/docs/creative-optimization-overview-dashboard) to see your data laid out visually in a variety of information-packed graphs and a detailed table, which gives you all the information needed to optimize and select the best creatives for your campaigns.
+Use the <Anchor target="_blank" href="/marketers/docs/creative-optimization-overview-dashboard">Creative Optimization Overview dashboard</Anchor> to see your data laid out visually in a variety of information-packed graphs and a detailed table, which gives you all the information needed to optimize and select the best creatives for your campaigns.
 
-With the AI-powered [Creative Optimization Discovery dashboard](/docs/creative-optimization-discovery-ai-dashboard), take the guesswork out of producing winning creatives. Gain a comprehensive view of all your creatives or dive deep into the performance of individual scenes and elements for maximum data-driven insights.
+With the AI-powered <Anchor target="_blank" href="/marketers/docs/creative-optimization-discovery-ai-dashboard">Creative Optimization Discovery dashboard</Anchor>, take the guesswork out of producing winning creatives. Gain a comprehensive view of all your creatives or dive deep into the performance of individual scenes and elements for maximum data-driven insights.
 
-[Creative Optimization ETL](/docs/creative-optimization-etl-reporting) equips your data analysts with all the information needed for creative performance analysis by streaming reports automatically to cloud storage for efficient, programmatic loading into your BI systems.
+<Anchor target="_blank" href="/marketers/docs/creative-optimization-etl-reporting">Creative Optimization ETL</Anchor> equips your data analysts with all the information needed for creative performance analysis by streaming reports automatically to cloud storage for efficient, programmatic loading into your BI systems.
 
 With Creative Optimization, you can:
 
@@ -96,9 +92,9 @@ Creative Optimization has the unique ability to identify which assets are the sa
 
 Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) can include ad creatives with multiple assets. However, AppsFlyer doesn't break down the data on the asset level. Meta ads provides data up to the **ad level** and Google provides data only up to the **ad group level**. For these types of ad creatives, AppsFlyer uses data modeling to divide performance data across the assets.
 
-> 📘 **Example**
+> 📄 **Example**
 >
-> Suppose there is an ad creative on Facebook with multiple assets. Facebook attributes it with 100 installs total, broken down to assets as follows: **asset A** has 60 installs and **asset B** has 40 installs, as measured by Facebook. In AppsFlyer, let’s say the ad is attributed with 50 installs (due to inherent attribution differences between AppsFlyer and [SRNs](/docs/self-reporting-networks-srns)). To enable asset-level analysis, AppsFlyer distributes the performance data (impressions, clicks, installs, and cost) based on the asset metrics ratio from the total as illustrated below.
+> Suppose there is an ad creative on Facebook with multiple assets. Facebook attributes it with 100 installs total, broken down to assets as follows: **asset A** has 60 installs and **asset B** has 40 installs, as measured by Facebook. In AppsFlyer, let’s say the ad is attributed with 50 installs (due to inherent attribution differences between AppsFlyer and <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>). To enable asset-level analysis, AppsFlyer distributes the performance data (impressions, clicks, installs, and cost) based on the asset metrics ratio from the total as illustrated below.
 >
 > So, **for asset A there are:**
 > 60 installs divided by 60+40 (total installs attributed by Facebook) = 0.6
@@ -167,9 +163,9 @@ With an AppsFlyer ROI360 subscription, cost data displayed in the Creative Optim
 
 | With ROI360 | Without ROI360 |
 | --- | --- |
-| <ul><li>[Has data as reported via any ROI360 method](/docs/roi360-guide-cost-and-revenue-data#cost-tools).</li><li>[Has all the ROI360 cost-reporting capabilities](/docs/roi360-guide-cost-and-revenue-data#cost-tools).</li><li>Creative ETL includes cost data (requires an ROI360 Advanced subscription).</li></ul> | <ul><li>Cost data, as reported directly by your integrated partners, is limited to Creative Optimization dashboards, not Creative ETL.</li></ul> |
+| <ul><li><Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data#cost-tools">Has data as reported via any ROI360 method</Anchor>.</li><li><Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data#cost-tools">Has all the ROI360 cost-reporting capabilities</Anchor>.</li><li>Creative ETL includes cost data (requires an ROI360 Advanced subscription).</li></ul> | <ul><li>Cost data, as reported directly by your integrated partners, is limited to Creative Optimization dashboards, not Creative ETL.</li></ul> |
 
-Learn more about [ROI360](/docs/roi360-guide-cost-and-revenue-data).
+Learn more about <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">ROI360</Anchor>.
 
 </Accordion>
 
@@ -188,7 +184,7 @@ Standard metrics/dimensions available in the dashboards include:
 | CTR (Click through rate) | Rate (%) of users who have clicked an ad in relation to the number of total views. Formula: Clicks/impressions *100 |
 | CVR (Conversion rate) | Rate (%) of users completing the journey from click to attribution (installs, re-engagements, and re-attributions). Formula: Conversions / Clicks *100 |
 | IPM (Installs per mille) | Installs per mille. Number of installs per every 1000 user impressions (ad views) |
-| eCPI (Effective cost per install) | eCPI excludes organic installs and calculates the cost per [non-organic attributions](/docs/about-organic-and-non-organic-installs) (installs, re-engagements, and re-attributions). Formula: Total available cost / all non-organic attributions. |
+| eCPI (Effective cost per install) | eCPI excludes organic installs and calculates the cost per <Anchor target="_blank" href="/marketers/docs/about-organic-and-non-organic-installs">non-organic attributions</Anchor> (installs, re-engagements, and re-attributions). Formula: Total available cost / all non-organic attributions. |
 | CPM (Cost per mille) | Cost of 1000 ad impressions. Formula: Total creative spend / number of impressions) * 1,000 |
 | Platform | Refers to the OS (i.e. Android) |
 | Channel | Segmentation of traffic within media sources  <br />(i.e. YouTube for Google, Instagram for Meta ads etc.) |
@@ -242,7 +238,7 @@ Create custom metrics to measure the performance of your creatives exactly how y
      * *Metrics* include impressions, clicks, installs, CTR, CVR, CPM, IPM, Cost, eCPI, Reattributions, Reengagements, Revenue, ROAS, Retention, Unique users, Appearances, partner metrics
      * Combine with various *Operators, Numbers,* and/or *In-app events*
      * Specific in-app events are selected from the dropdown menu. For each in-app event, you can add any metrics per the event separately to get highly specific insights, for example, af\_purchase revenue + af\_login count.  
-       ![](https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png)
+       <Image alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
 3. Click **Save**.  
    Your new custom metric is created and will display in the filter bar and table settings with "Custom" next to it.
 
@@ -256,14 +252,14 @@ Custom metrics can also be edited or deleted.
 **To edit:**
 
 1. Click the **Edit existing custom metric** dropdown (on the **Custom metrics** form) and select the one you wish to edit.  
-   ![](https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png)
+   <Image alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
 2. Make any changes you wish, then click **Save**.  
-   **Note:** You can also click **Save as**to save it as a new custom metric.
+   **Note:** You can also click **Save as** to save it as a new custom metric.
 
 **To delete:**
 
 * After selecting the custom metric you wish to delete from the dropdown, click the delete icon.  
-  ![](https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png)
+  <Image alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
 
 </Accordion>
 
@@ -279,11 +275,11 @@ The following table lists all Creative optimization partners, with the data gran
 * Metrics (as reported by the ad networks)
 * Supported features and their characteristics
 
-Download file: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv), [XLS](https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx)
+Download file: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
 #### **To set up partner metrics:**
 
-Add a new [partner integration](/docs/creative-optimization-partner-integrations) and metrics for supported partners will automatically be pulled into Creative Optimization (**Unity Ads** **is an exception and has special instructions below**). Once set up, these metrics are indicated with "Partner" alongside the metric.
+Add a new <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">partner integration</Anchor> and metrics for supported partners will automatically be pulled into Creative Optimization (**Unity Ads** **is an exception and has special instructions below**). Once set up, these metrics are indicated with "Partner" alongside the metric.
 
 ![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
 
@@ -329,27 +325,27 @@ Add a new [partner integration](/docs/creative-optimization-partner-integrations
 
 **To get partner metrics from Unity Ads:**
 
-1. From the Creative Optimization dashboard, click the  **⋮** icon on the upper right to get to **Creative integrations**.  
+1. From the Creative Optimization dashboard, click the  **⋮**  icon on the upper right to get to **Creative integrations**.  
    ![icon for creative integrations.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
 2. Click **+ New integration**.
 3. Select **Unity Ads** in the **Partner** dropdown list.  
    ![New integration - Unity Ads.jpg](https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg)
-4. Enter the Unity **Key ID**, **Secret Key**, and **Organization Core ID** for the integration (see [Unity integration](/docs/creative-optimization-partner-integrations#unity-ads) instructions for how to get these).
+4. Enter the Unity **Key ID**, **Secret Key**, and **Organization Core ID** for the integration (see <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations#unity-ads">Unity integration</Anchor> instructions for how to get these).
 5. In the **Partner metrics** section, enter the Unity **API Key** and the **Organization ID**. You can retrieve these credentials by following the below instructions. **Note:** If you have a ROI360 Cost integration with Unity Ads, you can take the credentials from there as well.
    * **To get the API key:**
      1. Log in to your Unity Gaming Services platform.
      2. Click **Products** in the side menu, then click **Grow**.  
         ![Unity Org ID step 1.jpg](https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg)
      3. Click **Unity Ads User Acquisition**.  
-        ![Unity Org ID step 2.jpg](https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg)
+        <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
      4. Click **API management**.  
         ![Unity-from API mngmt, get API key w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
      5. Copy the API key.
    * **To get the Organization ID:**
      1. Within Unity Ads, click **Products** on the side menu, then click **Grow**.  
-        ![Unity Org ID step 1.jpg](https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg)
+        <Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
      2. Click **Unity Ads User Acquisition**.
-     3. ![Unity Org ID step 2.jpg](https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg)
+     3. <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
      4. Click **Settings**.  
         ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
      5. Copy the **Organization ID**.
@@ -394,7 +390,7 @@ After selecting your filters, you can save your selections for quick and easy ac
 **To share a view URL with another account user:**
 
 * Click the icon on the upper right of the dashboard to copy the page URL, then share it.  
-  ![Copy_page_URL_with_cursor.jpg](https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg)  
+  <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
   **Note**: View URLs can be shared even for private dashboards. When the private dashboard URL is opened, the report name that displays is "Unsaved Report".
 
 </Accordion>
@@ -423,7 +419,7 @@ The procedures for downloading and uploading the CSV file are described below:
 
 **To download a CSV file with current creatives from the dashboard:**
 
-1. Click the![3_dots_icon.png](https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png) menu on the top-right corner of the dashboard.  
+1. Click the<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu on the top-right corner of the dashboard.  
    ![Main menu highlighted.jpg](https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg)
 2. Click **Download custom tags file**.
 3. Select which creatives you want to include in the file (all creatives or only the creatives that are currently displayed on the dashboard - excluding creatives that are filtered out).
@@ -433,7 +429,7 @@ Make the desired additions or changes to the file, then save it, and upload it b
 
 **To upload the CSV file to the Creative Optimization dashboard:**
 
-1. Click the![3_dots_icon.png](https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png) menu on the top-right corner of the dashboard.
+1. Click the<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu on the top-right corner of the dashboard.
 2. Click **Upload custom tags file**.
 3. Select a file to upload.  
    Make sure you are aware of all of the different [traits and limitations](/docs/creative-optimization-guide#traits-and-limitations) when uploading a CSV file.
@@ -459,7 +455,7 @@ Here's an example of a custom dimensions CSV file (that you download from the da
 
 * Custom dimensions appear with a “Custom” tag in the filters and table.
 
-![Custom_tag.png](https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png)
+<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * You can add up to 15 custom dimensions to the Creative Optimization dashboard.
 * The upload file size is limited to 1 MB.
@@ -488,7 +484,7 @@ This is useful for marketing and creative teams whose creatives are named intent
 
 1. Click the  **⋮**  icon on the upper right of the dashboard, and select **Name convention tags**.  
    The **Manage name convention tags** window appears.  
-   ![Name convention tags main window.jpg](https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg)
+   <Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 2. Under **Create new name convention type**, enter the details:
    * **Name** - Give the new name convention type a unique name.
    * **Separator** - The character that separates each section. For example, in a creative called “enUS\_bluegalaxy\_launch.mp4”, each section is separated by “\_”. “\_” is the separator.
@@ -514,7 +510,7 @@ This is useful for marketing and creative teams whose creatives are named intent
 **To delete a name convention type:**
 
 1. Click the **Edit name convention type** dropdown and select the one you want to delete.
-2. Click the  ![Delete icon.jpg](https://files.readme.io/a4bb54fefcdd474edbb897dc334b8219c36273fd5e4f45a03e1b39091856e137-18564742905873.jpg)  icon which appears when you hover to the right of your selection.  
+2. Click the  <Image alt="Delete icon.jpg" src="https://files.readme.io/a4bb54fefcdd474edbb897dc334b8219c36273fd5e4f45a03e1b39091856e137-18564742905873.jpg" width="19px" />  icon which appears when you hover to the right of your selection.  
    **Note:** The associated custom tags will no longer apply to your creatives. It may take a few hours for the change to take effect.
 
 <div id="name-tag-traits-and-limitations" />

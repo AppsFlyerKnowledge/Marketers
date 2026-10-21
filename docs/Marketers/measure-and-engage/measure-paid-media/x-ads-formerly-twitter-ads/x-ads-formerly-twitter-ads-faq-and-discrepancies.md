@@ -1,6 +1,5 @@
 ---
 title: X Ads (formerly Twitter Ads) FAQ and discrepancies
-excerpt: Resolve X Ads FAQs and understand discrepancies.
 metadata:
   keywords:
     - Advertisers
@@ -22,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410464352017-X-Ads-formerly-Twitter-Ads-FAQ-and-discrepancies
 ---
+**At a glance:** Resolve X Ads FAQs and understand discrepancies.
+
 ## X Ads FAQ and discrepancies
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -60,7 +61,7 @@ You can disconnect AppsFlyer from your X Ads account. The following instructions
 4. Click AppsFlyer.
 5. Click **Revoke Access**.
 
-You can now go back to your AppsFlyer account and [connect a different X Ads account](/docs/x-ads-formerly-twitter-ads-integration-setup) if you want.
+You can now go back to your AppsFlyer account and <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-integration-setup">connect a different X Ads account</Anchor> if you want.
 
 </Accordion>
 
@@ -76,7 +77,7 @@ If one of your team members also has an X Ads Account, this means they have a di
 
 Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and is the handle that is connected to AppsFlyer. In order for her X Ads Account to appear in the AppsFlyer account, **she needs to give your handle access as account administrator to her X Ads Account**. Jenny needs to give access to Nivi to her X Ads Account and not that other way around. When she does so, AppsFlyer looks at Nivi's handle, and sees all the ad accounts that it is associated with, Jenny's included.
 
-1. Jenny signs into [ads.twitter.com](http://ads.twitter.com/)
+1. Jenny signs into <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
 2. She clicks on **Account** and then chooses **Edit access to account**
 
    ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
@@ -108,7 +109,7 @@ When an agency creates a new X Ads campaign, the campaign name must start with t
 >
 > To establish the connection between AppsFlyer and X Ads, the advertiser MUST configure X Ads permissions allowing agencies to run X Ads traffic.
 
-For more details go [here](/partners/docs/about-agency-accounts#srn-configurations).
+For more details go <Anchor target="_blank" href="/partners/docs/about-agency-accounts#srn-configurations">here</Anchor>.
 
 </Accordion>
 
@@ -235,15 +236,15 @@ These are the common reasons for such discrepancies that advertisers should be a
 | Cause | X Ads | AppsFlyer |
 | --- | --- | --- |
 | **Attribution window** | X Ads allows its users to configure the attribution window and supports both click-through and view-through attributions. By default - 14 days click-through and 1 day view-through. | If you have not configured the AppsFlyer attribution lookback window for X Ads with the same values as in X Ads, discrepancies may occur. |
-| **Multi-channel source attribution** | X Ads attribution works as specified above regardless of other sources. | AppsFlyer uses last click attribution (more information about AppsFlyer attribution available [here](/docs/appsflyer-attribution-model "AppsFlyer Attribution Model")). |
+| **Multi-channel source attribution** | X Ads attribution works as specified above regardless of other sources. | AppsFlyer uses last click attribution (more information about AppsFlyer attribution available <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">here</Anchor>). |
 | **Timezone differences** | X Ads timezone is defined by the advertiser's app configured timezone. | AppsFlyer's default timezone is UTC±00:00, but can be set to any timezone by the advertiser. |
 | **Install time differences** | X Ads shows installs based on the click time (referred to as "engagement time"). | AppsFlyer displays the time of the first app open. |
 | **Attribution touch type** | X Ads attribution is based on their own clicks and impressions. | AppsFlyer gives priority to click-through attribution over view-through attribution. If X Ads counts an impression and AppsFlyer is aware of an additional click within the click-through attribution window, the click from another source is attributed on AppsFlyer's dashboard. On X Ads, the impression is attributed and is presented on their dashboard. |
-| **X Ads data sharing settings** | X Ads allows its users to NOT [share their personal data with third parties](https://twitter.com/settings/account/personalization). This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more [details](/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy)). |
+| **X Ads data sharing settings** | X Ads allows its users to NOT <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">share their personal data with third parties</Anchor>. This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy">details</Anchor>). |
 | **X Ads re-engagement logic** | X Ads counts unique users. If a user re-engages more than once as a result of the same campaign, X Ads shows these engagements as one conversion. | AppsFlyer counts each re-engagement instance, and therefore, in a similar case, shows these engagements as multiple conversions. |
 
 > 📘 **Note**
 >
-> As a result of [AppsFlyer's Validation Rules](/docs/implement-validation-rules-to-prevent-fraud), results may differ in the dashboards as some installs are shown in X Ads and are not shown in the AppsFlyer dashboard.
+> As a result of <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">AppsFlyer's Validation Rules</Anchor>, results may differ in the dashboards as some installs are shown in X Ads and are not shown in the AppsFlyer dashboard.
 
 <div data-zendesk-anchors="twitter-ads-faq-and-discrepancies=x-ads-faq-and-discrepancies h_01HE7S15F9YR28FBA1TYCE3N0X=x-ads-faq-and-discrepancies h_01HE7S15F9NSQJSP268B0WF0JP=who-can-perform-the-twitter-setup-on-appsflyer h_01HE7S15F9PFZ8CATJC5YWC6QP=what-happens-if-no-twitter-accounts-are-selected-for-attributing-on-appsflyer h_01HE7S15F989Y94YFJ7TGK7QN5=do-the-account-owner-and-the-team-members-see-the-same-twitter-data h_01HE7S15F9GNWTK2N50GAHN52Q=how-do-i-disconnect-twitter-from-appsflyer h_01HE7S15F9CE4F29R97EVCG791=is-it-possible-to-attribute-installs-to-multiple-twitter-accounts h_01HE7S15F9G4M44CB2Q1KQMJPJ=any-special-instructions-for-agencies h_01HE7S15F9VG8XMJE7YSNN245P=note h_01HE7S15F9A7BBAW8BNN6H4AKQ=do-you-make-twitters-raw-data-available-to-agencies h_01HE7S15F9MM26SGKMAPGDH9F8=im-clicking-save-close-but-twitters-configuration-is-not-saved-help h_01HE7S15F923NKTTCS3Z1C40B5=how-can-i-set-up-retargeting-campaigns-with-twitter h_01HE7S15F931EWS48QVCQYPBCH=does-retargeting-affect-inapp-events-sending-to-twitter h_01HE7S15F98VN1TS99751S34C5=how-can-i-stop-measuring-twitter-attributions h_01HE7S15F9MEKBKAQ3NA76TFKY=can-an-agency-measure-twitter-attributions-for-advertisers h_01HE7S15F921V3T885F39VSPCQ=can-an-agency-configure-inapp-events-for-twitter for-how-long-do-you-keep-twitter%E2%80%99s-userlevel-data=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F90RXSWJ7HV3GSJB65=for-how-long-do-you-keep-twitter-s-userlevel-data h_01HE7S15F9B39KV628NSD29P6P=why-do-i-see-duplicated-cost-data h_01HE7S15F9N3CCJEMAD2QB38F9=im-trying-to-link-my-twitter-account-with-appsflyer-but-i-get-an-error-message discrepancies-between-twitter-and-appsflyer=discrepancies-between-x-ads-and-appsflyer h_01HE7S15F9YWCY883DP9TEGQXK=discrepancies-between-x-ads-and-appsflyer h_01HE7S15FAPS2696J3KQG3P3ME=note-1" />

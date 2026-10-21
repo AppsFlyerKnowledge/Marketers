@@ -1,8 +1,5 @@
 ---
 title: Incrementality for UA Guide
-excerpt: >-
-  Run an Incrementality experiment to understand the true impact of your User
-  Acquisition (UA) campaigns.
 metadata:
   keywords:
     - Premium
@@ -25,6 +22,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/41021758795025-Incrementality-for-UA-Guide
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance:** Run an Incrementality experiment to understand the true impact of your User Acquisition (UA) campaigns.
 
 <Embed title="Incrementality for UA Guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
@@ -207,8 +206,8 @@ To get started with Incrementality for UA, follow the steps below:
 
 <span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisites**
 
-* An AppsFlyer [account](https://www.appsflyer.com/sign-up/) with an **Incrementality for UA** subscription (ask your CSM to enable it).
-* The [AppsFlyer SDK](/docs/basic-sdk-integration-guide) installed in your mobile apps.
+* An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor> with an **Incrementality for UA** subscription (ask your CSM to enable it).
+* The <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">AppsFlyer SDK</Anchor> installed in your mobile apps.
 * Your app must have at least 120 days of install data.
 
 <div id="create-the-experiment-" />
@@ -221,26 +220,22 @@ The first step is creating the experiment.
 
 1. Access Incrementality for UA by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu.
 
-   ![Click Inc for UA new.png](https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png)
+   <Image alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
 2. Click **+ New experiment**.
 3. **Fill out the experiment form:**
    1. **Enter experiment name** - Create a descriptive name for the experiment, then click **Next**.
    2. **Define your geo design** — Select the app, country, and main metric you want to measure. AppsFlyer uses this to calculate the optimal allocation of exposed and holdout regions for your experiment.
 
-      ![step 2 geo design.png](https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png)
+      <Image alt="step 2 geo design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
 
       After you submit, AppsFlyer reviews your geo design — this usually takes just a few minutes. Your geo design will either be ready to use, or unavailable:
 
       * **Ready** — Your geo design is approved and ready to use. You can proceed with the experiment.
       * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.
 
-        <br /><br />**Note**<br />
-
-
-      #### Note
-
-      If geo design rules exist for the selected app and country, they're automatically applied when the geo design is calculated. See [Geo design policy](#h_01_geo-design-policy) to learn more.
-
+      > 📘 **Note**
+      >
+      > If geo design rules exist for the selected app and country, they're automatically applied when the geo design is calculated. See [Geo design policy](#h_01_geo-design-policy) to learn more.
 
 
       > 📘 **Note**
@@ -248,6 +243,7 @@ The first step is creating the experiment.
       > Each country has a certain number of **cells** available for your experiment. A cell consists of an exposed and holdout group pair that are structured to be similar to each other and to the entire country. You can use multiple cells in one experiment for a head-to-head comparison of different campaigns across media sources, or use them individually in separate experiments.
       >
       > The number of available cells per country depends on the country's geographic size, population distribution, and app activity levels—factors that affect the ability to create statistically valid exposed/holdout pairs. Countries with more granular, active regions support more cells, enabling more experimentation.
+
 
       * **Select app** - Select the relevant app for the experiment.
       * **Select country** - Then, select the country where you want to run the experiment. Click **Next**.
@@ -267,7 +263,7 @@ The first step is creating the experiment.
   * All selected campaigns will share the same holdout regions.
   * Incrementality insights will be presented at the cell level, and not at the individual campaign level.
 
-    ![Inc for UA - Set campaign details .png](https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png)
+    <Image alt="Inc for UA - Set campaign details .png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
 * Once a geo design is approved, you’ll see the experiment breakdown:
   * **Holdout regions** - The regions held out from exposure to your campaigns during the experiment
   * **Exposed regions** - The regions exposed to your campaigns, used as the measurement baseline
@@ -302,7 +298,7 @@ The first step is creating the experiment.
 
 1. Go to your Incrementality for UA experiments by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu. 
 
-   ![from Oprimize click Incrementality UA.png](https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png)
+   <Image alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
 2. Click the specific experiment to access the experiment dashboard.
 
    ![Experiments table (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
@@ -354,10 +350,10 @@ Connections refer to the integration between Incrementality for UA and your medi
 1. Access Incrementality for UA by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu.
 2. Click the **Connections** tab, then **+ New connection**.
 
-   ![from Connections tab click +New connection w arrow.png](https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png)
+   <Image alt="from Connections tab click +New connection w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
 3. Select a media source to connect to.
 
-   ![Add connection.png](https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png)
+   <Image alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
 4. Enter your credentials to log in and create the connection.
 
 </Accordion>
@@ -462,9 +458,9 @@ For each experiment, you can see the:
 * **Ready** - Design was reviewed and found eligible
 * **Unavailable** - Design was reviewed and wasn't found eligible
 
-Hover on the experiment to access the![action menu.png](https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png) actions icon.
+Hover on the experiment to access the<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />actions icon.
 
-![Experiments menu.png](https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png)
+<Image alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
 
 From here you can:
 
@@ -480,9 +476,9 @@ From here you can:
 
 **To extend an experiment:**
 
-From the experiment, click the![action menu.png](https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png) actions icon (on the upper-right) and select **Extend experiment duration**.
+From the experiment, click the<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />actions icon (on the upper-right) and select **Extend experiment duration**.
 
-![Extend experiment.png](https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png)
+<Image alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
 
 This will extend the experiment by an additional 14 days.
 
@@ -496,7 +492,7 @@ This will extend the experiment by an additional 14 days.
 
 From the experiment, click the ⠇actions icon (on the upper-right) and select **Stop experiment**.
 
-![Stop experiment.png](https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png)
+<Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
 

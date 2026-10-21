@@ -1,9 +1,5 @@
 ---
 title: Signal Hub guide
-excerpt: >-
-  The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences
-  with real-world purchase signals and activate them instantly across major
-  media platforms.
 metadata:
   keywords:
     - Premium
@@ -27,6 +23,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences with real-world purchase signals and activate them instantly across major media platforms.
+
 <Embed title="Signal Hub guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo" providerUrl="https://www.youtube.com" />
 
 ## About Signal Hub
@@ -43,7 +41,7 @@ Using AppsFlyer clean room infrastructure and integrations with identity resolut
   Use purchase signals as standalone insights, or combine them with your AppsFlyer first-party data or external data connected to Signal Hub, to build enriched audiences and activate them across all major media platforms.
 * **Skip the heavy lifting**  
   Gain access to purchase signals instantly. No setup, engineering effort, or legal teams working overtime required.
-* **Rely on built-in privacy**  
+* **Rely on built-in privacy**   
   Activate securely in a clean room environment using hashed, pseudonymized identifiers. No raw data is ever moved, shared, or exported.
 * **Gain full-funnel clarity**  
   Measure the impact of enriched segments on installs, purchases, retention, SKU-level measurement, and revenue through AppsFlyer's full-funnel, omnichannel measurement.
@@ -52,7 +50,7 @@ Using AppsFlyer clean room infrastructure and integrations with identity resolut
 
 **To get started using Signal Hub, follow the steps below:**
 
-**<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>Prerequisite:** An AppsFlyer [account](https://www.appsflyer.com/sign-up/). To access Signal Hub, contact your CSM or write to hello@appsflyer.com
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisite:** An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor>. To access Signal Hub, contact your CSM or write to hello@appsflyer.com
 
 <Accordion title="Step 1. Accept the collaboration invite">
 
@@ -62,7 +60,7 @@ After signing up for Signal Hub, AppsFlyer will arrange a brief meeting to discu
 
 <Accordion title="Step 2. Add your first-party data to the collaboration (Optional)">
 
-If you want to build audiences using your first-party data, you can [associate your existing AppsFlyer data](/docs/data-collaboration-platform-dcp-create-a-collaboration#associate-or-manage-sources) (your SDK data) with the collaboration you were invited to.
+If you want to build audiences using your first-party data, you can <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration#associate-or-manage-sources">associate your existing AppsFlyer data</Anchor> (your SDK data) with the collaboration you were invited to.
 
 Additionally, you can [connect external data sources](/docs/signal-hub-guide#add-your-own-custom-data-to-signal-hub-optional), such as your CRM or other relevant systems, directly to your clean room. Data remains in place and is never moved or copied. AppsFlyer is granted read-only access only.
 
@@ -70,13 +68,13 @@ Additionally, you can [connect external data sources](/docs/signal-hub-guide#add
 
 <Accordion title="Step 3. Build high-intent audiences and activate them">
 
-Once you have all the relevant data sources associated with your collaboration, you can start [building an enriched audience](/docs/data-collaboration-platform-dcp-build-and-activate-audiences) using the purchase signals data source. When done, you're ready to send them for activation.
+Once you have all the relevant data sources associated with your collaboration, you can start <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">building an enriched audience</Anchor> using the purchase signals data source. When done, you're ready to send them for activation.
 
 </Accordion>
 
 <Accordion title="Step 4. Measure campaign results">
 
-After running your campaigns, check out the results in your AppsFlyer dashboards, such as the [Performance Analysis dashboard](/docs/my-dashboards#dashboard-templates).
+After running your campaigns, check out the results in your AppsFlyer dashboards, such as the <Anchor target="_blank" href="/marketers/docs/my-dashboards#dashboard-templates">Performance Analysis dashboard</Anchor>.
 
 </Accordion>
 
@@ -114,7 +112,7 @@ Signal Hub connects marketers with real-world purchase signals in a privacy-safe
   Signal Hub partners with leading brands (e.g., Mastercard), which share aggregated purchase data at the ZIP+4 level (about 10–20 households). For example, Mastercard might show that "70% of consumers in this ZIP+4 purchased at Shoprite," offering real-world spending insights without user-level data.
 * **Identity resolution**   
   Since ZIP+4 data can't be used directly for ad targeting, integrated AppsFlyer identity resolution partners translate it into privacy-safe hashed identifiers, such as hashed emails, that media platforms can recognize. [Learn more](/docs/signal-hub-guide#understand-identity-enrichment)
-* **Audience building and activation**  
+* **Audience building and activation**   
   Marketers can combine these purchase signals with their own first-party data inside AppsFlyer's clean room to create enriched audience segments. Once activated, the audiences are securely matched and delivered to media platforms, while AppsFlyer measures performance across channels.
 
 </Accordion>
@@ -125,7 +123,7 @@ Signal Hub provides an enrichment metric to help you understand how much of the 
 
 In the data source shared to the collaboration, the **Identity enrichment** percentage shows how much of the provider's ZIP+4 data was successfully matched to privacy-safe identifiers that can be used for activation.
 
-![Identity enrichment.png](https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png)
+<Image alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
 
 * **Data provider:** The number of ZIP+4 groups shared by the purchase signal provider (e.g., Mastercard).
 * **Identity data:** The number of those ZIP+4 groups that the identity resolution partner successfully matched to hashed identifiers (for example, hashed emails).
@@ -137,7 +135,7 @@ The enrichment percentage shown next to "Customer data" (in the image above) rep
 
 <Accordion title="Data Clean Room (DCR) and Signal Hub">
 
-The Signal Hub functions as the central point for data collaboration, including audience creation and activation. It relies on the advanced technology of the [Data Clean Room (DCR)](/docs/data-clean-room-overview) to guarantee data privacy and security across all collaboration and audience management processes.
+The Signal Hub functions as the central point for data collaboration, including audience creation and activation. It relies on the advanced technology of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-overview">Data Clean Room (DCR)</Anchor> to guarantee data privacy and security across all collaboration and audience management processes.
 
 </Accordion>
 
@@ -145,9 +143,9 @@ The Signal Hub functions as the central point for data collaboration, including 
 
 You can add your own custom first-party data to Signal Hub as external data sources to build accurate audiences based on what you know about your customers. To do so,**follow these steps:**
 
-1. [Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services).
-2. [Create your data sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources).
-3. [Connect your cloud services to AppsFlyer](/docs/data-collaboration-platform-dcp-add-connections).
+1. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">Set up your cloud services</Anchor>.
+2. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Create your data sources</Anchor>.
+3. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Connect your cloud services to AppsFlyer</Anchor>.
 
 </Accordion>
 

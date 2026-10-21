@@ -1,8 +1,5 @@
 ---
 title: Old SDK guides - Android and iOS
-excerpt: >-
-  Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in
-  PDF form.
 metadata:
   keywords:
     - Advertisers
@@ -25,15 +22,17 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000699617-Old-SDK-guides-Android-and-iOS
 ---
+**At a glance:** Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form.
+
 ## Overview
 
 As time moves on, so do our SDK integration guides. They are replaced by newer, more agile, flexible, and technologically advanced SDKs.
 
 In this article, you can find the SDK integration guides of AppsFlyer SDKs from  2016 or even beforehand, in PDF form.
 
-**If your apps still use one of these very (very) old SDKs, we strongly urge you to upgrade to the newest SDK version**, for [Android](/docs/sdk-integration-overview) or for [iOS](/docs/sdk-integration-overview).
+**If your apps still use one of these very (very) old SDKs, we strongly urge you to upgrade to the newest SDK version**, for <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">Android</Anchor> or for <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > By upgrading from an old SDK version to the new version you can get **numerous improvements, new features, and bug fixes**. It also helps protect you from fraudsters and ensures you can be GDPR-compliant.
 >
@@ -62,7 +61,7 @@ Set out below are the links to the previous SDK Integration Guides for Android:
 
 ![ios_logo.png](https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png)
 
-Click [here](/docs/sdk-integration-overview), for our latest iOS SDK Integration Guide.
+Click <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">here</Anchor>, for our latest iOS SDK Integration Guide.
 
 Set out below are links to the previous SDK Integration Guides for iOS:
 

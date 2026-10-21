@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Create and manage sources
-excerpt: >-
-  Create and manage sources to securely share your first-party data with other
-  collaborators.
 metadata:
   keywords:
     - Marketers
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24740010687249-Data-Collaboration-Platform-DCP-Create-and-manage-sources
 ---
+> **At a glance:** Create and manage sources to securely share your first-party data with other collaborators.
+
 ## About DCP sources
 
 In the Data Collaboration Platform (DCP), a source is a dataset, typically uploaded to AppsFlyer from your cloud storage. These sources form the foundation of any collaboration, supplying the data that your collaborators can use for audience creation and activation. This article contains everything you need to know about creating and managing your sources, including:
@@ -33,7 +32,7 @@ In the Data Collaboration Platform (DCP), a source is a dataset, typically uploa
 
 ## Source data requirements
 
-It's recommended to [prepare your source data](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion) to maximize match rates between collaborator datasets and optimize collaboration outcomes. In addition, all sources **must meet the following requirements**.
+It's recommended to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion">prepare your source data</Anchor> to maximize match rates between collaborator datasets and optimize collaboration outcomes. In addition, all sources **must meet the following requirements**.
 
 <Accordion title="Data format (relevant to all sources)">
 
@@ -59,7 +58,7 @@ In addition to data shared for processing, source tables in BigQuery or Snowflak
   * **Column header:** `dt`
   * **Column type:** date
   * **Data format:** yyyy-mm-dd (*for example*, `2023-04-18`)
-  * **Additional:** BigQuery tables must be [partitioned](https://cloud.google.com/bigquery/docs/partitioned-tables) by this column
+  * **Additional:** BigQuery tables must be <Anchor target="_blank" href="https://cloud.google.com/bigquery/docs/partitioned-tables">partitioned</Anchor> by this column
 * **Version:**
   * **Column header:** `v`
   * **Column type:** string
@@ -72,10 +71,10 @@ In addition to data shared for processing, source tables in BigQuery or Snowflak
 
 Source files stored in Amazon S3 or GCS must meet these file name and format requirements:
 
-* File name must comply with [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements)
+* File name must comply with <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>
 * CSV or GZIP format
   * The file underlying GZIP compression must be a CSV file.
-* Number of data source files per [data folder](/docs/data-collaboration-platform-dcp-add-connections#snowflake-outbound):
+* Number of data source files per <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections#snowflake-outbound">data folder</Anchor>:
   * **CSV:** Maximum of 1
   * **GZIP:** Maximum of 1 single-part file. Multi-part GZIP files are supported when named as follows: `filename_part01.csv.gz`, `filename_part02.csv.gz`, etc.
 
@@ -83,7 +82,7 @@ Source files stored in Amazon S3 or GCS must meet these file name and format req
 
 ## Create a source
 
-**Prerequisite:** Before creating your source, [set up the cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services) that AppsFlyer DCP will use to retrieve your source data. If these connections aren't set up, you'll be prompted to do so during source creation.
+**Prerequisite:** Before creating your source, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">set up the cloud services</Anchor> that AppsFlyer DCP will use to retrieve your source data. If these connections aren't set up, you'll be prompted to do so during source creation.
 
 **To create a source in DCP, follow the steps below:**
 
@@ -91,10 +90,10 @@ Source files stored in Amazon S3 or GCS must meet these file name and format req
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   ![Click Data Clean Room.png](https://files.readme.io/b65f88e8dd771c33345049ae35a512e75dfd820c40c169a2b536c433df141e8e-43750175599889.png)
+   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/b65f88e8dd771c33345049ae35a512e75dfd820c40c169a2b536c433df141e8e-43750175599889.png" width="644px" />
 2. Click **+ New source** (on the main page or in the **Sources** tab).
 
-   ![sources empty state cropped.png](https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png)
+   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. Proceed with the **New source** walkthrough steps:
 
 </Accordion>
@@ -123,9 +122,9 @@ Enter the source name. This can be any unique name that will help you identify t
 
 **To specify the source location:**
 
-1. Select the [connection](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#overview) in which the source will be (or has been) created.
-   * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow [these instructions](/docs/data-collaboration-platform-dcp-add-connections) to create it.
-   * If you have existing connections but want to use a new one, click **+ New connection** and follow [these instructions](/docs/data-clean-room-working-with-connections) to create it.
+1. Select the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#overview">connection</Anchor> in which the source will be (or has been) created.
+   * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one. Follow <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">these instructions</Anchor> to create it.
+   * If you have existing connections but want to use a new one, click **+ New connection** and follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections">these instructions</Anchor> to create it.
 2. Continue with the relevant instructions below, based on where the data for your source is located.
 
 **Note:** For best performance when there’s a large amount of data, a subset of your data may be stored separately. This data will be updated whenever the source is updated and deleted when the source is deleted.
@@ -155,19 +154,19 @@ Source locations in Amazon S3 or GCS consist of the cloud storage bucket specifi
 
 Once you have specified the connection, AppsFlyer can automatically generate the required underlying folder path as part of the source creation process.
 
-* Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions [detailed here](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services).
+* Allowing AppsFlyer to generate the folders makes the process easy. However, you can choose to manually create them instead, according to the instructions <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">detailed here</Anchor>.
 
 If AppsFlyer generates the folders, the only additional information required is the name you want to give the **source folder.** (This is the top-level folder in which you update the source each time your want to use it for running a new report version.) You can also indicate whether you want the source folder to be created underneath a parent folder – often named **input.**
 
 **To complete specifying a source location in a cloud storage bucket, enter the source folder name.**
 
 * By default, the displayed source folder name:
-  * Is based on the [name you gave the source](#h_01K1ZHNZEQWRP7ZBK7XJP5F9HA). You can change the folder name to meet your needs, so long as it complies with the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements).
+  * Is based on the [name you gave the source](#h_01K1ZHNZEQWRP7ZBK7XJP5F9HA). You can change the folder name to meet your needs, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
   * Indicates that it will be generated within a parent folder named **input.** This folder serves as the parent folder for all sources you upload to the DCR.
-    * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements).
+    * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
     * Although this folder is not required, having an **input** folder (or an equivalent folder of a different name) is considered best practice. It is even more highly recommended when you are using the same cloud storage bucket both for uploading data files (input) and receiving reports (output).
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
 
@@ -180,7 +179,7 @@ You can also upload source data using a local file. However, **It’s strongly r
 
 When selecting your source location, click on **Local file system** and **Next**, which adds the option to upload local files from your device.
 
-![Select Local file system.png](https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png)
+<Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 > 📘 **Note**
 >
@@ -197,9 +196,9 @@ When setting up a source in the Data Collaboration Platform (DCP), you must choo
 * **Snapshot** - This method uploads the full dataset each time the source is updated, completely replacing the old dataset each time with the new one. Choose this method only if your file uploads always contain the complete and up-to-date dataset.
 * **Append** - This method uploads only new or changed data, not the full dataset. Old datasets are not removed or updated. It is ideal for recurring uploads like daily or weekly reports. Benefits include smaller uploads (may drive lower cloud storage costs), faster data upload performance, easier record management, and more.
 
-![Delta Generate folders.png](https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png)
+<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Please determine which method is best before selecting. Once an option is selected and **Generate folders** is clicked, a file path along with instructions for handling data uploads is created within your selected cloud service. To prevent folder duplications and errors, you can **change the sync method only once** after the initial selection.
 
@@ -231,7 +230,7 @@ Use this method to upload a complete, self-contained file that fully replaces th
 | `_SUCCESS` **marker** | Signals DCP ingestion to begin | Upload an empty file named `_SUCCESS` inside the `v=` folder after all data files land |
 | **Supported file type and size** |  | <ul><li>Supported file types: .csv or .gz</li><li>Maximum file size: 5 GB</li></ul> |
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > The full snapshot file (BI-data.csv in the screenshot below) must be placed under:
 >
@@ -372,7 +371,7 @@ Source fields load automatically. In case manual loading is needed, follow the i
 
 To load fields from a source located in a data warehouse (BigQuery or Snowflake), click **Load fields from source**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > If the selected source table does not include the required [date and version columns](#h_01HPKB2ERPJ5PVQ2QM5XCYZE0D), you will receive an error.
 
@@ -394,7 +393,8 @@ For purposes of mapping the source fields to DCP fields:
 
 **To upload your prototype source file, follow the instructions in the relevant tab below:**
 
-<Accordion title="Local file">
+<Tabs>
+<Tab title="Local file">
 
 1. In the **Map source fields** section, click
    **Load fields from source**.
@@ -403,9 +403,9 @@ For purposes of mapping the source fields to DCP fields:
 3. Specify the CSV or GZIP file you want to upload, then
    click OK.
 
-</Accordion>
+</Tab>
 
-<Accordion title="Connection (automatic creation)">
+<Tab title="Connection (automatic creation)">
 
 **To load the file from the connected cloud bucket and allow AppsFlyer to generate the cloud folder for the source file:**
 
@@ -424,9 +424,9 @@ For purposes of mapping the source fields to DCP fields:
    your prototype file to the source folder.
 5. Once the file has finished uploading, click **OK.**
 
-</Accordion>
+</Tab>
 
-<Accordion title="Connection (manual creation)">
+<Tab title="Connection (manual creation)">
 
 **To upload the source file from a structure you created manually:**
 
@@ -439,7 +439,8 @@ For purposes of mapping the source fields to DCP fields:
    [the source folder you created for it](#h_01HPKB2ERVZ88MJ35JC66YDPAB).
 4. Once the file has finished uploading, click **OK.**
 
-</Accordion>
+</Tab>
+</Tabs>
 
 #### 2. Configure the source fields
 
@@ -470,7 +471,7 @@ Each field lands in one of these states:
 * **Column limit:** AI detection supports up to 100 columns per source. Sources with more columns display a "limit exceeded" message.
 * **Field name length:** column names over 100 characters aren't supported for AI detection.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > As with manually added fields, if an AI-suggested mapping uses a [List of... type](#important-5), the source file must be uploaded or connected as Parquet. CSV and GZIP files don't support array-typed columns.
 
@@ -485,7 +486,7 @@ This option allows you to include a field in the audience that isn't currently p
 1. Click **+ New field**. An empty field is added.
 2. Enter the name of the field and select its type.
 
-![NewField.png](https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png)
+<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **Field types include:**
 
@@ -545,7 +546,7 @@ This option allows you to include a field in the audience that isn't currently p
 
 Identifier types hold a single value per row (for example, one email or one CUID per row). List of identifiers types hold an array of values per row (for example, a single row can contain multiple hashed emails or device IDs) — use this when a source needs to match on more than one identifier per record.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > If a source includes any field mapped to a **List of...** type (List of identifiers, List of Numbers, or List of Text), the source file must be uploaded or connected as Parquet. CSV and GZ files don't support array-typed columns, so list fields may not be ingested correctly from those formats.
 
@@ -614,7 +615,7 @@ When editing the source name, make sure to [follow these naming requirements](#r
 1. Go to the field mapping, and make the necessary changes: Change the field or update its mapped DCP field.
 2. Click **Save**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Don't forget to make corresponding changes reflecting the new source structure in any reports for which this source is used:
 >
@@ -636,7 +637,7 @@ You can delete any source except when it's being used in an audience. If this is
 
 ## Sharing permissions
 
-Granting permissions to your collaborators to view and use your source data is done when [creating collaborations](/docs/data-collaboration-platform-dcp-create-a-collaboration). Learn more about [sharing permissions](/docs/data-collaboration-platform-dcp-sharing-permissions).
+Granting permissions to your collaborators to view and use your source data is done when <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">creating collaborations</Anchor>. Learn more about <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">sharing permissions</Anchor>.
 
 ## Additional information
 
@@ -660,7 +661,7 @@ The DCR key folder is generally created manually using the interface of your sel
 
 After creating the DCR key folder, your bucket/folder structure would look something like this:
 
-![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/ba5902f70e75dc6fa1a6970f28397607c42bd433add4be311f4b498a3960ce05-24740007165841.png)
+<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/ba5902f70e75dc6fa1a6970f28397607c42bd433add4be311f4b498a3960ce05-24740007165841.png" width="308px" />
 
 #### Top-level input folder
 
@@ -669,11 +670,11 @@ Though it is not required, best practice is to create a top-level input folder d
 The top-level input folder is generally created manually using the interface of your selected cloud service.
 
 * This practice is even more highly recommended when you are using the same bucket both for uploading data files (input) and receiving reports (output).
-* You can name this folder anything you want, so long as it complies with the [DCR naming requirements](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements). For ease of identification, it is usually named `input/`.
+* You can name this folder anything you want, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>. For ease of identification, it is usually named `input/`.
 
 After creating the top-level input folder, your bucket/folder structure might look something like this:
 
-![dcr_file_structure_input_folder.png](https://files.readme.io/2d0fef29b00e9ac8bb9ee5fa281a9a502d0395c72d8879370271e1e4a1af9c95-24740010678801.png)
+<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/2d0fef29b00e9ac8bb9ee5fa281a9a502d0395c72d8879370271e1e4a1af9c95-24740010678801.png" width="308px" />
 
 #### Second-level folder for each data source
 
@@ -685,7 +686,7 @@ The data source folders are generally created manually using the interface of yo
 
 After creating 2 data source folders, your bucket/folder structure might look something like this:
 
-![dcr_file_structure_source_folders.png](https://files.readme.io/c9feab81da8507ce96c61bd19b70a53bb6e4914cbab67fbcd0de8b578b04f29a-24740007171473.png)
+<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/c9feab81da8507ce96c61bd19b70a53bb6e4914cbab67fbcd0de8b578b04f29a-24740007171473.png" width="307px" />
 
 Under each data source folder, [nested subfolders by date and version](#nested-subfolders-for-each-date-and-version) must be created each time the source is updated.
 
@@ -703,8 +704,8 @@ As part of Google’s enforcement of the Digital Markets Act (DMA) Google update
 >
 > * Google’s enforcement of the Digital Markets Act (DMA) applies to all platforms.
 > * Read more about this:
->   * [Insights and resources about the Digital Marketers Act](https://www.appsflyer.com/hubs/dma/)
->   * [Google’s FAQ](https://support.google.com/google-ads/answer/14310715)
+>   * <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">Insights and resources about the Digital Marketers Act</Anchor>
+>   * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">Google’s FAQ</Anchor>
 
 #### Adding consent fields
 

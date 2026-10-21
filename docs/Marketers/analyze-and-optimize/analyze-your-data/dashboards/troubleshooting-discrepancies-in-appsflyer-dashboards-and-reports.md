@@ -1,11 +1,5 @@
 ---
 title: Troubleshooting discrepancies in AppsFlyer dashboards and reports
-excerpt: >-
-  Understand why there can be differences and discrepancies when comparing data
-  from different dashboards and reports. Often, this may be because data in one
-  place is lifetime value (LTV) data and in another it's activity data. LTV data
-  is related to installs that occurred during a specified date range. Activity
-  data is events that occurred during a specified date range.
 metadata:
   keywords:
     - dashboard
@@ -35,6 +29,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005600889-Troubleshooting-discrepancies-in-AppsFlyer-dashboards-and-reports
 ---
+**At a glance:** Understand why there can be differences and discrepancies when comparing data from different dashboards and reports. Often, this may be because data in one place is lifetime value (LTV) data and in another it's activity data. LTV data is related to installs that occurred during a specified date range. Activity data is events that occurred during a specified date range.
+
 ## About data differences and discrepancies
 
 When comparing data from different dashboards and reports, the general reason for discrepancies is that you may not be comparing the same data to the same data. The following is a quick checklist to help you make sure you're comparing same to same:
@@ -44,8 +40,8 @@ When comparing data from different dashboards and reports, the general reason fo
 * Are the dashboard/data filters the same?
 * Are the currencies the same?
 * Are the timezones the same?
-* Is the [data freshness](/docs/about-data-freshness-and-timezone-support) the same?
-* Is the data [aggregate data](/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison) or [raw data](/docs/raw-data-reporting-overview)?
+* Is the <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support">data freshness</Anchor> the same?
+* Is the data <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">aggregate data</Anchor> or <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data</Anchor>?
 * Is the data LTV or activity?
 
 One of the most common reasons for differences in data is due to comparing an LTV dashboard or report to an activity dashboard or report. See the following sections to learn more about LTV vs activity.
@@ -72,13 +68,13 @@ Advertisers find both types of data useful but for different purposes. For this 
 * Because activity data shows a breakdown of chronological events, it's useful for measuring the overall performance of media sources during specific date ranges. For example, use activity data to see how many purchase events were performed by all app users during a specific month.
 * Use activity data to compare user behavior in the current month relative to a previous month.
 
-> 📘 **The train analogy**
+> 📄 **The train analogy**
 >
 > This analogy will help you understand the difference between activity and LTV data.
 >
 > **Activity:** Imagine you're watching a passing train. As the train passes, you see only the actions performed by the passengers on the train as they pass by. This is activity data.
 >
-> ![activity_data.jpg](https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg)
+> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV**: Now imagine, that you board a train as an observer. The train is divided into railroad cars.
 >
@@ -86,7 +82,7 @@ Advertisers find both types of data useful but for different purposes. For this 
 > * During the journey, you're able to observe all the actions performed by the passengers in the car. You observe the actions of these passengers until a passenger deboards the train, this is an uninstall.
 > * You aren't able to view the actions of passengers in other railroad cars because they boarded the train before or after you. This then is LTV.
 >
-> ![ltv_data.jpg](https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg)
+> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 ### AppsFlyer dashboards and reports—LTV or activity?
 
@@ -152,7 +148,7 @@ When comparing data between different AppsFlyer aggregated data dashboards and r
 
 If you're aggregating data by geo, another reason for discrepancies could be that in AppsFlyer dashboards, aggregating by geo means the geo where the install occurred, while in raw data reports, it means the geo where the event occurred.
 
-However, consider that there may be other reasons as well. [See the aggregated reporting method comparison for more information](/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison)
+However, consider that there may be other reasons as well. <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">See the aggregated reporting method comparison for more information</Anchor>
 
 </Accordion>
 
@@ -166,14 +162,14 @@ Consider that Meta Ads offers partial LTV data, limited to 28 days following the
 
 There may also be other reasons for discrepancies between AppsFlyer data and external data. See also:
 
-* [Google analytics discrepancies](/docs/google-analytics-integration-discrepancies)
-* [Meta Ads discrepancies](/docs/meta-ads-discrepancies)
-* [Snapchat discrepancies](/docs/snapchat-integration-discrepancies)
-* [Google Ads discrepancies](/docs/google-ads-adwords-faq-and-discrepancies)
-* [X Ads discrepancies](/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies)
-* [TikTok discrepancies](/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer)
-* [App store discrepancies](/docs/resolve-appsflyer-app-stores-discrepancies)
-* [Third-party platform discrepancies](/docs/discrepancies-between-appsflyer-and-third-party-platforms)
+* <Anchor target="_blank" href="/marketers/docs/google-analytics-integration-discrepancies">Google analytics discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/meta-ads-discrepancies">Meta Ads discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/snapchat-integration-discrepancies">Snapchat discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-faq-and-discrepancies">Google Ads discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-faq-and-discrepancies">X Ads discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer">TikTok discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/resolve-appsflyer-app-stores-discrepancies">App store discrepancies</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/discrepancies-between-appsflyer-and-third-party-platforms">Third-party platform discrepancies</Anchor>
 
 </Accordion>
 

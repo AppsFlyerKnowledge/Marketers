@@ -1,9 +1,5 @@
 ---
 title: Combine Cost ETL and cohort reports via Data Locker
-excerpt: >-
-  Combine Cost ETL and cohort reports via Data Locker (regular and advanced
-  aggregated) to get the full picture of your marketing campaigns with the best
-  available freshness, accuracy, and granularity.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
 ---
+**At a glance:** Combine Cost ETL and cohort reports via Data Locker (regular and advanced aggregated) to get the full picture of your marketing campaigns with the best available freshness, accuracy, and granularity.
+
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
 ## About combining Cost ETL and cohort reports
@@ -250,10 +248,10 @@ GROUP BY ALL;
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Cost ETL](/docs/set-up-and-use-roi360-cost-etl-reports)
-> * [Advanced aggregated reports in Data Locker](/docs/advanced-aggregated-reports-in-data-locker)
-> * [Cohort reports via Data Locker](/docs/cohort-analytics-via-data-locker)
+> * <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated reports in Data Locker</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort reports via Data Locker</Anchor>
 
 <div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" />

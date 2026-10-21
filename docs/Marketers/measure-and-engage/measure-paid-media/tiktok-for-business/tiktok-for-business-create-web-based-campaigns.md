@@ -1,8 +1,5 @@
 ---
 title: TikTok for Business—Create web-based campaigns
-excerpt: >-
-  Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok
-  Ads
 metadata:
   keywords:
     - Marketers
@@ -23,11 +20,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40496161157521-TikTok-for-Business-Create-web-based-campaigns
 ---
+**At a glance:** Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads
+
 ## Overview
 
 AppsFlyer supports integration with TikTok Ads (`tiktokweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through TikTok's Events API. TikTok can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > At present, the integration with TikTok Web does not support sending re-engagement postbacks to CAPI.
 
@@ -46,7 +45,7 @@ The setup process includes the following mandatory steps:
 
 And the following optional steps:
 
-* [#create-a-landing-page-with-onelink-smart-script](/docs/meta-ads-create-web-based-campaigns#create-a-landing-page-with-onelink-smart-script) (Optional)
+* <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#create-a-landing-page-with-onelink-smart-script">#create-a-landing-page-with-onelink-smart-script</Anchor> (Optional)
 * [Create a landing page with OneLink Smart Banners](#create-a-landing-page-with-onelink-smart-banners) (Optional)
 
 ## Set up TikTok Web Ads integration in AppsFlyer
@@ -61,12 +60,12 @@ To activate the TikTok Web Ads integration:
 
 1. In AppsFlyer, from the side menu, open **Collaborate** > **Partner Integrations** > **Partner Marketplace**.
 2. Search for **TikTok Web** (or `tiktokweb_int`) and select it. You’re directed to the setup page.
-3. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on ([activated](/docs/partner-activation-deactivation)) for as long as you work with the partner.
-4. Turn off **Advanced Privacy**(if you are setting an iOS app integration).
-5. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with TikTok, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
-6. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your TikTok ads Manager, by following the instructions detailed [HERE](https://business-api.tiktok.com/portal/docs?id=1771100865818625).
-7. **Access token:** Enter the access token. To generate it or retrieve it, follow [these instructions](https://business-api.tiktok.com/portal/docs?id=1771100865818625)
-8. **Limit TikTok ads use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with [data protection laws](/docs/send-opendsr-api-requests).
+3. In the **Integration** tab, turn on **Activate Partner**. The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
+4. Turn off **Advanced Privacy** (if you are setting an iOS app integration).
+5. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with TikTok, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+6. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your TikTok ads Manager, by following the instructions detailed <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">HERE</Anchor>.
+7. **Access token:** Enter the access token. To generate it or retrieve it, follow <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">these instructions</Anchor>
+8. **Limit TikTok ads use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">data protection laws</Anchor>.
 
    > 📘 **Note**
    >
@@ -88,7 +87,7 @@ When a user clicks a TikTok Web ad and lands on a [Smart Script](#create-a-land
 1. In AppsFlyer, from the sidebar, open **Active Integrations** > **TikTok web ads**.
 2. In the **Integration** tab, scroll to the **Install attribution** section.
 3. Turn on **Install view-through attribution**.
-4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see [Enable equal priority for cross-platform impressions](/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions).
+4. **[optional]** Turn on **Cross-platform equal attribution priority** and set its lookback window. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-3-enable-equal-priority-for-crossplatform-impressions">Enable equal priority for cross-platform impressions</Anchor>.
 5. Open the **Attribution link** tab.
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
@@ -104,19 +103,19 @@ Installs are currently the only events that trigger automatic default postbacks 
 To set in-app events postbacks, perform the following:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in [this article](/docs/in-app-event-postback-configuration#in-app-event-postback-window)).
+2. If required, set the In-app event postback window (read more about in-app event postback window configuration in general in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">this article</Anchor>).
 3. Click **Add event** to add an event to the list.
-4. In the **AppsFlyer event**column, select the event name from the drop-down box. AppsFlyer receives the event's name either from the SDK integrated into your app or from server-to-server events.
-5. In the **mapped to partner event** column,select from the dropdown box the most suitable pre-defined partner event.
+4. In the **AppsFlyer event** column, select the event name from the drop-down box. AppsFlyer receives the event's name either from the SDK integrated into your app or from server-to-server events.
+5. In the **mapped to partner event** column, select from the dropdown box the most suitable pre-defined partner event.
 6. In the **For Users From** column, select **This Partner Only** to ensure that in-app event postbacks are sent exclusively for events performed by users who originated from this partner.
-7. In the **including** column, select whether events will be sent with their revenue values. See [Data to include in the postbacks](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks).
+7. In the **including** column, select whether events will be sent with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
 
    > 📘 **Note**
    >
    > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
    > * Currently, only the purchase event can be set to include revenue.
 
-8. [Optional] Click the **Add condition** icon to [set conditions](/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks) for an event.
+8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
 10. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
     1. From the top-left corner, click the app name under the partner name to open the list of apps.
@@ -135,9 +134,9 @@ Perform the next steps in TikTok Ads Manager.
 
 You can choose any pre-defined INAPP event sent from Appsflyer as your campaign goal, or choose “Download” if you want to optimize for mobile App Installs.
 
-> 📘 **Warning**
+> ❗️ **Warning**
 >
-> If you want to ensure that your web-to-app-triggered conversion events are sent via the TikTok Events API, skip [these steps](/docs/tiktok-for-business-advanced-srn-integration-setup#measuring-app-activity-for-nonapp-campaigns) when creating the campaign; otherwise, TikTok will claim those conversions through the SRN API, which can cause reporting and optimization misalignments.
+> If you want to ensure that your web-to-app-triggered conversion events are sent via the TikTok Events API, skip <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup#measuring-app-activity-for-nonapp-campaigns">these steps</Anchor> when creating the campaign; otherwise, TikTok will claim those conversions through the SRN API, which can cause reporting and optimization misalignments.
 
 </Accordion>
 
@@ -145,7 +144,7 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
 <Accordion title="2. Set destination URL">
 
-1. Under **Destination,** in the **Website URL**field, enter the URL that serves as the destination for your ad. The URL should be for one of the following:
+1. Under **Destination,** in the **Website URL** field, enter the URL that serves as the destination for your ad. The URL should be for one of the following:
    * **Web landing page:** Using a landing page is recommended when:
      * You have an app on multiple platforms.
      * You want to use the landing page to give more information about your advertised product.
@@ -183,14 +182,14 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
    #### PC or console store
 
-   If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information, see: [CTV, PC, and console platform direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)
+   If your destination URL is a **PC or a console store**, create the link by following the instructions in the table below. For additional information, see: <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, PC, and console platform direct attribution links</Anchor>
 
 | Link component | Value |
 | --- | --- |
 | Base URL | engagements.appsflyer.com/v1.0/c2s/click/app/ |
 | Mandatory path parameters | ▪ platformExample: steam  <br />▪ app\_idExample: 123456 |
 | Mandatory query parameters | ▪ af\_media\_source  <br />▪ af\_campaign\_id  <br />▪ af\_r |
-| Other parameters | [See all parameters](/docs/ctv-pc-and-console-platform-direct-attribution-links#parameters) |
+| Other parameters | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links#parameters">See all parameters</Anchor> |
 | URL structure | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 
    Map the following AppsFlyer parameters to their TikTok counterparts:
@@ -232,7 +231,7 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
 1. The TikTok ad URL includes the  `pid=tiktokweb_int` parameter. When the user clicks on the ad, an `ttclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.
-3. When the landing page loads, Smart Script fires an impression to AppsFlyer containing the incoming URL parameters. The impression will allow view-through attribution from the web landing page. To learn about impressions and view-through attribution, see [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url).
+3. When the landing page loads, Smart Script fires an impression to AppsFlyer containing the incoming URL parameters. The impression will allow view-through attribution from the web landing page. To learn about impressions and view-through attribution, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">here</Anchor>.
 4. Smart Script generates the outgoing URLs for the CTA buttons on the page based on the incoming URL parameters, including the `ttclid` parameter. The buttons can lead to:
    * Google Play and App Store via a OneLink attribution link.
    * Multiple platform stores (e.g., CTV, Epic, and Steam). In this use case, Smart Script generates a single platform attribution link for each platform, leading to the specified platform's store.
@@ -251,12 +250,12 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
 To set up your smart script TikTok Ads campaigns, perform the following:
 
-1. Set up the template for the campaign’s OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
-2. Create a smart script. For more information, see [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script).
+1. Set up the template for the campaign’s OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
+2. Create a smart script. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">How to create a OneLink Smart Script</Anchor>.
 
    > 📘 **Note**
    >
-   > The instructions below focus on the specific steps required to set up a TikTok Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns, see the [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) section of the [OneLink Smart Script V2 setup](/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script) article.
+   > The instructions below focus on the specific steps required to set up a TikTok Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns, see the <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">How to create a OneLink Smart Script</Anchor> section of the <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Script V2 setup</Anchor> article.
 
 3. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open TikTok Ads Manager and check the URL parameters set during the creation of the destination URL. For more information, see  [Set destination UR](#2-set-destination-url)[L](#set-destination-url).
 4. Map the incoming URL parameters required for the TikTok Ads campaign to the outgoing URL parameters that will be sent to AppsFlyer when the user clicks the CTA button:
@@ -266,13 +265,9 @@ To set up your smart script TikTok Ads campaigns, perform the following:
      1. In **Mapping for**, select **Custom parameter**.
      2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **ttclid**.
 
-        <br /><br />**Note**<br />
-
-
-     #### Note
-
-     To display in AppsFlyer raw data reports, the incoming `ttclid` parameter must also be mapped (in addition to the outgoing `ttclid` parameter) to one of the outgoing `af_sub[1-5]` parameters.
-
+     > 📘 **Note**
+     >
+     > To display in AppsFlyer raw data reports, the incoming `ttclid` parameter must also be mapped (in addition to the outgoing `ttclid` parameter) to one of the outgoing `af_sub[1-5]` parameters.
 
 
 </Accordion>
@@ -283,9 +278,9 @@ To set up your smart script TikTok Ads campaigns, perform the following:
 
 To set up your smart script TikTok Ads campaigns for cross-platform landing pages, perform the following:
 
-1. Set up the template for the campaign’s OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
-   * Enable your OneLink template for cross-platform attribution, see [here](/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution).
-2. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open TikTok Ads Manager and examine the URL parameters you set when you built the destination URL. For more information, see [Set destination URL](/docs/meta-ads-create-web-based-campaigns#b-set-destination-url).
+1. Set up the template for the campaign’s OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
+   * Enable your OneLink template for cross-platform attribution, see <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns#create-a-onelink-templatefor-cross-platform-attribution">here</Anchor>.
+2. Make sure all relevant URL parameters are appended to the incoming URL. To review the parameters appended to the incoming URL, open TikTok Ads Manager and examine the URL parameters you set when you built the destination URL. For more information, see <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#b-set-destination-url">Set destination URL</Anchor>.
 3. Decide for each incoming parameter the outgoing parameter to which it will be mapped. for example, the incoming `af_site_id` parameter in the incoming URL will be mapped to the  `af_site_id` parameter in the outgoing URL.
 4. Determine the default value for the mandatory outgoing parameters that cannot be left empty.
 5. Send your developer the following information:
@@ -315,7 +310,7 @@ To set up your smart script TikTok Ads campaigns for cross-platform landing page
 
 1. The TikTok ad URL includes the  `pid=tiktokweb_int` parameter. When the user clicks on the ad, an `ttclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Banner.
-3. When the landing page loads, the Smart Banner fires an [impression](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url) event to AppsFlyer, which includes the incoming URL parameters. This impression enables view-through attribution for the landing page. To learn about impressions and view-through attribution, see [here](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url).
+3. When the landing page loads, the Smart Banner fires an <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">impression</Anchor> event to AppsFlyer, which includes the incoming URL parameters. This impression enables view-through attribution for the landing page. To learn about impressions and view-through attribution, see <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-custom-impression-url">here</Anchor>.
 4. The Smart Banner generates the outgoing URL for the CTA button on the banner. The outgoing URL is based on the incoming URL parameters including the `ttclid` parameter. The Smart banner can generate only OneLink-based links.
 5. When the user clicks the Smart Banner CTA button the click is fired and registered in AppsFlyer.
 6. The user is redirected to the store and downloads the app.
@@ -331,15 +326,15 @@ To set up your smart script TikTok Ads campaigns for cross-platform landing page
 
 To set up your Smart Banners TikTok Ads campaigns, perform the following:
 
-1. Set up the template for the campaign’s OneLink attribution links. For more information, see [How to create OneLink templates](/docs/create-a-onelink-template#create-a-onelink-template).
+1. Set up the template for the campaign’s OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
 2. Create a Smart Banner.
 
    > 📘 **Note**
    >
-   > The instructions below focus on the specific steps required to set up a TikTok Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the [setup section](/docs/smart-banners-mobile-web-to-app-for-marketers#setup) of the [Smart Banners—mobile web-to-app (for marketers)](/docs/smart-banners-mobile-web-to-app-for-marketers) article.
+   > The instructions below focus on the specific steps required to set up a TikTok Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#setup">setup section</Anchor> of the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners—mobile web-to-app (for marketers)</Anchor> article.
 
 3. Set the Smart Banner parameters for TikTok Ads campaigns:
-   * Make sure all relevant URL parameters are appended to the incoming URL. Most importantly the `pid=tiktokweb_int` and `ttclid` are available in the incoming URL to allow the Smart Banner to collect them. These two parameters are necessary for attribution and for sending postbacks to TikTok Ads. To review the parameters that are appended to the incoming URL, open TikTok Ads Manager and review the URL parameters that you set when you built the destination URL, see: [Set destination URL](/docs/meta-ads-create-web-based-campaigns#b-set-destination-url).
+   * Make sure all relevant URL parameters are appended to the incoming URL. Most importantly the `pid=tiktokweb_int` and `ttclid` are available in the incoming URL to allow the Smart Banner to collect them. These two parameters are necessary for attribution and for sending postbacks to TikTok Ads. To review the parameters that are appended to the incoming URL, open TikTok Ads Manager and review the URL parameters that you set when you built the destination URL, see: <Anchor target="_blank" href="/marketers/docs/meta-ads-create-web-based-campaigns#b-set-destination-url">Set destination URL</Anchor>.
 
 </Accordion>
 
@@ -362,7 +357,7 @@ Raw data exports and API responses include the `tiktokglobal_int` PID in the `me
 You can measure TikTok cost, clicks, and impressions alongside your web-to-app attribution data in the dashboard and in Cost ETL reports (ROI360 customers only):
 
 1. Connect TikTok as a cost integration on your mobile app:  
-   Go to the **Cost** tab or **Cost Settings** page and connect via `tiktokglobal_int`. For step-by-step instructions, see [Set up ROI360 Cost API to measure cost data](/docs/set-up-roi360-cost-api-to-measure-cost-data).
+   Go to the **Cost** tab or **Cost Settings** page and connect via `tiktokglobal_int`. For step-by-step instructions, see <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data">Set up ROI360 Cost API to measure cost data</Anchor>.
 2. Add the campaign ID to your landing page URL:  
    Include `af_c_id` along with the full campaign hierarchy in the landing page URL. This ensures cost, clicks, and impressions are matched to your web attribution data at the most granular level.
 

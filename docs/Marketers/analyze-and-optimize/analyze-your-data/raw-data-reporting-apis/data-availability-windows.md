@@ -1,8 +1,5 @@
 ---
 title: Data availability windows
-excerpt: >-
-  Data availability depends on the report type and the defined availability
-  window.
 metadata:
   keywords:
     - Advertisers
@@ -25,11 +22,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4415473374865-Data-availability-windows
 ---
+**At a glance:** Data availability depends on the report type and the defined availability window.
+
 ## Data availability windows
 
-* The terms **availability window** and **data retention** mean different things. [Data retention](https://www.appsflyer.com/legal/services-privacy-policy/) relates to the period we keep raw data on our servers and is of longer duration than the availability window.
+* The terms **availability window** and **data retention** mean different things. <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">Data retention</Anchor> relates to the period we keep raw data on our servers and is of longer duration than the availability window.
 * The window duration depends on your subscription package.
-* The article doesn't apply to [Data Locker](/docs/data-locker-for-marketers).
+* The article doesn't apply to <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor>.
 
 ### Raw data availability window
 
@@ -46,10 +45,10 @@ An availability window limits data provided by Pull API and the Aggregated Data 
 
 | Report | Availability window |
 | --- | --- |
-| Aggregated reports | 25 months (2 years + 1 month), [starting with the first app install](/docs/bulletin-aggregated-ltv-data-availability) |
+| Aggregated reports | 25 months (2 years + 1 month), <Anchor target="_blank" href="/marketers/docs/bulletin-aggregated-ltv-data-availability">starting with the first app install</Anchor> |
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Report generation quotas](/docs/report-generation-quotas-rate-limitations)
+> * <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Report generation quotas</Anchor>
 
 <div data-zendesk-anchors="h_01HE0FT9CNECNKYMVX9ZJJ9DNV=data-availability-windows h_01HE0FT9CNS4N1GD1AYRBSRWPF=raw-data-availability-window h_01HE0FT9CPW91ASDH9MEW083ZH=aggregated-data-availability-window h_01HE7S7VH4PC6FQAYKP6A0G4YY=see-also" />

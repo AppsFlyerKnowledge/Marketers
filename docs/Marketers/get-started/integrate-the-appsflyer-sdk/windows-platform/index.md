@@ -13,5 +13,5 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551223206417-Windows-platform
 ---
-- [Windows SDK integration for developers](/docs/windows-sdk-integration-for-developers)
-- [Testing Windows SDK integration](/docs/testing-windows-sdk-integration)
+- <Anchor target="_blank" href="/marketers/docs/windows-sdk-integration-for-developers">Windows SDK integration for developers</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/testing-windows-sdk-integration">Testing Windows SDK integration</Anchor>

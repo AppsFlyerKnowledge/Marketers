@@ -1,10 +1,5 @@
 ---
 title: Server-to-Server (S2S) API for Web Performance Measurement
-excerpt: >-
-  The S2S API for Web Performance Measurement lets you send web visits and
-  events to AppsFlyer directly from your server, bypassing browser limitations
-  like ad blockers and cookie restrictions. Use it alongside the Web SDK or on
-  its own to get more complete, higher-quality attribution data.
 metadata:
   keywords:
     - Web Attribution
@@ -26,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45670116601617-Server-to-Server-S2S-API-for-Web-Performance-Measurement
 ---
+> **At a glance:** The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions. Use it alongside the Web SDK or on its own to get more complete, higher-quality attribution data.
+
 ## About the S2S API for web attribution
 
 AppsFlyer supports two ways to send web data for attribution: the Web SDK (client-side) and the S2S API (server-to-server, or S2S). You can use either method independently or combine them depending on your setup and needs.
@@ -62,7 +59,7 @@ All requests must include a valid S2S API token and the correct content type in 
 
 > 📘 **Note**
 >
-> To create an S2S API token, see the instructions in [Managing AppsFlyer tokens](/docs/managing-appsflyer-tokens#manage-your-tokens).
+> To create an S2S API token, see the instructions in <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#manage-your-tokens">Managing AppsFlyer tokens</Anchor>.
 
 ### Measure an event
 
@@ -295,7 +292,7 @@ The Web SDK and Segment are two parallel paths into AppsFlyer, joined by a share
 
 > 📘 **Note**
 >
-> This covers **web** events sent over S2S from a Segment custom destination. For Segment's mobile SDK wrapper, which connects app installs and in-app events to the AppsFlyer mobile SDK, see [Segment integration](/docs/segment-integration) instead; that's a different integration for a different platform.
+> This covers **web** events sent over S2S from a Segment custom destination. For Segment's mobile SDK wrapper, which connects app installs and in-app events to the AppsFlyer mobile SDK, see <Anchor target="_blank" href="/marketers/docs/segment-integration">Segment integration</Anchor> instead; that's a different integration for a different platform.
 
 <Accordion title="Set up the destination in Segment">
 

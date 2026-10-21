@@ -1,9 +1,5 @@
 ---
 title: About the Enhanced attribution model
-excerpt: >-
-  The Enhanced attribution model improves attribution accuracy by attributing
-  only eligible clicks and impressions when click and impression flooding is
-  detected on the device.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41442782045073-About-the-Enhanced-attribution-model
 ---
+**At a glance:** The Enhanced attribution model improves attribution accuracy by attributing only eligible clicks and impressions when click and impression flooding is detected on the device.
+
 ## What is the Enhanced attribution model?
 
 The Enhanced attribution model combats engagement flooding by only considering signals that reflect real user engagement for attribution. When AppsFlyer detects engagement patterns that indicate flooding, AppsFlyer considers eligible clicks and impressions only. As a result, attribution is based on the last eligible click, which is not necessarily the most recent click.

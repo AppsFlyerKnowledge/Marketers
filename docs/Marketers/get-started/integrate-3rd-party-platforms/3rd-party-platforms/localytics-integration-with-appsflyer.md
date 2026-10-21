@@ -1,14 +1,5 @@
 ---
 title: Localytics integration with AppsFlyer
-excerpt: >-
-  Localytics, an AppsFlyer integrated partner, is a marketing and analytics
-  platform for mobile and web apps. Localytics app analytics provide
-  cohort-based retention analysis, funnels, customer segmentation, and real-time
-  analyses to uncover groups of users with the highest loyalty rates and
-  lifetime value. Localytics app marketing brings marketing automation services
-  to apps by measuring the long-term success of customer acquisition campaigns
-  and delivering rich and actionable in-app and push messages to relevant
-  customers when they can have the greatest impact.
 metadata:
   keywords:
     - Localytics
@@ -33,9 +24,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210748626-Localytics-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Localytics, an AppsFlyer integrated partner, is a marketing and analytics platform for mobile and web apps. Localytics app analytics provide cohort-based retention analysis, funnels, customer segmentation, and real-time analyses to uncover groups of users with the highest loyalty rates and lifetime value. Localytics app marketing brings marketing automation services to apps by measuring the long-term success of customer acquisition campaigns and delivering rich and actionable in-app and push messages to relevant customers when they can have the greatest impact.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Localytics
 
@@ -48,12 +41,12 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 The Localytics configuration window includes 4 tabs: **Integration, Attribution link, Data enrichment,** and **Permissions**. Click on the items below to read about the tabs setup.
 
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
 <div id="integration-tab" />
 
@@ -64,7 +57,7 @@ The Integration Tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 [![](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)
 

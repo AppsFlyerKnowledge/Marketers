@@ -1,6 +1,5 @@
 ---
 title: AppsFlyer Knowledge Base glossary
-excerpt: Get familiar with AppsFlyer terms.
 metadata:
   keywords:
     - Advertisers
@@ -28,7 +27,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000732237-AppsFlyer-Knowledge-Base-glossary
 ---
- **[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [I](#i) · J · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#X) · Y · Z** 
+> **At a glance:** Get familiar with AppsFlyer terms.
+
+**[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [I](#i) · J · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#X) · Y · Z**
 
 **Translated glossary terms are ordered according to the English alphabet.*
 
@@ -47,7 +48,7 @@ x-zendesk:
 #### Ad cost
 :   Amount of money spent on an ad. AppsFlyer records ad cost by
     click, cost API, and CSV file upload.
-    [[Article]](/docs/roi360-cost-aggregation-overview)
+    <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">[Article]</Anchor>
 
 #### Ad group
 :   Contains one or more ads that share similar targets (such as
@@ -63,12 +64,12 @@ x-zendesk:
 :   Gathers apps and websites as traffic media sources for marketers.
     Ad networks aggregate publisher ad space and match it with marketer
     demand.
-    [[Article]](/partners/docs/ad-network-onboarding)
+    <Anchor target="_blank" href="/partners/docs/ad-network-onboarding">[Article]</Anchor>
 
 #### Ad revenue
 :   Ad revenue is the money apps generate from in-app advertising.
     Use Ad revenue data in AppsFlyer to automatically see ROI of
-    users from different media sources. [[Article]](/docs/roi360-guide-ad-revenue-attribution)
+    users from different media sources. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">[Article]</Anchor>
 
 #### Ad set
 :   Contains one or more ads. They are used to define targeting,
@@ -78,17 +79,17 @@ x-zendesk:
 :   Amount of money spent on advertising for a product or activity.  
     *Formula:* Revenue produced by advertising / Advertising
     spend = Return on Ad Spend (ROAS)  
-    [[Article]](/docs/import-cost-data) and [[Article]](/partners/docs/cost-import-for-ad-networks)
+    <Anchor target="_blank" href="/marketers/docs/import-cost-data">[Article]</Anchor> and <Anchor target="_blank" href="/partners/docs/cost-import-for-ad-networks">[Article]</Anchor>
 
 #### Ad types
 :   *Includes:* Audio, banner, interstitial,
     playable (interactive preview of app experience),
     rewarded video (video offering in-app reward in exchange for watching),
-    sponsored content, text, and video [[Article]](/docs/about-link-structure-and-parameters#attribution-link-parameters)
+    sponsored content, text, and video <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">[Article]</Anchor>
 
 #### Ad-network integration
 :   Process of setting up an ad network as an AppsFlyer partner for
-    recording and attribution purposes. [[Article]](/docs/set-up-an-integrated-partner)
+    recording and attribution purposes. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">[Article]</Anchor>
 
 #### Admin
 :   Also, **Account owner**  
@@ -106,7 +107,7 @@ x-zendesk:
     a specific partner, postback and event data shared with
     **that partner** is aggregate and anonymous. User-level
     raw data **is available** to the advertiser itself.
-    [[Article]](/docs/apply-aggregated-advanced-privacy-framework)
+    <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">[Article]</Anchor>
 
 #### Advertiser
 :   Related to, **Marketer** and **App owner**  
@@ -118,7 +119,7 @@ x-zendesk:
     GAID, OAID). Used to measure user engagement and app use.
 
 #### AdWords
-:   Now, Google Ads [[Article]](/docs/google-ads-adwords-integration-setup-for-advertisers)
+:   Now, Google Ads <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">[Article]</Anchor>
 
 #### Affiliate networks
 :   Also, **Publisher**  
@@ -129,10 +130,10 @@ x-zendesk:
     [Article]
 
 #### Agency
-:   Third-party that runs, attributes, and measures app marketing campaigns for clients. Agency clients include advertisers/marketers and app owners. [[Article]](/partners/docs/about-agency-accounts)
+:   Third-party that runs, attributes, and measures app marketing campaigns for clients. Agency clients include advertisers/marketers and app owners. <Anchor target="_blank" href="/partners/docs/about-agency-accounts">[Article]</Anchor>
 
 #### Aggregate data
-:   High-level data, for example, at the account or app level, compiled as a summary using more granular data. [[Article]](/docs/aggregated-and-analytics-reporting-overview)
+:   High-level data, for example, at the account or app level, compiled as a summary using more granular data. <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">[Article]</Anchor>
 
 #### Aggregated Advanced Privacy
 :   **Applies to iOS 14.5+ non-consenting users only.** Aggregated
@@ -147,7 +148,7 @@ x-zendesk:
     to the advertiser itself. This overrides any
     Advanced Privacy
     settings made at the individual partner level.
-    [[Article]](/docs/apply-aggregated-advanced-privacy-framework)
+    <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">[Article]</Anchor>
 
 #### All-installs network
 :   Ad network that accepts postbacks, from all sources, for every
@@ -173,12 +174,12 @@ x-zendesk:
     verification through the addition of digital asset links
     and must be configured in both the app's code and the website's
     associated domain.
-    [[Article]](/docs/onelink-guide)
+    <Anchor target="_blank" href="/marketers/docs/onelink-guide">[Article]</Anchor>
 
 #### Android ID
 :   Non-resettable device ID found in Android devices with Google Play Services.   
     Before Android 10: If GAID is unavailable, then this ID can be used for attribution purposes.   
-    See related [privacy regulations](https://www.google.com/url?q=https://developer.android.com/about/versions/10/privacy/changes&sa=D&ust=1590521123347000&usg=AFQjCNFwiLOxMlguJjQkG4NE5JkxESxEiw).
+    See related <Anchor target="_blank" href="https://www.google.com/url?q=https://developer.android.com/about/versions/10/privacy/changes&sa=D&ust=1590521123347000&usg=AFQjCNFwiLOxMlguJjQkG4NE5JkxESxEiw">privacy regulations</Anchor>.
 
 #### API
 :   **Application Program Interface**  
@@ -206,7 +207,7 @@ x-zendesk:
 :   An app is opened. The count is based on SDK launches or logic
     defined by an app owner.  
     *Example:* One day of antivirus app use may count as one
-    session. [[Article]](/docs/measure-sessions)
+    session. <Anchor target="_blank" href="/marketers/docs/measure-sessions">[Article]</Anchor>
 
 #### App owner
 :   Related to*,* **Advertiser** and
@@ -250,11 +251,11 @@ x-zendesk:
 #### Assisted installs
 :   Also*,* **Multi-touch attribution**  
     Engagements, via media sources, that contribute to the last attributed
-    engagement before an install. [[Article]](/docs/measure-assisted-installs)
+    engagement before an install. <Anchor target="_blank" href="/marketers/docs/measure-assisted-installs">[Article]</Anchor>
 
 #### Attribution
 :   Installs and other events that are associated with a media source
-    via clicks and impressions. [[Article]](/docs/appsflyer-attribution-model)
+    via clicks and impressions. <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">[Article]</Anchor>
 
 #### Attribution link
 :   Ad URL that contains information needed to record a click and
@@ -267,7 +268,7 @@ x-zendesk:
 #### Audiences
 :   AppsFlyer feature that lets marketers segment users into audience
     groups for easy and precise targeting.
-    [[Article]](/docs/audiences-guide)
+    <Anchor target="_blank" href="/marketers/docs/audiences-guide">[Article]</Anchor>
 
 </Accordion>
 
@@ -275,7 +276,7 @@ x-zendesk:
 
 #### Banner
 :   Graphic website ad that links to the website or app it advertises.
-    Marketers use AppsFlyer Smart Banners to attribute and measure the quality of app installs resulting from visitors to their mobile websites. [[Article]](/docs/smart-banners-mobile-web-to-app-for-marketers)
+    Marketers use AppsFlyer Smart Banners to attribute and measure the quality of app installs resulting from visitors to their mobile websites. <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">[Article]</Anchor>
 
 #### BI system
 :   Set of processes, architectures, and technologies that convert
@@ -287,12 +288,12 @@ x-zendesk:
 
 #### Brand bundle
 :   Consolidates the attribution, activity, and revenue data of brand-related
-    web and mobile apps. [[Article]](/docs/pba-brand-bundles-and-settings)
+    web and mobile apps. <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings">[Article]</Anchor>
 
 #### Branded link
 :   Shorter version of a URL that is built around a brand name or
     related term.
-    [[Article]](/docs/brand-onelink-with-your-domain)  
+    <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">[Article]</Anchor>  
     *Example:* If your brand is *Great App*, then a
     branded link could be *promotions.greatapp.com*.
 
@@ -316,7 +317,7 @@ x-zendesk:
 :   Contains one or more ad sets. Characterized by an objective and
     KPIs, target audience, budget and schedule, platform/s of choice,
     ad creative and format, strategy, etc.
-    [[Article]](/docs/measure-paid-media).
+    <Anchor target="_blank" href="/marketers/docs/measure-paid-media">[Article]</Anchor>.
 
 #### Campaign ID
 :   Unique campaign identifier within a media source.
@@ -356,10 +357,10 @@ x-zendesk:
 #### COA
 :   **Cost of Acquisition**  
     Cost incurred when a business takes on a new client, asset, or
-    good. [[Article]](/docs/roi360-cost-aggregation-overview)
+    good. <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">[Article]</Anchor>
 
 #### Cohort analysis
-:   Aggregate data set that breaks users into groups to identify behavioral patterns. Groups, or cohorts, usually share common characteristics or experiences within a defined time period. [[Article]](/docs/cohort-and-retention-dashboard)
+:   Aggregate data set that breaks users into groups to identify behavioral patterns. Groups, or cohorts, usually share common characteristics or experiences within a defined time period. <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">[Article]</Anchor>
 
 #### Contributor
 :   Also, **Assist**  
@@ -367,7 +368,7 @@ x-zendesk:
 
 #### Conversion
 :   Occurs when a user completes an ad-related action that is considered
-    good for business. In AppsFlyer, attributed installs, reinstalls and re-engagements are all considered conversions. Example: User clicks on an ad, then installs. The install is a new conversion. [[Article]](/docs/about-conversion-rates)
+    good for business. In AppsFlyer, attributed installs, reinstalls and re-engagements are all considered conversions. Example: User clicks on an ad, then installs. The install is a new conversion. <Anchor target="_blank" href="/marketers/docs/about-conversion-rates">[Article]</Anchor>
 
 #### Conversion chain
 :   Sequence of conversion events, from viewing an ad to performing
@@ -381,7 +382,7 @@ x-zendesk:
 
 #### Conversion rate
 :   Percentage of users that move along the conversion chain, from
-    one step to another. [[Article]](/docs/about-conversion-rates)
+    one step to another. <Anchor target="_blank" href="/marketers/docs/about-conversion-rates">[Article]</Anchor>
 
 #### Conversion types
 :   Also, **Retargeting conversion types**  
@@ -430,7 +431,7 @@ x-zendesk:
     *Formula:* Total advertising costs / Number of impressions
 
 #### Creative
-:   Concept, design, and artwork that goes into an ad. In the **Smart Banners** page, marketers set banner visuals, texts, and buttons for each banner's creative, without the need for a web developer. [[Article]](/docs/smart-banners-mobile-web-to-app-for-marketers)
+:   Concept, design, and artwork that goes into an ad. In the **Smart Banners** page, marketers set banner visuals, texts, and buttons for each banner's creative, without the need for a web developer. <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">[Article]</Anchor>
 
 #### CRM
 :   **Customer Relationship Management**  
@@ -458,7 +459,7 @@ x-zendesk:
 
 #### CTI
 :   **Click-to-Install**  
-    Advertising measurement that shows the ratio between the total number of app installs and the total number of ad clicks. [[Article]](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)  
+    Advertising measurement that shows the ratio between the total number of app installs and the total number of ad clicks. <Anchor target="_blank" href="/marketers/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">[Article]</Anchor>  
     *Formula:* Number of installs / Number of ad clicks
 
 #### CTIT
@@ -468,7 +469,7 @@ x-zendesk:
 
 #### CTR
 :   **Click-through Rate**  
-    Advertising measurement that shows the ratio between ads displayed to potential users (impressions) and subsequent clicks. [[Article]](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)  
+    Advertising measurement that shows the ratio between ads displayed to potential users (impressions) and subsequent clicks. <Anchor target="_blank" href="/marketers/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">[Article]</Anchor>  
     *Formula:* Users who clicked an ad / Number of impressions
     (ad views)
 
@@ -477,15 +478,15 @@ x-zendesk:
     Device (such as a Smart TV) that is used to stream content over
     the internet. The content is most often streamed via CTV apps
     that are downloaded.
-    [[Article]](/docs/ctv-pc-and-console-platform-attribution-concepts)
+    <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">[Article]</Anchor>
 
 #### CUID
 :   **Customer User ID**  
-    Unique user identifier. Usually generated and set by the app owner at the time of user registration. CUID lets app owners follow user journeys across different devices. [[Article]](/docs/customer-user-id-field-cuid)
+    Unique user identifier. Usually generated and set by the app owner at the time of user registration. CUID lets app owners follow user journeys across different devices. <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">[Article]</Anchor>
 
 #### CV
 :   **Conversion Value**  
-    A measure of user engagement set in an iOS app in the framework of SKAdNetwork [[Article]](/docs/skadnetwork-skan-solution-guide)
+    A measure of user engagement set in an iOS app in the framework of SKAdNetwork <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">[Article]</Anchor>
 
 </Accordion>
 
@@ -494,7 +495,7 @@ x-zendesk:
 #### Data Locker
 :   AppsFlyer feature for the delivery of raw data to an AWS bucket
     (dedicated repository). Marketers get raw data from the AWS bucket.
-    [[Article]](/docs/data-locker-for-marketers)
+    <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">[Article]</Anchor>
 
 #### DAU
 :   **Daily Active Users**  
@@ -508,12 +509,12 @@ x-zendesk:
 #### Deep-linking
 :   Link that sends a user to specific content within an app and
     not to an app store or website.
-    [[Article]](/docs/deep-linking-using-onelink)
+    <Anchor target="_blank" href="/marketers/docs/deep-linking-using-onelink">[Article]</Anchor>
 
 #### Deferred deep-linking
 :   Link first sends a user to an app store or website to download
     and install an app. Then, using the link attribution data, the
-    user is redirected to specific content within the app. [[Article]](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)
+    user is redirected to specific content within the app. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">[Article]</Anchor>
 
 #### Deprecation notice
 :   Notification that all or part of a particular feature version
@@ -597,14 +598,14 @@ x-zendesk:
 #### eRPA
 :   **Effective Revenue per Action**  
     Actions include opening an app or performing specific in-app
-    events. [[Article]](/docs/roi360-guide-ad-revenue-attribution).  
+    events. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">[Article]</Anchor>.  
     *Formula:* Total revenue / Number of trigger event instances
     = eRPA (as analyzed by AppsFlyer)
 
 #### ESP
 :   **Email Service Provider**  
     A company that provides email marketing or bulk email services.
-    [[Article]](/docs/email-service-provider-esp-integration-guide)
+    <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">[Article]</Anchor>
 
 #### Event
 :   Also, **In-app event**  
@@ -636,7 +637,7 @@ x-zendesk:
     faked impressions, clicks, and conversion/data events.  
     *Methods:* Click spam and injection, and SDK spoofing.  
 
-    *Further reading:*[[Article]](/docs/protect360-anti-fraud-guide#faq-and-tips) and [[AppsFlyer mobile fraud glossary]](https://www.appsflyer.com/mobile-attribution-glossary)
+    *Further reading:* <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq-and-tips">[Article]</Anchor> and <Anchor target="_blank" href="https://www.appsflyer.com/mobile-attribution-glossary">[AppsFlyer mobile fraud glossary]</Anchor>
 
 </Accordion>
 
@@ -665,7 +666,7 @@ x-zendesk:
 :   Attribution method that uses unique device identifiers. Identifiers,
     retrieved from attribution links, are matched with identifiers
     retrieved by the AppsFlyer SDK.   
-    *Identifiers:*IDFA, GAID, OAID, Android ID, and
+    *Identifiers:* IDFA, GAID, OAID, Android ID, and
     IMEI
 
 #### IDFA
@@ -673,7 +674,7 @@ x-zendesk:
     Unique, user-resettable identifier for Apple iOS users. It's
     used by marketers to record data so they can deliver customized
     advertising.
-    [[Article]](/docs/preparing-for-the-app-store-review-nutrition-labels)
+    <Anchor target="_blank" href="/marketers/docs/preparing-for-the-app-store-review-nutrition-labels">[Article]</Anchor>
 
 #### IDFV
 :   **Identifier for Vendors**  
@@ -684,11 +685,11 @@ x-zendesk:
 :   **International Mobile Equipment Identity**  
     Unique, non-resettable mobile-device identifier. Android version
     before Android 10: If GAID is unavailable, then IMEI can be used
-    for attribution purposes. [Privacy changes in Android 10](https://developer.android.com/about/versions/10/privacy/changes)
+    for attribution purposes. <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes">Privacy changes in Android 10</Anchor>
 
 #### Impression
 :   Act of viewing an ad by an app user or website visitor. Ad networks
-    can have specific definitions for impressions. [[Article]](/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1)
+    can have specific definitions for impressions. <Anchor target="_blank" href="/marketers/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">[Article]</Anchor>
 
 #### In-app events
 :   After an app install, any action performed by a user. See
@@ -705,13 +706,13 @@ x-zendesk:
 
 #### Install referrer
 :   Attribution method that uses a *Google Play* referrer
-    parameter. [[Article]](/docs/appsflyer-attribution-model#install-referrer-android-only)
+    parameter. <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#install-referrer-android-only">[Article]</Anchor>
 
 #### Integrated partner
-:   An ad network, agency, or marketing tool that is integrated with AppsFlyer. [[Article]](/docs/set-up-an-integrated-partner)
+:   An ad network, agency, or marketing tool that is integrated with AppsFlyer. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">[Article]</Anchor>
 
 #### Integrated partner types
-:   Includes ad, affiliate, and retargeting networks, as well as agencies, analytics platforms, direct publishers, programmatic advertising, marketing automation, TV, fraud detection, Meta campaign management partners, and Google Marketing Platforms. [[Article]](/docs/set-up-an-integrated-partner#partner-types-in-the-ecosystem)
+:   Includes ad, affiliate, and retargeting networks, as well as agencies, analytics platforms, direct publishers, programmatic advertising, marketing automation, TV, fraud detection, Meta campaign management partners, and Google Marketing Platforms. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#partner-types-in-the-ecosystem">[Article]</Anchor>
 
 </Accordion>
 
@@ -756,26 +757,26 @@ KPI
 #### Lookback window
 :   Maximum period of time, from engagement to install, when an install
     can be attributed to a specific ad.
-    [[Article]](/docs/set-up-lookback-windows)
+    <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">[Article]</Anchor>
 
 #### Loyal user
 :   KPI for user engagement. By default, this is a user who opens
     an installed app at least three times after initial app launch.
     On the **App settings** page, marketers can select
     specific in-app events to signify loyal users.
-    [[Article]](/docs/about-a-loyal-user)
+    <Anchor target="_blank" href="/marketers/docs/about-a-loyal-user">[Article]</Anchor>
 
 #### LTV
 :   **Lifetime Value;** Also,
     **Customer Lifetime Value (CLTV)**  
-    Powerful KPI that indicates user value during the time they use your app. [[Article]](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports)
+    Powerful KPI that indicates user value during the time they use your app. <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">[Article]</Anchor>
 
 </Accordion>
 
 <Accordion title="M">
 
 #### Macros
-:   Parameters used by partners in attribution links and postbacks. Macros, when placed in a postback, are automatically replaced by user-related data. [[Article]](/partners/docs/postback-macros-for-ad-networks#in-app-event-only-macros)
+:   Parameters used by partners in attribution links and postbacks. Macros, when placed in a postback, are automatically replaced by user-related data. <Anchor target="_blank" href="/partners/docs/postback-macros-for-ad-networks#in-app-event-only-macros">[Article]</Anchor>
 
 #### Marketer
 :   Related to, **advertiser** and **app owner**  
@@ -789,15 +790,15 @@ KPI
 #### Master API
 :   Aggregated
     data API that lets users create custom reports with groupings and KPIs of their choice.
-    [[Article]](/docs/master-api-user-acquisition-metrics-via-api)
+    <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">[Article]</Anchor>
 
 #### MAU
 :   **Monthly Active Users**  
     Number of unique users (counted only once) who open a specific
-    app within a 30-day period. [[Article]](/docs/activity-dashboard#metric-definitions)
+    app within a 30-day period. <Anchor target="_blank" href="/marketers/docs/activity-dashboard#metric-definitions">[Article]</Anchor>
 
 #### Media source
-:   Responsible for engaging users with ads. [[Article]](/docs/about-media-source-types)  
+:   Responsible for engaging users with ads. <Anchor target="_blank" href="/marketers/docs/about-media-source-types">[Article]</Anchor>  
     *Types of media sources:* Self-reporting networks (SRN),
     non-SRN, and owned media
 
@@ -825,7 +826,7 @@ KPI
 #### MMP
 :   **Mobile Measurement Partner**  
     A
-    [mobile measurement partner](https://www.appsflyer.com/glossary/mmp/),
+    <Anchor target="_blank" href="https://www.appsflyer.com/glossary/mmp/">mobile measurement partner</Anchor>,
     or MMP, is a company that helps apps measure campaign performance
     across advertising marketing channels, media sources, and ad
     networks.  
@@ -861,7 +862,7 @@ KPI
 
 #### NOI
 :   **Non-organic install**  
-    Mobile app install that AppsFlyer attributes to a paid or owned marketing activity. [[Article]](/docs/about-organic-and-non-organic-installs)  
+    Mobile app install that AppsFlyer attributes to a paid or owned marketing activity. <Anchor target="_blank" href="/marketers/docs/about-organic-and-non-organic-installs">[Article]</Anchor>  
     *Examples:* Paid ad campaigns and owned media email campaigns
 
 </Accordion>
@@ -871,15 +872,15 @@ KPI
 #### OAID
 :   **Open Advertiser Identifier**  
     Unique, user-resettable identifier (similar to IDFA and GAID)
-    used by some out-of-store Android markets. [[Article]](/docs/android-oaid-implementation-in-the-sdk)
+    used by some out-of-store Android markets. <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">[Article]</Anchor>
 
 #### OneLink™
 :   Unique AppsFlyer multi-platform attribution link. Uses a
     single link to redirect leads to the relevant store or to deep-link
-    existing app users. [[Article]](/docs/onelink-guide)
+    existing app users. <Anchor target="_blank" href="/marketers/docs/onelink-guide">[Article]</Anchor>
 
 #### OneLink™ ID
-:   Unique identifier automatically generated for OneLink templates. Required when using OneLink API. [[Article]](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns)
+:   Unique identifier automatically generated for OneLink templates. Required when using OneLink API. <Anchor target="_blank" href="/marketers/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">[Article]</Anchor>
 
 #### OneLink™ template
 :   Template where all the destinations, per device type, are defined. Once basic setup is complete, you can create many custom links with different parameters, and they all lead to the destinations stated in the OneLink template.
@@ -887,17 +888,17 @@ KPI
 #### Organic install
 :   A mobile app install that occurs without any direct effort by
     a marketer. There is no
-    recorded engagement in AppsFlyer and, consequently, it can't be attributed to any media source. [[Article]](/docs/about-organic-and-non-organic-installs)
+    recorded engagement in AppsFlyer and, consequently, it can't be attributed to any media source. <Anchor target="_blank" href="/marketers/docs/about-organic-and-non-organic-installs">[Article]</Anchor>
 
 #### OTT
 :   **Over-the-top**  
     Content streamed over the internet, bypassing cable, broadcast,
     and satellite platforms.
-    [[Article]](/docs/ctv-pc-and-console-platform-attribution-concepts)
+    <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">[Article]</Anchor>
 
 #### Owned media
 :   Type of media source that is owned/managed by an app owner.
-    [[Article]](/docs/owned-media-attribution)  
+    <Anchor target="_blank" href="/marketers/docs/owned-media-attribution">[Article]</Anchor>  
     *Examples:* Email, SMS, websites, social media, push/in-app
     notifications, etc.
 
@@ -920,7 +921,7 @@ KPI
 #### PBA
 :   **People-based attribution**  
     AppsFlyer premium feature that provides a complete picture of user acquisition and conversion flows across platforms, devices, and marketing channels. Used to focus on specific metrics and to filter/group data according to location, device type, media sources, campaigns, and more.
-    [[Article]](/docs/people-based-attribution-pba-overview)
+    <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">[Article]</Anchor>
 
 #### PID
 :   **Partner ID**  
@@ -945,7 +946,7 @@ KPI
 
 #### Protect360
 :   AppsFlyer premium feature that provides automatic and comprehensive
-    anti-fraud protection. [[Article]](/docs/protect360-anti-fraud-guide)
+    anti-fraud protection. <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">[Article]</Anchor>
 
 #### Publisher
 :   In AppsFlyer, a media source, site or app that sells ad space
@@ -953,10 +954,10 @@ KPI
 
 #### Pull API
 :   URL-based API that gets aggregate and raw data from AppsFlyer.
-    [[Article]](/docs/pull-api-aggregate-data)
+    <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">[Article]</Anchor>
 
 #### Push API
-:   Delivers real-time attribution data to marketer server-side endpoints. [[Article]](/docs/push-api-streaming-raw-data)
+:   Delivers real-time attribution data to marketer server-side endpoints. <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">[Article]</Anchor>
 
 </Accordion>
 
@@ -971,20 +972,20 @@ KPI
 <Accordion title="R">
 
 #### Raw data
-:   User-level data provided by AppsFlyer that describes specific events like installs, purchases, web site visits, and postbacks to partners. [[Article]](/docs/raw-data-reporting-overview)
+:   User-level data provided by AppsFlyer that describes specific events like installs, purchases, web site visits, and postbacks to partners. <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">[Article]</Anchor>
 
 #### Re-attribution
-:   Former app user reinstalls the app after an engagement with a retargeting campaign (for this same app). [[Article]](/docs/retargeting-attribution-guide)
+:   Former app user reinstalls the app after an engagement with a retargeting campaign (for this same app). <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">[Article]</Anchor>
 
 #### Re-attribution window
 :   Period of time, after an install, when reinstalls are not considered
-    to be new installs. [[Article]](/docs/set-up-re-attribution-window)
+    to be new installs. <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">[Article]</Anchor>
 
 #### Re-engagement
-:   User of a given app engages with a retargeting campaign for this app and subsequently launches it. [[Article]](/docs/retargeting-attribution-guide)
+:   User of a given app engages with a retargeting campaign for this app and subsequently launches it. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">[Article]</Anchor>
 
 #### Registered device
-:   Used for testing purposes. Registered devices are attributed every install regardless of AppsFlyer re-attribution rules. [[Article]](/docs/registering-test-devices)
+:   Used for testing purposes. Registered devices are attributed every install regardless of AppsFlyer re-attribution rules. <Anchor target="_blank" href="/marketers/docs/registering-test-devices">[Article]</Anchor>
 
 #### Request
 :   Also, [API Call](#a)
@@ -993,7 +994,7 @@ KPI
 :   To reach out to current or past users through ad campaigns.
 
 #### Retargeting network
-:   Specializes in targeting current or past users. [[Article]](/docs/retargeting-attribution-guide#retargeting-dashboard)
+:   Specializes in targeting current or past users. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-dashboard">[Article]</Anchor>
 
 #### Retention report
 :   AppsFlyer product that measures the performance of user sessions within an app. [Article]
@@ -1003,7 +1004,7 @@ KPI
 
 #### Revenue attribution
 :   Associates a given revenue event with a specific campaign/media
-    source. [[Article]](/docs/roi360-guide-ad-revenue-attribution)
+    source. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">[Article]</Anchor>
 
 #### Revenue event
 :   Any in-app event that is recorded with an associated revenue
@@ -1024,25 +1025,25 @@ KPI
 
 #### ROI
 :   **Return on Investment**Metric available in the AppsFlyer Overview dashboard and aggregate reports.  
-    *Formula:* (Revenue-cost) / Cost * 100 [[Article]](/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports)
+    *Formula:* (Revenue-cost) / Cost * 100 <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">[Article]</Anchor>
 
 </Accordion>
 
 <Accordion title="S">
 
 #### SAN
-:   **[Self-attributing Network](/docs/self-reporting-networks-srns)** Also, **SRN**  
+:   **<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">Self-attributing Network</Anchor>** Also, **SRN**  
     Platforms belonging to super publishers who independently perform
     attribution (install and in-app event) calculations on their
     own traffic. They don't use the input of 3rd-party attribution
     providers.*Examples:* Meta ads, Google
     Ads, X Ads.
-    [[See full list]](/docs/self-reporting-networks-srns)
+    <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">[See full list]</Anchor>
 
 #### SDK
 :   **Software Development Kit**  
     Code integrated into an app for the purpose of attribution and
-    analytics. [[Article]](/docs/sdk-integration-planning)
+    analytics. <Anchor target="_blank" href="/marketers/docs/sdk-integration-planning">[Article]</Anchor>
 
 #### Segmentation
 :   Marketing technique that uses criteria to group users into subgroups
@@ -1052,7 +1053,7 @@ KPI
 :   An app must be launched. Number of sessions is based on SDK launches
     or logic defined by an app owner.  
     *Example:* For an anti-virus app, one day of use equals
-    one session. [[Article]](/docs/measure-sessions)
+    one session. <Anchor target="_blank" href="/marketers/docs/measure-sessions">[Article]</Anchor>
 
 #### Single-platform
 :   Attribution link that lets customers perform attribution for
@@ -1067,7 +1068,7 @@ KPI
 #### SKAdNetwork
 :   SKAdNetwork infrastructure, part of iOS by Apple, helps marketers
     measure campaign success while maintaining user privacy.
-    [[Article]](/docs/skadnetwork-skan-solution-guide)
+    <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">[Article]</Anchor>
 
 #### SKAN
 :   Abbreviation of SKAdNetwork.
@@ -1076,17 +1077,17 @@ KPI
 :   Also, [App ID (Android & iOS)](#a)
 
 #### Smart Banner
-:   AppsFlyer feature that enables marketers to attribute and measure the quality of app installs coming from visitors to their mobile websites. [[Article]](/docs/smart-banners-mobile-web-to-app-for-marketers)
+:   AppsFlyer feature that enables marketers to attribute and measure the quality of app installs coming from visitors to their mobile websites. <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">[Article]</Anchor>
 
 #### SRN
-:   **[Self-reporting Network](/docs/self-reporting-networks-srns)** Also,
+:   **<Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">Self-reporting Network</Anchor>** Also,
     **SAN**  
     Platforms belonging to super publishers who independently perform
     attribution (install and in-app event) calculations on their
     own traffic. They don't use the input of 3rd-party attribution
     providers.  
     *Examples:* Meta ads, Google Ads, X Ads.
-    [[See full list]](/docs/self-reporting-networks-srns)
+    <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">[See full list]</Anchor>
 
 #### SSP
 :   **Supply-side Platform**  
@@ -1136,7 +1137,7 @@ KPI
     iCloud or the Setup app.
 
 #### Uninstall measurement
-:   Measurement of users who remove an app from their device, broken down by their attributed media sources. [[Article]](/docs/measure-uninstalls)
+:   Measurement of users who remove an app from their device, broken down by their attributed media sources. <Anchor target="_blank" href="/marketers/docs/measure-uninstalls">[Article]</Anchor>
 
 #### Unique user
 :   AppsFlyer ID is used to determine unique users.
@@ -1163,19 +1164,19 @@ KPI
 
 #### User invite attribution
 :   Attribution and analysis of new users who install an app after
-    an existing user (of the same app) sends them an invite. [[Article]](/docs/user-invite-attribution)
+    an existing user (of the same app) sends them an invite. <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">[Article]</Anchor>
 
 </Accordion>
 
 <Accordion title="V">
 
 #### Validation rules
-:   Rules for target-validation and custom fraud detection that enable app owners to block the attribution of non-compliant installs. [[Article]](/docs/implement-validation-rules-to-prevent-fraud)
+:   Rules for target-validation and custom fraud detection that enable app owners to block the attribution of non-compliant installs. <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">[Article]</Anchor>
 
 #### Verticals
 :   Also, **Industries**  
     Markets (with specific needs) that are more likely to be interested
-    in focused offerings. AppsFlyer recommends using specific in-app event reporting based on a marketer's vertical. [[Article]](/docs/in-app-events-overview#recommended-events-by-business-vertical)  
+    in focused offerings. AppsFlyer recommends using specific in-app event reporting based on a marketer's vertical. <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#recommended-events-by-business-vertical">[Article]</Anchor>  
     *Examples:* Gaming, eCommerce, travel
 
 #### Video ad
@@ -1193,7 +1194,7 @@ KPI
 :   **View-through attribution**  
     Installs or actions are attributed to an ad impression. Plays
     a part in indicating how views on a banner, video, or interstitial
-    can convert. [[Article]](/docs/measure-view-through-engagements)
+    can convert. <Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements">[Article]</Anchor>
 
 </Accordion>
 

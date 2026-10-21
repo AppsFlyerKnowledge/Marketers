@@ -1,6 +1,5 @@
 ---
 title: Attributing app installs to non-mobile ads from Meta ads
-excerpt: Attribute installs coming from non-mobile Meta ads campaigns.
 metadata:
   keywords:
     - Facebook
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001460566-Attributing-app-installs-to-non-mobile-ads-from-Meta-ads
 ---
+**At a glance:** Attribute installs coming from non-mobile Meta ads campaigns.
+
 ## Attributing mobile app installs
 
 Advertisers create ads on Meta ads to serve different objectives, including brand awareness, website conversions, and more. However, the influence of seeing or clicking these ads may indirectly lead to a mobile app install. 
@@ -36,7 +37,7 @@ AppsFlyer can attribute mobile app installs back to any type of ad on Meta ads, 
 
 **To attribute mobile app installs to any ad type:**
 
-1. Go to your Meta advertiser account and select Ads Manager, or follow this link: [https://business.facebook.com/adsmanager/](https://business.facebook.com/adsmanager/)
+1. Go to your Meta advertiser account and select Ads Manager, or follow this link: <Anchor target="_blank" href="https://business.facebook.com/adsmanager/">https://business.facebook.com/adsmanager/</Anchor>
 2. Click **Create Campaign**
 3. Select an objective **other than** default objectives for mobile apps, such as:
    * **App Installs**

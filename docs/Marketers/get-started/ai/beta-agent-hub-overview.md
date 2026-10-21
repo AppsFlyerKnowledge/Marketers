@@ -1,11 +1,5 @@
 ---
 title: '[Beta] Agent Hub overview'
-excerpt: >-
-  Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents
-  that proactively deliver actionable marketing insights directly into your
-  workflow. These agents constantly analyze your data to deliver valuable
-  outputs and recommend actionable steps, all within your team's collaborative
-  environment.
 metadata:
   keywords:
     - Advertisers
@@ -29,6 +23,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/40967933109649--Beta-Agent-Hub-overview
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
+
+> **At a glance:** Agent Hub is AppsFlyer's centralized platform for managing AI-driven agents that proactively deliver actionable marketing insights directly into your workflow. These agents constantly analyze your data to deliver valuable outputs and recommend actionable steps, all within your team's collaborative environment.
 
 <Embed title="[Beta] Agent Hub overview" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube.com" />
 
@@ -72,11 +68,11 @@ To invite an app to a channel:
 1. In the Slack channel you want to receive the notifications to, write: **/invite**
 2. Choose **Add Apps to this channel.**
 
-![Add Apps to this channel option in the Slack channel details menu](https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png)
+<Image alt="Add Apps to this channel option in the Slack channel details menu" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
 Select **AppsFlyer Agent Hub** -> **Add.**
 
-![AppsFlyer Agent Hub app selected in the Slack app directory with the Add button](https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png)
+<Image alt="AppsFlyer Agent Hub app selected in the Slack app directory with the Add button" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
 * The following roles have automatic full access:
   * Admin
@@ -84,12 +80,12 @@ Select **AppsFlyer Agent Hub** -> **Add.**
   * Team manager
   * Marketing lead
 
-* **Other roles:** Require the AI Tools capability enabled through [User Management](/docs/user-management).
+* **Other roles:** Require the AI Tools capability enabled through <Anchor target="_blank" href="/marketers/docs/user-management">User Management</Anchor>.
 
 ##### Email (optional)
 
 * Emails can only be sent to email addresses that are connected to an AppsFlyer account.
-* Users must be subscribed to the AppsFlyer mailing list. [See here for more information](/docs/notifications#what-notifications-can-i-receive).
+* Users must be subscribed to the AppsFlyer mailing list. <Anchor target="_blank" href="/marketers/docs/notifications#what-notifications-can-i-receive">See here for more information</Anchor>.
 
 Note: In each agent, you can configure up to 5 email addresses.
 
@@ -189,7 +185,7 @@ For example, you can ask:
 
 Keep the following in mind when using the **Activity** tab and **Analyze activity**:
 
-* AI Assistant must be enabled for the account. If AI Assistant is disabled, **Analyze activity** isn't available. See [Account Settings](/docs/account-settings#agent-hub).
+* AI Assistant must be enabled for the account. If AI Assistant is disabled, **Analyze activity** isn't available. See <Anchor target="_blank" href="/marketers/docs/account-settings#agent-hub">Account Settings</Anchor>.
 * Activity history includes completed runs from the last 30 days only.
 * Deleting an agent also deletes its previous activity, including outputs, findings, and reasoning data. This action can't be undone.
 * AI Assistant answers questions about the selected run only. It doesn't perform new analysis, access data outside the run, or make predictions.
@@ -523,7 +519,7 @@ If an admin disables Agent Hub:
 
 If an admin enables Agent Hub again later, users can access it again, but they must create and deploy agents from scratch.
 
-See [Account settings](/docs/account-settings#agent-hub) for more information.
+See <Anchor target="_blank" href="/marketers/docs/account-settings#agent-hub">Account settings</Anchor> for more information.
 
 </Accordion>
 

@@ -1,9 +1,5 @@
 ---
 title: Preparing for the App Store review—nutrition labels
-excerpt: >-
-  Starting iOS 14 A pp developers must provide the App Store information related
-  to their Privacy Practices when they submit an app. The App Store publishes
-  the practices in the format of a nutrition label.
 metadata:
   keywords:
     - iOS
@@ -32,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207032086-Preparing-for-the-App-Store-review-nutrition-labels
 ---
+**At a glance**: Starting iOS 14 App developers must provide the App Store information related to their Privacy Practices when they submit an app. The App Store publishes the practices in the format of a *nutrition label.*
+
 **A word from our lawyers:***Nothing stated here is legal advice. It is provided for your information and convenience. You should work closely with legal and other professional advisors to determine exactly how Apple policies apply to you.*
 
 ## Nutrition labels and the App Store review
@@ -86,9 +84,9 @@ Data types collected through AppsFlyer are typically connected to an identifier 
 
 Therefore, app developers should select **Yes** when asked if the data is linked to an identity.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [AppsFlyer Service Privacy Policy](https://www.appsflyer.com/services-privacy-policy/): How AppsFlyer handles and uses data.
-> * [App privacy details on the App Store by Apple](https://developer.apple.com/app-store/app-privacy-details/).
+> * <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/">AppsFlyer Service Privacy Policy</Anchor>: How AppsFlyer handles and uses data.
+> * <Anchor target="_blank" href="https://developer.apple.com/app-store/app-privacy-details/">App privacy details on the App Store by Apple</Anchor>.
 
 <div data-zendesk-anchors="h_01HE7T7J409620K5KX5XKPEQVZ=nutrition-labels-and-the-app-store-review h_01HE7T7J4004XVJTMF6S964DVB=data-types-collected h_01HE7T7J4098NNW8D0BCD3EFBJ=data-use-purposes h_01HE7T7J41BJG9GTBWMVKG7031=data-linked-to-an-identity h_01HE7TES34MEF1XR4B6BDEMJW4=see-also" />

@@ -1,9 +1,5 @@
 ---
 title: Measuring attribution with multiple MMPs
-excerpt: >-
-  See which media sources are able to measure attribution when working with
-  multiple MMPs simultaneously so you can compare attribution results between
-  AppsFlyer and your other MMP.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17316973509393-Measuring-attribution-with-multiple-MMPs
 ---
+**At a glance:** See which media sources are able to measure attribution when working with multiple MMPs simultaneously so you can compare attribution results between AppsFlyer and your other MMP.
+
 ## Overview
 
 When looking into migrating from another MMP to AppsFlyer, advertisers may wish to simultaneously compare both MMP measurements over the same media sources and campaigns. To do this, the following requirements must be met:
@@ -51,7 +49,7 @@ Following are details and limitations of media source measurement when working w
 
 ### SKAN
 
-Sending [SKAN conversion postbacks](/docs/skan-conversion-studio#skan-conversion-studio-basics) **isn't supported for multiple MMPs**. Only one SDK can trigger sending SKAN postbacks to partners. This means that when more than one SDK is integrated into your app, SKAN postbacks are only sent to one SDK.
+Sending <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#skan-conversion-studio-basics">SKAN conversion postbacks</Anchor> **isn't supported for multiple MMPs**. Only one SDK can trigger sending SKAN postbacks to partners. This means that when more than one SDK is integrated into your app, SKAN postbacks are only sent to one SDK.
 
 ### Non-SRN ad networks
 
@@ -59,19 +57,19 @@ MMP attribution links record the engagements of users on non-SRN ad networks and
 
 | Ad network requirement | Details |
 | --- | --- |
-| Data for a single engagement must be sent to both MMPs | <ul><li>**Clicks:** As attribution links redirect users to the app store, only one attribution link can be used. We recommend continuing to use the attribution link from the existing MMP while [sending click-attribution data to AppsFlyer](/partners/docs/redirecting-users-to-the-app-store#overview).</li><li>**Impressions:** As impressions don't redirect users to the app store, the ad network should send impression data to both MMPs.</li></ul> |
+| Data for a single engagement must be sent to both MMPs | <ul><li>**Clicks:** As attribution links redirect users to the app store, only one attribution link can be used. We recommend continuing to use the attribution link from the existing MMP while <Anchor target="_blank" href="/partners/docs/redirecting-users-to-the-app-store#overview">sending click-attribution data to AppsFlyer</Anchor>.</li><li>**Impressions:** As impressions don't redirect users to the app store, the ad network should send impression data to both MMPs.</li></ul> |
 | Received install postbacks should be deduped | Ad networks receive install postbacks from both MMPs. To avoid double charges, the ad network should dedupe one of these postbacks. |
 | Received in-app event postbacks should be deduped | When each of the MMPs is configured to send in-app event postbacks, ad networks receive in-app event postbacks from both MMPs. To avoid double attribution resulting in double charges, the ad network should dedupe one of these postbacks. If the ad network can't dedupe double in-app event postbacks, make sure in-app event postbacks are configured in only one MMP. |
 
 ### Owned media
 
-As with non-SRN ad networks, attributing installs from owned media requires using MMP attribution links. However, for some types of owned media, such as email lists, SMSs, or QR codes, MMPs can send data on a single engagement only once. AppsFlyer's [mobile web-to-app attribution](/docs/convert-your-mobile-web-visitors-to-app-users) solution enables measuring **installs coming from a website or a landing page**. The advantage of using owned media for comparing MMP attribution is the fact that no install or event deduping is needed.
+As with non-SRN ad networks, attributing installs from owned media requires using MMP attribution links. However, for some types of owned media, such as email lists, SMSs, or QR codes, MMPs can send data on a single engagement only once. AppsFlyer's <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">mobile web-to-app attribution</Anchor> solution enables measuring **installs coming from a website or a landing page**. The advantage of using owned media for comparing MMP attribution is the fact that no install or event deduping is needed.
 
 ## Avoiding attribution discrepancies
 
 When MMPs use different attribution models to measure traffic, it may lead to discrepancies. You can minimize discrepancies with these steps:
 
-* Make sure both MMPs use the same timezone for the app. Here's how to [set the app timezone in AppsFlyer](/docs/changing-app-time-zone-settings).
+* Make sure both MMPs use the same timezone for the app. Here's how to <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">set the app timezone in AppsFlyer</Anchor>.
 * For non-SRNs and owned media: Make sure to configure the attribution link using the same parameter values. For example, set the same lookback window in both MMPs.
 * When comparing the data on the MMPs dashboards or reports, make sure to compare the same criteria, such as traffic from the same date range, and geo.
 

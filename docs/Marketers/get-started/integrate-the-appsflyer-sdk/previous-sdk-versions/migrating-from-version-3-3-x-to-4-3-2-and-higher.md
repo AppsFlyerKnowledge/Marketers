@@ -1,6 +1,5 @@
 ---
 title: Migrating from Version 3.3.X to 4.3.2 and Higher
-excerpt: Considerations for migrating versions of the AppsFlyer Android SDK.
 metadata:
   keywords:
     - Advertisers
@@ -24,13 +23,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207606796-Migrating-from-Version-3-3-X-to-4-3-2-and-Higher
 ---
+**At a glance:** Considerations for migrating versions of the AppsFlyer Android SDK.
+
 Major changes have been made to the Android SDK integration.
 
 The main changes are:
 
 * The SDK is now a singleton, meaning that every call to the APIs should be called as follows:
 
-```
+```java
 AppsFlyerLib.getInstance().setCustomerUserId("myId");
 ```
 
@@ -38,7 +39,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("myId");
 * **sendTracking()**, **onActivityPause()**, **onActivityResume()** were removed. The SDK detects launches automatically
 * **Deep Link** - for activities that support deep linking the developer should call:
 
-```
+```java
 AppsFlyerLib.getInstance().sendDeepLinkData(this) from the onCreate()
 ```
 
@@ -50,13 +51,13 @@ This is necessary only if the app is not running in the background.
 
 AppsFlyerLib.getInstance().setDebugLog(true);
 
-To view the AppsFlyer SDK Integration Guide for Android, click [here](/docs/sdk-integration-overview).
+To view the AppsFlyer SDK Integration Guide for Android, click <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">here</Anchor>.
 
 **Migrating to 4.4.0 and higher**
 
 The AppsFlyer Android SDK v4.4.0 **no longer supports the following receiver** in the manifest:
 
-```
+```html
 <receiver android:name="com.appsflyer.AppsFlyerLib">
   <intent-filter>
     <action android:name="android.intent.action.PACKAGE_REMOVED"/>
@@ -65,11 +66,11 @@ The AppsFlyer Android SDK v4.4.0 **no longer supports the following receiver** i
 </receiver>
 ```
 
-If you are using version 4.4.0+,**remove this receiver from your manifest file**.
+If you are using version 4.4.0+, **remove this receiver from your manifest file**.
 
 The only **mandatory** receiver for the SDK is as follows:
 
-```
+```html
 <receiver
   android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
   android:exported="true">

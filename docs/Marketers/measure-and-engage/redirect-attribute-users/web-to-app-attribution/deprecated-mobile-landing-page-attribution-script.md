@@ -29,11 +29,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script
 ---
-**At a glance:** This script is deprecated as of December 17, 2020, and is replaced by the [OneLink Smart Script](/docs/onelink-smart-script-overview). This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
+**At a glance:** This script is deprecated as of December 17, 2020, and is replaced by the <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>. This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
 
 ![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
 
-**[Migrate to OneLink Smart Script](/docs/onelink-smart-script-overview)**
+**<Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">Migrate to OneLink Smart Script</Anchor>**
 
 Landing pages are a very common technique among digital marketers. They allow the marketers to capture their leads' details for remarketing, even if these users don’t convert at first.
 
@@ -132,7 +132,7 @@ The second part takes care of **notifying Google Ads** about these mobile instal
 
 Part 1 - Attributing to Google Ads on AppsFlyer
 
-On Google's dashboard - **Enable Auto-tagging** ([here's how](https://support.google.com/analytics/answer/1033981?hl=en)).
+On Google's dashboard - **Enable Auto-tagging** (<Anchor target="_blank" href="https://support.google.com/analytics/answer/1033981?hl=en">here's how</Anchor>).
 
 With auto-tagging enabled, **the URL to the landing page contains the *GCLID* parameter**.
 
@@ -141,7 +141,7 @@ URL example: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}`
 On your landing page load -
 
 1. Activate the ***generateUrl*** Javascript function
-2. The function (see below) looks for the ***GCLID*** parameter and builds a long OneLink URL containing its value under the af\_sub1 parameter (you can use any of the [subscriber parameters](/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for) af\_sub1 - af\_sub5).
+2. The function (see below) looks for the ***GCLID*** parameter and builds a long OneLink URL containing its value under the af\_sub1 parameter (you can use any of the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#what-are-subscriber-parameters-good-for">subscriber parameters</Anchor> af\_sub1 - af\_sub5).
 3. Landing page download button uses the generated OneLink URL.  
    OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}`
 4. New mobile users are attributed to the **google\_lp** media source and to the CAMPAIGN\_NAME campaign (optional).
@@ -153,17 +153,17 @@ Part 2 - Uploading Installs to Google as Offline Conversions
 
 **This step is only required if you want the conversions to be recorded in the Google Ads platform.**
 
-For users attributed to google\_lp, the AppsFlyer raw data now displays the GCLID value in the **af\_sub1** column. The GCLID is needed in order to upload offline conversions to Google Ads, you can find more information on the process [here](https://support.google.com/adwords/answer/7014069)).
+For users attributed to google\_lp, the AppsFlyer raw data now displays the GCLID value in the **af\_sub1** column. The GCLID is needed in order to upload offline conversions to Google Ads, you can find more information on the process <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">here</Anchor>).
 
-The conversions can be uploaded manually or via an Adwords API (more info on the API [here](https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions)).
+The conversions can be uploaded manually or via an Adwords API (more info on the API <Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">here</Anchor>).
 
 You can export the CSVs with this information from your AppsFlyer account, or you can get this data from Push API in real-time for every install.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > You can also see the keywords your users searched for in AppsFlyer's raw data in a similar fashion to getting the GCLID:
 >
-> 1. For keyword recording, you must include the keyword [ValueTrack parameter](https://support.google.com/google-ads/answer/2375447) in the final URL from Google Ads to the landing page
+> 1. For keyword recording, you must include the keyword <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2375447">ValueTrack parameter</Anchor> in the final URL from Google Ads to the landing page
 >    URL example: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}&keyword={USER_KEYWORD}`
 > 2. The Javascript function (see below) looks for the ***keyword*** parameter
 > 3. The value is added to the generated OneLink URL under af\_keywords
@@ -185,7 +185,7 @@ In the script, look for **gclidValue** to learn how the script detects users co
 
 #### Description:
 
-Other [SRNs](/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer), for example, Snapchat or Twitter, are not cross-platform like Meta ads, and require a bit of work to get your mobile users attributed to them.
+Other <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRNs</Anchor>, for example, Snapchat or Twitter, are not cross-platform like Meta ads, and require a bit of work to get your mobile users attributed to them.
 
 Your campaigns with other SRNs lead your users to the landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
 
@@ -249,8 +249,8 @@ All that is left to do is NOT prevent the correct attribution with another last 
 
 #### Instructions:
 
-1. [Create the attribution link](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) for the media source
-2. Add the [landing page parameter](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#redirection) leading to your landing page to the attribution link
+1. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Create the attribution link</Anchor> for the media source
+2. Add the <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#redirection">landing page parameter</Anchor> leading to your landing page to the attribution link
 3. Add `&af_redirect=true` to the landing page value under **any redirection parameters** (that is, af\_r, af\_ios\_url, and af\_android\_url) in the attribution link.  
    Example: `https://yourapp.onelink.me/abcd?pid=email&c={CAMPAIGN_NAME}&af_r=http://www.yoursite.com/yourlandingpage?af_redirect=true`
 4. **Optional** - add device ID (GAID / IDFA) to the attribution link to allow attribution by ID matching instead of Probabilistic modeling
@@ -321,9 +321,9 @@ If you have a significant amount of mobile organic traffic from your website, it
 
 To attribute mobile organic visitors, the website should have ***download*** or ***install*** buttons, with a OneLink attribution link behind them. OneLink enables diagnosing the device type and redirecting the lead to the correct app store according to it.
 
-To learn how to set and build OneLink URLs go [here](/docs/create-a-onelink-template).
+To learn how to set and build OneLink URLs go <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">here</Anchor>.
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > Add "&pid=website" to your attribution link to attribute all these visitors to your website.
 > In each page of your website, which has a download/install button with an attribution Link, add "&c=`{PAGE NAME}`". This can help you find the highest and lowest converting pages in your website.
@@ -383,7 +383,7 @@ Consider the following before you implement the script:
 * The script is offered as an example only. It covers the common landing page to attribution flow. Adapt the script to fit your requirements.
 * The script looks for specific parameters in the landing page URL, like media source, campaign, keywords etc. If you want to add more parameters like site id and ad sets, you need to modify the script accordingly.
 
-```
+```javascript
 //Returns the value of a parameter existing in the page's URL or ' ' if not exists.
 function getParameterFromURL(name, url) {
   if (!url) url = window.location.href;
@@ -601,7 +601,7 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
-> 📘 **Tip**
+> 👍 **Tip**
 >
 > You can implement the javascript snippet using Google Tag Manager. Google Tag Manager makes it easier for you to control when and where the landing page javascript should be used.
 
@@ -609,7 +609,7 @@ function generateUrl(isDebug) {
 
 1. Activate the ***generateUrl*** script on page load of any page in your web site, which visitors can land on directly, and that has ***Download*** button/s for your mobile app/s.  
 
-   > 📘 **Important!**
+   > 🚧 **Important!**
    >
    > **By default the *Download* buttons should direct to the apps pages on iTunes and Google Play**. If these links are kept with no change (i.e. visitor from AF attribution link or Meta ads), ***generateUrl*** returns ' '. Otherwise, it returns the URL to be used with BOTH Download buttons (a single ***Download*** button could also be used in this case to cover for both apps with OneLink).
 
@@ -645,14 +645,14 @@ If your mobile marketing funnel always leads to your landing page, these media s
 
 OneLink™ is a unique AppsFlyer attribution link, which is used for device detection and redirection, or for deep linking.
 
-The [Social apps landing page](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page) solution requires the advertiser to have a basic OneLink URL. Users who click ads in social media apps are then redirected to an AppsFlyer-generated landing page. From there, they can be deep linked, or continue to install the app.
+The <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">Social apps landing page</Anchor> solution requires the advertiser to have a basic OneLink URL. Users who click ads in social media apps are then redirected to an AppsFlyer-generated landing page. From there, they can be deep linked, or continue to install the app.
 
 AppsFlyer provides a variety of social media apps landing page templates. Element positions in the templates are fixed, but the elements themselves are customizable, including background image or color, titles, texts, images, buttons, tags, and more.
 
 If you haven't implemented OneLink for your app:
 
-1. Configure [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template).
-2. Create a [OneLink URL](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link) based on the template.
+1. Configure <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
+2. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">OneLink URL</Anchor> based on the template.
 3. In the script, replace https://yourapp.onelink.me/abcd with your OneLink URL.
 
 <div data-zendesk-anchors="description::7888dd9d=description-1 conclusion::11bed45=conclusion-1 instructions::5aa3290f=instructions-1 what-the-script-does::2a675257=what-the-script-does-1 description::650e3f28=description-2 conclusion::a982e4bd=conclusion-2 instructions::afffc83f=instructions-2 what-the-script-does::3fd4ce35=what-the-script-does-2 description::9c3fcdaa=description-3 conclusion::bf993a93=conclusion-3 instructions::350b4cb1=instructions-3 what-the-script-does::3dda504d=what-the-script-does-3 description::5150e1b5=description-4 conclusion::d51c1aec=conclusion-4 instructions::e083609=instructions-4 what-the-script-does::85ffec6c=what-the-script-does-4 description::f5a2038b=description-5 conclusion::4593a93c=conclusion-5 instructions::2e4dd2ee=instructions-5 what-the-script-does::d6370587=what-the-script-does-5 description::e20640cf=description-6 conclusion::c818491=conclusion-6 instructions::ba61ae3e=instructions-6 what-the-script-does::3668d917=what-the-script-does-6 instructions::10da52a9=instructions-7" />

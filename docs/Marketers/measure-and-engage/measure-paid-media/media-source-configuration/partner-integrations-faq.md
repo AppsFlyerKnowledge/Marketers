@@ -1,8 +1,5 @@
 ---
 title: Partner Integrations—FAQ
-excerpt: >-
-  Find answers to frequently asked questions about AppsFlyer Partner
-  Integrations.
 metadata:
   keywords:
     - Marketers
@@ -24,18 +21,20 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/11189057923601-Partner-Integrations-FAQ
 ---
+**At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.
+
 ## Use Partner Integrations
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
 
 <Accordion title="What information can I see on a partner card without entering the page?">
 
-To make it easier for you to evaluate the partner without going to the partner page for more details, you can see the following information on [partner cards](/docs/partner-integrations#partner-cards):
+To make it easier for you to evaluate the partner without going to the partner page for more details, you can see the following information on <Anchor target="_blank" href="/marketers/docs/partner-integrations#partner-cards">partner cards</Anchor>:
 
-* Quality badges (for partners who meet quality criteria): [**Performance Index**](https://www.appsflyer.com/resources/reports/performance-index/) and **High-quality traffic**—indicating a low-fraud rate
+* Quality badges (for partners who meet quality criteria): <Anchor target="_blank" href="https://www.appsflyer.com/resources/reports/performance-index/">**Performance Index**</Anchor> and **High-quality traffic**—indicating a low-fraud rate
 * The partner’s top three supported capabilities
 * Type of media platform
-* Integration status (when [Active](/docs/partner-activation-deactivation?query=activate))
+* Integration status (when <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation?query=activate">Active</Anchor>)
 
 </Accordion>
 
@@ -43,7 +42,7 @@ To make it easier for you to evaluate the partner without going to the partner p
 
 <Accordion title="What filters are available for searching partners?">
 
-AppsFlyer Partner Integrations allow you to use filters to refine your search results. Use filters such as Partner type, Target region and geo, High-Quality traffic, and AppsFlyer performance index. See the [description of each filter.](/docs/partner-integrations?query=marketplace#filters)
+AppsFlyer Partner Integrations allow you to use filters to refine your search results. Use filters such as Partner type, Target region and geo, High-Quality traffic, and AppsFlyer performance index. See the <Anchor target="_blank" href="/marketers/docs/partner-integrations?query=marketplace#filters">description of each filter.</Anchor>
 
 </Accordion>
 
@@ -53,7 +52,7 @@ AppsFlyer Partner Integrations allow you to use filters to refine your search re
 
 The integration itself is done on the partner integration setup page, but to find new partners and connect with them, you must go through Partner Integrations. The Marketplace tab enables you to browse and search for partners available for integration with the selected app, review their capabilities, and start the integration process.
 
-Learn [how to integrate with new partners in Partner Integrations](/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner)
+Learn <Anchor target="_blank" href="/marketers/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">how to integrate with new partners in Partner Integrations</Anchor>
 
 </Accordion>
 

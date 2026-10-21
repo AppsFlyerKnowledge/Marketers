@@ -12,7 +12,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/15323084579345-Overview
 ---
-- [CTV, PC, and console platform attribution concepts](/docs/ctv-pc-and-console-platform-attribution-concepts)
-- [Set up cross-platform links for multi-device campaigns](/docs/set-up-cross-platform-links-for-multi-device-campaigns)
-- [CTV, PC, and console platform direct attribution links](/docs/ctv-pc-and-console-platform-direct-attribution-links)
-- [Cross-platform landing pages with Smart Script](/docs/cross-platform-landing-pages-with-smart-script)
+- <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV, PC, and console platform attribution concepts</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-cross-platform-links-for-multi-device-campaigns">Set up cross-platform links for multi-device campaigns</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, PC, and console platform direct attribution links</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Cross-platform landing pages with Smart Script</Anchor>

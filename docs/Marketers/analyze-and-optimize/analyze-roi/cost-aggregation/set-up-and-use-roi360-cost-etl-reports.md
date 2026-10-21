@@ -1,10 +1,5 @@
 ---
 title: Set up and use ROI360 cost ETL reports
-excerpt: >-
-  Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost
-  data having the best granularity available per media source. Data, updated up
-  to 4 times daily, is delivered to your cloud service ready for loading into
-  advertiser BI systems.
 metadata:
   keywords:
     - Campaign
@@ -36,6 +31,8 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems.
+
 [![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
 
 Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data with the best granularity available per media source. Up to four times daily, the data is updated and delivered to your Data Locker cloud service, ready for loading into advertiser BI systems.
@@ -51,9 +48,9 @@ AppsFlyer offers four types of cost ETL reports to support different analysis ne
 * **Summary report:** (default) High-level cost data aggregated by media source. Recommended for analyzing cost and performance metrics at a broad level.
 * **Geo report:** (optional) Cost data broken down by country (2-letter codes), such as US, CA, or FR. Recommended for geo-level performance and cost analysis.
 * **Channel report:** (optional) Cost data segmented by channel (e.g., YouTube, Shopping). Best for channel-level performance and cost analysis.  
-  [View sample file](https://docs.google.com/spreadsheets/d/e/2PACX-1vRqyHRTiLq8KUtELHqdaF6yVTfNE22X5UmUqXX89oOK5ZpS6lksXD0401G8MFmsaEzg2Csvf-d3y08Z/pub?single=true&output=csv)
+  <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRqyHRTiLq8KUtELHqdaF6yVTfNE22X5UmUqXX89oOK5ZpS6lksXD0401G8MFmsaEzg2Csvf-d3y08Z/pub?single=true&output=csv">View sample file</Anchor>
 * **All Cost Report**: a comprehensive view of mobile and non-mobile cost data, sourced directly from ad networks, with no attribution data. Currently covers Google Ads, Meta Ads, and TikTok.  
-  [View sample file](https://docs.google.com/spreadsheets/d/e/2PACX-1vSdjA_4tdWBxxbI_ZM7mcZzCKhrWxQ-0m1DPIig-gMTpnDyLBDE_RGJ5zskNFpbsg/pub?gid=559626950&single=true&output=csv)
+  <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdjA_4tdWBxxbI_ZM7mcZzCKhrWxQ-0m1DPIig-gMTpnDyLBDE_RGJ5zskNFpbsg/pub?gid=559626950&single=true&output=csv">View sample file</Anchor>
 
   > 📘 **Note**
   >
@@ -62,7 +59,7 @@ AppsFlyer offers four types of cost ETL reports to support different analysis ne
 
 ### Cost ETL report types overview table
 
-<table><thead><tr><th> </th><th>Summary</th><th>Geo</th><th>Channel</th><th><strong>All Cost Report</strong></th></tr></thead><tbody><tr><td><strong>How to get the report</strong></td><td>Enable Cost ETL. The Summary report is selected by default.</td><td>Enable Cost ETL and select the Geo report.</td><td>Enable Cost ETL and select the Channel report.</td><td>Enable Cost ETL and select the <strong>Geo</strong> report. (All Cost report doesn't have a specific selector in cost ETL page)</td></tr><tr><td><strong>Where to find the report</strong></td><td>Depends on the cloud connector service you choose. It can be a folder (Summary) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (Geo) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (Channel) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (All Cost) or a dedicated table.</td></tr><tr><td><strong>Cost type coverage</strong></td><td><p>Mobile cost: No limitation.<br/>CTV and web cost: Limited to:<br/> </p><ol><li>Campaigns with at least one conversion</li><li>Cost source is InCost API, Cost Import, or CPI</li></ol></td><td>Same as Summary.</td><td>Same as Summary.</td><td>Mobile, Web, CTV, PC, and Console cost from Google Ada, Meta Ads and TikTok.</td></tr><tr><td><strong>Media source coverage</strong></td><td>No limitation</td><td>No limitation</td><td>No limitation</td><td><ul><li><strong>TikTok:</strong> Data is automatically added.</li><li><strong>Google and Meta:</strong> Contact your CSM to enable.</li></ul></td></tr><tr><td><strong>Schema granularity</strong></td><td>Based on customer configuration in Cost ETL settings.</td><td><p>Based on customer configuration in Cost ETL settings.</p><p><br/>For Meta, the channel dimension has no values.</p></td><td><p>Based on customer configuration in Cost ETL settings.</p><p><br/>For Meta, the geo dimension has no value.</p></td><td><p>Based on customer configuration in Cost ETL settings.</p><p>For Meta, the Channel dimension is not supported.<br/><strong>Platform:</strong> A new dimension from the ad network indicating where the campaign runs (e.g., mobile, desktop, tablet).</p></td></tr><tr><td><strong>Attribution data</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td><p>Not supported.</p><p><br/>Attribution metrics values are displayed as zero (0), if they are configured by the customer to be part of the Cost ETL schema.</p></td></tr><tr><td><strong>App ID</strong></td><td>If the ad network does not support App ID granularity, the App ID is extracted from the attribution data.</td><td>Same as Summary.</td><td>Same as Summary.</td><td><p>Extracted from the ad network.</p><p><br/>If the App ID is not reported, the value will be unknown.</p></td></tr><tr><td><strong>Cost source</strong></td><td>API integration (Cost + InCost), Cost Import, CPI</td><td>Same as Summary.</td><td>Same as Summary.</td><td>API integration only.</td></tr><tr><td><strong>CNC</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td>Not supported.</td></tr><tr><td><strong>Agency data</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td><ul><li><strong>Facebook and Meta: </strong>Not supported.</li><li><strong>TikTok:</strong> Supported only for campaigns with App ID in AppsFlyer.</li></ul></td></tr><tr><td><strong>Agency fee</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td>Not supported. Value is always 0.</td></tr><tr><td><strong>Freshness</strong></td><td colspan="4">Data is collected from the ad network 6 times per day.<br/>Reports can be delivered up to 4 times per day (based on customer configuration).</td></tr></tbody></table>
+<table><thead><tr><th> </th><th>Summary</th><th>Geo</th><th>Channel</th><th><strong>All Cost Report</strong></th></tr></thead><tbody><tr><td><strong>How to get the report</strong></td><td>Enable Cost ETL. The Summary report is selected by default.</td><td>Enable Cost ETL and select the Geo report.</td><td>Enable Cost ETL and select the Channel report.</td><td>Enable Cost ETL and select the <strong>Geo</strong> report. (All Cost report doesn't have a specific selector in cost ETL page)</td></tr><tr><td><strong>Where to find the report</strong></td><td>Depends on the cloud connector service you choose. It can be a folder (Summary) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (Geo) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (Channel) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (All Cost) or a dedicated table.</td></tr><tr><td><strong>Cost type coverage</strong></td><td><p>Mobile cost: No limitation.<br/>CTV and web cost: Limited to:<br/> </p><ol><li>Campaigns with at least one conversion</li><li>Cost source is InCost API, Cost Import, or CPI</li></ol></td><td>Same as Summary.</td><td>Same as Summary.</td><td>Mobile, Web, CTV, PC, and Console cost from Google Ada, Meta Ads and TikTok.</td></tr><tr><td><strong>Media source coverage</strong></td><td>No limitation</td><td>No limitation</td><td>No limitation</td><td><ul><li><strong>TikTok:</strong> Data is automatically added.</li><li><strong>Google and Meta:</strong> Contact your CSM to enable.</li></ul></td></tr><tr><td><strong>Schema granularity</strong></td><td>Based on customer configuration in Cost ETL settings.</td><td><p>Based on customer configuration in Cost ETL settings.</p><p><br/>For Meta, the channel dimension has no values.</p></td><td><p>Based on customer configuration in Cost ETL settings.</p><p><br/>For Meta, the geo dimension has no value.</p></td><td><p>Based on customer configuration in Cost ETL settings.</p><p>For Meta, the Channel dimension is not supported.<br/><strong>Platform:</strong> A new dimension from the ad network indicating where the campaign runs (e.g., mobile, desktop, tablet).</p></td></tr><tr><td><strong>Attribution data</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td><p>Not supported.</p><p><br/>Attribution metrics values are displayed as zero (0), if they are configured by the customer to be part of the Cost ETL schema.</p></td></tr><tr><td><strong>App ID</strong></td><td>If the ad network does not support App ID granularity, the App ID is extracted from the attribution data.</td><td>Same as Summary.</td><td>Same as Summary.</td><td><p>Extracted from the ad network.</p><p><br/>If the App ID is not reported, the value will be unknown.</p></td></tr><tr><td><strong>Cost source</strong></td><td>API integration (Cost + InCost), Cost Import, CPI</td><td>Same as Summary.</td><td>Same as Summary.</td><td>API integration only.</td></tr><tr><td><strong>CNC</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td>Not supported.</td></tr><tr><td><strong>Agency data</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td><ul><li><strong>Facebook and Meta:</strong> Not supported.</li><li><strong>TikTok:</strong> Supported only for campaigns with App ID in AppsFlyer.</li></ul></td></tr><tr><td><strong>Agency fee</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td>Not supported. Value is always 0.</td></tr><tr><td><strong>Freshness</strong></td><td colspan="4">Data is collected from the ad network 6 times per day.<br/>Reports can be delivered up to 4 times per day (based on customer configuration).</td></tr></tbody></table>
 
 ## Report details
 
@@ -74,7 +71,7 @@ Campaign cost data is written:
 
 * To your cloud service or bucket for viewing, transferring, and loading cost data into your systems.
 * For all apps you choose to include in Cost ETL, per day, per version.
-* Up to 4 times per day (data freshness: [intraday)](/docs/about-data-freshness-and-timezone-support#intraday-during-the-day).
+* Up to 4 times per day (data freshness: <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">intraday)</Anchor>.
 * For the current day and the previous 6 days (referred to as 7 days in this article), as well as days 14, 29, and 88. Take this into consideration in your data loading process.
   * Example: For the date October 14, 2024, the file contains data for October 14 (the current day), October 13 (1 day back), October 12 (2 days back), October 11 (3 days back), October 10 (4 days back), October 9 (5 days back), October 8 (6 days back), September 30 (14 days back), September 15 (29 days back), and July 18 (88 days back).
   * The retroactive data allows for updates and corrections in the cost data reporting.
@@ -145,24 +142,24 @@ Data written to the cloud service or bucket has the directory and file structure
 | ad\_id | Component of the advertising hierarchy | No | String | - |
 | adset | Component of the advertising hierarchy | No | String | - |
 | adset\_id | Component of the advertising hierarchy | No | String | - |
-| af\_bid\_strategy | Bid strategy mapped and normalized by AppsFlyer. Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | String | - |
-| af\_cost\_model | Cost model mapped and normalized by AppsFlyer. Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | String | - |
+| af\_bid\_strategy | Bid strategy mapped and normalized by AppsFlyer. Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
+| af\_cost\_model | Cost model mapped and normalized by AppsFlyer. Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | agency | Agency responsible for placing the ad | No | String | - |
 | app\_id | App id in the AppsFlyer platform | Yes | String | **✓** |
-| bid\_amount | Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | Integer | - |
-| bid\_strategy | Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | String | - |
+| bid\_amount | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | Integer | - |
+| bid\_strategy | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | campaign | Component of the advertising hierarchy | No | String | - |
 | campaign\_id | Component of the advertising hierarchy | No | String | - |
-| campaign\_objective | Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | String | - |
+| campaign\_objective | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | channel | Dimension in the advertising hierarchy | No | String | - |
-| cost\_model | Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | String | - |
+| cost\_model | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | String | - |
 | currency | Currency of advertiser spend as defined for the app in AppsFlyer | Yes | 3 character string compliant with ISO-4217 | **✓** |
 | date | Date cost incurred reported by the media source | Yes | String yyyy-mm-dd | **✓** |
 | geo | Dimension in the advertising hierarchy | No | 2 character string compliant with ISO 3166 | **✓** |
 | keyword\_id | ID of the ASA keyword terms | Yes | String | - |
 | keyword\_term | Word(s) used by the user for online search | Yes | String | - |
 | media\_source | Media source responsible for display the ad | Yes | String | **✓** |
-| original\_bid\_amount | Component of campaign properties. [Learn more](/docs/campaign-properties-in-cost-etl-reports) | No | Integer | - |
+| original\_bid\_amount | Component of campaign properties. <Anchor target="_blank" href="/marketers/docs/campaign-properties-in-cost-etl-reports">Learn more</Anchor> | No | Integer | - |
 | original\_currency | Currency of cost as reported by the network before any conversions | No | 3 character string compliant with ISO-4217 | - |
 | os | Operating system of the device. Possible values:<ul><li>android</li><li>windowsphone</li><li>ios</li></ul> | Yes | String | **-** |
 | platform | The platform used for running the campaign (mobile, tablet, desktop, and CTV) | All cost report only | String | - |
@@ -174,8 +171,8 @@ Data written to the cloud service or bucket has the directory and file structure
 | **Field** | **Remarks** | **Always populated** | **Format** | **Included in summary file** |
 | --- | --- | --- | --- | --- |
 | ccvr | <ul><li>Cost per conversion</li><li>Formula: Cost / (installs + re-attributions + re-engagements)</li></ul> |  | Integer | - |
-| clicks | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li>[Engaged clicks](/docs/about-enriched-engagement-types#engaged_click) are subtracted from the total number of clicks.</li></ul> |  | Integer | **✓** |
-| clicks\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support [reported clicks.](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api)</li></ul></li></ul> |  | Integer | - |
+| clicks | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li><Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#engaged_click">Engaged clicks</Anchor> are subtracted from the total number of clicks.</li></ul> |  | Integer | **✓** |
+| clicks\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">reported clicks.</Anchor></li></ul></li></ul> |  | Integer | - |
 | cost | Amount of spend (including agency fees where relevant) |  | Value | **✓** |
 | cost\_without\_fees | Cost minus the agency fee. Counted by AppsFlyer | Yes | Integer | **-** |
 | cpi | <ul><li>Counted by AppsFlyer</li><li>Formula: Cost / installs</li></ul> |  | Integer | - |
@@ -185,10 +182,10 @@ Data written to the cloud service or bucket has the directory and file structure
 | ecpc | <ul><li>Counted by AppsFlyer</li><li>Formula: Cost / clicks</li></ul> |  | Integer | - |
 | ecpm | <ul><li>Counted by AppsFlyer</li><li>Formula: (Cost / impressions) * 1000</li></ul> |  | Integer | - |
 | fees | Fees an agency charges in addition to the usual ad cost. Counted by AppsFlyer | Yes | Integer | **-** |
-| impressions | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li>[Engaged views](/docs/about-enriched-engagement-types#engaged_view)  are subtracted from the total number of impressions.</li></ul> | Yes.<br /><br />If no value is available for a particular metric, it is populated with 0. | Integer | **✓** |
-| impressions\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support [reported impressions.](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api)</li></ul></li></ul> |  | Integer | - |
+| impressions | <ul><li>Counted by AppsFlyer.</li><li>Includes both UA and retargeting.</li><li><Anchor target="_blank" href="/marketers/docs/about-enriched-engagement-types#engaged_view">Engaged views</Anchor>  are subtracted from the total number of impressions.</li></ul> | Yes.<br /><br />If no value is available for a particular metric, it is populated with 0. | Integer | **✓** |
+| impressions\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">reported impressions.</Anchor></li></ul></li></ul> |  | Integer | - |
 | installs | Counted by AppsFlyer |  | Integer | **✓** |
-| installs\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support [reported conversions.](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api)</li></ul></li></ul> |  | Integer | - |
+| installs\_discrepancy | <ul><li>Difference between those counted by ad network and AppsFlyer</li><li>Disregard this metric if:<ul><li>There isn't a match between cost and attribution.</li><li>The ad network doesn't support <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">reported conversions.</Anchor></li></ul></li></ul> |  | Integer | - |
 | original\_cost | Cost as reported by the network, in the currency reported by the network before any currency conversion (with agency fees calculated by AppsFlyer added where relevant) |  | Value | - |
 | original\_cost\_without\_fees | Original cost as reported by the ad network, without agency fees | Yes | Integer | **-** |
 | re\_attributions | Counted by AppsFlyer |  | Integer | **✓** |
@@ -217,12 +214,12 @@ This configuration procedure must be performed by an admin user.
 Cost ETL setup requires:
 
 * A cloud service set up with permission for AppsFlyer to write data to it. This means you need to set up either 1 or more of the following cloud services:
-  * [AWS](/docs/data-locker-cloud-service-setup#aws-storage) bucket
-  * [GCS](/docs/data-locker-cloud-service-setup#gcs-storage) bucket
-  * [Beta] [Azure](/docs/data-locker-cloud-service-setup#beta--azure-storage) Blob
-  * [Beta] [Yandex](/docs/data-locker-cloud-service-setup#yandex) bucket
-  * [BigQuery](/docs/data-locker-cloud-service-setup#bigquery) data warehouse
-  * [Snowflake](/docs/data-locker-cloud-service-setup#snowflake) warehouse
+  * <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor> bucket
+  * <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#gcs-storage">GCS</Anchor> bucket
+  * [Beta] <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#beta--azure-storage">Azure</Anchor> Blob
+  * [Beta] <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#yandex">Yandex</Anchor> bucket
+  * <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#bigquery">BigQuery</Anchor> data warehouse
+  * <Anchor target="_blank" href="/marketers/docs/data-locker-cloud-service-setup#snowflake">Snowflake</Anchor> warehouse
 * AppsFlyer admin privileges and access to the AppsFlyer UI to complete Cost ETL setup.
 
 [**![AppsFlyerAdmin_us-en.png](https://files.readme.io/4256ee1b617bf6f8fe1597e3a0d194b2d20b85b4cb8be41e0c9dee9396710605-4404934404753.png)**](https://files.readme.io/4256ee1b617bf6f8fe1597e3a0d194b2d20b85b4cb8be41e0c9dee9396710605-4404934404753.png) **To set up Cost ETL:**
@@ -366,7 +363,7 @@ In AWS, by default, when AppsFlyer writes objects to your bucket, the object own
 
 **To change the ownership of objects in your bucket**:
 
-1. Sign in to the AWS Management Console and open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).
+1. Sign in to the AWS Management Console and open the Amazon S3 console at <Anchor target="_blank" href="https://console.aws.amazon.com/s3/">https://console.aws.amazon.com/s3/</Anchor>.
 2. In the **Buckets** list, choose the name of the bucket that you want to enable S3 Object Ownership for.
 3. Go to the **Permissions** tab.
 4. Under **Object Ownership,** click **Edit**.
@@ -432,7 +429,7 @@ Not all networks provide data with the same granularity. For example, Meta ads d
 
 <Accordion title="Compare data">
 
-Cost ETL provides information regarding all your cost data. Some campaigns provided in Cost ETL do not appear in some AppsFlyer dashboards, for example, data of inactive campaigns, meaning campaigns without any recorded installs. To compare the data, find a specific campaign ID in the overview dashboard and compare it to its cost data in Cost ETL. [Learn more about cost data availability](/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports)
+Cost ETL provides information regarding all your cost data. Some campaigns provided in Cost ETL do not appear in some AppsFlyer dashboards, for example, data of inactive campaigns, meaning campaigns without any recorded installs. To compare the data, find a specific campaign ID in the overview dashboard and compare it to its cost data in Cost ETL. <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">Learn more about cost data availability</Anchor>
 
 </Accordion>
 
@@ -543,7 +540,7 @@ where rank_for_dedup = 1;
 
 <Accordion title="Combine Cost ETL and cohort reports">
 
-Consider combining Cost ETL reports with Aggregated advanced cohort reports (or regular Cohort reports via Data Locker) in your BI system. Together, they give the fullest picture of marketing performance with fresh and accurate data, including clicks, impressions, cost, revenue, in-app events, etc.). And you can use this combined data to get ROAS, CPA, etc. [Learn more](/docs/combine-cost-etl-and-cohort-reports-via-data-locker)
+Consider combining Cost ETL reports with Aggregated advanced cohort reports (or regular Cohort reports via Data Locker) in your BI system. Together, they give the fullest picture of marketing performance with fresh and accurate data, including clicks, impressions, cost, revenue, in-app events, etc.). And you can use this combined data to get ROAS, CPA, etc. <Anchor target="_blank" href="/marketers/docs/combine-cost-etl-and-cohort-reports-via-data-locker">Learn more</Anchor>
 
 </Accordion>
 
@@ -555,10 +552,10 @@ Consider combining Cost ETL reports with Aggregated advanced cohort reports (or 
 
 | Trait | Remarks |
 | --- | --- |
-| Timezone | If the timezone is changed, cost data is duplicated on the day and the day following the change. [Learn more](/docs/changing-app-time-zone-settings) |
-| Data freshness | <ul><li>[Intraday](/docs/about-data-freshness-and-timezone-support#intraday-during-the-day). During Cost ETL setup, you set the report schedule, meaning when you want the reports to arrive.</li><li>Data usually arrives within one hour of the time you select. So if you select that a report should arrive by 6 AM, it arrives between 5-6 AM.</li></ul>**Note**: Once the cost data arrives to your bucket, further data transfer to your BI systems can vary greatly, depending on the report and parquet file size, which can be anywhere from a few KBs to many GBs. |
+| Timezone | If the timezone is changed, cost data is duplicated on the day and the day following the change. <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">Learn more</Anchor> |
+| Data freshness | <ul><li><Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">Intraday</Anchor>. During Cost ETL setup, you set the report schedule, meaning when you want the reports to arrive.</li><li>Data usually arrives within one hour of the time you select. So if you select that a report should arrive by 6 AM, it arrives between 5-6 AM.</li></ul>**Note**: Once the cost data arrives to your bucket, further data transfer to your BI systems can vary greatly, depending on the report and parquet file size, which can be anywhere from a few KBs to many GBs. |
 | All cost report | <ul><li>Doesn't include cost data for Google Performance Max campaigns.</li><li>Doesn't support Campaign name changes</li></ul> |
-| SKAN campaign cost data | <ul><li>Cost ETL provides cost data for SKAN campaigns only if the campaign has at least one classic conversion.</li><li>For campaigns with SKAN-only conversions, cost data is available only if:<ul><li>The related ad network is Twitter (X) or Meta, or</li><li>The integration with the related ad network is marked as Inactive campaign (Column M= "Yes" in [this list](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api)).</li></ul></li></ul> |
+| SKAN campaign cost data | <ul><li>Cost ETL provides cost data for SKAN campaigns only if the campaign has at least one classic conversion.</li><li>For campaigns with SKAN-only conversions, cost data is available only if:<ul><li>The related ad network is Twitter (X) or Meta, or</li><li>The integration with the related ad network is marked as Inactive campaign (Column M= "Yes" in <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">this list</Anchor>).</li></ul></li></ul> |
 | CTV and PC apps support | PC and CTV apps are not supported in Cost ETL reporting. |
 | Google Web and Meta Web cost availability | To include cost data from [Google Web (`pid=googleads_int`](/docs/google-ads-adwords-create-web-based-campaigns#create-a-google-ads-integration-in-appsflyer)) and [Meta Web (`pid=metaweb_int`)](/docs/meta-ads-create-web-based-campaigns#how-to-create-a-meta-web-ads-campaign) in the All Cost report, you must create a cost connection in the Cost tab of your [Google Ads (`pid=googleadwords_int`)](/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory) and [Meta Ads (`pid=facebook_int`)](/docs/meta-ads-integration-setup#cost-clicks-and-impressions) active integrations. Without these connections Google and Meta Web cost data won’t appear in the report. |
 

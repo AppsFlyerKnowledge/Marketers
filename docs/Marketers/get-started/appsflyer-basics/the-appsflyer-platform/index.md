@@ -13,9 +13,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551361489297-The-AppsFlyer-platform
 ---
-- [Notifications](/docs/notifications)
-- [About advertiser APIs](/docs/about-advertiser-apis)
-- [Manage data access permissions](/docs/manage-data-access-permissions)
-- [About data freshness and timezone support](/docs/about-data-freshness-and-timezone-support)
-- [About the AppsFlyer mobile app](/docs/about-the-appsflyer-mobile-app)
-- [Navigate AppsFlyer with the launchpad](/docs/navigate-appsflyer-with-the-launchpad)
+- <Anchor target="_blank" href="/marketers/docs/notifications">Notifications</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/about-advertiser-apis">About advertiser APIs</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">Manage data access permissions</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support">About data freshness and timezone support</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/about-the-appsflyer-mobile-app">About the AppsFlyer mobile app</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/navigate-appsflyer-with-the-launchpad">Navigate AppsFlyer with the launchpad</Anchor>

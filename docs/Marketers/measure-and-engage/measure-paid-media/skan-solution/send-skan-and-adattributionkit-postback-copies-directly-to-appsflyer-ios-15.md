@@ -1,11 +1,5 @@
 ---
 title: Send SKAN and AdAttributionKit postback copies directly to AppsFlyer (iOS 15+)
-excerpt: >-
-  Starting iOS 15, configure your app to send postback copies to AppsFlyer in
-  addition to sending them to ad networks. Doing so enables AppsFlyer to
-  validate the conversion value (CV) and verify postback integrity. Configure
-  AppsFlyer Push API to forward postback copies to an additional selected
-  endpoint.
 metadata:
   keywords:
     - Advertisers
@@ -27,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4402320969617-Send-SKAN-and-AdAttributionKit-postback-copies-directly-to-AppsFlyer-iOS-15
 ---
+**At a glance:** Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint.
+
 > 📘 **Note**
 >
 > Throughout this article, references to **SKAN** include both **SKAdNetwork** and the latest **AdAttributionKit (AAK)** framework.
@@ -47,12 +43,12 @@ According to Apple's documentation, you can set a single SKAN postback endpoint.
 
 **To register the AppsFlyer endpoint:**
 
-1. Ask your iOS developer to [add AppsFlyer](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#sending-skan-postback-copies-to-appsflyer) as a SKAN and AdAttributionKit postback endpoint in the next app version.
+1. Ask your iOS developer to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#sending-skan-postback-copies-to-appsflyer">add AppsFlyer</Anchor> as a SKAN and AdAttributionKit postback endpoint in the next app version.
 2. Submit the iOS app.
 3. Postbacks will be sent to AppsFlyer as the new version becomes published (not from TestFlight).
-4. You can see the received postbacks in the [postbacks copy report](/docs/skan-raw-data-reports).
+4. You can see the received postbacks in the <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">postbacks copy report</Anchor>.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Apps that don't have SKAN traffic will see the following message even after completing setup: 'Your app isn’t set up to send iOS postback copies (iOS 15+) to AppsFlyer. This is required to assure the integrity of your SKAN measurement.'
 
@@ -73,8 +69,8 @@ According to Apple's documentation, you can set a single SKAN postback endpoint.
 
 After an app has been configured to send postback copies to AppsFlyer, it may take a couple of days for it to show on the dashboard.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Apple developer](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also)
+> * <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app?changes=latest_minor#see-also">Apple developer</Anchor>
 
 <div data-zendesk-anchors="h_01KDSTGH21EG5MT0KFXZ40VMW1=note h_01HE7SV29Y7DNSKAAR91MJX986=why-send-postback-copies-to-appsflyer h_01HE7SV29YDFA5Z0X4WS87YK0Y=configure-your-app-to-send-postback-copies-to-appsflyer h_01HH9WCVH4C37ZGMRZRB7EQT6B=important h_01HE7SV29YC855TGCXTCT4KHRN=common-misconceptions h_01HE7SV29YMMTPH6EKYF3GQYEN=dont-believe-everything-you-hear h_01HHH74CC5X0T5M1F86XWMNH9V=traits-and-limitations h_01HE7SX466CMCC03K99H68ZRBN=see-also" />

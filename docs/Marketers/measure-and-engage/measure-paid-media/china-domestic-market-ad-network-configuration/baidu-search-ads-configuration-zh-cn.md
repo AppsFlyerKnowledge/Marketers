@@ -25,7 +25,7 @@ x-zendesk:
 
 #### 请注意:
 
-#### 1.完成百度搜索广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看[安卓](/docs/sdk-integration-overview)/[iOS](/docs/basic-sdk-integration-guide)对应的SDK整合指南。
+#### 1.完成百度搜索广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
 
 #### 2.在百度搜索使用CPC或者OCPC出价模式，都可以按照本篇配置文档来操作。如果使用CPC出价方式，在百度后台保持OCPC处于第一阶段，不将模型自动优化功能生效即可。
 
@@ -71,4 +71,4 @@ x-zendesk:
 
 3. 目前在AF后台，不能直接在数据概览（Overview）页面直接按关键词维度删选查看数据，可以在留存报告、数据导出-原始数据的功能里查看af\_keywords对应的值。如果需要在AF后台的数据概览页面直接看到关键词ID，可以把参数`{{WORDID}}以横杠“-”或者下划线“_"的方式加到c, af_adset,或者af_ad 等可以在数据概览页面直接显示的参数后面，举例把链接中已有的&c={{PLAN_ID}} 改为&c={{PLAN_ID}} _{{WORDID}}` 进行使用。
 
-### 5.使用AppsFlyer的点击归因链接，请根据此[文档](https://dev2.baidu.com/content?sceneType=0&pageId=101214&nodeId=662&subhead=)在百度搜索后台建立转化跟踪。
+### 5.使用AppsFlyer的点击归因链接，请根据此<Anchor target="_blank" href="https://dev2.baidu.com/content?sceneType=0&pageId=101214&nodeId=662&subhead=">文档</Anchor>在百度搜索后台建立转化跟踪。

@@ -1,8 +1,5 @@
 ---
 title: Google Analytics integration—Discrepancies
-excerpt: >-
-  Understand the discrepancies that might occur between AppsFlyer and Google
-  Analytics.
 metadata:
   keywords:
     - Analytics
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4413026674833-Google-Analytics-integration-Discrepancies
 ---
+**At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
+
 ## Discrepancies in data between AppsFlyer and Google Analytics
 
 Listed below are reasons for discrepancies between AppsFlyer and Google Analytics.
@@ -33,7 +32,7 @@ Listed below are reasons for discrepancies between AppsFlyer and Google Analytic
 
 <Accordion title="High volume of non-consenting iOS 14.5+ users">
 
-When [AAP is enabled for your app](/docs/apply-aggregated-advanced-privacy-framework), AppsFlyer doesn't send postbacks to Google Analytics for non-consenting iOS 14.5+ users. In case your app has a large number of such users, there will be a discrepancy between AppsFlyer and Google Analytics dashboards.
+When <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">AAP is enabled for your app</Anchor>, AppsFlyer doesn't send postbacks to Google Analytics for non-consenting iOS 14.5+ users. In case your app has a large number of such users, there will be a discrepancy between AppsFlyer and Google Analytics dashboards.
 
 </Accordion>
 
@@ -45,7 +44,7 @@ Google Analytics associates events by Customer User ID. The Customer User ID tha
 
 Therefore, Google Analytics sees re-installing users (users who install, uninstall and then reinstall) as the same users.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > A user installs your app and then uninstalls it. The user then re-installs the app through a retargeting campaign within the re-attribution window.
 >
@@ -71,7 +70,7 @@ In addition, discrepancies might arise if you implement both GA and AppsFlyer SD
 
 If the time zone of your GA dashboard differs from that of your app's timezone in AppsFlyer, data might not align.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Your app's dashboard is configured to GMT +13 and your GA dashboard is configured to GMT. This means that your app's dashboard is ahead of your GA's dashboard by one day.
 >
@@ -83,7 +82,7 @@ If the time zone of your GA dashboard differs from that of your app's timezone i
 
 <Accordion title="Duplicate events">
 
-If events occur in proximity to each other, both AppsFlyer and Google Analytics might drop them as duplicate events. AppsFlyer's [event deduplication mechanism](/docs/in-app-events-overview#how-does-appsflyer-handle-event-deduplication) is different than the one that Google Analytics uses.
+If events occur in proximity to each other, both AppsFlyer and Google Analytics might drop them as duplicate events. AppsFlyer's <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#how-does-appsflyer-handle-event-deduplication">event deduplication mechanism</Anchor> is different than the one that Google Analytics uses.
 
 Because AppsFlyer and Google Analytics deduplicate events differently, discrepancies in events data might occur.
 
@@ -95,7 +94,7 @@ Because AppsFlyer and Google Analytics deduplicate events differently, discrepan
 
 AppsFlyer counts sessions each time the app is launched or comes back to the foreground. Google Analytics counts sessions according to CID (customer user id) and activity.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > A user launches your app, performs some actions and then sends the app to the background. The user then repeats the process 4 times, each time in an interval of about 5 minutes.
 >
@@ -103,8 +102,8 @@ AppsFlyer counts sessions each time the app is launched or comes back to the for
 
 To learn more about how AppsFlyer and Google Analytics calculate sessions, check the resources below.
 
-1. [How AppsFlyer counts sessions](/docs/measure-sessions)
-2. [Google Analytics sessions](https://support.google.com/analytics/answer/2731565?hl=en)
+1. <Anchor target="_blank" href="/marketers/docs/measure-sessions">How AppsFlyer counts sessions</Anchor>
+2. <Anchor target="_blank" href="https://support.google.com/analytics/answer/2731565?hl=en">Google Analytics sessions</Anchor>
 
 </Accordion>
 

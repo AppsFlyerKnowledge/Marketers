@@ -1,10 +1,5 @@
 ---
 title: Set up SSO authentication with your identity provider (IdP)
-excerpt: >-
-  By integrating AppsFlyer with your identity provider (IdP), AppsFlyer account
-  users can log in to AppsFlyer using single sign-on (SSO). Learn how to set up
-  SSO authentication, activate SSO, and optionally add exception users who can
-  log in with an assigned alternative login method.
 metadata:
   keywords:
     - Agencies
@@ -33,6 +28,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015017198-Set-up-SSO-authentication-with-your-identity-provider-IdP
 ---
+**At a glance:** By integrating AppsFlyer with your identity provider (IdP), AppsFlyer account users can log in to AppsFlyer using single sign-on (SSO). Learn how to set up SSO authentication, activate SSO, and optionally add exception users who can log in with an assigned alternative login method.
+
 ## Considerations
 
 * Users must be set up in both AppsFlyer and the identity provider (IdP) with the same email address.
@@ -73,10 +70,10 @@ The SSO configuration is done on both the IdP platform and in AppsFlyer, as deta
 
 See the detailed procedures for configuring SSO authentication in the following IdPs:
 
-* [JumpCloud](/docs/configure-appsflyer-sso-in-jumpcloud)
-* [Okta](/docs/configure-appsflyer-sso-in-okta)
-* [OneLogin](/docs/configure-appsflyer-sso-in-onelogin)
-* [Ping Identity](/docs/configure-appsflyer-sso-in-ping-identity)
+* <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-jumpcloud">JumpCloud</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-okta">Okta</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-onelogin">OneLogin</Anchor>
+* <Anchor target="_blank" href="/marketers/docs/configure-appsflyer-sso-in-ping-identity">Ping Identity</Anchor>
 
 #### Setup overview for other IdP platforms
 
@@ -89,7 +86,7 @@ The process for configuring other IdP platforms is outlined below:
 > 📘 **Note**
 >
 > * **Important!** When assigning users to the IdP, make sure you're using the same user email as in AppsFlyer so that each user on both platforms has the same email.
-> * The [AppsFlyer metadata](https://hq1.appsflyer.com/auth/sso-metadata) contains:
+> * The <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">AppsFlyer metadata</Anchor> contains:
 >   * Encryption and signing certificates
 >   * Entity ID
 >   * Callback URL
@@ -121,7 +118,7 @@ Users log in through the IdP authentication plugin or webpage and are then direc
 
 #### Service provider (AppsFlyer)
 
-Users enter AppsFlyer via the [AppsFlyer SSO login page](https://hq1.appsflyer.com/auth/sso-callback) by clicking **Login with SSO** and entering their email address. They are then directed to the IdP for authentication and redirected to the AppsFlyer homepage.
+Users enter AppsFlyer via the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">AppsFlyer SSO login page</Anchor> by clicking **Login with SSO** and entering their email address. They are then directed to the IdP for authentication and redirected to the AppsFlyer homepage.
 
 [![AppsFlyer_login_page.png](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
 
@@ -135,7 +132,7 @@ Users enter AppsFlyer via the [AppsFlyer SSO login page](https://hq1.appsflyer.c
 
 AppsFlyer offers two types of public encryption key certificates to encrypt data and sign the SSO request:
 
-* **AppsFlyer-signed certificate:** An AppsFlyer certificate created from the [AppsFlyer metadata URL](https://hq1.appsflyer.com/auth/sso-metadata).
+* **AppsFlyer-signed certificate:** An AppsFlyer certificate created from the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">AppsFlyer metadata URL</Anchor>.
 * **CA-signed certificate:** An AppsFlyer certificate **signed by Amazon**.
 
 **To perform this step:**
@@ -295,11 +292,11 @@ If you've configured the authentication to log in via your IdP, check that users
 
 If you've configured the authentication flow to log in via your service provider (AppsFlyer), check that users can enter AppsFlyer using their email:
 
-![log_in_to_af_by_email2.png](https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png)
+<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. If you're signed in to AppsFlyer and the IdP, sign out from both.
 2. Open a webpage in incognito mode.
-3. Go to the [AppsFlyer login page](https://hq1.appsflyer.com/auth/login) and click **Login with SSO**.
+3. Go to the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">AppsFlyer login page</Anchor> and click **Login with SSO**.
 4. Enter the relevant email and click **Continue**. You're now directed to the IdP for authentication.
 5. After IdP authentication, you're directed back to AppsFlyer as a logged-in user. This indicates the process was successful.
 
@@ -327,7 +324,7 @@ From this page, you can edit any of the following options:
 * Identity provider metadata
 * Exception users
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > When you update the certificate type or authentication starting point, the AppsFlyer metadata changes. Copy the latest service provider metadata from AppsFlyer and add it to your identity provider (IdP) SAML configuration immediately after saving your changes
 
@@ -390,10 +387,10 @@ When you delete the SSO configuration, AppsFlyer deletes the SSO metadata and se
 
 </Accordion>
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> [Learn about SSO authentication and find answers to FAQs](/docs/sso-authentication-overview-and-faq)
+> <Anchor target="_blank" href="/marketers/docs/sso-authentication-overview-and-faq">Learn about SSO authentication and find answers to FAQs</Anchor>
 >
-> [Learn about managing exception users for SSO](/docs/manage-exception-users-for-sso)
+> <Anchor target="_blank" href="/marketers/docs/manage-exception-users-for-sso">Learn about managing exception users for SSO</Anchor>
 
 <div data-zendesk-anchors="h_01J7KK52TX8WGA3EK110R9M0GY=considerations h_01KSM8FMC9SCPBY2P56QPD6WJ2=note h_01J7X4Y5Y50EFAPVP6JY8WAMKN=access-the-sso-configuration-page setting-up-sso-authentication=set-up-sso h_01HCHG901V25TSRGRT9244384D=set-up-sso h_01J530X1930CMCF7XJM1XKPC74=note-1 01J530ZP34SQKHM5324DNFA25Y=step-1-set-up-the-idp-platform configuration-overview-for-other-idp-platforms=setup-overview-for-other-idp-platforms h_01HCHG901VPG0ZJ20XJBFPY7CD=setup-overview-for-other-idp-platforms h_01HCHG901VH2XZS9Q0KM9D26WX=note-2 h_01J5303SNTEVQNA4KZEMS2VG04=step-2-set-up-appsflyer h_01J4PGJ2T73313B1X6ECQ17S7Q=step-1-select-authentication-starting-point h_01J4PHJ8FECGSAGQJGWREX3PKK=identity-provider-idp h_01J4PHSVS55G2M00S00KG06BB7=note-3 h_01J4PHTR1E9JV3SM0A7N4X3WJY=service-provider-appsflyer h_01J4PJEQTBJ9P2SZBKGPF2696S=note-4 h_01J4PGJ2T76F7YTK42VBW8J1P6=step-3-select-certificate-type h_01J8CEE2BZN0THJ7DNSGRCGJNQ=note-5 h_01J4PGJ2T76PKE0V7NS7YXC4T5=step-4-obtain-service-provider-appsflyer-metadata h_01J4PGJ2T7SM8EGYZCW6D7AQN8=step-5-provide-idp-metadata h_01KSM7TN32SDETTPJRX5WPR707=5-add-exception-users h_01KSM8FMC91SDE8JQS12J7WXAG=note-6 h_01KSM7WDKE0PGCMFC6JCKTC107=add-login-methods-for-multiple-users h_01KSM7WDKFBFDN7TQVK4YWH3FR=delete-an-exception-user h_01KSM7TN324FN2QS5W6XBY91ES=6-activate-sso h_01KSM8H456C2SFE9E21HNAWFQM=note-7 h_01KSM7YKYJ22W6TM1Q2EQGAAZ9=activation-results edit-sso::496a151=edit-sso h_01KSM7YKYPNA5MZKMZH7K5R09S=edit-sso h_01KSM7YKYSVF5ZSMSYK5HPQJQ0=edit-exception-users h_01J5303SNTYMDMP2DW4GQCGEHK=step-3-test-the-sso-configuration testing-authentication-via-the-idp=test-authentication-via-your-idp h_01HCHG901WXSQ2VPCH2NKE63SE=test-authentication-via-your-idp testing-authentication-via-appsflyer=test-authentication-via-your-service-provider-appsflyer h_01HCHG901W6DJ3GN6E7WFR6RNK=test-authentication-via-your-service-provider-appsflyer h_01J7WKPGTNPF10N4XMJG9ZDN87=manage-sso-configuration edit-sso=zd-edit-sso h_01J7X4P6B18HXJB99JYTVSC75N=zd-edit-sso h_01KSMFXHV6501KFVD9SCCMJCF9=important h_01KSMFXHV6NJ4PKQ5117HB5B4H=note-8 edit-exception-users::6da5a820=edit-exception-users-1 h_01KSMFSP2QXYEQWB2CM4YHTTS0=edit-exception-users-1 h_01J7X4P6B1THTVR1M966JS4P99=remove-sso-configuration h_01K44S4WP3N8HG872PQX1CCES8=traits-and-limitations h_01HDPF69BTMRYR6E6VNMFR4JY4=see-also" />

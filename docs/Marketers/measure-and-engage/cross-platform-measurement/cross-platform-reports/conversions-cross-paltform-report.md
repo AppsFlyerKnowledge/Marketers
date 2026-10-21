@@ -1,9 +1,5 @@
 ---
 title: Conversions cross-platform report
-excerpt: >-
-  The Conversions cross-platform report shows the complete user journey behind
-  each cross-platform conversion, including the full assisting engagement chain
-  and revenue context, not just the last touchpoint.
 metadata:
   keywords:
     - Marketers
@@ -25,17 +21,19 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/50451304393617-Conversions-cross-platform-report
 ---
+> **At a glance:** The Conversions cross-platform report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain and revenue context, not just the last touchpoint.
+
 ## About the report
 
-The Conversions cross-platform report is a raw data report that provides user-level conversion records, linked across platforms using your [Customer User ID (CUID)](https://dev.appsflyer.com/hc/docs/set-customer-user-id). This lets you analyze the complete user journey that led to a conversion, not only the last touchpoint.
+The Conversions cross-platform report is a raw data report that provides user-level conversion records, linked across platforms using your <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/set-customer-user-id">Customer User ID (CUID)</Anchor>. This lets you analyze the complete user journey that led to a conversion, not only the last touchpoint.
 
-For more information about the user-based attribution flow and configuration, see [User-based cross-platform attribution](/docs/beta-user-based-cross-platform-attribution).
+For more information about the user-based attribution flow and configuration, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
 
 ## Report fields
 
-To learn which fields are contained in the report, download a [report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv).
+To learn which fields are contained in the report, download a <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTFg6HXtHNYwegAjMysjybPbRk4IO8uflwvbGvR_xb11BcCrCWQ7i3xZD_Y2iiYSsx_MjTPN0E_Bmk/pub?gid=670907846&single=true&output=csv">report sample</Anchor>.
 
-The report sample includes all the report fields and their values. For the definitions of the fields, see [the field dictionary](/docs/raw-data-field-dictionary).
+The report sample includes all the report fields and their values. For the definitions of the fields, see <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">the field dictionary</Anchor>.
 
 The report contains three groups of fields:
 
@@ -49,7 +47,9 @@ The report runs a batch every 4 hours. Each batch run processes events that ente
 
 The batch process allocates events to their corresponding hourly versions. For example, events that entered the database between 3:00 and 4:00 AM appear in the 3:00 AM version.
 
-There is typically a short delay between an event's actual occurrence and its entry into the database. The report uses the database entry time to keep hourly grouping accurate and consistent.
+> 📘 **Note**
+>
+> There is typically a short delay between an event's actual occurrence and its entry into the database. The report uses the database entry time to keep hourly grouping accurate and consistent.
 
 ### Example: The 8 AM batch run
 
@@ -77,7 +77,7 @@ To subscribe to the report:
 
 The path to the report consists of the following folder hierarchy:
 
-```
+```text
 <bucket-name>/<DataLocker connection name>/t=conversions_user_level_cross_platform/dt=<yyyy-mm-dd>/h=<hour>/
 ```
 
@@ -88,7 +88,7 @@ Keep the following in mind when connecting your database or dashboard to this re
 * Each report's hourly version contains unique conversion records. Make sure you pull all reports hourly or daily.
 * Assist fields (`__assist_1`, `__assist_2`, `__assist_3`) reflect the assisting engagements behind each conversion, based on the underlying conversion data. Use them to reconstruct the touchpoint sequence that led to each conversion.
 * The report provides revenue in three currencies: `revenue_usd` (normalized), `revenue_value_original` (the currency of the reporting event, see `revenue_currency_original`), and `revenue_value_customer` (your preferred currency, see `currency_customer`). Use whichever matches your reporting needs.
-* This report does not include cost fields (cost, clicks, impressions). Extract them from the [cost ETL report](/docs/set-up-and-use-roi360-cost-etl-reports) instead.
-* The report provides all app data in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app. We recommend using the [unified segregation type](/docs/data-locker-for-marketers#app-segregation).
+* This report does not include cost fields (cost, clicks, impressions). Extract them from the <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">cost ETL report</Anchor> instead.
+* The report provides all app data in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app. We recommend using the <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#app-segregation">unified segregation type</Anchor>.
 
 <div data-zendesk-anchors="h_01=about-the-report h_02=report-fields h_03=report-data-freshness h_07=example-the-8-am-batch-run example-8am-batch-run=example-the-8-am-batch-run h_04=subscribe-to-the-report h_05=access-the-report-data-in-your-cloud-bucket access-report-data-cloud-bucket=access-the-report-data-in-your-cloud-bucket h_06=business-intelligence-bi-developer-considerations bi-developer-considerations=business-intelligence-bi-developer-considerations" />

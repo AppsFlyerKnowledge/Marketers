@@ -12,8 +12,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/42227328788241-Purchase-and-subscription-validation
 ---
-- [Purchase and subscription validation - Overview](/docs/purchase-and-subscription-validation-overview)
-- [About Receipt validation](/docs/about-receipt-validation)
-- [Set up receipt validation](/docs/set-up-receipt-validation)
-- [About ROI360 store revenue](/docs/about-roi360-store-revenue)
-- [Set up ROI360 store revenue](/docs/set-up-roi360-store-revenue)
+- <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">Purchase and subscription validation - Overview</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/about-receipt-validation">About Receipt validation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation">Set up receipt validation</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 store revenue</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue">Set up ROI360 store revenue</Anchor>

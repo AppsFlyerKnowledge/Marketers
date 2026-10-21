@@ -1,9 +1,5 @@
 ---
 title: SKAN CV decode (map your CV to events)
-excerpt: >-
-  AppsFlyer decodes and transforms the conversion value set by you into events.
-  The events are used to populate the SKAN dashboard, raw data, and postbacks to
-  partners.
 metadata:
   keywords:
     - Advertisers
@@ -25,13 +21,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360014696297-SKAN-CV-decode-map-your-CV-to-events
 ---
+**At a glance:** AppsFlyer decodes and transforms the conversion value set by you into events. The events are used to populate the SKAN dashboard, raw data, and postbacks to partners.
+
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
 ## Decode SKAN conversion value
 
-Advertisers use conversion value decode as an alternative to using options available in [Conversion Studio](/docs/skan-conversion-studio). If you use Decode, it means you are responsible for setting [updatePostbackConversionValue](https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue) according to your app logic.
+Advertisers use conversion value decode as an alternative to using options available in <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">Conversion Studio</Anchor>. If you use Decode, it means you are responsible for setting <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor> according to your app logic.
 
-Apart from setting the conversion value (CV) in the app, the remainder of the flow, features, and reporting options are the same as those described in the [SKAN solution guide](/docs/skadnetwork-skan-solution-guide). This means that at the expiry of the activity window (controlled by you), iOS sends the postback to the ad network, which forwards it to AppsFlyer. AppsFlyer decodes the CV according to your mapping into events processed just like decoded CVs set by the SDK.
+Apart from setting the conversion value (CV) in the app, the remainder of the flow, features, and reporting options are the same as those described in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN solution guide</Anchor>. This means that at the expiry of the activity window (controlled by you), iOS sends the postback to the ad network, which forwards it to AppsFlyer. AppsFlyer decodes the CV according to your mapping into events processed just like decoded CVs set by the SDK.
 
 ## Custom conversion value—Decode
 
@@ -46,7 +44,7 @@ Implementing custom CV decode requires uploading a CSV file containing your CV m
 * The install time is derived using the postback arrival time.
 * Events have the same time as the install time.
 * To best understand how to prepare the schema, review the mapping scenarios that follow.
-* [Custom in-app events](/docs/in-app-event-postback-configuration#custom-events) names are allowed.
+* <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#custom-events">Custom in-app events</Anchor> names are allowed.
   * Meaning you send new event names, even if they haven't ever been sent by the SDK.
   * You can map the in-app events to ad network in-app events.
   * This is also true for Meta ads integration, subject to Meta-specific rules detailed in the next section.
@@ -158,7 +156,7 @@ Decode mode customers can now access SSOT (Single Source of Truth) attribution, 
 
 #### How to Enable SSOT for Decode Mode
 
-1. **Extract the AppsFlyer ID -** [Retrieve the AppsFlyer ID from the SDK at install tim](/docs/server-to-server-events-api-for-mobile-s2s-mobile#fetching-the-appsflyer-id) e.
+1. **Extract the AppsFlyer ID -** <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile#fetching-the-appsflyer-id">Retrieve the AppsFlyer ID from the SDK at install tim</Anchor> e.
 2. **Query the SSOT API -** Use the AppsFlyer ID and App ID to check if the install was attributed by AppsFlyer.
    * API returns:  
      `"is-non-organic-install": true/false`
@@ -188,7 +186,7 @@ Conversion values are mapped to one or more in-app events.
 
 * Format: CSV file
 * Maximum number of rows: 640 + header row; total 641.
-* The header row  must include all the column names exactly as they display here. Best practice: Use the example file attached as a template. See sample decode CSV files for [SKAN 3](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv) and [SKAN 4](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv).
+* The header row  must include all the column names exactly as they display here. Best practice: Use the example file attached as a template. See sample decode CSV files for <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor> and <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>.
 * Don't use the following characters as the first character in a column: `=`, `+`, `-`, and `@` (edited).
 
 ### Decode csv file specification
@@ -266,7 +264,7 @@ You can correct this by formatting the cells in Excel.
    The format cells window opens.
 3. Select **Number**.  
 
-   ![Formatnumbers.png](https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png)
+   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. Clear **Use 1000 separator (,).**
 2. (Optional) Set the number of **Decimal places**. The default is 2. The maximum permitted is 5.
@@ -284,7 +282,7 @@ To examine the content of the CSV file, use an editor to view the file.
 * Windows: Notepad, Notepad++
 * macOS: TextEdit
 
-The following contains a screenshot of the [example CSV file](https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?output=csv) displayed in an editor.
+The following contains a screenshot of the <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?output=csv">example CSV file</Anchor> displayed in an editor.
 
 **Editor view**
 
@@ -308,7 +306,7 @@ If Excel creates CSV file with a semi-colon ";" or other characters as a delimit
 * This occurs when your computer's regional settings are set to a language/region that is not English.
 * This issue is particularly prevalent when German is selected in the regional settings.
 * The solution differs depending on your computer operating system (macOS or Windows).
-* To resolve this issue, search for the latest guidance from [Microsoft](https://support.office.com/en-us/article/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba#ID0EAAFAAA=Office_2016-2010) or other forums to revolve. Use the following search terms: *Operating system (macOS or Windows) Excel change delimiter for CSV files.*
+* To resolve this issue, search for the latest guidance from <Anchor target="_blank" href="https://support.office.com/en-us/article/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba#ID0EAAFAAA=Office_2016-2010">Microsoft</Anchor> or other forums to revolve. Use the following search terms: *Operating system (macOS or Windows) Excel change delimiter for CSV files.*
 
 </Accordion>
 

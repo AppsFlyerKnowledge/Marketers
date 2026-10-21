@@ -1,8 +1,5 @@
 ---
 title: Sina Weibo Ads campaign configuration
-excerpt: >-
-  Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most
-  popular social media platforms in China.
 metadata:
   keywords:
     - Advertisers
@@ -25,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004134086-Sina-Weibo-Ads-campaign-configuration
 ---
+**At a glance:** Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most popular social media platforms in China.
+
 ## Setting up Sina Weibo Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -36,8 +35,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 The Sina Weibo Ads configuration window includes 3 active tabs: Integration, Attribution link, and Permissions. Click on the items below to read about the tabs setup.
 
@@ -50,7 +49,7 @@ This section is used for connecting the partner with AppsFlyer. Relevant message
 ### Activate partners
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 Default Postbacks
 
@@ -84,20 +83,20 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameter:** af\_adset
 * **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns Sina Weibo Ads.  
   **Attribution link parameter:** af\_ad
-* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid [exceeding the site ID](/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit) limitations.  
+* **Site ID** and **Sub Site ID** - set Site ID parameter to attribute installs to specific publishers. If many publishers exist, we advise on limiting the number of used site IDs and using the sub site ID parameter, to avoid <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceeding the site ID</Anchor> limitations.  
   **Attribution link parameters:** af\_siteid and af\_sub\_siteid
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 [![](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)
 
-Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about[**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters).
+Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
 ### Retargeting settings
 
-You can add any other parameter to the attribution link simply by typing it in a new parameter box. You can find all AppsFlyer available URL parameters here: [**AppsFlyer Attribution Link Structure and Parameters**](/docs/about-link-structure-and-parameters)
+You can add any other parameter to the attribution link simply by typing it in a new parameter box. You can find all AppsFlyer available URL parameters here: <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>
 
-When enabled, AppsFlyer recognizes a link as a [retargeting](/docs/retargeting-attribution-guide) attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.
+When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor> attribution link, rather than a user acquisition link, by adding the `&is_retargeting=true` to the click recording link. Note that retargeting is currently only supported for click-through and not view-through attribution.
 
 **Attribution link parameter**: `is_retargeting`
 
@@ -110,20 +109,20 @@ The setup below is displayed when retargeting is enabled.
 Select ***standard attribution link*** option if:
 
 * You don't need to deep link with the URL or
-* You plan to use only [URI schemes](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings) for deep linking
+* You plan to use only <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">URI schemes</Anchor> for deep linking
 
 Select ***Use OneLink*** for:
 
 * Using a single link for both Android and iOS apps or
 * Deep linking using Universal or app links
 
-Note that selecting OneLink changes the click recording link from app specific to a [OneLink URL](/docs/onelink-guide).
+Note that selecting OneLink changes the click recording link from app specific to a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink URL</Anchor>.
 
 ***Deep Link URL***
 
 Use this field if the link is meant to deep link users to any specific activity within your app.  
 **Attribution link parameter**: `af_dp`  
-You can find more information about AppsFlyer's [deep linking solution in this guide.](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink)
+You can find more information about AppsFlyer's <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking solution in this guide.</Anchor>
 
 ***Re-engagement Window***
 
@@ -139,7 +138,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 **Attribution link parameter:** af\_click\_lookback
 
-More details about the [click lookback window here](/docs/set-up-lookback-windows).
+More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 [![sina weibo clickthrough settings](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
 
@@ -179,11 +178,11 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
 * ***Allow access to your retention report*** - only to the partner's own retention data
 * ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
-* ***Allow access to your aggregate in-app events data** -*only to the partner's own in-app events data
+* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
 * ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 
@@ -238,11 +237,11 @@ All of the ad formats support AppsFlyer Attribution.
 
 Enter the AppsFlyer attribution link
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > ```
 > https://app.appsflyer.com/com.king.candycrushsaga?pid=sinaweibo_int&c=creative1
-> 	&clickid=`{IMP}&md5_idfa={idfa_MD5}&md5_imei={imei_MD5}`&redirect=false
+> 	&clickid={IMP}&md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false
 > ```
 
 [![](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)
@@ -266,7 +265,7 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
 
-   > 📘 **Example**
+   > 📄 **Example**
    >
    > ```
    > myapp://products/page1&pid=sinaweibo_int&is_retargeting=true
@@ -276,12 +275,13 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
 
-   > 📘 **Example**
+   > 📄 **Example**
    >
    > ```
    > https://app.appsflyer.com/com.mycompany.myapp?pid=sinaweibo_int&c=test&clickid={IMP}
    > &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
    > ```
+
 
    > 📘 **Note**
    >
@@ -296,6 +296,6 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
    > * `&af_adset=adset_name`
    > * `&af_ad=ad_name`
    >
-   > Read more about [AppsFlyer's Attribution Link Structure and Parameters](/docs/about-link-structure-and-parameters) and Sina Weibo's [attribution links](#attribution-link-tab).
+   > Read more about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer's Attribution Link Structure and Parameters</Anchor> and Sina Weibo's [attribution links](#attribution-link-tab).
 
 <div data-zendesk-anchors="h_01HKW6X6G9WGKHT7MXM3BKYX40=setting-up-sina-weibo-ads h_01HKW6X6G9865NFC261ZCPC4AM=integration-tab h_01HKW6X6G98F7ERDGKN7K5PDVE=activate-partners h_01HKW6X6GAR48FSFX7DVEWAMX8=attribution-link-tab h_01HKW6X6GA0FPN5EMR68FH2HSR=attribution-link-parameters h_01HKW6X6GA287ZKAWG69497WRN=retargeting-settings clickthrough-attribution=click-through-attribution h_01HKW6X6GABBB9ZP8GP87JYZAE=click-through-attribution h_01HKW6X6GAY9GP9P57RFPSFTVN=click-attribution-link h_01HKW6X6GADFS59WJT2GHYQ317=cost-tab h_01HKW6X6GAG7TM4WFNJFHGY9QN=ad-revenue-tab h_01HKW6X6GAK8PN5PBFPZTGC0ES=permissions-tab h_01HKW6X6GA96QHGJY220JF5DF4=setting-appsflyer-attribution-on-weibo-ads-dashboard h_01HKW6X6GA6XJSV02NTNDSRZ19=setting-the-attribution-link h_01HKW6X6GAJBYM89RYH65BAVNH=setup-ad-series h_01HKW6X6GC2RHPJXWZAX8S758B=uploading-ad-creatives-and-set-the-attribution-link h_01HKW6X6GCNS88DFZTMM7BXMKT=example h_01HKW6X6GCBQNG4Q2RHJPCRCKS=note h_01HKW6X6GE2RVQGSN9JM63SZYA=creating-retargeting-campaigns-on-weibo-ads-dashboard h_01HKW6X6GEKZWAPZ6V2EXGY9SA=example-1 h_01HKW6X6GFQQSY19CRREVR8GRY=example-2 h_01HKW6X6GF815M1XE9HF631F1W=note-1" />

@@ -15,10 +15,10 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550866490129-Marketer-onboarding
 ---
-- [Welcome to AppsFlyer <span class="af-star">★</span>](/docs/welcome-to-appsflyer)
-- [Getting started—Onboarding for marketers <span class="af-star">★</span>](/docs/getting-started-onboarding-for-marketers)
-- [Migrate from Adjust to AppsFlyer](/docs/migrate-from-adjust-to-appsflyer)
-- [Using the Customer Assistant Chatbot](/docs/using-the-customer-assistant-chatbot)
-- [Migration to AppsFlyer from other vendors](/docs/migration-to-appsflyer-from-other-vendors)
-- [Measuring attribution with multiple MMPs](/docs/measuring-attribution-with-multiple-mmps)
-- [Migrate from Firebase Dynamic Links to AppsFlyer](/docs/migrate-from-firebase-dynamic-links-to-appsflyer)
+- <Anchor target="_blank" href="/marketers/docs/welcome-to-appsflyer">Welcome to AppsFlyer <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers">Getting started—Onboarding for marketers <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/migrate-from-adjust-to-appsflyer">Migrate from Adjust to AppsFlyer</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/using-the-customer-assistant-chatbot">Using the Customer Assistant Chatbot</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/migration-to-appsflyer-from-other-vendors">Migration to AppsFlyer from other vendors</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measuring-attribution-with-multiple-mmps">Measuring attribution with multiple MMPs</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/migrate-from-firebase-dynamic-links-to-appsflyer">Migrate from Firebase Dynamic Links to AppsFlyer</Anchor>

@@ -1,10 +1,5 @@
 ---
 title: Spotify campaign configuration
-excerpt: >-
-  Spotify, an AppsFlyer ad network integrated partner, uses its enhanced mobile
-  advertising solution to cultivate strategic, scalable, and smart campaigns to
-  meet the needs of mobile users. In Spotify, clicks are generated when a user
-  clicks on a CTA button while watching or hearing an ad.
 metadata:
   keywords:
     - Advertisers
@@ -26,7 +21,9 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015074677-Spotify-campaign-configuration
 ---
-![Spotify_Full_Logo_RGB_Black.png](https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png)
+**At a glance:** Spotify, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of mobile users. In Spotify, clicks are generated when a user clicks on a CTA button while watching or hearing an ad.
+
+<Image alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
 
 ## Setting up Spotify
 
@@ -39,16 +36,16 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
-Learn more about the [partner configuration window header](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">partner configuration window header</Anchor>.
 
-Learn more about [partner activation rules](/docs/partner-activation-deactivation#activate-a-partner-integration).
+Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation rules</Anchor>.
 
-> 📘 **Important**
+> 🚧 **Important**
 >
-> * The [general settings](/docs/set-up-an-integrated-partner#d-general-settings) step in the Integration tab is **mandatory** for all partners.
+> * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">general settings</Anchor> step in the Integration tab is **mandatory** for all partners.
 > * All the rest of the steps are either descriptive or **optional.**
 
 <div id="integration-tab" />
@@ -103,7 +100,7 @@ Permissions can be granted only to Spotify employees who have an ad network team
 2. Enter the ad network team member's email.
 3. Click **Add**.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > * When you give Spotify permissions to configure the integration and to change in-app event postbacks, you allow them to potentially access all attribution events, including organic and non-organic traffic from all media sources.
 > * Changes that Spotify makes override the current configuration, even if set by the advertiser.
@@ -118,7 +115,7 @@ The following are the permissions types that advertisers can grant Spotify:
 * **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner.
 * **Allow access to your Protect360 dashboard & raw data via API** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser.
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 

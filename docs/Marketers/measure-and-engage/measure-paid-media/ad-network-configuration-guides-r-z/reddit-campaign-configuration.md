@@ -1,8 +1,5 @@
 ---
 title: Reddit campaign configuration
-excerpt: >-
-  Reddit, an AppsFlyer ad network integrated partner, is home to 430 million
-  highly engaged monthly users who can’t be found anywhere else.
 metadata:
   keywords:
     - integrated partner
@@ -28,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011016138-Reddit-campaign-configuration
 ---
+**At a glance:** Reddit, an AppsFlyer ad network integrated partner, is home to 430 million highly engaged monthly users who can’t be found anywhere else.
+
 ## Setting up Reddit
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -39,8 +38,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -50,15 +49,15 @@ The ***Integration Tab*** is divided into different sections:
 
 #### Activate partners
 
-To enable the configuration, [activate the partner](/docs/partner-activation-deactivation#activate-a-partner-integration).
+To enable the configuration, <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activate the partner</Anchor>.
 
 #### Advanced Privacy
 
-For iOS apps only, when**Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can [control what data is shared](/docs/set-up-an-integrated-partner#b-advanced-privacy) with Reddit via postbacks and reports.
+For iOS apps only, when **Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">control what data is shared</Anchor> with Reddit via postbacks and reports.
 
 #### Transaction ID
 
-For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to [share the transaction ID of SKAdNetwork postbacks](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners) with Reddit. By doing so, Reddit could decode your SKAdNetwork Conversion Values.
+For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with Reddit. By doing so, Reddit could decode your SKAdNetwork Conversion Values.
 
 #### General settings
 
@@ -68,7 +67,7 @@ Activate, if you want to attribute view-through installs from Reddit. The view-t
 
 **Advanced Matching data sharing**
 
-Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Reddit, if these fields are included in the event information sent to AppsFlyer. For more information, see: [Advanced Matching Data Sharing](/docs/advanced-matching-data-sharing).
+Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Reddit, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 
 #### Default postbacks
 
@@ -102,10 +101,10 @@ In this section, you can configure in-app event postbacks that are sent to Reddi
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -113,13 +112,13 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -152,7 +151,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * <span id="01EDKYCTJHX0T89JNPJKY71WVW"></span>***Allow spend ingestion:*** permit the partner to send ad spend data in files for this app only.
 * <span id="01EDKYCTJHWKWYJS7ZFCJ8558V"></span>***Allow access to your Protect360 dashboard:*** only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
 
@@ -174,6 +173,6 @@ The following restrictions apply to click-through attribution:
 * Campaign details — available
 * Clicks and impressions: Not included in raw data reports
 
-**Reminder:** Data received about a Reddit campaign is subject to [Reddit Business Tool Terms](https://protect.checkpoint.com/v2/___https:/business.reddithelp.com/s/article/Reddit-Business-Tool-Terms___.YzJ1OnJlZGRpdDpjOmc6OGFlZGI3Y2U5MDg3ZTgxNzYxYzdjMzEzYzgwZjI3ZDI6NjowMDg5Ojg1MmViZDg4YWY2ZTg4NThjMDE2NjhkYTk2ZjZkYmZlYWI1NGY3MGEwNDk0MmE0ODQ0NTI3ZDM0ZWYwOWVlMmI6cDpUOk4#:%7E:text=These%20Reddit%20Business%20Tool%20Terms,advertising%20purposes%20or%20to%20otherwise), and includes, among other restrictions, a prohibition on using Reddit data to create profiles of any users.
+**Reminder:** Data received about a Reddit campaign is subject to <Anchor target="_blank" href="https://protect.checkpoint.com/v2/___https:/business.reddithelp.com/s/article/Reddit-Business-Tool-Terms___.YzJ1OnJlZGRpdDpjOmc6OGFlZGI3Y2U5MDg3ZTgxNzYxYzdjMzEzYzgwZjI3ZDI6NjowMDg5Ojg1MmViZDg4YWY2ZTg4NThjMDE2NjhkYTk2ZjZkYmZlYWI1NGY3MGEwNDk0MmE0ODQ0NTI3ZDM0ZWYwOWVlMmI6cDpUOk4#:%7E:text=These%20Reddit%20Business%20Tool%20Terms,advertising%20purposes%20or%20to%20otherwise">Reddit Business Tool Terms</Anchor>, and includes, among other restrictions, a prohibition on using Reddit data to create profiles of any users.
 
 <div data-zendesk-anchors="01EDKYCH117BTY81G0Z2NF181F=setting-up-reddit 01EDKYCH11YM04HDJTAWP4XHWH=integration-tab 01EDKYCH11E2X1VSSG2HKKP6VS=activate-partners h_01HJRZF42CYME3EZ37470339CF=advanced-privacy h_01HJRZF42CN7VT8SKNX5E638R0=transaction-id 01EDKYCH11WFJ09XBND6RQT0XA=general-settings 01EDKYCH11KZT2BN64AGETTMD6=default-postbacks inapp-events-settings=in-app-events-settings 01EDKYCH11QAYSV2GMYD4R6DJJ=in-app-events-settings h_01HJRZF42DHDDHPCE4NYA7QKV2=attribution-link-tab h_01HJRZF42DYG18DTKSV4G8NHV4=cost-tab 01EDKYCH124QTAFK6VQ3ARHCTM=ad-revenue-tab 01EDKYCH12RY4P6DY3QSWG1A18=permissions-tab 01EDKYCH12FXE1WASY5YQF80CV=ad-network-permissions 01JAQ0TCR54Q03RQWPNT5PJGPN=raw-data-restrictions" />

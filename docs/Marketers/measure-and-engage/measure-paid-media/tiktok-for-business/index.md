@@ -13,8 +13,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/12192554266385-TikTok-for-Business
 ---
-- [TikTok for Business—Advanced SRN integration setup](/docs/tiktok-for-business-advanced-srn-integration-setup)
-- [TikTok for Business—Create web campaigns for website apps](/docs/tiktok-for-business-create-web-campaigns-for-website-apps)
-- [TikTok for Business—Create web-based campaigns](/docs/tiktok-for-business-create-web-based-campaigns)
-- [TikTok for Business—Web integration setup for PC and console apps](/docs/tiktok-for-business-web-integration-setup-for-pc-and-console-apps)
-- [Attribution discrepancies between TikTok for Business and AppsFlyer](/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer)
+- <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Business—Advanced SRN integration setup</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-create-web-campaigns-for-website-apps">TikTok for Business—Create web campaigns for website apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-create-web-based-campaigns">TikTok for Business—Create web-based campaigns</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-web-integration-setup-for-pc-and-console-apps">TikTok for Business—Web integration setup for PC and console apps</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/attribution-discrepancies-between-tiktok-for-business-and-appsflyer">Attribution discrepancies between TikTok for Business and AppsFlyer</Anchor>

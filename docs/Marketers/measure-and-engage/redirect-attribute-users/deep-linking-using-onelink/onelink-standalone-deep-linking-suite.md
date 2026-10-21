@@ -1,10 +1,5 @@
 ---
 title: OneLink Standalone Deep Linking Suite
-excerpt: >-
-  The OneLink Standalone Deep Linking Suite gives you deep linking and
-  redirection for owned media journeys (email-to-app, web-to-app, QR-to-app,
-  social-to-app, referrals, SMS/text, etc.), without requiring a paid media
-  attribution package.
 metadata:
   keywords:
     - Marketers
@@ -25,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/44703014449809-OneLink-Standalone-Deep-Linking-Suite
 ---
+**At a glance:** The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
+
 ## About the OneLink Standalone Deep Linking Suite
 
 The Standalone Deep Linking Suite is built for teams that need **reliable, scalable deep linking, redirection, and attribution for owned channels**, without integrations involving paid media channels and partner postbacks.
@@ -73,7 +70,7 @@ The plans differ mainly by scale, link management capabilities, and access to ad
 > 📘 **Notes**
 >
 > * The Standalone Deep Linking Suite is intended for owned media use cases only. Paid media attribution partner integrations aren’t included in these plans.
-> * Most OneLink features require a paid [AppsFlyer subscription plan](/docs/account-management-plans-payments-and-billing#appsflyer-plans).
+> * Most OneLink features require a paid <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">AppsFlyer subscription plan</Anchor>.
 > * If your subscription plan is canceled, most OneLink features will no longer be available, and relevant end-user flows may be negatively affected.
 > * Deferred deep linking is not supported for Zero plan subscriptions.
 

@@ -1,8 +1,5 @@
 ---
 title: Cohort API
-excerpt: >-
-  Cohort API provides advertisers a programmatic way to get Cohort data. Use the
-  API to integrate Cohort data into BI and marketing automation systems.
 metadata:
   keywords:
     - API
@@ -30,20 +27,22 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
+**At a glance:** Cohort API provides advertisers a programmatic way to get Cohort data. Use the API to integrate Cohort data into BI and marketing automation systems.
+
 ## Cohort API
 
-The Cohort API is used to get cohorted campaign performance data from the AppsFlyer platform. It is functionally equivalent to the [Cohort dashboard](/docs/cohort-and-retention-dashboard).
+The Cohort API is used to get cohorted campaign performance data from the AppsFlyer platform. It is functionally equivalent to the <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort dashboard</Anchor>.
 
 To use Cohort and retention, you define the data that you want to view. You select users from an app and segment them by conversion time. Cohort metrics like revenue, ROI, and event conversion rates are available. Break the cohort down, for comparison purposes, into dimensions like campaign or media source. The result returns as a CSV or JSON file. You can use the results to uncover patterns or changes in performance over user or campaign life cycles.
 
-See [Cohort use cases](https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689).
+See <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Cohort use cases</Anchor>.
 
 **To use Cohort API**:
 
-1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8b676172a491d1cea655002549ae49f6d974a15e4865ea90392121d22ce95426-32131110605713.png) Get the [API token](/docs/managing-appsflyer-tokens). An admin needs to retrieve the token.
+1. ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8b676172a491d1cea655002549ae49f6d974a15e4865ea90392121d22ce95426-32131110605713.png) Get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor>. An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the [parameters](#filtering-and-grouping-parameters) to input when they make the API call, as described in the sections that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
-4. Tell your developer to follow their [Cohort API instructions](https://dev.appsflyer.com/hc/reference/post_app-id) in the developer hub.
+4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_app-id">Cohort API instructions</Anchor> in the developer hub.
 
 <div id="filtering-and-grouping-parameters" />
 
@@ -60,7 +59,7 @@ Use the following parameters to get the necessary data.
 | <span id="to"></span>to | Higher bound of the LTV attribution date range<ul><li>Number of the days in the range: 1-31 days</li><li>For a single day: `from` and `to` values are identical.</li><li>Format: yyyy-mm-dd</li><li>Example: `"from": "2020-01-01", "to": 2020-01-31` is 31 days.</li></ul> | Yes |
 | <span id="granularity"></span>granularity | Hourly granularity for the previous 72 hours by setting  `"granularity": "hour"` and setting the `from` and `to` range to include the time of day.<ul><li>Format: yyyy-mm-dd hh:mm:ss</li><li>Example:</li></ul>`"granularity": "hour", "from": "2021-12-01 14:00:00", "to": "2021-12-03 11:00:00",` | No |
 | <span id="partial_data"></span>partial\_data | To avoid data distortion and misinterpretation Cohort returns data of complete days. However, the data of partial days can be useful.<br /><br />The number of complete cohort days for a query is calculated as the difference between today's date and the *to* date.<ul><li>[Default] If false, complete days return.</li><li>If true, up to 180 cohort days return, including days having incomplete data.</li><li>Format: Boolean</li><li>Platform UI version: false</li></ul>**Example**: On May 10, the number of complete cohort days for users converting during April 1-30, is 10.<ul><li>If false [default], cohort days 0-9, return. This is the number of days (10) between the last conversion date and today.</li><li>If true, cohort days 1-40 return. Days 11-40 contain partial data and do not return. For example, since April 20, only 20 days have elapsed, and so on.</li></ul>**Note**: Partial data is only allowed when the aggregation type is cumulative. | No |
-| <span id="filters"></span>filters | Filter the data and period days returned. Select filters from the [filter dimensions list](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).<ul><li>Format: Strings in a nested JSON. Values need to be in an array.</li><li>**Example limit to specific Geos:**`"filters": {"geo": ["US"]}` includes only users attributed to the United States.</li><li>**Example period (cohort) days**: The `period` filter sets the days for which measures are returned. The possible values are: 0-180.</li><li>Default: If no period filter is set the days 0-30, 60, 90, and 180 return. [Example filter with period](/docs/cohort-api#using-period-filters)</li></ul> | No |
+| <span id="filters"></span>filters | Filter the data and period days returned. Select filters from the [filter dimensions list](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).<ul><li>Format: Strings in a nested JSON. Values need to be in an array.</li><li>**Example limit to specific Geos:** `"filters": {"geo": ["US"]}` includes only users attributed to the United States.</li><li>**Example period (cohort) days**: The `period` filter sets the days for which measures are returned. The possible values are: 0-180.</li><li>Default: If no period filter is set the days 0-30, 60, 90, and 180 return. [Example filter with period](/docs/cohort-api#using-period-filters)</li></ul> | No |
 | <span id="groupings"></span>groupings | <ul><li>Use grouping parameters to include additional columns and make your reports less granular.</li><li>Select 1-7 groupings from the [grouping dimensions list](/docs/cohort-api#list-of-group-by-and-filter-by-dimensions).</li><li>Format: Strings in an array</li><li>Example: `"groupings": ["af_ad", "c", "af_c_id", "af_prt"]`</li></ul> | Yes |
 | <span id="kpis"></span>kpis | KPIs are the metrics used for gaining insights into the behavior of your app. [Learn how to select and format KPIs](/docs/cohort-api#selecting-and-formatting-kpis) | Yes |
 | <span id="preferred_currency"></span>preferred\_currency | A parameter that sets the format of the KPIs returned. [Learn how to format KPIs](/docs/cohort-api#formatting-kpi-functions) | No |
@@ -90,8 +89,8 @@ The following parameters set the format of the KPIs returned.
 
 | Parameter | Values | Mandatory |
 | --- | --- | --- |
-| preferred\_currency | KPI revenue currency<ul><li>If true, revenue is returned using the [app-specific currency](/docs/app-settings#localization-currency)set in the platform.</li><li>[Default] If false, results return in USD.</li><li>Format: Boolean</li><li>Platform UI version: true</li></ul> | No |
-| preferred\_timezone | **Time zone of data ranges**<ul><li>If true, times are expressed using the [app-specific timezone](/docs/app-settings#localization-time-zone) set in the platform.</li><li>[Default] If false, times are expressed using UTC time zone.</li><li>Format: Boolean</li><li>Platform UI version: true</li></ul> | No |
+| preferred\_currency | KPI revenue currency<ul><li>If true, revenue is returned using the <Anchor target="_blank" href="/marketers/docs/app-settings#localization-currency">app-specific currency</Anchor> set in the platform.</li><li>[Default] If false, results return in USD.</li><li>Format: Boolean</li><li>Platform UI version: true</li></ul> | No |
+| preferred\_timezone | **Time zone of data ranges**<ul><li>If true, times are expressed using the <Anchor target="_blank" href="/marketers/docs/app-settings#localization-time-zone">app-specific timezone</Anchor> set in the platform.</li><li>[Default] If false, times are expressed using UTC time zone.</li><li>Format: Boolean</li><li>Platform UI version: true</li></ul> | No |
 | aggregation\_type | <ul><li>`cumulative`</li><li>`on_day`</li></ul>`"aggregation_type": "cumulative"`<br /><br />`Format: String` | Yes |
 | per\_user | Divide the KPI function by the number of app users. Applies only to relevant KPIs.<ul><li>If true, KPI values are divided by the number of users in the cohort.</li><li>If false, KPI values are not divided by the number of users.</li><li>Format: Boolean</li><li>Example if true: total revenue is $1000, the number of app users is 500, the value returned is $2.</li></ul> | No |
 
@@ -118,7 +117,7 @@ If your report date range is January 1 to January 11 users who attributed (insta
 * The value of the period can be one or more of the following 0-180. For example, 0, 1, 2, 30, 180.
 * If no period is specified, the default values of 0, 1, 2, and so on to 30, 60, 90, and 180 return.
 
-> 📘 **Example period filter**
+> 📄 **Example period filter**
 >
 > * This example contains the JSON query parameters, raw data, and resulting CSV file.
 > * The query *filters period* of 0, 1, and 2 and the KPI selected is *revenue*.
@@ -179,15 +178,15 @@ If your report date range is January 1 to January 11 users who attributed (insta
 | Organic data | Available |
 | Non-organic data | Available |
 | Cost data limitation | <ul><li>Cost data is only for campaigns with at least 1 recorded install.</li><li>AppsFlyer does not report cost data for keywords that contain uppercase letters in the cohort report or cohort API</li><li>You can't combine some groupings combinations with cost. For example, Meta ads can have either geo or channel groupings but not both. The exact combination of groupings is ad network dependent.</li></ul> |
-| Data freshness | Data freshness depends on [partial\_data](/docs/cohort-api#partial_data) as follows:<ul><li>[Default] If false, [Daily](/docs/about-data-freshness-and-timezone-support#daily-processing)</li><li>If true, [Continuous (real-time)](/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime)</li><li>Cost and uninstall metrics update daily in all instances</li></ul> |
+| Data freshness | Data freshness depends on [partial\_data](/docs/cohort-api#partial_data) as follows:<ul><li>[Default] If false, <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#daily-processing">Daily</Anchor></li><li>If true, <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#continuous-aka-realtime">Continuous (real-time)</Anchor></li><li>Cost and uninstall metrics update daily in all instances</li></ul> |
 | Historical data | Daily cohort: 2 years |
 | Account user access | The authorization token is available to admin users in the dashboard |
 | Ad revenue | For af\_ad\_revenue events, the unique users metric isn't available when the aggregation type is:<ul><li>Cumulative.</li><li>"On day," for dates between October 5, 2022-February 16, 2023.</li></ul> |
 | Weekly and monthly groupings | Weekly and monthly dimension groupings aren't available with the Cohort API. Use the Cohort dashboard. |
 | Cohort API period | <ul><li>The conversion period is referred to as 0 (Hour 0 or Day 0). The next period after the conversion is referred to as 1 (Hour 1 or Day 1), and so on.</li><li>In AppsFlyer a cohort period doesn't take into account the specific install timestamp. Rather, cohort hours are rounded down to the nearest hour, and cohort days, are based on the calendar day. This may cause discrepancies when comparing AppsFlyer cohort data to the cohort data of other networks, where all cohort periods are determined by the specific install timestamp (meaning an hour is 60 minutes post-install timestamp, and a day is the 24-hour post-install period after the install timestamp).</li></ul> |
-| Dates | <ul><li>Dates or date ranges refer to lifetime value ([LTV)](/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports) dates, meaning the date the user attributed (converted) and not the date of the activity itself.</li><li>Earliest date supported: 730 days before the current date. Meaning 2 years</li><li>Maximum query range: 60 days.</li></ul> |
-| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. [Learn more](/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events)</li><li>The install time is based on the [device\_download\_time](/docs/raw-data-field-dictionary#device-info::dfd9504e) field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. [Learn more](/docs/unique-users)</li></ul> |
-| Cohort API for partners | Access to the Cohort API for marketing partners is being deprecated as of September 15th, 2024. Marketing partners are encouraged to [enable Data Locker](/partners/docs/data-locker-reports-for-api-partners) to ensure continued access to customer data. |
+| Dates | <ul><li>Dates or date ranges refer to lifetime value (<Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV)</Anchor> dates, meaning the date the user attributed (converted) and not the date of the activity itself.</li><li>Earliest date supported: 730 days before the current date. Meaning 2 years</li><li>Maximum query range: 60 days.</li></ul> |
+| Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
+| Cohort API for partners | Access to the Cohort API for marketing partners is being deprecated as of September 15th, 2024. Marketing partners are encouraged to <Anchor target="_blank" href="/partners/docs/data-locker-reports-for-api-partners">enable Data Locker</Anchor> to ensure continued access to customer data. |
 
 </Accordion>
 

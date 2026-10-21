@@ -15,7 +15,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551169161745-Redirect-attribute-users
 ---
-- [Deep linking using OneLink](/docs/deep-linking-using-onelink)
-- [Web-to-app attribution](/docs/web-to-app-attribution)
-- [Owned media attribution](/docs/owned-media-attribution)
-- [Email service providers](/docs/email-service-providers)
+- <Anchor target="_blank" href="/marketers/docs/deep-linking-using-onelink">Deep linking using OneLink</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/web-to-app-attribution">Web-to-app attribution</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/owned-media-attribution">Owned media attribution</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/email-service-providers">Email service providers</Anchor>

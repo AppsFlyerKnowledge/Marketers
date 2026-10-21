@@ -1,9 +1,5 @@
 ---
 title: Snapchat marketing partners setup
-excerpt: >-
-  Integrate with Snapchat marketing partners to measure campaigns you run with
-  them. When configured, AppsFlyer sends postbacks to the configured Snapchat
-  marketing partner.
 metadata:
   keywords:
     - Advertisers
@@ -25,11 +21,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417694142481-Snapchat-marketing-partners-setup
 ---
+**At a glance:** Integrate with Snapchat marketing partners to measure campaigns you run with them. When configured, AppsFlyer sends postbacks to the configured Snapchat marketing partner.
+
 ## Setting up a Snapchat Marketing Partner
 
 Follow the steps below to configure your campaigns with any one of Snapchat Marketing Partners.
 
-* Activate [Snapchat attribution](/docs/snapchat-advanced-srn-integration-setup).
+* Activate <Anchor target="_blank" href="/marketers/docs/snapchat-advanced-srn-integration-setup">Snapchat attribution</Anchor>.
 * In the Snapchat **Business Manager** dashboard, copy the **Snap Account ID** highlighted below in green.
 
   ![snapchat-dashboard.png](https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png)
@@ -55,14 +53,14 @@ Select **Events attributed to any partner or organic** to have your entire use
 ### In-app events
 
 1. To send in-app event postbacks to the Snapchat marketing partner you're configuring, toggle the In-App Events Postback to **ON**.
-2. Individually add the in-app events (SDK events) you want to send to the partner and [map them as required.](/docs/in-app-event-postback-configuration#event-mapping)
+2. Individually add the in-app events (SDK events) you want to send to the partner and <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">map them as required.</Anchor>
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Disabling attribution for Snapchat prevents sending postbacks to Snapchat Marketing Partners.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Snapchat and AppsFlyer SKAdNetwork interoperation](/docs/skan-interoperation-with-snapchat)
+> * <Anchor target="_blank" href="/marketers/docs/skan-interoperation-with-snapchat">Snapchat and AppsFlyer SKAdNetwork interoperation</Anchor>
 
 <div data-zendesk-anchors="h_01HDNZAAS11ADG02FXNPSYYH69=setting-up-a-snapchat-marketing-partner h_01HDNZAAS1M2317CKQ13SP11KM=default-postbacks inapp-events=in-app-events h_01HDNZAAS1JZPHS32PNFFCR12A=in-app-events h_01HDNZAAS1PRWK6EVQTTV3YNQM=important h_01HDNZBZARD9E54VAFVSRQFWEH=see-also" />

@@ -1,9 +1,5 @@
 ---
 title: SKAN aggregated performance report API
-excerpt: >-
-  SKAN performance enriched with additional data points. Similar to the data in
-  the SKAdNetwork dashboard. Aggregate using either the install date or postback
-  arrival date.
 metadata:
   keywords:
     - Advertisers
@@ -26,9 +22,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360014104157-SKAN-aggregated-performance-report-API
 ---
+**At a glance:** SKAN performance enriched with additional data points. Similar to the data in the SKAdNetwork dashboard. Aggregate using either the install date or postback arrival date.
+
 ## SKAN aggregated performance report API
 
-The API returns attribution metrics reported by Apple SKAdNetwork (real data) and other data points using the install or postback arrival date. The report is similar in structure to the data presented in the [SKAN dashboard](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer). 
+The API returns attribution metrics reported by Apple SKAdNetwork (real data) and other data points using the install or postback arrival date. The report is similar in structure to the data presented in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN dashboard</Anchor>. 
 
 <div id="using-skan-aggregated-performance-report-api" />
 
@@ -39,7 +37,7 @@ The API returns attribution metrics reported by Apple SKAdNetwork (real data) an
 1. Get the API token. An admin needs to retrieve the token.
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the section that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
-4. Tell your developer to follow their [SKAN aggregated performance report API](https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get) in the developer hub.
+4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">SKAN aggregated performance report API</Anchor> in the developer hub.
 
 #### Parameters
 
@@ -60,9 +58,9 @@ The API returns attribution metrics reported by Apple SKAdNetwork (real data) an
 The API returns a CSV file.
 
 * The fields and metrics available in the report are listed in the table that follows.
-* Some metrics (revenue, engagement, conversion) depend on the SKAN [performance measurement settings.](/docs/skan-conversion-studio)
+* Some metrics (revenue, engagement, conversion) depend on the SKAN <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">performance measurement settings.</Anchor>
 * The report includes only the in-app events that users performed during the reporting period. As such, the number and sequence of in-app event columns can change from report to report. Don't rely on column sequence in designing your data import process.
-* Examples:[V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv)| [V2](https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv)
+* Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
 
 #### Report fields
 
@@ -78,7 +76,7 @@ The API returns a CSV file.
 | Ad | Dimension | N | Y | Y | N |
 | Ad ID | Dimension | N | Y | Y | N |
 | Country | Dimension | Y | Y | Y | N |
-| AF Attribution Flag<br /><br />See: [SSOT guide](/docs/single-source-of-truth-ssot-guide-for-ios-attribution) | Dimension | N | Y | Y | Y |
+| AF Attribution Flag<br /><br />See: <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">SSOT guide</Anchor> | Dimension | N | Y | Y | Y |
 | Postback sequence index | Dimension | N | N | Y | Y |
 | Creative | Dimension | N | N | Y | N |
 | Channel | Dimension | N | N | Y | N |
@@ -110,7 +108,7 @@ The API returns a CSV file.
 
 | Spec | Remarks |
 | --- | --- |
-| Data freshness | Data availability is according to the [SKAN](/docs/about-data-freshness-and-timezone-support#skan) data freshness rate. |
+| Data freshness | Data availability is according to the <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#skan">SKAN</Anchor> data freshness rate. |
 | Date range | <ul><li>When setting the date range the most recent date should be the current date UTC time zone minus 3 days. Meaning on March 31, use March 28.</li><li>Earliest date supported: November 1, 2020</li><li>Maximum query range: 90 days</li></ul> |
 | Rate limits | <ul><li>Queries return up to 250K rows</li><li>10 calls per minute</li></ul> |
 | SRNs | <ul><li>Meta ads: data is available.</li><li>Google Ads: Installs can be recorded up to 45 days post-install due to the Google click-time methodology. If you query Google data for the last 45 days every day, this provides the coverage needed for Google SKAN data.</li></ul> |

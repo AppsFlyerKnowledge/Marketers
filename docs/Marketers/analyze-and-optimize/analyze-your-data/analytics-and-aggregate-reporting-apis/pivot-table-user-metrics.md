@@ -1,9 +1,5 @@
 ---
 title: Pivot table—user metrics
-excerpt: >-
-  View different user metrics—LTV, activity, Protect360, and retention. Download
-  results to CSV files for ingestion by your BI systems. Pivot supports multiple
-  apps in a single query. Use to generate Master API calls.
 metadata:
   keywords:
     - Pivot
@@ -29,6 +25,8 @@ x-zendesk:
     https://support.appsflyer.com/hc/en-us/articles/115001421846-Pivot-table-user-metrics
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
+
+**At a glance**: View different user metrics—LTV, activity, Protect360, and retention. Download results to CSV files for ingestion by your BI systems. Pivot supports multiple apps in a single query. Use to generate Master API calls.
 
 ## About pivot reports page
 
@@ -62,12 +60,12 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | Last modified | Last time the report structure was modified. |
 | Modified by | Name of the user who modified the pivot. |
 | App name | <ul><li>If one app included: the app name</li><li>If multiple apps are included: the number of apps</li></ul> |
-| Actions | <table><thead><tr><th>Action</th><th>Remarks</th></tr></thead><tbody><tr><td>Duplicate</td><td>Copy an existing pivot report.</td></tr><tr><td>Rename</td><td>Change the name of the report.</td></tr><tr><td>View history log</td><td>See who handled the report structure, what was done, and when.</td></tr><tr><td>Copy Master API link</td><td>Generate a URL to pull the data via [Master API](/docs/master-api-user-acquisition-metrics-via-api). To use Master API, your need to get the [API token](/docs/managing-appsflyer-tokens) (admin permissions required) to use in the authentication header.</td></tr><tr><td>Delete</td><td>Delete the selected pivot.</td></tr></tbody></table> |
+| Actions | <table><thead><tr><th>Action</th><th>Remarks</th></tr></thead><tbody><tr><td>Duplicate</td><td>Copy an existing pivot report.</td></tr><tr><td>Rename</td><td>Change the name of the report.</td></tr><tr><td>View history log</td><td>See who handled the report structure, what was done, and when.</td></tr><tr><td>Copy Master API link</td><td>Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header.</td></tr><tr><td>Delete</td><td>Delete the selected pivot.</td></tr></tbody></table> |
 | Action | Remarks |
 | Duplicate | Copy an existing pivot report. |
 | Rename | Change the name of the report. |
 | View history log | See who handled the report structure, what was done, and when. |
-| Copy Master API link | Generate a URL to pull the data via [Master API](/docs/master-api-user-acquisition-metrics-via-api). To use Master API, your need to get the [API token](/docs/managing-appsflyer-tokens) (admin permissions required) to use in the authentication header. |
+| Copy Master API link | Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header. |
 | Delete | Delete the selected pivot. |
 
 </Accordion>
@@ -89,7 +87,7 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | --- | --- |
 | Apps | Select 1 or more apps to include in the pivot. |
 | Dimensions | [![](https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png)](https://files.readme.io/9b0fda106b5de3401a71ceaeb45bac5cc4215b164e263a1422bf6097a9320553-360002246845.png)<br /><br />Use dimensions to group, structure, and sort your pivot reports.<br /><br />**To select dimensions**:<ol><li>Click **Dimensions.**</li><li>Select a dimension, then drag it to a section. Dimensions have the following impact on the Pivot:<ul><li>**Rows**: Dimensions placed in rows determine the group-by hierarchy.</li><li>**Columns**: Dimensions placed in columns multiply the entire table result according to the dimension values.</li></ul></li></ol> |
-| KPIs | [![](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)<br /><br />KPIs are grouped according to type as follows:<ul><li>LTV</li><li>[Activity](/docs/activity-dashboard#specifications-and-limitations)</li><li>Retention: Retention day, Retention rate. **Note**: Scroll-down in the retention section to select Retention rates and Protect360 (for accounts that have Protect360 enabled.)</li><li>[About the metrics.](/docs/master-api-user-acquisition-metrics-via-api#kpis)</li></ul>Most times, place KPIs in the value section. If needed, KPIs can be used as a dimension.<br /><br />Drag and drop the KPI to the relevant section. |
+| KPIs | [![](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)](https://files.readme.io/6b210b1bdc38ee96ef8b73dcacbac3389b914aaef76a680604e41d4becbad807-360000640109.png)<br /><br />KPIs are grouped according to type as follows:<ul><li>LTV</li><li><Anchor target="_blank" href="/marketers/docs/activity-dashboard#specifications-and-limitations">Activity</Anchor></li><li>Retention: Retention day, Retention rate. **Note**: Scroll-down in the retention section to select Retention rates and Protect360 (for accounts that have Protect360 enabled.)</li><li><Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api#kpis">About the metrics.</Anchor></li></ul>Most times, place KPIs in the value section. If needed, KPIs can be used as a dimension.<br /><br />Drag and drop the KPI to the relevant section. |
 | Values | For each KPI, set the calculation method by selecting an operator:<ul><li>Sum</li><li>Count</li><li>Max</li><li>Min</li><li>Rate</li><li>Average</li></ul> |
 | Filters | Place the required filters in the filters section. Configure how filters are set:<ul><li>Text</li><li>Multi-select</li></ul> |
 
@@ -131,12 +129,12 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | App-specific currency | Results always return in USD. |
 | Organic data | Included |
 | Non-organic data | Included |
-| Data freshness | Data freshness: Daily. The data freshness is equivalent to that of [Master API](/docs/master-api-user-acquisition-metrics-via-api). |
+| Data freshness | Data freshness: Daily. The data freshness is equivalent to that of <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. |
 | Account user access | Yes |
 | Retargeting revenue | Included |
 | Campaign name changes | Pivot doesn't align the campaign name cost to the most recent campaign name reported. This means that each campaign name used will have a cost associated with it. |
-| Retargeting data | <ul><li>In general, use [Cohort](/docs/cohort-and-retention-dashboard) to view retargeting data.</li><li>Activity KPIs for traffic from after February 1, 2025 include unified data (UA and retargeting together).</li></ul> |
-| Cost data | AppsFlyer gets cost data primarily via cost API. Data is provided by the integrated partners. [List of dimensions per integrated partner.](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) |
+| Retargeting data | <ul><li>In general, use <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Cohort</Anchor> to view retargeting data.</li><li>Activity KPIs for traffic from after February 1, 2025 include unified data (UA and retargeting together).</li></ul> |
+| Cost data | AppsFlyer gets cost data primarily via cost API. Data is provided by the integrated partners. <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">List of dimensions per integrated partner.</Anchor> |
 | Retention rate | To get retention rate, include installs in the report. |
 | Maximum rows per report | 200K |
 | Historical data | <ul><li>LTV data: 25 months (2 years + 1 month)</li><li>Activity data: 3 years</li></ul> |

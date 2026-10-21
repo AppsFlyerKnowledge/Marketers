@@ -1,10 +1,5 @@
 ---
 title: Liftoff campaign configuration in AppsFlyer
-excerpt: >-
-  Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand
-  partners for brands and app developers. Liftoff offers click-based and
-  view-through mobile attribution, as well as click-based and view-through
-  retargeting which you can record with AppsFlyer.
 metadata:
   keywords:
     - liftoff
@@ -27,13 +22,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209731633-Liftoff-campaign-configuration-in-AppsFlyer
 ---
+**At a glance:** Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand partners for brands and app developers. Liftoff offers click-based and view-through mobile attribution, as well as click-based and view-through retargeting which you can record with AppsFlyer.
+
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Some media sources restrict sharing data with 3rd parties. AppsFlyer can't share user-level data of users acquired through these media sources with 3rd party platforms or services. All installs from such media sources are therefore sent as organic.
 >
-> For more details and a list of media sources that restrict sharing data with 3rd parties, click [here](/docs/user-level-data-retention).
+> For more details and a list of media sources that restrict sharing data with 3rd parties, click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
 
 ## Setting up Liftoff
 
@@ -46,8 +43,8 @@ x-zendesk:
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   **Note:** The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
-5. Complete the configuration using the relevant tabs, as described below. Learn more about [partner integrations.](/docs/set-up-an-integrated-partner)
+   **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
 <div id="integration-tab" />
 
@@ -57,7 +54,7 @@ The **Integration tab** is divided into different sections as described below.
 
 ### Activate partners
 
-The [partner must be activated](/docs/partner-activation-deactivation#activate-a-partner-integration) by switching on the **Activate partner** toggle on the first visit to enable its setup.
+The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the **Activate partner** toggle on the first visit to enable its setup.
 
 ### General settings
 
@@ -98,10 +95,10 @@ Select **All sources, including organic** to have your entire user base availabl
 
 <Accordion title="Attribution link tab">
 
-Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a [OneLink](/docs/onelink-guide).  
-[Learn more about attribution link structure and parameters](/docs/about-link-structure-and-parameters).
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
-**To generate an attribution link,** follow [these instructions](/docs/set-up-an-integrated-partner#attribution-link-tab).
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
 </Accordion>
 
@@ -109,13 +106,13 @@ Generate and save attribution links and send them to the partner for attributing
 
 <Accordion title="Cost tab">
 
-AppsFlyer gets cost details by API. See the [ad network cost integration table](/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api) for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
+AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
 
 **To enable the cost API**:
 
-* Follow [these integration instructions](/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api).
+* Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
-[View your cost API status](/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status) and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 
@@ -147,7 +144,7 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your aggregate revenue data** - only to the revenue data attributed to the partner
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
-Learn more about granting [ad network permissions](/docs/set-up-an-integrated-partner#permissions-tab).
+Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 ### Agency permissions
 
@@ -159,7 +156,7 @@ If you work with Liftoff as an agency partner, in this section you can give them
   * Enables the agency to get attributed with installs for the app
   * Enables the agency to see Meta ads and X Ads promoted data
 
-  **Warning: Agency installs occurring while the toggle is OFF are not attributed to the agency** and don't show up on the agency's dashboard and data ([more details](/docs/partner-activation-deactivation#agency-permissions)).
+  **Warning: Agency installs occurring while the toggle is OFF are not attributed to the agency** and don't show up on the agency's dashboard and data (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#agency-permissions">more details</Anchor>).
 
 * **Allow access to your Protect360 dashboard**
 * **Allow access to your retention and cohort reports** - retention/cohort data created by the users brought by the agency only.
@@ -171,7 +168,7 @@ If you work with Liftoff as an agency partner, in this section you can give them
   * **Allow to send event revenue** - permit the agency to send events including their monetary value
   * Make sure to select specific events you want to grant the agency permission to. Click **Add event** and pick the event from the drop-down list. Do this for each event you want to add.
 
-Learn more about [working with agencies](/partners/docs/about-agency-accounts).
+Learn more about <Anchor target="_blank" href="/partners/docs/about-agency-accounts">working with agencies</Anchor>.
 
 </Accordion>
 
@@ -179,21 +176,21 @@ Learn more about [working with agencies](/partners/docs/about-agency-accounts).
 
 **To receive SKAdNetwork data from Liftoff:**
 
-1. [To support SKAdNetwork, update your AppsFlyer SDK to the latest version](/docs/skadnetwork-skan-solution-guide).
-2. In AppsFlyer Conversion Studio, [set up conversion values to measure the events you want](/docs/skan-conversion-studio#setting-up-conversion-values-in-skan-conversion-studio).
+1. <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">To support SKAdNetwork, update your AppsFlyer SDK to the latest version</Anchor>.
+2. In AppsFlyer Conversion Studio, <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#setting-up-conversion-values-in-skan-conversion-studio">set up conversion values to measure the events you want</Anchor>.
 3. Share with Liftoff your campaign goal and the final event you want to optimize your campaigns with. It's recommended that your final event correlates with your preferred event and occurs close to install time.  
    For example:
    * **CPA campaigns:** Share the required event and CPA goal to be used for SKAdNetwork campaign optimization.
    * **CPI campaigns:** Share the CPI goal to be used for SKAdNetwork campaign optimization.
 4. Reach out to your Liftoff Account Team to confirm that SKAdNetwork postbacks are being sent with conversion values.
 5. [Optional] To share SKAdNetwork transaction ID with Liftoff, turn **Share Transaction ID in SKAdNetwork mode** on.  
-   Learn more about [transaction ID.](/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners)
+   Learn more about <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">transaction ID.</Anchor>
 
 ## Product feed retargeting with Liftoff
 
 For product event attribution to work correctly, Liftoff needs to receive the product IDs associated with each of your events. For example, the IDs of specific products users purchase or add to their cart.
 
-These IDs must be linked back to the unique IDs you pass to Liftoff within your product feed. Liftoff supports the [standard AppsFlyer convention of sharing this data](/docs/in-app-events-event-structure#predefined-event-parameters) via af\_content\_id attributes out of the box.
+These IDs must be linked back to the unique IDs you pass to Liftoff within your product feed. Liftoff supports the <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#predefined-event-parameters">standard AppsFlyer convention of sharing this data</Anchor> via af\_content\_id attributes out of the box.
 
 If you have a non-standard event data implementation, please reach out to your Liftoff CSM to see if the integration is possible.
 

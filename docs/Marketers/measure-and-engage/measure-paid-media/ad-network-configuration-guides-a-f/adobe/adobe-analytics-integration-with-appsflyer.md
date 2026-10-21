@@ -36,36 +36,41 @@ If you are using Adobe Analytics Report Suite for overall campaign performance a
 
 ### Prerequisites:
 
-* Setting up [Adobe Experience Platform mobile SDK docs](https://developer.adobe.com/client-sdks/documentation/)
-* [Marketing Cloud Visitor ID](https://experienceleague.adobe.com/en/docs/id-service/using/home) or Experience cloud ID service
+* Setting up <Anchor target="_blank" href="https://developer.adobe.com/client-sdks/documentation/">Adobe Experience Platform mobile SDK docs</Anchor>
+* <Anchor target="_blank" href="https://experienceleague.adobe.com/en/docs/id-service/using/home">Marketing Cloud Visitor ID</Anchor> or Experience cloud ID service
 * Three eVars in each report suite that can be used for the sole purpose of this integration
 
 ### Step 1: Share Adobe Experience Cloud ID (ECID, Marketing Cloud ID, or Visitor ID) with AppsFlyer.
 
 To extract and share Adobe Experience Cloud ID:
 
-1. [Update the application and extract the Marketing Cloud Visitor ID](https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/getmcvid) using the Adobe SDK method right after the Adobe SDK is initialized.
+1. <Anchor target="_blank" href="https://experienceleague.adobe.com/en/docs/id-service/using/id-service-api/methods/getmcvid">Update the application and extract the Marketing Cloud Visitor ID</Anchor> using the Adobe SDK method right after the Adobe SDK is initialized.
 2. Use one of the following AppsFlyer SDK methods to set the Adobe Marketing Cloud Visitor ID:
 
 <div id="setadditionaldata" />
 
 <Accordion title="setAdditionalData">
 
-Android iOS Unity
+<Tabs>
+<Tab title="Android">
 
 Learn more about [the setAdditionalData method](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setadditionaldata).
 
-```
+```java
 HashMap<String, Object> customData = new HashMap<String,Object>();
 customData .put("marketingCloudID", "ADOBE_VISITOR_ID");
 AppsFlyerLib.setAdditionalData(customData);
 ```
 
+</Tab>
+
+<Tab title="iOS">
+
 Learn more about [the setAdditionalData method](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#customdata).
 
 Objective C
 
-```json
+```objectivec
 [[AppsFlyerTracker sharedTracker] setAdditionalData:@{
   @"marketingCloudID" : "ADOBE_VISITOR_ID"
 }];
@@ -73,20 +78,27 @@ Objective C
 
 Swift
 
-```javascript
+```swift
 let CustomDataMap: [AnyHashable: Any] = [
   "marketingCloudID" : "ADOBE_VISITOR_ID"
 ]
 AppsFlyerTracker.shared().customData = CustomDataMap
 ```
 
+</Tab>
+
+<Tab title="Unity">
+
 Learn more about [the setAdditionalData method](https://dev.appsflyer.com/hc/docs/api#setadditionaldata).
 
-```
+```csharp
 Dictionary<string, string> CustomDataMap = new Dictionary<string, string>();
 CustomDataMap.Add("marketingCloudID", "ADOBE_VISITOR_ID");
 AppsFlyer.setAdditionalData(CustomDataMap);
 ```
+
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -94,27 +106,35 @@ AppsFlyer.setAdditionalData(CustomDataMap);
 
 <Accordion title="setCustomerUserId">
 
-Android iOS
+<Tabs>
+<Tab title="Android">
 
-Learn more about [the](/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer) [setCustomerUserId](/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer)[method](/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer).
+Learn more about <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer">the</Anchor> <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer">setCustomerUserId</Anchor><Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer">method</Anchor>.
 
-```
+```java
 AppsFlyerLib.getInstance().setCustomerUserId("ADOBE_VISITOR_ID");
 ```
 
-Learn more about [the setCustomerUserId method](/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer).
+</Tab>
+
+<Tab title="iOS">
+
+Learn more about <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#integrate-unique-identifiers-from-your-bi-system-with-appsflyer">the setCustomerUserId method</Anchor>.
 
 Objective C
 
-```
+```objectivec
 NSString *customerUserID = [AppsFlyerLib shared].customerUserID;
 ```
 
 Swift
 
-```javascript
+```swift
 let customerUserID = AppsFlyerLib.shared().customerUserIDp
 ```
+
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -124,13 +144,13 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 
 **To activate or edit the integration:**
 
-1. **To activate:** In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations > Marketplace** tab.  
-   **To edit**: In AppsFlyer, from the side menu, select**Collaborate**> **Partner Integrations > Active integrations tab**.
+1. **To activate:** In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.  
+   **To edit**: In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Active integrations tab**.
 2. Search for the **Adobe Analytics** and select it.
 3. Click **Integrate**. You’re directed to the integration setup page.
 4. In the **Integration** tab, select the app for the integration and turn **Activate partner** on.  
-   **Note:** The toggle must be on [(activated)](/docs/partner-activation-deactivation) for as long as you work with the partner.
-5. Configure the default postbacks sent to Adobe Analytics. AppsFlyer can send automatic postbacks for both installs and re-engagements (including re-attributions). Learn more about [default postbacks](/docs/set-up-an-integrated-partner#default-postbacks).
+   **Note:** The toggle must be on <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">(activated)</Anchor> for as long as you work with the partner.
+5. Configure the default postbacks sent to Adobe Analytics. AppsFlyer can send automatic postbacks for both installs and re-engagements (including re-attributions). Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 6. From the **Adobe Analytics SDK**, as part of the **ADBMobileConfig.XML** file, copy the **Report\_Suite\_ID** (highlighted in blue) and the **Adobe\_Analytic\_server\_URL** (highlighted in green) and paste them into the respective fields in the Adobe Analytics integration page in AppsFlyer.
 
    ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
@@ -164,7 +184,7 @@ Should you have issues with mapping AppsFlyer context data variables through pro
 
 ### Step 4 [optional]: Set up your marketing channel
 
-See [Adobe Analytics documentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html) on how to set up your marketing channel on their platform. Make sure to select the following fields under the identifying rules:
+See <Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">Adobe Analytics documentation</Anchor> on how to set up your marketing channel on their platform. Make sure to select the following fields under the identifying rules:
 
 1. "The conversion variable value set by Adobe's web beacon": Select **AppsFlyer** and **Exists**.
 2. "Identify the channel as": Select **Mobile App Attribution**.

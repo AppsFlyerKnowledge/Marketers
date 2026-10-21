@@ -1,10 +1,5 @@
 ---
 title: Migrate from PBA to Web Performance Measurement
-excerpt: >-
-  People-Based Attribution (PBA) is being replaced by Web Performance
-  Measurement, AppsFlyer upgraded web measurement solution. This article covers
-  what's changing, the migration steps, and the full field mapping for your
-  reports and server-side integrations.
 metadata:
   keywords:
     - Developers
@@ -26,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/49156441281425-Migrate-from-PBA-to-Web-Performance-Measurement
 ---
+> **At a glance:** People-Based Attribution (PBA) is being replaced by Web Performance Measurement, AppsFlyer upgraded web measurement solution. This article covers what's changing, the migration steps, and the full field mapping for your reports and server-side integrations.
+
 ## Why we're upgrading your web measurement
 
 Web measurement matters more than ever. The website is where many of your users convert and where the path to your mobile app begins. It isn't just a landing page; it's a full acquisition funnel of quiz flows, personalized onboarding, paywalls, and web stores that often win higher-intent users at a lower acquisition cost.
@@ -38,7 +35,9 @@ AppsFlyer is bringing web measurement up to the same standard as mobile. People-
 * **True cross-platform ROI**, measure every user journey across web, app, and any platform.
 * **Simple, unified reporting**, one dashboard, and one set of data reports for every platform, refreshed hourly.
 
-You don't need to replace your Web SDK. Web Performance Measurement uses the same SDK, with no code changes to your website. The effort involved in the rest of the switch varies, depending on how you currently receive your data, through the dashboard, Data Locker, or the Server-to-server (S2S) API.
+> 📘 **Note**
+>
+> You don't need to replace your Web SDK. Web Performance Measurement uses the same SDK, with no code changes to your website. The effort involved in the rest of the switch varies, depending on how you currently receive your data, through the dashboard, Data Locker, or the Server-to-server (S2S) API.
 
 ## Comparing PBA and Web Performance Measurement
 
@@ -52,7 +51,7 @@ The table below compares PBA and Web Performance Measurement capabilities across
 
 ### Traffic source resolution, PBA vs. Web Performance Measurement
 
-If media source, channel, or campaign values differ from what PBA reported, here's why. Both use the same underlying approach: they resolve the media source from URL parameters and the referrer at the web visit by walking a priority list until the first match wins. But several rules changed, and those changes move the values you see in reporting, based on [PBA media source attribution rules](/docs/pba-media-source-attribution-rules) and [About traffic source resolution](/docs/about-traffic-source-resolution).
+If media source, channel, or campaign values differ from what PBA reported, here's why. Both use the same underlying approach: they resolve the media source from URL parameters and the referrer at the web visit by walking a priority list until the first match wins. But several rules changed, and those changes move the values you see in reporting, based on <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source attribution rules</Anchor> and <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution">About traffic source resolution</Anchor>.
 
 <Accordion title="Media source values renamed">
 
@@ -71,7 +70,9 @@ PBA resolved three click IDs: `gclid` to `googleadwords_int`, `dclid` to `double
 
 Web Performance Measurement resolves many more, `gclid`/`wbraid`/`gbraid` to `googleadwords_int`, `msclkid` to `bingsearch_int`, `twclid` to Twitter, `vmcid` to `yahoogemini_int`, `sccid` to `snapchat_int`, `li_fat_id` to `linkedin_int`, `ttclid` to `tiktokglobal_int`, `tbclid` to `taboola_int`, `ob_click_id`/`dicbo` to `outbrain_int`, `yclid` to `yandex_int`, `rdt_cid` to `reddit_int`.
 
-Two behavior changes: dclid is no longer used for resolution on its own (PBA resolved it to doubleclick\_int), and fbclid is explicitly not used.
+> 🚧 **Important**
+>
+> Two behavior changes: dclid is no longer used for resolution on its own (PBA resolved it to doubleclick\_int), and fbclid is explicitly not used.
 
 </Accordion>
 
@@ -91,36 +92,38 @@ Channel **values** also change format, from PBA's Direct / Organic search / Soci
 
 Migration has one required step for everyone. After that, perform the steps that apply to your PBA setup.
 
-**Expect differences in the numbers (everyone)**
-
-PBA's numbers won't exactly match those you'll get after the migration. The attribution logic in Web Performance Measurement is more advanced and more flexible. PBA applied its own media source attribution rules; Web Performance Measurement uses improved traffic source resolution. See "Traffic source resolution, PBA vs. Web Performance Measurement" below, for what values to expect. Session recording logic itself is unchanged; a session still runs for 30 minutes of activity, the market standard.
+> 📘 **Note**
+>
+> **Expect differences in the numbers (everyone)**
+>
+> PBA's numbers won't exactly match those you'll get after the migration. The attribution logic in Web Performance Measurement is more advanced and more flexible. PBA applied its own media source attribution rules; Web Performance Measurement uses improved traffic source resolution. See "Traffic source resolution, PBA vs. Web Performance Measurement" below, for what values to expect. Session recording logic itself is unchanged; a session still runs for 30 minutes of activity, the market standard.
 
 ### Step 1. Create a web app (required, everyone)
 
-1. [Create the new web app](/docs/adding-an-app-to-appsflyer#web), selecting your existing web Dev Key in the **Web SDK ID** field. This keeps your current website code working as-is, with no code changes.
-2. [Configure the attribution settings](/docs/configure-web-performance-measurement-settings) on the new app.
+1. <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Create the new web app</Anchor>, selecting your existing web Dev Key in the **Web SDK ID** field. This keeps your current website code working as-is, with no code changes.
+2. <Anchor target="_blank" href="/marketers/docs/configure-web-performance-measurement-settings">Configure the attribution settings</Anchor> on the new app.
 
 ### Step 2. If you send events through the S2S API
 
 Migrate to the new S2S API:
 
 1. Review [PBA Web-S2S to new S2S API migration](#pba-web-s2s-to-new-s2s-api-migration) for what's different from your current PBA S2S integration, endpoints, authentication, and payload fields.
-2. Set up the [new S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement) for Web Performance Measurement.
+2. Set up the <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement">new S2S API</Anchor> for Web Performance Measurement.
 3. Update your server-side integration to send to the new endpoints.
 
 ### Step 3. If you consume PBA's raw data reports
 
-Move to the new Data Locker reports. The End User Events report replaces [PBA's Website visits and Website events reports](/docs/pba-raw-data-reports).
+Move to the new Data Locker reports. The End User Events report replaces <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">PBA's Website visits and Website events reports</Anchor>.
 
 1. Confirm you have Data Locker. If you don't, you'll need to add it to your account or purchase it.
 2. Review [Raw data field mapping](#raw-data-field-mapping) for the full field-level mapping, renamed, redefined, or deprecated fields.
-3. Enable the new report using [Export AppsFlyer Web Attribution report data from Data Locker](/docs/export-web-performance-measurement-report-data-from-data-locker).
+3. Enable the new report using <Anchor target="_blank" href="/marketers/docs/export-web-performance-measurement-report-data-from-data-locker">Export AppsFlyer Web Attribution report data from Data Locker</Anchor>.
 4. Point your BI/ETL to the new report location and fields. This applies whether your events arrive via SDK or S2S; both land in the same raw report.
 
 ### Step 4. If you use the PBA Brand Bundle for cross-platform reporting
 
-1. [Create a product line](/docs/product-line-group-apps-for-cross-platform-attribution).
-2. Group your web app with your other apps under that product line to unlock [cross-platform user LTV reporting](/docs/beta-user-based-cross-platform-attribution).
+1. <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution">Create a product line</Anchor>.
+2. Group your web app with your other apps under that product line to unlock <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">cross-platform user LTV reporting</Anchor>.
 
 ## Capabilities being discontinued
 
@@ -134,9 +137,11 @@ Move to the new Data Locker reports. The End User Events report replaces [PBA's 
 
 ## Raw data field mapping
 
-If you already consume PBA's Website visits and Website events raw data reports, here's what changes. The report itself moves to Data Locker, and this is the complete field-by-field mapping to the new End User Events report, based on [PBA raw data reports](/docs/pba-raw-data-reports).
+If you already consume PBA's Website visits and Website events raw data reports, here's what changes. The report itself moves to Data Locker, and this is the complete field-by-field mapping to the new End User Events report, based on <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">PBA raw data reports</Anchor>.
 
-Raw data for any platform and cross-platform reporting are available only through Data Locker. See step 3 or step 4 above if you don't have Data Locker yet.
+> 📘 **Note**
+>
+> Raw data for any platform and cross-platform reporting are available only through Data Locker. See step 3 or step 4 above if you don't have Data Locker yet.
 
 * **Unchanged**, same field name and data.
 * **Renamed**, same data, new column name.
@@ -300,7 +305,7 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 
 ## PBA Web-S2S to new S2S API migration
 
-If you report events to PBA through the [Web Server-to-server events API (Web-S2S)](/docs/web-server-to-server-events-api-for-pba-web-s2s), move to the [new S2S API](/docs/server-to-server-s2s-api-for-web-performance-measurement). The new API supports both visits and events, so your website can run fully server-side; PBA's S2S accepts only events.
+If you report events to PBA through the <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s">Web Server-to-server events API (Web-S2S)</Anchor>, move to the <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement">new S2S API</Anchor>. The new API supports both visits and events, so your website can run fully server-side; PBA's S2S accepts only events.
 
 <Accordion title="Endpoints and authentication">
 

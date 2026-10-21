@@ -15,12 +15,12 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6551214397585-Owned-media-attribution
 ---
-- [Redirect users to custom app store product pages](/docs/redirect-users-to-custom-app-store-product-pages)
-- [User invite attribution](/docs/user-invite-attribution)
-- [QR-to-app conversion](/docs/qr-to-app-conversion)
-- [Texting desktop users a link to your mobile app](/docs/texting-desktop-users-a-link-to-your-mobile-app)
-- [Redirect app users to a website](/docs/redirect-app-users-to-a-website)
-- [Attributing iOS Safari App Banners](/docs/attributing-ios-safari-app-banners)
-- [Measuring push notification re-engagement campaigns](/docs/measuring-push-notification-re-engagement-campaigns)
-- [Cross-promotion attribution for marketers](/docs/cross-promotion-attribution-for-marketers)
-- [Cross-promotion attribution for developers](/docs/cross-promotion-attribution-for-developers)
+- <Anchor target="_blank" href="/marketers/docs/redirect-users-to-custom-app-store-product-pages">Redirect users to custom app store product pages</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">User invite attribution</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/qr-to-app-conversion">QR-to-app conversion</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/texting-desktop-users-a-link-to-your-mobile-app">Texting desktop users a link to your mobile app</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/redirect-app-users-to-a-website">Redirect app users to a website</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/attributing-ios-safari-app-banners">Attributing iOS Safari App Banners</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measuring-push-notification-re-engagement-campaigns">Measuring push notification re-engagement campaigns</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Cross-promotion attribution for marketers</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-developers">Cross-promotion attribution for developers</Anchor>

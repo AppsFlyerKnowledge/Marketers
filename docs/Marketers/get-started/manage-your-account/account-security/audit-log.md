@@ -1,9 +1,5 @@
 ---
 title: Audit log
-excerpt: >-
-  Identify and protect against unauthorized access to your AppsFlyer account
-  using the Audit log. View and download a summary of security-related activity
-  in your account.
 metadata:
   keywords:
     - Advertisers
@@ -28,6 +24,8 @@ x-zendesk:
   section_id: 6551173202065
   url: https://support.appsflyer.com/hc/en-us/articles/360007971697-Audit-log
 ---
+**At a glance:** Identify and protect against unauthorized access to your AppsFlyer account using the Audit log. View and download a summary of security-related activity in your account.
+
 ## Overview
 
 The **Audit log** provides a central location to review various activities in your account, such as logins, data access, API calls, configuration and permission modifications to integrated partners, validation rules, audiences, and other significant events. This plays a key role in ensuring transparency, security, and adherence to compliance standards. To protect the security of your AppsFlyer account, it's recommended to periodically review **who** is accessing your account and **how** it is being accessed. Audit log data is available for the past 90 days.

@@ -1,6 +1,5 @@
 ---
 title: Measuring push notification re-engagement campaigns
-excerpt: Measure push notification campaigns on both iOS and Android.
 metadata:
   keywords:
     - Re-Engagement
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207364076-Measuring-push-notification-re-engagement-campaigns
 ---
+> **At a glance:** Measure push notification campaigns on both iOS and Android.
+
 ## Overview
 
 AppsFlyer supports the measurement of push notification campaigns from all push providers, as well as campaigns implemented directly on top of Firebase Cloud Messaging or Apple Push Notification Services (APNS).
@@ -51,7 +52,7 @@ In the OneLink scenario, if the OneLink is configured to route the user to a spe
 
 ## Prerequisites
 
-Before continuing, make sure that your app has [the AppsFlyer SDK integrated](/docs/basic-sdk-integration-guide) **and** can receive push notifications.
+Before continuing, make sure that your app has <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">the AppsFlyer SDK integrated</Anchor> **and** can receive push notifications.
 
 ## Steps
 
@@ -68,35 +69,44 @@ To set up push notification measurement, the following steps must be completed:
 
 First, create a push notification that contains attribution data using one of the following methods.
 
-**Note**
+> 📘 **Note**
+>
+> **Note**
+>
+> In the following demonstration, we're using Firebase as the push provider. The instructions should be applicable to any push provider, with minor differences (if any). Consult the respective push provider's documentation.
 
-In the following demonstration, we're using Firebase as the push provider. The instructions should be applicable to any push provider, with minor differences (if any). Consult the respective push provider's documentation.
-
-<Accordion title="Using OneLink (recommended)">
+<Tabs>
+<Tab title="Using OneLink (recommended)">
 
 #### **Using OneLink (recommended)**
 
 This is the recommended method of integrating AppsFlyer with push notifications.
 
-1. Create a [OneLink link and set it up for retargeting.](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings)  
+1. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">OneLink link and set it up for retargeting.</Anchor>  
    **Note**: OneLink short and long URLs are both supported.
 2. In the push notification custom data, add the OneLink that contains the attribution data you want to send to AppsFlyer.
 
-**Firebase example**
+> 📘 **Note**
+>
+> **Firebase example**
+>
+> In Firebase:
+>
+> ![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
 
-In Firebase:
+</Tab>
 
-![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
+<Tab title="Using JSON (legacy)">
 
-</Accordion>
-
-<Accordion title="Using JSON (legacy)">
+<div id="using-json-legacy" />
 
 #### **Using JSON (legacy)**
 
-**Note**
-
-The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
+> 📘 **Note**
+>
+> **Note**
+>
+> The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
 
 In the push notification's custom data, add a custom key called `af` that contains the attribution data you want to send to AppsFlyer in JSON format. The following attribution parameters are required:
 
@@ -104,13 +114,16 @@ In the push notification's custom data, add a custom key called `af` that contai
 * `is_retargeting`
 * `c`
 
-**Firebase example**
+> 📘 **Note**
+>
+> **Firebase example**
+>
+> In Firebase:
+>
+> ![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
 
-In Firebase:
-
-![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
-
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -122,8 +135,8 @@ This task requires changes to the app code. Follow the instructions on how to co
 
 * When implementing the recommended OneLink-based solution:
   1. let the app developer know what's the name of the custom key you added to the notification. In this example, it's `af_push_link`.
-  2. Send them [these instructions](https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-using-onelink-recommended).
-* When implementing the legacy JSON-based solution, send your developers [these instructions](https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-legacy).
+  2. Send them <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-using-onelink-recommended">these instructions</Anchor>.
+* When implementing the legacy JSON-based solution, send your developers <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-legacy">these instructions</Anchor>.
 
 </Accordion>
 
@@ -145,7 +158,7 @@ If everything is configured properly, the SDK will:
 
 <Accordion title="4. Viewing push notification campaigns in the dashboard">
 
-You can see data originating from push notifications in the [Retargeting dashboard](/docs/retargeting-attribution-guide#retargeting-dashboard).
+You can see data originating from push notifications in the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-dashboard">Retargeting dashboard</Anchor>.
 
 **Note**: AppsFlyer deduplicates push notification data. Meaning, if identical payloads are received more than once, only one is counted.
 

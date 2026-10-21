@@ -1,10 +1,5 @@
 ---
 title: Leanplum integration with AppsFlyer
-excerpt: >-
-  Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform,
-  designed for intelligent action. Its integrated solution delivers engagement
-  across messaging and the in-app experience. Leanplum offers Messaging,
-  Automation, App Editing, Personalization, A/B Testing, and Analytics.
 metadata:
   keywords:
     - Leanplum
@@ -29,9 +24,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211487846-Leanplum-integration-with-AppsFlyer
 ---
-> 📘 **Important!**
+**At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
+
+> 🚧 **Important!**
 >
-> [Some media sources](/docs/about-raw-data-identifier-restrictions#media-source-restrictions) restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
 ## Setting up Leanplum
 
@@ -39,7 +36,7 @@ Leanplum customers can integrate with AppsFlyer by sending Leanplum a postback c
 
 Before you activate the integration with AppsFlyer, you first must confirm that your Leanplum integration is using the same device ID as Appsflyer. This is important as Leanplum matches the user install with the postback using the device ID, so if they do not match Leanplum cannot report the data.
 
-By default, Leanplum collects the IDFV for iOS and the MD5 hash of the MAC address for Android, but this can be easily changed to IDFA for iOS and GAID for Android with one line of code. For information about how to change the device ID format for Android and iOS, click [here](https://docs.leanplum.com/docs/which-device-id-format-should-i-use).
+By default, Leanplum collects the IDFV for iOS and the MD5 hash of the MAC address for Android, but this can be easily changed to IDFA for iOS and GAID for Android with one line of code. For information about how to change the device ID format for Android and iOS, click <Anchor target="_blank" href="https://docs.leanplum.com/docs/which-device-id-format-should-i-use">here</Anchor>.
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 
@@ -50,12 +47,12 @@ By default, Leanplum collects the IDFV for iOS and the MD5 hash of the MAC addre
 2. Select the relevant app.
 3. Search for the partner and select **Integrate**.
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
-   Note: The toggle **must stay on (active) as long as you work with the partner**. [Learn more](/docs/partner-activation-deactivation)
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
 The Leanplum configuration window uses only the **Integration** tab.
 
-For a detailed description of the Partner Configuration Window Header, click [here](/docs/set-up-an-integrated-partner#about-the-integrated-partner-page).
+For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
 <div id="integration-tab" />
 
@@ -66,7 +63,7 @@ The Integration tab is divided into different sections as described below.
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the Integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
-For more details about partner activation please click [here](/docs/partner-activation-deactivation).
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 ### General settings
 

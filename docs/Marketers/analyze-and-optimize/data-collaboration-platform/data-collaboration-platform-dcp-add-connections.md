@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - Add connections
-excerpt: >-
-  Set up DCP connections to connect your data sources, enrich your data, and
-  export audiences to cloud storage and media partners.
 metadata:
   keywords:
     - Marketers
@@ -23,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24603890457617-Data-Collaboration-Platform-DCP-Add-connections
 ---
+**At a glance:** Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
+
 ## About DCP connections
 
-Connections determine how DCP ingests your data and exports your audiences. After [setting up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services), connect them to DCP using the **Manage connections** modal. The following connection types are available:
+Connections determine how DCP ingests your data and exports your audiences. After <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">setting up your cloud services</Anchor>, connect them to DCP using the **Manage connections** modal. The following connection types are available:
 
 * [**Source connections**](#create-source-connections): for ingesting your first-party data into DCP from cloud storage or a data warehouse.
 * [**Cloud storage connections**](#create-cloud-storage-connections): for exporting your audiences to your Amazon S3 or Google Cloud Storage (GCS) buckets.
@@ -55,10 +54,10 @@ Create source connections to bring first-party data into DCP.
 1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
 2. Click **Manage connections** in the top-right corner.
 3. Go to the **Source** tab and click **+ New connection**.  
-   ![2026-07-27_13-30-46.png](https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png)
+   <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
 4. Continue with the [Cloud service connections for source data instructions](#cloud-service-connections-for-source-data) below.
 
-You can also create a source connection directly when setting up a source. See [Create and manage sources](/docs/data-collaboration-platform-dcp-create-and-manage-sources) for instructions.
+You can also create a source connection directly when setting up a source. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Create and manage sources</Anchor> for instructions.
 
 > 📘 **Note**
 >
@@ -72,15 +71,15 @@ Source connections are for connecting your data sources securely to DCP. From th
 
 **Snowflake:** In the **New connection** dialog, enter the **Snowflake account ID** and **region** for the account that contains your source data. To find this, click the account name at the bottom-left of your Snowflake console:
 
-**ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. See the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account) for details.
+**ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. See the <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Snowflake documentation</Anchor> for details.
 
-> 📘 **Important!**
+> 🚧 **Important!**
 >
 > Look for the ID labeled **Locator**. This is **not** the same ID used to create outbound Snowflake connections.
 
-**Amazon S3 and GCS:** In the **New connection** dialog, enter the name of the [bucket you created](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound) for the exclusive use of the AppsFlyer Data Clean Room (DCR).
+**Amazon S3 and GCS:** In the **New connection** dialog, enter the name of the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">bucket you created</Anchor> for the exclusive use of the AppsFlyer Data Clean Room (DCR).
 
-**Salesforce Cloud/CRM:** See [how to set up a Salesforce connection](/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud).
+**Salesforce Cloud/CRM:** See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">how to set up a Salesforce connection</Anchor>.
 
 #### Local file connection
 
@@ -92,7 +91,7 @@ Local file system connections let you upload data files directly from your compu
 
 A local file connection is used to test the platform using a sample file. It lets you get familiar with DCP functionality before starting to share data. Keep in mind that it isn't recommended for sharing data, has a data retention limit of 14 days, and doesn't support automation processes.
 
-A local file connection can be [set up during source creation](/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files).
+A local file connection can be <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#source-location-as-local-files">set up during source creation</Anchor>.
 
 </Accordion>
 
@@ -109,7 +108,7 @@ Cloud storage connections let you automatically export your DCP audiences to you
 1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
 2. Click **Manage connections** in the top-right corner.
 3. Go to the **Cloud storage** tab and click **+ New connection**.  
-   ![2026-07-27_13-30-34.png](https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png)
+   <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
 4. The **New cloud storage connection** modal opens.
 5. In the **New cloud storage connection** modal, select your cloud provider: **Google Cloud Storage** or **Amazon Simple Storage**.
 6. Enter your bucket name:
@@ -118,7 +117,7 @@ Cloud storage connections let you automatically export your DCP audiences to you
 7. Click **Test connection** to verify that DCP can connect to your bucket.
 8. Click **Save**. The new connection appears under **Your cloud storage connections** in the **Cloud storage** tab.
 
-You can also create a cloud storage connection directly from the audience builder. See [Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences) for instructions.
+You can also create a cloud storage connection directly from the audience builder. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Build and activate audiences</Anchor> for instructions.
 
 <div id="understand-export-path" />
 
@@ -178,7 +177,7 @@ c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_nu
 
 <Accordion title="Create media partner connections">
 
-Outbound media partner connections let you securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Media partners are the main destination for audience activation. Learn how to [set up specific media partner connections](/docs/data-collaboration-platform-dcp-media-partner-connections).
+Outbound media partner connections let you securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Media partners are the main destination for audience activation. Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-media-partner-connections">set up specific media partner connections</Anchor>.
 
 **To create a media partner connection:**
 
@@ -191,7 +190,7 @@ Outbound media partner connections let you securely connect your DCP audiences t
 7. Click **Select account ID** and select the relevant account for this connection.
 8. Click **Save**. The new connection is added to the list of partners.
 
-You can also create a media partner connection directly from the audience builder. See [Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences) for instructions.
+You can also create a media partner connection directly from the audience builder. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Build and activate audiences</Anchor> for instructions.
 
 </Accordion>
 
@@ -203,15 +202,15 @@ Data & Identity connections unify fragmented user data to improve match rates wi
 
 #### ID5
 
-[Enrich your first-party data with ID5 identifiers](/docs/data-collaboration-platform-dcp-enrich-sources-with-id5) to unify fragmented user data, improve match rates with activation partners, and increase partner-side audience size.
+<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">Enrich your first-party data with ID5 identifiers</Anchor> to unify fragmented user data, improve match rates with activation partners, and increase partner-side audience size.
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [DCP - Set up your cloud services](/docs/data-collaboration-platform-dcp-set-up-your-cloud-services)
-> * [DCP - Build and activate audiences](/docs/data-collaboration-platform-dcp-build-and-activate-audiences)
-> * [DCP - Media partner connections](/docs/data-collaboration-platform-dcp-media-partner-connections)
-> * [DCP - Enrich sources with ID5](/docs/data-collaboration-platform-dcp-enrich-sources-with-id5)
-> * [Data Collaboration Platform (DCP) guide](/docs/data-collaboration-platform-dcp-guide)
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">DCP - Set up your cloud services</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">DCP - Build and activate audiences</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-media-partner-connections">DCP - Media partner connections</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">DCP - Enrich sources with ID5</Anchor>
+> * <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP) guide</Anchor>
 
 </Accordion>
 

@@ -1,11 +1,5 @@
 ---
 title: Measure reinstalls
-excerpt: >-
-  A reinstall occurs when a user installs an app, uninstalls it, and then
-  reinstalls it. Reinstalls result in one of the following attribution types:
-  non-organic reinstall, organic reinstall, or re-attribution (retargeting).
-  Reinstalls help avoid multiple charges for users that uninstall and install
-  again.
 metadata:
   keywords:
     - Marketers
@@ -26,19 +20,21 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/10164066030737-Measure-reinstalls
 ---
+**At a glance**: A reinstall occurs when a user installs an app, uninstalls it, and then reinstalls it. Reinstalls result in one of the following attribution types: non-organic reinstall, organic reinstall, or re-attribution (retargeting). Reinstalls help avoid multiple charges for users that uninstall and install again.
+
 ## What is a reinstall
 
-A reinstall occurs when an app user deletes an app and then reinstalls the app during the [re-attribution window.](/docs/set-up-re-attribution-window#re-attribution-window)
+A reinstall occurs when an app user deletes an app and then reinstalls the app during the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window.</Anchor>
 
 The reinstall can come from a retargeting campaign (re-attribution), an organic source, or a non-organic source.
 
-Reinstalls that come from an organic source, or a non-organic source, and are in the [re-attribution window](/docs/set-up-re-attribution-window#re-attribution-window), are referred to as reinstalls.
+Reinstalls that come from an organic source, or a non-organic source, and are in the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window</Anchor>, are referred to as reinstalls.
 
 Reinstalls that come from retargeting campaigns are referred to as re-attributions.
 
 They differ in how the reinstall and in-app events are attributed.
 
-If an install occurs outside of the [re-attribution window](/docs/set-up-re-attribution-window#re-attribution-window), the reinstall is called a [new install](/docs/set-up-re-attribution-window#new-install). A new install is attributed to the media source (or organic if no engagement is recorded) and a new re-attribution window commences.
+If an install occurs outside of the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window</Anchor>, the reinstall is called a <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#new-install">new install</Anchor>. A new install is attributed to the media source (or organic if no engagement is recorded) and a new re-attribution window commences.
 
 The table below shows what AppsFlyer would call different reinstalls
 
@@ -50,7 +46,7 @@ The table below shows what AppsFlyer would call different reinstalls
 
 ## Why are reinstalls important
 
-As well as being a good indication that users are coming back to your app and that your campaigns are working, proper reinstall attribution is important to help avoid multiple charges for users that uninstall and install again within the [re-attribution window.](/docs/set-up-re-attribution-window#re-attribution-window)
+As well as being a good indication that users are coming back to your app and that your campaigns are working, proper reinstall attribution is important to help avoid multiple charges for users that uninstall and install again within the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window.</Anchor>
 
 Likewise, attributing in-app events from reinstalls to the original media source (first install) provides advertisers with a better picture of how users are engaged. It also shows how effective UA campaigns and Retargeting ads are. For more information see [in-app events](#post-reinstall-in-app-events) below.
 
@@ -60,7 +56,7 @@ Likewise, attributing in-app events from reinstalls to the original media source
 
 <Accordion title="Reinstall">
 
-After the first app install, the user uninstalls, then reinstalls during the [re-attribution window](/docs/set-up-re-attribution-window#re-attribution-window). A reinstall can either come from organic or a UA campaign (see [examples](/docs/measure-reinstalls#examples)).
+After the first app install, the user uninstalls, then reinstalls during the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window</Anchor>. A reinstall can either come from organic or a UA campaign (see [examples](/docs/measure-reinstalls#examples)).
 
 The following happens:
 
@@ -74,7 +70,7 @@ The following happens:
 
 <Accordion title="Re-attribution">
 
-After the first app install, the user uninstalls, then engages with a retargeting campaign and reinstalls during the [re-attribution window](/docs/set-up-re-attribution-window#re-attribution-window).
+After the first app install, the user uninstalls, then engages with a retargeting campaign and reinstalls during the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window</Anchor>.
 
 The following happens:
 
@@ -83,7 +79,7 @@ The following happens:
 * All following in-app events are attributed to the retargeting media source (see [in-app events](/docs/measure-reinstalls#post-reinstall-in-app-events) for more information)
 * An install postback is sent to the retargeting media source
 
-For more Retargeting Attribution information, click [here](/docs/retargeting-attribution-guide).
+For more Retargeting Attribution information, click <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">here</Anchor>.
 
 </Accordion>
 
@@ -107,7 +103,7 @@ In-app events performed by a user after a reinstall are either attributed organi
 
 Reinstall
 
-* All in-app events are counted as organic or disregarded completely [depending on the reporting method](/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison).
+* All in-app events are counted as organic or disregarded completely <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#toolapi-comparison">depending on the reporting method</Anchor>.
 * In-app events will be reported with the conversion\_type and campaign\_type as "unknown".
 * The date used to aggregate data depends on the event:
   * For most SDK-originated in-app events, the date of the app download is used to aggregate data; not the date of the reinstall.
@@ -198,7 +194,7 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 
 * Only users who have consented to share their device identifier (such as IDFA or GAID) with the app for both the install and reinstall will have their in-app events attributed to the original install
   * Device identifiers in the first install and the reinstall must match
-* The reinstall must occur within the [re-attribution window](/docs/retargeting-attribution-guide#reengagement-rules-and-windows) of the last recorded install.
+* The reinstall must occur within the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#reengagement-rules-and-windows">re-attribution window</Anchor> of the last recorded install.
 * Each install and reinstall will still have its own unique `appsflyer_id`
 * The dashboards do not differentiate between an in-app event following install or re-install
   * It is possible to see this through the raw data
@@ -212,11 +208,11 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 
 ## Reinstalls raw data reports
 
-> 📘 **Prerequisites**
+> 🚧 **Prerequisites**
 >
 > Requires enabling. Reach out to your CSM to discuss this.
 
-* [Reinstall example report as a CSV file](https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv)
+* <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">Reinstall example report as a CSV file</Anchor>
 
 #### How the install and in-app events are attributed
 
@@ -228,13 +224,13 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 * The reports have the same structure and are populated in a similar manner to install reports in that:
   * **Media source** fields are populated using the media source that brought the reinstall or organic.
   * **Install time**: Interpret as reinstall time, meaning the time of the first app open after the reinstall
-  * **Event name:***Reinstall*
+  * **Event name:** *Reinstall*
 
 | Report delivery method | Non-organic reinstall | Organic reinstall |
 | --- | --- | --- |
-| [Export data](/docs/raw-data-reporting-overview) | **✓** | **✓** |
-| [Pull API](/docs/pull-api-aggregate-data) | **✓** | **✓** |
-| [Data Locker](/docs/data-locker-for-marketers) | **✓** | **✓** |
+| <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Export data</Anchor> | **✓** | **✓** |
+| <Anchor target="_blank" href="/marketers/docs/pull-api-aggregate-data">Pull API</Anchor> | **✓** | **✓** |
+| <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor> | **✓** | **✓** |
 | Push API | **✓** | **✓** |
 
 <div data-zendesk-anchors="01H7SZVZPGHBQ7VM8TMWRD3CE4=what-is-a-reinstall 01H7SZVZPG6T2AW9B3EMT29AQQ=why-are-reinstalls-important 01H7SZVZPGVQCNCQ7TCZMYM33T=reinstall-flow-and-outcome 01H7SZVZPGCDP3GRK1BWZ04MR6=reinstall 01H7SZVZPG8WNTK30YXNZ44VTS=reattribution inapp-events=post-reinstall-in-app-events 01H7SZVZPGBYRWZGAZRT36EFGH=post-reinstall-in-app-events h_01K47GSZ90CKBGPCZFGQBD1PMK=postreinstall-events-attribution-state 01H7SZVZPH4AE1PZK8V5JG6C6X=unattributed-organic-inapps 01H7SZVZPH7KPM7T42GHZ7N69S=attributed-to-the-first-install h_01KHJV7J6H5KKMZVZN8XPW4CEZ=note 01H7SZVZPH5YGSMPGW7NPKXJAF=note-1 with-attributed-to-the-first-install-enabled=examples-for-first-install-mode-attribution 01H7SZVZPHH3DS9J4VRD70VTX6=examples-for-first-install-mode-attribution h_01K47KBXE2NXXQFMS4RPJ0RA4T=confirm-inapps-are-attributed-to-the-original-install 01H7SZVZPH8MSBQ92XWFK0HWGQ=limitations 01H7SZVZPHHQS4NHEDATD7ZP9V=how-does-the-data-appear-in-the-appsflyer-dashboards 01H7SZVZPHPWN8REBQ5CWVFNJT=reinstalls-raw-data-reports 01H7SZVZPHCVDPDDYD6HHNFMMK=prerequisites how-the-install-and-inapp-events-are-attributed=how-the-install-and-in-app-events-are-attributed 01H7SZVZPHQT8XS3ZBA4W682GB=how-the-install-and-in-app-events-are-attributed 01H7SZVZPH6NY7FMG9YHDBB95R=availability-of-reinstall-reports" />

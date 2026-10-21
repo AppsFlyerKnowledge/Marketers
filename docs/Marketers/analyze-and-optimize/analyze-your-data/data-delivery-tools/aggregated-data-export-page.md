@@ -1,8 +1,5 @@
 ---
 title: Aggregated data export page
-excerpt: >-
-  Download lifetime value (LTV) aggregate reports filtered by attribution date
-  and media source.
 metadata:
   keywords:
     - Marketers
@@ -23,9 +20,11 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008614078-Aggregated-data-export-page
 ---
+**At a glance:** Download lifetime value (LTV) aggregate reports filtered by attribution date and media source.
+
 ## Aggregate data reports
 
-[User acquisition](/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users) and [retargeting](/docs/aggregated-and-analytics-reporting-overview#retargeting) reports have these characteristics:
+<Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">User acquisition</Anchor> and <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#retargeting">retargeting</Anchor> reports have these characteristics:
 
 * Contain LTV data of users performing an Attribution Event during the specified date range.
 * An Attribution Event is any of the following:
@@ -37,7 +36,7 @@ x-zendesk:
   * Re-engagements: Events performed by the user starting during the re-engagement window
 * Reports, depending on size, can take several minutes to download.
 * Reports hold up to 200K rows.
-* [Rate limitations](/docs/report-generation-quotas-rate-limitations)
+* <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Rate limitations</Anchor>
 
 ### Download aggregate data reports
 
@@ -48,8 +47,8 @@ x-zendesk:
 3. Select the Attribution Event date range.
 4. Select a report, click **Download.**
 
-> 📘 **See also**
+> 📄 **See also**
 >
-> * [Aggregated and analytics reporting overview](/docs/aggregated-and-analytics-reporting-overview)
+> * <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">Aggregated and analytics reporting overview</Anchor>
 
 <div data-zendesk-anchors="01EEA0AHKGE7ECAF5BQ95KXEE3=aggregate-data-reports 01EEA0AHKGS0JECXWWR65JX58N=download-aggregate-data-reports h_01HDNYZ54NY3Z291FNKA7N5J71=see-also" />

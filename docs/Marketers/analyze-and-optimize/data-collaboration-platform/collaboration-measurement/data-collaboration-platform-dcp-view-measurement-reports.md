@@ -1,8 +1,5 @@
 ---
 title: Data Collaboration Platform (DCP) - View measurement reports
-excerpt: >-
-  Customize your measurement reports by setting report fields, aggregation
-  levels, schedules, and cloud connections.
 metadata:
   keywords:
     - Marketers
@@ -15,7 +12,7 @@ x-zendesk:
     - Marketers
     - Data Clean Room
   created_at: '2025-04-03T14:39:29Z'
-  edited_at: '2025-04-07T10:16:21Z'
+  edited_at: '2026-10-21T10:31:49Z'
   id: 34060852331153
   locale: en-us
   section: Collaboration measurement
@@ -23,6 +20,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34060852331153-Data-Collaboration-Platform-DCP-View-measurement-reports
 ---
+**At a glance:** Customize your measurement reports by setting report fields, aggregation levels, schedules, and cloud connections.
+
 Data Collaboration Platform (DCP) measurement reports provide top-level metrics such as clicks, impressions, and ROAS per campaign. They may also include additional metrics and dimensions based on granted access.
 
 Reports are sent directly to your connected cloud storage or data warehouse. You can receive reports in either a predefined format or customize them to include the specific metrics and dimensions you need.
@@ -76,18 +75,20 @@ To create a custom report, follow these steps:
 <div id="1-open-the-new-report-page" />
 
 <Accordion title="1. Open the New report page">
-  1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
-  2. On the **Data Collaboration Platform** page, select the relevant collaboration.
-  3. On the measurement dashboard, click ![](https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png) **C**![]()**&#x20;reate report.**
-  4. In the dialog that appears click ![](https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png) **Customize**.
-  5. On the **New report** page, perform the listed steps.
+
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
+2. On the **Data Collaboration Platform** page, select the relevant collaboration.
+3. On the measurement dashboard, click <Image alt="" src="https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png" width="2.86%" /> **Create report.**
+4. In the dialog that appears click <Image alt="" src="https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png" width="2.92%" /> **Customize**.
+5. On the **New report** page, perform the listed steps.
+
 </Accordion>
 
 <div id="2-set-the-report-type" />
 
 <Accordion title="2. Set the report type">
 
-Under the **Report type** step, select ![](https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png)  **Commerce media measurement,** then, click **Next.**
+Under the **Report type** step, select <Image alt="" src="https://files.readme.io/c94890451d831a5a3f1f12b6f42c1c86de1453c175c40cc450e915f6f1f128ad-34061156898449.png" width="3.47%" />  **Commerce media measurement,** then, click **Next.**
 
 </Accordion>
 
@@ -99,7 +100,7 @@ Under the **Filters and data sources** step:
 
 1. In the **Report name** box, enter a name for the report.
    * This can be any name that will help you identify the report in the DCR platform.
-   * **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to [save the report](/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report).
+   * **Important!** Ensure that the report name is different from all other reports in your account or you will not be able to <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#set-the-report-destination-and-save-the-report">save the report</Anchor>.
    * Report name requirements:
      * Length: 2-80 characters
      * Valid characters:
@@ -174,7 +175,7 @@ Dimension groups with very few user-level events may conflict with data privacy 
 
 To resolve this, **DCR merges small groups** with larger groups by eliminating the dimensions with the highest specificity.
 
-By default, dimensions are removed in reverse order of their position in the **Report dimensions** list. However, you can adjust the default order and apply a different regrouping priority to preserve the dimensions most important to you. To learn more see a [Regrouping example](/docs/data-clean-room-creating-attribution-data-reports#preserving-privacy-while-grouping-by-dimension-regrouping).
+By default, dimensions are removed in reverse order of their position in the **Report dimensions** list. However, you can adjust the default order and apply a different regrouping priority to preserve the dimensions most important to you. To learn more see a <Anchor target="_blank" href="/marketers/docs/data-clean-room-creating-attribution-data-reports#preserving-privacy-while-grouping-by-dimension-regrouping">Regrouping example</Anchor>.
 
 **To change the dimension priority:**
 
@@ -191,11 +192,11 @@ By default, dimensions are removed in reverse order of their position in the **R
 
 </Accordion>
 
-<div id="6-set-the-report-schedule-and-destination"></div>
+<div id="6-set-the-report-schedule-and-destination" />
 
 <Accordion title="6. Set the report schedule and destination">
 
-DCP delivers reports to your selected cloud services using [AppsFlyer Data Locker](/docs/data-locker-for-marketers). Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
+DCP delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Therefore, specifying the report destination involves selecting or creating a Data Locker connection.
 
 **To set the report schedule and destination:**
 
@@ -204,10 +205,10 @@ DCP delivers reports to your selected cloud services using [AppsFlyer Data Lock
 3. Under the **Destination** section, select from the list of Data Locker connections available in your AppsFlyer account.
    * If there are no connections defined in your account:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
+     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
    * If you have existing connections but want to use a new one, click **+ New connection in Data Locker**:
      * A new tab will open in your browser (showing the AppsFlyer Data Locker page)
-     * A **New connection** dialog will open. Follow [these instructions](/docs/data-clean-room-working-with-connections#complete-the-connection-1) to create the connection.
+     * A **New connection** dialog will open. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection-1">these instructions</Anchor> to create the connection.
      * After creating the connection, return to the DCP tab in your browser and select the newly created connection from the list of Data Locker connections.
 4. To receive report status notifications via API, turn on **Report status notifications,** and in the API endpoint box, enter your API URL.
 5. Click **Save** to save the report.
@@ -278,10 +279,6 @@ The report is comprised of the following dimensions and metrics categorized as c
 | conversions | Number or conversions | TRUE | FALSE |
 | Count\_AFID | Total number of unique users | TRUE | TRUE |
 
-</Accordion>
-
-<Accordion title="Let's see if it's working" icon="fa-info-circle">
-  This is to see if the anchors work when you add it manually.
 </Accordion>
 
 <div data-zendesk-anchors="h_01JQY1FA02JN6VR67HJ5118SFF=what-are-dimensions-and-metrics h_01JR5NBE6NQ22QCFZG9XRVGM45=dimensions h_01JR5NC59TQ45QPWP7JG6BQKXX=metrics h_01JQY33FZ2H59YZVVXBN9J61RE=what-are-basic-and-calculated-fields h_01JQY1FA03AXH588Z5C9HCJHMS=create-a-predefined-report h_01JQY1FA038V0V1PKBF1CC0B5J=create-a-custom-report h_01JQY1FA035K7VWX4BDC796SVT=1-open-the-new-report-page h_01JQY1FA03Z0W8N8PFVGEC3HRM=2-set-the-report-type h_01JQY1FA03CWP0GSJY46CEJRJY=3-set-the-report-scope h_01JQY1FA03WA8NNB4RT1VBK0F5=4-set-the-report-dimensions-and-metrics h_01JQY1FA03PA40NCTZXHWGQ86C=create-calculated-field h_01JQY1FA03TMN4N7V3F83EK4EY=5-manage-dimension-priority h_01JQY1FA03PRSGHSKNTKNV4NH3=6-set-the-report-schedule-and-destination h_01JQY1FA03S41J7TR5HAF6G8PW=report-scheme h_01JQY1FA0494AK29M0R7ZRJ4DT=calculated-fields h_01JQY1FA0486WK4GHV5G3TZ77V=attribution-fields h_01JQY1FA04DTN2C6A541J25RZJ=scheme-fields" />

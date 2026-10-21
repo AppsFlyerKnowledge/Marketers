@@ -15,13 +15,13 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/sections/6550976670225-Analytics-and-aggregate-reporting-APIs
 ---
-- [Aggregated and analytics reporting overview <span class="af-star">★</span>](/docs/aggregated-and-analytics-reporting-overview)
-- [Calculate daily and monthly active users (DAU and MAU)](/docs/calculate-daily-and-monthly-active-users-dau-and-mau)
-- [Advanced aggregated reports in Data Locker](/docs/advanced-aggregated-reports-in-data-locker)
-- [Cohort analytics via Data Locker](/docs/cohort-analytics-via-data-locker)
-- [Historical aggregate data availability](/docs/historical-aggregate-data-availability)
-- [Campaign name changes](/docs/campaign-name-changes)
-- [Pivot table—user metrics](/docs/pivot-table-user-metrics)
-- [Cohort API](/docs/cohort-api)
-- [Master API—user acquisition metrics via API](/docs/master-api-user-acquisition-metrics-via-api)
-- [Measure exceeded dimensions and cardinality limits](/docs/measure-exceeded-dimensions-and-cardinality-limits)
+- <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">Aggregated and analytics reporting overview <span class="af-star">★</span></Anchor>
+- <Anchor target="_blank" href="/marketers/docs/calculate-daily-and-monthly-active-users-dau-and-mau">Calculate daily and monthly active users (DAU and MAU)</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/advanced-aggregated-reports-in-data-locker">Advanced aggregated reports in Data Locker</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cohort-analytics-via-data-locker">Cohort analytics via Data Locker</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/historical-aggregate-data-availability">Historical aggregate data availability</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/campaign-name-changes">Campaign name changes</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot table—user metrics</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/cohort-api">Cohort API</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API—user acquisition metrics via API</Anchor>
+- <Anchor target="_blank" href="/marketers/docs/measure-exceeded-dimensions-and-cardinality-limits">Measure exceeded dimensions and cardinality limits</Anchor>

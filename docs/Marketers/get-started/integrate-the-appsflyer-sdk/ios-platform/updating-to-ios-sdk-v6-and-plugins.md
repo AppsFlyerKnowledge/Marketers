@@ -1,6 +1,5 @@
 ---
 title: Updating to iOS SDK V6 and plugins
-excerpt: Update an existing AppsFlyer iOS SDK/wrapper integration to iOS SDK V6.
 metadata:
   keywords:
     - iOS
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011571778-Updating-to-iOS-SDK-V6-and-plugins
 ---
+> **At a glance:** Update an existing AppsFlyer iOS SDK/wrapper integration to iOS SDK V6.
+
 ## About iOS SDK V6
 
 Reference in this article to SDK V6.
@@ -37,7 +38,7 @@ The AppsFlyer iOS SDK V6:
 * Provides app attribution and event reporting functionality to iOS mobile apps.
 * Includes significant API method changes from previous versions.
 
-For full information about the SDK V6, and to integrate it into a new app that does not have an earlier version of the AppsFlyer SDK, read our [iOS SDK integration guide for marketers](/docs/sdk-integration-overview).
+For full information about the SDK V6, and to integrate it into a new app that does not have an earlier version of the AppsFlyer SDK, read our <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS SDK integration guide for marketers</Anchor>.
 
 ## Update to iOS SDK V6
 
@@ -47,7 +48,7 @@ To update to iOS SDK V6, complete the procedures (1-5) that follow.
 
 <Accordion title="1. Update SDK version">
 
-Download and add the [SDK V6](https://dev.appsflyer.com/hc/docs/install-ios-sdk) to your Xcode.
+Download and add the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-ios-sdk">SDK V6</Anchor> to your Xcode.
 
 </Accordion>
 
@@ -57,11 +58,12 @@ Download and add the [SDK V6](https://dev.appsflyer.com/hc/docs/install-ios-sdk)
 
 **Add the following code to the SDK initialization**:
 
-<Accordion title="Objective-C">
+<Tabs>
+<Tab title="Objective-C">
 
 In AppDelegate.h, do the following:
 
-```
+```objectivec
 #import "AppDelegate.h"
 #import <AppsFlyerLib/AppsFlyerLib.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
@@ -157,13 +159,13 @@ In AppDelegate.h, do the following:
 @end
 ```
 
-</Accordion>
+</Tab>
 
-<Accordion title="Swift">
+<Tab title="Swift">
 
 In AppDelegate.swift, add the following:
 
-```
+```swift
 import UIKit
 import AppTrackingTransparency
 import AppsFlyerLib
@@ -268,7 +270,8 @@ extension AppDelegate: AppsFlyerLibDelegate {
 }
 ```
 
-</Accordion>
+</Tab>
+</Tabs>
 
 </Accordion>
 
@@ -276,18 +279,18 @@ extension AppDelegate: AppsFlyerLibDelegate {
 
 <Accordion title="3. Support for SKAdNetwork attribution">
 
-[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps) is a class used by iOS that validates advertiser-driven app installations. The app install validation process involves the source app and the advertised app.
+<Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps">SKAdNetwork</Anchor> is a class used by iOS that validates advertiser-driven app installations. The app install validation process involves the source app and the advertised app.
 
-A source app is an app that participates in ad campaigns by displaying ads signed by an ad network. Configuring your app to display ads is not within the scope of the AppsFlyer SDK. To configure, you must follow the [iOS instructions](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps).
+A source app is an app that participates in ad campaigns by displaying ads signed by an ad network. Configuring your app to display ads is not within the scope of the AppsFlyer SDK. To configure, you must follow the <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_the_participating_apps">iOS instructions</Anchor>.
 
-For configuring the advertised app, the AppsFlyer [SKAdNetwork Solution](/docs/skadnetwork-skan-solution-guide) uses the SKAdNetwork to provide advertisers and ad networks with LTV analytics, reports, and postbacks, while maintaining user privacy. On launching the app for the first time, the AppsFlyer platform, using the configuration set by the marketer, instructs the SDK how to set the SKAdNetwork conversion value.
+For configuring the advertised app, the AppsFlyer <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAdNetwork Solution</Anchor> uses the SKAdNetwork to provide advertisers and ad networks with LTV analytics, reports, and postbacks, while maintaining user privacy. On launching the app for the first time, the AppsFlyer platform, using the configuration set by the marketer, instructs the SDK how to set the SKAdNetwork conversion value.
 
-To use the [SKAdNetwork Solution](/docs/skadnetwork-skan-solution-guide):
+To use the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAdNetwork Solution</Anchor>:
 
 * The developer does nothing.
 * AppsFlyer SDK automatically calls the necessary SKAdNetwork APIs, meaning `registerAppForAdNetworkAttribution()` and `updateConversionValue()`. The developer must not call them.
 * Don't allow other SDKs to call SKAdNet APIs. Doing so can delay iOS in sending the postback to AppsFlyer and change the conversion value which we use to populate the SKAdNetwork dashboard with user quality measurement data as configured by the marketer in the dashboard.
-* The marketer needs to configure SKAdNetwork measurement [in AppsFlyer](/docs/skadnetwork-skan-solution-guide).
+* The marketer needs to configure SKAdNetwork measurement <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">in AppsFlyer</Anchor>.
 
 There is no other action or registration process required by either the developer or the marketer in the App Store.
 
@@ -321,7 +324,7 @@ The AppsFlyer iOS SDK V6 has some API name changes. See the following table to c
 
 The following is required if push notification integration is already implemented.
 
-Follow the [push notification instructions](/docs/measuring-push-notification-re-engagement-campaigns) to ensure you have push notifications integrated using the handlePushNotificationData method.
+Follow the <Anchor target="_blank" href="/marketers/docs/measuring-push-notification-re-engagement-campaigns">push notification instructions</Anchor> to ensure you have push notifications integrated using the handlePushNotificationData method.
 
 </Accordion>
 
@@ -337,8 +340,8 @@ The AppsFlyer Unity V6 plugin helps app owners and developers support iOS 14, pr
 
 To update your plugin from an earlier version, see our guides on updating to the Unity plugin V6:
 
-* [From Unity plugin V4](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires removal of the old plugin)
-* [From Unity plugin V5](https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration) (requires an update of the Unity package)
+* <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration">From Unity plugin V4</Anchor> (requires removal of the old plugin)
+* <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-unity-plugin/blob/master/README.md#--migration">From Unity plugin V5</Anchor> (requires an update of the Unity package)
 
 </Accordion>
 
@@ -350,8 +353,8 @@ The AppsFlyer React Native plugin helps app owners and developers prepare for iO
 
 To update your plugin from an earlier version:
 
-1. Remove the earlier plugin and replace it following the instructions in our [GitHub guide](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin/tree/dev/sdk-v6-beta).
-2. Change the integration code by [renaming and deleting](https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin/tree/dev/sdk-v6-beta#--v6-breaking-changes) the necessary APIs.
+1. Remove the earlier plugin and replace it following the instructions in our <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin/tree/dev/sdk-v6-beta">GitHub guide</Anchor>.
+2. Change the integration code by <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin/tree/dev/sdk-v6-beta#--v6-breaking-changes">renaming and deleting</Anchor> the necessary APIs.
 
 </Accordion>
 
@@ -361,7 +364,7 @@ To update your plugin from an earlier version:
 
 The AppsFlyer Segment plugin helps app owners and developers prepare for iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
 
-To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our [GitHub guide](https://github.com/AppsFlyerSDK/segment-appsflyer-ios/tree/dev/sdk-v6-beta).
+To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/segment-appsflyer-ios/tree/dev/sdk-v6-beta">GitHub guide</Anchor>.
 
 </Accordion>
 
@@ -371,7 +374,7 @@ To update your plugin from an earlier version, remove the earlier plugin and rep
 
 The AppsFlyer Cordova plugin helps app owners and developers prepare for iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
 
-To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our [GitHub guide](https://github.com/AppsFlyerSDK/appsflyer-cordova-plugin/tree/releases/6.x.x/6.0.x/6.0.1-beta).
+To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-cordova-plugin/tree/releases/6.x.x/6.0.x/6.0.1-beta">GitHub guide</Anchor>.
 
 </Accordion>
 
@@ -381,7 +384,7 @@ To update your plugin from an earlier version, remove the earlier plugin and rep
 
 The AppsFlyer Flutter plugin helps app owners and developers prepare for iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
 
-To update your plugin from an earlier version, remove the earlier plugin and add the V6 version to `pubspec.yaml`, following the instructions in our [pub.dev guide](https://pub.dev/packages/appsflyer_sdk).
+To update your plugin from an earlier version, remove the earlier plugin and add the V6 version to `pubspec.yaml`, following the instructions in our <Anchor target="_blank" href="https://pub.dev/packages/appsflyer_sdk">pub.dev guide</Anchor>.
 
 </Accordion>
 
@@ -391,6 +394,6 @@ To update your plugin from an earlier version, remove the earlier plugin and add
 
 The AppsFlyer Adobe AIR plugin helps app owners and developers prepare for iOS 14, providing app attribution and event reporting functionality to Android and iOS mobile apps. The plugin is functionally equivalent to the AppsFlyer iOS and Android SDKs.
 
-To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our [GitHub guide](https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/tree/dev/sdk-v6-beta).
+To update your plugin from an earlier version, remove the earlier plugin and replace it following the instructions in our <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/AdobeAirExtension-AppsFlyer/tree/dev/sdk-v6-beta">GitHub guide</Anchor>.
 
 </Accordion>

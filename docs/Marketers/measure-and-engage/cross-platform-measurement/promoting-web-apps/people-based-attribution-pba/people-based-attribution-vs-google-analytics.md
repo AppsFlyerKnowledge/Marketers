@@ -1,6 +1,5 @@
 ---
 title: People-Based Attribution vs. Google Analytics
-excerpt: The differences between People-based Attribution (PBA) and Google Analytics
 metadata:
   keywords:
     - Google Analytics
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001305617-People-Based-Attribution-vs-Google-Analytics
 ---
+**At a glance:** The differences between People-based Attribution (PBA) and Google Analytics
+
 ## PBA compared to Google Analytics
 
 PBA and Google Analytics are web analytics and conversion measurement solutions. Each focuses on different measurement aspects. PBA also offers additional benefits.
@@ -39,7 +40,7 @@ The following are the benefits of PBA over Google Analytics:
 
 * PBA includes:
   * Web-to-app measurement. This metric tells you how many users move from your website to your app. It also tells you which media sources and campaigns bring users to your website who subsequently install your app.
-  * [Raw data for conversions and events](/docs/pba-raw-data-reports) that you can pull into your own BI systems. This gives you the ability and power to run your analysis.
+  * <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Raw data for conversions and events</Anchor> that you can pull into your own BI systems. This gives you the ability and power to run your analysis.
 
 ### Reasons for differences
 
@@ -61,7 +62,7 @@ If Google Analytics loads before the Web SDK users that bounce or users that spe
 
 We strongly recommend positioning the Web SDK such that it loads as early as possible.
 
-Whether you [load the SDK directly or through Google Tag Manager](/docs/pba-web-sdk-integration-guide#integrating-the-web-sdk-into-the-website), late loading of the SDK can cause significant discrepancies.
+Whether you <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#integrating-the-web-sdk-into-the-website">load the SDK directly or through Google Tag Manager</Anchor>, late loading of the SDK can cause significant discrepancies.
 
 </Accordion>
 
@@ -91,7 +92,7 @@ Dashboard settings such as timezone and data filter could affect how data is pre
 
 If the timezone settings in your Google Analytics are different from those in your PBA dashboard, you might encounter discrepancies.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Your AppsFlyer dashboard is configured to UTC and your GA dashboard is configured to UTC +13. This means that your GA dashboard is ahead of your AppsFlyer dashboard by one day.
 >
@@ -131,7 +132,7 @@ If you have different lookback windows in Google Analytics and PBA, discrepancie
 
 #### Solution
 
-PBA's lookback window is always 30 days. Make sure to set a 30-day lookback window in Google Analytics when you [choose your attribution model](https://support.google.com/analytics/answer/1665189).
+PBA's lookback window is always 30 days. Make sure to set a 30-day lookback window in Google Analytics when you <Anchor target="_blank" href="https://support.google.com/analytics/answer/1665189">choose your attribution model</Anchor>.
 
 </Accordion>
 
@@ -145,7 +146,7 @@ Different attribution models in PBA and Google Analytics can cause discrepancies
 
 #### Solution
 
-Google Analytics offers [default attribution models](https://support.google.com/analytics/answer/1665189?hl=en) that you can choose from. However, PBA operates in a last non-direct touch, 30-day lookback window attribution model. Make sure to choose a last non-direct touch attribution model in Google Analytics.
+Google Analytics offers <Anchor target="_blank" href="https://support.google.com/analytics/answer/1665189?hl=en">default attribution models</Anchor> that you can choose from. However, PBA operates in a last non-direct touch, 30-day lookback window attribution model. Make sure to choose a last non-direct touch attribution model in Google Analytics.
 
 </Accordion>
 
@@ -164,7 +165,7 @@ When you send events, verify the following:
 * Make sure that the same trigger applies to both
 * Make sure you send the event to both Google Analytics and PBA
 
-Click [here](/docs/pba-web-sdk-integration-guide#principles-of-event-recording) to learn how to send events using the Web SDK.
+Click <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#principles-of-event-recording">here</Anchor> to learn how to send events using the Web SDK.
 
 </Accordion>
 
@@ -176,13 +177,13 @@ Both PBA and Google Analytics use cookies to recognize users.
 
 #### Cookie settings in Google Analytics
 
-Although it is recommended to let Google Analytics SDK automatically handle cookie settings, you can still [configure and change cookie settings](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id). Any change in cookie settings might cause discrepancies.
+Although it is recommended to let Google Analytics SDK automatically handle cookie settings, you can still <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">configure and change cookie settings</Anchor>. Any change in cookie settings might cause discrepancies.
 
 #### Setting Cookie Expiration
 
 Google Analytics allows you to set cookie expiry. If you set the Google Analytics cookie to expire before the Web SDK cookie does, it might cause discrepancies.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > Mark is a constant visitor to your website for over a year now and considers subscribing to premium content.
 >
@@ -198,7 +199,7 @@ Google Analytics allows you to set cookie expiry. If you set the Google Analytic
 
 Google Analytics allows you to set cookies for subdomains whereas PBA only sets cookies on the top-level domain.
 
-> 📘 **Example**
+> 📄 **Example**
 >
 > You set a cookie to the subdomain **store.mywebsite.com**. Sharon visits your website and then goes to your online store at **store.mywebsite.com**. Google Analytics considers her **as two different users**.
 >

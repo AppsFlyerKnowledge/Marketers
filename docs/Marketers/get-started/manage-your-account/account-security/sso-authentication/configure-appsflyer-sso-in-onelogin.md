@@ -1,6 +1,5 @@
 ---
 title: Configure AppsFlyer SSO in OneLogin
-excerpt: Configure the SSO process using OneLogin as an identity provider (IdP).
 metadata:
   keywords:
     - Agencies
@@ -26,6 +25,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15044997313041-Configure-AppsFlyer-SSO-in-OneLogin
 ---
+**At a glance:** Configure the SSO process using OneLogin as an identity provider (IdP).
+
 The first stage in configuring the AppsFlyer SSO process is done on the OneLogin platform. Follow the steps below:
 
 <div id="create-the-appsflyer-app-in-oonelogin" />
@@ -34,23 +35,23 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 **Prerequisite:** A OneLogin account with administrative privileges.
 
-1. In the OneLogin admin console, go to **Applications** > **[Applications](https://appsflyer-dev.onelogin.com/admin2/apps)**.
+1. In the OneLogin admin console, go to **Applications** > **<Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/admin2/apps">Applications</Anchor>**.
 2. From the top right, click **Add App**.
 3. Search for and select **SAML Custom Connector (Advanced)**.  
 
-   ![onelogin_saml_app.png](https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png)
+   <Image alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
 4. In the **Display Name** field, enter the name to show in the OneLogin plugin list of apps.
 5. [Optional] **App logo**: Add a logo to appear near the app name.
 6. [Optional] Add a description.
 7. Click **Save**. A success message appears at the top.
 8. Go to the **Configuration** tab on the side menu.
 9. Define the integration according to the following fields:
-   * **Audience (EntityID):** Enter this link: [https://hq1.appsflyer.com](https://hq1.appsflyer.com/)
-   * **ACS (Consumer) URL Validation**, **ACS (Consumer) URL:** Enter the endpoint to which OneLogin sends the user verification. Use the link according to the [callback URL configuration described here](/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration)
+   * **Audience (EntityID):** Enter this link: <Anchor target="_blank" href="https://hq1.appsflyer.com/">https://hq1.appsflyer.com</Anchor>
+   * **ACS (Consumer) URL Validation**, **ACS (Consumer) URL:** Enter the endpoint to which OneLogin sends the user verification. Use the link according to the <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">callback URL configuration described here</Anchor>
    * **Recipient:** Enter the same URL as entered in the **ACS (Consumer) URL** field.
-   * **Login URL:** Enter the AppsFlyer [login URL](https://hq1.appsflyer.com/auth/login).
+   * **Login URL:** Enter the AppsFlyer <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">login URL</Anchor>.
    * **SAML not valid before**, **SAML not valid on or after:** Specify the time period (in minutes) the assertion is valid for.
-   * **SAML initiator:** [Select from where authentication begins](/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration):
+   * **SAML initiator:** <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">Select from where authentication begins</Anchor>:
      * For authentication starting from the IdP, select **OneLogin**
      * For authentication starting from AppsFlyer, select **Service Provider**
    * **SAML nameID format:** Select Email.
@@ -60,7 +61,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
    * **SAML encryption method:** Select **AES-256-CBC**.
 10. Click **Save**.
 11. **Assertion encryption:** 
-    1. Open [the SSO metadata URL](https://hq1.appsflyer.com/auth/sso-metadata) and copy the encryption certificate value.
+    1. Open <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">the SSO metadata URL</Anchor> and copy the encryption certificate value.
     2. Go back to the **Configuration** tab and paste it into the **SAML encryption** text box.
     3. Click **Save**.
 
@@ -70,7 +71,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 <Accordion title="Get IdP SSO metadata">
 
-1. From your selected application (**Applications** > **[Applications](https://appsflyer-dev.onelogin.com/admin2/apps)**), select **SSO** from the side menu.
+1. From your selected application (**Applications** > **<Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/admin2/apps">Applications</Anchor>**), select **SSO** from the side menu.
 2. Copy the **Issuer URL** and paste it into a new tab to download the SSO metadata.
 
 </Accordion>
@@ -79,7 +80,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 <Accordion title="Create OneLogin users">
 
-1. From the top menu, go to **Users** > [**Users**](https://appsflyer-dev.onelogin.com/users).
+1. From the top menu, go to **Users** > <Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/users">**Users**</Anchor>.
 2. Click **New User** from the top right.
 3. Enter the user's **First name**, **Last name**, and **Email**.
 4. From the top right, click **Save User** then **More Actions,** and select **Change Password** to set the user a password.
@@ -95,8 +96,8 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 2. Click the **+** sign near **Applications**.
 3. Select the AppsFlyer app you've created and click **Continue**.  
 
-   ![onelogin_assign_app.png](https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png)
-4. From the top menu, go to **Applications** > **[Applications](https://appsflyer-dev.onelogin.com/admin2/apps)**.
+   <Image alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
+4. From the top menu, go to **Applications** > **<Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/admin2/apps">Applications</Anchor>**.
 5. Select the application you've just created.
 6. Click **Save**.
 
@@ -106,7 +107,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the OneLogin
 
 <Accordion title="Complete the process in AppsFlyer">
 
-Now that you've configured the IdP part, go back to AppsFlyer to [complete the configuration](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer). You can then [test](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process) to see that it works.
+Now that you've configured the IdP part, go back to AppsFlyer to <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">complete the configuration</Anchor>. You can then <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process">test</Anchor> to see that it works.
 
 </Accordion>
 

@@ -1,8 +1,5 @@
 ---
 title: Discover your campaign link parameters and behavior
-excerpt: >-
-  Discover the parameters included in your AppsFlyer campaign links and
-  understand the expected user experience and link behavior.
 metadata:
   keywords:
     - Marketers
@@ -24,6 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16678138044689-Discover-your-campaign-link-parameters-and-behavior
 ---
+**At a glance:** Discover the parameters included in your AppsFlyer campaign links and understand the expected user experience and link behavior.
+
 ## About Link Discovery
 
 The Link Discovery feature provides information about your AppsFlyer campaign links, including link parameters and the expected user experience the links are intended to create.
@@ -45,7 +44,7 @@ Link Discovery shows the following information about a URL:
 * **General details**: Information about what apps the link is for, creation source (for example, OneLink management page or API), the OneLink template the link is based on, and the link expiration date and renewal period.   
   **Note:** If the creation source is 'Unknown', it's likely because it's either a legacy link created via the UI (OneLink Management) or an older link created in other ways (Bulk/API/SDK) pre-source-caller storage.
 * **Parameters**: All the different parameters included in the link and their values, displayed by category.   
-  **Note:** If there is redirection to a domain not in your [redirect allowlist](/docs/set-up-your-domain-redirect-allowlist), an alert should appear.
+  **Note:** If there is redirection to a domain not in your <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">redirect allowlist</Anchor>, an alert should appear.
 * **Capabilities**: The different capabilities enabled for the link, such as retargeting, deep linking, social media preview, and social media landing page.
 * **Redirection**: A summary of how the link is designed to redirect users based on their device, platform, and whether they already have the app installed.
 

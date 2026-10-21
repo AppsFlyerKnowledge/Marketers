@@ -1,8 +1,5 @@
 ---
 title: Understand OneLink short vs. long URLs
-excerpt: >-
-  Understand the difference between OneLink short and long URLs, and how to
-  create long URLs outside of AppsFlyer.
 metadata:
   keywords:
     - Marketers
@@ -24,21 +21,23 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017132597-Understand-OneLink-short-vs-long-URLs
 ---
+**At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
+
 ## **About OneLink links**
 
 * Work across all media marketing channels to redirect users to either: 
   * The correct URL/app store.
   * Open the app, and then deep link users to a specific in-app activity.
-* Can support brand customization. Meaning the URL has your [brand domain](/docs/brand-onelink-with-your-domain), instead of the OneLink subdomain.
+* Can support brand customization. Meaning the URL has your <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">brand domain</Anchor>, instead of the OneLink subdomain.
 * Can be either short or long URLs:
-  * Short URLs are created in AppsFlyer (either [in the UI](/docs/onelink-guide), or via [API](/docs/use-onelink-api-to-create-links-in-large-scale-campaigns) or [SDK](/docs/user-invite-attribution)).
+  * Short URLs are created in AppsFlyer (either <Anchor target="_blank" href="/marketers/docs/onelink-guide">in the UI</Anchor>, or via <Anchor target="_blank" href="/marketers/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">API</Anchor> or <Anchor target="_blank" href="/marketers/docs/user-invite-attribution">SDK</Anchor>).
   * Long URLs:
     * Can be created in the AppsFlyer UI or outside of AppsFlyer.
     * Contain any parameters you want.
     * Can be used to generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.   
       **Notes**:
       * Links created in a spreadsheet are not visible (and cannot be edited) in any AppsFlyer UI.
-      * This spreadsheet method is different from [Perform OneLink bulk actions via CSV](/docs/perform-onelink-bulk-actions-via-csv), which creates bulk short URLs.
+      * This spreadsheet method is different from <Anchor target="_blank" href="/marketers/docs/perform-onelink-bulk-actions-via-csv">Perform OneLink bulk actions via CSV</Anchor>, which creates bulk short URLs.
     * Don't expire, meaning there is no Time to Live (TTL) limitation.  
       **Long URL considerations:**
     * Long URLs are transparent, meaning all link parameters are visible to the public, and can potentially be manipulated.
@@ -53,7 +52,7 @@ x-zendesk:
 
 **To create a OneLink long URL outside the AppsFlyer UI:**
 
-1. Create a [OneLink template](/docs/create-a-onelink-template#create-a-onelink-template).
+1. Create a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
 2. Record the OneLink base URL, meaning the OneLink template domain + template ID.  
    Example:
    * OneLink template domain: `yourbrand.onelink.me`
@@ -61,7 +60,7 @@ x-zendesk:
    * OneLink base URL: `yourbrand.onelink.me/1a6f`
    * Branded domain example: `yourbrand.com/1a6f`
 3. Append a `?` to the URL, followed by any parameters you want to add.
-   * See [list of AppsFlyer parameters](/docs/about-link-structure-and-parameters).
+   * See <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">list of AppsFlyer parameters</Anchor>.
    * To add more than one parameter, use `&`.  
      Example: `yourbrand.onelink.me/1a6f?pid=email&c=freestuff`
 
