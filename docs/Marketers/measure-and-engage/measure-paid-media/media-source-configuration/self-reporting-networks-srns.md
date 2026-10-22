@@ -246,7 +246,7 @@ AppsFlyer data analysts checked Meta ads **user acquisition** campaigns during a
 * In 5% of campaigns, at least 40% were existing app users.
 * **Conclusion: In SRN user-acquisition campaigns, 1 in 10 targeted users is already an existing user.**
 
-[![mistargeted_users.png](https://files.readme.io/0cc402a1637148cf154188286d4939af73ad83fdaecfd813eb1ae7e17ce5830f-32259428927505.png)](https://files.readme.io/0cc402a1637148cf154188286d4939af73ad83fdaecfd813eb1ae7e17ce5830f-32259428927505.png)
+[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
 
 #### Solving the mistargeting problem
 
