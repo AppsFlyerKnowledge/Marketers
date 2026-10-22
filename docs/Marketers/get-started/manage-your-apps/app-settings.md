@@ -100,7 +100,7 @@ x-zendesk:
         | --- | --- |
         | <span id="mobile"></span>Mobile | Users usually click on attribution links within other mobile apps. On clicking, the operating system determines the app store country that users are redirected to:   \* **Android** redirects based on user IP/location. \* **iOS** redirects to the app store associated with the iTunes account active on the device. |
         | <span id="mobile-and-web"></span>Mobile and web | When web users click on attribution links, in **websites** (mobile and desktop), the initial redirection is to the store set in-app store country.  On attempting to install, the operating system redirects them to the country store as described for mobile in the preceding row. |
-        | <span id="ipad-ios-13"></span>iPad iOS 13 | Starting from iOS 13, <anchor href="https://www.apple.com/ipados/features/" target="_blank">iPads serve the desktop version of websites</anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users. |
+        | <span id="ipad-ios-13"></span>iPad iOS 13 | Starting from iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">iPads serve the desktop version of websites</Anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users. |
       </td>
     </tr>
     <tr>

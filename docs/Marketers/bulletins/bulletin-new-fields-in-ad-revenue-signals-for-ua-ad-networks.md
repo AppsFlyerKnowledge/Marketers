@@ -50,7 +50,7 @@ x-zendesk:
 
         | Report | API field names |
         | --- | --- |
-        | <anchor href="/partners/docs/ad-revenue-signals-for-ua-ad-networks" target="_blank">Ad revenue signals for UA ad networks</anchor> | <ul><li>ad_unit</li><li>placement</li><li>mediation_network</li><li>ad_revenue_ad_type</li><li>engagement_type</li></ul> |
+        | <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor> | <ul><li>ad_unit</li><li>placement</li><li>mediation_network</li><li>ad_revenue_ad_type</li><li>engagement_type</li></ul> |
       </td>
     </tr>
     <tr>

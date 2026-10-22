@@ -83,7 +83,7 @@ Using the Website Attribution dashboard advertisers gain an insight as to the me
         | Total metrics | Description |
         | --- | --- |
         | <span id="visits"></span>Visits | Sessions of users visiting the website |
-        | <span id="unique-visitors"></span>Unique visitors | Unique visitors to the site. Unique users are determined by PBA by using the PBA private-user graph. To maintain graph integrity you must implement <anchor href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid" target="_blank">CUID</anchor>. The same user arriving at the site using different browsers is counted once. |
+        | <span id="unique-visitors"></span>Unique visitors | Unique visitors to the site. Unique users are determined by PBA by using the PBA private-user graph. To maintain graph integrity you must implement <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">CUID</Anchor>. The same user arriving at the site using different browsers is counted once. |
         | <span id="conversions"></span>Conversions | Number of conversion events performed |
         | <span id="conversion-rate"></span>Conversion rate | Formula: Conversions / Visits \* 100 |
         | <span id="acpu"></span>ACPU | The average number of Conversions per Unique visitor. Formula: Conversions / Unique visitors |

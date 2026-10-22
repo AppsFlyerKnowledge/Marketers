@@ -115,7 +115,7 @@ Create and modify existing pivots in the user interface. To do so, use the proce
         | Duplicate | Copy an existing pivot report. |
         | Rename | Change the name of the report. |
         | View history log | See who handled the report structure, what was done, and when. |
-        | Copy Master API link | Generate a URL to pull the data via <anchor href="/marketers/docs/master-api-user-acquisition-metrics-via-api" target="_blank">Master API</anchor>. To use Master API, your need to get the <anchor href="/marketers/docs/managing-appsflyer-tokens" target="_blank">API token</anchor> (admin permissions required) to use in the authentication header. |
+        | Copy Master API link | Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header. |
         | Delete | Delete the selected pivot. |
       </td>
     </tr>

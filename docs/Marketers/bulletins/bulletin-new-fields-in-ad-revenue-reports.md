@@ -50,9 +50,9 @@ x-zendesk:
 
         | Report | API field names |
         | --- | --- |
-        | <anchor href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level" target="_blank">Legacy ad revenue [single version]</anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul> |
-        | <anchor href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level" target="_blank">Ad revenue [versioned]</anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul> |
-        | <anchor href="/marketers/docs/revenue-etl-reports#impression-level-report" target="_blank">Ad revenue [SDK impression level]</anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li><li>ad_revenue_custom_parameters</li><li>app_version</li><li>sdk_version</li></ul> |
+        | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul> |
+        | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul> |
+        | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor> | <ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li><li>ad_revenue_custom_parameters</li><li>app_version</li><li>sdk_version</li></ul> |
       </td>
     </tr>
     <tr>
