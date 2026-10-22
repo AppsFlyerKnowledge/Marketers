@@ -21,7 +21,7 @@ x-zendesk:
   section_id: 6552066355601
   url: https://support.appsflyer.com/hc/zh-cn/articles/360000620817
 ---
-【概要】：本文讲解了如何针对百度搜索启用AppsFlyer的归因与衡量功能，以便您在AppsFlyer面板上查看百度搜索广告的归因数据。
+> 【概要】：本文讲解了如何针对百度搜索启用AppsFlyer的归因与衡量功能，以便您在AppsFlyer面板上查看百度搜索广告的归因数据。
 
 #### 请注意:
 

@@ -24,7 +24,7 @@ x-zendesk:
   section_id: 6552066355601
   url: https://support.appsflyer.com/hc/zh-cn/articles/360000611338
 ---
-【概要】：本文讲解了如何针对美图启用AppsFlyer的归因与衡量功能，以便您在AppsFlyer面板上查看美图广告的归因数据。
+> 【概要】：本文讲解了如何针对美图启用AppsFlyer的归因与衡量功能，以便您在AppsFlyer面板上查看美图广告的归因数据。
 
 ### 请注意: 完成美图广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
 

@@ -16,7 +16,7 @@ x-zendesk:
   section_id: 6552066355601
   url: https://support.appsflyer.com/hc/zh-cn/articles/360016804657
 ---
-【概要】：TopOn是与AppsFlyer对接的广告变现平台，可为广告主提供广告变现增收解决方案。
+> 【概要】：TopOn是与AppsFlyer对接的广告变现平台，可为广告主提供广告变现增收解决方案。
 
 1. ### 点击 AppsFlyer 后台左侧菜单栏“合作伙伴配置”入口，并在搜索栏键入”Toponad”：
 
