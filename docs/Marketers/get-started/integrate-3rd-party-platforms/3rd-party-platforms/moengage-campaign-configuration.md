@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003139643-MoEngage-campaign-configuration
 ---
-**At a glance:** MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world.
+> **At a glance:** MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world.
 
 > 🚧 **Important!**
 >

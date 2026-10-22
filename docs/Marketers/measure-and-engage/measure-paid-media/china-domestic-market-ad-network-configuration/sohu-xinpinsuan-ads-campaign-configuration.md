@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001953697-Sohu-XinPinSuan-Ads-campaign-configuration
 ---
-**At a glance:** Sohu XinPinSuan Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** Sohu XinPinSuan Ads is an AppsFlyer ad network integrated partner.
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 

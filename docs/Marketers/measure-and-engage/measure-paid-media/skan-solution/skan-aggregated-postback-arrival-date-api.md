@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016646557-SKAN-aggregated-postback-arrival-date-API
 ---
-**At a glance:** Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
+> **At a glance:** Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
 
 ## SKAN aggregated postback arrival date API
 

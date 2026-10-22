@@ -28,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447103-Mixpanel-integration-with-AppsFlyer
 ---
-**At a glance:** Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform.
+> **At a glance:** Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
 

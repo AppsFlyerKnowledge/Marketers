@@ -20,7 +20,7 @@ x-zendesk:
   section_id: 6551361489297
   url: https://support.appsflyer.com/hc/en-us/articles/33732395637905-Notifications
 ---
-**At a glance:** Manage critical AppsFlyer account notifications from the platform.
+> **At a glance:** Manage critical AppsFlyer account notifications from the platform.
 
 You can select to receive notifications from AppsFlyer when certain events occur in your account. In your **notification preferences**, you can opt in or out of receiving these notifications.
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38874924986001-Activity-metrics-in-My-Dashboards
 ---
-**At a glance:** Use Activity metrics in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
+> **At a glance:** Use Activity metrics in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
 
 > 📘 **Note**
 >

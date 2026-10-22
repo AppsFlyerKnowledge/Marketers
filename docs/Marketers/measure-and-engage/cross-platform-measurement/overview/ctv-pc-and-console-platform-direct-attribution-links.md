@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15199908310801-CTV-PC-and-console-platform-direct-attribution-links
 ---
-**At a glance:**  Learn about the AppsFlyer attribution link structure and parameters for CTV, PC, and console platforms. **Note**: For Android and iOS apps, including Android PC games, use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">mobile attribution link instructions</Anchor>.
+> **At a glance:**  Learn about the AppsFlyer attribution link structure and parameters for CTV, PC, and console platforms. **Note**: For Android and iOS apps, including Android PC games, use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">mobile attribution link instructions</Anchor>.
 
 ## Overview
 

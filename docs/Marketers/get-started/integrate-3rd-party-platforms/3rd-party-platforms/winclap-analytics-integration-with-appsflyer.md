@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002403537-Winclap-Analytics-integration-with-AppsFlyer
 ---
-**At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.
+> **At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.
 
 > 🚧 **Important!**
 >

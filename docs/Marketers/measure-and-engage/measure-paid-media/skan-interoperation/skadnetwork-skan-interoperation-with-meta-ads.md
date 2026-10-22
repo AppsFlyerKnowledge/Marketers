@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017095198-SKAdNetwork-SKAN-interoperation-with-Meta-ads
 ---
-**At a glance:** Interoperability enables Meta ads to share decoded SKAN data with AppsFlyer and enables AppsFlyer to share your CV measurement bits (mapping) with Meta ads.
+> **At a glance:** Interoperability enables Meta ads to share decoded SKAN data with AppsFlyer and enables AppsFlyer to share your CV measurement bits (mapping) with Meta ads.
 
 <Image alt="" src="https://fast.wistia.com/embed/medias/15jnbml3h7/swatch" width="100%" />
 

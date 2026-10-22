@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002249257-SplitMetrics-Acquire-formerly-SearchAdsHQ-setup
 ---
-**At a glance:** Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured, AppsFlyer sends postbacks to SplitMetrics Acquire.
+> **At a glance:** Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured, AppsFlyer sends postbacks to SplitMetrics Acquire.
 
 ## Enabling Apple Ads attribution
 

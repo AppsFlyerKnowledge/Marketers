@@ -19,7 +19,7 @@ x-zendesk:
   section_id: 6551015977105
   url: https://support.appsflyer.com/hc/en-us/articles/27438234288529-My-Apps
 ---
-**At a glance:** View all your apps in AppsFlyer, search and filter them, pin your preferred apps, and perform specific actions for each app.
+> **At a glance:** View all your apps in AppsFlyer, search and filter them, pin your preferred apps, and perform specific actions for each app.
 
 ## Overview
 

@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/47096696016529-Manage-exception-users-for-SSO
 ---
-**At a glance:** Exception users are users who aren’t required to log in through SSO. SSO remains enforced for the account, and admins can give specific users access to an assigned alternative login method.
+> **At a glance:** Exception users are users who aren’t required to log in through SSO. SSO remains enforced for the account, and admins can give specific users access to an assigned alternative login method.
 
 ## **About exception users**
 

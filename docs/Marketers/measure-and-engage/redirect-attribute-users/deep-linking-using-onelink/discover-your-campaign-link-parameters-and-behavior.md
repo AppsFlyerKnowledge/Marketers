@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16678138044689-Discover-your-campaign-link-parameters-and-behavior
 ---
-**At a glance:** Discover the parameters included in your AppsFlyer campaign links and understand the expected user experience and link behavior.
+> **At a glance:** Discover the parameters included in your AppsFlyer campaign links and understand the expected user experience and link behavior.
 
 ## About Link Discovery
 

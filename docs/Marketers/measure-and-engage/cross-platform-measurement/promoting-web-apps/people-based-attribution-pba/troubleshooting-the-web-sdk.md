@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002075858-Troubleshooting-the-web-SDK
 ---
-**At a glance:** A troubleshooting guide for AppsFlyer Web SDK added directly to your website or implemented via Google Tag Manager.
+> **At a glance:** A troubleshooting guide for AppsFlyer Web SDK added directly to your website or implemented via Google Tag Manager.
 
 ## SDK added directly
 

@@ -28,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033826-Meta-Ads-integration-setup
 ---
-**At a glance:** Learn about integrating Meta ads with AppsFlyer.
+> **At a glance:** Learn about integrating Meta ads with AppsFlyer.
 
 ## Meta ads setup guide
 

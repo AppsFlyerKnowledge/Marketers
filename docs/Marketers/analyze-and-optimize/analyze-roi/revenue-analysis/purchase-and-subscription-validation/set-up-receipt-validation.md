@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42137474889489-Set-up-receipt-validation
 ---
-**At a glance:** Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results.
+> **At a glance:** Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results.
 
 ## Upgrade to new Receipt validation
 

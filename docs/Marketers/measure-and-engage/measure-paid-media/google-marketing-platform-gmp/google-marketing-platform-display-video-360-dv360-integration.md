@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017595598-Google-Marketing-Platform-Display-Video-360-DV360-integration
 ---
-**At a glance:** Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration  (dv360\_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes.
+> **At a glance:** Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration  (dv360\_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes.
 
 > 🚧 **Important!**
 >

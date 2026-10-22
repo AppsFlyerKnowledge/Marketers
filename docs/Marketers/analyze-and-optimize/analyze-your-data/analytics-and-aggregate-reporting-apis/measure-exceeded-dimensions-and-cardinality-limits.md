@@ -29,7 +29,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005099063-Measure-exceeded-dimensions-and-cardinality-limits
 ---
-**At a glance:** Why some aggregate data dimensions display as *exceeded* and how to prevent reaching cardinality limits.
+> **At a glance:** Why some aggregate data dimensions display as *exceeded* and how to prevent reaching cardinality limits.
 
 ## What are exceeded dimensions?
 

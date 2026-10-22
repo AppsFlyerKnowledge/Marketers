@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417686973841-Snapchat-integration-discrepancies
 ---
-**At a glance:** Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reposts.
+> **At a glance:** Learn about the different discrepancies between Snapchat and AppsFlyer dashboards and reposts.
 
 In certain instances, advertisers can see fewer installs on AppsFlyer dashboard than on the Snapchat Ads Manager dashboard. Sometimes, the discrepancy can be addressed by making changes to the settings in the AppsFlyer dashboard or Snapchat Ads Manager (e.g timezone settings, attribution windows etc.). However, a discrepancy between the two dashboards is expected. Advertisers should rely on the AppsFlyer dashboard as the source of truth when evaluating CPI and performance.
 

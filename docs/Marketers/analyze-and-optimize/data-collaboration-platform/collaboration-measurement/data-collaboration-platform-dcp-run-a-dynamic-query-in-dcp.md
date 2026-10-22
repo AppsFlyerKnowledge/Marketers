@@ -14,7 +14,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/51953788887569-Data-Collaboration-Platform-DCP-Run-a-dynamic-query-in-DCP
 ---
-**At a glance:** Dynamic Query lets you run your own SQL queries directly on your Data Collaboration Platform (DCP) data. Query your own data, your own AF attribution data, or data shared inside a collaboration, to answer specific questions without setting up a report.
+> **At a glance:** Dynamic Query lets you run your own SQL queries directly on your Data Collaboration Platform (DCP) data. Query your own data, your own AF attribution data, or data shared inside a collaboration, to answer specific questions without setting up a report.
 
 ## About Dynamic Query
 

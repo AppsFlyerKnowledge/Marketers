@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011890298-About-ATT-and-SKAN
 ---
-**At a glance**: Starting iOS 14.5, Apple requires that you implement and comply with the terms of <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). ATT means that *if your app collects data about end-users and shares it with other companies for purposes of tracking across apps and websites,* you must use the ATT consent prompt and get user consent in both the publisher and advertiser app. If you don't track, there is no need to display the prompt.
+> **At a glance**: Starting iOS 14.5, Apple requires that you implement and comply with the terms of <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). ATT means that *if your app collects data about end-users and shares it with other companies for purposes of tracking across apps and websites,* you must use the ATT consent prompt and get user consent in both the publisher and advertiser app. If you don't track, there is no need to display the prompt.
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 

@@ -23,7 +23,7 @@ x-zendesk:
   section_id: 6551289835025
   url: https://support.appsflyer.com/hc/en-us/articles/360004013198-Set-up-agencies
 ---
-**At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
+> **At a glance:** Get started working with agencies in AppsFlyer: all the details in this video!
 
 Watch the video below to learn:
 

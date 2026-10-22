@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/11189057923601-Partner-Integrations-FAQ
 ---
-**At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.
+> **At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.
 
 ## Use Partner Integrations
 

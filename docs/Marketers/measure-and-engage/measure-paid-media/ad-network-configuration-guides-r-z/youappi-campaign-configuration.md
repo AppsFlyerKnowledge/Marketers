@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212932106-YouAppi-campaign-configuration
 ---
-**At a glance:** YouAppi, an AppsFlyer ad network integrated partner, is a leading mobile growth marketing platform for premium mobile brands. In addition to click-based mobile attribution, YouAppi offers cost, ad revenue, retargeting and view-through attribution, which can be recorded with AppsFlyer.
+> **At a glance:** YouAppi, an AppsFlyer ad network integrated partner, is a leading mobile growth marketing platform for premium mobile brands. In addition to click-based mobile attribution, YouAppi offers cost, ad revenue, retargeting and view-through attribution, which can be recorded with AppsFlyer.
 
 To configure your campaigns with YouAppi, follow the steps below.
 

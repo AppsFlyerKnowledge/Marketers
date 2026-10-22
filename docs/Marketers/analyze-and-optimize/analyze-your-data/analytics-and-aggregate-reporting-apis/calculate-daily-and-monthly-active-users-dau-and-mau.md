@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39071744864657-Calculate-daily-and-monthly-active-users-DAU-and-MAU
 ---
-**At a glance:** Learn how to calculate Daily and Monthly active users to get valuable insights about your campaigns
+> **At a glance:** Learn how to calculate Daily and Monthly active users to get valuable insights about your campaigns
 
 ## Overview
 

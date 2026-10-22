@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004428658-Hotstar-campaign-configuration
 ---
-**At a glance:** Hotstar, an AppsFlyer integrated partner, is a major ad-supported streaming service in India.
+> **At a glance:** Hotstar, an AppsFlyer integrated partner, is a major ad-supported streaming service in India.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png)
 

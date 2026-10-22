@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005277446-Zenna-campaign-configuration
 ---
-**At a glance:** Zenna, an AppsFlyer integrated ad network partner, provides a performance-based user acquisition solution solely for mobile games.
+> **At a glance:** Zenna, an AppsFlyer integrated ad network partner, provides a performance-based user acquisition solution solely for mobile games.
 
 ## Setting up Zenna
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208005086-Unity-Ads-campaign-configuration
 ---
-**At a glance:** Unity Ads, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Unity Ads offers cost, ad revenue, and view-through attribution, which can be recorded in AppsFlyer.
+> **At a glance:** Unity Ads, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Unity Ads offers cost, ad revenue, and view-through attribution, which can be recorded in AppsFlyer.
 
 To configure your campaigns with Unity Ads, follow the steps below.
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004639203-Android-app-promotion-in-China
 ---
-**At a glance:** Best practices to promote your Android app in the Chinese market.
+> **At a glance:** Best practices to promote your Android app in the Chinese market.
 
 ## Android apps in China
 

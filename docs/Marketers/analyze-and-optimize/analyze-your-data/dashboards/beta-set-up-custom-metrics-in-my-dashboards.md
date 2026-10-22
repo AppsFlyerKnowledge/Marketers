@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-**At a glance:** Define your own metrics and use them to view data in My Dashboards.
+> **At a glance:** Define your own metrics and use them to view data in My Dashboards.
 
 ## About custom metrics
 

@@ -31,7 +31,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000677217-OneLink-Smart-Script-overview
 ---
-**At a glance:** Use OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
+> **At a glance:** Use OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208439256-In-app-event-postback-configuration
 ---
-**At a glance:** Measure app engagement and quality of your users, and optimize campaigns using in-app events data.
+> **At a glance:** Measure app engagement and quality of your users, and optimize campaigns using in-app events data.
 
 ## Overview
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208879066-Apply-IP-masking-to-user-data
 ---
-**At a glance:** How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners.
+> **At a glance:** How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners.
 
 ## IP masking
 

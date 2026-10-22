@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417303339921-Google-Ads-AdWords-FAQ-and-discrepancies
 ---
-**At a glance:** Troubleshoot common issues and discrepancies relating to Google Ads.
+> **At a glance:** Troubleshoot common issues and discrepancies relating to Google Ads.
 
 ## Google Ads FAQ
 

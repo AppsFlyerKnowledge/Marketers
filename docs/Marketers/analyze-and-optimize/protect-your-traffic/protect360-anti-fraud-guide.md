@@ -30,7 +30,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Attribution fraud drains marketing budgets, pollutes marketing performance data, and can turn successful campaigns into losing ones. **Protect360 provides app owners with real-time fraud protection and post-attribution detection.**
+> **At a glance:** Attribution fraud drains marketing budgets, pollutes marketing performance data, and can turn successful campaigns into losing ones. **Protect360 provides app owners with real-time fraud protection and post-attribution detection.**
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 

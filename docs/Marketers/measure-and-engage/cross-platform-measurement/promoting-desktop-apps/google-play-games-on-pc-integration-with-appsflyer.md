@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18315431772817-Google-Play-Games-on-PC-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your Google Play Games on PC/Android game or app with AppsFlyer to measure the performance of campaigns marketing these apps.
+> **At a glance:** Integrate your Google Play Games on PC/Android game or app with AppsFlyer to measure the performance of campaigns marketing these apps.
 
 ## About Google Play Games for PC attribution
 

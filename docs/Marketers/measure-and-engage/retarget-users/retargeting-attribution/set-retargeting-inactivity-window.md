@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360009305817-Set-retargeting-inactivity-window
 ---
-**At a glance:** Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
+> **At a glance:** Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
 
 ## Inactivity period
 

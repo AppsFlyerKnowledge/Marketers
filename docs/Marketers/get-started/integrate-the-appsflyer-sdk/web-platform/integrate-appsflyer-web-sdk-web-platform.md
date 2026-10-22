@@ -14,7 +14,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/50896216552337-Integrate-AppsFlyer-Web-SDK
 ---
-**At a glance:** Install the AppsFlyer Web SDK (also known as the pixel) on your website to report user visits and events to AppsFlyer, and set a persistent customer user ID (CUID) to unify journeys across platforms.
+> **At a glance:** Install the AppsFlyer Web SDK (also known as the pixel) on your website to report user visits and events to AppsFlyer, and set a persistent customer user ID (CUID) to unify journeys across platforms.
 
 ## Overview
 

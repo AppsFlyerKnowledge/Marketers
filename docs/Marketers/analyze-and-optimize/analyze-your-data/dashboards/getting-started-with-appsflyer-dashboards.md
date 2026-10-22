@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209680753-Getting-started-with-AppsFlyer-dashboards
 ---
-**At a glance:** The platform contains multiple dashboards. These dashboards enable you to view your campaign performance and app behavior.
+> **At a glance:** The platform contains multiple dashboards. These dashboards enable you to view your campaign performance and app behavior.
 
 ## AppsFlyer dashboards
 

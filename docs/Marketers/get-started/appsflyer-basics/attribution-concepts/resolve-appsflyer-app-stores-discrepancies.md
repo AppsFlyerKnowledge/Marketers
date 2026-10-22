@@ -31,7 +31,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040726-Resolve-AppsFlyer-App-stores-discrepancies
 ---
-**At a glance:** Find the leading causes of attribution discrepancies between AppsFlyer and app stores, as well as tips to minimize these discrepancies.
+> **At a glance:** Find the leading causes of attribution discrepancies between AppsFlyer and app stores, as well as tips to minimize these discrepancies.
 
 ## Attribution discrepancies
 

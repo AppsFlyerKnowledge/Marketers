@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18704273772689-Meta-Ads-Web-integration-setup-for-PC-and-console-apps
 ---
-**At a glance:** Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web.
+> **At a glance:** Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web.
 
 > 🚧 **Important!**
 >

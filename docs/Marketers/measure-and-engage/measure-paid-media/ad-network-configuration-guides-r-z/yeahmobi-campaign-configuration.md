@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209731663-Yeahmobi-campaign-configuration
 ---
-**At a glance:** Yeahmobi, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Yeahmobi provides cost data, which can be recorded with AppsFlyer.
+> **At a glance:** Yeahmobi, an AppsFlyer ad network integrated partner, is a video ad network for iOS and Android. In addition to click-based mobile attribution, Yeahmobi provides cost data, which can be recorded with AppsFlyer.
 
 To configure your campaigns with Yeahmobi, follow the steps below.
 

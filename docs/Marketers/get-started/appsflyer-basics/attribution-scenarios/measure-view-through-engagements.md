@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210084473-Measure-view-through-engagements
 ---
-**At a glance:** A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution.
+> **At a glance:** A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution.
 
 ## Overview
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004970386-Recording-multiple-agency-MCC-Google-Ads-accounts
 ---
-**At a glance:** Set up recording for different Google Ads accounts so traffic gets attributed correctly.
+> **At a glance:** Set up recording for different Google Ads accounts so traffic gets attributed correctly.
 
 ## Introduction
 

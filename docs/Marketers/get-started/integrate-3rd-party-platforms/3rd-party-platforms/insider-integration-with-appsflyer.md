@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016827838-Insider-integration-with-AppsFlyer
 ---
-**At a glance:** Insider, an AppsFlyer integrated partner, is a marketing and analytics platform for mobile and web apps. Insider delivers real-time predictive segmentation and personalization across web, mobile web, mobile app and ad channels.
+> **At a glance:** Insider, an AppsFlyer integrated partner, is a marketing and analytics platform for mobile and web apps. Insider delivers real-time predictive segmentation and personalization across web, mobile web, mobile app and ad channels.
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
 

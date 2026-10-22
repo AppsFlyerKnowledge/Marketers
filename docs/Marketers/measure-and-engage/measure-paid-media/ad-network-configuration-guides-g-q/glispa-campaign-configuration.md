@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209912983-Glispa-campaign-configuration
 ---
-**At a glance:** Glispa, an AppsFlyer integrated ad network partner, creates solutions that make it simple for agencies and brands to connect with target audiences and for publishers to monetize their apps. In addition to click-based mobile attribution, Glispa offers cost and view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Glispa, an AppsFlyer integrated ad network partner, creates solutions that make it simple for agencies and brands to connect with target audiences and for publishers to monetize their apps. In addition to click-based mobile attribution, Glispa offers cost and view-through attribution, which you can record with AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
 

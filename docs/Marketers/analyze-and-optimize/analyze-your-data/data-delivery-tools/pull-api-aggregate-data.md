@@ -31,7 +31,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034346-Pull-API-aggregate-data
 ---
-**At a glance:** Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
+> **At a glance:** Use this Pull API to get your AppsFlyer aggregate reports in CSV files.
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 

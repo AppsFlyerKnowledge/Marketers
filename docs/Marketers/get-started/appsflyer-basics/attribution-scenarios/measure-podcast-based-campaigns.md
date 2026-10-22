@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004494318-Measure-podcast-based-campaigns
 ---
-**At a glance:** Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions.
+> **At a glance:** Overcome the attribution challenge of mobile app advertising on podcasts by using one of several AppsFlyer solutions.
 
 ## Podcast attribution methods
 

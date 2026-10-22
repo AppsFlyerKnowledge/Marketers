@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208209876-NativeX-campaign-configuration
 ---
-**At a glance:** NativeX, an AppsFlyer integrated partner, is a mobile advertising network specializing in native ad formats that seamlessly blend in with the user’s game or app, delivering higher revenues for developers. In addition to click-based mobile attribution, NativeX also offers cost and view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** NativeX, an AppsFlyer integrated partner, is a mobile advertising network specializing in native ad formats that seamlessly blend in with the user’s game or app, delivering higher revenues for developers. In addition to click-based mobile attribution, NativeX also offers cost and view-through attribution, which you can record with AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1" width="150px" />
 

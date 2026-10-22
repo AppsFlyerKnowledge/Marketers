@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18170499230609-CTV-PC-and-console-data-via-Data-Locker
 ---
-**At a glance:** Cross-platform (CTV, PC, and console platforms) reports available via AppsFlyer. **Note**: For platforms with Android and iOS operating systems, <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate</Anchor> and <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data</Anchor> report availability is the same as for mobile apps.
+> **At a glance:** Cross-platform (CTV, PC, and console platforms) reports available via AppsFlyer. **Note**: For platforms with Android and iOS operating systems, <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate</Anchor> and <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data</Anchor> report availability is the same as for mobile apps.
 
 ## Cross-platform reports
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360003799658-Texting-desktop-users-a-link-to-your-mobile-app
 ---
-**At a glance:** Convert desktop users to mobile app users using SMS vendors and OneLink.
+> **At a glance:** Convert desktop users to mobile app users using SMS vendors and OneLink.
 
 ![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
 

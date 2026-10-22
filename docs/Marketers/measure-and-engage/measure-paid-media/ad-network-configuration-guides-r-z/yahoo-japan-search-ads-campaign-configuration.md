@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4412602890641-Yahoo-Japan-Search-Ads-campaign-configuration
 ---
-**At a glance:** Yahoo Japan Search Ads, a self-reporting network (SRN) partner that combines advertising and analytics.
+> **At a glance:** Yahoo Japan Search Ads, a self-reporting network (SRN) partner that combines advertising and analytics.
 
 * On December 15, 2021, the legacy integration with Yahoo Japan Search Ads, *yahoojapansearch\_int,* was replaced with a new integration, *yjsearch\_int*. Learn how to [start working with the new API](/docs/yahoo-japan-search-ads-campaign-configuration#integrating-with-the-new-api).
 

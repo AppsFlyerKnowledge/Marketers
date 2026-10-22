@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/42626850533137-Data-Collaboration-Platform-DCP-Enrich-sources-with-ID5
 ---
-**At a glance:** Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.
+> **At a glance:** Enrich your first-party data with ID5 identifiers to unify fragmented user data and improve match rates with activation partners, resulting in larger audiences.
 
 ## About ID5 enrichment
 

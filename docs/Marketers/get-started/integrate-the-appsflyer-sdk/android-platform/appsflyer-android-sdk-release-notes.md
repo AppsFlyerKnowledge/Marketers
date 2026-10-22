@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001256006-AppsFlyer-Android-SDK-release-notes
 ---
-**At a glance:** Check out the SDK release notes for a quick overview of the latest changes to the Android SDK. Developers looking for more comprehensive details should review <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-release-notes">the Android Release Notes on the Dev Hub</Anchor>.
+> **At a glance:** Check out the SDK release notes for a quick overview of the latest changes to the Android SDK. Developers looking for more comprehensive details should review <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-release-notes">the Android Release Notes on the Dev Hub</Anchor>.
 
 **Legacy SDK versions for iOS and Android will stop being supported on a fixed six-month cycle.** This cycle is designed to provide advanced notice, helping teams plan ahead and maintain full app functionality without disruption. Upgrading to the latest SDK ensures access to the newest features, improved stability, and ongoing support.
 

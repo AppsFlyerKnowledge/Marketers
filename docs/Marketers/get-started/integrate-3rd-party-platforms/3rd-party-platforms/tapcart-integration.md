@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4411720533905-Tapcart-integration
 ---
-**At a glance:** Use Tapcart to leverage AppsFlyer capabilities in your app.
+> **At a glance:** Use Tapcart to leverage AppsFlyer capabilities in your app.
 
 ## Introduction
 

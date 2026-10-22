@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001430625-Kenshoo-Meta-campaign-management-partner-configuration
 ---
-**At a glance:** Kenshoo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), empowers every marketer in the world with technology to build brands and generate demand across all media.
+> **At a glance:** Kenshoo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), empowers every marketer in the world with technology to build brands and generate demand across all media.
 
 ## Setting up Kenshoo
 

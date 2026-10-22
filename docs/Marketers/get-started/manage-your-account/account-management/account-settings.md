@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/44784756352273-Account-settings
 ---
-**At a glance:** Use the **Account settings** page to manage your personal profile, account-level settings, and AI capabilities from one single place.
+> **At a glance:** Use the **Account settings** page to manage your personal profile, account-level settings, and AI capabilities from one single place.
 
 ## **About Account settings**
 

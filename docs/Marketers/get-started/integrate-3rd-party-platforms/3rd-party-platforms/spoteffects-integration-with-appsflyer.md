@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004574426-Spoteffects-integration-with-AppsFlyer
 ---
-**At a glance:** Spoteffects, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online shops and websites based on immediately generated visits and conversions per ad.
+> **At a glance:** Spoteffects, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online shops and websites based on immediately generated visits and conversions per ad.
 
 > 🚧 **Important!**
 >

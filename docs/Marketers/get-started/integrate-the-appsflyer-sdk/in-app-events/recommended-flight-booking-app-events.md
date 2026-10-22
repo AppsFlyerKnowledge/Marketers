@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019670857--Recommended-flight-booking-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app.
 
 ## <Image alt="InApp_Events_flight.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> Flight booking
 

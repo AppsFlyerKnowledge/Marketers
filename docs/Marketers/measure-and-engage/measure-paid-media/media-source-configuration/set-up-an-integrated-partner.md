@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410395957521-Set-up-an-integrated-partner
 ---
-**At a glance:** Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer.
+> **At a glance:** Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer.
 
 ## Overview
 

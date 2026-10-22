@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43205325114897-Data-Collaboration-Platform-DCP-Prepare-source-data-for-ingestion
 ---
-**At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
+> **At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
 
 ## About data preparation
 

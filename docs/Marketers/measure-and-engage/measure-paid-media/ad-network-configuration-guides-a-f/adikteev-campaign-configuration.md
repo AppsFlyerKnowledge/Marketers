@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001997643-Adikteev-campaign-configuration
 ---
-**At a glance:** Adikteev, an AppsFlyer ad network integrated partner, is an ad-tech company focusing on in-app retargeting and engagement advertising technology. Adikteev offers both click-based and view-through mobile attribution. In addition, Adikteev also offers click-based retargeting which you can record with AppsFlyer.
+> **At a glance:** Adikteev, an AppsFlyer ad network integrated partner, is an ad-tech company focusing on in-app retargeting and engagement advertising technology. Adikteev offers both click-based and view-through mobile attribution. In addition, Adikteev also offers click-based retargeting which you can record with AppsFlyer.
 
 ## Setting up Adikteev
 

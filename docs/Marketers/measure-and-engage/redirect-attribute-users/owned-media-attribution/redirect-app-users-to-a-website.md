@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4460838224273-Redirect-app-users-to-a-website
 ---
-**At a glance:** Redirect app users to a web URL or social media page by using a URL generated with OneLink.
+> **At a glance:** Redirect app users to a web URL or social media page by using a URL generated with OneLink.
 
 ## Redirect app users to a web URL
 

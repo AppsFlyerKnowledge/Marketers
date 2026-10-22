@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410672219025-Recommended-sports-betting-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your sports betting app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your sports betting app.
 
 ## <Image alt="soccer_ball.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Sports betting
 

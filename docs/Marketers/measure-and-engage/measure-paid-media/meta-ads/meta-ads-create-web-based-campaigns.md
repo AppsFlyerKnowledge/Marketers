@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25646834966033-Meta-Ads-Create-web-based-campaigns
 ---
-**At a glance:** Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads
+> **At a glance:** Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads
 
 ## Overview
 

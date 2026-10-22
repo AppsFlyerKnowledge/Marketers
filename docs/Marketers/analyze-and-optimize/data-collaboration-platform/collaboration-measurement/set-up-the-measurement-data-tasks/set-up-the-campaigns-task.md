@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38190881693969-Set-up-the-Campaigns-task
 ---
-**At a glance:** Learn how to configure the campaign source for on-site, off-site and combined campaigns (on-site and off-site campaigns).
+> **At a glance:** Learn how to configure the campaign source for on-site, off-site and combined campaigns (on-site and off-site campaigns).
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping">The campaign source</Anchor> connects on-site conversion events to their respective off-site, on-site, and combined campaigns, enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
 

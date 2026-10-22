@@ -28,7 +28,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
+> **At a glance:** The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
 
 ## About Protect360 dashboard
 

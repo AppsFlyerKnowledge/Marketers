@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002386997-PBA-media-source-attribution-rules
 ---
-**At a glance:** Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits and conversion events. Ad level metrics available.
+> **At a glance:** Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits and conversion events. Ad level metrics available.
 
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 

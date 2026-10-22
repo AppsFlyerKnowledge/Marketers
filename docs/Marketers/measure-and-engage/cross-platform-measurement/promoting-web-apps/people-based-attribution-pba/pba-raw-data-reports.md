@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001917778-PBA-raw-data-reports
 ---
-**At a glance**: PBA raw data reports are available via Data Locker.
+> **At a glance**: PBA raw data reports are available via Data Locker.
 
 ## PBA raw data reports
 

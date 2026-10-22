@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4414816418065-Security-Center
 ---
-**At a glance:** Review and manage the status of all the security-related features of your AppsFlyer account from a single location.
+> **At a glance:** Review and manage the status of all the security-related features of your AppsFlyer account from a single location.
 
 ## What can I do from the Security Center?
 

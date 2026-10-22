@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002669837-PBA-Web-Assisted-Installs
 ---
-**At a glance:** At a glance: Use the PBA Web-Assisted Installs dashboard to understand the impact of your web marketing efforts on mobile app installs and to enhance the performance of web campaigns.
+> **At a glance:** At a glance: Use the PBA Web-Assisted Installs dashboard to understand the impact of your web marketing efforts on mobile app installs and to enhance the performance of web campaigns.
 
 **Web-Assisted Installs use case**
 

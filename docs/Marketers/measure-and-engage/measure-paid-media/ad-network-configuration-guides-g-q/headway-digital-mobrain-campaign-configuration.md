@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209803183-Headway-Digital-Mobrain-campaign-configuration
 ---
-**At a glance:** Headway Digital, an AppsFlyer integrated ad network partner, provides data-focused marketing solutions that drive execution and powerful brand insight on mobile. In addition to click-based mobile attribution, they offer cost, retargeting, and view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Headway Digital, an AppsFlyer integrated ad network partner, provides data-focused marketing solutions that drive execution and powerful brand insight on mobile. In addition to click-based mobile attribution, they offer cost, retargeting, and view-through attribution, which you can record with AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobrain.png?v=1" width="213px" />
 

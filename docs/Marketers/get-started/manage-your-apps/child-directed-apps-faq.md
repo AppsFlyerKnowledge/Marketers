@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18324823209745-Child-directed-apps-FAQ
 ---
-**At a glance:** Get answers to frequently asked questions about apps directed towards children.
+> **At a glance:** Get answers to frequently asked questions about apps directed towards children.
 
 ## Overview
 

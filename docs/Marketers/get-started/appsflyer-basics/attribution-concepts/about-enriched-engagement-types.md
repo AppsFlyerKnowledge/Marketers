@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21837486015889-About-Enriched-Engagement-Types
 ---
-**At a glance:** While ad types have become sophisticated and complex, reporting has remained very narrow, focusing solely on view-through and click-through attribution. Enriched Engagement Types changes that by reflecting users' full spectrum of engagement and intentionality when viewing or interacting with an ad.
+> **At a glance:** While ad types have become sophisticated and complex, reporting has remained very narrow, focusing solely on view-through and click-through attribution. Enriched Engagement Types changes that by reflecting users' full spectrum of engagement and intentionality when viewing or interacting with an ad.
 
 ## Introduction
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003981026-Outbrain-campaign-configuration
 ---
-**At a glance:** Outbrain, an AppsFlyer integrated partner, is a premium discovery platform that helps connect marketers to their target audience through personalized recommendations on the world's leading publishers.
+> **At a glance:** Outbrain, an AppsFlyer integrated partner, is a premium discovery platform that helps connect marketers to their target audience through personalized recommendations on the world's leading publishers.
 
 ## Setting up Outbrain integration
 

@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15920604187921-Custom-dimensions
 ---
-**At a glance:** Define your own dimensions and use them to group and view data in the Overview dashboard.
+> **At a glance:** Define your own dimensions and use them to group and view data in the Overview dashboard.
 
 <Image alt="" src="https://fast.wistia.com/embed/medias/tvcdofnwjo/swatch" width="100%" />
 

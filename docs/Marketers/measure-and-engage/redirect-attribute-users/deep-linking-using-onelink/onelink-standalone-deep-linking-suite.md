@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/44703014449809-OneLink-Standalone-Deep-Linking-Suite
 ---
-**At a glance:** The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
+> **At a glance:** The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
 
 ## About the OneLink Standalone Deep Linking Suite
 

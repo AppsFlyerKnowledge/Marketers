@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000520785-Measure-sessions
 ---
-**At a glance**: The sessions metric is used by advertisers to measure app user engagement during a given period.
+> **At a glance**: The sessions metric is used by advertisers to measure app user engagement during a given period.
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 

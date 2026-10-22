@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002330178-Using-AppsFlyer-with-TWA
 ---
-**At a glance:** Use AppsFlyer with Trusted Web Activities (TWA) to measure installs and record in-app events.
+> **At a glance:** Use AppsFlyer with Trusted Web Activities (TWA) to measure installs and record in-app events.
 
 ## Introduction
 

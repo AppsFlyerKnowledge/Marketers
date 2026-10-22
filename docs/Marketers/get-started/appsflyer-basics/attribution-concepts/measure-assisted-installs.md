@@ -29,7 +29,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040506-Measure-assisted-installs
 ---
-**At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
+> **At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
 
 ## Assisted installs
 

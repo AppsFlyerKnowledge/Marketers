@@ -31,7 +31,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000847378-Determine-user-location
 ---
-**At a glance:** User location is determined using the device IP address which is mapped to the general location of the user (city, state, country, and so on). User location impacts creatives selection, campaign cost, engagement, and user quality.
+> **At a glance:** User location is determined using the device IP address which is mapped to the general location of the user (city, state, country, and so on). User location impacts creatives selection, campaign cost, engagement, and user quality.
 
 ![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
 

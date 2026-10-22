@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24604528827921-Data-Collaboration-Platform-DCP-Set-up-your-cloud-services
 ---
-**At a glance:** Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets.
+> **At a glance:** Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets.
 
 ## About cloud service setup
 

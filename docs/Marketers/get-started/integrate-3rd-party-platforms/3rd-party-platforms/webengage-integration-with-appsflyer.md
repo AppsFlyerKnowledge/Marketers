@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/7898288493841-WebEngage-integration-with-AppsFlyer
 ---
-**At a glance:** WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world.
+> **At a glance:** WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world.
 
 > 🚧 **Important!**
 >

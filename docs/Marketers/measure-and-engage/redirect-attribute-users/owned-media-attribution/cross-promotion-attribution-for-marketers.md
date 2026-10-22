@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004481946-Cross-promotion-attribution-for-marketers
 ---
-**At a glance:** Attribute installs from cross-promotion campaigns that promote your apps on other apps you own.
+> **At a glance:** Attribute installs from cross-promotion campaigns that promote your apps on other apps you own.
 
 ![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 

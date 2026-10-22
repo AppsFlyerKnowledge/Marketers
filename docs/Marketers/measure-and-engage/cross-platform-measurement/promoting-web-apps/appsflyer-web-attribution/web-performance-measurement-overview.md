@@ -26,7 +26,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
+> **At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
 
 ## About Web Performance Measurement
 

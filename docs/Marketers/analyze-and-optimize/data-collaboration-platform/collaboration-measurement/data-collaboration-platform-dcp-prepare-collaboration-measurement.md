@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32144170371985-Data-collaboration-platform-DCP-Prepare-collaboration-measurement
 ---
-**At a glance:** Learn how to create measurement data sources, and how to provide access to them in a way that can be digested by the attribution job.
+> **At a glance:** Learn how to create measurement data sources, and how to provide access to them in a way that can be digested by the attribution job.
 
 ## Overview
 

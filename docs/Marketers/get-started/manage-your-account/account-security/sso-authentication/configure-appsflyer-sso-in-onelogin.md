@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15044997313041-Configure-AppsFlyer-SSO-in-OneLogin
 ---
-**At a glance:** Configure the SSO process using OneLogin as an identity provider (IdP).
+> **At a glance:** Configure the SSO process using OneLogin as an identity provider (IdP).
 
 The first stage in configuring the AppsFlyer SSO process is done on the OneLogin platform. Follow the steps below:
 

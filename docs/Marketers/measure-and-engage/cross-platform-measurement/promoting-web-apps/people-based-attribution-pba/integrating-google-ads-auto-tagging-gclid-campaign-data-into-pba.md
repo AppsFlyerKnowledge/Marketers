@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011487937-Integrating-Google-Ads-auto-tagging-gclid-campaign-data-into-PBA
 ---
-**At a glance:** Enrich PBA data with auto-tagging gclid campaign information by connecting to Google Ads.
+> **At a glance:** Enrich PBA data with auto-tagging gclid campaign information by connecting to Google Ads.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
 

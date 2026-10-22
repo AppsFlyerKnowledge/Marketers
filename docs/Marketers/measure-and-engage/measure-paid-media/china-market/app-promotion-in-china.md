@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004656946-App-promotion-in-China
 ---
-**At a glance:** Promote your app in the Chinese market.
+> **At a glance:** Promote your app in the Chinese market.
 
 [**China Internet Report**](https://www.scmp.com/china-internet-report) 2020 presented by SCMP with an overview of the Chinese market
 

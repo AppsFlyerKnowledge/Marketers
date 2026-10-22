@@ -27,7 +27,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Data Locker sends your report data to cloud storage for loading into your BI systems. You can select between different storage destinations: An AppsFlyer-owned bucket in AWS, or storage owned by you in AWS, GCS, Yandex, BigQuery, and Snowflake. Data Locker supports [multiple destinations](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination). That means you can send all data to multiple destinations, segregate data by destination, or a combination of both.
+> **At a glance:** Data Locker sends your report data to cloud storage for loading into your BI systems. You can select between different storage destinations: An AppsFlyer-owned bucket in AWS, or storage owned by you in AWS, GCS, Yandex, BigQuery, and Snowflake. Data Locker supports [multiple destinations](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination). That means you can send all data to multiple destinations, segregate data by destination, or a combination of both.
 
 ## Overview
 

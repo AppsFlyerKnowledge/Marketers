@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003602866-Navigate-AppsFlyer-with-the-launchpad
 ---
-**At a glance:** At a glance: Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard.
+> **At a glance:** At a glance: Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard.
 
 ## Using Launchpad
 

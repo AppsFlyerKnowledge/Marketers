@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43525434385809-Choose-attribution-parameters-for-landing-page-URLs
 ---
-**At a glance:** Use consistent, complete URL parameters in your website landing page links to get the best campaign granularity while maintaining accurate attribution in Web Performance Measurement.
+> **At a glance:** Use consistent, complete URL parameters in your website landing page links to get the best campaign granularity while maintaining accurate attribution in Web Performance Measurement.
 
 ## About URL attribution parameter classes
 

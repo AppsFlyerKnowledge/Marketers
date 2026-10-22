@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4543811207313-Set-up-AppsFlyer-preload-referrer-attribution
 ---
-**At a glance:** AppsFlyer uses preload referrer to attribute installs to preload campaigns, where marketers contract with Original Equipment Manufacturers (OEMs), mobile carriers, and app discovery partners to preload their app at the factory or at the time the device is first turned on by the user.
+> **At a glance:** AppsFlyer uses preload referrer to attribute installs to preload campaigns, where marketers contract with Original Equipment Manufacturers (OEMs), mobile carriers, and app discovery partners to preload their app at the factory or at the time the device is first turned on by the user.
 
 ## Overview
 

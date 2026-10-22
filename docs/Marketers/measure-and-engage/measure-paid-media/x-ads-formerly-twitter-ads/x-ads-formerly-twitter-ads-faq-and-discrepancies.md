@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410464352017-X-Ads-formerly-Twitter-Ads-FAQ-and-discrepancies
 ---
-**At a glance:** Resolve X Ads FAQs and understand discrepancies.
+> **At a glance:** Resolve X Ads FAQs and understand discrepancies.
 
 ## X Ads FAQ and discrepancies
 

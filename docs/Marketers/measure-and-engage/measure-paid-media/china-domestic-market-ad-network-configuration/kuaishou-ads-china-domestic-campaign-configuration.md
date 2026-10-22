@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001748437-Kuaishou-Ads-China-Domestic-campaign-configuration
 ---
-**At a glance:** Kuaishou is an AppsFlyer ad network integrated partner.
+> **At a glance:** Kuaishou is an AppsFlyer ad network integrated partner.
 
 ## Setting Up Kuaishou
 

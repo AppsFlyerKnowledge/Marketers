@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360007630318-Using-PBA-dashboards
 ---
-**At a glance:** Get the most out of our PBA dashboard features.
+> **At a glance:** Get the most out of our PBA dashboard features.
 
 ![AppsFlyer-People-Based-Attribution_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 

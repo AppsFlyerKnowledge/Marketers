@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24603890457617-Data-Collaboration-Platform-DCP-Add-connections
 ---
-**At a glance:** Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
+> **At a glance:** Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
 
 ## About DCP connections
 

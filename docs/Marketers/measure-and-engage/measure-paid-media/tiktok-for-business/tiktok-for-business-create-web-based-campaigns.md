@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40496161157521-TikTok-for-Business-Create-web-based-campaigns
 ---
-**At a glance:** Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads
+> **At a glance:** Use TikTok Ads Web campaigns to attribute web-to-app conversions from TikTok Ads
 
 ## Overview
 

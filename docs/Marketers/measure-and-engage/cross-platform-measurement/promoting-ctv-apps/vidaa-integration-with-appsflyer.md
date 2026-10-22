@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/10400222972433-Vidaa-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your Vidaa Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Vidaa.
+> **At a glance:** Integrate your Vidaa Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Vidaa.
 
 ## About Vidaa CTV attribution
 

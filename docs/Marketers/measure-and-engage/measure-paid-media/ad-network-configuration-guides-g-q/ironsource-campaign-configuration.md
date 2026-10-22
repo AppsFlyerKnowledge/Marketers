@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208005096-ironSource-campaign-configuration
 ---
-**At a glance:** ironSource, an AppsFlyer integrated partner, builds monetization, engagement, analytics, and discovery tools for app developers, device manufacturers, mobile carriers, and advertisers. In addition to click-based mobile attribution, ironSource also offers cost, ad revenue, retargeting and view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** ironSource, an AppsFlyer integrated partner, builds monetization, engagement, analytics, and discovery tools for app developers, device manufacturers, mobile carriers, and advertisers. In addition to click-based mobile attribution, ironSource also offers cost, ad revenue, retargeting and view-through attribution, which you can record with AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 

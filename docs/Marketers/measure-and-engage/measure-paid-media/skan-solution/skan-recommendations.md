@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/7078169815057-SKAN-recommendations
 ---
-**At a glance**: Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements.
+> **At a glance**: Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements.
 
 ## Overview
 

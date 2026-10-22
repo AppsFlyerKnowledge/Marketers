@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481550609-Using-Firebase-and-Google-Tag-Manager-with-AppsFlyer-Sending-installs-and-events
 ---
-**At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
+> **At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
 
 ## Configuring events in the app
 

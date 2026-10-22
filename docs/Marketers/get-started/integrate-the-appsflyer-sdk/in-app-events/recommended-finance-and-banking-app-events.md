@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019598337-Recommended-finance-and-banking-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your finance and banking app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your finance and banking app.
 
 ## <Image alt="banking.png" src="https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png" width="100px" /> Finance and banking
 

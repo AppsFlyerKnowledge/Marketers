@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210118726-Taptica-campaign-configuration
 ---
-**At a glance:** Taptica, an AppsFlyer ad network integrated partner, provides data-focused marketing solutions that drive execution and powerful brand insight on mobile. In addition to click-based mobile attribution, Taptica offers cost, retargeting and view-through attribution, which can be recorded with AppsFlyer.
+> **At a glance:** Taptica, an AppsFlyer ad network integrated partner, provides data-focused marketing solutions that drive execution and powerful brand insight on mobile. In addition to click-based mobile attribution, Taptica offers cost, retargeting and view-through attribution, which can be recorded with AppsFlyer.
 
 To configure your campaigns with Taptica, follow the steps below.
 

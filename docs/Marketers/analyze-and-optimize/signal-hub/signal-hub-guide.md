@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences with real-world purchase signals and activate them instantly across major media platforms.
+> **At a glance:** The AppsFlyer Signal Hub enables marketers to create privacy-safe audiences with real-world purchase signals and activate them instantly across major media platforms.
 
 <Embed title="Signal Hub guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo" providerUrl="https://www.youtube.com" />
 

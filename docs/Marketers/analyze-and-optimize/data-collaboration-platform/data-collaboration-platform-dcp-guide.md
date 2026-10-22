@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage their combined data to achieve maximum campaign results and create powerful new ad revenue streams.
+> **At a glance:** The AppsFlyer Data Collaboration Platform provides a seamless, privacy-centric solution for commerce media networks and collaborating brands to leverage their combined data to achieve maximum campaign results and create powerful new ad revenue streams.
 
 <Image alt="53877 Need KB image for a new DCP KB (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
 

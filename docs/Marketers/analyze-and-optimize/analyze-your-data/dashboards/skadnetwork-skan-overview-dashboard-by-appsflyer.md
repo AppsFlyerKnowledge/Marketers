@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011307357-SKAdNetwork-SKAN-overview-dashboard-by-AppsFlyer
 ---
-**At a glance:** The SKAdNetwork (SKAN) dashboard displays campaign metrics reported via iOS SKAN postbacks and additional data points during initial user measurement windows. Modeled metrics which consider null conversions are also available. Data displays using the install or postback arrival date.
+> **At a glance:** The SKAdNetwork (SKAN) dashboard displays campaign metrics reported via iOS SKAN postbacks and additional data points during initial user measurement windows. Modeled metrics which consider null conversions are also available. Data displays using the install or postback arrival date.
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 

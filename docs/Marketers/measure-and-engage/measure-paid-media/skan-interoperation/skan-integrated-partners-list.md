@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360012640377-SKAN-integrated-partners-list
 ---
-**At a glance:** Lists of ad network partners having SKAN integration with AppsFlyer, Ad network Apple SKAdNewtork IDs.
+> **At a glance:** Lists of ad network partners having SKAN integration with AppsFlyer, Ad network Apple SKAdNewtork IDs.
 
 ## AppsFlyer SKAN partners
 

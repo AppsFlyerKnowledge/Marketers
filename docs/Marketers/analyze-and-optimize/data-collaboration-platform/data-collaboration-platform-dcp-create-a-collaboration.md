@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32192739295377-Data-Collaboration-Platform-DCP-Create-a-collaboration
 ---
-**At a glance:** Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results.
+> **At a glance:** Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results.
 
 ## About collaborations
 

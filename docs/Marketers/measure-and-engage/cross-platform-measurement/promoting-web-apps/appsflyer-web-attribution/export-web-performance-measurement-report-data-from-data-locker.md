@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43510758321809-Export-Web-Performance-Measurement-report-data-from-Data-Locker
 ---
-**At a glance:** Export Web Performance Measurement data from Data Locker in two report types that enable you to analyze website performance at the right level. Use End User Events to analyze all visits and events, and use Conversions to count and attribute unique conversion anchors (first visits, revisits, and user-acquisition events).
+> **At a glance:** Export Web Performance Measurement data from Data Locker in two report types that enable you to analyze website performance at the right level. Use End User Events to analyze all visits and events, and use Conversions to count and attribute unique conversion anchors (first visits, revisits, and user-acquisition events).
 
 > ❗️ **Warning**
 >

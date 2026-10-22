@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001237818-Convert-your-mobile-web-visitors-to-app-users
 ---
-**At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
+> **At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
 
 ## Mobile web-to-app attribution solutions
 

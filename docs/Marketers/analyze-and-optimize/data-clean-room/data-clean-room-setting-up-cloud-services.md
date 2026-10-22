@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive reports.
+> **At a glance:** Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive reports.
 
 ## Overview
 

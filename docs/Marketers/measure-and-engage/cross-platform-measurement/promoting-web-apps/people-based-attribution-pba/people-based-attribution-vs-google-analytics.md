@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001305617-People-Based-Attribution-vs-Google-Analytics
 ---
-**At a glance:** The differences between People-based Attribution (PBA) and Google Analytics
+> **At a glance:** The differences between People-based Attribution (PBA) and Google Analytics
 
 ## PBA compared to Google Analytics
 

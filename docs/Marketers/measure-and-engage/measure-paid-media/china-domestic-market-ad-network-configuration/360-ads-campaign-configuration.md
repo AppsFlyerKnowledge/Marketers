@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002152957-360-Ads-campaign-configuration
 ---
-**At a glance:** 360 Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** 360 Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up 360 Ads
 

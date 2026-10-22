@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25301111725329-ROI360-onboarding-guide
 ---
-**At a glance**: Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
+> **At a glance**: Follow the onboarding instructions in this article to get ROI360 for cost and revenue data up and running.
 
 ![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
 

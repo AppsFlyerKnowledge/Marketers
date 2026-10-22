@@ -24,7 +24,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
+> **At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
 
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 

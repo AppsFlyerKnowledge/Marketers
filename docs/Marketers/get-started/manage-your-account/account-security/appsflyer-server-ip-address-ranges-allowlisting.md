@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447093-AppsFlyer-server-IP-address-ranges-allowlisting
 ---
-**At a glance:** AppsFlyer IP addresses used for outgoing API requests.
+> **At a glance:** AppsFlyer IP addresses used for outgoing API requests.
 
 ## AppsFlyer server IP address ranges
 

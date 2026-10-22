@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns.
+> **At a glance:** Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns.
 
 ## About Creative Management
 

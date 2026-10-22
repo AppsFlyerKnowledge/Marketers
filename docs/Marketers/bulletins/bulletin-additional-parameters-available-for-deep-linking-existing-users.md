@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/5733303620113-Bulletin-Additional-parameters-available-for-deep-linking-existing-users
 ---
-**At a glance:** Returning additional parameters for deep linking existing users via UDL method.
+> **At a glance:** Returning additional parameters for deep linking existing users via UDL method.
 
 | **What's new** | AppsFlyer SDK V6.6+ allows UDL method to return additional parameters for deep linking existing users (with the app installed). |
 | --- | --- |

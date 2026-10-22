@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002159158-OPPO-campaign-configuration
 ---
-**At a glance:** OPPO is an AppsFlyer ad network integrated partner.
+> **At a glance:** OPPO is an AppsFlyer ad network integrated partner.
 
 ## Setting Up OPPO
 

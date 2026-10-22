@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000603117-Deleting-things-in-AppsFlyer
 ---
-**At a glance:** Learn how advertisers can remove apps to stop attribution, remove media sources, or delete user-related data.
+> **At a glance:** Learn how advertisers can remove apps to stop attribution, remove media sources, or delete user-related data.
 
 <Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 

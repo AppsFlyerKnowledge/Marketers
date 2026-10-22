@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360013821097-Onboarding-guide-to-People-Based-Attribution
 ---
-**At a glance:** PBA setup checklist
+> **At a glance:** PBA setup checklist
 
 ## Setting up PBA
 

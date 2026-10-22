@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015760757-Rockerbox-integration-with-AppsFlyer
 ---
-**At a glance:** Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps.
+> **At a glance:** Learn how to automatically share data from AppsFlyer to Rockerbox, a marketing and analytics platform for mobile and web apps.
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 

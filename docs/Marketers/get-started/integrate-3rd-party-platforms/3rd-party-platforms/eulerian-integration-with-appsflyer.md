@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001521405-Eulerian-integration-with-AppsFlyer
 ---
-**At a glance:** Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and real-time optimization of e-marketing operations. Based on an exhaustive data collection system, Eulerian marketing suite provides a combination of marketing web attribution and data management solutions. This technology enables users to centralize, analyze, manage and activate data in real-time.
+> **At a glance:** Eulerian, an AppsFlyer integrated partner, is focusing on the analysis and real-time optimization of e-marketing operations. Based on an exhaustive data collection system, Eulerian marketing suite provides a combination of marketing web attribution and data management solutions. This technology enables users to centralize, analyze, manage and activate data in real-time.
 
 > 🚧 **Important!**
 >

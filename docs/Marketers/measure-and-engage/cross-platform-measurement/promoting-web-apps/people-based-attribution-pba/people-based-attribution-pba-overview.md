@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002274017-People-Based-Attribution-PBA-Overview
 ---
-**At a glance:** People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices.
+> **At a glance:** People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices.
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 

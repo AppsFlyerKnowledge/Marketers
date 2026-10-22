@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/10164066030737-Measure-reinstalls
 ---
-**At a glance**: A reinstall occurs when a user installs an app, uninstalls it, and then reinstalls it. Reinstalls result in one of the following attribution types: non-organic reinstall, organic reinstall, or re-attribution (retargeting). Reinstalls help avoid multiple charges for users that uninstall and install again.
+> **At a glance**: A reinstall occurs when a user installs an app, uninstalls it, and then reinstalls it. Reinstalls result in one of the following attribution types: non-organic reinstall, organic reinstall, or re-attribution (retargeting). Reinstalls help avoid multiple charges for users that uninstall and install again.
 
 ## What is a reinstall
 

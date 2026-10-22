@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481069969-Get-conversion-data-using-AppsFlyer-SDK-Overview
 ---
-**At a glance:** Use conversion data to identify various conversion scenarios, customize user experience, and more.
+> **At a glance:** Use conversion data to identify various conversion scenarios, customize user experience, and more.
 
 Use conversion data to:
 

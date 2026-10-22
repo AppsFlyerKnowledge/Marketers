@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002049858-Measure-attribution-in-the-Chinese-domestic-market
 ---
-**At a glance:** Attribution of Android devices without GAID by using OAID or IMEI. Best practice for viewing attribution data in AppsFlyer.
+> **At a glance:** Attribution of Android devices without GAID by using OAID or IMEI. Best practice for viewing attribution data in AppsFlyer.
 
 ## Attribution Android apps in the Chinese domestic market
 

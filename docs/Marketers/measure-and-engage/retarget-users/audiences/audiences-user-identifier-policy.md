@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016791118-Audiences-user-identifier-policy
 ---
-**At a glance:** Configure your user identifier policy to exercise account-level control over the identifiers you send to advertising partners via Audiences.
+> **At a glance:** Configure your user identifier policy to exercise account-level control over the identifiers you send to advertising partners via Audiences.
 
 ## About
 

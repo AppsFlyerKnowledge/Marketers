@@ -28,7 +28,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Raw data reports describe installs and in-app events blocked by the Protect360 engine, as well as from manually added Validation Rules.
+> **At a glance:** Raw data reports describe installs and in-app events blocked by the Protect360 engine, as well as from manually added Validation Rules.
 
 ## About Protect360 raw data reports
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002133558-Youdao-DSP-campaign-configuration
 ---
-**At a glance:** Youdao DSP is an AppsFlyer ad network integrated partner.
+> **At a glance:** Youdao DSP is an AppsFlyer ad network integrated partner.
 
 ## Setting Up Youdao DSP
 

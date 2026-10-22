@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38191067035153-Set-up-the-Media-partners-task
 ---
-**At a glance:** Learn how to configure media partners for off-site campaigns.
+> **At a glance:** Learn how to configure media partners for off-site campaigns.
 
 Before you can share eligible conversions with your <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site campaign</Anchor> media partners and receive aggregated performance data in response, you must first connect DCP to the media account that activates the campaign. This connection tells AppsFlyer how to send the conversion data to the media partner.
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019896558-Recommended-telecommunication-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
 
 ## <Image alt="telecommunications_icon.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Telecommunication
 

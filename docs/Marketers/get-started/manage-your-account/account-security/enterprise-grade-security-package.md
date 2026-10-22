@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34053592094737-Enterprise-Grade-Security-Package
 ---
-**At a glance:** Enhance your account protection with the **Enterprise-Grade Security Package,** a premium offering designed for enterprise-grade identity management, token access control, and extended audit visibility.
+> **At a glance:** Enhance your account protection with the **Enterprise-Grade Security Package,** a premium offering designed for enterprise-grade identity management, token access control, and extended audit visibility.
 
 ## Intro
 

@@ -28,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360015017198-Set-up-SSO-authentication-with-your-identity-provider-IdP
 ---
-**At a glance:** By integrating AppsFlyer with your identity provider (IdP), AppsFlyer account users can log in to AppsFlyer using single sign-on (SSO). Learn how to set up SSO authentication, activate SSO, and optionally add exception users who can log in with an assigned alternative login method.
+> **At a glance:** By integrating AppsFlyer with your identity provider (IdP), AppsFlyer account users can log in to AppsFlyer using single sign-on (SSO). Learn how to set up SSO authentication, activate SSO, and optionally add exception users who can log in with an assigned alternative login method.
 
 ## Considerations
 

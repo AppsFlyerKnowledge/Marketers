@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481130641-Meta-ads-discrepancies
 ---
-**At a glance:** Learn about the differences in attribution models between Meta ads and AppsFlyer.
+> **At a glance:** Learn about the differences in attribution models between Meta ads and AppsFlyer.
 
 ## Meta ads discrepancies with AppsFlyer
 

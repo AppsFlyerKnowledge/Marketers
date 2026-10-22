@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018228758-GMP-use-case-of-traffic-measurement-from-3rd-parties-in-CMP360
 ---
-**At a glance**: Buy traffic from third-party media sources in CM360 and measure mobile app conversions originating from this source both in AppsFlyer (attributed to the third-party media source) and CM360.
+> **At a glance**: Buy traffic from third-party media sources in CM360 and measure mobile app conversions originating from this source both in AppsFlyer (attributed to the third-party media source) and CM360.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 

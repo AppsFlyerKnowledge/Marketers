@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208641516-Adform-campaign-configuration
 ---
-**At a glance:** Adform, an AppsFlyer ad network integrated partner, provides open and transparent technologies that connect advertisers and agencies with publishers to enable digital advertising across all devices. In addition to click-based mobile attribution, Adform also offers view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Adform, an AppsFlyer ad network integrated partner, provides open and transparent technologies that connect advertisers and agencies with publishers to enable digital advertising across all devices. In addition to click-based mobile attribution, Adform also offers view-through attribution, which you can record with AppsFlyer.
 
 ## Setting up Adform
 

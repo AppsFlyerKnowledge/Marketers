@@ -23,7 +23,7 @@ x-zendesk:
   section_id: 6550925337873
   url: https://support.appsflyer.com/hc/en-us/articles/23461861877009-My-Dashboards
 ---
-**At a glance:** Use "My Dashboards" to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want, in the way you want to view them.
+> **At a glance:** Use "My Dashboards" to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want, in the way you want to view them.
 
 ## About My Dashboards
 

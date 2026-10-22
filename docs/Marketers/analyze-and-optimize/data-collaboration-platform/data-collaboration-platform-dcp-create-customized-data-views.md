@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/30296051098897-Data-Collaboration-Platform-DCP-Create-customized-data-views
 ---
-**At a glance:** Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators.
+> **At a glance:** Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators.
 
 ## About data views
 

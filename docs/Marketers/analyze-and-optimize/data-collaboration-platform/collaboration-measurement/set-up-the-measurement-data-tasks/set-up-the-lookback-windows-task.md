@@ -22,7 +22,7 @@ x-zendesk:
 ---
 ## Set Lookback Windows
 
-**At a glance:** Set attribution windows for on-site and off-site campaigns to determine how far back user engagements can be matched to conversions.
+> **At a glance:** Set attribution windows for on-site and off-site campaigns to determine how far back user engagements can be matched to conversions.
 
 Lookback windows define the maximum time between a user engagement (click or view) and the resulting conversion for attribution purposes. Each collaboration can set a custom lookback window duration. Media partners, such as Google Ads or Meta Ads, usually apply different rules for configuring these windows. This article explains how to configure lookback windows for both collaborators and Google and Meta.
 

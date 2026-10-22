@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45235709425553-Bloomreach-integration-with-AppsFlyer
 ---
-**At a glance:** Set up an integration with Bloomreach to enable seamless deep linking from email campaigns, measure traffic in both Bloomreach and AppsFlyer, and create user experiences that drive conversion.
+> **At a glance:** Set up an integration with Bloomreach to enable seamless deep linking from email campaigns, measure traffic in both Bloomreach and AppsFlyer, and create user experiences that drive conversion.
 
 <Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 

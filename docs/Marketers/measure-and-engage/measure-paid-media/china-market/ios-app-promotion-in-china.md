@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004641383-iOS-app-promotion-in-China
 ---
-**At a glance:** Learn about marketing your iOS apps in China.
+> **At a glance:** Learn about marketing your iOS apps in China.
 
 ## Apple in China
 

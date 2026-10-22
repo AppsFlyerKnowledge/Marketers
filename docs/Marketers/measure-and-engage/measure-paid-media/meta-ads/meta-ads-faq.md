@@ -23,7 +23,7 @@ x-zendesk:
   section_id: 6551109855761
   url: https://support.appsflyer.com/hc/en-us/articles/4410472805649-Meta-ads-FAQ
 ---
-**At a glance:** Find answers to frequently asked questions about using Meta ads in AppsFlyer.
+> **At a glance:** Find answers to frequently asked questions about using Meta ads in AppsFlyer.
 
 ## Meta ads FAQ
 

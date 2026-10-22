@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360003090618-Links-to-AppsFlyer-SDK-release-notes
 ---
-**At a glance:** Release notes for iOS and Android SDKs.
+> **At a glance:** Release notes for iOS and Android SDKs.
 
 * <Anchor target="_blank" href="/marketers/docs/appsflyer-ios-sdk-release-notes">iOS</Anchor>
 * <Anchor target="_blank" href="/marketers/docs/appsflyer-android-sdk-release-notes">Android</Anchor>

@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360007949158-Excluding-users-from-UA-campaigns
 ---
-**At a glance:** Exclude existing users from user acquisition (UA) campaigns to obtain more installs with the same budget and improve ROAS.
+> **At a glance:** Exclude existing users from user acquisition (UA) campaigns to obtain more installs with the same budget and improve ROAS.
 
 ## Issues and consequences
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001605243-Sizmek-campaign-configuration
 ---
-**At a glance:** Sizmek, an AppsFlyer ad network integrated partner, is an independent buy-side advertising platform and ad server. In addition to click-based mobile attribution, Sizmek offers view-through attribution, which can be recorded with AppsFlyer.
+> **At a glance:** Sizmek, an AppsFlyer ad network integrated partner, is an independent buy-side advertising platform and ad server. In addition to click-based mobile attribution, Sizmek offers view-through attribution, which can be recorded with AppsFlyer.
 
 ## Setting up Sizmek
 

@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38188042548113-Set-up-the-Engagements-task
 ---
-**At a glance:** Learn how to configure engagement events for on-site and combined campaigns (on-site and off-site campaigns).
+> **At a glance:** Learn how to configure engagement events for on-site and combined campaigns (on-site and off-site campaigns).
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Engagement events</Anchor> capture user interactions—such as ad views or clicks—that occur before a conversion. They are configured only for on-site campaigns, either alone or combined with off-site campaigns. (For off-site campaigns, engagement data is provided directly by external partners such as Meta or Google. This article explains how to configure engagements by campaign type.
 

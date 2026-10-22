@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033756-X-Ads-formerly-Twitter-Ads-paid-vs-organic-installs
 ---
-**At a glance:** Learn the difference between organic and paid installs coming through X Ads.
+> **At a glance:** Learn the difference between organic and paid installs coming through X Ads.
 
 ## Paid installation
 

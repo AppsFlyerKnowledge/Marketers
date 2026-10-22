@@ -31,7 +31,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems.
+> **At a glance:** Cost ETL, part of AppsFlyer ROI360, provides advertisers with campaign cost data having the best granularity available per media source. Data, updated up to 4 times daily, is delivered to your cloud service ready for loading into advertiser BI systems.
 
 [![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
 

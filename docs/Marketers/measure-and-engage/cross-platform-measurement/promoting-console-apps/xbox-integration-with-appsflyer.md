@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14504812967057-Xbox-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox.
+> **At a glance:** Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox.
 
 ## About Xbox attribution
 

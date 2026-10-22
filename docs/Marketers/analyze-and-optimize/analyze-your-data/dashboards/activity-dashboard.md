@@ -21,7 +21,7 @@ x-zendesk:
   section_id: 6550925337873
   url: https://support.appsflyer.com/hc/en-us/articles/207602503-Activity-dashboard
 ---
-**At a glance:** See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time.
+> **At a glance:** See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time.
 
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 

@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417197430289-Fill-out-Google-safety-section-form
 ---
-**At a glance**: As of April 2022, app developers are required to complete the Google Play Data safety section form and publish a link to a privacy policy, even if they don’t collect any of the data types specified by Google. This page is intended to provide information to assist you in answering the Google Safety Section Questionnaire, only in relation to what AppsFlyer processes on behalf of customers.
+> **At a glance**: As of April 2022, app developers are required to complete the Google Play Data safety section form and publish a link to a privacy policy, even if they don’t collect any of the data types specified by Google. This page is intended to provide information to assist you in answering the Google Safety Section Questionnaire, only in relation to what AppsFlyer processes on behalf of customers.
 
 Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
 

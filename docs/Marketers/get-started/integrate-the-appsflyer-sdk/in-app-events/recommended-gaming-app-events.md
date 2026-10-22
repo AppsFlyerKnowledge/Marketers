@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018941117-Recommended-gaming-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your gaming app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your gaming app.
 
 ## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Gaming
 

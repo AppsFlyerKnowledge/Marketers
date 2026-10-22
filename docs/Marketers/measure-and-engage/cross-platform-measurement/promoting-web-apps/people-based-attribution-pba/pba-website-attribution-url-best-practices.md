@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/6313062676497-PBA-website-attribution-URL-best-practices
 ---
-**At a glance:** Best practices to attribute your website attribution campaigns with the best campaign granularity available.
+> **At a glance:** Best practices to attribute your website attribution campaigns with the best campaign granularity available.
 
 ## PBA website attribution URLs
 

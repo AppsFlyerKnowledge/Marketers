@@ -29,7 +29,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207032166-AppsFlyer-factory-preinstall-using-manifest-Android
 ---
-**At a glance:** Attribute app installs to device manufacturers for apps added to devices before leaving the factory. **Note**: See <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">all other preload attribution methods</Anchor>.
+> **At a glance:** Attribute app installs to device manufacturers for apps added to devices before leaving the factory. **Note**: See <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">all other preload attribution methods</Anchor>.
 
 ![pre-install-intro-breakdown.png](https://files.readme.io/f14231089f68ffa90dc90700397463d363c08b8266e0d18677e9ccf3c28b0828-360002653365.png)
 

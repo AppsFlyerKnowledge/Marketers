@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/6031419375377-Apply-China-Personal-Information-Protection-Law-PIPL-solution
 ---
-**At a glance:** Improve flexibility while measuring with AppsFlyer and complying with PIPL.
+> **At a glance:** Improve flexibility while measuring with AppsFlyer and complying with PIPL.
 
 ## Background
 

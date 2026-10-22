@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000610363-About-conversion-rates
 ---
-**At a glance:** Find conversion rate KPIs in AppsFlyer to understand the strengths and weaknesses found at different stages in your marketing funnel.
+> **At a glance:** Find conversion rate KPIs in AppsFlyer to understand the strengths and weaknesses found at different stages in your marketing funnel.
 
 ## Marketing funnel stages
 

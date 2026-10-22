@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/7341725624081-LG-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your LG Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on LG.
+> **At a glance:** Integrate your LG Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on LG.
 
 ## About LG CTV attribution
 

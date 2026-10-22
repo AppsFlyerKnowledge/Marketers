@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003294203-View-agency-data
 ---
-**At a glance:** Learn about agency data to understand its impact on how your data is presented in AppsFlyer.
+> **At a glance:** Learn about agency data to understand its impact on how your data is presented in AppsFlyer.
 
 ## About agency data
 

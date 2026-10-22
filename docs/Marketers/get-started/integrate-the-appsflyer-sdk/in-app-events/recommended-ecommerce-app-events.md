@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019347957-Recommended-eCommerce-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app.
 
 ## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" /> eCommerce
 

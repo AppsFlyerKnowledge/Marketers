@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4403215779857-Get-SKAN-postback-data-from-Google-Ads
 ---
-**At a glance:** Enable Google to share the content of your SKAdNewtork (SKAN) app iOS postbacks with AppsFlyer.
+> **At a glance:** Enable Google to share the content of your SKAdNewtork (SKAN) app iOS postbacks with AppsFlyer.
 
 ## Get SKAN postback data from Google Ads
 

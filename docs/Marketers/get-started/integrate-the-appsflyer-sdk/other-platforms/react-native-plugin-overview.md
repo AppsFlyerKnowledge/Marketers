@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/217108646-React-Native-plugin-overview
 ---
-**At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more.
+> **At a glance:** Integrate AppsFlyer SDK into iOS/Android apps developed with React Native to measure installs, in-app events, media sources, and more.
 
 > 🚧 **Important!**
 >

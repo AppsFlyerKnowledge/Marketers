@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/217924503-Testing-Windows-SDK-integration
 ---
-**At a glance:** Test your Windows app integration with AppsFlyer.
+> **At a glance:** Test your Windows app integration with AppsFlyer.
 
 * Currently, there is no way of testing with Windows Referrer other than to upload the app to the Windows App Store.
 * When testing with Windows Referrer, you must be familiar with the following restrictions:

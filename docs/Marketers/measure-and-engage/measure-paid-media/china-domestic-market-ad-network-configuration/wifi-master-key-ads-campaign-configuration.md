@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001954137-WiFi-Master-Key-Ads-campaign-configuration
 ---
-**At a glance:** WiFi Master Key Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** WiFi Master Key Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up WiFi Master Key Ads
 

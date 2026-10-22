@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/18699025653265-Persona-ly-RTB-campaign-configuration
 ---
-**At a glance:** Persona.ly RTB (personalyrtb\_int), an AppsFlyer integrated partner, is a mobile-first DSP operating worldwide. Using proprietary bidder and machine-learning algorithms, Persona.ly offers transparent, performance-driven, highly targeted UA and retargeting solutions.
+> **At a glance:** Persona.ly RTB (personalyrtb\_int), an AppsFlyer integrated partner, is a mobile-first DSP operating worldwide. Using proprietary bidder and machine-learning algorithms, Persona.ly offers transparent, performance-driven, highly targeted UA and retargeting solutions.
 
 <Image alt="persona.ly_logo.png" src="https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png" width="234px" />
 

@@ -24,6 +24,6 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/217183026-NativeScript-plugin
 ---
-**At a glance:** Integrate AppsFlyer into apps developed in NativeScript to measure app installs, in-app events, media sources and more.
+> **At a glance:** Integrate AppsFlyer into apps developed in NativeScript to measure app installs, in-app events, media sources and more.
 
 You can find the plugin and documentation on <Anchor target="_blank" href="https://www.npmjs.com/package/nativescript-plugin-appsflyer">NPM</Anchor> and <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-nativescript-plugin">GitHub</Anchor>.

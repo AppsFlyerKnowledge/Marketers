@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019465017-Luna-Labs-integration-with-AppsFlyer
 ---
-**At a glance:** Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads.
+> **At a glance:** Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads.
 
 > 🚧 **Important!**
 >

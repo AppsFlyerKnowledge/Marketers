@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/10457123447953-In-app-event-generator
 ---
-**At a glance:** Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs.
+> **At a glance:** Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs.
 
 ## Introduction
 

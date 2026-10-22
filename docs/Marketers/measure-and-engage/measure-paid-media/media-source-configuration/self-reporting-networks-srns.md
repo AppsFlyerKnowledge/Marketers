@@ -29,7 +29,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001546905-Self-reporting-networks-SRNs
 ---
-**At a glance:** Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ.
+> **At a glance:** Learn about self-reporting networks (SRNs)—attribution, deep linking, iOS implications, and FAQ.
 
 ## SRNs integrated with AppsFlyer
 

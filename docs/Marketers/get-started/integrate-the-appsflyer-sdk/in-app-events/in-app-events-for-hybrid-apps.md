@@ -28,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207031976-In-app-events-for-hybrid-apps
 ---
-**At a glance:** Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content.
+> **At a glance:** Record in-app events from web-views embedded in your mobile app, allowing full event measurement even when the interaction occurs in the app’s web-based content.
 
 ## Introduction
 

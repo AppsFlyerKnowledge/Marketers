@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002358897-vivo-Ads-Campaign-Configuration
 ---
-**At a glance:** vivo Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** vivo Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up vivo Ads
 

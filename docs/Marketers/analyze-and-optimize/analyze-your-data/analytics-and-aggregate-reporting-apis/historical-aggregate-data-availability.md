@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15557418667537-Historical-aggregate-data-availability
 ---
-**At a glance:** See what historical data is available via different AppsFlyer aggregate dashboards and reports.
+> **At a glance:** See what historical data is available via different AppsFlyer aggregate dashboards and reports.
 
 ## Historical aggregate data availability
 

@@ -24,7 +24,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
+> **At a glance:** Creative Optimization enables you to pull all creative asset data from all your campaigns into a single platform, so you can analyze their performance, discover which creatives work best, and make better data-driven decisions. Data is LTV, meaning the metrics are for conversions that occurred from creatives during the selected date range.
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 

@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/12934808889745-Configure-AppsFlyer-SSO-in-Okta
 ---
-**At a glance:** Configure the SSO process using Okta as an identity provider (IdP).
+> **At a glance:** Configure the SSO process using Okta as an identity provider (IdP).
 
 The first step in configuring the AppsFlyer SSO process is done on the Okta platform. Follow the steps below:
 

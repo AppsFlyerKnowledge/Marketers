@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006278797-Android-OAID-implementation-in-the-SDK
 ---
-**At a glance:** Collect the Android OAID to attribute installs from third-party Android app stores.
+> **At a glance:** Collect the Android OAID to attribute installs from third-party Android app stores.
 
 ## About OAID
 

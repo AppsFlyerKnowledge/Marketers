@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003044106-WeChat-Ads-campaign-configuration
 ---
-**At a glance:** Learn how to measure your campaigns with WeChat on AppsFlyer.
+> **At a glance:** Learn how to measure your campaigns with WeChat on AppsFlyer.
 
 ## Introduction
 

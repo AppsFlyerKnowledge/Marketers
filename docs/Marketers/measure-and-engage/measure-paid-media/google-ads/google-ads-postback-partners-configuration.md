@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4411047077905-Google-Ads-postback-partners-Configuration
 ---
-**At a glance:** Enable Google Ads postback partners to help run your Google Ads campaigns.
+> **At a glance:** Enable Google Ads postback partners to help run your Google Ads campaigns.
 
 Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postback partners**, are similar to agencies. They help their advertiser clients run Google Ads campaigns, but require getting postbacks for Google Ads conversions.
 

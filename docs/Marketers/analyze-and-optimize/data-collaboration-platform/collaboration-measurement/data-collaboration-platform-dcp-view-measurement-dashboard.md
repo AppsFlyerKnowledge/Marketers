@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34052274677905-Data-Collaboration-Platform-DCP-View-measurement-dashboard
 ---
-**At a glance:** Analyze performance and trends over time of your collaborative campaigns using visualizations and table views.
+> **At a glance:** Analyze performance and trends over time of your collaborative campaigns using visualizations and table views.
 
 Use the measurement dashboard to view and analyze campaign performance. It contains performance KPIs, over-time trends, impressions and clicks, revenue, and other metrics.
 

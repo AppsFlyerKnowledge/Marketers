@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006091197-User-level-data-retention
 ---
-**At a glance:** Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs ("**Partners**") terms of use.
+> **At a glance:** Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs ("**Partners**") terms of use.
 
 > ❗️ **Caution**
 >

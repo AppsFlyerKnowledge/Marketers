@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000135126-Webpals-mobile-Meta-campaign-management-partner-configuration
 ---
-**At a glance:** Webpals mobile - a Meta campaign management partner (formerly known as Facebook Marketing Partners), one of AppsFlyer's integrated partners, is a leader in mobile user acquisition and revenue maximization with global coverage.
+> **At a glance:** Webpals mobile - a Meta campaign management partner (formerly known as Facebook Marketing Partners), one of AppsFlyer's integrated partners, is a leader in mobile user acquisition and revenue maximization with global coverage.
 
 ## Setting up Webpals mobile
 

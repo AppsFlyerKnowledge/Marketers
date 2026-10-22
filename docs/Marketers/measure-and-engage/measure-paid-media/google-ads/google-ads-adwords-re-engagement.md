@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4417296925073-Google-Ads-AdWords-Re-engagement
 ---
-**At a glance:** Measure Google Ads retargeting campaigns.
+> **At a glance:** Measure Google Ads retargeting campaigns.
 
 ## Google Ads retargeting campaigns
 

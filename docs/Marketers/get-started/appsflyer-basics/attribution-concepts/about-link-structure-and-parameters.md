@@ -61,7 +61,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447163-About-link-structure-and-parameters
 ---
-**At a glance:**  Learn about the AppsFlyer attribution link structure and parameters.
+> **At a glance:**  Learn about the AppsFlyer attribution link structure and parameters.
 
 ## Overview
 

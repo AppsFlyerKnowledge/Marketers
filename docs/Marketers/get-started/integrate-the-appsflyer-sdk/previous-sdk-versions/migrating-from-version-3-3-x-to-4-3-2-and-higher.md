@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207606796-Migrating-from-Version-3-3-X-to-4-3-2-and-Higher
 ---
-**At a glance:** Considerations for migrating versions of the AppsFlyer Android SDK.
+> **At a glance:** Considerations for migrating versions of the AppsFlyer Android SDK.
 
 Major changes have been made to the Android SDK integration.
 

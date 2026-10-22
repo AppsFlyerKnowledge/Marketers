@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001923697-Migration-to-AppsFlyer-from-other-vendors
 ---
-**At a glance:** Plan your migration to AppsFlyer from another attribution vendor. Understand how to avoid double charges, data duplication, and data loss during the migration period.
+> **At a glance:** Plan your migration to AppsFlyer from another attribution vendor. Understand how to avoid double charges, data duplication, and data loss during the migration period.
 
 ![migration flow](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 

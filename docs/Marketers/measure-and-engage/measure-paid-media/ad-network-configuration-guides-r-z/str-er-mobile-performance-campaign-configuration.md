@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000068903-Str%C3%B6er-Mobile-Performance-campaign-configuration
 ---
-**At a glance:** Ströer Mobile Performance, an AppsFlyer ad network integrated partner, provides international exposure suited to mobile applications through its unique global network. In addition to click-based mobile attribution, Ströer Mobile Performance provides cost data, which can be recorded with AppsFlyer.
+> **At a glance:** Ströer Mobile Performance, an AppsFlyer ad network integrated partner, provides international exposure suited to mobile applications through its unique global network. In addition to click-based mobile attribution, Ströer Mobile Performance provides cost data, which can be recorded with AppsFlyer.
 
 To configure your campaigns with Ströer Mobile Performance, follow the steps below.
 

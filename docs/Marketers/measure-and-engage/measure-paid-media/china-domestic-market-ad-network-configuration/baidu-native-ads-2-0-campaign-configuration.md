@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002158958-Baidu-Native-Ads-2-0-campaign-configuration
 ---
-**At a glance:** Baidu Native Ads 2.0 is an AppsFlyer ad network integrated partner.
+> **At a glance:** Baidu Native Ads 2.0 is an AppsFlyer ad network integrated partner.
 
 ## Setting Up Baidu Native Ads 2.0
 

@@ -28,7 +28,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format. Select 1 or more apps.
+> **At a glance:** Get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format. Select 1 or more apps.
 
 ## Master API—user acquisition metrics via API
 

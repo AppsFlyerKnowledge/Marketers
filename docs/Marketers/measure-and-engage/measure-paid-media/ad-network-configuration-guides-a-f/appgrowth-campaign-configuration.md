@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000068905-Appgrowth-campaign-configuration
 ---
-**At a glance:** Appgrowth, an AppsFlyer ad network integrated partner, is a producer of original content for mobile app growth professionals. In addition to click-based mobile attribution, Appgrowth also offers view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Appgrowth, an AppsFlyer ad network integrated partner, is a producer of original content for mobile app growth professionals. In addition to click-based mobile attribution, Appgrowth also offers view-through attribution, which you can record with AppsFlyer.
 
 ## Setting up Appgrowth
 

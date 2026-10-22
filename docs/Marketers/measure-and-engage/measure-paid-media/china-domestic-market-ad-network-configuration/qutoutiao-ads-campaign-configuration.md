@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001390337-Qutoutiao-ads-campaign-configuration
 ---
-**At a glance:** Qutoutiao Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** Qutoutiao Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up Qutoutiao Ads
 

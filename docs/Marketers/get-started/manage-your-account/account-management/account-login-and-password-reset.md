@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/33114514624273-Account-login-and-password-reset
 ---
-**At a glance:** Log in to AppsFlyer, add multiple accounts, and reset user passwords.
+> **At a glance:** Log in to AppsFlyer, add multiple accounts, and reset user passwords.
 
 ## Log in instructions
 

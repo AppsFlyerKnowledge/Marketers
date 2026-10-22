@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/19228737402129-Meta-Ads-Aggregate-Event-Measurement-AEM-for-iOS
 ---
-**At a glance:** Learn about the AEM solution for optimizing iOS conversions and in-app events and for attributing iOS re-engagements on Meta Ads.
+> **At a glance:** Learn about the AEM solution for optimizing iOS conversions and in-app events and for attributing iOS re-engagements on Meta Ads.
 
 ## Overview
 

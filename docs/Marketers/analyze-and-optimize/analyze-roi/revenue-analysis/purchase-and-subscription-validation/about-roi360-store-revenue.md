@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
+> **At a glance:** Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
 
 > 🚧 **Important!**
 >

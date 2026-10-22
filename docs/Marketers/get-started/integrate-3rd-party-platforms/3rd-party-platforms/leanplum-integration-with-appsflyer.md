@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211487846-Leanplum-integration-with-AppsFlyer
 ---
-**At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
+> **At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
 
 > 🚧 **Important!**
 >

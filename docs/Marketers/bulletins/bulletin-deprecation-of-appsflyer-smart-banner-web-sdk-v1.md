@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/15983689552273-Bulletin-Deprecation-of-AppsFlyer-Smart-Banner-web-SDK-v1
 ---
-**At a glance:** As of Nov. 8th, 2023, AppsFlyer Smart Banner web SDK v1 is deprecated.
+> **At a glance:** As of Nov. 8th, 2023, AppsFlyer Smart Banner web SDK v1 is deprecated.
 
 | **What's changing** | AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. |
 | --- | --- |

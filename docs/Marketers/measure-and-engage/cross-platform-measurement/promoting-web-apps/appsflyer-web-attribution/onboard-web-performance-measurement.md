@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/43529798016401-Onboard-Web-Performance-Measurement
 ---
-**At a glance:** Follow the onboarding instructions in this guide to set up Web Performance Measurement. Once set up, you can measure and attribute website visits and web events to marketing sources, understand what drives meaningful website outcomes, and support cross-platform measurement.
+> **At a glance:** Follow the onboarding instructions in this guide to set up Web Performance Measurement. Once set up, you can measure and attribute website visits and web events to marketing sources, understand what drives meaningful website outcomes, and support cross-platform measurement.
 
 ## About Web Performance Measurement
 

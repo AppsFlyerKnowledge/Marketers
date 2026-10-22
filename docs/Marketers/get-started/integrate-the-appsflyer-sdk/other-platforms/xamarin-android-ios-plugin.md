@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210485006-Xamarin-Android-iOS-plugin
 ---
-**At a glance:** Integrate AppsFlyer into apps developed using Xamarin to measure installs, in-app events, media sources, and more.
+> **At a glance:** Integrate AppsFlyer into apps developed using Xamarin to measure installs, in-app events, media sources, and more.
 
 > 🚧 **Important!**
 >

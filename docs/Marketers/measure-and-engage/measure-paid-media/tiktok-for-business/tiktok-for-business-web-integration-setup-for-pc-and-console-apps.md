@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/40500157955601-TikTok-for-Business-Web-integration-setup-for-PC-and-console-apps
 ---
-**At a glance:** Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web.
+> **At a glance:** Learn how to integrate TikTok Web for PC and console apps with AppsFlyer and set up campaigns in TikTok Web.
 
 > ❗️ **Warning**
 >

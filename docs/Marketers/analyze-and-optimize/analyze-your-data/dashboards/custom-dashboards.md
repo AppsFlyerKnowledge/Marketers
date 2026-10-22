@@ -21,7 +21,7 @@ x-zendesk:
   section_id: 6550925337873
   url: https://support.appsflyer.com/hc/en-us/articles/212750286-Custom-dashboards
 ---
-**At a glance:** Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports.
+> **At a glance:** Build your own customized dashboards inside AppsFlyer. You can easily select, name, and position the data in your own customized reports.
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 

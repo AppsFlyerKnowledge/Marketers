@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000699617-Old-SDK-guides-Android-and-iOS
 ---
-**At a glance:** Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form.
+> **At a glance:** Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form.
 
 ## Overview
 

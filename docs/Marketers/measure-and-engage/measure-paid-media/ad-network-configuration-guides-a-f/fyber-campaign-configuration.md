@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208209366-Fyber-campaign-configuration
 ---
-**At a glance:** Fyber, an AppsFlyer ad network integrated partner, develops a next-generation monetization platform for mobile publishers.
+> **At a glance:** Fyber, an AppsFlyer ad network integrated partner, develops a next-generation monetization platform for mobile publishers.
 
 ## Setting up Fyber
 

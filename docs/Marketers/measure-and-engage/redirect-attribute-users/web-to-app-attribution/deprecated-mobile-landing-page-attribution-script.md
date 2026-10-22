@@ -29,7 +29,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016643258--Deprecated-Mobile-landing-page-attribution-script
 ---
-**At a glance:** This script is deprecated as of December 17, 2020, and is replaced by the <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>. This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
+> **At a glance:** This script is deprecated as of December 17, 2020, and is replaced by the <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>. This version continues to work, but will not be updated or changed. The script generates URLs that are embedded behind a button on your mobile website and redirects visitors to download your app. The URLs also support install attribution and deep linking.
 
 ![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
 

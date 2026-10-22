@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/47741416390161-Recreating-classic-reports-in-advanced-reports
 ---
-**At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">Advanced Reports</Anchor>.
+> **At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">Advanced Reports</Anchor>.
 
 ## Overview
 

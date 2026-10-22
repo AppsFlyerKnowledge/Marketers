@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/17255366785553-Evaluate-Keyword-data
 ---
-**At a glance:** Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.
+> **At a glance:** Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.
 
 ## Keyword data
 

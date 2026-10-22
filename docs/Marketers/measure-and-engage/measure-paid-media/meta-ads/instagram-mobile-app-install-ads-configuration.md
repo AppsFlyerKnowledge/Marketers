@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207034066-Instagram-mobile-app-install-ads-configuration
 ---
-**At a glance:** Add Instagram mobile app installs to your Meta ads account.
+> **At a glance:** Add Instagram mobile app installs to your Meta ads account.
 
 <Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 

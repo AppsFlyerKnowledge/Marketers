@@ -21,8 +21,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4406153487505-TUNE-integration-with-AppsFlyer
 ---
-**At a glance:** TUNE, an AppsFlyer integrated partner, is a partner marketing platform.  
-Integrate with TUNE to measure incoming traffic and to enable deep linking into your app.
+> **At a glance:** TUNE, an AppsFlyer integrated partner, is a partner marketing platform.  
+> Integrate with TUNE to measure incoming traffic and to enable deep linking into your app.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 

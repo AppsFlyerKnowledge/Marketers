@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208278016-ClickZoot-campaign-configuration
 ---
-**At a glance:** Clickzoot, an AppsFlyer ad network integrated partner, provides solutions for mobile, lead generation, email marketing, and data optimization.
+> **At a glance:** Clickzoot, an AppsFlyer ad network integrated partner, provides solutions for mobile, lead generation, email marketing, and data optimization.
 
 ## Setting up ClickZoot
 

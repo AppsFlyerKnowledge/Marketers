@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018499098-SKAN-interoperation-with-TikTok-for-Business
 ---
-**At a glance:** SKAN interoperability enables TikTok to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with TikTok.
+> **At a glance:** SKAN interoperability enables TikTok to share SKAN postbacks with AppsFlyer and enables AppsFlyer to share your conversion value measurement mapping with TikTok.
 
 ## SKAN interoperability: AppsFlyer &lt;-> TikTok
 

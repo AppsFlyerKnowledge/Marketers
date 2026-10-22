@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/8610329713553-SKAN-CV-schema-API-for-advertisers
 ---
-**At a glance:** View your current SKAdNetwork (SKAN) conversion value (CV) schema as configured in AppsFlyer Conversion Studio.
+> **At a glance:** View your current SKAdNetwork (SKAN) conversion value (CV) schema as configured in AppsFlyer Conversion Studio.
 
 ## SKAN conversion value schema API
 

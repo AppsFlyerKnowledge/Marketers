@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360013555718-Finding-the-Apple-bundle-ID
 ---
-**At a glance:** Find the Apple bundle ID and use it as needed.
+> **At a glance:** Find the Apple bundle ID and use it as needed.
 
 The Apple bundle ID is a unique identifier associated with iOS apps.
 

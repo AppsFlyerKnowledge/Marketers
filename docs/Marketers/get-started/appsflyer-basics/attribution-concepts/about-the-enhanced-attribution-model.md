@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41442782045073-About-the-Enhanced-attribution-model
 ---
-**At a glance:** The Enhanced attribution model improves attribution accuracy by attributing only eligible clicks and impressions when click and impression flooding is detected on the device.
+> **At a glance:** The Enhanced attribution model improves attribution accuracy by attributing only eligible clicks and impressions when click and impression flooding is detected on the device.
 
 ## What is the Enhanced attribution model?
 

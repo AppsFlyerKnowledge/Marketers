@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4412316953105-AppsFlyer-SDK-version-control-policy
 ---
-**At a glance:** Learn about the AppsFlyer SDK version control policy and what versions we maintain.
+> **At a glance:** Learn about the AppsFlyer SDK version control policy and what versions we maintain.
 
 ## About versioning
 

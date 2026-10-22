@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41365000854161-Snapchat-Create-web-based-campaigns
 ---
-**At a glance:** Use Snapchat Ads Web campaigns to attribute web-to-app conversions from Snapchat Ads
+> **At a glance:** Use Snapchat Ads Web campaigns to attribute web-to-app conversions from Snapchat Ads
 
 ## Overview
 

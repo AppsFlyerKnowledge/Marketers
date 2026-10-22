@@ -27,7 +27,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4416353506833-Integrate-the-ROI360-ad-revenue-SDK-API
 ---
-**At a glance:** The AppsFlyer ad revenue SDK API works with ad networks to report ad revenue with impression-level granularity.
+> **At a glance:** The AppsFlyer ad revenue SDK API works with ad networks to report ad revenue with impression-level granularity.
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 

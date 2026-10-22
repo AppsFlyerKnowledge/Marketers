@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/27849428801809-Creative-Optimization-onboarding-guide
 ---
-**At a glance**: Follow the onboarding instructions in this article to get Creative Optimization up and running.
+> **At a glance**: Follow the onboarding instructions in this article to get Creative Optimization up and running.
 
 ![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
 

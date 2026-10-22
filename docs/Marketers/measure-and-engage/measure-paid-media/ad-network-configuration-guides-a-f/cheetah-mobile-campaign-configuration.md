@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209731703-Cheetah-Mobile-campaign-configuration
 ---
-**At a glance:** Cheetah Mobile, an AppsFlyer ad network integrated partner, aims to provide leading apps for mobile users worldwide and connect users with personalized content on the mobile platform. In addition to click-based mobile attribution, Cheetah Mobile also offers cost and view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Cheetah Mobile, an AppsFlyer ad network integrated partner, aims to provide leading apps for mobile users worldwide and connect users with personalized content on the mobile platform. In addition to click-based mobile attribution, Cheetah Mobile also offers cost and view-through attribution, which you can record with AppsFlyer.
 
 ## Setting up Cheetah Mobile
 

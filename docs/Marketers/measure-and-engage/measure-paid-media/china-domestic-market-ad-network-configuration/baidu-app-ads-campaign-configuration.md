@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003044146-Baidu-App-Ads-campaign-configuration
 ---
-**At a glance:** Baidu App Ads (Baitong), an AppsFlyer ad network integrated partners, is one of the biggest App promotion and distribution platforms in the China domestic market, integrating the mobile traffic of App Stores (Baidu Mobile Assistant, Android Market, 91 Mobile Assistant, etc.), Baidu Mobile Search, Super App, and Baidu Affiliates.
+> **At a glance:** Baidu App Ads (Baitong), an AppsFlyer ad network integrated partners, is one of the biggest App promotion and distribution platforms in the China domestic market, integrating the mobile traffic of App Stores (Baidu Mobile Assistant, Android Market, 91 Mobile Assistant, etc.), Baidu Mobile Search, Super App, and Baidu Affiliates.
 
 ## Setting Up Baidu App Ads (Baitong)
 

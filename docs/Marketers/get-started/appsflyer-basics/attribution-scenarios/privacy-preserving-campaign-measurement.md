@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/20489739742609-Privacy-preserving-campaign-measurement
 ---
-**At a glance:** Get answers to common FAQ about privacy-preserving campaign measurement methods, the networks involved, and their implications on retargeting, view-through, and child-directed app limitations.
+> **At a glance:** Get answers to common FAQ about privacy-preserving campaign measurement methods, the networks involved, and their implications on retargeting, view-through, and child-directed app limitations.
 
 ## Overview
 

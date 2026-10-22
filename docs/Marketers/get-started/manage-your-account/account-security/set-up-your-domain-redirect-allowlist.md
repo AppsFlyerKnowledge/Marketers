@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/25068636064529-Set-up-your-domain-redirect-allowlist
 ---
-**At a glance:** Set up a domain redirect allowlist to ensure users are redirected to verified, trustworthy domains, protecting their data and safeguarding your brand integrity.
+> **At a glance:** Set up a domain redirect allowlist to ensure users are redirected to verified, trustworthy domains, protecting their data and safeguarding your brand integrity.
 
 ## <Image alt="Main redirect allowlist image.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />About the redirect allowlist
 

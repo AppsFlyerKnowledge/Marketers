@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4415473374865-Data-availability-windows
 ---
-**At a glance:** Data availability depends on the report type and the defined availability window.
+> **At a glance:** Data availability depends on the report type and the defined availability window.
 
 ## Data availability windows
 

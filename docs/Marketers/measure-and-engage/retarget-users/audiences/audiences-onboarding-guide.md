@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance**: Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns.
+> **At a glance**: Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns.
 
 ## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
 

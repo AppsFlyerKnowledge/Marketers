@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/213050543-LINE-Ads-Platform-campaign-configuration
 ---
-**At a glance:** LINE Ads Platform, an AppsFlyer integrated partner combines a bidding and customized targeting system. In addition to click-based mobile attribution, LINE Ads Platform also offers retargeting attribution, which you can record with AppsFlyer.
+> **At a glance:** LINE Ads Platform, an AppsFlyer integrated partner combines a bidding and customized targeting system. In addition to click-based mobile attribution, LINE Ads Platform also offers retargeting attribution, which you can record with AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 

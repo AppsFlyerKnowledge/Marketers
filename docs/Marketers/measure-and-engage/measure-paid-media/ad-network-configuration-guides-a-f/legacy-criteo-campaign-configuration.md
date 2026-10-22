@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033946--Legacy-Criteo-campaign-configuration
 ---
-**At a glance:** Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website. In addition to click-based mobile attribution, Criteo (Legacy) also offers retargeting, which you can record with AppsFlyer.
+> **At a glance:** Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website. In addition to click-based mobile attribution, Criteo (Legacy) also offers retargeting, which you can record with AppsFlyer.
 
 ## Setting up Criteo (legacy)
 

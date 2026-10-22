@@ -24,7 +24,7 @@ x-zendesk:
   section_id: 6551173202065
   url: https://support.appsflyer.com/hc/en-us/articles/360007971697-Audit-log
 ---
-**At a glance:** Identify and protect against unauthorized access to your AppsFlyer account using the Audit log. View and download a summary of security-related activity in your account.
+> **At a glance:** Identify and protect against unauthorized access to your AppsFlyer account using the Audit log. View and download a summary of security-related activity in your account.
 
 ## Overview
 

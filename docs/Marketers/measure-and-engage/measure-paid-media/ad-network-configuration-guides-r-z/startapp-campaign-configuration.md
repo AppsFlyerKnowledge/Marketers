@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210042746-StartApp-campaign-configuration
 ---
-**At a glance:** StartApp, an AppsFlyer ad network integrated partner, is an insight-driven mobile tech company that enables its partners to deliver the world's most fulfilling mobile experiences for their users. In addition to click-based mobile attribution, StartApp offers cost, retargeting, and view-through attribution, which can be recorded with AppsFlyer.
+> **At a glance:** StartApp, an AppsFlyer ad network integrated partner, is an insight-driven mobile tech company that enables its partners to deliver the world's most fulfilling mobile experiences for their users. In addition to click-based mobile attribution, StartApp offers cost, retargeting, and view-through attribution, which can be recorded with AppsFlyer.
 
 To configure your campaigns with StartApp, follow the steps below.
 

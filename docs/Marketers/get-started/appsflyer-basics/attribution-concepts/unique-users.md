@@ -19,7 +19,7 @@ x-zendesk:
   section_id: 6551394235409
   url: https://support.appsflyer.com/hc/en-us/articles/27435981457553-Unique-users
 ---
-**At a glance:** Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports.
+> **At a glance:** Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports.
 
 ## About unique users
 

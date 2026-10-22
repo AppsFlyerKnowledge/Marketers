@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208277106-Vserv-campaign-configuration
 ---
-**At a glance:** Vserv, an AppsFlyer ad network integrated partner, is one of the leading authentic data platforms for mobile marketing in India and Southeast Asia.
+> **At a glance:** Vserv, an AppsFlyer ad network integrated partner, is one of the leading authentic data platforms for mobile marketing in India and Southeast Asia.
 
 ## Setting up Vserv
 

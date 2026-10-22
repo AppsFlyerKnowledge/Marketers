@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360016789458-Dashboard-Cost-and-ad-Revenue-Status
 ---
-**At a glance:** Advertisers and agencies can check the status of cost and ad revenue integrations.
+> **At a glance:** Advertisers and agencies can check the status of cost and ad revenue integrations.
 
 ## Cost and Ad Revenue integration status
 

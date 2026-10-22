@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/209731633-Liftoff-campaign-configuration-in-AppsFlyer
 ---
-**At a glance:** Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand partners for brands and app developers. Liftoff offers click-based and view-through mobile attribution, as well as click-based and view-through retargeting which you can record with AppsFlyer.
+> **At a glance:** Liftoff, an AppsFlyer ad network integrated partner, is one of the top demand partners for brands and app developers. Liftoff offers click-based and view-through mobile attribution, as well as click-based and view-through retargeting which you can record with AppsFlyer.
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 

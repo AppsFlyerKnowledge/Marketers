@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-**At a glance:** AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
+> **At a glance:** AppsFlyer MCP connects your AppsFlyer data to large language models (LLMs), such as Claude, ChatGPT, Gemini CLI, Copilot CLI, and VS Code. Ask questions, get performance insights, and retrieve AppsFlyer information directly in your AI chat or development environment.
 
 <Embed title="[Beta] AppsFlyer MCP" typeOfEmbed="youtube" url="https://www.youtube.com/embed/jAw7oocIx6o?si=-s107vTaTTwO076n" providerUrl="https://www.youtube.com" />
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115002366466-URI-scheme-fallback-for-iOS
 ---
-**At a glance:** Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
+> **At a glance:** Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
 
 ## About URI fallback for iOS
 

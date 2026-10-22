@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212017846-Welcome-to-AppsFlyer
 ---
-**At a glance:** Learn what mobile advertising attribution is and how AppsFlyer helps marketers pinpoint their targeting, optimize their ad spend, and boost ROI.
+> **At a glance:** Learn what mobile advertising attribution is and how AppsFlyer helps marketers pinpoint their targeting, optimize their ad spend, and boost ROI.
 
 ## What is app attribution?
 
@@ -35,7 +35,7 @@ App attribution **determines which campaigns, partners, and channels drive your 
 
 <Image alt="" src="https://fast.wistia.com/embed/medias/471j74dt90/swatch" width="100%" />
 
-**At a glance:** How to log in to your account for the first time and how to switch between your accounts.
+> **At a glance:** How to log in to your account for the first time and how to switch between your accounts.
 
 ## First login
 

@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/10820404821393-Tealium-integration-with-AppsFlyer
 ---
-**At a glance:** Tealium, a Customer Data Platform (CDP), connects customer data across the web, mobile, IoT, and offline. Learn how to automatically share conversion data with Tealium.
+> **At a glance:** Tealium, a Customer Data Platform (CDP), connects customer data across the web, mobile, IoT, and offline. Learn how to automatically share conversion data with Tealium.
 
 <Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 

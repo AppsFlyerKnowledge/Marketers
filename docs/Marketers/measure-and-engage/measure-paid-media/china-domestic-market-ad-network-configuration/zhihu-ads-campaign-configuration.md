@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001758338-Zhihu-Ads-campaign-configuration
 ---
-**At a glance:** Zhihu Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** Zhihu Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up Zhihu Ads
 

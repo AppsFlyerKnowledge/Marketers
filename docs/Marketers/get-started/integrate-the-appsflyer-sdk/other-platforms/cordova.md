@@ -27,7 +27,7 @@ x-zendesk:
   section_id: 6551244207121
   url: https://support.appsflyer.com/hc/en-us/articles/207032196-Cordova
 ---
-**At a glance:** Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more.
+> **At a glance:** Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more.
 
 > 🚧 **Important!**
 >

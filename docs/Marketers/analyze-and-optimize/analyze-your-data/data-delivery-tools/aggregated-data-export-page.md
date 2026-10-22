@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008614078-Aggregated-data-export-page
 ---
-**At a glance:** Download lifetime value (LTV) aggregate reports filtered by attribution date and media source.
+> **At a glance:** Download lifetime value (LTV) aggregate reports filtered by attribution date and media source.
 
 ## Aggregate data reports
 

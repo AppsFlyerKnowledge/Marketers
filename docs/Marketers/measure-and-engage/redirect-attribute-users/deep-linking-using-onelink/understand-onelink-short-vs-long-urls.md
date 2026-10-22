@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360017132597-Understand-OneLink-short-vs-long-URLs
 ---
-**At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
+> **At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
 
 ## **About OneLink links**
 

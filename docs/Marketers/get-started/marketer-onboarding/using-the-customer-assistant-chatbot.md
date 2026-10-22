@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/23583984402193-Using-the-Customer-Assistant-Chatbot
 ---
-**At a glance:** Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary.
+> **At a glance:** Contact AppsFlyer support through the Customer Assistant Chatbot for assistance with troubleshooting issues or product guidance. The chatbot also helps you open tickets to the correct team where necessary.
 
 ## Overview
 

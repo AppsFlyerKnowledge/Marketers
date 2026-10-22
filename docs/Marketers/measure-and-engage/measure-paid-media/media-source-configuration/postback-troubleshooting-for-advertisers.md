@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14272573202833-Postback-troubleshooting-for-advertisers
 ---
-**At a glance:** Find the leading causes and solutions to why your partner isn't receiving expected postbacks. Go through each of the topics below and see if they may be the cause.
+> **At a glance:** Find the leading causes and solutions to why your partner isn't receiving expected postbacks. Go through each of the topics below and see if they may be the cause.
 
 ## Check the integration toggles
 

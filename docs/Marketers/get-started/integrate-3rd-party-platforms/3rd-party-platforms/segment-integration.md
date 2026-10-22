@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210041606-Segment-integration
 ---
-**At a glance:** Send your Segment analytics data to AppsFlyer.
+> **At a glance:** Send your Segment analytics data to AppsFlyer.
 
 ## Introduction
 

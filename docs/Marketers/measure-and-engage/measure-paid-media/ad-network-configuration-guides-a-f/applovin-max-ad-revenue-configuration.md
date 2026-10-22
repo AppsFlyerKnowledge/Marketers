@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360004707378-Applovin-MAX-ad-revenue-configuration
 ---
-**At a glance:** Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions.
+> **At a glance:** Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000174783-Addict-Mobile-campaign-configuration
 ---
-**At a glance:** Addict Mobile, an AppsFlyer ad network integrated partner, is a mobile performance marketing expert for user acquisition and retargeting on mobile. In addition to click-based mobile attribution, Addict Mobile also offers view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Addict Mobile, an AppsFlyer ad network integrated partner, is a mobile performance marketing expert for user acquisition and retargeting on mobile. In addition to click-based mobile attribution, Addict Mobile also offers view-through attribution, which you can record with AppsFlyer.
 
 ## Setting up Addict Mobile
 

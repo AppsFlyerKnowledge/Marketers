@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4409128270481-User-management
 ---
-**At a glance:** Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
+> **At a glance:** Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
 
 ## Overview
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/213504346-Leadbolt-campaign-configuration
 ---
-**At a glance:** Leadbolt, an AppsFlyer integrated ad network partner, is a high-performance mobile advertising platform for user acquisition and in-app monetization. In addition to click-based mobile attribution, Leadbolt also offers view-through attribution, which you can record with AppsFlyer.
+> **At a glance:** Leadbolt, an AppsFlyer integrated ad network partner, is a high-performance mobile advertising platform for user acquisition and in-app monetization. In addition to click-based mobile attribution, Leadbolt also offers view-through attribution, which you can record with AppsFlyer.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leadbolt.png" width="172px" />
 

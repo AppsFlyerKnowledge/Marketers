@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001460566-Attributing-app-installs-to-non-mobile-ads-from-Meta-ads
 ---
-**At a glance:** Attribute installs coming from non-mobile Meta ads campaigns.
+> **At a glance:** Attribute installs coming from non-mobile Meta ads campaigns.
 
 ## Attributing mobile app installs
 

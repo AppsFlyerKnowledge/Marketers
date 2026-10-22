@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14038324952465-Campaign-name-changes
 ---
-**At a glance:** Change the names of campaigns without creating duplicate data displays.
+> **At a glance:** Change the names of campaigns without creating duplicate data displays.
 
 ## Campaign name changes
 

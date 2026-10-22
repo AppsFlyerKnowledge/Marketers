@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000805366-SDK-information-version-consent-dashboard
 ---
-**At a glance:** Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics.
+> **At a glance:** Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics.
 
 ## Version adoption and ATT consent dashboard
 

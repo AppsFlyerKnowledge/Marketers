@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/9960361873809-Partner-Integrations
 ---
-**At a glance**: Discover, review, activate, and manage partner integrations (ad networks, agencies, tech partners, analytics platforms, and more) from one central place in AppsFlyer.
+> **At a glance**: Discover, review, activate, and manage partner integrations (ad networks, agencies, tech partners, analytics platforms, and more) from one central place in AppsFlyer.
 
 <Embed title="Partner Integrations" typeOfEmbed="youtube" url="https://www.youtube.com/embed/gADoRdje5z8" providerUrl="https://www.youtube.com" />
 

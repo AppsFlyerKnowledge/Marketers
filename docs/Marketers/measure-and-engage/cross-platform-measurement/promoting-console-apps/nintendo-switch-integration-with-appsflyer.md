@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/14988397864593-Nintendo-Switch-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your Nintendo Switch game or app with AppsFlyer to receive attribution and event data for your Nintendo Switch campaigns.
+> **At a glance:** Integrate your Nintendo Switch game or app with AppsFlyer to receive attribution and event data for your Nintendo Switch campaigns.
 
 ## About Nintendo Switch attribution
 

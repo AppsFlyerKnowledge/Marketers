@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/216519003-Adcash-campaign-configuration
 ---
-**At a glance:** Adcash, an AppsFlyer ad network integrated partner, is a worldwide advertising platform providing a fully programmable self-service demand-side platform.
+> **At a glance:** Adcash, an AppsFlyer ad network integrated partner, is a worldwide advertising platform providing a fully programmable self-service demand-side platform.
 
 ## Setting up Adcash
 

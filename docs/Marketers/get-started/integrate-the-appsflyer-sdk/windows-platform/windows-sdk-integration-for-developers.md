@@ -28,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207032026-Windows-SDK-integration-for-developers
 ---
-**At a glance:** Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more.
+> **At a glance:** Add AppsFlyer to Windows apps and games to measure app installs, in-app events, media sources, and more.
 
 **Current Version: 3.1.0 (17/12/2023)**
 

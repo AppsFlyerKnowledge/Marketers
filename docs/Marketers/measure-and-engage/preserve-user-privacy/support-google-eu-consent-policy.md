@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/22310731147153-Support-Google-EU-consent-policy
 ---
-**At a glance:** AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and improve the value of their ads in Google. Find answers to frequently asked questions about compliance with the DMA and optimizing ad value.
+> **At a glance:** AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and improve the value of their ads in Google. Find answers to frequently asked questions about compliance with the DMA and optimizing ad value.
 
 ## Overview
 

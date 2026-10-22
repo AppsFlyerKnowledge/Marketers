@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000295445-Ibotta-campaign-configuration
 ---
-**At a glance:** Ibotta, an AppsFlyer integrated ad network partner, makes it easier for consumers to earn cashback on everyday purchases through a single smartphone app.
+> **At a glance:** Ibotta, an AppsFlyer integrated ad network partner, makes it easier for consumers to earn cashback on everyday purchases through a single smartphone app.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
 

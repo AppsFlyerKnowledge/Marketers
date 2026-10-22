@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001288945-AppsFlyer-HTTPS-SSL-encryption-policy-support
 ---
-**At a glance:** Learn about outgoing SSL cipher suites supported by AppsFlyer.
+> **At a glance:** Learn about outgoing SSL cipher suites supported by AppsFlyer.
 
 ## Introduction
 

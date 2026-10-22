@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/47721580892433-Pinterest-Create-a-website-app-integration
 ---
-**At a glance:** Set up a Pinterest integration for your website app to send web conversion events to Pinterest for campaign optimization and reporting.
+> **At a glance:** Set up a Pinterest integration for your website app to send web conversion events to Pinterest for campaign optimization and reporting.
 
 ## **Set up integration**
 

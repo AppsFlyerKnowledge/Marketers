@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211758923-Testing-tvOS-integration-before-publishing
 ---
-**At a glance:** Simulate a non-organic install from your AppleTV device using the tvOS Test App.
+> **At a glance:** Simulate a non-organic install from your AppleTV device using the tvOS Test App.
 
 ## Overview
 

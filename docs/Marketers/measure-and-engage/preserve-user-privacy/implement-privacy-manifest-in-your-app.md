@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/21677433322641-Implement-Privacy-Manifest-in-your-app
 ---
-**At a glance:** At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below.
+> **At a glance:** At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below.
 
 ## Background
 

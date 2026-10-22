@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208338403-Set-up-lookback-windows
 ---
-**At a glance:** Customize the click-through and view-through lookback windows, based on your agreements with media sources.
+> **At a glance:** Customize the click-through and view-through lookback windows, based on your agreements with media sources.
 
 ## Lookback windows
 

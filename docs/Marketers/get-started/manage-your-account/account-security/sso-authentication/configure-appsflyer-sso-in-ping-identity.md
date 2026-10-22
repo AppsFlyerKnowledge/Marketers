@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16062655361937-Configure-AppsFlyer-SSO-in-Ping-Identity
 ---
-**At a glance:** Configure the SSO process using Ping Identity as an identity provider (IdP).
+> **At a glance:** Configure the SSO process using Ping Identity as an identity provider (IdP).
 
 The first step in configuring the AppsFlyer SSO process is done on the Ping Identity platform. Follow the steps below:
 

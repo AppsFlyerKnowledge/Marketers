@@ -27,7 +27,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005972889-Manage-data-access-permissions
 ---
-**At a glance:** The ability to access data and features in AppsFlyer depends on team member account type, individual team member permissions, and account permissions.
+> **At a glance:** The ability to access data and features in AppsFlyer depends on team member account type, individual team member permissions, and account permissions.
 
 ## Access to data by account type
 

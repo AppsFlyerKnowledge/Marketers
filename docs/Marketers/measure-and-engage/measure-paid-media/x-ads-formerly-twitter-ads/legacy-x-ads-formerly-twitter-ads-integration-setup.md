@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/36433415114769--Legacy-X-Ads-formerly-Twitter-Ads-integration-setup
 ---
-**At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
+> **At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
 
 ## Connecting your X Ads account to AppsFlyer
 

@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4416119954705-Smart-Banners-website-code-implementation-for-marketers
 ---
-**At a glance:** Add the Smart Banners code to your website to convert your website visitors into mobile app users.
+> **At a glance:** Add the Smart Banners code to your website to convert your website visitors into mobile app users.
 
 > 📘 **Note**
 >

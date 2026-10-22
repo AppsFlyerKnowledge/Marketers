@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019957558-Bulletin-Apple-Ads-sign-in-error-and-solution
 ---
-**At a glance:** Solve the sign-in error that displays during Apple Ads cost integration.
+> **At a glance:** Solve the sign-in error that displays during Apple Ads cost integration.
 
 | **Issue date** | From May 5, 2021 |
 | --- | --- |

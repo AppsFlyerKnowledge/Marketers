@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000844778-Partner-activation-deactivation
 ---
-**At a glance:** Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions.
+> **At a glance:** Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions.
 
 ## Activation overview
 

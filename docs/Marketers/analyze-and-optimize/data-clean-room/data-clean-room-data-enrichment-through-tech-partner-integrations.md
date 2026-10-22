@@ -25,7 +25,7 @@ x-zendesk:
 
 ![beta feature](https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png)
 
-**At a glance:** Enrich your data and enhance your Data Clean Room (DCR) reports with data from our integrated tech partners.
+> **At a glance:** Enrich your data and enhance your Data Clean Room (DCR) reports with data from our integrated tech partners.
 
 > 📘 **Try out this new feature!**
 >

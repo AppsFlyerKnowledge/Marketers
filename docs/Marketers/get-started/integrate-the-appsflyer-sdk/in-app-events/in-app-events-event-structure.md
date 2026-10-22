@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410481112081-In-app-events-Event-structure
 ---
-**At a glance:** View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase).
+> **At a glance:** View the list of predefined event names and event parameters to record post-install in-app events (such as login, register, or in-app purchase).
 
 ## Overview
 

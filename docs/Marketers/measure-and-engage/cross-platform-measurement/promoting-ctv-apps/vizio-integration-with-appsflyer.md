@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/5045234293777-Vizio-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to receive attribution and event data for your campaigns on Vizio.
+> **At a glance:** Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to receive attribution and event data for your campaigns on Vizio.
 
 ## About Vizio CTV attribution
 

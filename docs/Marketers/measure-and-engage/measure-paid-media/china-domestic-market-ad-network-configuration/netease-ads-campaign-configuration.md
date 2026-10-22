@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003044126-Netease-Ads-campaign-configuration
 ---
-**At a glance:** Netease, an AppsFlyer integrated partner, is a leading advertisement service provider in the Chinese market.
+> **At a glance:** Netease, an AppsFlyer integrated partner, is a leading advertisement service provider in the Chinese market.
 
 ## Setting up Netease
 

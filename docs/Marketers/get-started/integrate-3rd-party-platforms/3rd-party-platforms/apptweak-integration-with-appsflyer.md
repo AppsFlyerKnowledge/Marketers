@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/23661808773649-AppTweak-integration-with-AppsFlyer
 ---
-**At a glance:** AppTweak, an AppsFlyer integrated partner, is an app store acquisition partner for global mobile industry leaders. AppTweak offers solutions to help apps and games optimize their app store presence and increase downloads.
+> **At a glance:** AppTweak, an AppsFlyer integrated partner, is an app store acquisition partner for global mobile industry leaders. AppTweak offers solutions to help apps and games optimize their app store presence and increase downloads.
 
 ## Overview
 

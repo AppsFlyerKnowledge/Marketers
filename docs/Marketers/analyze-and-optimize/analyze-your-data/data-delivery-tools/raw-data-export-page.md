@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008613838-Raw-data-export-page
 ---
-**At a glance:** Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
+> **At a glance:** Download raw data reports in CSV files. Up to 1M rows per download. Limit reports to the data you need by using filters.
 
 The following visual displays the first time you go to the **Raw data export** page; the **My reports** page displays if you have reports ready for download or duplication.
 

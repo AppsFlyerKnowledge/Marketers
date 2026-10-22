@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004330446-Baidu-mDSP-Ads-Baiyi-campaign-configuration
 ---
-**At a glance:** Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share.
+> **At a glance:** Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share.
 
 ## Setting up Baidu mDSO Ads (Baiyi)
 

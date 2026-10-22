@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--premium" title="This AppsFlyer premium feature is available for advanced account plans or as an add-on. You can check the Account management page to see if this feature is already included in your plan. For any further questions, contact your AppsFlyer CSM or write to hello@appsflyer.com.">Premium</span>
 
-**At a glance:** Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns.
+> **At a glance:** Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns.
 
 [![Main image -Default view.jpg](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)
 

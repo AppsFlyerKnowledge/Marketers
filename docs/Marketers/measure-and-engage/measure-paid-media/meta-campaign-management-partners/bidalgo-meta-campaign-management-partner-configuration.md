@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/218002103-Bidalgo-Meta-campaign-management-partner-configuration
 ---
-**At a glance:** Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of artificial intelligence solutions to help app marketers scale their growth.
+> **At a glance:** Bidalgo, an AppsFlyer integrated partner (formerly known as Facebook Marketing Partners), is a leading provider of artificial intelligence solutions to help app marketers scale their growth.
 
 ## Setting up Bidalgo
 

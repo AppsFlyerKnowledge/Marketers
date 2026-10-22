@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/211506443-WakeApp-campaign-configuration
 ---
-**At a glance:** WakeApp, an AppsFlyer ad network integrated partner, is a global company specializing in mobile marketing.
+> **At a glance:** WakeApp, an AppsFlyer ad network integrated partner, is a global company specializing in mobile marketing.
 
 To configure your campaigns with Wakeapp, follow the steps below.
 

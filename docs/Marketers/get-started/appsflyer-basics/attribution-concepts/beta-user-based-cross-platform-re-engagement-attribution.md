@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45444294953361--Beta-User-based-cross-platform-re-engagement-attribution
 ---
-**At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
+> **At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
 
 ## About cross-platform re-engagement attribution
 

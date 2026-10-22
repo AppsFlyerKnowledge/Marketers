@@ -20,7 +20,7 @@ x-zendesk:
   section_id: 6551203111057
   url: https://support.appsflyer.com/hc/en-us/articles/115005248543-OneLink-guide
 ---
-**At a glance:** Create links with attribution, redirection, and deep linking capabilities that convert owned or paid media users into app users, regardless of device, operating system, channel, or platform. These links help you provide the best experience for your users, no matter which of your owned media sources they convert from: websites, banners, social media posts, emails, texts, and more.
+> **At a glance:** Create links with attribution, redirection, and deep linking capabilities that convert owned or paid media users into app users, regardless of device, operating system, channel, or platform. These links help you provide the best experience for your users, no matter which of your owned media sources they convert from: websites, banners, social media posts, emails, texts, and more.
 
 ## Introduction video
 

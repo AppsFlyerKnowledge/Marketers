@@ -23,7 +23,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-**At a glance:** Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management.
+> **At a glance:** Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management.
 
 ## About fraud protection studio
 

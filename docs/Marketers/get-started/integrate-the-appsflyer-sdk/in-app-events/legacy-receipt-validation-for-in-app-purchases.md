@@ -33,7 +33,7 @@ x-zendesk:
 >
 > This article describes the deprecated Receipt validation feature. For more information, see <Anchor target="_blank" href="/marketers/docs/bulletin-legacy-receipt-validation-is-deprecated">Bulletin: Legacy Receipt validation is deprecated</Anchor>
 
-**At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">in-app purchase validation mechanism</Anchor>.
+> **At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">in-app purchase validation mechanism</Anchor>.
 
 ## Receipt validation flow
 

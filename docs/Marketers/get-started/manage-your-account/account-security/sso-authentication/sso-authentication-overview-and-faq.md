@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/27434547337617-SSO-authentication-Overview-and-FAQ
 ---
-**At a glance:** Learn about single sign-on (SSO) authentication and the process of logging in to AppsFlyer via with your identity provider (IdP) using SSO. Find answers to FAQs about SSO login.
+> **At a glance:** Learn about single sign-on (SSO) authentication and the process of logging in to AppsFlyer via with your identity provider (IdP) using SSO. Find answers to FAQs about SSO login.
 
 ## What is SSO authentication?
 

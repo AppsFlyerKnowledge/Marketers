@@ -28,7 +28,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115002587066-Set-up-re-attribution-window
 ---
-**At a glance:** Learn about re-attribution window, during which reinstalls are not attributed as new installs.
+> **At a glance:** Learn about re-attribution window, during which reinstalls are not attributed as new installs.
 
 ## Re-attribution window
 

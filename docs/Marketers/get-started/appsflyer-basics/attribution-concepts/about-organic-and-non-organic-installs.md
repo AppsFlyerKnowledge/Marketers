@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115005995229-About-organic-and-non-organic-installs
 ---
-**At a glance:** Understand the difference between organic and non-organic installs.
+> **At a glance:** Understand the difference between organic and non-organic installs.
 
 ![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
 

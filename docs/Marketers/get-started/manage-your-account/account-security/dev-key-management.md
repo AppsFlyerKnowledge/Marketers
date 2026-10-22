@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/37139123425809-Dev-Key-management
 ---
-**At a glance:** Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security.
+> **At a glance:** Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security.
 
 ## What is a Dev Key?
 

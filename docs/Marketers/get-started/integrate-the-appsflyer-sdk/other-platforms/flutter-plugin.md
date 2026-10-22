@@ -25,6 +25,6 @@ x-zendesk:
 ---
 ![flutter_icon.png](https://files.readme.io/3d4c1fc64dc794621c37afc677a88175748b8993204dba5693cdcce58559fa4a-360004154837.png)
 
-**At a glance:** Integrate AppsFlyer to apps developed using Flutter to measure installs, in-app events, media sources, and more.
+> **At a glance:** Integrate AppsFlyer to apps developed using Flutter to measure installs, in-app events, media sources, and more.
 
 To integrate the AppsFlyer Flutter plugin, see <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/flutter_appsflyer_sdk">here</Anchor>.

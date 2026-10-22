@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/208270836-Tyroo-campaign-configuration
 ---
-**At a glance:** Tyroo, an AppsFlyer ad network integrated partner, is a leading global mobile user acquisition and monetization platform. In addition to click-based mobile attribution, Tyroo offers cost and view-through attribution, which can be recorded with AppsFlyer.
+> **At a glance:** Tyroo, an AppsFlyer ad network integrated partner, is a leading global mobile user acquisition and monetization platform. In addition to click-based mobile attribution, Tyroo offers cost and view-through attribution, which can be recorded with AppsFlyer.
 
 To configure your campaigns with Tyroo, follow the steps below.
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4404976682257-iOS-metrics-in-the-Overview-dashboard-SKAN-and-AppsFlyer-metrics-side-by-side
 ---
-**At a glance**: View metrics of SKAdNetwork (SKAN) and AppsFlyer attribution frameworks side-by-side in the Overview dashboard. Identify the framework with the best campaign performance metric for you, then leverage it to gain insights and optimize campaigns.
+> **At a glance**: View metrics of SKAdNetwork (SKAN) and AppsFlyer attribution frameworks side-by-side in the Overview dashboard. Identify the framework with the best campaign performance metric for you, then leverage it to gain insights and optimize campaigns.
 
 **Attribution metrics display side-by-side in the Overview V2.0 dashboard**
 

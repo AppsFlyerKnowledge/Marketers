@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360011999877-App-list-API-for-app-owners
 ---
-**At a glance:** Retrieve active and pending apps associated with your AppsFlyer account.
+> **At a glance:** Retrieve active and pending apps associated with your AppsFlyer account.
 
 ![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
 

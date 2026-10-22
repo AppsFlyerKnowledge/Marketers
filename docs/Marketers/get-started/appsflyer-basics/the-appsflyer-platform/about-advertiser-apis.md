@@ -21,7 +21,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360009122638-About-advertiser-APIs
 ---
-**At a glance:** APIs available to advertisers to access or update data.
+> **At a glance:** APIs available to advertisers to access or update data.
 
 ## Advertiser API list and interfaces
 

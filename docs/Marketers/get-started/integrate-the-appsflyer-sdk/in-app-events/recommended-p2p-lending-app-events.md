@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019614017-Recommended-P2P-lending-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your peer-to-peer (P2P) lending app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your peer-to-peer (P2P) lending app.
 
 ## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> P2P lending
 

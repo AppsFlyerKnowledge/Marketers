@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360019888518-Recommended-healthcare-app-events
 ---
-**At a glance:** Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app.
+> **At a glance:** Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app.
 
 ## <Image alt="5669_Healthcare_icon_3.png" src="https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png" width="100px" /> Healthcare
 

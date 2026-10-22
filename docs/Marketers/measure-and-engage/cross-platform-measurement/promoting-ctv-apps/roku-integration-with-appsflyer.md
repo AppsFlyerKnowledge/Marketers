@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4404257169169-Roku-integration-with-AppsFlyer
 ---
-**At a glance** Rokuads\_int is an SRN integration that allows advertisers to integrate their mobile or Roku CTV app with Roku Ads to receive attribution and event data for their campaigns on Roku Ads.
+> **At a glance** Rokuads\_int is an SRN integration that allows advertisers to integrate their mobile or Roku CTV app with Roku Ads to receive attribution and event data for their campaigns on Roku Ads.
 
 ## About Roku Ads Attribution
 

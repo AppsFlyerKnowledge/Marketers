@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4413026674833-Google-Analytics-integration-Discrepancies
 ---
-**At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
+> **At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
 
 ## Discrepancies in data between AppsFlyer and Google Analytics
 

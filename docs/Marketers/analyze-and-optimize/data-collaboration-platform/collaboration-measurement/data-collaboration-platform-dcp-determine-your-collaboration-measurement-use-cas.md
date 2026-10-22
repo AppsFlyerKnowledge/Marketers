@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32964487756561-Data-collaboration-platform-DCP-Determine-your-collaboration-measurement-use-case
 ---
-**At a glance:** Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it.
+> **At a glance:** Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it.
 
 ## Overview
 

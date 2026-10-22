@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360014261518-SKAN-raw-data-reports
 ---
-**At a glance:** SKAN raw data reports contain row-level data generated after translating and decoding postbacks received by AppsFlyer from iOS, as well as raw SKAN postbacks. Data is available via <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor> and <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor>. If your subscription plan includes raw data, there is no need for a Data Locker subscription.
+> **At a glance:** SKAN raw data reports contain row-level data generated after translating and decoding postbacks received by AppsFlyer from iOS, as well as raw SKAN postbacks. Data is available via <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor> and <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor>. If your subscription plan includes raw data, there is no need for a Data Locker subscription.
 
 ## SKAN raw data reports
 

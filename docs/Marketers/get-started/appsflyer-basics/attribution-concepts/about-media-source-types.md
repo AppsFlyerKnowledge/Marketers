@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/212188826-About-media-source-types
 ---
-**At a glance:** Understand the basic media source types in AppsFlyer.
+> **At a glance:** Understand the basic media source types in AppsFlyer.
 
 A media source is an entity that displays ads. The AppsFlyer platform enables attribution recording from different types of media sources.
 

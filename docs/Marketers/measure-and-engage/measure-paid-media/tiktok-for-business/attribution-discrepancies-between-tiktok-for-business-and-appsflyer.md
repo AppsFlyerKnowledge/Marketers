@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/19733501619473-Attribution-discrepancies-between-TikTok-for-Business-and-AppsFlyer
 ---
-**At a glance:** Learn about the differences in attribution models between TikTok for Business and AppsFlyer.
+> **At a glance:** Learn about the differences in attribution models between TikTok for Business and AppsFlyer.
 
 ## Overview
 

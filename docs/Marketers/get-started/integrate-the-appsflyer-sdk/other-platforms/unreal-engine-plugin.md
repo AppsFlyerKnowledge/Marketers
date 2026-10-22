@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001604157--Unreal-Engine-plugin
 ---
-**At a glance:** Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
+> **At a glance:** Integrate AppsFlyer into games developed in Unreal Engine to measure app installs, in-app events, media sources, and more.
 
 ![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png)
 

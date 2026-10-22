@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410643856657-Data-Locker-advertiser-reports
 ---
-**At a glance:** Aggregate and raw data reports available via Data Locker
+> **At a glance:** Aggregate and raw data reports available via Data Locker
 
 ## Reports available via Data Locker for advertisers
 

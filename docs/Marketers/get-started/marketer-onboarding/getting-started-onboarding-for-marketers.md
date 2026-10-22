@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207033486-Getting-started-Onboarding-for-marketers
 ---
-**At a glance:** Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board.
+> **At a glance:** Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board.
 
 <Image alt="" src="https://fast.wistia.com/embed/medias/gamcb25kgu/swatch" width="100%" />
 

@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/41396370612497-Snapchat-Web-integration-setup-for-PC-and-console-apps
 ---
-**At a glance:** Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web.
+> **At a glance:** Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web.
 
 > ❗️ **Warning**
 >

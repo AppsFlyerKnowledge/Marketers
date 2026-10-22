@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/39524780935185-Product-Line-Group-apps-for-cross-platform-attribution
 ---
-**At a glance:** Group platform-specific apps under a single brand using Product Line. Unlock cross-platform attribution and user journey insights across mobile, web, and CTV apps using a unified Customer User ID (CUID).
+> **At a glance:** Group platform-specific apps under a single brand using Product Line. Unlock cross-platform attribution and user journey insights across mobile, web, and CTV apps using a unified Customer User ID (CUID).
 
 ## About Product Line
 

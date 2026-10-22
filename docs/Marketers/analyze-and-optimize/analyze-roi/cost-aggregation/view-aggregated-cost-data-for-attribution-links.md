@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008981698-View-aggregated-cost-data-for-attribution-links
 ---
-**At a glance:** Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link.
+> **At a glance:** Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link.
 
 ## Basic cost reporting
 

@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006997298-Web-Server-to-server-events-API-for-PBA-Web-S2S
 ---
-**At a glance:** Use the Web Server-to-Server (Web-S2S) events API to report events and conversions to PBA that aren't reported by the Web SDK.
+> **At a glance:** Use the Web Server-to-Server (Web-S2S) events API to report events and conversions to PBA that aren't reported by the Web SDK.
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)
 

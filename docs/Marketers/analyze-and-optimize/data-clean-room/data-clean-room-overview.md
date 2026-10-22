@@ -25,7 +25,7 @@ x-zendesk:
 
 **![privacy_cloud_logo.png](https://files.readme.io/5862beb63a4b22f68fc230f89c3faa260a15ab40e1defa70c59604d5a81e759d-5583061038225.png)**
 
-**At a glance:** Enrich your user-level data by matching it with AppsFlyer user-level attribution data to create aggregated reports and obtain insights that leverage the value of the combined data.
+> **At a glance:** Enrich your user-level data by matching it with AppsFlyer user-level attribution data to create aggregated reports and obtain insights that leverage the value of the combined data.
 
 ## Introduction
 

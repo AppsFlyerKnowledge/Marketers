@@ -31,7 +31,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000136303-Account-management-plans-payments-and-billing
 ---
-**At a glance:** Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account.
+> **At a glance:** Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account.
 
 ## AppsFlyer plans and usage
 

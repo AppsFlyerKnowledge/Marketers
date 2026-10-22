@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16308237781649-Native-PC-integration-with-AppsFlyer
 ---
-**At a glance:** Integrate your PC game or app with AppsFlyer to receive attribution and event data for your PC campaigns. The Native PC integration supports attribution and in-app event recording for PC apps (in other words, attribution and recording on a user's PC).
+> **At a glance:** Integrate your PC game or app with AppsFlyer to receive attribution and event data for your PC campaigns. The Native PC integration supports attribution and in-app event recording for PC apps (in other words, attribution and recording on a user's PC).
 
 ## About Native PC attribution
 

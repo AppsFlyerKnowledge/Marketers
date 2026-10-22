@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360002141597-Meiyou-Ads-campaign-configuration
 ---
-**At a glance:** Meiyou Ads is an AppsFlyer ad network integrated partner.
+> **At a glance:** Meiyou Ads is an AppsFlyer ad network integrated partner.
 
 ## Setting Up Meiyou Ads
 

@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360000894849-The-Trade-Desk-campaign-configuration
 ---
-**At a glance:** The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of cross-device users. The Trade Desk offers click-based mobile attribution, view-through mobile attribution, and click-based retargeting, all of which can be recorded through AppsFlyer.
+> **At a glance:** The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of cross-device users. The Trade Desk offers click-based mobile attribution, view-through mobile attribution, and click-based retargeting, all of which can be recorded through AppsFlyer.
 
 ## Setting up The Trade Desk (TTD)
 

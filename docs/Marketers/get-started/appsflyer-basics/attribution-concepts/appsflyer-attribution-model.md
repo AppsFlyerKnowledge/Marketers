@@ -34,7 +34,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207447053-AppsFlyer-attribution-model
 ---
-**At a glance:** AppsFlyer determines the media source motivating a user to install or re-engage with an app and attributes the user action to that source using the AppsFlyer attribution model.
+> **At a glance:** AppsFlyer determines the media source motivating a user to install or re-engage with an app and attributes the user action to that source using the AppsFlyer attribution model.
 
 [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 

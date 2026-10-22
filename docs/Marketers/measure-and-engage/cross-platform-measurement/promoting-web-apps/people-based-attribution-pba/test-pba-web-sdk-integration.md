@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360012729178-Test-PBA-web-SDK-integration
 ---
-**At a glance:** Test the Web SDK PBA plugin integration.
+> **At a glance:** Test the Web SDK PBA plugin integration.
 
 ## Test PBA web events
 

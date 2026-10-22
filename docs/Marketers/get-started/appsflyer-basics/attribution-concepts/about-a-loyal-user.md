@@ -26,7 +26,7 @@ x-zendesk:
   section_id: 6551394235409
   url: https://support.appsflyer.com/hc/en-us/articles/207447003-About-a-loyal-user
 ---
-**At a glance:** Learn what defines a loyal user in AppsFlyer, and how you can customize it.
+> **At a glance:** Learn what defines a loyal user in AppsFlyer, and how you can customize it.
 
 ## What is a loyal user?
 

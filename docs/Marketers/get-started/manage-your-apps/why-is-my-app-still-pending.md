@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001533885-Why-is-my-app-still-pending
 ---
-**At a glance:** Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard.
+> **At a glance:** Follow the status of apps pending publishing to app stores from the AppsFlyer dashboard.
 
 When you <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer">add your new app</Anchor> to the AppsFlyer dashboard, you first choose whether the app is pending or already in the market.
 

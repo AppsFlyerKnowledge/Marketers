@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/34060852331153-Data-Collaboration-Platform-DCP-View-measurement-reports
 ---
-**At a glance:** Customize your measurement reports by setting report fields, aggregation levels, schedules, and cloud connections.
+> **At a glance:** Customize your measurement reports by setting report fields, aggregation levels, schedules, and cloud connections.
 
 Data Collaboration Platform (DCP) measurement reports provide top-level metrics such as clicks, impressions, and ROAS per campaign. They may also include additional metrics and dimensions based on granted access.
 

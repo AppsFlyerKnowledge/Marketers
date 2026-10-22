@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/36467082193553-Closed-Beta-Protect360-Explore-insights-with-Val-anti-fraud-assistant
 ---
-**At a glance:** Val is a preemptive anti-fraud assistant in Protect360 that provides weekly insights to help highlight trends, recommend actions, and improve fraud protection. By surfacing actionable intelligence, Val transforms fraud detection from reactive to proactive.
+> **At a glance:** Val is a preemptive anti-fraud assistant in Protect360 that provides weekly insights to help highlight trends, recommend actions, and improve fraud protection. By surfacing actionable intelligence, Val transforms fraud detection from reactive to proactive.
 
 ## About Val anti-fraud assistant
 

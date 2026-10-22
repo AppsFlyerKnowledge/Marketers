@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32143318560017-Data-collaboration-platform-DCP-Collaboration-measurement-Overview
 ---
-**At a glance:** Learn about collaboration measurement, its basic concepts, and data flow.
+> **At a glance:** Learn about collaboration measurement, its basic concepts, and data flow.
 
 ## The three data sources of measurement
 

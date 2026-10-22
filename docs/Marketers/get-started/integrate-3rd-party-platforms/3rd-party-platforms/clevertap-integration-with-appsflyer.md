@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360001299165-CleverTap-integration-with-AppsFlyer
 ---
-**At a glance:** CleverTap is a modern, integrated retention cloud that empowers digital consumer brands to increase customer retention and lifetime value.
+> **At a glance:** CleverTap is a modern, integrated retention cloud that empowers digital consumer brands to increase customer retention and lifetime value.
 
 <Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 

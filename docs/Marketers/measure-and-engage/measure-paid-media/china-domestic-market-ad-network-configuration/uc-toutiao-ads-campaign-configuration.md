@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115004843026-UC-Toutiao-Ads-campaign-configuration
 ---
-**At a glance:** UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps.
+> **At a glance:** UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps.
 
 ## Setting up UC Toutiao
 

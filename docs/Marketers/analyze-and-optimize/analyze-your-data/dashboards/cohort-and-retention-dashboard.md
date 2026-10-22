@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207040496-Cohort-and-retention-dashboard
 ---
-**At a glance:** The Cohort and retention dashboard (also referred to as simply "Cohort") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics.
+> **At a glance:** The Cohort and retention dashboard (also referred to as simply "Cohort") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics.
 
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 

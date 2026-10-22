@@ -22,7 +22,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410480904081-Meta-ads-in-app-event-mapping
 ---
-**At a glance:** Send your app's rich in-app events from AppsFlyer to Meta ads.
+> **At a glance:** Send your app's rich in-app events from AppsFlyer to Meta ads.
 
 ## Meta in-app events mapping
 

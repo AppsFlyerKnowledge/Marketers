@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115001224823-AppsFlyer-iOS-SDK-release-notes
 ---
-**At a glance:** The SDK release notes provide a quick overview of the latest changes to the iOS SDK. Developers looking for more comprehensive details should review <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes">the iOS Release Notes on the Dev Hub</Anchor>.
+> **At a glance:** The SDK release notes provide a quick overview of the latest changes to the iOS SDK. Developers looking for more comprehensive details should review <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes">the iOS Release Notes on the Dev Hub</Anchor>.
 
 **Legacy SDK versions for iOS and Android will stop being supported on a fixed six-month cycle.** This cycle is designed to provide advanced notice, helping teams plan ahead and maintain full app functionality without disruption. Upgrading to the latest SDK ensures access to the newest features, improved stability, and ongoing support.
 

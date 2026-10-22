@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4408847686161-About-device-identifiers
 ---
-**At a glance:** Understand the device identifiers supported in the AppsFlyer SDK.
+> **At a glance:** Understand the device identifiers supported in the AppsFlyer SDK.
 
 ## Overview
 

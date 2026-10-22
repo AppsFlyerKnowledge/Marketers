@@ -26,7 +26,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/210195193--Legacy-Set-up-organic-search-attribution
 ---
-**At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">See our updated organic search attribution method</Anchor>.
+> **At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">See our updated organic search attribution method</Anchor>.
 
 > 🚧 **Important!**
 >

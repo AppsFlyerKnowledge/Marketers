@@ -25,7 +25,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360018515798-Apply-Aggregated-Advanced-Privacy-framework
 ---
-**At a glance:** Advertisers use the Aggregated Advanced Privacy (AAP) framework to control which attribution data is made available to partners and ad networks via the AppsFlyer platform.
+> **At a glance:** Advertisers use the Aggregated Advanced Privacy (AAP) framework to control which attribution data is made available to partners and ad networks via the AppsFlyer platform.
 
 ## Aggregated Advanced Privacy (AAP) framework
 

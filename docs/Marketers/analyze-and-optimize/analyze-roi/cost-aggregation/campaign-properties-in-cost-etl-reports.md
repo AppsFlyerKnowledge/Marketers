@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360020994977-Campaign-properties-in-cost-ETL-reports
 ---
-**At a glance:** Learn about campaign properties and how they display in AppsFlyer Cost ETL data.
+> **At a glance:** Learn about campaign properties and how they display in AppsFlyer Cost ETL data.
 
 ## About campaign properties
 

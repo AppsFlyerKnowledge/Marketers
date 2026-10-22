@@ -20,7 +20,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/32147174933905-Data-Collaboration-Platform-DCP-Configure-collaboration-measurement
 ---
-**At a glance:** Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.
+> **At a glance:** Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.
 
 ## Overview
 

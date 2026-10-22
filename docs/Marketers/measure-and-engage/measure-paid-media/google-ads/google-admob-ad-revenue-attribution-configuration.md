@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360006951817-Google-AdMob-Ad-revenue-attribution-configuration
 ---
-**At a glance:** Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
+> **At a glance:** Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
 

@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/16464765619985-Revenue-ETL-reports
 ---
-**At a glance:** Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them. Learn more about the fields and structure of the reports by downloading the data sample.
+> **At a glance:** Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them. Learn more about the fields and structure of the reports by downloading the data sample.
 
 ## Revenue ETL
 

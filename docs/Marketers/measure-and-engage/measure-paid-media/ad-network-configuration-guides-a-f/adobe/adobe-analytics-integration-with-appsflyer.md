@@ -24,7 +24,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115003326706-Adobe-Analytics-integration-with-AppsFlyer
 ---
-**At a glance:** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (formerly Omniture) is a set of tools for predictive and real-time analytics that can be integrated into third-party sources. It includes the Marketing Reports and Analytics (SiteCatalyst), Ad hoc analysis (Adobe Discover), and Insight applications to help create a holistic view of business activities by transforming customer interactions into insights.
+> **At a glance:** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (formerly Omniture) is a set of tools for predictive and real-time analytics that can be integrated into third-party sources. It includes the Marketing Reports and Analytics (SiteCatalyst), Ad hoc analysis (Adobe Discover), and Insight applications to help create a holistic view of business activities by transforming customer interactions into insights.
 
 ## Overview
 
