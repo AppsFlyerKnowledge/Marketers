@@ -552,52 +552,6 @@ In the table:
       </td>
     </tr>
     <tr>
-      <td />
-      <td>
-        Number of times the event is performed
-      </td>
-    </tr>
-    <tr>
-      <td>
-        User A
-      </td>
-      <td>
-        63
-      </td>
-    </tr>
-    <tr>
-      <td>
-        User B
-      </td>
-      <td>
-        10
-      </td>
-    </tr>
-    <tr>
-      <td>
-        User C
-      </td>
-      <td>
-        5
-      </td>
-    </tr>
-    <tr>
-      <td>
-        User D
-      </td>
-      <td>
-        1
-      </td>
-    </tr>
-    <tr>
-      <td>
-        User E
-      </td>
-      <td>
-        -
-      </td>
-    </tr>
-    <tr>
       <td>
         SKAdNetwork Attribution Configuration
       </td>

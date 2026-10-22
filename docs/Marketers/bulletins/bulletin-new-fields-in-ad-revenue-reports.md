@@ -46,39 +46,7 @@ x-zendesk:
         **What you should know**
       </td>
       <td>
-        The following table shows which fields are being added to which reports. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type</td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type</td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type \* ad\_revenue\_custom\_parameters \* app\_version \* sdk\_version</td></tr></tbody></table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Report
-      </td>
-      <td>
-        API field names
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor>
-      </td>
-      <td>
-        <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li></ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor>
-      </td>
-      <td>
-        <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li></ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor>
-      </td>
-      <td>
-        <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li><li>ad\_revenue\_custom\_parameters</li><li>app\_version</li><li>sdk\_version</li></ul>
+        The following table shows which fields are being added to which reports. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor></td><td><ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul></td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor></td><td><ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li></ul></td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor></td><td><ul><li>engagement_type</li><li>custom_data</li><li>customer_user_id</li><li>ad_revenue_ad_type</li><li>ad_revenue_custom_parameters</li><li>app_version</li><li>sdk_version</li></ul></td></tr></tbody></table>
       </td>
     </tr>
     <tr>

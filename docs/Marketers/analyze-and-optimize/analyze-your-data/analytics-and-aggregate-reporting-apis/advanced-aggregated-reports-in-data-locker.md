@@ -148,46 +148,6 @@ The format of the fields is as follows:
     </tr>
     <tr>
       <td>
-        event\_name
-      </td>
-      <td>
-        What did the user do
-      </td>
-    </tr>
-    <tr>
-      <td>
-        af\_conversion
-      </td>
-      <td>
-        User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        af\_session
-      </td>
-      <td>
-        Opened the app
-      </td>
-    </tr>
-    <tr>
-      <td>
-        cohort\_uninstalls
-      </td>
-      <td>
-        Uninstalled the app
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Advertiser defined in-app event
-      </td>
-      <td>
-        Performed an in-app event in the app
-      </td>
-    </tr>
-    <tr>
-      <td>
         campaign
       </td>
       <td>
@@ -475,46 +435,6 @@ The format of the fields is as follows:
       </td>
       <td>
         Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_session</td><td>Opened the app</td></tr><tr><td>cohort\_uninstalls</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app</td></tr></tbody></table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        event\_name
-      </td>
-      <td>
-        What did the user do
-      </td>
-    </tr>
-    <tr>
-      <td>
-        af\_conversion
-      </td>
-      <td>
-        User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        af\_session
-      </td>
-      <td>
-        Opened the app
-      </td>
-    </tr>
-    <tr>
-      <td>
-        cohort\_uninstalls
-      </td>
-      <td>
-        Uninstalled the app
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Advertiser defined in-app event
-      </td>
-      <td>
-        Performed an in-app event in the app
       </td>
     </tr>
     <tr>

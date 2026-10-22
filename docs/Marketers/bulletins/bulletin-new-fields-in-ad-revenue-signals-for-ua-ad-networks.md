@@ -46,23 +46,7 @@ x-zendesk:
         **What you should know**
       </td>
       <td>
-        The following table shows which fields are being added to ad revenue signals for UA ad networks. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor></td><td>\* ad\_unit \* placement \* mediation\_network \* ad\_revenue\_ad\_type \* engagement\_type</td></tr></tbody></table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Report
-      </td>
-      <td>
-        API field names
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor>
-      </td>
-      <td>
-        <ul><li>ad\_unit</li><li>placement</li><li>mediation\_network</li><li>ad\_revenue\_ad\_type</li><li>engagement\_type</li></ul>
+        The following table shows which fields are being added to ad revenue signals for UA ad networks. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor></td><td><ul><li>ad_unit</li><li>placement</li><li>mediation_network</li><li>ad_revenue_ad_type</li><li>engagement_type</li></ul></td></tr></tbody></table>
       </td>
     </tr>
     <tr>

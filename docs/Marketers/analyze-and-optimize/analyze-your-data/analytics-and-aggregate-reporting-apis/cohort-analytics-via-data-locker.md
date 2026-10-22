@@ -154,46 +154,6 @@ The format of the fields is as follows:
     </tr>
     <tr>
       <td>
-        event\_name
-      </td>
-      <td>
-        What did the user do
-      </td>
-    </tr>
-    <tr>
-      <td>
-        af\_conversion
-      </td>
-      <td>
-        User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        af\_session
-      </td>
-      <td>
-        Opened the app
-      </td>
-    </tr>
-    <tr>
-      <td>
-        cohort\_uninstalls
-      </td>
-      <td>
-        Uninstalled the app
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Advertiser defined in-app event
-      </td>
-      <td>
-        Performed an in-app event in the app
-      </td>
-    </tr>
-    <tr>
-      <td>
         campaign
       </td>
       <td>
