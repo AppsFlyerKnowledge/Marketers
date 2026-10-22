@@ -221,7 +221,7 @@ Adding permissions helps increase the rate of <Anchor target="_blank" href="/mar
    <uses-permission android:name="android.permission.INTERNET" />
    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-   `{/* Optional : */}`
+   <!-- Optional : -->
    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
    ```
 

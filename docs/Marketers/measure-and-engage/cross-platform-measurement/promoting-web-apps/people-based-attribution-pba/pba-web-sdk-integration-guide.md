@@ -698,9 +698,9 @@ The code provided is for illustrative purposes only. Don't use this code as-is.
 ```html
 <html>
     <head>
-        {/* Assume that the server returns a response with details about the newly subscribed user */}
-        {/* Alternatively, you can extract data from localStorage or cookies,
-            in case data was set in either of them during the subscription process */}
+        <!-- Assume that the server returns a response with details about the newly subscribed user -->
+        <!-- Alternatively, you can extract data from localStorage or cookies,
+            in case data was set in either of them during the subscription process -->
         <script>window.onload = function(){
             AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category': 'holiday_promotion', eventValue: {'label' : 'newspaper'}, eventName: 'subscription',}); } </script> </head> <body> <h1>Thank You for Subscribing to Our Newsletter</h1> </body> </html>
 ```
@@ -716,8 +716,8 @@ The code provided is for illustrative purposes only. Don't use this code as-is.
 ```html
 <html>
 <head>
-    {/* Assume that data about products in the shopping cart
-    is stored in localStorage */}
+    <!-- Assume that data about products in the shopping cart
+    is stored in localStorage -->
     <script>
         window.onload = function () {
             document.getElementById('checkout').addEventListener('click', function () {
@@ -909,7 +909,7 @@ Set up a signup page:
 ```html
 <html>
 <head>
-    {/* The Web SDK script loads first */}
+    <!-- The Web SDK script loads first -->
     <script>
 !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){
 (t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},

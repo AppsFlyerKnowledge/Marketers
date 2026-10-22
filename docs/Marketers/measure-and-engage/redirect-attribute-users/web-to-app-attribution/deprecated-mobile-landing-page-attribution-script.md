@@ -563,15 +563,15 @@ function generateUrl(isDebug) {
 </head>
 <body>
   <h1>Landing Page</h1>
-  {/* By default, the install buttons should have direct links to the stores */}
+  <!-- By default, the install buttons should have direct links to the stores -->
   <div>
     <a id="andrd_link" href="https://play.google.com/store/apps/details?id=com.appsflyer.sampleapp"><img src="/images/andrd.png"alt="" /></a>
   </div>
   <div>
     <a id="ios_link" href="https://itunes.apple.com/us/app/id3********"><img src="/images/ios.png" alt="" /></a>
   </div>
-  {/* If you want one button to serve both Android and iOS, use the code below instead
-  <a id="store_link" href=""><img src="download.png" alt="" /></a> */}
+  <!-- If you want one button to serve both Android and iOS, use the code below instead
+  <a id="store_link" href=""><img src="download.png" alt="" /></a> -->
   <script type="text/javascript" src="/landing-page-test.js"></script>
   <script type="text/javascript">
     window.onload = function () {

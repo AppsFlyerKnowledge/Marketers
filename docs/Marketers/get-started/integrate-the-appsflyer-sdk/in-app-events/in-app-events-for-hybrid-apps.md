@@ -98,7 +98,7 @@ Add the following HTML code to the web view or web page:
  <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
 </div>
 <script type="text/JavaScript">
-{/* Set Customer User ID */}
+<!-- Set Customer User ID -->
 function setCustomerUserId(){
    app.setCustomerUserId(customerUserId)
 }
@@ -219,7 +219,7 @@ Add the following HTML code to the web view or web page:
   <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
  </div>
  <script type="text/JavaScript">
-   {/* Set Customer User ID */} 
+   <!-- Set Customer User ID --> 
    function setCustomerUserId(){  
     customerUserIdwebkit.messageHandlers.cuid.postMessage(customerUserId); 
    }

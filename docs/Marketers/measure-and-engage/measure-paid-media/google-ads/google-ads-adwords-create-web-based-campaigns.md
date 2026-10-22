@@ -271,7 +271,7 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
 
 *
   ```
-  https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer=`{gclid}&gclid={gclid}&campaignid={campaignid}`
+  https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
   ```
 * **A direct download link to the app APK file** if you want users to download the app directly without being redirected to a store.
 
@@ -336,13 +336,13 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
 An example of **a** **OneLink** in a Google Tracking Template URL:
 
 ```
-https://subdomain.onelink.me/aAB1?pid=googleads_int&af_force_transparent=true&af_android_url=`{lpurl}&af_ios_url={lpurl}&af_web_dp={lpurl}&c=summer_sale24&af_siteid=123456&af_c_id={campaignid}&af_adset=sum24A&af_adset_id={adgroupid}&af_sub1={gclid}&af_sub2={gbraid}`
+https://subdomain.onelink.me/aAB1?pid=googleads_int&af_force_transparent=true&af_android_url={lpurl}&af_ios_url={lpurl}&af_web_dp={lpurl}&c=summer_sale24&af_siteid=123456&af_c_id={campaignid}&af_adset=sum24A&af_adset_id={adgroupid}&af_sub1={gclid}&af_sub2={gbraid}
 ```
 
 An example of **a single platform link** in a Google Tracking Template URL:
 
 ```
-https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id=`{adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}`
+https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
 #### Using the Tracking Template URL with Smart Script or Smart Banners
