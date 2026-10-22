@@ -69,7 +69,7 @@ Use the PID class when AppsFlyer reporting is your primary goal.
 
 #### Example
 
-```
+```http
 www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 ```
 
@@ -85,7 +85,7 @@ If `pid` is missing, AppsFlyer falls back to the UTM class.
 
 #### Example
 
-```
+```http
  www.website.com?utm_source=facebook&utm_medium=paidsocial&utm_campaign={{campaign.name}}
 ```
 
@@ -103,7 +103,7 @@ AppsFlyer processes attribution fields, such as Media Source and Campaign, indep
 
 #### Example 1: Overlapping parameters
 
-```
+```http
 www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=seasonal_promo
 ```
 
@@ -113,7 +113,7 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 
 #### Example 2: Mixed parameter classes
 
-```
+```http
 www.website.com?utm_source=facebook&c=summer_sale
 ```
 

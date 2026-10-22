@@ -126,7 +126,7 @@ The following table lists the tasks required to integrate your Epic game with Ap
 
           You can find your unique game ID on your Epic developer console. For example,
 
-          ```
+          ```http
           https://store.epicgames.com/en-us/p/YOUR-GAME-ID
           ```
         * **media\_source**

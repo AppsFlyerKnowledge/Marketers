@@ -391,7 +391,7 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 > <Tabs>
 > <Tab title="Android">
 >
-> ```
+> ```java
 > Map<String, Object> brazeData = new HashMap<>();
 > partnerData.put("external_user_id", "some-braze-external-id-value");
 > AppsFlyerLib.getInstance().setPartnerData("braze_int", brazeData);
@@ -401,7 +401,7 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 >
 > <Tab title="iOS">
 >
-> ```
+> ```objectivec
 > NSDictionary *brazeInfo = @{
 > @"external_user_id":@"some-braze-external-id-value"
 > };

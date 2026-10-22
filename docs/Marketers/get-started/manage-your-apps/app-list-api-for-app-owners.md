@@ -51,7 +51,7 @@ The API request consists of the method, path, mandatory capabilities parameter, 
 
 **Method**
 
-```
+```http
 GET https://hq1.appsflyer.com/api/mng/apps
 ```
 
@@ -134,7 +134,7 @@ Pagination mechanism parameters (optional):
 
 This example includes a complete call, including optional pagination parameters.
 
-```
+```bash
 cURL --location --request GET 'https://hq1.appsflyer.com/api/mng/apps?limit=1000&offset=0' \
 -H 'Authorization: Bearer {API V2.0 token having more than 700 characters available to the admin in the dashboard.}' \
 ```

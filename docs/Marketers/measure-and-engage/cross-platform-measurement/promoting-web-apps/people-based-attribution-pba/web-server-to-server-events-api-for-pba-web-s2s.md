@@ -153,7 +153,7 @@ Payload parameters are divided into user identifiers and event parameters.
 
 <Accordion title="Curl example">
 
-```javascript
+```bash
 curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/event' \
 --header 'Accept-Encoding: application/json' \
 --header 'Content-Type: application/json' \

@@ -179,7 +179,7 @@ AppsFlyer maps the fields into `properties.contents`. TikTok is the only network
 
 AppsFlyer maps the fields into URL query parameters. Snapchat does not receive quantity per item. Instead, `number_items` reflects the total quantity across all items in the order:
 
-```
+```http
 &item_ids=SKU-001,SKU-002,SKU-003&number_items=5&price=50.00,75.00,25.00&brands=Logitech,Sony,Anker&category=accessories,audio,cables
 ```
 

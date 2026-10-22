@@ -112,7 +112,7 @@ The following table lists the tasks required to integrate your Meta Quest (Oculu
         * **QUEST\_APP\_ID**: The Quest Store app ID.  
           For Quest 2, this is the number in the store URL, for example:
 
-          ```
+          ```http
           https://www.oculus.com/experiences/quest/XXXXXXXXXXXXXXXX/
           ```
 

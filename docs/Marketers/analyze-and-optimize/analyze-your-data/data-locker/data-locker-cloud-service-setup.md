@@ -61,7 +61,7 @@ In this procedure, substitute `data-locker-example` with the name of the bucket 
 6. Complete as follows:
    1. **New members**, paste the snippet that follows.
 
-      ```
+      ```http
       af-data-delivery@af-raw-data.iam.gserviceaccount.com
       ```
    2. **Select a role**: **Cloud storage** > **Storage Object Admin**.

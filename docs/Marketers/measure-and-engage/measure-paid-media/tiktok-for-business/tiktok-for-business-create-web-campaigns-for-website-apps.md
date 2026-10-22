@@ -200,7 +200,7 @@ You can choose any pre-defined in-app event sent from AppsFlyer as your campaign
 
    An example of the resulting URL:
 
-   ```
+   ```http
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 

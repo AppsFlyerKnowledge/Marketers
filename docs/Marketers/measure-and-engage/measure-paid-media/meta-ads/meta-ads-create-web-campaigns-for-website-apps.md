@@ -227,7 +227,7 @@ Complete the following steps in Meta Ads Manager.
 
 An example of a resulting URL:
 
-```
+```http
 https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_source_name}}&af_c_id={{campaign.id}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}
 ```
 

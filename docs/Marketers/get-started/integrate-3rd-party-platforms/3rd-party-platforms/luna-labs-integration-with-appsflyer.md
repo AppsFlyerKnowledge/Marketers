@@ -75,7 +75,7 @@ AppsFlyer can send automatic postbacks to Luna Labs following user installs.
 
 For example, if ad-network-X is working with a certain app (id1234567890), and wants to send postbacks to Luna Labs, then the URL should look like this:
 
-```
+```http
 https://app.appsflyer.com/id1234567890?pid=ad-network-X_int&af_siteid={ApplicationId}_{ApplicationName}&c={CampaignName}&af_adset={adgroup_name}&af_ad={CreativeName}&clickid={DynamicParameter}&af_addpb=1
 ```
 

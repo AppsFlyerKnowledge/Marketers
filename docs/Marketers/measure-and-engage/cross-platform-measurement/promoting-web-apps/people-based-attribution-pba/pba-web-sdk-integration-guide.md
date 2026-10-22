@@ -54,7 +54,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="Without Smart Banners">
 
-```javascript
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -79,7 +79,7 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 
 <Accordion title="With Smart Banners">
 
-```javascript
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -118,7 +118,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="Without Smart Banners">
 
-```javascript
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -150,7 +150,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 <Accordion title="With Smart Banners">
 
-```javascript
+```html
 <script>
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -465,7 +465,7 @@ CSP policy compatibility
 
 <Accordion title="Without Smart Banners">
 
-```javascript
+```html
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -499,7 +499,7 @@ CSP policy compatibility
 
 <Accordion title="With Smart Banners">
 
-```javascript
+```html
 <script nonce="{{CSP_NONCE}}">
   // Queue — buffers AF() calls until the SDK is ready
   window.AppsFlyerSdkObject = "AF";
@@ -768,7 +768,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
 
 1. Set up a thank you page
 
-   ```html
+   ```html Markup
    <html>
    <head>
        <script>
@@ -802,7 +802,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
 3. Give the tag a distinct name and select the **Custom HTML** tag type option.
 4. Put the following code in the **Custom HTML**.
 
-   ```javascript
+   ```html
    <script> 
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
@@ -822,7 +822,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
 
 1. Setup a checkout page
 
-   ```html
+   ```html Markup
    <html>
    <head>
        <script>
@@ -869,7 +869,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
    ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
 5. Create a new tag for the checkout action, choose type Custom HTML, and set the trigger to the checkout trigger.
 
-   ```javascript
+   ```html
    <script>
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
@@ -906,7 +906,7 @@ User scenario:
 
 Set up a signup page:
 
-```html
+```html Markup
 <html>
 <head>
     <!-- The Web SDK script loads first -->
@@ -946,7 +946,7 @@ The preceding code above is a simple signup form. When the form is submitted, th
 
 Set up a thank you page for users who sign up:
 
-```html
+```html Markup
 <html>
 <head>
     <script>
@@ -983,7 +983,7 @@ The code makes use of the fetch API. It sends the server the email address enter
 
 1. Set up a signup page:
 
-   ```html
+   ```html Markup
    <html>
    <head>
        <script>
@@ -1058,7 +1058,7 @@ The code makes use of the fetch API. It sends the server the email address enter
 4. Give the tag a distinct name and select the “Custom HTML” tag type option
    ![GoogleTag.jpg](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
 
-   ```javascript
+   ```html
    <script>
            var userEmail = localStorage.getItem('user_email');
            fetch('users/' + userEmail).then(function (res) {

@@ -239,7 +239,7 @@ Enter the AppsFlyer attribution link
 
 > 📄 **Example**
 >
-> ```
+> ```http
 > https://app.appsflyer.com/com.king.candycrushsaga?pid=sinaweibo_int&c=creative1
 > 	&clickid={IMP}&md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false
 > ```
@@ -267,7 +267,7 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    > 📄 **Example**
    >
-   > ```
+   > ```http
    > myapp://products/page1&pid=sinaweibo_int&is_retargeting=true
    > ```
 
@@ -277,7 +277,7 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    > 📄 **Example**
    >
-   > ```
+   > ```http
    > https://app.appsflyer.com/com.mycompany.myapp?pid=sinaweibo_int&c=test&clickid={IMP}
    > &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
    > ```

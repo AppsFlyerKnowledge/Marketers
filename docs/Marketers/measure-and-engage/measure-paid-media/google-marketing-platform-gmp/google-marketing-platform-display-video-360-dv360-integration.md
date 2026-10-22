@@ -246,14 +246,14 @@ If you want to be able to measure the number of clicks from DV360 on AppsFlyer, 
 
 If you want to count **clicks** in AppsFlyer, use this link:
 
-```
+```http
 https://app.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=${UNIVERSAL_SITE_ID}
 &af_ad_id=${CREATIVE_ID}&c=${PLACEMENT_ID}&af_c_id=${PLACEMENT_ID}
 ```
 
 If you want to count **impressions** in AppsFlyer use this link:
 
-```
+```http
 https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSAL_SITE_ID}
 &af_ad_id=${CREATIVE_ID}&c=${PLACEMENT_ID}&af_c_id=${PLACEMENT_ID}
 ```

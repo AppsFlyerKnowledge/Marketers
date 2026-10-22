@@ -265,20 +265,20 @@ To use Master API, you define the data that you want to view (similar to the imp
    >
    > **First three days combined retention**
    >
-   > ```
+   > ```http
    > kpis=installs,loyal_users_rate&calculated_kpi_3days_retention=
    > retention_day_1%2Bretention_day_2%2Bretention_day_3
    > ```
    >
    > **Average revenue per impression**
    >
-   > ```
+   > ```http
    > kpis=installs&calculated_kpi_rev_per_impression=revenue%2Fimpression
    > ```
    >
    > **Cohort day 7 ROI**
    >
-   > ```
+   > ```http
    > kpis=installs,roi,arpu_ltv,cost,revenue&calculated_kpi_roi_day_7=
    > (cohort_day_7_total_revenue_per_user-average_ecpi)%2Faverage_ecpi
    > ```

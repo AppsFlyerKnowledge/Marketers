@@ -76,7 +76,7 @@ Use this method for interactive sessions, exploratory analysis, and one-off repo
 
 Bearer token authentication lets non-interactive tools connect to AppsFlyer MCP by using an AppsFlyer MCP token. The token is passed in the request header:
 
-```
+```http
 Authorization: Bearer <YOUR_MCP_TOKEN>
 ```
 
@@ -150,15 +150,15 @@ Use Claude Code with bearer token authentication for automation, scheduling, and
 6. Confirm that `appsflyer` appears in the list of configured MCP servers.
 7. Ask an AppsFlyer question. For example:
 
-   ```
+   ```text
    What apps are in my AppsFlyer account?
    ```
 
-   ```
+   ```text
    What were my top media sources in the US last week for "Mypets.android.com"?
    ```
 
-   ```sql
+   ```text
    Create a summary of the performance of "Mypets.android.com" in the last day, segmented by campaign.
    ```
 
@@ -226,7 +226,7 @@ There are two ways to use ChatGPT with AppsFlyer MCP.
 3. Open the custom GPT.
 4. Ask a question. For example:
 
-   ```
+   ```text
    Show me my Meta campaign performance from last week.
    ```
 
@@ -271,13 +271,13 @@ Use Gemini CLI with browser-based OAuth login.
    ```
 3. In the Gemini CLI prompt, enter:
 
-   ```
+   ```text
    auth
    ```
 4. Complete the authentication flow in your browser, and then return to Terminal.
 5. Ask an AppsFlyer question. For example:
 
-   ```
+   ```text
    What apps are in my AppsFlyer account?
    ```
 
@@ -309,13 +309,13 @@ Use Copilot CLI with browser-based OAuth login.
    ```
 3. If you're not logged in, enter the following command in the Copilot CLI prompt:
 
-   ```
+   ```text
    /login
    ```
 4. Complete the browser login.
 5. In the Copilot CLI prompt, enter:
 
-   ```
+   ```text
    /mcp add
    ```
 6. Enter the following MCP server details:
@@ -332,7 +332,7 @@ Use Copilot CLI with browser-based OAuth login.
 9. Return to Terminal.
 10. Ask an AppsFlyer question. For example:
 
-    ```
+    ```text
     What apps are in my AppsFlyer account?
     ```
 
@@ -809,7 +809,7 @@ Use this section for Claude Code, n8n, Make, self-hosted agents, and other autom
    6. Update your MCP client or automation with the new token.
 3. **Check the Authorization header.** Make sure the header uses this exact format:
 
-   ```
+   ```http
    Authorization: Bearer <YOUR_MCP_TOKEN>
    ```
 4. **Verify the MCP server configuration.** Confirm the following values:
@@ -858,7 +858,7 @@ If the issue persists:
 * Check whether network or firewall restrictions block the MCP endpoint.
 * Confirm that the MCP URL is correct:
 
-  ```
+  ```text
   https://mcp.appsflyer.com/auth/mcp
   ```
 * Try reconnecting from a new session or environment.

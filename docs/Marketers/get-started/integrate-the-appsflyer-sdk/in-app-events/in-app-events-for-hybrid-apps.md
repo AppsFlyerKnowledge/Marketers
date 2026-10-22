@@ -395,7 +395,7 @@ The implementation below consists of two steps:
 
 #### HTML code (for both Android WebView and iOS WKWebView)
 
-```html
+```html Markup
 <html>
 <head>
 </head>

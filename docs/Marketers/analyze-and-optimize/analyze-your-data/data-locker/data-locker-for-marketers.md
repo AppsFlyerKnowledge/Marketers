@@ -603,7 +603,7 @@ In the following commands, the value of `{home-folder}` can be found
 
 **To list folders in your bucket:**
 
-```
+```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
 
@@ -617,25 +617,25 @@ There are three types of folders in your Data Locker bucket:
 
 To list all the reports of a specific report type:
 
-```
+```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/t=installs/
 ```
 
 To list all the reports of a specific report type for a specific day:
 
-```
+```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/t=installs/dt=2019-01-17
 ```
 
 To list all the reports of a specific report, in a specific hour of a specific day:
 
-```
+```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/t=installs/dt=2019-01-17/h=23
 ```
 
 To download files for a specific date:
 
-```
+```bash
 aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=2020-08-01/h=9/part-00000.gz ~/Downloads/
 ```
 

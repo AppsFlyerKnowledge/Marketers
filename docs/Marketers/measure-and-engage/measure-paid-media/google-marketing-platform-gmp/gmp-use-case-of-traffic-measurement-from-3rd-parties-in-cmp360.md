@@ -64,7 +64,7 @@ To ensure attribution by AppsFlyer:
    <Tabs>
    <Tab title="Android">
 
-   ```
+   ```http
    https://ad.doubleclick.net/ddm/trackclk/N736113.127733/B202683.204586115;
    dc_trk_aid=404426918;dc_trk_cid=92566356;dc_lat=;dc_rdid=13******-****-****-****-54**********
    ?https://app.appsflyer.com/com.example?pid=rocketfuel_int
@@ -75,7 +75,7 @@ To ensure attribution by AppsFlyer:
 
    <Tab title="iOS">
 
-   ```
+   ```http
    https://ad.doubleclick.net/ddm/trackclk/N736113.127733/B202683.204586115;
    dc_trk_aid=404426918;dc_trk_cid=92566356;dc_lat=;dc_rdid=13******-****-****-****-54**********
    ?https://app.appsflyer.com/com.example?pid=rocketfuel_int

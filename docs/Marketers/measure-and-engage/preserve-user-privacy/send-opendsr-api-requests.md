@@ -103,7 +103,7 @@ The GDPR request types, Access, Portability, Erasure, and Rectification, have th
 
 A GDPR Request API can be submitted via HTTP POST to the following endpoint:
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 ```
 
@@ -348,13 +348,13 @@ Every submitted GDPR request can be later queried for its status, by specifying 
 
 A status request can be submitted via HTTP GET to the following endpoint:
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
 #### Status response example
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 X-OpenGDPR-Processor Domain: example processor.com
@@ -374,7 +374,7 @@ As described in the GDPR Request Flow above, when the status of a GDPR request c
 
 Status postback example:
 
-```
+```http
 POST /opengdpr_callbacks HTTP/1.1
 Host: examplecontroller.com
 Content-Type: application/json
@@ -413,7 +413,7 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 
 Once an **Access Request** or **Portability Request** has been completed, you can download the report via HTTP GET to the following endpoint:
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/download/[REQUEST_ID]
 ```
 
@@ -425,13 +425,13 @@ The generated report is available for fourteen days from the time of completion.
 
 To learn about the formats supported by AppsFlyer, a discovery request can be submitted via HTTP GET to the following endpoint:
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
 #### Discovery response example
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
@@ -457,7 +457,7 @@ It is possible to cancel a GDPR request, based on its `subject_request_id`, but 
 
 To submit an HTTP DELETE with `subject_request_id` :
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
@@ -483,37 +483,37 @@ The test API works as follows:
 
 **GDPR Request Test Endpoint**: POST
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub
 ```
 
 **Status Request Test Endpoint**: GET
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/:requestId
 ```
 
 **Discovery Request Test Endpoint**: GET
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/discovery
 ```
 
 **Cancellation Request Test Endpoint**: DELETE
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/:requestId
 ```
 
 **Certificate Test Endpoint**: GET
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 ```
 
 **Access/Portability Reports Test Endpoint**: GET
 
-```
+```http
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 

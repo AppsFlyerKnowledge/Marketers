@@ -79,7 +79,7 @@ Currently, this is a manual process where you'll need to pass the below informat
 4. Get the app’s Licensing & in-app billing:  
    From the Google Play Developer Console (Select the app -> Development Tools -> Services and APIs).
 
-   ```
+   ```http
    Base64-encoded RSA public key
    ```
 5. Please provide your CSM with the following information:

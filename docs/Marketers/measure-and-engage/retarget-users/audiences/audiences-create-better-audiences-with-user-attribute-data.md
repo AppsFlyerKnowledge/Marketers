@@ -237,7 +237,7 @@ This import method requires a request URL and JSON with user-attribute data.
 
 **Example request and JSON**
 
-```
+```json
 https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 {
   "import_key": "c733e4d7-b538-4d12-a2ef-ffffffffffff",
@@ -362,7 +362,7 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 * Maximum 350 API requests per minute, 10K devices for flat payload (10K devices with one attribute, 5K devices with 2 attributes, etc.)
 * Both `device_id` and `customer_id`keys are mandatory for every import call. If you want to import attributes with only one of these identifiers, the call has to include the “header” of the other identifier with an empty string. For example, if you want to import attributes per `device_id` and no `customer_id`, the call should look like this:
 
-```
+```json
 "attributes_values": [
 {
 "device_id": "39e123.......",

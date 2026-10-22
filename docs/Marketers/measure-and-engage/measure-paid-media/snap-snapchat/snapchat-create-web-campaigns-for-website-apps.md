@@ -184,7 +184,7 @@ You can choose any predefined in-app event sent from AppsFlyer as your campaign 
 
    An example of the resulting URL:
 
-   ```
+   ```http
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 

@@ -86,7 +86,7 @@ To Create an <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated
 6. Set the **Cross-platform view-through attribution lookback window**. This adds the `af_xplatform_vt_lookback` parameter to the impression attribution link and indicates the number of hours (up to 72) following the impression during which the app install can be attributed to the impression.
 7. Add any additional attribution parameters as needed. Use naming conventions that identify your cross-platform app campaign. <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more</Anchor> about the parameters you can add for additional data and metrics. Sample link:
 
-   ```
+   ```http
    https://impressions.onelink.me/{template_id}?pid=__media_source__&af_xplatform=true&af_xplatform_vt_lookback=24h&af_siteid=__CSITE__&c=__ctv_to_mobile__&af_channel=__PLACEMENT__&af_c_id=__CAMPAIGN_ID__&af_adset=__AID_NAME__&af_adset_id=__AID__&af_ad=__CID_NAME__&af_ad_id=__CID__&af_source_platform=__source_platform__&af_source_device_category=__device_category__&af_ad_type=__CTYPE__&redirect=false
    ```
 8. Give the link to the ad network to place behind the ad displayed on CTV, PC, or console platforms.

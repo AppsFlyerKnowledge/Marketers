@@ -172,7 +172,7 @@ Retargeting attribution link parameters
 
 #### Retargeting view-through lookback period
 
-```
+```http
 https://app.appsflyer.com/id123456789?pid=remerge_int&af_dp=mydeeplink%3A%2F%2F&
 clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_id}
 &af_sub1={creative_name}&is_retargeting=true&af_reengagement_window=60d

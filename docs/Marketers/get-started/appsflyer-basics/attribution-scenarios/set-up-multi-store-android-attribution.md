@@ -89,7 +89,7 @@ The identification of the download store is by way of the AF\_STORE parameter se
 2. To identify the individual store use one of the following methods:
    * **Manifest method:** Add the following within the `<application>` tag of the AndroidManifest.xml to identify the store. Set the AF\_STORE parameter to the app store name.
 
-     ```java
+     ```xml
      <application>
         ...
         <meta-data android:name="AF_STORE" android:value="EnterStoreNameHere"/>
@@ -146,7 +146,7 @@ The Android package name combined with the channel parameter set in the manifest
 
 * Add the following within the `<application>` tag of the AndroidManifest.xml to identify the store. Set CHANNEL parameter to the app store name.
 
-  ```java
+  ```xml
   <application>
        ...
        <meta-data android:name="CHANNEL" android:value="EnterStoreNameHere"/>

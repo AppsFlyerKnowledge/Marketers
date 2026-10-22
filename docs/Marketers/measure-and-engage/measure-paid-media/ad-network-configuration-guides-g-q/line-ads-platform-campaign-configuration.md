@@ -88,7 +88,7 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 >
 > An example attribution link with an account ID and app ID parameters:
 >
-> ```
+> ```http
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
 

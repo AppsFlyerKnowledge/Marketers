@@ -130,7 +130,7 @@ AppsFlyer uses <Anchor target="_blank" href="https://openexchangerates.org/">Ope
 
 In your app settings, you set currency to GBP. A user from France purchases a product using your app. The price is quoted in EUR (€). The in-app event that you send to AppsFlyer looks like this:
 
-```
+```java
 Map<String, Object> eventValue = new HashMap<String, Object>();
 eventValue.put(AFInAppEventParameterName.REVENUE,200);
 eventValue.put(AFInAppEventParameterName.CONTENT_TYPE,"category_a");
@@ -398,7 +398,7 @@ You can add multiple items to a single transaction. Instead of single values per
 
 In the same transaction, Mr. Smith purchases two identical shirts, one pair of shoes, and a hat from a US-based online store. The sequence in which each item is listed must be identical for each
 
-```
+```json
 "{\"af_content_id\": [\"123\",\"988\",\"399\"], \"af_quantity\": [\"2\",\"1\",\"1\"], \"af_price\": [\"25\",\"50\",\"10\"], \"af_revenue\": \"110\", \"af_currency\": \"USD\"}"
 ```
 

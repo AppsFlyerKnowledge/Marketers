@@ -413,7 +413,7 @@ Priority is best explained in the [detailed example](/docs/skan-conversion-studi
 
 As previously explained, the maximum number of available conversion values is 64. The following formula calculates how many of the available conversion values are used by the mode.
 
-```
+```http
 (activity time duration in hours / interval size in hours) * 
 (number of revenue ranges + 1 ) * 
 (number of in-app event ranges + 1 ) * 

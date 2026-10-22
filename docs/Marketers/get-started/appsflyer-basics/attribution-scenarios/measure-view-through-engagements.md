@@ -87,7 +87,7 @@ Consider the following in preparing links:
 >
 >  Example
 >
-> ```
+> ```http
 > https://impression.appsflyer.com/{app-id}?c={campaign name}&pid={media source}
 > &af_viewthrough_lookback=1d&af_prt={agency_name}&af_siteid={site id value}
 > &af_sub1={free value}&idfa={idfa value}

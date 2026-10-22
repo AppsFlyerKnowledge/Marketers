@@ -201,7 +201,7 @@ Depending on the ad type, you can also send the relevant viewability parameter d
 
 > 📄 **Example**
 >
-> ```
+> ```http
 > https://app.appsflyer.com/{app_id}/?pid=airpush_int&c=RedBanner&
 > 	  af_siteid={publisher_id}&af_sub1=1.5&af_sub2=USD&af_sub3=burst_campaign
 > ```
@@ -214,7 +214,7 @@ In addition to default Android-specific and iOS-specific parameters, you can als
 
 You can append custom parameters to the attribution link in the format `parameter=value`. For example:
 
-```
+```http
 https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&af_ad=cashmere&my_custom_param=my_custom_value
 ```
 
@@ -393,7 +393,7 @@ The parameters are:
 >
 > The following attribution link uses 4 levels of granularity to record the "cashmere" ad in the "coats" ad set in the "winter" campaign running on the integrated "network" media source.
 >
-> ```
+> ```http
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
@@ -433,7 +433,7 @@ If you ever encounter the following error message in the Play Store after follow
 
 This is because the attribution link includes a # character. For example:
 
-```
+```http
 https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 ```
 

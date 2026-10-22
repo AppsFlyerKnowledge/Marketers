@@ -49,7 +49,7 @@ Attribution to ad networks relies on attribution links. Whether regular attribut
 
 #### Attribution link
 
-```
+```http
 https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
@@ -215,14 +215,14 @@ attribution link and payload are as follows:
 
 **Attribution Link**
 
-```
+```http
 http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
   &c=campaign_name&af_dp=superapp%3A%2F%2deeplink-activity
 ```
 
 **OneLink**
 
-```
+```http
 // short OneLink
   https://dhba.onelink.me/2rAD/71ba577e
 
@@ -283,7 +283,7 @@ are as follows:
 
 **OneLink**
 
-```
+```http
 // short OneLink
   https://dhba.onelink.me/2rAD/71ba577e
 

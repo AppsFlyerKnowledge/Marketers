@@ -342,7 +342,7 @@ Select how attribution data displays in AppsFlyer from:
 2. Choose one of the following methods to identify the store:
    * **Manifest method:** Add the following line to the AndoridManifest.xml file. The AF\_STORE value needs to be unique for each store.
 
-     ```java
+     ```xml
      <meta-data android:name="AF_STORE" android:value="example_store"/>
      ```
 

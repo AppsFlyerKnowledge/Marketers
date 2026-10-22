@@ -165,7 +165,7 @@ CrossPromotionHelper.logCrossPromoteImpression(this, appID, campaign, parameters
 
 <Tab title="Kotlin">
 
-```java
+```kotlin
 val appID = "com.app"
 val campaign = "Cross Promo Campaign"
 val parameters = HashMap<String, String>()

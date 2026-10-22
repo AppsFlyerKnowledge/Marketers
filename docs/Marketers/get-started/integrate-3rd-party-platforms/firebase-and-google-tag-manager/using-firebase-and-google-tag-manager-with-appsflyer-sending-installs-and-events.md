@@ -57,12 +57,12 @@ When the event is sent, GTM checks to see if there is a tag that is configured t
 
 1. In the MainActivity class, create a variable to hold AppsFlyer Device ID:  
 
-   ```java
+   ```kotlin
    var appsFlyerID: String? = null
    ```
 2. Back in the MainActivity class, in the `onCreate` method and after `super.onCreate`, pass the AppsFlyer ID value to the variable:
 
-   ```java
+   ```kotlin
    override fun onCreate(savedInstanceState: Bundle?) {
     ...
     appsFlyerID = AppsFlyerLib.getInstance().getAppsFlyerUID(this)
@@ -146,12 +146,12 @@ The first step is to configure the event in the app. The event is sent using Fir
 
 1. In the desired activity, add the import statement for Firebase:  
 
-   ```java
+   ```kotlin
    import com.google.firebase.analytics.FirebaseAnalytics
    ```
 2. Add the following code to run whenever a purchase event occurs:
 
-   ```java
+   ```kotlin
    val bundle = Bundle()
      // notice "af_id", this is the name of the event parameter
      // for AppsFlyer ID that we created in the previous step
@@ -258,7 +258,7 @@ To send install events to Firebase in Android, you can use the `conversionData`o
 
 Add the following method in the `AFApplication` class right below the `onCreate` method:
 
-```java
+```kotlin
 fun sendInstallToFirebase(conversionData: Map<String, Any>) {
       val bundle = Bundle()
       bundle.putString("install_time", conversionData["install_time"]?.toString() ?: Date().time.toString())
@@ -276,7 +276,7 @@ This method accepts a `conversionData` object. The method checks whether install
 
 Add the following code in the `onConversionDataSuccess` method:
 
-```java
+```kotlin
 if(conversionData?.get("is_first_launch") == true){
       sendInstallToFirebase(conversionData);
   }

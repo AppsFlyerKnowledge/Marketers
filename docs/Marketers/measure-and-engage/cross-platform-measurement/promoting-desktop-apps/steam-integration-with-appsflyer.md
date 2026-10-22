@@ -127,7 +127,7 @@ The following table lists the tasks required to integrate your Steam app with Ap
 
           You can find your unique app ID by copying it from the URL bar or by going to <Anchor target="_blank" href="https://steamdb.info/">https://steamdb.info/</Anchor> and searching for your game. For example,
 
-          ```
+          ```http
           https://store.steampowered.com/app/12345678/
           ```
 

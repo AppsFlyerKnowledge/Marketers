@@ -60,7 +60,7 @@ See <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-wi
 
 Example: For iOS, define the associated domain as follows:
 
-```
+```text
 applinks:<your-onelink-subdomain>.onelink.me
 ```
 
@@ -86,7 +86,7 @@ See <Anchor target="_blank" href="https://documentation.bloomreach.com/engagemen
 >
 > Below is an example of an unwrapped Universal Link with Bloomreach tracking parameters appended:
 >
-> ```
+> ```text
 > https://engmntqa.onelink.me/LtRd?pid=ESP_Bloomreach&c=esp-campaign&is_retargeting=true&utm_source=bloomreach&utm_medium=email&utm_campaign=Test-severla-link-yossi-26-10&xnpe_cmp=.eJwzPNrmPEXT6ZZjVKC-flJ-SqV-SWJSTqp-CYRdpF-SQrxItHEslJuSWaafmMWTsWTZufIm9r61XAs2AABFBChI.jF6UMukHXiw5lw
 > ```
 

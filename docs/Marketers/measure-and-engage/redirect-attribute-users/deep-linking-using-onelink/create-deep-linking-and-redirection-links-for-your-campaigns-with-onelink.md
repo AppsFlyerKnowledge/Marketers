@@ -450,7 +450,7 @@ Now you have an impression URL, that can be used to count impressions on your we
 
 Full impression URL example:
 
-```
+```http
 https://impressions.onelink.me/j7rN?pid=email&c=Spring&af_viewthrough_lookback=1d
 ```
 

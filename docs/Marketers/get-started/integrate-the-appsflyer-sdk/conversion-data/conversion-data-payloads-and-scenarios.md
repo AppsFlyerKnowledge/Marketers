@@ -295,7 +295,7 @@ Examine the following JSON payloads.
 
 #### Attribution link:
 
-```
+```http HTTPS
 https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   &af_channel=video&af_siteid=123_site_id&af_c_id=b8******************************&
   af_adset=_DEFAULT&pid=applovin_int&c=campaign_name
@@ -352,7 +352,7 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 
 #### Attribution link:
 
-```
+```http HTTPS
 https://app.appsflyer.com/id123456789?
   af_ua=Mozilla/5.0+(iPhone;+CPU+iPhone+OS+12_1_2+like+Mac+OS+X)+AppleWebKit/605.1.15+(KHTML,+like+Gecko)+Mobile/16C101
   &clickid=ab***************&redirect=false
@@ -438,7 +438,7 @@ Attribution to ad networks relies on attribution links. Whether regular attribut
 
 #### Attribution link
 
-```
+```http
 https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
@@ -590,14 +590,14 @@ When using URI Schemes, for both attribution links and OneLink, the attribution 
 
 **Attribution Link**
 
-```
+```http
 http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
   &c=campaign_name&af_dp=superapp%3A%2F%2deeplink-activity
 ```
 
 **OneLink**
 
-```
+```http
 / short OneLink
   https://dhba.onelink.me/2rAD/71ba577e
 
@@ -648,7 +648,7 @@ When using universal links or app links, the OneLink and payload are as follows:
 
 **OneLink**
 
-```
+```http
 / short OneLink
   https://dhba.onelink.me/2rAD/71ba577e
 

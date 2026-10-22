@@ -181,7 +181,7 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
    >
    > For example:
    >
-   > ```
+   > ```http
    > https://example.com?product=1234&af_c_id={campaignid}
    > ```
 

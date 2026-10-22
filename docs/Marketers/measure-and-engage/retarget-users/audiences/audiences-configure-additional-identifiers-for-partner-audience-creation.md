@@ -237,7 +237,7 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap);
 
 <Tab title="Kotlin">
 
-```java
+```kotlin
 val audiences = hashMapOf<String, Any>(
    "phone_number_sha256" to "6C91C4C640F6EF0162833260DB4F13DEC0DF2B683092F4DBA7E874BEF1ACEA37",
    "phone_number_e164_sha256" to "F3D7E96C73FB0DE1B66ACFCE541D7AF758FBD4F3FA3AF0EA4E10110000D3625E"

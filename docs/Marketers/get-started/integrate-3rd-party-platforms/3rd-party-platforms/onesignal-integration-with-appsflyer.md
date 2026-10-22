@@ -45,7 +45,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 2. Insert the following lines of code in your app's code - [after OneSignal SDK was launched](https://documentation.onesignal.com/docs/android-sdk-setup) and before the initialization code for AppsFlyer SDK.
    * For Android devices using OneSignal SDK version 3.x.x:
 
-     ```
+     ```http
      OSPermissionSubscriptionState status = OneSignal.getPermissionSubscriptionState();
 
                String deviceId = status.getSubscriptionStatus().getUserId();
@@ -54,7 +54,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      ```
    * For Unity SDK:
 
-     ```
+     ```http
      var status = OneSignal.GetPermissionSubscriptionState();
 
                String deviceId = status.subscriptionStatus.userId;
@@ -63,7 +63,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      ```
    * For Android devices using OneSignal Native SDK version 4+:
 
-     ```
+     ```http
      OSDeviceState device = OneSignal.getDeviceState();
 
                String deviceId = device.getUserId();
@@ -80,7 +80,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      <Tabs>
      <Tab title="Swift">
 
-     ```
+     ```http
      let status: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
      if let deviceId = status.subscriptionStatus.userId{
          customData.put("onesignalCustomerId", deviceId);
@@ -90,7 +90,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
      <Tab title="Objective-C">
 
-     ```
+     ```http
      OSPermissionSubscriptionState* status = [OneSignal getPermissionSubscriptionState];
      NSDictionary* CustomDataMap = [[NSDictionary alloc] initWithObjectsAndKeys:status.subscriptionStatus.userId, @"onesignalCustomerId", nil];
      [[AppsFlyerLib shared] setAdditionalData:CustomDataMap];
@@ -104,7 +104,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
      <Tabs>
      <Tab title="Swift">
 
-     ```
+     ```http
      if let deviceState = OneSignal.getDeviceState() {
          let deviceId = deviceState.userId
          customData.put("onesignalCustomerId", deviceId);
@@ -114,7 +114,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
      <Tab title="Objective-C">
 
-     ```
+     ```http
      OSDeviceState *deviceState = [OneSignal getDeviceState];
      NSString *deviceId = deviceState.userId;
      NSDictionary* CustomDataMap = [[NSDictionary alloc] initWithObjectsAndKeys:deviceId, @"onesignalCustomerId", nil];
