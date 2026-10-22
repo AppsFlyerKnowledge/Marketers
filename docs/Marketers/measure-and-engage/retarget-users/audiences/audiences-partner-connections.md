@@ -42,7 +42,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Partner |  | Connection requirements | Supported identifiers |
 | --- | --- | --- | --- |
 | 530 Broadway Media | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/broadway89.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| RZR (formerly Aarki) | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/aarki.png" width="100%" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>IMEI</li><li>OAID</li><li>IDFV</li><li>CUID</li><li>Email (hashed)</li><li>Phone (hashed)</li><li>Braze external user ID</li></ul> |
+| RZR (formerly Aarki) | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/aarki.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>IMEI</li><li>OAID</li><li>IDFV</li><li>CUID</li><li>Email (hashed)</li><li>Phone (hashed)</li><li>Braze external user ID</li></ul> |
 | AccessTrade Vietnam | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/accesstradevn.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | AdAction Brazil | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/adactionbr.png?v=1&" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Addons | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/addons.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -77,7 +77,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Betop | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/betop.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>IDFV</li></ul> |
 | Bidease | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/bidease.png" width="81px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | BidMatrix | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/bidmatrix.png" width="87px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Bigabid | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/bigabid.png" width="91.24%" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>IDFV</li></ul> |
+| Bigabid | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/bigabid.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>IDFV</li></ul> |
 | Bigo Ads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/bigoads.png?v=1" width="106px" /> | Log in to Bigo Ads to authenticate | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Bluemediagroup | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/bluemediagroup.png?v=1" width="106px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Braze | <Image alt="Braze logo Nov 2023.jpg" src="https://files.readme.io/c84c2459ec87a3c3fef83e573ff4d43e45df8604223d53aaa989ad410d372d54-31237648110737.jpg" width="107px" /> | Connection instructions for [Braze](/docs/audiences-partner-connections#braze) | <ul><li>Braze external user ID</li></ul> |
@@ -96,7 +96,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | DemandScale | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/siftco.png?v=1" width="64px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Downstream | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/downstreamai.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Edge226 | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/edge226.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Exmox | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/exmox.png" width="67.89%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Exmox | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/exmox.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Facebook | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/facebook.png" width="155px" /> | Connection instructions for [Facebook](/docs/audiences-partner-connections#facebook) | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
 | Filexmedia | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/filexmedia.png" width="120px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Freecash | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/freecash.png" width="71px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -108,10 +108,10 @@ A partner connection enables you to easily and continuously send your audiences 
 | Globo | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/globo.png" width="114px" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
 | Google Ads<br /><br />\*\*Check with your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to determine if your account is eligible for Google Ads integration with Audiences. | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png" width="67px" /> | Connection instructions for [Google Ads](/docs/audiences-partner-connections#google-ads) | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
 | Gotripmobi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/gotripmob06.png?v=1" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Gravite | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/gravite1xj.png%0A?v=1" width="68.69%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Gravite | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/gravite1xj.png?v=1" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Growone |  | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Hillsmobi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hillsmobi.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Hippoad | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hippoad.png?v=1" width="51.03%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Hippoad | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hippoad.png?v=1" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Honeybutterr |  | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Httpool | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/httpool.png" width="155px" /> | Connection instructions for [Httpool](/docs/audiences-partner-connections#httpool) | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Hybrid | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hybrid.png?v=1" width="96px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -133,7 +133,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Kayzen | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/dataliftretargeting.png" width="60px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Kidult Media | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/kidult.png" width="82px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Kwai for business | <Image alt="Kwai_for_business_2.jpg" src="https://files.readme.io/0dece6ec834ff75ad53aae0932c873e9bb85ed9c42acdf5c84a896b7f50bccbc-31237648112913.jpg" width="53px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Leanplum | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leanplum.png?v=1" width="73.07%" /> | Connection instructions for [Leanplum](/docs/audiences-partner-connections#leanplum) | <ul><li>CUID</li></ul> |
+| Leanplum | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leanplum.png?v=1" width="792px" /> | Connection instructions for [Leanplum](/docs/audiences-partner-connections#leanplum) | <ul><li>CUID</li></ul> |
 | learnshapwm |  | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Lemmonet | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lemmonet.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | LessMobi |  | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -142,28 +142,28 @@ A partner connection enables you to easily and continuously send your audiences 
 | LinkedBro | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/digmobiteqp.png" width="86px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | LoopMe | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/loopme.png" width="86px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Loopyapac | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/loopyapac6d.png" width="86px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Manage  <br />(acquired by Criteo) | <Image alt="manage_logo.png" src="https://files.readme.io/0855ecfbf1c026fdedddbedeff95c4b3cbf3663d7cf1e224b6c3e92d35bb1705-31237653520145.png" width="53.15%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Manage  <br />(acquired by Criteo) | <Image alt="manage_logo.png" src="https://files.readme.io/0855ecfbf1c026fdedddbedeff95c4b3cbf3663d7cf1e224b6c3e92d35bb1705-31237653520145.png" width="274px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Moiads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moiads.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | mDSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mdsp.png" width="155px" /> | Organization ID | <ul><li>IDFA</li><li>GAID</li></ul> |
 | MediaSmart | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mediasmart.png" width="155px" /> | Organization ID | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mediasurfer | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mediasurfer.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | MinoAds | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/minoads.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| mInsights  <br />(GroupM) | <Image alt="m_insights_blue.png" src="https://files.readme.io/0ae9dd57d9692987ce3a6ebd09d9c09c1bd41e3cfe5846dbe8e0e09f83384ebe-31237653520913.png" width="75.57%" /> | Access key ID, Secret access key, path | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Mintegral | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mintegral.png" width="56.14%" /> | API key, App ID | <ul><li>IDFA</li><li>GAID</li></ul> |
+| mInsights  <br />(GroupM) | <Image alt="m_insights_blue.png" src="https://files.readme.io/0ae9dd57d9692987ce3a6ebd09d9c09c1bd41e3cfe5846dbe8e0e09f83384ebe-31237653520913.png" width="797px" /> | Access key ID, Secret access key, path | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Mintegral | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mintegral.png" width="155px" /> | API key, App ID | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mistplay | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mistplay.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mobadbid | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobadbid68.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mobavenue | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobavenue.png?v=1" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mobisummer (Tec-Do) | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobisummer.png" width="103px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Moboost | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moboostlt.png" width="103px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Mobpower | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobpower2.png" width="51.29%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Mobpower | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobpower2.png" width="103px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mobusi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Mobvista | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png" width="155px" /> | Advertiser ID, API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | MobWonder | ![](https://cdn.appsflyer.com/marketplace/static/logo/mobwonder.png?v=1) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | MobYoung | ![](https://cdn.appsflyer.com/marketplace/static/logo/mobyoung.png?v=1) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Modify | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/modify.png?v=1" width="87.7%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| MoEngage | <Image alt="moengage_logo.png" src="https://files.readme.io/a1557a6521ad6c94d5972a08f540a40cc4ec53137eabe3b1848c3696ec7a9c5f-31237648114833.png" width="72.58%" /> | Connection instructions for [MoEngage](/docs/audiences-partner-connections#moengage) | <ul><li>CUID</li></ul> |
+| Modify | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/modify.png?v=1" width="359px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| MoEngage | <Image alt="moengage_logo.png" src="https://files.readme.io/a1557a6521ad6c94d5972a08f540a40cc4ec53137eabe3b1848c3696ec7a9c5f-31237648114833.png" width="385px" /> | Connection instructions for [MoEngage](/docs/audiences-partner-connections#moengage) | <ul><li>CUID</li></ul> |
 | Moloco | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png" width="155px" /> | API key<br /><br />**Note:** This is a dedicated API Key for the AppsFlyer Audiences integration. Get it from your Moloco representative. | <ul><li>IDFA</li><li>GAID</li></ul> |
-| MoPub Acquire | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="59.21%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| MoPub Acquire | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="60px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | MovableAD | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/movable.png" width="60px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | NAVER | <Image alt="Naver_Logotype.svg.png" src="https://files.readme.io/d236f0f4e89b68c3b4d6c085674cd2c98e397358f5e29f0f4de72b88fe3d1b12-33356334901905.png" width="131px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Novabeyond | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/novabeyond.png" width="151px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -174,9 +174,9 @@ A partner connection enables you to easily and continuously send your audiences 
 | PerformanPBI | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/performanpbi.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Personaly | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/persona.ly.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Petal Ads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/huaweiadsglobal.png?v=1" width="100px" /> | Phone/email/login ID, password, Huawei ad account | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Pinterest | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/pinterest.png" width="73.53%" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
-| Premiumstraffic | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/premiumstraffic.png" width="73.45%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Prime Insights Group, LLC | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/primeis.png" width="89.19%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Pinterest | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/pinterest.png" width="100px" /> | API key | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
+| Premiumstraffic | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/premiumstraffic.png" width="100px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Prime Insights Group, LLC | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/primeis.png" width="100px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Pulsedrived | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/pulsedrivqw.png" width="100px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Pushwoosh | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/pushwoosh.png" width="52px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Radian | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/radianl5.png" width="52px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -195,8 +195,8 @@ A partner connection enables you to easily and continuously send your audiences 
 | Smadex | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/smadex.png" width="85px" /> | Smadex login | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Snakzy by Eneba | ![](https://cdn.appsflyer.com/marketplace/static/logo/helisplaynnf.png) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Snapchat | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png" width="60px" /> | Connection instructions for [Snapchat](/docs/audiences-partner-connections#snapchat) | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
-| Spotad | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/spotad.png" width="50.65%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| StackAdapt | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/stackadapt.png" width="78.56%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Spotad | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/spotad.png" width="199px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| StackAdapt | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/stackadapt.png" width="1024px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | StartApp | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/startapp.png" width="155px" /> | API token | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Superads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/superads.png" width="155px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Surgex | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/surgex.png" width="114px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -216,7 +216,7 @@ A partner connection enables you to easily and continuously send your audiences 
 | Tyrads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/tyradscpl.png" width="149px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Unico Tech Limited | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/unico.png" width="149px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Unicorn DSP | ![Unicorndsp.jpg](https://files.readme.io/4f5917f0e15a37b1767aab744633e326e9cceefcb7cb3cd40fc1f8e0718f77cc-31237653524113.jpg) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| Uplivo | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/uplivo2wj.png" width="48.66%" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
+| Uplivo | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/uplivo2wj.png" width="500px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Upsflyer | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/upsflyer.png?v=1?" width="124px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Upyield | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/upyield.png?v=1?" width="81px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Vaca Mobiles | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vacastudios.png?v=1?" width="124px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
@@ -225,13 +225,13 @@ A partner connection enables you to easily and continuously send your audiences 
 | Vidma recorder | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vidmarecorder.png?v=1?" width="63px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Vivo | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vivoglobal.png" width="100px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Vizury | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/revx.png" width="100px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| VK Ads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png" width="62.12%" /> | Connection instructions for [VK Ads](/docs/audiences-partner-connections#mytarget) | <ul><li>IDFA</li><li>GAID</li></ul> |
+| VK Ads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png" width="85px" /> | Connection instructions for [VK Ads](/docs/audiences-partner-connections#mytarget) | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Vserv | ![Vserv.jpg](https://files.readme.io/6984558eed14f4137907b8ef8b4064dd415ed28dce3d0451279bc2a304cc00b4-31237653525137.jpg) | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | VYBS | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vybsafl.png" width="111px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Whistle Feed | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/wvaluemarjqg.png" width="111px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Wider Planet | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/widerplanet.png" width="111px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | WingsApps | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/wingsapps.png?v=1" width="111px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
-| X Ads (formerly Twitter Ads) | <Image alt="x logo.png" src="https://files.readme.io/be1e5b0210a1d7d8aaef398b8a3a6e41ddfb6d66c4e360df6294c309fa507fec-44611769729809.png" width="47.41%" /> | Connection instructions for [X Ads](/docs/audiences-partner-connections#x-formerly-twitter) | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
+| X Ads (formerly Twitter Ads) | <Image alt="x logo.png" src="https://files.readme.io/be1e5b0210a1d7d8aaef398b8a3a6e41ddfb6d66c4e360df6294c309fa507fec-44611769729809.png" width="1294px" /> | Connection instructions for [X Ads](/docs/audiences-partner-connections#x-formerly-twitter) | <ul><li>IDFA</li><li>GAID</li><li>Email (hashed)</li><li>Phone (hashed)</li></ul> |
 | Xapads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/xapads.png?v=1" width="111px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Xiaomi Ads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/xiaomiglobal.png?v=1" width="85px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Xtend | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/xtendbw.png?v=1" width="111px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |

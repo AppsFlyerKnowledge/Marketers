@@ -156,7 +156,7 @@ Decode mode customers can now access SSOT (Single Source of Truth) attribution, 
 
 #### How to Enable SSOT for Decode Mode
 
-1. **Extract the AppsFlyer ID -** <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile#fetching-the-appsflyer-id">Retrieve the AppsFlyer ID from the SDK at install tim</Anchor> e.
+1. **Extract the AppsFlyer ID -** <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile#fetching-the-appsflyer-id">Retrieve the AppsFlyer ID from the SDK at install time</Anchor>.
 2. **Query the SSOT API -** Use the AppsFlyer ID and App ID to check if the install was attributed by AppsFlyer.
    * API returns:  
      `"is-non-organic-install": true/false`

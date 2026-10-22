@@ -24,7 +24,7 @@ x-zendesk:
 ---
 **At a glance:** ironSource, an AppsFlyer integrated partner, builds monetization, engagement, analytics, and discovery tools for app developers, device manufacturers, mobile carriers, and advertisers. In addition to click-based mobile attribution, ironSource also offers cost, ad revenue, retargeting and view-through attribution, which you can record with AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1%0A%0A" width="213px" />
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
 ## Setting up ironSource
 

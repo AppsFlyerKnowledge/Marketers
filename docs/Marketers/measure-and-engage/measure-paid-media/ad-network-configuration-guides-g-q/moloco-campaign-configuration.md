@@ -24,7 +24,7 @@ x-zendesk:
 ---
 **At a glance:** MOLOCO, an AppsFlyer integrated partner, turns user data into ad performance, enabling mobile businesses to execute marketing and advertising monetization programs.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1%0A" width="149px" />
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1" width="149px" />
 
 ## Setting up MOLOCO
 

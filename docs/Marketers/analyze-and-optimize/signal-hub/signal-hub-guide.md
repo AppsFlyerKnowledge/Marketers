@@ -50,7 +50,7 @@ Using AppsFlyer clean room infrastructure and integrations with identity resolut
 
 **To get started using Signal Hub, follow the steps below:**
 
-**<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>Prerequisite:** An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor>. To access Signal Hub, contact your CSM or write to hello@appsflyer.com
+<span id="h_01J5WC8Z4J352AHSDTRCEP2W9H"></span>**Prerequisite:** An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">account</Anchor>. To access Signal Hub, contact your CSM or write to hello@appsflyer.com
 
 <Accordion title="Step 1. Accept the collaboration invite">
 

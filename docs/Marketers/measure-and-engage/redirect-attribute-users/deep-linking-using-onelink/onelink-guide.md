@@ -81,7 +81,7 @@ After completing some or all of the setup in the UI, consider implementing the a
 * <Anchor target="_blank" href="/marketers/docs/export-onelink-urls">Export OneLink URLs</Anchor>: Download all OneLink URLs created in the AppsFlyer user interface (OneLink URLs created via SDK, OneLink API, or bulk upload aren't included).
 * <Anchor target="_blank" href="/marketers/docs/measuring-push-notification-re-engagement-campaigns">Measure push notification re-engagement campaigns</Anchor>: Use push notifications with OneLink to measure mobile user re-engagements.
 * <Anchor target="_blank" href="/marketers/docs/cross-promotion-attribution-for-marketers">Cross-promotion attribution</Anchor>: Your existing app users are excellent candidates for installing your other new apps. Learn how to use SDK methods to easily create and measure cross-promotion campaigns.
-* <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">Long URL</Anchor> s: Add parameters to your OneLink custom links or generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.
+* <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">Long URLs</Anchor>: Add parameters to your OneLink custom links or generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.
 * <Anchor target="_blank" href="/marketers/docs/redirect-app-users-to-a-website">App-to-web redirection</Anchor>: Redirect users from your app to a website or social media page.
 
 ## Troubleshooting and FAQ

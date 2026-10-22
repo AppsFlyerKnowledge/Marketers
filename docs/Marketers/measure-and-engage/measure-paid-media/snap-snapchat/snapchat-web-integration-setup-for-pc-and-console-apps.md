@@ -63,7 +63,7 @@ To configure the integration, you must first turn on the **Activate partner** t
 **General settings**
 
 * **Pixel ID:** Enter the Pixel ID. You can create it or retrieve it from your Snapchat Ads Manager by following the instructions detailed in the <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">Snapchat Ads official documentation</Anchor>[.](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US)
-* **Access token:** Enter the access token. To generate it or retrieve it, follow the instructions [i](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US) n the <Anchor target="_blank" href="https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted">Snapchat Ads official documentation</Anchor>[.](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
+* **Access token:** Enter the access token. To generate it or retrieve it, follow the instructions [in](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US) the <Anchor target="_blank" href="https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted">Snapchat Ads official documentation</Anchor>[.](https://developers.snap.com/api/marketing-api/Conversions-API/GetStarted)
 
 **Enable view-through attribution**
 
