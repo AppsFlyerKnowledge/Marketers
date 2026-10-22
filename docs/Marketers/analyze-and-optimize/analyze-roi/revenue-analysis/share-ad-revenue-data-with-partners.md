@@ -102,7 +102,7 @@ You can configure ad revenue postbacks for ad networks. This means that ad netwo
 
 | Ad network | Event to map af\_ad\_revenue to | Screenshot |
 | --- | --- | --- |
-| Google Ads | ad\_impression | <Image alt="Google Ads ad_impression event mapping" src="https://files.readme.io/883dd04563027d722e7e8e76a50f813c8a955db827cbb92e94cdc650ab7b234d-50421403523601.png" width="2170px" /> |
+| Google Ads | ad\_impression | <Image alt="Google Ads ad_impression event mapping" src="https://files.readme.io/883dd04563027d722e7e8e76a50f813c8a955db827cbb92e94cdc650ab7b234d-50421403523601.png" width="238px" /> |
 | Unity Ads | ad\_revenue | [![](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png)](https://files.readme.io/17edda24e3de024b1aaf10c1ca4c83da48b024f60aeeeaf9421502e88feb9a80-24100803652369.png) |
 | Moloco | No mapping needed |  |
 | Mintegral | No mapping needed |  |
