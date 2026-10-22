@@ -179,11 +179,7 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 
 The table provided below outlines the generation schedules for both the S2S and SDK versions. Customers who benefit from ROI360 Ad Revenue Freshness to Accuracy will receive both versions, ensuring optimal accuracy and up-to-date information.
 
-**Note:** Some S2S-originated versions may not
-be created.
-If the data from the partner(s) did not change since the
-last pull,
-a new version will NOT be generated.
+**Note:** Some S2S-originated versions may not be created. If the data from the partner(s) did not change since the last pull, a new version will NOT be generated.
 
 | Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
 | --- | --- | --- | --- |
@@ -207,14 +203,10 @@ a new version will NOT be generated.
 
 1. In AppsFlyer, from the side menu, select **Report**
    > **Data Locker**.
-2. In the **Data Locker content** pane scroll
-   down
-   to the **ROI360 RevenueETL** tile.
+2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
 3. Select **Attributed Ad revenue [versioned].**
 
-**Note:** You can also select the same report
-for retargeting
-and organic  (Retargeting/Organic ad revenue [versioned]).
+**Note:** You can also select the same report for retargeting and organic  (Retargeting/Organic ad revenue [versioned]).
 
 #### How to access the report in your bucket?
 
@@ -257,19 +249,9 @@ bucket
 
 * **Legend:**
   * **t:** Report type
-  * **dt**: Date when the revenue events
-    included
-    in the report occurred.
-  * **version:** The version’s name
-    is the epoch
-    timestamp of the version creation date and time,
-    e.g.,
-    **version=1685588879**.
-* The origin of the version, whether S2S or SDK, can be
-  learned
-  from the version creation time. The first SDK versions
-  originate
-  from the SDK. The others are S2S.
+  * **dt**: Date when the revenue events included in the report occurred.
+  * **version:** The version’s name is the epoch timestamp of the version creation date and time, e.g., **version=1685588879**.
+* The origin of the version, whether S2S or SDK, can be learned from the version creation time. The first SDK versions originate from the SDK. The others are S2S.
 
 | Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
 | --- | --- | --- | --- |

@@ -60,56 +60,30 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 #### Activate partner
 
-On your first visit, you'll need to turn on the
-**Activate partner** toggle to set up the integration.
-The toggle must remain on for as long as you work with Appcharge.
-Learn
-more about
-<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Appcharge. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
 #### Advanced Privacy
 
-For iOS apps, the
-<Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor>
-toggle appears. When turned on, it limits the sharing of user
-identifiers
-with the partner. Note that when the
-<Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle
-is turned on in the App Settings,
-**Advanced Privacy (for iOS 14.5+ and later)** is
-turned on and locked by default.
+For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
 
 #### Default postbacks
 
-AppsFlyer sends default postbacks to Appcharge following user
-installs.
-Use this section to
-<Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">define these postbacks</Anchor>.
+AppsFlyer sends default postbacks to Appcharge following user installs. Use this section to <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">define these postbacks</Anchor>.
 
 * **Off:** Install postbacks aren't sent to Appcharge.  
-  **Note:** Appcharge's integration with AppsFlyer
-  doesn't
-  require sending install postbacks. Therefore, it's recommended
-  to set it to Off.
-* **All media sources, including organic:** Install
-  postbacks are sent for events attributed to any partner and
-  for
-  organic events.
+  **Note:** Appcharge's integration with AppsFlyer doesn't require sending install postbacks. Therefore, it's recommended to set it to Off.
+* **All media sources, including organic:** Install postbacks are sent for events attributed to any partner and for organic events.
 
 ![default_postbacks.png](https://files.readme.io/390cbd75195ddcfa3f17cd9d569befda9f8b9b0f7040b53f420bb6fa1bc668d0-36292113918225.png)
 
 #### In-app event postbacks
 
-In this section, you can map your AppsFlyer events with your
-partners
-via postbacks.
+In this section, you can map your AppsFlyer events with your partners via postbacks.
 
 ![xsolla-af-login-3.jpg](https://files.readme.io/290c39c3503ac884196024851d58e70e6aff8ead5d9e32013e64964624bb8670-36292139269521.jpg)
 
 1. Turn on **In-app event postbacks**.
-2. Click **Add event** to add an SDK
-   or server-to-server event
-   to the list.
+2. Click **Add event** to add an SDK or server-to-server event to the list.
 3. Complete the following parameters:
 4. Click **Save Integration**.
 

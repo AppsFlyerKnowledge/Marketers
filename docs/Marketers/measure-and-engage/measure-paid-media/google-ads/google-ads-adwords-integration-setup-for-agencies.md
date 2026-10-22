@@ -167,8 +167,7 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 > 📘 **Note**
 >
 > * It may take up to 6 hours until the new conversions change status from No Recent Conversion to Recording Conversion.
-> * If an agency works with an MCC account and the app is promoted via several MCC sub-accounts all sub-accounts must be configured in the **Google Ads Customer ID** field (as seen on above screenshot).
->   In such a case there is no need to configure the customer id of the MCC account.
+> * If an agency works with an MCC account and the app is promoted via several MCC sub-accounts all sub-accounts must be configured in the **Google Ads Customer ID** field (as seen on above screenshot). In such a case there is no need to configure the customer id of the MCC account.
 
 </Accordion>
 

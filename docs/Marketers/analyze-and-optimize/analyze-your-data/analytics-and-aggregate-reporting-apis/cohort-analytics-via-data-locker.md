@@ -76,35 +76,236 @@ The format of the fields is as follows:
 
 #### Dimensions
 
-| Field name | Description |
-| --- | --- |
-| app\_id | -- |
-| media\_source | -- |
-| conversion\_type | Possible values: install, install\_unified (representing installs in the unified report), re-engagement, re-attribution |
-| attributed\_touch\_type | Possible values: click, impressions, pre-install, unknown, tv, null |
-| days\_post\_attribution | <ul><li>The number of days elapsed since the conversion date (not the specific conversion timestamp).</li><li>Tip! Use this to calculate retention and KPI days</li></ul> |
-| event\_date | <ul><li>The date a user performs a given event.</li><li>Format: yyyy-mm-dd</li><li>Example: The date a user performed a given in-app event. In the case of a conversion.</li><li>Note! If the event\_name is af\_conversion, then the event date and conversion date will be the same.</li></ul> |
-| conversion\_date | <ul><li>The date the conversion occurred</li><li>Format: yyyy-mm-dd</li><li>Example: The install date</li></ul> |
-| event\_name | Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_session</td><td>Opened the app</td></tr><tr><td>cohort\_uninstalls</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app</td></tr></tbody></table> |
-| event\_name | What did the user do |
-| af\_conversion | User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution. |
-| af\_session | Opened the app |
-| cohort\_uninstalls | Uninstalled the app |
-| Advertiser defined in-app event | Performed an in-app event in the app |
-| campaign | Campaign hierarchy<br /><br />Consider: Campaign name changes not supported. Consequently, multiple names can be associated with a given campaign ID. |
-| campaign\_id | Campaign hierarchy |
-| adset | Campaign hierarchy |
-| adset\_id | Campaign hierarchy |
-| ad | Campaign hierarchy |
-| ad\_id | Campaign hierarchy |
-| channel | Campaign hierarchy.<br /><br />[Updated October 27, 2021] At present, Meta ads doesn't populate channel in data provided via the Google Install Referrer mechanism. |
-| site\_id | Campaign hierarchy |
-| is\_primary\_attribution | Use to identify and deduplicate retargeting data. |
-| geo | The ISO country code derived from the user IP address. |
-| agency | <ul><li>Agency transparency supported.</li><li>In the case of non-transparent agencies, there can be multiple rows containing the same campaign name if the advertiser and the agency both run campaigns with the same name. Don't worry. The rows aren't duplicated.</li></ul> |
-| install\_app\_store | Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store Android attribution</Anchor>. If blank, it means Google Play Store. |
-| keywords | Word(s) used in the user's online search. As reported by the ad network |
-| keyword\_id | [Field available starting April 27, 2022] Keyword ID returned by the ad network. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Field name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        app\_id
+      </td>
+      <td>
+        --
+      </td>
+    </tr>
+    <tr>
+      <td>
+        media\_source
+      </td>
+      <td>
+        --
+      </td>
+    </tr>
+    <tr>
+      <td>
+        conversion\_type
+      </td>
+      <td>
+        Possible values: install, install\_unified (representing installs in the unified report), re-engagement, re-attribution
+      </td>
+    </tr>
+    <tr>
+      <td>
+        attributed\_touch\_type
+      </td>
+      <td>
+        Possible values: click, impressions, pre-install, unknown, tv, null
+      </td>
+    </tr>
+    <tr>
+      <td>
+        days\_post\_attribution
+      </td>
+      <td>
+        <ul><li>The number of days elapsed since the conversion date (not the specific conversion timestamp).</li><li>Tip! Use this to calculate retention and KPI days</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        event\_date
+      </td>
+      <td>
+        <ul><li>The date a user performs a given event.</li><li>Format: yyyy-mm-dd</li><li>Example: The date a user performed a given in-app event. In the case of a conversion.</li><li>Note! If the event\_name is af\_conversion, then the event date and conversion date will be the same.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        conversion\_date
+      </td>
+      <td>
+        <ul><li>The date the conversion occurred</li><li>Format: yyyy-mm-dd</li><li>Example: The install date</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        event\_name
+      </td>
+      <td>
+        Identifies the event. Some event names have a specific meaning while others relate to in-app events set by the advertiser in the app.<table><thead><tr><th>event\_name</th><th>What did the user do</th></tr></thead><tbody><tr><td>af\_conversion</td><td>User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.</td></tr><tr><td>af\_session</td><td>Opened the app</td></tr><tr><td>cohort\_uninstalls</td><td>Uninstalled the app</td></tr><tr><td>Advertiser defined in-app event</td><td>Performed an in-app event in the app</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        event\_name
+      </td>
+      <td>
+        What did the user do
+      </td>
+    </tr>
+    <tr>
+      <td>
+        af\_conversion
+      </td>
+      <td>
+        User converted. Use conversion\_type to identify if it is an install, re-engagement, or re-attribution.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        af\_session
+      </td>
+      <td>
+        Opened the app
+      </td>
+    </tr>
+    <tr>
+      <td>
+        cohort\_uninstalls
+      </td>
+      <td>
+        Uninstalled the app
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Advertiser defined in-app event
+      </td>
+      <td>
+        Performed an in-app event in the app
+      </td>
+    </tr>
+    <tr>
+      <td>
+        campaign
+      </td>
+      <td>
+        Campaign hierarchy<br /><br />Consider: Campaign name changes not supported. Consequently, multiple names can be associated with a given campaign ID.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        campaign\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        adset
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        adset\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ad
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ad\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        channel
+      </td>
+      <td>
+        Campaign hierarchy.<br /><br />[Updated October 27, 2021] At present, Meta ads doesn't populate channel in data provided via the Google Install Referrer mechanism.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        site\_id
+      </td>
+      <td>
+        Campaign hierarchy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        is\_primary\_attribution
+      </td>
+      <td>
+        Use to identify and deduplicate retargeting data.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        geo
+      </td>
+      <td>
+        The ISO country code derived from the user IP address.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        agency
+      </td>
+      <td>
+        <ul><li>Agency transparency supported.</li><li>In the case of non-transparent agencies, there can be multiple rows containing the same campaign name if the advertiser and the agency both run campaigns with the same name. Don't worry. The rows aren't duplicated.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        install\_app\_store
+      </td>
+      <td>
+        Android apps only: The Android store from where the app was downloaded. Populated by advertisers implementing <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multi-store Android attribution</Anchor>. If blank, it means Google Play Store.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        keywords
+      </td>
+      <td>
+        Word(s) used in the user's online search. As reported by the ad network
+      </td>
+    </tr>
+    <tr>
+      <td>
+        keyword\_id
+      </td>
+      <td>
+        [Field available starting April 27, 2022] Keyword ID returned by the ad network.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 #### Metrics
 

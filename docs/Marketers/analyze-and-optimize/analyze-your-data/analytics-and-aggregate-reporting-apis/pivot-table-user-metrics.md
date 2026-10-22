@@ -53,20 +53,116 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 <Accordion title="Pivot page—controls and options">
 
-| Column/option | Description |
-| --- | --- |
-| Name | Select a report name to view the associated pivot. |
-| Column click | Some columns, as indicated in the interface, are sorted by clicking on the column name. |
-| Last modified | Last time the report structure was modified. |
-| Modified by | Name of the user who modified the pivot. |
-| App name | <ul><li>If one app included: the app name</li><li>If multiple apps are included: the number of apps</li></ul> |
-| Actions | <table><thead><tr><th>Action</th><th>Remarks</th></tr></thead><tbody><tr><td>Duplicate</td><td>Copy an existing pivot report.</td></tr><tr><td>Rename</td><td>Change the name of the report.</td></tr><tr><td>View history log</td><td>See who handled the report structure, what was done, and when.</td></tr><tr><td>Copy Master API link</td><td>Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header.</td></tr><tr><td>Delete</td><td>Delete the selected pivot.</td></tr></tbody></table> |
-| Action | Remarks |
-| Duplicate | Copy an existing pivot report. |
-| Rename | Change the name of the report. |
-| View history log | See who handled the report structure, what was done, and when. |
-| Copy Master API link | Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header. |
-| Delete | Delete the selected pivot. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Column/option
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Name
+      </td>
+      <td>
+        Select a report name to view the associated pivot.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Column click
+      </td>
+      <td>
+        Some columns, as indicated in the interface, are sorted by clicking on the column name.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Last modified
+      </td>
+      <td>
+        Last time the report structure was modified.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Modified by
+      </td>
+      <td>
+        Name of the user who modified the pivot.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        App name
+      </td>
+      <td>
+        <ul><li>If one app included: the app name</li><li>If multiple apps are included: the number of apps</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Actions
+      </td>
+      <td>
+        <table><thead><tr><th>Action</th><th>Remarks</th></tr></thead><tbody><tr><td>Duplicate</td><td>Copy an existing pivot report.</td></tr><tr><td>Rename</td><td>Change the name of the report.</td></tr><tr><td>View history log</td><td>See who handled the report structure, what was done, and when.</td></tr><tr><td>Copy Master API link</td><td>Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header.</td></tr><tr><td>Delete</td><td>Delete the selected pivot.</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Action
+      </td>
+      <td>
+        Remarks
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Duplicate
+      </td>
+      <td>
+        Copy an existing pivot report.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Rename
+      </td>
+      <td>
+        Change the name of the report.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        View history log
+      </td>
+      <td>
+        See who handled the report structure, what was done, and when.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Copy Master API link
+      </td>
+      <td>
+        Generate a URL to pull the data via <Anchor target="_blank" href="/marketers/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor>. To use Master API, your need to get the <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">API token</Anchor> (admin permissions required) to use in the authentication header.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Delete
+      </td>
+      <td>
+        Delete the selected pivot.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 

@@ -42,26 +42,164 @@ AppsFlyer campaign properties data is available for Meta ads and Google. See wha
 
 See what data AppsFlyer pulls, and how it is standardized and mapped to Meta ads, in the table that follows.
 
-| Dimension | Description |
-| --- | --- |
-| Campaign objective | Pulled from: [campaign.objective](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group/insights) |
-| Cost model | Pulled from: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview#opt">adset.optimization\_goal</Anchor> |
-| AppsFlyer normalized cost model mapping | <table><thead><tr><th>Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td>\* LINK\_CLICKS \* POST\_ENGAGEMENT \* REPLIES \* LANDING\_PAGE\_VIEWS</td><td>CPC</td></tr><tr><td>\* OFFSITE\_ CONVERSIONS \* DERIVED\_EVENTS \* LEAD\_GENERATION</td><td>CPA</td></tr><tr><td>APP\_INSTALLS</td><td>CPI</td></tr><tr><td>VALUE</td><td>ROI</td></tr><tr><td>\* REACH \* IMPRESSIONS \* SOCIAL\_IMPRESSIONS</td><td>CPM</td></tr><tr><td>\* THRUPLAY \* VIDEO\_VIEWS \* TWO\_SECOND\_CONTINUOUS\_VIDEO\_VIEWS</td><td>CPCV</td></tr></tbody></table> |
-| Cost model | Normalized cost model |
-| <ul><li>LINK\_CLICKS</li><li>POST\_ENGAGEMENT</li><li>REPLIES</li><li>LANDING\_PAGE\_VIEWS</li></ul> | CPC |
-| <ul><li>OFFSITE\_ CONVERSIONS</li><li>DERIVED\_EVENTS</li><li>LEAD\_GENERATION</li></ul> | CPA |
-| APP\_INSTALLS | CPI |
-| VALUE | ROI |
-| <ul><li>REACH</li><li>IMPRESSIONS</li><li>SOCIAL\_IMPRESSIONS</li></ul> | CPM |
-| <ul><li>THRUPLAY</li><li>VIDEO\_VIEWS</li><li>TWO\_SECOND\_CONTINUOUS\_VIDEO\_VIEWS</li></ul> | CPCV |
-| Bid strategy | Pulled from: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">adset.bid\_strategy</Anchor><br /><br />If there is no bid\_strategy in the adset level, then: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.bid\_strategy</Anchor> |
-| AppsFlyer normalized bid strategy | <table><thead><tr><th>Bid strategy</th><th>Normalized bid strategy</th></tr></thead><tbody><tr><td>\* LOWEST\_COST\_ WITHOUT\_CAP \* COST\_CAP \* LOWEST\_COST\_ WITH\_MIN\_ROAS</td><td>Auto bid</td></tr><tr><td>TARGET\_COST</td><td>Target bid</td></tr><tr><td>Anything else</td><td>Unknown</td></tr></tbody></table> |
-| Bid strategy | Normalized bid strategy |
-| <ul><li>LOWEST\_COST\_ WITHOUT\_CAP</li><li>COST\_CAP</li><li>LOWEST\_COST\_ WITH\_MIN\_ROAS</li></ul> | Auto bid |
-| TARGET\_COST | Target bid |
-| Anything else | Unknown |
-| Bid amount | Bid amount in advertiser currency |
-| Original bid amount | Pulled from: adset.bid\_amount |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Dimension
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Campaign objective
+      </td>
+      <td>
+        Pulled from: [campaign.objective](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group/insights)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cost model
+      </td>
+      <td>
+        Pulled from: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview#opt">adset.optimization\_goal</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        AppsFlyer normalized cost model mapping
+      </td>
+      <td>
+        <table><thead><tr><th>Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td>\* LINK\_CLICKS \* POST\_ENGAGEMENT \* REPLIES \* LANDING\_PAGE\_VIEWS</td><td>CPC</td></tr><tr><td>\* OFFSITE\_ CONVERSIONS \* DERIVED\_EVENTS \* LEAD\_GENERATION</td><td>CPA</td></tr><tr><td>APP\_INSTALLS</td><td>CPI</td></tr><tr><td>VALUE</td><td>ROI</td></tr><tr><td>\* REACH \* IMPRESSIONS \* SOCIAL\_IMPRESSIONS</td><td>CPM</td></tr><tr><td>\* THRUPLAY \* VIDEO\_VIEWS \* TWO\_SECOND\_CONTINUOUS\_VIDEO\_VIEWS</td><td>CPCV</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cost model
+      </td>
+      <td>
+        Normalized cost model
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>LINK\_CLICKS</li><li>POST\_ENGAGEMENT</li><li>REPLIES</li><li>LANDING\_PAGE\_VIEWS</li></ul>
+      </td>
+      <td>
+        CPC
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>OFFSITE\_ CONVERSIONS</li><li>DERIVED\_EVENTS</li><li>LEAD\_GENERATION</li></ul>
+      </td>
+      <td>
+        CPA
+      </td>
+    </tr>
+    <tr>
+      <td>
+        APP\_INSTALLS
+      </td>
+      <td>
+        CPI
+      </td>
+    </tr>
+    <tr>
+      <td>
+        VALUE
+      </td>
+      <td>
+        ROI
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>REACH</li><li>IMPRESSIONS</li><li>SOCIAL\_IMPRESSIONS</li></ul>
+      </td>
+      <td>
+        CPM
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>THRUPLAY</li><li>VIDEO\_VIEWS</li><li>TWO\_SECOND\_CONTINUOUS\_VIDEO\_VIEWS</li></ul>
+      </td>
+      <td>
+        CPCV
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bid strategy
+      </td>
+      <td>
+        Pulled from: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">adset.bid\_strategy</Anchor><br /><br />If there is no bid\_strategy in the adset level, then: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.bid\_strategy</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        AppsFlyer normalized bid strategy
+      </td>
+      <td>
+        <table><thead><tr><th>Bid strategy</th><th>Normalized bid strategy</th></tr></thead><tbody><tr><td>\* LOWEST\_COST\_ WITHOUT\_CAP \* COST\_CAP \* LOWEST\_COST\_ WITH\_MIN\_ROAS</td><td>Auto bid</td></tr><tr><td>TARGET\_COST</td><td>Target bid</td></tr><tr><td>Anything else</td><td>Unknown</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bid strategy
+      </td>
+      <td>
+        Normalized bid strategy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>LOWEST\_COST\_ WITHOUT\_CAP</li><li>COST\_CAP</li><li>LOWEST\_COST\_ WITH\_MIN\_ROAS</li></ul>
+      </td>
+      <td>
+        Auto bid
+      </td>
+    </tr>
+    <tr>
+      <td>
+        TARGET\_COST
+      </td>
+      <td>
+        Target bid
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Anything else
+      </td>
+      <td>
+        Unknown
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bid amount
+      </td>
+      <td>
+        Bid amount in advertiser currency
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Original bid amount
+      </td>
+      <td>
+        Pulled from: adset.bid\_amount
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 
@@ -79,25 +217,156 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Google, 
 
 <Accordion title="Snap">
 
-| Dimension | Description |
-| --- | --- |
-| Campaign objective | Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#campaigns">campaign.objective</Anchor> |
-| Cost model | Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#squad-optimization-goals">adsquad.optimization\_goal</Anchor> |
-| AppsFlyer normalized cost model mapping | <table><thead><tr><th>Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td>\* SWIPES \* STORY\_OPENS</td><td>CPC</td></tr><tr><td>\* USES \* PIXEL\_ADD\_TO\_CART \* PIXEL\_PURCHASE \* PIXEL\_SIGNUP \* APP\_ADD\_TO\_CART \* APP\_PURCHASE \* APP\_SIGNUP</td><td>CPA</td></tr><tr><td>APP\_INSTALLS</td><td>CPI</td></tr><tr><td>\* IMPRESSIONS</td><td>CPM</td></tr><tr><td>\* VIDEO\_VIEWS \* VIDEO\_VIEWS\_15\_SEC</td><td>CPCV</td></tr></tbody></table> |
-| Cost model | Normalized cost model |
-| <ul><li>SWIPES</li><li>STORY\_OPENS</li></ul> | CPC |
-| <ul><li>USES</li><li>PIXEL\_ADD\_TO\_CART</li><li>PIXEL\_PURCHASE</li><li>PIXEL\_SIGNUP</li><li>APP\_ADD\_TO\_CART</li><li>APP\_PURCHASE</li><li>APP\_SIGNUP</li></ul> | CPA |
-| APP\_INSTALLS | CPI |
-| <ul><li>IMPRESSIONS</li></ul> | CPM |
-| <ul><li>VIDEO\_VIEWS</li><li>VIDEO\_VIEWS\_15\_SEC</li></ul> | CPCV |
-| Bid strategy | Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#bid-strategy">adsquad.bid\_strategy</Anchor> |
-| AppsFlyer normalized bid strategy | <table><thead><tr><th>Bid strategy</th><th>Normalized bid strategy</th></tr></thead><tbody><tr><td>\* MIN\_ROAS \* AUTO\_BID</td><td>Auto bid</td></tr><tr><td>LOWEST\_COST\_ WITH\_MAX\_BID</td><td>Max bid</td></tr><tr><td>TARGET\_COST</td><td>Target bid</td></tr></tbody></table> |
-| Bid strategy | Normalized bid strategy |
-| <ul><li>MIN\_ROAS</li><li>AUTO\_BID</li></ul> | Auto bid |
-| LOWEST\_COST\_ WITH\_MAX\_BID | Max bid |
-| TARGET\_COST | Target bid |
-| Bid amount | Bid amount in advertiser currency |
-| Original bid amount | Pulled from: adsquad.bid\_micro |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Dimension
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Campaign objective
+      </td>
+      <td>
+        Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#campaigns">campaign.objective</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cost model
+      </td>
+      <td>
+        Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#squad-optimization-goals">adsquad.optimization\_goal</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        AppsFlyer normalized cost model mapping
+      </td>
+      <td>
+        <table><thead><tr><th>Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td>\* SWIPES \* STORY\_OPENS</td><td>CPC</td></tr><tr><td>\* USES \* PIXEL\_ADD\_TO\_CART \* PIXEL\_PURCHASE \* PIXEL\_SIGNUP \* APP\_ADD\_TO\_CART \* APP\_PURCHASE \* APP\_SIGNUP</td><td>CPA</td></tr><tr><td>APP\_INSTALLS</td><td>CPI</td></tr><tr><td>\* IMPRESSIONS</td><td>CPM</td></tr><tr><td>\* VIDEO\_VIEWS \* VIDEO\_VIEWS\_15\_SEC</td><td>CPCV</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cost model
+      </td>
+      <td>
+        Normalized cost model
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>SWIPES</li><li>STORY\_OPENS</li></ul>
+      </td>
+      <td>
+        CPC
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>USES</li><li>PIXEL\_ADD\_TO\_CART</li><li>PIXEL\_PURCHASE</li><li>PIXEL\_SIGNUP</li><li>APP\_ADD\_TO\_CART</li><li>APP\_PURCHASE</li><li>APP\_SIGNUP</li></ul>
+      </td>
+      <td>
+        CPA
+      </td>
+    </tr>
+    <tr>
+      <td>
+        APP\_INSTALLS
+      </td>
+      <td>
+        CPI
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>IMPRESSIONS</li></ul>
+      </td>
+      <td>
+        CPM
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>VIDEO\_VIEWS</li><li>VIDEO\_VIEWS\_15\_SEC</li></ul>
+      </td>
+      <td>
+        CPCV
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bid strategy
+      </td>
+      <td>
+        Pulled from: <Anchor target="_blank" href="https://developers.snapchat.com/api/docs/#bid-strategy">adsquad.bid\_strategy</Anchor>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        AppsFlyer normalized bid strategy
+      </td>
+      <td>
+        <table><thead><tr><th>Bid strategy</th><th>Normalized bid strategy</th></tr></thead><tbody><tr><td>\* MIN\_ROAS \* AUTO\_BID</td><td>Auto bid</td></tr><tr><td>LOWEST\_COST\_ WITH\_MAX\_BID</td><td>Max bid</td></tr><tr><td>TARGET\_COST</td><td>Target bid</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bid strategy
+      </td>
+      <td>
+        Normalized bid strategy
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul><li>MIN\_ROAS</li><li>AUTO\_BID</li></ul>
+      </td>
+      <td>
+        Auto bid
+      </td>
+    </tr>
+    <tr>
+      <td>
+        LOWEST\_COST\_ WITH\_MAX\_BID
+      </td>
+      <td>
+        Max bid
+      </td>
+    </tr>
+    <tr>
+      <td>
+        TARGET\_COST
+      </td>
+      <td>
+        Target bid
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bid amount
+      </td>
+      <td>
+        Bid amount in advertiser currency
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Original bid amount
+      </td>
+      <td>
+        Pulled from: adsquad.bid\_micro
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 

@@ -352,7 +352,7 @@ if #available(iOS 14.0, *) {
 **Objective-C**
 
 ```objectivec
-- (void) fetchAnalyticsSessionId {
+- (void)fetchAnalyticsSessionId {
     if (@available(iOS 14.0, *)) {
         [FIRAnalytics sessionIDWithCompletion:^(NSString * _Nullable sessionID, NSError * _Nullable error) {
             if (sessionID) {

@@ -218,7 +218,7 @@ AppsFlyerLib.getInstance().setOneLinkCustomDomain("promotion.greatapp.com",
 Use the API in the AppDelegate.m, inside the didFinishLaunchingWithOptions method:
 
 ```objectivec
-- (BOOL) application:(UIApplication *) application didFinishLaunchingWithOptions:(NSDictionary *) launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     /** APPSFLYER INIT **/
     [AppsFlyerLib shared].appsFlyerDevKey = @"SED_DEV_KEY";
     [AppsFlyerLib shared].appleAppID = @"123456789";
@@ -323,8 +323,7 @@ After changing the OneLink subdomain mapped to your branded domain verify that t
 
 > 📘 **Note**
 >
-> If the verification fails because the CNAME record isn't mapped yet, you have a time span of up to 7 days to do so ending on the date specified in the verification failure dialog.
-> If the CNAME record is not mapped by the specified date you must renew the 7-day period.
+> If the verification fails because the CNAME record isn't mapped yet, you have a time span of up to 7 days to do so ending on the date specified in the verification failure dialog. If the CNAME record is not mapped by the specified date you must renew the 7-day period.
 
 #### **Domain CNAME record no longer pointing to AppsFlyer**
 

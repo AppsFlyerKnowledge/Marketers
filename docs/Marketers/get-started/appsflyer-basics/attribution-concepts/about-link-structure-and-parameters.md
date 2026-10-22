@@ -227,66 +227,29 @@ Two important things to know about custom parameters:
 
 <Accordion title="Partner ID (PID) parameter">
 
-Among all available attribution link parameters, PID is mandatory.
-The PID is the unique identifier of the media source allocated
-by
-AppsFlyer.
+Among all available attribution link parameters, PID is mandatory. The PID is the unique identifier of the media source allocated by AppsFlyer.
 
-Each
-<Anchor target="_blank" href="http://appsflyer.com/partners">integrated partner</Anchor>
-has a unique PID value, which ends with the *\_int* suffix.
-When using
-<Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink links,</Anchor>
-you can set the PID to any value you prefer, as long as it's
-not
-reserved by an integrated partner.
+Each <Anchor target="_blank" href="http://appsflyer.com/partners">integrated partner</Anchor> has a unique PID value, which ends with the *\_int* suffix. When using <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink links,</Anchor> you can set the PID to any value you prefer, as long as it's not reserved by an integrated partner.
 
 > 📘 **Note**
 >
-> AppsFlyer blocks attribution links that use reserved
-> <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRN</Anchor>
-> names as PID values in custom media sources, such as email
-> and SMS.
-> This restriction does **not** apply to ASRNs.
+> AppsFlyer blocks attribution links that use reserved <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRN</Anchor> names as PID values in custom media sources, such as email and SMS. This restriction does **not** apply to ASRNs.
 
-Examples of important integrated reserved publisher IDs: organic,
-googleadwords\_int (Google AdWords), facebook\_int (Meta ads),
-and
-twitter\_int (X Ads). You can use any name for non-integrated
-sources
-like email, SMS, or mail pigeons.
+Examples of important integrated reserved publisher IDs: organic, googleadwords\_int (Google AdWords), facebook\_int (Meta ads), and twitter\_int (X Ads). You can use any name for non-integrated sources like email, SMS, or mail pigeons.
 
 #### Avoid common PID issues:
 
-* **Always include PID in your attribution links.**
-  Without the PID on the attribution link, the user is automatically
-  attributed to a "None" media source, and the original installation
-  source is gone.
-* **For each integrated source**, use only the
-  designated
-  PID for the correct attribution of its installs.
-* **For Custom Sources, use non-integrated partner PIDs.**
-   For any custom media source, such as email, SMS, or
-  even
-  viral unpaid posts on Facebook use other, non-integrated
-  PID
-  values. such as owned\_email,
-  sms\_push, or other custom
-  identifiers
-  that do not match the names of integrated partners.
-* **Use only legal characters.** If the PID parameter
-  in the Attribution Link contains one of the following characters
-  /&lt;>*&?\
-  * The click or install appears in the dashboard under
-    ***af\_invalid\_param***
+* **Always include PID in your attribution links.** Without the PID on the attribution link, the user is automatically attributed to a "None" media source, and the original installation source is gone.
+* **For each integrated source**, use only the designated PID for the correct attribution of its installs.
+* **For Custom Sources, use non-integrated partner PIDs.** For any custom media source, such as email, SMS, or even viral unpaid posts on Facebook use other, non-integrated PID values. such as owned\_email, sms\_push, or other custom identifiers that do not match the names of integrated partners.
+* **Use only legal characters.** If the PID parameter in the Attribution Link contains one of the following characters /&lt;>*&?\
+  * The click or install appears in the dashboard under ***af\_invalid\_param***
   * Attribution links will not be attributed
   * Deep linking capabilities will not work on clicks
 
 > 👍 **Tip**
 >
-> Avoid using white spaces in the PID value, or make sure to
-> URL
-> encode your attribution links before using them.
+> Avoid using white spaces in the PID value, or make sure to URL encode your attribution links before using them.
 
 </Accordion>
 
@@ -294,81 +257,43 @@ like email, SMS, or mail pigeons.
 
 <Accordion title="Site ID parameter">
 
-The site ID is the unique identifier of the publisher serving
-the
-ad. In other words, the website or app displaying the ad. Ad
-networks
-allocate unique site IDs for each publisher.
+The site ID is the unique identifier of the publisher serving the ad. In other words, the website or app displaying the ad. Ad networks allocate unique site IDs for each publisher.
 
-This ID is included in the `af_siteid` parameter passed
-to AppsFlyer in the attribution link and is made available via
-the
-various dashboards, reporting options, and postbacks.
+This ID is included in the `af_siteid` parameter passed to AppsFlyer in the attribution link and is made available via the various dashboards, reporting options, and postbacks.
 
-The site ID must be passed to AppsFlyer in the attribution link
-because
-it:
+The site ID must be passed to AppsFlyer in the attribution link because it:
 
 * Provides clarity and transparency about the publisher
-* Is used by AppsFlyer to identify and eliminate fraudulent
-  publishers,
-  and other traffic clusters.
+* Is used by AppsFlyer to identify and eliminate fraudulent publishers, and other traffic clusters.
 
-The site ID parameter only includes the ID of the publisher that
-serves the ad.
+The site ID parameter only includes the ID of the publisher that serves the ad.
 
-To include additional information, such as ad type, placement,
-or
-both within the app, for example, banner, interstitial, or video,
-use the sub-site ID parameter.
+To include additional information, such as ad type, placement, or both within the app, for example, banner, interstitial, or video, use the sub-site ID parameter.
 
 > 📄 **Example**
 >
 > The following attribution link includes:
 >
 > * `af_siteid` (site ID): Publisher ID
-> * `af_sub_siteid` (sub-site ID): Additional
->   ID info (in this case, an affiliate source and ad type
->   placement)
+> * `af_sub_siteid` (sub-site ID): Additional ID info (in this case, an affiliate source and ad type placement)
 >
 > `https://app.appsflyer.com/com.yourapp?pid=mediaName_int&clickid={clickid}&advertising_id={gaid}&af_siteid=1234&af_sub_siteid=ABCD_4567`
 >
 > In the example link:
 >
 > * 1234 = Publisher ID
-> * ABCD = Affiliate source (sub-publisher) that the publisher
->   is working with
-> * 4567 = Ad type placement within the app, such as banner,
->   interstitial, or video
+> * ABCD = Affiliate source (sub-publisher) that the publisher is working with
+> * 4567 = Ad type placement within the app, such as banner, interstitial, or video
 
 #### **FAQ: Why does traffic result in many blocked installs?**
 
 Blocked installs can be due to the following:
 
-* **Missing site ID:** The `af_siteid`
-  parameter is empty in the click URL. Engagements sent with
-  an
-  empty Site ID signify either a technical issue or an intentional
-  attempt to bypass fraud detection mechanisms.
-* **Multiple site IDs:** The same publisher is
-  sent
-  on multiple click URLs, using different site IDs. This is
-  considered
-  fraudulent behavior that masks the real publisher activity
-  and
-  is often associated with
-  <Anchor target="_blank" href="https://www.appsflyer.com/blog/click-flooding-detection-false-positive-challenge/">click flooding</Anchor>.
-* **Site ID formatted incorrectly:** Sending the
-  wrong
-  format, combined with other fraud indications, could result
-  in
-  blocking not only the specific publisher, but also of a higher
-  cluster level, and might impact greater volumes of the partner
-  activity.
+* **Missing site ID:** The `af_siteid` parameter is empty in the click URL. Engagements sent with an empty Site ID signify either a technical issue or an intentional attempt to bypass fraud detection mechanisms.
+* **Multiple site IDs:** The same publisher is sent on multiple click URLs, using different site IDs. This is considered fraudulent behavior that masks the real publisher activity and is often associated with <Anchor target="_blank" href="https://www.appsflyer.com/blog/click-flooding-detection-false-positive-challenge/">click flooding</Anchor>.
+* **Site ID formatted incorrectly:** Sending the wrong format, combined with other fraud indications, could result in blocking not only the specific publisher, but also of a higher cluster level, and might impact greater volumes of the partner activity.
 
-To avoid blocked installs, make sure you send a single site ID
-parameter
-per publisher, as shown in the example.
+To avoid blocked installs, make sure you send a single site ID parameter per publisher, as shown in the example.
 
 </Accordion>
 

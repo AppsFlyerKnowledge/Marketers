@@ -116,7 +116,7 @@ Data written to the cloud service or bucket has the directory and file structure
 
 | **Variable** | **Content** |
 | --- | --- |
-| advertiser\_bucket\_name | As defined in the Cost ETL configuration: af-xpend-cost-etl--[your bucket name suffix] |
+| advertiser\_bucket\_name | As defined in the Cost ETL configuration: af-xpend-cost-etl-&lt;af-account-id>-[your bucket name suffix] |
 | cost\_etl | Always cost\_etl |
 | version | Cost ETL version |
 | date | Cost date<br /><br />Format: yyyy-mm-dd |

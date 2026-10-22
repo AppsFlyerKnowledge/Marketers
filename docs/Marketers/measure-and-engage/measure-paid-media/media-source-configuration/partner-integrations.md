@@ -64,15 +64,8 @@ The **Active integrations** tab allows you to:
 
 > 📘 **Note**
 >
-> * The active integrations shown on the Active integrations tab vary
->   according
->   to the currently selected app. You can see which partners are connected
->   to
->   other apps by clicking the app selector (top left) and choosing a
->   different
->   app.
-> * The number of active integrations for the selected app is shown on
->   the tab.
+> * The active integrations shown on the Active integrations tab vary according to the currently selected app. You can see which partners are connected to other apps by clicking the app selector (top left) and choosing a different app.
+> * The number of active integrations for the selected app is shown on the tab.
 
 ### What you can do from the Active integrations tab
 

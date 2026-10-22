@@ -34,8 +34,7 @@ Consider the following examples:
 
 > 📄 **Examples**
 >
-> **Promotional remarketing**
-> You want to target promotional offers to users during the month of their birthdays.
+> **Promotional remarketing** You want to target promotional offers to users during the month of their birthdays.
 >
 > Here's how to do it with Audiences:
 >
@@ -44,8 +43,7 @@ Consider the following examples:
 > 3. Import the lists to AppsFlyer as audiences and connect them to the partners with which you want to run the promotional campaigns.
 > 4. Set up campaigns with the relevant partners to target the audiences accordingly.
 >
-> **Acquiring additional users**
-> Your app development studio acquires another studio. The studio you acquired has the device IDs of users who previously installed their apps, and you want to target these users to install your existing apps.
+> **Acquiring additional users** Your app development studio acquires another studio. The studio you acquired has the device IDs of users who previously installed their apps, and you want to target these users to install your existing apps.
 >
 > Here's how to do it with Audiences:
 >

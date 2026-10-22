@@ -45,26 +45,164 @@ x-zendesk:
 
 ### General app settings
 
-| Setting | Description |
-| --- | --- |
-| <span id="sdk-authentication-dev-key"></span>SDK authentication: Dev key | <ul><li>The Dev key authenticates events sent by the app or by S2S to AppsFlyer.</li><li>The key is unique per account and is used by all apps in the account.</li><li>The key is available on the App Settings page to any account user with access to that app.</li><li>[Optional] An individual app key can be allocated in certain scenarios. Reach out to your CSM to discuss this.</li></ul> |
-| <span id="aggregated-advanced-privacy-ios-apps"></span>Aggregated Advanced Privacy (iOS apps) | When turned on, user-level attribution data is unavailable to advertisers. Postbacks and event data shared with partners are aggregated and anonymous (more about the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> framework).<br /><br />When turned off, user-level attribution data is available for all partners as aggregated data and can be set for each partner individually.<br /><br />You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="analytics-define-loyal-user-trigger"></span>Analytics: Define loyal user trigger | <ul><li>The trigger to designate a user as a loyal user. The default option set when you add the app is 3 app opens.</li><li>After attributing in-app events, you can use an in-app event as the trigger event.<ul><li>[Default] 3 app opens.</li><li>The loyal user setting is indicative of user quality. Consider using <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq">Protect360</Anchor> to combat fraud.</li><li>Changing this setting impacts data retroactively, meaning historical loyal user data is recalculated.</li></ul></li><li>You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul> |
-| <span id="minimum-time-between-sessions"></span>Minimum time between sessions | You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="app-store-country"></span>App store country | Sets the app store country where the app is available. This setting impacts the app as detailed here.<ul><li>**Changing the app status from pending to live**:<ul><li><Anchor target="_blank" href="/marketers/docs/why-is-my-app-still-pending">When the app goes live</Anchor>, AppsFlyer checks the store using the country setting to retrieve details about the app like its icon.</li><li>If the app is not found in the store country set, AppsFlyer can't change the app status from pending to live.</li></ul></li><li>Redirection behavior is impacted by the setting depending on the scenario, as detailed in the table that follows.</li></ul><table><thead><tr><th>User type</th><th>Redirection scenario</th></tr></thead><tbody><tr><td><span id="mobile"></span>Mobile</td><td>Users usually click on attribution links within other mobile apps. On clicking, the operating system determines the app store country that users are redirected to:   \* **Android** redirects based on user IP/location. \* **iOS** redirects to the app store associated with the iTunes account active on the device.</td></tr><tr><td><span id="mobile-and-web"></span>Mobile and web</td><td>When web users click on attribution links, in **websites** (mobile and desktop), the initial redirection is to the store set in-app store country.  On attempting to install, the operating system redirects them to the country store as described for mobile in the preceding row.</td></tr><tr><td><span id="ipad-ios-13"></span>iPad iOS 13</td><td>Starting from iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">iPads serve the desktop version of websites</Anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users.</td></tr></tbody></table> |
-| User type | Redirection scenario |
-| Mobile | Users usually click on attribution links within other mobile apps. On clicking, the operating system determines the app store country that users are redirected to:<ul><li>**Android** redirects based on user IP/location.</li><li>**iOS** redirects to the app store associated with the iTunes account active on the device.</li></ul> |
-| Mobile and web | When web users click on attribution links, in **websites** (mobile and desktop), the initial redirection is to the store set in-app store country.<br /><br />On attempting to install, the operating system redirects them to the country store as described for mobile in the preceding row. |
-| iPad iOS 13 | Starting from iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">iPads serve the desktop version of websites</Anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users. |
-| <span id="localization-time-zone"></span>Localization: Time Zone | The default app setting is UTC. <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">About the app time-zone.</Anchor><br /><br />Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
-| <span id="localization-currency"></span>Localization: Currency | <ul><li>This defines the app-specific currency which is used for the following metrics:<ul><li>Cost</li><li>In-app events revenue</li><li>Ad revenue</li></ul></li><li>The default app setting is USD.<ul><li>Currency change is available to apps with no revenue or cost.</li><li>For new apps, the currency is set when the app is added.</li></ul></li><li>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul>**<span id="reporting-tools-impacted-by-app-currency"></span>Reporting tools impacted by app currency**<table><thead><tr><th>Reporting tool</th><th>Currency options available</th></tr></thead><tbody><tr><td><span id="dashboards"></span>Dashboards</td><td>App-specific currency</td></tr><tr><td><span id="export-data-page"></span>Export data page</td><td>App-specific currency</td></tr><tr><td><span id="push-api"></span>Push API</td><td>App-specific currency and USD available simultaneously</td></tr><tr><td><span id="pull-api"></span>Pull API</td><td>Aggregate data: App-specific currency  Raw data: Selectable USD or app-specific currency</td></tr><tr><td><span id="master-api"></span>Master API</td><td>Selectable USD or app-specific currency</td></tr><tr><td>Data Locker</td><td>Only USD</td></tr></tbody></table> |
-| Reporting tool | Currency options available |
-| Dashboards | App-specific currency |
-| Export data page | App-specific currency |
-| Push API | App-specific currency and USD available simultaneously |
-| Pull API | Aggregate data: App-specific currency<br /><br />Raw data: Selectable USD or app-specific currency |
-| Master API | Selectable USD or app-specific currency |
-| <span id="data-locker"></span>Data Locker | Only USD |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Setting
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span id="sdk-authentication-dev-key"></span>SDK authentication: Dev key
+      </td>
+      <td>
+        <ul><li>The Dev key authenticates events sent by the app or by S2S to AppsFlyer.</li><li>The key is unique per account and is used by all apps in the account.</li><li>The key is available on the App Settings page to any account user with access to that app.</li><li>[Optional] An individual app key can be allocated in certain scenarios. Reach out to your CSM to discuss this.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="aggregated-advanced-privacy-ios-apps"></span>Aggregated Advanced Privacy (iOS apps)
+      </td>
+      <td>
+        When turned on, user-level attribution data is unavailable to advertisers. Postbacks and event data shared with partners are aggregated and anonymous (more about the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> framework).<br /><br />When turned off, user-level attribution data is available for all partners as aggregated data and can be set for each partner individually.<br /><br />You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="analytics-define-loyal-user-trigger"></span>Analytics: Define loyal user trigger
+      </td>
+      <td>
+        <ul><li>The trigger to designate a user as a loyal user. The default option set when you add the app is 3 app opens.</li><li>After attributing in-app events, you can use an in-app event as the trigger event.<ul><li>[Default] 3 app opens.</li><li>The loyal user setting is indicative of user quality. Consider using <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq">Protect360</Anchor> to combat fraud.</li><li>Changing this setting impacts data retroactively, meaning historical loyal user data is recalculated.</li></ul></li><li>You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="minimum-time-between-sessions"></span>Minimum time between sessions
+      </td>
+      <td>
+        You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="app-store-country"></span>App store country
+      </td>
+      <td>
+        Sets the app store country where the app is available. This setting impacts the app as detailed here.<ul><li>**Changing the app status from pending to live**:<ul><li><Anchor target="_blank" href="/marketers/docs/why-is-my-app-still-pending">When the app goes live</Anchor>, AppsFlyer checks the store using the country setting to retrieve details about the app like its icon.</li><li>If the app is not found in the store country set, AppsFlyer can't change the app status from pending to live.</li></ul></li><li>Redirection behavior is impacted by the setting depending on the scenario, as detailed in the table that follows.</li></ul><table><thead><tr><th>User type</th><th>Redirection scenario</th></tr></thead><tbody><tr><td><span id="mobile"></span>Mobile</td><td>Users usually click on attribution links within other mobile apps. On clicking, the operating system determines the app store country that users are redirected to:   \* **Android** redirects based on user IP/location. \* **iOS** redirects to the app store associated with the iTunes account active on the device.</td></tr><tr><td><span id="mobile-and-web"></span>Mobile and web</td><td>When web users click on attribution links, in **websites** (mobile and desktop), the initial redirection is to the store set in-app store country.  On attempting to install, the operating system redirects them to the country store as described for mobile in the preceding row.</td></tr><tr><td><span id="ipad-ios-13"></span>iPad iOS 13</td><td>Starting from iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">iPads serve the desktop version of websites</Anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users.</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        User type
+      </td>
+      <td>
+        Redirection scenario
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Mobile
+      </td>
+      <td>
+        Users usually click on attribution links within other mobile apps. On clicking, the operating system determines the app store country that users are redirected to:<ul><li>**Android** redirects based on user IP/location.</li><li>**iOS** redirects to the app store associated with the iTunes account active on the device.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Mobile and web
+      </td>
+      <td>
+        When web users click on attribution links, in **websites** (mobile and desktop), the initial redirection is to the store set in-app store country.<br /><br />On attempting to install, the operating system redirects them to the country store as described for mobile in the preceding row.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        iPad iOS 13
+      </td>
+      <td>
+        Starting from iOS 13, <Anchor target="_blank" href="https://www.apple.com/ipados/features/">iPads serve the desktop version of websites</Anchor>. This means that the user type (mobile or web) is not relevant. A click on an attribution link goes to the desktop site, and after that, redirection rules are those of web users.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="localization-time-zone"></span>Localization: Time Zone
+      </td>
+      <td>
+        The default app setting is UTC. <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">About the app time-zone.</Anchor><br /><br />Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="localization-currency"></span>Localization: Currency
+      </td>
+      <td>
+        <ul><li>This defines the app-specific currency which is used for the following metrics:<ul><li>Cost</li><li>In-app events revenue</li><li>Ad revenue</li></ul></li><li>The default app setting is USD.<ul><li>Currency change is available to apps with no revenue or cost.</li><li>For new apps, the currency is set when the app is added.</li></ul></li><li>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul>**<span id="reporting-tools-impacted-by-app-currency"></span>Reporting tools impacted by app currency**<table><thead><tr><th>Reporting tool</th><th>Currency options available</th></tr></thead><tbody><tr><td><span id="dashboards"></span>Dashboards</td><td>App-specific currency</td></tr><tr><td><span id="export-data-page"></span>Export data page</td><td>App-specific currency</td></tr><tr><td><span id="push-api"></span>Push API</td><td>App-specific currency and USD available simultaneously</td></tr><tr><td><span id="pull-api"></span>Pull API</td><td>Aggregate data: App-specific currency  Raw data: Selectable USD or app-specific currency</td></tr><tr><td><span id="master-api"></span>Master API</td><td>Selectable USD or app-specific currency</td></tr><tr><td>Data Locker</td><td>Only USD</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Reporting tool
+      </td>
+      <td>
+        Currency options available
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dashboards
+      </td>
+      <td>
+        App-specific currency
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Export data page
+      </td>
+      <td>
+        App-specific currency
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Push API
+      </td>
+      <td>
+        App-specific currency and USD available simultaneously
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Pull API
+      </td>
+      <td>
+        Aggregate data: App-specific currency<br /><br />Raw data: Selectable USD or app-specific currency
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Master API
+      </td>
+      <td>
+        Selectable USD or app-specific currency
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span id="data-locker"></span>Data Locker
+      </td>
+      <td>
+        Only USD
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 ### Attribution settings
 

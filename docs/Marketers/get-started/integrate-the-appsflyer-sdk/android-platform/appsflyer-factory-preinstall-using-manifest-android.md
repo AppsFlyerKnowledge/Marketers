@@ -343,8 +343,7 @@ This section demonstrates how to test and verify your pre-install configuration.
 
 > 🚧 **Important!**
 >
-> Before you start testing, make sure to <Anchor target="_blank" href="/marketers/docs/registering-test-devices">allowlist the devices</Anchor> you are using for testing.
-> Also, make sure to set the debug log to true in the AFApplication class.
+> Before you start testing, make sure to <Anchor target="_blank" href="/marketers/docs/registering-test-devices">allowlist the devices</Anchor> you are using for testing. Also, make sure to set the debug log to true in the AFApplication class.
 >
 > ```java
 > AppsFlyerLib.getInstance().setDebugLog(true);

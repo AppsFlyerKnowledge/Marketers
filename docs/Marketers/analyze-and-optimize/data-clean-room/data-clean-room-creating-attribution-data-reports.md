@@ -109,8 +109,7 @@ If the report uses more than one custom source, only one of them needs to be map
 >
 > * Custom source #1 identifier **AF** is mapped directly to the attribution data key identifier **af\_id.**
 > * Custom source #2 is mapped indirectly: **user\_code** --> **AF** --> **af\_id.**
-> * Custom source #3 is mapped indirectly (through a longer chain):
->   **user\_id** --> **user\_code** --> **AF** --> **af\_id.**
+> * Custom source #3 is mapped indirectly (through a longer chain): **user\_id** --> **user\_code** --> **AF** --> **af\_id.**
 > * Custom source #4 identifier **ID** is mapped directly to the attribution data key identifier **af\_id.**
 >   * Note that it could have been mapped indirectly instead (through custom source #3 identifier **user\_id**), but either option works fine.
 >

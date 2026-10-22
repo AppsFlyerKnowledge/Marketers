@@ -94,8 +94,7 @@ Similarly, if you use AppsFlyer's anti-fraud solution, Protect360, there may be 
 
 > 📄 **Example**
 >
-> Jeff, the UA manager of GreatApp, creates a campaign called SPNA, which targets only Spanish speakers in North America. To verify this Jeff defines a validation rule, that accepts users from Canada and the US only.
-> When a Meta ads user from Spain clicks and installs the app, Meta ads self-reports the install, while AppsFlyer rejects the install that doesn't pass the validation rule.
+> Jeff, the UA manager of GreatApp, creates a campaign called SPNA, which targets only Spanish speakers in North America. To verify this Jeff defines a validation rule, that accepts users from Canada and the US only. When a Meta ads user from Spain clicks and installs the app, Meta ads self-reports the install, while AppsFlyer rejects the install that doesn't pass the validation rule.
 
 ## SDK related discrepancies
 

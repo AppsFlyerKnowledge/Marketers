@@ -44,39 +44,18 @@ The Web SDK lets you record how visitors interact with your website and sends th
 
 #### Integrate the SDK with an AI coding agent
 
-Instead of manually integrating the Web SDK (see steps below), use
-an
-AI coding tool (Cursor, Claude Code, Codex, Copilot) to implement
-the
-entire integration for you. Copy the prompt, replace the two placeholders,
-and paste it into your AI coding tool.
+Instead of manually integrating the Web SDK (see steps below), use an AI coding tool (Cursor, Claude Code, Codex, Copilot) to implement the entire integration for you. Copy the prompt, replace the two placeholders, and paste it into your AI coding tool.
 
-This approach streamlines and covers all the steps below, but you
-still
-need to make sure the SDK works correctly and review your privacy
-configuration
-afterward.
+This approach streamlines and covers all the steps below, but you still need to make sure the SDK works correctly and review your privacy configuration afterward.
 
 Before copying the prompt, replace:
 
-* `<WEB_SDK_ID>`: In AppsFlyer, go to
-  **App Settings**, select your web app (your website
-  domain with the "website-" prefix), and copy the
-  **Web SDK ID** from **SDK authentication**.
-* `<PRODUCTION_URL>`: Your live site URL, used
-  for
-  post-deploy verification.
+* `<WEB_SDK_ID>`: In AppsFlyer, go to **App Settings**, select your web app (your website domain with the "website-" prefix), and copy the **Web SDK ID** from **SDK authentication**.
+* `<PRODUCTION_URL>`: Your live site URL, used for post-deploy verification.
 
 > 📘 **Note**
 >
-> The AI tool builds an event plan from your codebase and waits for
-> your
-> approval
-> before implementing it. Review the plan, confirm that revenue and
-> currency
-> values appear only on realized-revenue events, and verify the results
-> using
-> the post-deploy verification steps in the prompt.
+> The AI tool builds an event plan from your codebase and waits for your approval before implementing it. Review the plan, confirm that revenue and currency values appear only on realized-revenue events, and verify the results using the post-deploy verification steps in the prompt.
 
 <Accordion title="AI implementation prompt">
 
@@ -371,7 +350,7 @@ Choose the snippet that matches your integration type and security requirements.
 
 ### Standard Web SDK
 
-Use this snippet to deploy the standard Web SDK integration. Paste it near the top of the `` tag on all pages where you want to load the SDK.
+Use this snippet to deploy the standard Web SDK integration. Paste it near the top of the `<head>` tag on all pages where you want to load the SDK.
 
 <Accordion title="Without Smart Banners">
 
@@ -508,7 +487,7 @@ Deploy the snippet you selected in Step 2 using one of the following methods. Ma
 Repeat this on all pages:
 
 1. In the snippet from Step 2, replace `WEB_DEV_KEY` with your Web SDK ID (and `YOUR_BANNER_KEY` if applicable).
-2. Paste the snippet near the top of the website's `` tag.
+2. Paste the snippet near the top of the website's `<head>` tag.
 
 </Accordion>
 
@@ -711,7 +690,7 @@ The following HTML structure loads GTM, which in turn loads the Web SDK. It also
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        }) (window,document,'script','dataLayer','GTM-XXXX');
+        })(window,document,'script','dataLayer','GTM-XXXX');
     </script>
     <script>
         function getResponseFromServer() {
@@ -805,7 +784,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        }) (window,document,'script','dataLayer','GTM-XXXX');
+        })(window,document,'script','dataLayer','GTM-XXXX');
     </script>
 </head>
 <body>
@@ -962,7 +941,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
                    dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
                f.parentNode.insertBefore(j, f);
-           }) (window, document, 'script', 'dataLayer', 'GTM-5VJ6C7R');
+           })(window, document, 'script', 'dataLayer', 'GTM-5VJ6C7R');
            function storeUserEmail() {
                var userEmail = document.getElementById('email').value;
                localStorage.setItem('user_email', userEmail);

@@ -117,11 +117,7 @@ When passing event value, keep the following in mind:
   ```html Markup
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
-* To avoid any possible problems AppsFlyer recommends using
-  only
-  lower-case alpha-numeric characters (a-z and 0-9) for your
-  in-app
-  event names.
+* To avoid any possible problems AppsFlyer recommends using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names.
 
 #### WebActivity class
 
@@ -143,14 +139,11 @@ public class WebActivity extends AppCompatActivity {
 }
 ```
 
-The code above creates an object called **app**
-that
-acts as the bridge between the web view and the native code.
+The code above creates an object called **app** that acts as the bridge between the web view and the native code.
 
 #### JavaScript interface class
 
-Create a MainJsInterface class to implement `recordEvent()`
-as `JavaScriptInterface`
+Create a MainJsInterface class to implement `recordEvent()` as `JavaScriptInterface`
 
 ```java
 public class MainJsInterface {
@@ -188,19 +181,9 @@ public class MainJsInterface {
 }
 ```
 
-The code above declares a `recordEvent` method that
-can
-be called in the web view using JavaScript.
+The code above declares a `recordEvent` method that can be called in the web view using JavaScript.
 
-In the HTML code, you can see that the method is called using
-`app.recordEvent(eventName, eventParams)`. Recall
-that
-we set **app** to act as the bridge between the
-web
-view and native code. This is why **app** can call
-the
-`recordEvent` method that we define in MainJsInterface
-class.
+In the HTML code, you can see that the method is called using `app.recordEvent(eventName, eventParams)`. Recall that we set **app** to act as the bridge between the web view and native code. This is why **app** can call the `recordEvent` method that we define in MainJsInterface class.
 
 </Accordion>
 
@@ -232,11 +215,7 @@ Add the following HTML code to the web view or web page:
 </body>
 ```
 
-The code above sets a function to be triggered when a button
-is clicked.
-The function sets the `eventName` and
-`eventParams` variables and passes them to the native
-code using `webkit.messageHandlers`.
+The code above sets a function to be triggered when a button is clicked. The function sets the `eventName` and `eventParams` variables and passes them to the native code using `webkit.messageHandlers`.
 
 When passing event value, keep the following in mind:
 
@@ -245,11 +224,7 @@ When passing event value, keep the following in mind:
   ```html Markup
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
-* To avoid any possible problems AppsFlyer recommends using
-  only
-  lower-case alpha-numeric characters (a-z and 0-9) for your
-  in-app
-  event names.
+* To avoid any possible problems AppsFlyer recommends using only lower-case alpha-numeric characters (a-z and 0-9) for your in-app event names.
 
 > 📘 **Note**
 >
@@ -259,11 +234,10 @@ When passing event value, keep the following in mind:
 
 #### Web view controller
 
-In your web view controller, add the following code in the view
-controller.
+In your web view controller, add the following code in the view controller.
 
 ```objectivec
--(void) loadView{
+-(void)loadView{
  [super loadView];
 
  WKWebViewConfiguration *configuration =
@@ -276,7 +250,7 @@ controller.
  [self.view addSubview:_webView];
 }
 
-- (void) viewDidLoad {
+- (void)viewDidLoad {
 
  [super viewDidLoad];
 
@@ -289,8 +263,8 @@ controller.
 
  }
 
-- (void) userContentController:(WKUserContentController *) userContentController
-  didReceiveScriptMessage:(WKScriptMessage *) message {
+- (void)userContentController:(WKUserContentController *)userContentController
+  didReceiveScriptMessage:(WKScriptMessage *)message {
 
  NSString* messageBody = message.body;
  NSString* eventName = [messageBody componentsSeparatedByString:@"+"][0];
@@ -298,7 +272,7 @@ controller.
  [self recordEvent:eventName eventValue:eventValue];
 }
 
-- (void) recordEvent:(NSString*) eventName eventValue:(NSString*) eventValue{
+- (void)recordEvent:(NSString*)eventName eventValue:(NSString*)eventValue{
 
  NSData *eventValuedata = [eventValue dataUsingEncoding:(NSUTF8StringEncoding)];
 
@@ -309,12 +283,7 @@ controller.
 }
 ```
 
-The code above receives the message from the web view. The message
-contains the event name and event value. When the code detects
-the
-incoming message, it passes it on to the `recordEvent`
-method which parses the values and calls the native SDK
-`logEvent` method.
+The code above receives the message from the web view. The message contains the event name and event value. When the code detects the incoming message, it passes it on to the `recordEvent` method which parses the values and calls the native SDK `logEvent` method.
 
 #### Swift WebView controller
 
@@ -369,12 +338,7 @@ import JavaScriptCore
 }
 ```
 
-The code above receives the message from the web view. The message
-contains the event name and event value. When the code detects
-the
-incoming message, it passes it on to the `recordEvent`
-method which parses the values and calls the AppsFlyer SDK
-`logEvent` method.
+The code above receives the message from the web view. The message contains the event name and event value. When the code detects the incoming message, it passes it on to the `recordEvent` method which parses the values and calls the AppsFlyer SDK `logEvent` method.
 
 </Accordion>
 
@@ -502,7 +466,7 @@ public boolean shouldOverrideUrlLoading(WebView view, String url) {
 In your web view controller, add the following code in the `shouldStartLoadWithRequest` method.
 
 ```objectivec
-- (void) viewDidLoad {
+- (void)viewDidLoad {
  [super viewDidLoad];
  NSString *page = @"https://yourwebsite.com";
 
@@ -516,7 +480,7 @@ In your web view controller, add the following code in the `shouldStartLoadWithR
  [self.view addSubview:_webView];
 }
 
--(void) webView:(WKWebView *) webView decidePolicyForNavigationAction:(WKNavigationAction* ) navigationAction decisionHandler:(void (^) (WKNavigationActionPolicy)) decisionHandler {
+-(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction* )navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
  decisionHandler(WKNavigationActionPolicyAllow);
  NSString *url = navigationAction.request.URL.absoluteString;
  if([url containsString:(@"af-event")]){
@@ -524,7 +488,7 @@ In your web view controller, add the following code in the `shouldStartLoadWithR
  }
 }
 
-- (void) recordEvent:(NSString*) url{
+- (void)recordEvent:(NSString*)url{
 
  NSString *eventNameAndEventValueString = [url componentsSeparatedByString: @"?"][1];
 

@@ -73,8 +73,7 @@ To learn how to import conversions in Google Ads, see <Anchor target="_blank" hr
 
 > 📘 **Note**
 >
-> Unlike all other events, session\_start can be claimed by Google Ads API, even if you don't import session\_start into Google Ads from AppsFlyer.
-> However, in that case, these conversions would still be attributed in AppsFlyer. This **creates a substantial discrepancy between your data in AppsFlyer and in Google Ads**. Furthermore, this **prevents Google Ads from optimizing** your campaign user targeting.
+> Unlike all other events, session\_start can be claimed by Google Ads API, even if you don't import session\_start into Google Ads from AppsFlyer. However, in that case, these conversions would still be attributed in AppsFlyer. This **creates a substantial discrepancy between your data in AppsFlyer and in Google Ads**. Furthermore, this **prevents Google Ads from optimizing** your campaign user targeting.
 
 </Accordion>
 

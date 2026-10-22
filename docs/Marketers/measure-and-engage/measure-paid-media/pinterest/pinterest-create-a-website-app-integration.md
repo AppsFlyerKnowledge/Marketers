@@ -66,8 +66,7 @@ You can find your Ad Account ID and Access Token in the Pinterest Ads Manager UI
 
 In this section, you map your AppsFlyer web events to Pinterest events via postbacks.
 
-1. In the Pinterest integration settings, scroll to
-   **In-app event postbacks**.
+1. In the Pinterest integration settings, scroll to **In-app event postbacks**.
 2. Turn on **In-app event postbacks**.
 3. Set the in-app event postback window.
 4. Select the postback settings and mappings for events.

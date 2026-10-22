@@ -87,8 +87,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >
 > Here is what the script is doing. In case of any issues, you can perform those steps manually:
 >
-> 1. Decode the APK using <Anchor target="_blank" href="https://ibotpeaches.github.io/Apktool/">apktool</Anchor>. This will create app\_name folder.
->    `apktool d app_name.apk`
+> 1. Decode the APK using <Anchor target="_blank" href="https://ibotpeaches.github.io/Apktool/">apktool</Anchor>. This will create app\_name folder. `apktool d app_name.apk`
 > 2. Download the [AppsFlyer SDK jar/aar](https://repo.maven.apache.org/maven2/com/appsflyer/af-android-sdk/5.4.1/af-android-sdk-5.4.1.aar) of the same version that was used in the APK.
 > 3. Extract files `a-` and `b-` from the jar (by renaming jar into a zip) and place them into the folder with the decompiled apk to `app_name/unknown/com/appsflyer/internal`
 > 4. Edit `apktool.yml` by adding these lines under `unknownFiles:`
@@ -101,8 +100,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >    See sample screenshot that follows.
 >
 >    [![](https://files.readme.io/6bacbb55e5b1a7739034db8cc03313459ad6d048313a51ef6bf1e07500165cc0-360010933018.png)](https://files.readme.io/6bacbb55e5b1a7739034db8cc03313459ad6d048313a51ef6bf1e07500165cc0-360010933018.png)
-> 5. Build the APK.back (will appear under `app_name/dist` folder).
->    `apktool b app`
+> 5. Build the APK.back (will appear under `app_name/dist` folder). `apktool b app`
 > 6. Sign the APK.
 >
 >    ```html Markup

@@ -101,8 +101,7 @@ Prerequisites:
 To set up redirections to a custom product page in the App Store, you can either:
 
 * Use the OneLink UI.
-* Add the parameter `af_ios_store_cpp` to your OneLink URLs or single-platform attribution links with the value being the custom product page ID. For example: `af_ios_store_cpp=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
-  **Note:** In raw data and aggregated reporting, the `af_ios_store_cpp` value is recorded for clicks but not for impressions (display name: store\_product\_page).
+* Add the parameter `af_ios_store_cpp` to your OneLink URLs or single-platform attribution links with the value being the custom product page ID. For example: `af_ios_store_cpp=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` **Note:** In raw data and aggregated reporting, the `af_ios_store_cpp` value is recorded for clicks but not for impressions (display name: store\_product\_page).
 
 #### Use the OneLink UI—App Store
 

@@ -101,7 +101,7 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 <Tab title="iOS">
 
 ```objectivec
--(void) onConversionDataSuccess:(NSDictionary*) installData {
+-(void)onConversionDataSuccess:(NSDictionary*) installData {
   id status = [installData objectForKey:@"af_status"];
   if([status isEqualToString:@"Non-organic"]) {
 		id mediaSource = [installData objectForKey:@"media_source"];

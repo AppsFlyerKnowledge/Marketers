@@ -71,7 +71,7 @@ In AppDelegate.h, do the following:
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
-- (BOOL) application:(UIApplication *) application didFinishLaunchingWithOptions:(NSDictionary *) launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 1 - Get AppsFlyer preferences from .plist file
     NSString *path = [[NSBundle mainBundle] pathForResource:@"afdevkey_donotpush" ofType:@".plist"];
     NSDictionary* properties = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -98,33 +98,33 @@ In AppDelegate.h, do the following:
     return YES;
 }
 
-- (void) applicationDidBecomeActive:(UIApplication *) application {
+- (void)applicationDidBecomeActive:(UIApplication *)application {
     [[AppsFlyerLib shared] start];
 }
 
 // Deep linking
 // Open URI-scheme for iOS 9 and above
-- (BOOL) application:(UIApplication *) application openURL:(NSURL *) url options:(NSDictionary *) options {
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary *) options {
     [[AppsFlyerLib shared] handleOpenUrl:url options:options];
     return YES;
 }
 // Open URI-scheme for iOS 8 and below
-- (BOOL) application:(UIApplication *) application openURL:(NSURL *) url sourceApplication:(NSString*) sourceApplication annotation:(id) annotation {
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation {
     [[AppsFlyerLib shared] handleOpenURL:url sourceApplication:sourceApplication withAnnotation:annotation];
     return YES;
 }
 // Open Universal Links
-- (BOOL) application:(UIApplication *) application continueUserActivity:(NSUserActivity *) userActivity restorationHandler:(void (^) (NSArray * _Nullable)) restorationHandler {
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
     [[AppsFlyerLib shared] continueUserActivity:userActivity restorationHandler:restorationHandler];
     return YES;
 }
 // Report Push Notification attribution data for re-engagements
-- (void) application:(UIApplication *) application didReceiveRemoteNotification:(NSDictionary *) userInfo fetchCompletionHandler:(void (^) (UIBackgroundFetchResult)) completionHandler {
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     [[AppsFlyerLib shared] handlePushNotification:userInfo];
 }
 // AppsFlyerLib implementation
 //Handle Conversion Data (Deferred Deep Link)
--(void) onConversionDataSuccess:(NSDictionary*) installData {
+-(void)onConversionDataSuccess:(NSDictionary*) installData {
     id status = [installData objectForKey:@"af_status"];
     if([status isEqualToString:@"Non-organic"]) {
         id sourceID = [installData objectForKey:@"media_source"];
@@ -134,24 +134,24 @@ In AppDelegate.h, do the following:
         NSLog(@"This is an organic install.");
     }
 }
--(void) onConversionDataFail:(NSError *) error {
+-(void)onConversionDataFail:(NSError *) error {
     NSLog(@"%@",error);
 }
 //Handle Direct Deep Link
 - (void) onAppOpenAttribution:(NSDictionary*) attributionData {
     NSLog(@"%@",attributionData);
 }
-- (void) onAppOpenAttributionFailure:(NSError *) error {
+- (void) onAppOpenAttributionFailure:(NSError *)error {
     NSLog(@"%@",error);
 }
 // support for scene delegate
 #pragma mark - UISceneSession lifecycle
-- (UISceneConfiguration *) application:(UIApplication *) application configurationForConnectingSceneSession:(UISceneSession *) connectingSceneSession options:(UISceneConnectionOptions *) options API_AVAILABLE(ios(13)){
+- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options API_AVAILABLE(ios(13)){
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
-- (void) application:(UIApplication *) application didDiscardSceneSessions:(NSSet *) sceneSessions  API_AVAILABLE(ios(13.0)){
+- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet *)sceneSessions  API_AVAILABLE(ios(13.0)){
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.

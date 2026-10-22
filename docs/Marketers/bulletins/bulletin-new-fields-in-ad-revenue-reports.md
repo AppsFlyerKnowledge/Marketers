@@ -21,12 +21,73 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/26907692192273-Bulletin-New-fields-in-ad-revenue-reports
 ---
-| **What's new?** | Ad revenue reports have new fields. |
-| --- | --- |
-| **Effective date** | September 19, 2024 |
-| **What you should know** | The following table shows which fields are being added to which reports. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type</td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type</td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type \* ad\_revenue\_custom\_parameters \* app\_version \* sdk\_version</td></tr></tbody></table> |
-| Report | API field names |
-| <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor> | <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li></ul> |
-| <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor> | <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li></ul> |
-| <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor> | <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li><li>ad\_revenue\_custom\_parameters</li><li>app\_version</li><li>sdk\_version</li></ul> |
-| **What you need to do** | <ul><li>In <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">AppsFlyer Data Locker settings</Anchor>, select the new fields to be added to your reports.<br />**Tip**! If you already receive a field like customer\_user\_id via the default Data Locker settings, in order to populate the fields in ad revenue reports you need to add another new field and save the settings. You can revert the changes after.</li><li>Configure your BI systems to ingest and use the new fields.</li></ul> |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **What's new?**
+      </th>
+      <th>
+        Ad revenue reports have new fields.
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        **Effective date**
+      </td>
+      <td>
+        September 19, 2024
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **What you should know**
+      </td>
+      <td>
+        The following table shows which fields are being added to which reports. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type</td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type</td></tr><tr><td><Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor></td><td>\* engagement\_type \* custom\_data \* customer\_user\_id \* ad\_revenue\_ad\_type \* ad\_revenue\_custom\_parameters \* app\_version \* sdk\_version</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Report
+      </td>
+      <td>
+        API field names
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Legacy ad revenue [single version]</Anchor>
+      </td>
+      <td>
+        <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-single-version-report-device-level">Ad revenue [versioned]</Anchor>
+      </td>
+      <td>
+        <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#impression-level-report">Ad revenue [SDK impression level]</Anchor>
+      </td>
+      <td>
+        <ul><li>engagement\_type</li><li>custom\_data</li><li>customer\_user\_id</li><li>ad\_revenue\_ad\_type</li><li>ad\_revenue\_custom\_parameters</li><li>app\_version</li><li>sdk\_version</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **What you need to do**
+      </td>
+      <td>
+        <ul><li>In <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">AppsFlyer Data Locker settings</Anchor>, select the new fields to be added to your reports.<br />**Tip**! If you already receive a field like customer\_user\_id via the default Data Locker settings, in order to populate the fields in ad revenue reports you need to add another new field and save the settings. You can revert the changes after.</li><li>Configure your BI systems to ingest and use the new fields.</li></ul>
+      </td>
+    </tr>
+  </tbody>
+</Table>

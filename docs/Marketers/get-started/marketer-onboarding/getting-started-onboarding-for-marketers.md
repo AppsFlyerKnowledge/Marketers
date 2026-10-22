@@ -141,8 +141,7 @@ Recommended for all AppsFlyer users:
 
 > 📘 **Note**
 >
-> New to AppsFlyer but not a marketer? No worries!
-> Choose the guide for you below and get started:
+> New to AppsFlyer but not a marketer? No worries! Choose the guide for you below and get started:
 >
 > * <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding">Getting started for agencies</Anchor>
 > * <Anchor target="_blank" href="/partners/docs/getting-started-onboarding-guide-for-ad-networks">Getting started for ad networks</Anchor>

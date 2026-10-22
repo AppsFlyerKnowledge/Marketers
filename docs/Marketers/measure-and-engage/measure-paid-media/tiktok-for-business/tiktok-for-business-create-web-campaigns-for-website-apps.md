@@ -85,75 +85,35 @@ You can define which web conversion events AppsFlyer sends to TikTok Ads by mapp
 To set in-app event postbacks:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the in-app event postback window. Read more
-   about in-app event postback window configuration in
-   <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">In-app event postback configuration</Anchor>.
+2. If required, set the in-app event postback window. Read more about in-app event postback window configuration in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">In-app event postback configuration</Anchor>.
 3. Click **Add event** to add an event to the list.
-4. In the **AppsFlyer event** column, select the
-   event
-   name from the drop-down list. AppsFlyer receives the event
-   name
-   either from the Web SDK integrated on your website or from
-   server-to-server
-   (S2S) events you send to AppsFlyer.
-5. In the **mapped to partner event** column, select
-   the most suitable pre-defined partner event.
-6. In the **For Users From** column, select the
-   appropriate
-   option:
-   * **This partner only**, to send events
-     attributed
-     to TikTok Web Ads only.
-   * **All media sources, including organic**,
-     to send all events regardless of attribution source.
-7. In the **including** column, select whether
-   events
-   will be sent with their revenue values. See
-   <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
+4. In the **AppsFlyer event** column, select the event name from the drop-down list. AppsFlyer receives the event name either from the Web SDK integrated on your website or from server-to-server (S2S) events you send to AppsFlyer.
+5. In the **mapped to partner event** column, select the most suitable pre-defined partner event.
+6. In the **For Users From** column, select the appropriate option:
+   * **This partner only**, to send events attributed to TikTok Web Ads only.
+   * **All media sources, including organic**, to send all events regardless of attribution source.
+7. In the **including** column, select whether events will be sent with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
 
    > 📘 **Note**
    >
-   > * If you are setting a purchase event, set the
-   >   **including** column to
-   >   **Values and revenue**. Selecting any other
-   >   option will cause the postback to fail.
-   > * Currently, only the purchase event can be set to include
-   >   revenue.
+   > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
+   > * Currently, only the purchase event can be set to include revenue.
 
-8. [Optional] Click the **Add condition** icon
-   to
-   <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor>
-   for an event.
+8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
 
 > 📘 **Note**
 >
-> If you also run the TikTok Pixel on your website, send
-> the same event ID
-> to both AppsFlyer and TikTok so AppsFlyer can deduplicate
-> the events:
+> If you also run the TikTok Pixel on your website, send the same event ID to both AppsFlyer and TikTok so AppsFlyer can deduplicate the events:
 >
-> * Include `af_customer_event_id` in the
->   event payload you
->   send to AppsFlyer, inside `eventValue`
->   for the Web SDK
->   or `event_value` for the S2S (server-to-server)
->   API.
+> * Include `af_customer_event_id` in the event payload you send to AppsFlyer, inside `eventValue` for the Web SDK or `event_value` for the S2S (server-to-server) API.
 > * Send the same value in the corresponding Pixel event.
 >
-> AppsFlyer forwards this value to TikTok as the event
-> ID. TikTok then uses
-> it to deduplicate the server-side event it receives from
-> AppsFlyer against
-> the Pixel event, so AppsFlyer counts the conversion once.
+> AppsFlyer forwards this value to TikTok as the event ID. TikTok then uses it to deduplicate the server-side event it receives from AppsFlyer against the Pixel event, so AppsFlyer counts the conversion once.
 >
-> If you don't send `af_customer_event_id`,
-> AppsFlyer generates
-> an event ID automatically. This ID won't match your Pixel
-> events.
+> If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
 >
-> For more information, see
-> <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
+> For more information, see <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
 
 </Accordion>
 

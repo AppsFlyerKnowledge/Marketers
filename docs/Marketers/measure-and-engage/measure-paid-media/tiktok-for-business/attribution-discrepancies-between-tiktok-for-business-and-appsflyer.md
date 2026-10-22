@@ -52,8 +52,7 @@ On the other hand, installs that occur **within the set re-attribution window** 
 
 > 📄 **Example**
 >
-> Jeff, the UA manager of GreatApp, creates a campaign called SPNA, which targets only Spanish speakers in North America. To verify this, Jeff defines a validation rule, that accepts users from Canada and the US only.
-> When a TikTok for Business user from Spain clicks and installs the app, TikTok for Business self-reports the install, while AppsFlyer rejects the install that doesn't pass the validation rule.
+> Jeff, the UA manager of GreatApp, creates a campaign called SPNA, which targets only Spanish speakers in North America. To verify this, Jeff defines a validation rule, that accepts users from Canada and the US only. When a TikTok for Business user from Spain clicks and installs the app, TikTok for Business self-reports the install, while AppsFlyer rejects the install that doesn't pass the validation rule.
 
 ## Reducing discrepancies
 

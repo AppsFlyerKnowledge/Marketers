@@ -207,10 +207,10 @@ JavaScript doesn’t provide an API to allow developers to access headers. There
 When the page loads, a JavaScript snippet should be set in place to fetch the AppsFlyer ID cookie.
 
 ```javascript
-// get the conversion data cookie 
+// get the conversion data cookie
 // function taken from https://plainjs.com/javascript/utilities/set-cookie-get-cookie-and-delete-cookie-5/
 function getCookie(name) {
-    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*) (;|$)');
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
     return v ? v[2] : null;
 }
 
@@ -290,10 +290,10 @@ JavaScript doesn’t provide an API to allow developers to access headers. There
 When the page loads, a JavaScript snippet should be set in place to fetch the conversion data cookie and customize the content accordingly. For example, if a user installs the app from a campaign for deals on flights, you can populate the web activity with content relevant for the deals that the campaign promotes.
 
 ```javascript
-// get the conversion data cookie 
+// get the conversion data cookie
 // function taken from https://plainjs.com/javascript/utilities/set-cookie-get-cookie-and-delete-cookie-5/
 function getCookie(name) {
-    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*) (;|$)');
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
     return v ? v[2] : null;
 }
 
@@ -302,9 +302,9 @@ var conversionData = JSON.parse(getCookie('conversion_data'));
 console.log(conversionData);
 /*
 conversion data example:
-{ 
+{
         campaign: "CAMPAIGN_NAME", // "None" if not specified on the link
-        media_source: "MEDIA_SOURCE", //"None" if not specified on the link     
+        media_source: "MEDIA_SOURCE", //"None" if not specified on the link
         cost_cents_USD : "0",
         is_first_launch: true,
         install_time: "2018-12-30 23:59:39.330",

@@ -299,7 +299,7 @@ This code checks if this is the first time the app is launched. If so, it calls 
 In AppDelegate.m, add the following method at the end of the file:
 
 ```objectivec
-- (void) sendInstallToFirebase:(NSDictionary *) installData{
+- (void)sendInstallToFirebase:(NSDictionary *)installData{
       NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
       [dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm:ss"];
       NSDate *date = [NSDate date];

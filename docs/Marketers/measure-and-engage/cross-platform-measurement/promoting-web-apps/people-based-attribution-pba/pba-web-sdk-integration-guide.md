@@ -48,7 +48,7 @@ Choose the snippet that matches your integration type and security requirements.
 
 ### Standard Web SDK
 
-Use this snippet to deploy the standard Web SDK integration. Paste it near the top of the `` tag on all pages where you want to load the SDK.
+Use this snippet to deploy the standard Web SDK integration. Paste it near the top of the `<head>` tag on all pages where you want to load the SDK.
 
 <div id="standard-without-smart-banners" />
 
@@ -339,7 +339,7 @@ Integrate the web SDK using one of the following methods.
 3. In the **Web Install Instructions** dialog box:
    * Copy the script code snippet.
    * Close the dialog box.
-4. Paste the code snippet into the  tag of the website.
+4. Paste the code snippet into the &lt;head> tag of the website.
 
 </Accordion>
 
@@ -700,7 +700,8 @@ The code provided is for illustrative purposes only. Don't use this code as-is.
     <head>
         <!-- Assume that the server returns a response with details about the newly subscribed user -->
         <!-- Alternatively, you can extract data from localStorage or cookies,
-            in case data was set in either of them during the subscription process -->
+            in case data was set in either of them during the subscription process
+        -->
         <script>window.onload = function(){
             AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category': 'holiday_promotion', eventValue: {'label' : 'newspaper'}, eventName: 'subscription',}); } </script> </head> <body> <h1>Thank You for Subscribing to Our Newsletter</h1> </body> </html>
 ```
@@ -777,7 +778,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-           }) (window,document,'script','dataLayer','GTM-XXXX');
+           })(window,document,'script','dataLayer','GTM-XXXX');
        </script>
         <script>
            // Assume that the server returns a response with details about the newly subscribed user
@@ -831,7 +832,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-           }) (window,document,'script','dataLayer','GTM-XXXX');
+           })(window,document,'script','dataLayer','GTM-XXXX');
        </script>
    </head>
    <body>
@@ -995,7 +996,7 @@ The code makes use of the fetch API. It sends the server the email address enter
                }); var f = d.getElementsByTagName(s)[0],
                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-           }) (window, document, 'script', 'dataLayer', 'GTM-5VJ6C7R');
+           })(window, document, 'script', 'dataLayer', 'GTM-5VJ6C7R');
 
        // This function stores the user email to be sent to the server after the user reaches the thank you page
        // the response from the server is a unique CUID that should be used in the web SDK setCustomerUserId method

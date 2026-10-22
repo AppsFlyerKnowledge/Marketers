@@ -19,10 +19,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/50185623016721-Item-level-order-data-for-ad-networks-af-order-info
 ---
-> **At a glance:** Send item-level order data to AppsFlyer
-> with the `af_order_info` parameter. It supports two consistent
-> formats for single or multi-item purchases. AppsFlyer automatically maps
-> it to the structure each ad network requires.
+> **At a glance:** Send item-level order data to AppsFlyer with the `af_order_info` parameter. It supports two consistent formats for single or multi-item purchases. AppsFlyer automatically maps it to the structure each ad network requires.
 
 ## Why item-level data matters
 

@@ -74,29 +74,20 @@ To enable Single Source of Truth or SSOT reports, complete one of the following 
 
 <Accordion title="Report folder hierarchy">
 
-* The primary folders are organized by the report type. Possible
-  values:
+* The primary folders are organized by the report type. Possible values:
   * ssot\_unified
   * ssot\_retargeting
   * ssot\_user\_acquisition
-* Within these folders, sub-folders are organized by the install
-  date.
+* Within these folders, sub-folders are organized by the install date.
 
 **Versioning**
 
-* Each install date folder contains multiple versions, created
-  daily.
-* Each version reflects the updated cumulative data for that
-  install date.
-* Reports will include all available data for the install date.
-  For example, on April 18, the latest version for each install
-  date contains all data up to that point for April 18.
-* Tip: Always process the latest available report version to
-  ensure accuracy.
+* Each install date folder contains multiple versions, created daily.
+* Each version reflects the updated cumulative data for that install date.
+* Reports will include all available data for the install date. For example, on April 18, the latest version for each install date contains all data up to that point for April 18.
+* Tip: Always process the latest available report version to ensure accuracy.
 
-Each install date is limited to up to 31 versions. After 31 days,
-all metrics are fully fixed and completed.
-[Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#partial-data).
+Each install date is limited to up to 31 versions. After 31 days, all metrics are fully fixed and completed. [Learn more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#partial-data).
 
 </Accordion>
 
@@ -106,9 +97,7 @@ all metrics are fully fixed and completed.
 
 The path to the report consists of the following format:
 
-`<bucket-name>`/t=&lt;ssot\_unified OR ssot\_retargeting OR
-ssot\_user\_acquisition>/install\_date=`<yyyy-mm-dd>`/version=&lt;unix
-timestamp>/`<parquet file number>`
+`<bucket-name>`/t=&lt;ssot\_unified OR ssot\_retargeting OR ssot\_user\_acquisition>/install\_date=`<yyyy-mm-dd>`/version=&lt;unix timestamp>/`<parquet file number>`
 
 Example folder hierarchy in advertiser bucket:
 
@@ -143,10 +132,7 @@ bucket
 Legend:
 
 * t: Report topic (type).
-* install\_date: The installation date of the app. It means
-  that post-install activity will appear based on the install
-  date when the user downloaded the app, not the day the user
-  action occurred.
+* install\_date: The installation date of the app. It means that post-install activity will appear based on the install date when the user downloaded the app, not the day the user action occurred.
 * version: Unix timestamp indicating when the version was created.
 
 </Accordion>

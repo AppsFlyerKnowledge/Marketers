@@ -407,8 +407,7 @@ Multiple items are sent onward as an array in <Anchor target="_blank" href="/mar
 > 📘 **Notes**
 >
 > * In AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide#limitations">Audiences</Anchor>, arrays are not supported within event attributes, only numbers or strings.
-> * Multiple items can be used with the following in-app events:
->   `af_add_to_cart`, `af_add_to_wishlist`, `af_tutorial_completion`, `af_initiated_checkout`, `af_purchase`, `af_rate`, `af_spent_credits`, `af_content_view`, `af_travel_booking`, `af_update`
+> * Multiple items can be used with the following in-app events: `af_add_to_cart`, `af_add_to_wishlist`, `af_tutorial_completion`, `af_initiated_checkout`, `af_purchase`, `af_rate`, `af_spent_credits`, `af_content_view`, `af_travel_booking`, `af_update`
 
 </Accordion>
 

@@ -210,7 +210,7 @@ To resolve click domains:
    Add this code in AppDelgate.m
 
    ```objectivec
-   - (NSDictionary *) allHTTPHeaderFieldsForResolveDeepLinkURL:(NSURL *) URL {
+   - (NSDictionary *)allHTTPHeaderFieldsForResolveDeepLinkURL:(NSURL *)URL {
        if ([URL.host  isEqual: @"click.example.com"]) {
            return [NSDictionary dictionary];
        }

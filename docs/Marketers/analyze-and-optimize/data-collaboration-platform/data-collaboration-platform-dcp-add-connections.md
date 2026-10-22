@@ -140,13 +140,13 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 
 | Path segment | What it means |
 | --- | --- |
-|  | Your connected S3 or GCS bucket. |
+| &lt;bucket> | Your connected S3 or GCS bucket. |
 | dcp-output/audiences/ | Fixed folder that DCP creates automatically for all audience exports. |
-|  | The unique ID of the collaboration this audience belongs to. You can find it in the collaboration's URL in DCP. |
-| t=\_ | The audience name (spaces and special characters replaced with underscores), plus a unique ID. This ensures a deleted-and-recreated audience with the same name never overwrites or collides with older files. |
-| dt= | The delivery date. |
-| v= | A version number for this audience's exports. It increases with each new delivery. |
-| part-NNNNN--c000.csv | One of the output files for this delivery — see File format and splitting below. |
+| &lt;collaboration-id> | The unique ID of the collaboration this audience belongs to. You can find it in the collaboration's URL in DCP. |
+| t=&lt;audience\_name>\_&lt;id> | The audience name (spaces and special characters replaced with underscores), plus a unique ID. This ensures a deleted-and-recreated audience with the same name never overwrites or collides with older files. |
+| dt=&lt;YYYY-MM-DD> | The delivery date. |
+| v=&lt;version> | A version number for this audience's exports. It increases with each new delivery. |
+| part-NNNNN-&lt;job-id>-c000.csv | One of the output files for this delivery — see File format and splitting below. |
 | \_SUCCESS | An empty marker file written once the export finishes writing all part files. |
 
 > 📘 **Note**

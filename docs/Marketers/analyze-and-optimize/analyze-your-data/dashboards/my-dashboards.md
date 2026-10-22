@@ -694,35 +694,30 @@ Note: Retention rate is available only for cohort-based metrics.
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
-| - | Daily, Weekly, Monthly | Classic | All dimensions supported |
-
-0
+| LTV | Daily | Classic | Product line, Platform, Platform group, Conversion type |
+| D0–180 | Daily | Classic | Source, Product line, Platform, Platform group, Install app store, Store product page |
+| W0–156 | Weekly | Classic | Source, Product line, Platform, Platform group, Install app store, Store product page |
+| M0–36 | Monthly | Classic | Source, Product line, Platform, Platform group, Install app store, Store product page |
 
 #### Assisted installs
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
-| - | Daily, Weekly, Monthly | Classic | All dimensions supported |
-
-1
+| - | Daily | Classic | App, Media source, Campaign |
 
 #### SKAN duplicates
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
-| - | Daily, Weekly, Monthly | Classic | All dimensions supported |
-
-2
+| - | Daily | SSOT | Product line, Platform, Platform group, Conversion type, App version, OS version |
 
 #### First Visits, Re-visits
 
 First Visits and Re-visits aren't supported for any period, time breakdown, or attribution method when grouping or filtering by the following dimensions.
 
-| **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
+| **Period** | **Time breakdown** | **Attribution method** | **Unsupported dimensions** |
 | --- | --- | --- | --- |
-| - | Daily, Weekly, Monthly | Classic | All dimensions supported |
-
-3
+| All | All | All | Store product page, Platform group, Product line, Conversion type |
 
 #### Multiple metrics in a table
 

@@ -58,50 +58,28 @@ The following sections explain the calculations behind the numbers reported on t
 
 <Accordion title="Lift">
 
-AppsFlyer Incrementality employs 2 alternative methods for calculating
-lift:
+AppsFlyer Incrementality employs 2 alternative methods for calculating lift:
 
 * Intent-to-treat
 * Reach-based
 
-While **reach-based methodology is preferable** for
-purposes of evaluating campaign performance, its calculation requires
-the measurement of data points not provided by all ad networks. For
-these networks, intent-to-treat methodology is used instead.
+While **reach-based methodology is preferable** for purposes of evaluating campaign performance, its calculation requires the measurement of data points not provided by all ad networks. For these networks, intent-to-treat methodology is used instead.
 
 > 📘 **Note**
 >
-> Prior to December 16, 2021, lift was calculated using solely
-> the intent-to-treat method. However, data for earlier dates has
-> been updated to utilize reach-based lift where applicable. Therefore,
-> you can review historical experiments to analyze their results
-> in light of the new methodology.
+> Prior to December 16, 2021, lift was calculated using solely the intent-to-treat method. However, data for earlier dates has been updated to utilize reach-based lift where applicable. Therefore, you can review historical experiments to analyze their results in light of the new methodology.
 
 #### ITT-based lift
 
-Intent-to-treat (ITT) experimental methodology has its foundations
-in medical science. Using ITT, researchers randomly split a given
-population between a control group who are not treated and a test
-group whom researchers intend to treat. Researchers measure the efficacy
-of a given treatment by comparing the results of the groups. Whether
-or not a test group member *actually* received treatment is
-not taken into account.
+Intent-to-treat (ITT) experimental methodology has its foundations in medical science. Using ITT, researchers randomly split a given population between a control group who are not treated and a test group whom researchers intend to treat. Researchers measure the efficacy of a given treatment by comparing the results of the groups. Whether or not a test group member *actually* received treatment is not taken into account.
 
-Similarly, in remarketing, the lift metric measures campaign efficacy.
-It doesn't matter if a user in the test group *actually* engaged
-with a campaign (received treatment) because it is the intent that
-is relevant in calculating incrementality. In other words, results
-are calculated as if every member of the test group actually engaged
-with the campaign.
+Similarly, in remarketing, the lift metric measures campaign efficacy. It doesn't matter if a user in the test group *actually* engaged with a campaign (received treatment) because it is the intent that is relevant in calculating incrementality. In other words, results are calculated as if every member of the test group actually engaged with the campaign.
 
 **When is it used?**
 
 AppsFlyer Incrementality uses ITT-based lift calculation for SRNs.
 
-Although it is not the preferred method for measuring lift in our
-context, ITT remains a scientifically sound experimental method,
-and it provides valid results when reach-based calculation is not
-possible.
+Although it is not the preferred method for measuring lift in our context, ITT remains a scientifically sound experimental method, and it provides valid results when reach-based calculation is not possible.
 
 **Interpreting results**
 
@@ -109,22 +87,13 @@ The underlying assumption that all members of the test group were actually reach
 
 #### Reach-based lift
 
-As its name implies, reach-based lift calculation takes into account
-whether or not a member of the test group was *actually reached*
-(served a campaign ad) prior to converting. In addition to requiring
-additional data, reach-based lift calculation is also more complex
-in that it requires certain mathematical adjustments to the control
-group in order to be statistically valid. These adjustments are cumulatively
-known as the creation of a "counterfactual" control group.
+As its name implies, reach-based lift calculation takes into account whether or not a member of the test group was *actually reached* (served a campaign ad) prior to converting. In addition to requiring additional data, reach-based lift calculation is also more complex in that it requires certain mathematical adjustments to the control group in order to be statistically valid. These adjustments are cumulatively known as the creation of a "counterfactual" control group.
 
 **When is it used?**
 
-AppsFlyer Incrementality uses reach-based lift calculation for non-SRNs
-(attribution-link networks).
+AppsFlyer Incrementality uses reach-based lift calculation for non-SRNs (attribution-link networks).
 
-While it is the preferred method for calculating lift, reach-based
-calculation requires that ad networks report the following data to
-AppsFlyer:
+While it is the preferred method for calculating lift, reach-based calculation requires that ad networks report the following data to AppsFlyer:
 
 * Impression data
 * Campaign ID (from the attribution link)
@@ -150,22 +119,13 @@ Because the 2 different lift calculation methodologies can yield significantly d
 
 <Accordion title="Statistical significance">
 
-When evaluating the validity of Incrementality experiments, sound
-scientific methodology requires that we consider
-**statistical significance** (the level of confidence
-that the lift result isn't due to random events or chance).
+When evaluating the validity of Incrementality experiments, sound scientific methodology requires that we consider **statistical significance** (the level of confidence that the lift result isn't due to random events or chance).
 
-On the Incrementality dashboard, significance is reported as a percentage
-for each media source:
+On the Incrementality dashboard, significance is reported as a percentage for each media source:
 
-* The percentage indicates the likelihood that the results for
-  that media source would repeat themselves if the experiment were
-  performed again under similar circumstances.
-* If statistical significance is determined to be below 60%, the
-  dashboard will display **Unreliable results** instead
-  of a percentage.
-* Significance is affected by audience size, experiment duration,
-  and media source performance.
+* The percentage indicates the likelihood that the results for that media source would repeat themselves if the experiment were performed again under similar circumstances.
+* If statistical significance is determined to be below 60%, the dashboard will display **Unreliable results** instead of a percentage.
+* Significance is affected by audience size, experiment duration, and media source performance.
 
 </Accordion>
 
@@ -173,13 +133,7 @@ for each media source:
 
 <Accordion title="Scaled control group">
 
-For
-[test-group-level metrics](/docs/incrementality-for-remarketing-overview#::2c5f08ec)
-(as opposed to
-[per-user metrics](/docs/incrementality-for-remarketing-overview#::6143ff4f)),
-lift is calculated based on a **scaled control group**.
-In other words, the size of the control group is adjusted to match
-the control group size for each media source.
+For [test-group-level metrics](/docs/incrementality-for-remarketing-overview#::2c5f08ec) (as opposed to [per-user metrics](/docs/incrementality-for-remarketing-overview#::6143ff4f)), lift is calculated based on a **scaled control group**. In other words, the size of the control group is adjusted to match the control group size for each media source.
 
 > 📄 **Example**
 >
@@ -190,19 +144,15 @@ the control group size for each media source.
 > * Experiment results:
 >   * Network A had 40 conversions
 >   * The control group had 20 conversions
-> * Total conversions will be adjusted based on an assumed (scaled)
->   control group size of 100 members:
->   * Assumed members - Actual members
->     = 100 - 90
->     = 11%
+> * Total conversions will be adjusted based on an assumed (scaled) control group size of 100 members:
+>   * Assumed members - Actual members = 100 - 90 = 11%
 >
 >         Actual members
 >
 >               90
 >   * Actual incremental conversions + 11% = 20 x 1.11 = 22
 >
-> Lift will be calculated based on a scaled control group size
-> of 100 members and 22 incremental conversions.
+> Lift will be calculated based on a scaled control group size of 100 members and 22 incremental conversions.
 
 </Accordion>
 
@@ -214,17 +164,13 @@ the control group size for each media source.
 
 <Accordion title="Accessing the dashboard">
 
-Incrementality is a premium feature. To get started, reach out to
-your customer success manager or write to
-[hello@appsflyer.com](mailto:hello@appsflyer.com). After
-subscribing, you'll be able to access the Incrementality dashboard.
+Incrementality is a premium feature. To get started, reach out to your customer success manager or write to [hello@appsflyer.com](mailto:hello@appsflyer.com). After subscribing, you'll be able to access the Incrementality dashboard.
 
 **To access the Incrementality dashboard:**
 
 1. In AppsFlyer, from the side menu, select **Optimize**
    > **Incrementality**.
-2. From the experiments list, click the row of the experiment for
-   which you want to see the dashboard.
+2. From the experiments list, click the row of the experiment for which you want to see the dashboard.
 
 </Accordion>
 

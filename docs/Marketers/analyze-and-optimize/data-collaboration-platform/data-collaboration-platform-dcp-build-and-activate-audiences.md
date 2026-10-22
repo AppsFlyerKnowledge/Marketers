@@ -213,31 +213,16 @@ Name the audience, and click **Next**.
 
 #### Build query
 
-1. Click the editor to open the
-   [SQL builder](#sql-audience-builder).
-2. Write your SQL query to build your audience. You can use
-   joined or one-sided sources.
+1. Click the editor to open the [SQL builder](#sql-audience-builder).
+2. Write your SQL query to build your audience. You can use joined or one-sided sources.
 
 > 📘 **Note**
 >
-> If your query includes a transactional data source, it
-> must include aggregation logic, such as COUNT, SUM, AVG,
-> MIN, or MAX, to reduce the data to one row per
-> user before it can be used for audience creation. Queries
-> that use transactional data without aggregation aren't
-> supported. See
-> [supported and unsupported query patterns](#transactional-data-in-sql-queries)
-> below.
+> If your query includes a transactional data source, it must include aggregation logic, such as COUNT, SUM, AVG, MIN, or MAX, to reduce the data to one row per user before it can be used for audience creation. Queries that use transactional data without aggregation aren't supported. See [supported and unsupported query patterns](#transactional-data-in-sql-queries) below.
 
-3. Click **Test** and review the query results
-   (audience sample) shown beneath the query statement.
-4. Click **Continue** and then **Next**
-   to
-   proceed with the next step of the **Audience builder**
-   walkthrough, or **Save as draft** and resume
-   later.
-5. Continue to
-   [Send the audience](#send-an-audience-for-activation).
+3. Click **Test** and review the query results (audience sample) shown beneath the query statement.
+4. Click **Continue** and then **Next** to proceed with the next step of the **Audience builder** walkthrough, or **Save as draft** and resume later.
+5. Continue to [Send the audience](#send-an-audience-for-activation).
 
 #### The SQL audience builder
 

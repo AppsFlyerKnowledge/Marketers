@@ -21,10 +21,57 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/26957246184209-Bulletin-New-fields-in-ad-revenue-signals-for-UA-ad-networks
 ---
-| **What's new?** | Ad revenue signals have new fields. |
-| --- | --- |
-| **Effective date** | September 19, 2024 |
-| **What you should know** | The following table shows which fields are being added to ad revenue signals for UA ad networks. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor></td><td>\* ad\_unit \* placement \* mediation\_network \* ad\_revenue\_ad\_type \* engagement\_type</td></tr></tbody></table> |
-| Report | API field names |
-| <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor> | <ul><li>ad\_unit</li><li>placement</li><li>mediation\_network</li><li>ad\_revenue\_ad\_type</li><li>engagement\_type</li></ul> |
-| **What you need to do** | Configure your BI systems to ingest and use the new fields. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        **What's new?**
+      </th>
+      <th>
+        Ad revenue signals have new fields.
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        **Effective date**
+      </td>
+      <td>
+        September 19, 2024
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **What you should know**
+      </td>
+      <td>
+        The following table shows which fields are being added to ad revenue signals for UA ad networks. See the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor> for definitions and details of each field.<table><thead><tr><th>Report</th><th>API field names</th></tr></thead><tbody><tr><td><Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor></td><td>\* ad\_unit \* placement \* mediation\_network \* ad\_revenue\_ad\_type \* engagement\_type</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Report
+      </td>
+      <td>
+        API field names
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">Ad revenue signals for UA ad networks</Anchor>
+      </td>
+      <td>
+        <ul><li>ad\_unit</li><li>placement</li><li>mediation\_network</li><li>ad\_revenue\_ad\_type</li><li>engagement\_type</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        **What you need to do**
+      </td>
+      <td>
+        Configure your BI systems to ingest and use the new fields.
+      </td>
+    </tr>
+  </tbody>
+</Table>

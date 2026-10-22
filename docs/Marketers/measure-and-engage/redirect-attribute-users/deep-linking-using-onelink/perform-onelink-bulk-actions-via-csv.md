@@ -211,8 +211,7 @@ To delete a collection, you'll need to have app access permissions to at least o
 > 📘 **Important notes**
 >
 > * Make sure you want to delete the collection. Deleting a collection with active links will break the links, meaning users clicking them won’t be attributed or redirected correctly. **Deleting a collection is irreversible.**
-> * If you want to keep a record of which links you've deleted, you can download the collection before deleting. **To download as a CSV file:**
->   Click **Download the collection** in the confirmation message.
+> * If you want to keep a record of which links you've deleted, you can download the collection before deleting. **To download as a CSV file:** Click **Download the collection** in the confirmation message.
 
 ### Empty collections
 

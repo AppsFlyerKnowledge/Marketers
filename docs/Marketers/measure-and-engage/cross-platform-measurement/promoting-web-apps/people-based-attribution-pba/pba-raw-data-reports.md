@@ -93,10 +93,10 @@ Raw data fields are populated in part from data originating in the mobile app us
 | media\_source | Attribtued to the website visit | String | googleadwords\_int |
 | media\_type | Attribtued to the website visit | String | Paid |
 | oaid | Advertising identifier | String | df07c7dc-cea7-4a89-b328-810ff5acb15d |
-| original\_url | URL address redirecting the user to the website on the attributed website visit | String | https://www.brandpitt.com/signin?utm_source=Googleg&utm_term=shoes&utm_campaign=cool&c=summer⁡_siteid=publisher⁡_sub1=helloworld |
+| original\_url | URL address redirecting the user to the website on the attributed website visit | String | https://www.brandpitt.com/signin?utm_source=Googleg&utm_term=shoes&utm_campaign=cool&c=summer&af_siteid=publisher&af_sub1=helloworld |
 | platform | The platform | String | macOS |
 | postal\_code | Resolved using the IP address | String | 10977 |
-| query\_params | Query params on the redirecting URL (after the ?) Example: https://www.brandpitt.com/signin?utm_source=Google&utm_term=shoes&utm_campaign=cool&c=summer⁡_siteid=publisher⁡_sub1=helloworld⁡_keyword=shoes If URL has no query params, the value will be null | JSON | `{"c":"summer",af_siteid":"publisher",af_sub1":helloworld",af_keywords":"shoes","utm_source":"Google","utm_campaign":"cool","utm_term":"shoes"}` |
+| query\_params | Query params on the redirecting URL (after the ?) Example: https://www.brandpitt.com/signin?utm_source=Google&utm_term=shoes&utm_campaign=cool&c=summer&af_siteid=publisher&af_sub1=helloworld&af_keyword=shoes If URL has no query params, the value will be null | JSON | `{"c":"summer",af_siteid":"publisher",af_sub1":helloworld",af_keywords":"shoes","utm_source":"Google","utm_campaign":"cool","utm_term":"shoes"}` |
 | referrer | HTTP document referrer of the attributed website visit | String | https://www.google.com/ |
 | region | Resolved using the IP address | String | NA |
 | state | Resolved using the IP address | String | NY |

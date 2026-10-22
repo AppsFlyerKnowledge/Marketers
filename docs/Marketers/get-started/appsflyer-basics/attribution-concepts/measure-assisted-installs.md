@@ -75,17 +75,11 @@ See <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#us
 
 > 📘 **Note**
 >
-> **Media sources with user-level data restrictions**
-> If a
-> <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">media source restricts user-level data</Anchor>,
-> it cannot be attributed as a contributor or an assist to a winning attribution.
-> This means that certain sources, do not
-> appear as contributors even if they engaged the user before the install.
+> **Media sources with user-level data restrictions** If a <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">media source restricts user-level data</Anchor>, it cannot be attributed as a contributor or an assist to a winning attribution. This means that certain sources, do not appear as contributors even if they engaged the user before the install.
 
 > 📘 **Note**
 >
-> **Agency considerations**
-> Several major ad networks <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">restrict sharing their data with 3rd party platforms</Anchor>, including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
+> **Agency considerations** Several major ad networks <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">restrict sharing their data with 3rd party platforms</Anchor>, including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
 
 In raw data reports, data on the contributing networks is broken down into separate fields for **Contributors 1–3**.
 

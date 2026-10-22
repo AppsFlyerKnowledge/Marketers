@@ -124,8 +124,7 @@ Pinterest advises using OS-specific attribution links for retargeting campaigns.
 
 > 📘 **Note**
 >
-> Deep linking from within a pin will work correctly only when your app is allowlisted by Pinterest.
-> Contact your Pinterest representative or email [apps@pinterest.com](mailto:apps@pinterest.com) to be allowlisted for deep linking.
+> Deep linking from within a pin will work correctly only when your app is allowlisted by Pinterest. Contact your Pinterest representative or email [apps@pinterest.com](mailto:apps@pinterest.com) to be allowlisted for deep linking.
 
 Use this field if the link is meant to deep link users to any specific activity within your app.
 

@@ -103,12 +103,7 @@ This is referred to as Deferred Deep Linking. Conversion data payload for Deferr
 
 <Accordion title="Deferred deep linking with SRNs">
 
-To implement deferred deep linking with SRNs, additional logic
-must
-be applied for SRN campaigns. Use the data in
-`onConversionSuccess` response, such as campaign,
-adset,
-adgroup, to programmatically redirect your users.
+To implement deferred deep linking with SRNs, additional logic must be applied for SRN campaigns. Use the data in `onConversionSuccess` response, such as campaign, adset, adgroup, to programmatically redirect your users.
 
 #### Conversion data for deferred deep linking with Meta ads
 
@@ -182,24 +177,11 @@ adgroup, to programmatically redirect your users.
 </Tab>
 </Tabs>
 
-You can use the data in getConversionData response, such as campaign,
-adset, etc. to programmatically redirect your users and serve
-them
-with relevant content.
+You can use the data in getConversionData response, such as campaign, adset, etc. to programmatically redirect your users and serve them with relevant content.
 
 > 📘 **Note**
 >
-> The app is an eCommerce app that specializes in sportswear.
-> A
-> user who doesn't have the app installed engages with an ad
-> and
-> installs the app. Once the app launches, the SDK returns
-> the
-> conversion data. The developer makes the app open the
-> **summer running shoe collection** (campaign)
-> activity
-> in the store and serves the **running shoes for women**
-> category (adset).
+> The app is an eCommerce app that specializes in sportswear. A user who doesn't have the app installed engages with an ad and installs the app. Once the app launches, the SDK returns the conversion data. The developer makes the app open the **summer running shoe collection** (campaign) activity in the store and serves the **running shoes for women** category (adset).
 
 </Accordion>
 
@@ -209,9 +191,7 @@ There are three ways to deep link users:
 
 #### URI schemes
 
-When using URI Schemes, for both attribution links and OneLink,
-the
-attribution link and payload are as follows:
+When using URI Schemes, for both attribution links and OneLink, the attribution link and payload are as follows:
 
 **Attribution Link**
 
@@ -262,24 +242,14 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
   }
 ```
 
-* `af_deeplink: true` - when this parameter appears
-  and is set to true, look for the `scheme` and
-  `host` fields
-* `scheme` and `host` - these fields
-  come
-  from the `af_dp` parameter in the attribution
-  link
-  and indicate the scheme and activity to which the user should
-  be deep linked
+* `af_deeplink: true` - when this parameter appears and is set to true, look for the `scheme` and `host` fields
+* `scheme` and `host` - these fields come from the `af_dp` parameter in the attribution link and indicate the scheme and activity to which the user should be deep linked
 
 #### iOS Universal links and Android app links
 
-These are the other two out of the three ways for performing
-deep
-linking.
+These are the other two out of the three ways for performing deep linking.
 
-When using universal links or app links, the OneLink and payload
-are as follows:
+When using universal links or app links, the OneLink and payload are as follows:
 
 **OneLink**
 
@@ -312,29 +282,17 @@ are as follows:
   }
 ```
 
-* `shortlink` field - this is the field that indicates
-  the specific OneLink that the user comes from. It helps the
-  developer
-  know how to proceed in terms of launching an activity and
-  serving
-  content. Other fields like `campaign` can also
-  be
-  used for this purpose.
+* `shortlink` field - this is the field that indicates the specific OneLink that the user comes from. It helps the developer know how to proceed in terms of launching an activity and serving content. Other fields like `campaign` can also be used for this purpose.
 
 > 🚧 **Important**
 >
-> The field `shortlink` does not appear in the payload
-> when using the long OneLink.
+> The field `shortlink` does not appear in the payload when using the long OneLink.
 >
-> In both cases (short or long OneLink) we recommend adding
-> a custom
-> parameter that indicates the activity. For example
-> `&deep_link_activity=shoes_cateogry`
+> In both cases (short or long OneLink) we recommend adding a custom parameter that indicates the activity. For example `&deep_link_activity=shoes_cateogry`
 
 > 📘 **Note**
 >
-> Using universal links and app links is only possible with
-> OneLink.
+> Using universal links and app links is only possible with OneLink.
 
 </Accordion>
 

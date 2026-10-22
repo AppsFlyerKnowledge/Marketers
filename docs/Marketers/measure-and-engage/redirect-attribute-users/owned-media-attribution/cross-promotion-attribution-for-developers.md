@@ -187,7 +187,7 @@ CrossPromotionHelper.logCrossPromoteImpression(
 static NSString *const kCrossPromotedAppId = @"123456789";
 static NSString *const kCrossPromotedCampaign = @"test campaign";
 /*...*/
-- (void) viewDidLoad {
+- (void)viewDidLoad {
   [super viewDidLoad];
     NSDictionary *kCrossPromotedParameters = @{@"af_sub1": @"val", @"custom_param": @"val2" };
     /* generate impression for cross-promotion */

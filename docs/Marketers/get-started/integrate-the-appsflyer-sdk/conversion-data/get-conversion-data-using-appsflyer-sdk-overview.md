@@ -34,9 +34,7 @@ Use conversion data to:
 >
 > When using the AppsFlyer SDK callback `onConversionDataSuccess`, note that the callback can be triggered before the attribution process is complete. As a result, the data returned by the SDK might not match the data in AppsFlyer reports or APIs.
 >
-> **Recommendation:**
-> Do not use the Get Conversion Data (GCD) method to collect or validate attribution data.
-> To obtain accurate and complete attribution results, use AppsFlyer dashboards, reports, or APIs.
+> **Recommendation:** Do not use the Get Conversion Data (GCD) method to collect or validate attribution data. To obtain accurate and complete attribution results, use AppsFlyer dashboards, reports, or APIs.
 
 ## Get conversion data
 

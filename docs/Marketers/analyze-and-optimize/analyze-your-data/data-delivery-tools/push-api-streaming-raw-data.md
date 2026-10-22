@@ -96,8 +96,7 @@ Message characteristics:
 > Don't use Push API for sending AppsFlyer-attributed data to third parties for the following reasons:
 >
 > * You can breach privacy regulations, like CCPA, if the user opted out of sending their data to third parties.
-> * Some media sources restrict how user-level data provided by them is used, shared with third parties, or both. Make sure that you comply with the media source's terms of use.
->   For example, [X Ads,](https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html) [Snapchat,](https://www.snap.com/en-US/privacy/privacy-policy/) [Pinterest.](https://policy.pinterest.com/en/privacy-policy)
+> * Some media sources restrict how user-level data provided by them is used, shared with third parties, or both. Make sure that you comply with the media source's terms of use. For example, [X Ads,](https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html) [Snapchat,](https://www.snap.com/en-US/privacy/privacy-policy/) [Pinterest.](https://policy.pinterest.com/en/privacy-policy)
 >
 > Note:  This caution doesn't apply to SKAN data. Use Push API to send SKAN data to third-party endpoints.
 

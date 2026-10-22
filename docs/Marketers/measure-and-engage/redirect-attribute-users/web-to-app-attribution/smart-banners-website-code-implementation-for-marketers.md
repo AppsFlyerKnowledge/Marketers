@@ -121,7 +121,7 @@ To add the code to your website via other platforms, or to make changes to the c
 3. In the **Web Install Instructions** dialog box:
    * Copy the script code snippet.
    * Close the dialog box.
-4. Paste the code snippet into the  tag of your website.
+4. Paste the code snippet into the &lt;head> tag of your website.
 
 </Accordion>
 
@@ -163,7 +163,7 @@ Now, when your website loads on mobile, the banner's active creative will be dis
    The Edit code page opens for your theme.
 3. In the Layout folder, click the file that starts with **`{/}` theme**.  
    The webpage code displays.
-4. In the code, directly under , paste your Smart Banners code.
+4. In the code, directly under **&lt;head>**, paste your Smart Banners code.
 
 </Accordion>
 
@@ -210,7 +210,7 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 1. In your WordPress dashboard, click **Appearance** > **Theme Editor**.  
    The Edit Themes page opens and the CSS code for your website displays.
 2. Under **Theme Files**, click **Theme Header (header.php)**.
-3. In the code that displays, under , paste the Smart Banners code.
+3. In the code that displays, under **&lt;head>**, paste the Smart Banners code.
 4. Click **Update File**.
 
 </Accordion>

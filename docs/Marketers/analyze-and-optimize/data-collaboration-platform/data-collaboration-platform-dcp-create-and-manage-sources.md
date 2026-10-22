@@ -396,12 +396,9 @@ For purposes of mapping the source fields to DCP fields:
 <Tabs>
 <Tab title="Local file">
 
-1. In the **Map source fields** section, click
-   **Load fields from source**.
-2. In the window that opens, select
-   **Upload a local file.**
-3. Specify the CSV or GZIP file you want to upload, then
-   click OK.
+1. In the **Map source fields** section, click **Load fields from source**.
+2. In the window that opens, select **Upload a local file.**
+3. Specify the CSV or GZIP file you want to upload, then click OK.
 
 </Tab>
 
@@ -409,19 +406,11 @@ For purposes of mapping the source fields to DCP fields:
 
 **To load the file from the connected cloud bucket and allow AppsFlyer to generate the cloud folder for the source file:**
 
-1. In the **Map source fields** section, click
-   **Load fields from source**.
-2. In the window that opens, select
-   **Load from cloud bucket.**
+1. In the **Map source fields** section, click **Load fields from source**.
+2. In the window that opens, select **Load from cloud bucket.**
 3. Click the **Generate folders** link.
-   * AppsFlyer automatically generates the required
-     folder structure and cloud source folder (on
-     the connection you specified, with the source
-     folder name you specified).
-4. After the source folder structure has been created, a
-   confirmation message is displayed, including a link to
-   the source folder. Click the provided link to upload
-   your prototype file to the source folder.
+   * AppsFlyer automatically generates the required folder structure and cloud source folder (on the connection you specified, with the source folder name you specified).
+4. After the source folder structure has been created, a confirmation message is displayed, including a link to the source folder. Click the provided link to upload your prototype file to the source folder.
 5. Once the file has finished uploading, click **OK.**
 
 </Tab>
@@ -430,13 +419,9 @@ For purposes of mapping the source fields to DCP fields:
 
 **To upload the source file from a structure you created manually:**
 
-1. In the **Map source fields** section, click
-   **Load fields from source**.
-2. In the window that opens, select
-   **Load from cloud bucket.**
-3. **DO NOT** click **Generate folders.**
-   Instead, upload the file directly to
-   [the source folder you created for it](#h_01HPKB2ERVZ88MJ35JC66YDPAB).
+1. In the **Map source fields** section, click **Load fields from source**.
+2. In the window that opens, select **Load from cloud bucket.**
+3. **DO NOT** click **Generate folders.** Instead, upload the file directly to [the source folder you created for it](#h_01HPKB2ERVZ88MJ35JC66YDPAB).
 4. Once the file has finished uploading, click **OK.**
 
 </Tab>

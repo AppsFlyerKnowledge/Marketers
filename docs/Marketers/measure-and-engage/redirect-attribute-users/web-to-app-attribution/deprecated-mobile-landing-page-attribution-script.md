@@ -124,9 +124,7 @@ The second part takes care of **notifying Google Ads** about these mobile instal
 
 > 📘 **Note**
 >
-> This GCLID solution is not officially supported or recommended by Google.
-> In case that Google deprecates the GCLID parameter, we will change the script to support the changes.
-> We recommend following this article, by clicking the ***Follow*** button in the article header, to get informed when there is an update to the article or attached script.
+> This GCLID solution is not officially supported or recommended by Google. In case that Google deprecates the GCLID parameter, we will change the script to support the changes. We recommend following this article, by clicking the ***Follow*** button in the article header, to get informed when there is an update to the article or attached script.
 
 #### Instructions:
 
@@ -163,11 +161,9 @@ You can export the CSVs with this information from your AppsFlyer account, or yo
 >
 > You can also see the keywords your users searched for in AppsFlyer's raw data in a similar fashion to getting the GCLID:
 >
-> 1. For keyword recording, you must include the keyword <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2375447">ValueTrack parameter</Anchor> in the final URL from Google Ads to the landing page
->    URL example: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}&keyword={USER_KEYWORD}`
+> 1. For keyword recording, you must include the keyword <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2375447">ValueTrack parameter</Anchor> in the final URL from Google Ads to the landing page URL example: `http://www.yoursite.com/yourlandingpage?gclid={USER_GCLID}&keyword={USER_KEYWORD}`
 > 2. The Javascript function (see below) looks for the ***keyword*** parameter
-> 3. The value is added to the generated OneLink URL under af\_keywords
->    OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
+> 3. The value is added to the generated OneLink URL under af\_keywords OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
 >
 > The JS function below already contains the code to parse the keyword parameter as well.
 
@@ -325,8 +321,7 @@ To learn how to set and build OneLink URLs go <Anchor target="_blank" href="/mar
 
 > 👍 **Tip**
 >
-> Add "&pid=website" to your attribution link to attribute all these visitors to your website.
-> In each page of your website, which has a download/install button with an attribution Link, add "&c=`{PAGE NAME}`". This can help you find the highest and lowest converting pages in your website.
+> Add "&pid=website" to your attribution link to attribute all these visitors to your website. In each page of your website, which has a download/install button with an attribution Link, add "&c=`{PAGE NAME}`". This can help you find the highest and lowest converting pages in your website.
 
 #### What the script does
 
@@ -418,6 +413,7 @@ function isAFLink() {
   return getParameterFromURL('af_redirect');
 }
 
+
 // Note - when device ID sharing becomes optional stop calling this method (or always return false)
 function isFacebook() {
   if (document.referrer && document.referrer != "") {
@@ -431,7 +427,7 @@ function isFacebook() {
 // By default these buttons should direct to the apps' pages on iTunes and Google Play.
 // If these links should be kept with no change, generateUrl returns ' '.
 // Otherwise, generateUrl returns the URL to be used under BOTH buttons (a single app download button could also be used in this case).
-// Parameters: isDebug - if true, alerts are issued for each of the cases, otherwise not.  	 
+// Parameters: isDebug - if true, alerts are issued for each of the cases, otherwise not.
 function generateUrl(isDebug) {
   var oneLinkURL = 'https://yourapp.onelink.me/abcd';   // **** Replace with your own basic OneLink URL ****
   var webFormURL = 'https://yoursite.com/webform.html'; // **** Replace with your own web form URL for getting the user's email or SMS ****
@@ -472,7 +468,7 @@ function generateUrl(isDebug) {
   ];
 
   if (SRNs.includes(pidValue)) {
-  	alert("DO NOT USE NAMES OF SRNS IN af_pid or utm_source - use the names listed in Other SRNs: Add Parameter section in the landing page article\n/docs/onelink-smart-script-overview#other-srns-add-parameter");
+  	alert("DO NOT USE NAMES OF SRNS IN af_pid or utm_source - use the names listed in Other SRNs: Add Parameter section in the landing page article\nhttps://support.appsflyer.com/hc/en-us/articles/360000677217#other-srns-add-parameter");
     return;
   }
 
@@ -494,7 +490,7 @@ function generateUrl(isDebug) {
 
     if (getMobileOperatingSystem() === 'Android') {
       return 'direct link to Google Play';
-    } 
+    }
 
     if (getMobileOperatingSystem() === 'iOS') {
       return 'direct link to iTunes';
@@ -523,7 +519,7 @@ function generateUrl(isDebug) {
       return finalURL;
     }
 
-  // Other SRNs and custom networks  
+  // Other SRNs and custom networks
   } else if (pidValue) {
     campaignParam += campaignValue;
     partnerIDParam += pidValue;
@@ -565,13 +561,14 @@ function generateUrl(isDebug) {
   <h1>Landing Page</h1>
   <!-- By default, the install buttons should have direct links to the stores -->
   <div>
-    <a id="andrd_link" href="https://play.google.com/store/apps/details?id=com.appsflyer.sampleapp"><img src="/images/andrd.png"alt="" /></a>
+    <a id="andrd_link" href="https://play.google.com/store/apps/details?id=com.appsflyer.sampleapp"><img src="/images/andrd.png"alt=""></a>
   </div>
   <div>
-    <a id="ios_link" href="https://itunes.apple.com/us/app/id3********"><img src="/images/ios.png" alt="" /></a>
+    <a id="ios_link" href="https://itunes.apple.com/us/app/id3********"><img src="/images/ios.png" alt=""></a>
   </div>
   <!-- If you want one button to serve both Android and iOS, use the code below instead
-  <a id="store_link" href=""><img src="download.png" alt="" /></a> -->
+  <a id="store_link" href=""><img src="download.png" alt=""></a>
+  -->
   <script type="text/javascript" src="/landing-page-test.js"></script>
   <script type="text/javascript">
     window.onload = function () {

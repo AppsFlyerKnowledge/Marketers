@@ -531,19 +531,106 @@ In the table:
 
 #### Example C: Engagement measurement
 
-| Factor | Remarks |
-| --- | --- |
-| Example | 5 users install the app and open the app the number of times listed in the table.<br /><br />**<span id="app-opens"></span>App opens**<table><thead><tr><th></th><th>Number of times the event is performed</th></tr></thead><tbody><tr><td>User A</td><td>63</td></tr><tr><td>User B</td><td>10</td></tr><tr><td>User C</td><td>5</td></tr><tr><td>User D</td><td>1</td></tr><tr><td>User E</td><td>-</td></tr></tbody></table> |
-|  | Number of times the event is performed |
-| User A | 63 |
-| User B | 10 |
-| User C | 5 |
-| User D | 1 |
-| User E | - |
-| SKAdNetwork Attribution Configuration | <ul><li>Select measurement type: Engagement</li><li>Designated conversion event: af\_app\_opened Note! You can use any event available.</li></ul> |
-| Selected metrics | Sample metrics available<ul><li>Installs: 5</li><li>Conversions: 4</li><li>Sessions: 79</li></ul> |
-| Number of raw data rows per report | <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">Raw data reports are available via Data Locker</Anchor><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 4 rows; a row is equivalent to a single session<br />Note: In this example, there are four different rows as four different unique users made this event.<br />To count and calculate the number of actual event occurrences, the rows will have a minimum and a maximum event count attached to them.</li></ul> |
-| Developer considerations | On each occasion the user performs the selected engagement event: send the in-app event. SKAdNetwork counts the number of times you send the event. |
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Factor
+      </th>
+      <th>
+        Remarks
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Example
+      </td>
+      <td>
+        5 users install the app and open the app the number of times listed in the table.<br /><br />**<span id="app-opens"></span>App opens**<table><thead><tr><th></th><th>Number of times the event is performed</th></tr></thead><tbody><tr><td>User A</td><td>63</td></tr><tr><td>User B</td><td>10</td></tr><tr><td>User C</td><td>5</td></tr><tr><td>User D</td><td>1</td></tr><tr><td>User E</td><td>-</td></tr></tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td />
+      <td>
+        Number of times the event is performed
+      </td>
+    </tr>
+    <tr>
+      <td>
+        User A
+      </td>
+      <td>
+        63
+      </td>
+    </tr>
+    <tr>
+      <td>
+        User B
+      </td>
+      <td>
+        10
+      </td>
+    </tr>
+    <tr>
+      <td>
+        User C
+      </td>
+      <td>
+        5
+      </td>
+    </tr>
+    <tr>
+      <td>
+        User D
+      </td>
+      <td>
+        1
+      </td>
+    </tr>
+    <tr>
+      <td>
+        User E
+      </td>
+      <td>
+        -
+      </td>
+    </tr>
+    <tr>
+      <td>
+        SKAdNetwork Attribution Configuration
+      </td>
+      <td>
+        <ul><li>Select measurement type: Engagement</li><li>Designated conversion event: af\_app\_opened Note! You can use any event available.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Selected metrics
+      </td>
+      <td>
+        Sample metrics available<ul><li>Installs: 5</li><li>Conversions: 4</li><li>Sessions: 79</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Number of raw data rows per report
+      </td>
+      <td>
+        <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">Raw data reports are available via Data Locker</Anchor><ul><li>Device postbacks:5 rows</li><li>Installs: 5 rows</li><li>In-app events: 4 rows; a row is equivalent to a single session<br />Note: In this example, there are four different rows as four different unique users made this event.<br />To count and calculate the number of actual event occurrences, the rows will have a minimum and a maximum event count attached to them.</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Developer considerations
+      </td>
+      <td>
+        On each occasion the user performs the selected engagement event: send the in-app event. SKAdNetwork counts the number of times you send the event.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 <div id="skan-conversion-studio-api" />
 

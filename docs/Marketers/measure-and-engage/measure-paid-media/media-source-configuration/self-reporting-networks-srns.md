@@ -145,8 +145,7 @@ When a user device performs deep linking, direct deep linking with SRNs is done 
 
 > 📄 **Example**
 >
-> Jill, the mobile marketer of "greatapp", decides to run a deep linking campaign on Meta ads, targeted at general audiences. The campaign redirects any clicking users to a "bonus" activity.
-> Jack, the mobile developer, adds this logic after getting the conversion data:
+> Jill, the mobile marketer of "greatapp", decides to run a deep linking campaign on Meta ads, targeted at general audiences. The campaign redirects any clicking users to a "bonus" activity. Jack, the mobile developer, adds this logic after getting the conversion data:
 >
 > 1. Is it Facebook-originated ("is\_fb=true")?
 > 2. If true, get the value of the ad group parameter.

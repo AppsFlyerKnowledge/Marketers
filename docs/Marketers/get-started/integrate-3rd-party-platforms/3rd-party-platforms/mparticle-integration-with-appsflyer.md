@@ -184,7 +184,7 @@ AttributionListener myListener = new AttributionListener() {
 For iOS: Perform this in UserDefaults: <Anchor target="_blank" href="https://developer.apple.com/documentation/foundation/userdefaults">here</Anchor>
 
 ```objectivec
-- (BOOL) application:(UIApplication *) application didFinishLaunchingWithOptions:(NSDictionary *) launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  MParticleOptions *options = [MParticleOptions optionsWithKey:@"<>" secret:@"<>"];
  options.onAttributionComplete = ^void (MPAttributionResult *_Nullable attributionResult, NSError * _Nullable error) {
   if (error) {
@@ -209,7 +209,7 @@ For iOS: Perform this in UserDefaults: <Anchor target="_blank" href="https://dev
 | Universal Links | iOS | continueUserActivity | continueUserActivity |
 | App Open | iOS | onAppOpenAttribution | checkForDeferredDeepLinkWithCompletionHandler |
 | Deferred Deep Linking | Android | onConversionDataSuccess | checkForDeepLink |
-| Android App Links | Android |  | continueUserActivity |
+| Android App Links | Android | &lt;intent-filter android:autoVerify="true"> | continueUserActivity |
 | App Open | Android | onAppOpenAttribution | checkForDeepLink |
 
 ### Handling user flags

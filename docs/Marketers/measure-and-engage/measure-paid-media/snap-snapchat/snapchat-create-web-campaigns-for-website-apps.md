@@ -74,70 +74,35 @@ You can define which web conversion events AppsFlyer sends to Snapchat Ads by ma
 To set in-app event postbacks:
 
 1. Turn on **In-app event postbacks**.
-2. If required, set the in-app event postback window. Read more
-   in
-   <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">In-app event postback configuration</Anchor>.
+2. If required, set the in-app event postback window. Read more in <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">In-app event postback configuration</Anchor>.
 3. Click **Add event** to add an event to the list.
-4. In the **AppsFlyer event** column, select the
-   event
-   name from the list. AppsFlyer receives the event name either
-   from the Web SDK integrated on your website or from server-to-server
-   (S2S) events you send to AppsFlyer.
-5. In the **Mapped to Partner Event** column, select
-   the most suitable predefined partner event from the list.
-6. In the **For Users From** column, select the
-   appropriate
-   option:
-   * **This partner only** sends events attributed
-     to Snapchat Ads.
-   * **All media sources, including organic**
-     sends all events regardless of attribution source.
-7. In the **including** column, select whether
-   to send
-   events with their revenue values. See
-   <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
-8. [Optional] Click the **Add condition** icon
-   to
-   <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor>
-   for an event.
+4. In the **AppsFlyer event** column, select the event name from the list. AppsFlyer receives the event name either from the Web SDK integrated on your website or from server-to-server (S2S) events you send to AppsFlyer.
+5. In the **Mapped to Partner Event** column, select the most suitable predefined partner event from the list.
+6. In the **For Users From** column, select the appropriate option:
+   * **This partner only** sends events attributed to Snapchat Ads.
+   * **All media sources, including organic** sends all events regardless of attribution source.
+7. In the **including** column, select whether to send events with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
+8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 
    > 📘 **Note**
    >
-   > * If you are setting a purchase event, set the
-   >   **including** column to
-   >   **Values and revenue**. Selecting
-   >   any other
-   >   option causes the postback to fail.
-   > * Currently, you can set only the purchase event
-   >   to include
-   >   revenue.
+   > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option causes the postback to fail.
+   > * Currently, you can set only the purchase event to include revenue.
 
 9. Click **Save integration**.
 
 > 📘 **Note**
 >
-> If you also run the Snap Pixel on your website, send
-> the same event ID to both AppsFlyer and Snapchat so AppsFlyer
-> can deduplicate the events:
+> If you also run the Snap Pixel on your website, send the same event ID to both AppsFlyer and Snapchat so AppsFlyer can deduplicate the events:
 >
-> * Include `af_customer_event_id` in the
->   event payload you send to AppsFlyer. For the Web SDK,
->   send it inside `eventValue`. For the S2S
->   (server-to-server) API, send it either as a top-level
->   field or inside `event_value`.
+> * Include `af_customer_event_id` in the event payload you send to AppsFlyer. For the Web SDK, send it inside `eventValue`. For the S2S (server-to-server) API, send it either as a top-level field or inside `event_value`.
 > * Send the same value in the corresponding Pixel event.
 >
-> AppsFlyer forwards this value to Snapchat as the event
-> ID. Snapchat then uses it to deduplicate the server-side
-> event it receives from AppsFlyer against the Pixel event,
-> so AppsFlyer counts the conversion once.
+> AppsFlyer forwards this value to Snapchat as the event ID. Snapchat then uses it to deduplicate the server-side event it receives from AppsFlyer against the Pixel event, so AppsFlyer counts the conversion once.
 >
-> If you don't send `af_customer_event_id`,
-> AppsFlyer generates an event ID automatically. This ID
-> won't match your Pixel events.
+> If you don't send `af_customer_event_id`, AppsFlyer generates an event ID automatically. This ID won't match your Pixel events.
 >
-> For more information, see
-> <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
+> For more information, see <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
 
 > 📘 **Note**
 >

@@ -281,10 +281,7 @@ Segment - sends events
 
 S2S API
 
-Joined by
-`appsflyer_id`
-or
-`customer_user_id`
+Joined by `appsflyer_id` or `customer_user_id`
 
 AppsFlyer - visit + event, joined
 

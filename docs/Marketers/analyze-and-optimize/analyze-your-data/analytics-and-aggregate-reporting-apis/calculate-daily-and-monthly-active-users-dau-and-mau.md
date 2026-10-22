@@ -91,13 +91,7 @@ FROM sessions_retargeting_cleaned;
 
 Select active UA and retargeting users for a specified day.
 
-To get complete active user coverage, you must **union**
-the `sessions` and `sessions_retargeting`
-tables. Make sure the fields are aligned — typically by
-`app_id`, `event_time`,
-`advertising_id` and `appsflyer_id`. If
-needed, normalize the schema so that both tables have consistent
-column names.
+To get complete active user coverage, you must **union** the `sessions` and `sessions_retargeting` tables. Make sure the fields are aligned — typically by `app_id`, `event_time`, `advertising_id` and `appsflyer_id`. If needed, normalize the schema so that both tables have consistent column names.
 
 ```sql
 WITH ua_sessions AS (
@@ -189,13 +183,7 @@ FROM sessions_cleaned;
 
 Select active UA and retargeting users for a specified month.
 
-To get complete active user coverage, you must **union**
-the `sessions` and `sessions_retargeting`
-tables. Make sure the fields are aligned — typically by
-`app_id`, `event_time`,
-`advertising_id` and `appsflyer_id`. If
-needed, normalize the schema so that both tables have consistent
-column names.
+To get complete active user coverage, you must **union** the `sessions` and `sessions_retargeting` tables. Make sure the fields are aligned — typically by `app_id`, `event_time`, `advertising_id` and `appsflyer_id`. If needed, normalize the schema so that both tables have consistent column names.
 
 ```sql
 WITH ua_sessions AS (

@@ -122,8 +122,8 @@ AppsFlyerLib.shared().customData = customData
 #### Method signature
 
 ```objectivec
-- (void) setUserPhone:(NSString *_Nonnull) countryCode
-phoneNumber:(NSString *_Nonnull) phoneNumber;
+- (void)setUserPhone:(NSString *_Nonnull)countryCode
+phoneNumber:(NSString *_Nonnull)phoneNumber;
 ```
 
 #### Usage example
@@ -157,8 +157,8 @@ To set hashed *Email address* as an additional user identifier:
 #### Method signature
 
 ```objectivec
-- (void) setUserEmails:(NSArray<NSString *> *_Nullable) userEmails 
-withCryptType:(EmailCryptType) type;
+- (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails
+withCryptType:(EmailCryptType)type;
 ```
 
 #### Usage example
@@ -188,7 +188,7 @@ AppsFlyerLib.shared().setUserEmails(emails, with: EmailCryptTypeSHA256)
 #### Method signature
 
 ```objectivec
-- (void) setUserEmail:(NSString *_Nonnull) email;
+- (void)setUserEmail:(NSString *_Nonnull)email;
 ```
 
 #### Usage example

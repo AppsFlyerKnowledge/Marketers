@@ -68,8 +68,7 @@ Asset types supported by the Creative Optimization dashboard include:
 > 📘 **Notes**
 >
 > * Assets that can be previewed in the dashboard include images, videos, and text.
-> * The “Creative similarity” feature is not yet available for
->   carousel ads.
+> * The “Creative similarity” feature is not yet available for carousel ads.
 
 </Accordion>
 
@@ -96,16 +95,11 @@ Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) ca
 >
 > Suppose there is an ad creative on Facebook with multiple assets. Facebook attributes it with 100 installs total, broken down to assets as follows: **asset A** has 60 installs and **asset B** has 40 installs, as measured by Facebook. In AppsFlyer, let’s say the ad is attributed with 50 installs (due to inherent attribution differences between AppsFlyer and <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>). To enable asset-level analysis, AppsFlyer distributes the performance data (impressions, clicks, installs, and cost) based on the asset metrics ratio from the total as illustrated below.
 >
-> So, **for asset A there are:**
-> 60 installs divided by 60+40 (total installs attributed by Facebook) = 0.6
-> Then we multiply 0.6 by 50 (number of AppsFlyer attributed installs) = 30 installs
+> So, **for asset A there are:** 60 installs divided by 60+40 (total installs attributed by Facebook) = 0.6 Then we multiply 0.6 by 50 (number of AppsFlyer attributed installs) = 30 installs
 >
-> **For asset B there are:**
-> 40 installs divided by 60+40 (total installs attributed by Facebook) = 0.4
-> Then we multiply 0.4 by 50 (number of AppsFlyer attributed installs) = 20 installs.
+> **For asset B there are:** 40 installs divided by 60+40 (total installs attributed by Facebook) = 0.4 Then we multiply 0.4 by 50 (number of AppsFlyer attributed installs) = 20 installs.
 >
-> So the ad creative is attributed with a total of 50 installs by AppsFlyer but the volume of installs per asset is kept which means that **asset A** generated more installs than **asset B**, in our example.
-> Down funnel metrics, such as Revenue and ROAS, are calculated based on this ratio as well.
+> So the ad creative is attributed with a total of 50 installs by AppsFlyer but the volume of installs per asset is kept which means that **asset A** generated more installs than **asset B**, in our example. Down funnel metrics, such as Revenue and ROAS, are calculated based on this ratio as well.
 >
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
