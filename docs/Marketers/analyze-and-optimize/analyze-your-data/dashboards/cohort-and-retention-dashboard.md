@@ -92,7 +92,7 @@ To use Cohort and retention, select users from one or more apps and segment them
 
 | Feature | Description |
 | --- | --- |
-| My reports | ![MyReports.png](https://files.readme.io/8f49c0e6dee55427bf3a64149ac48f67547967b8cd24aa8de3e34b760708f992-32127933340305.png)<br /><br />Select a report to display the most current data available. |
+| My reports | <Image alt="MyReports.png" src="https://files.readme.io/8f49c0e6dee55427bf3a64149ac48f67547967b8cd24aa8de3e34b760708f992-32127933340305.png" width="339px" /><br /><br />Select a report to display the most current data available. |
 | Save changes | Save the report. Note: The currently selected report is overwritten. |
 | Action options (![Elipse.png](https://files.readme.io/14b74dc6e733867bd16b6a3594f5f0856d7437462b2e0cf7c12adf11cfa295b3-32127949499409.png)) | <ul><li>**Save as new**<ul><li>Save the report using a different report name</li><li>[Option] Make this report default report</li></ul></li><li>**Rename**: Change the report name</li><li>**Set as default**: Make the report the default report. When you open Cohort this is the report that displays initially</li><li>**Delete**: Delete the report</li></ul> |
 

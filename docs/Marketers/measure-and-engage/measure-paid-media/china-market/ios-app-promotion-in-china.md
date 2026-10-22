@@ -112,9 +112,9 @@ In the table that follows is the list of integrated ad networks that operate in 
 | Qianmai ASO | 钱迈ASO | qianmaiaso\_int | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/qianmaiaso.png?v=1" width="33px" /> |
 | Himalaya Ads | 喜马拉雅广告平台 | ximalaya\_int | ![ximalaya.png](https://support.appsflyer.com/hc/article_attachments/360002781137/ximalaya.png) |
 | WiFi Master Key Ads | WiFi万能钥匙广告平台 | wifimasterkey\_int | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/wifimasterkey.png" width="122px" /> |
-| ShiHuo Ads | 识货广告 | shihuo\_int | ![__logo.png](https://files.readme.io/d5ae526235128f06bcb986130b1e6ae2cb1f66e0d053760a0f6ad9565c5bbfc1-360004371338.png) |
-| OneSavour Ads | OneSavour广告 | onesavour\_int | ![onesavour_logo.png](https://files.readme.io/e18db5eb6450c5cc1ddd8b5425808a502ee82790e330ccf5a42454cb6260835b-360004371358.png) |
-| QianKa Ads | 钱咖广告 | qianka\_int | ![WechatIMG47.jpeg](https://files.readme.io/d34e3628ca787fedbb822068a5beb6b280a24fa67acc2d63d5411253fdd868a9-360004852678.jpg) |
+| ShiHuo Ads | 识货广告 | shihuo\_int | <Image alt="__logo.png" src="https://files.readme.io/d5ae526235128f06bcb986130b1e6ae2cb1f66e0d053760a0f6ad9565c5bbfc1-360004371338.png" width="144px" /> |
+| OneSavour Ads | OneSavour广告 | onesavour\_int | <Image alt="onesavour_logo.png" src="https://files.readme.io/e18db5eb6450c5cc1ddd8b5425808a502ee82790e330ccf5a42454cb6260835b-360004371358.png" width="144px" /> |
+| QianKa Ads | 钱咖广告 | qianka\_int | <Image alt="WechatIMG47.jpeg" src="https://files.readme.io/d34e3628ca787fedbb822068a5beb6b280a24fa67acc2d63d5411253fdd868a9-360004852678.jpg" width="144px" /> |
 | SMZDM | 什么值得买 | smzdm\_int | ![logo.png](https://support.appsflyer.com/hc/article_attachments/360005790558/logo.png) |
 | MGTV | 芒果TV | mgtv\_int | ![250.png](https://support.appsflyer.com/hc/article_attachments/360005790578/250.png) |
 | AdView Ads | 快友 | adview\_int | ![adview_logo.png](https://support.appsflyer.com/hc/article_attachments/360006700317/adview_logo.png) |

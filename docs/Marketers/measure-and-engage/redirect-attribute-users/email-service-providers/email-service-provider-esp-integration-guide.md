@@ -54,7 +54,7 @@ ESP email campaigns for mobile app users can cause attribution and deep linking 
 
 | Supported ESP list | Uses AppsFlyer integration method |
 | --- | --- |
-| <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer">![Acoustic logo](https://files.readme.io/b3dac2e0a4f326da76584ed95ee2cd61683edff054c67110c56b95a361444acb-38086051586577.svg)</Anchor> | Yes |
+| <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Acoustic logo" src="https://files.readme.io/b3dac2e0a4f326da76584ed95ee2cd61683edff054c67110c56b95a361444acb-38086051586577.svg" width="86px" /></Anchor> | Yes |
 | <Anchor target="_blank" href="/marketers/docs/adobe-esp-integration-with-appsflyer"><Image alt="Adobe logo" src="https://files.readme.io/62926ce91dac3216426360869fc3d3adfe7a73e009cca47ecabb4a41b973b457-51177578838545.png" height="40px" /></Anchor> | Yes |
 | <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="AWS SES logo" src="https://files.readme.io/371a43248e0c88469a5a4599c501da148745c3b12d080f114dbb385ef9a7f899-46799108961937.png" height="40px" /></Anchor> | Yes |
 | <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Blueshift logo" src="https://files.readme.io/038b29f54fdb4e20775d7c1af0e6543a78351abdfad8b8d7d029a1fdd5b5de7b-32377991388945.png" height="40px" /></Anchor> | Yes |

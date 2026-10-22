@@ -32,7 +32,7 @@ x-zendesk:
 
 #### Interfaces for advertisers
 
-| Arena | API name | ![af_premium.png](https://files.readme.io/ad0c279c48242ea25529f1bc386ee2c747bcd332f5fb1eb2fc26dd378a257f6e-4403570953105.png)<br /><br />Premium feature | Description | Authentication  <br />token/key | Interface type |
+| Arena | API name | <Image alt="af_premium.png" src="https://files.readme.io/ad0c279c48242ea25529f1bc386ee2c747bcd332f5fb1eb2fc26dd378a257f6e-4403570953105.png" width="80px" /><br /><br />Premium feature | Description | Authentication  <br />token/key | Interface type |
 | --- | --- | --- | --- | --- | --- |
 | Mobile attribution | <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">Server-to-server events</Anchor> | No | Record in-app events that occur outside a mobile app | <Anchor target="_blank" href="/marketers/docs/app-settings#sdk-authentication-dev-key">SDK dev key</Anchor> | REST API |
 | People-based Attribution (PBA) | <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s">Server-to-server web</Anchor> | No | Report PBA events that occur in the Backend | <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#managing-brand-bundles">PBA key</Anchor> | REST API |
