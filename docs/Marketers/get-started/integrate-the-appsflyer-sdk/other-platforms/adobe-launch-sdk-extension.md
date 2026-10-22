@@ -217,7 +217,7 @@ Adding permissions helps increase the rate of <Anchor target="_blank" href="/mar
 
 1. Add the following permissions to AndroidManifest.xml:  
 
-   ```html
+   ```html Markup
    <uses-permission android:name="android.permission.INTERNET" />
    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />

@@ -57,7 +57,7 @@ To view the AppsFlyer SDK Integration Guide for Android, click <Anchor target="_
 
 The AppsFlyer Android SDK v4.4.0 **no longer supports the following receiver** in the manifest:
 
-```html
+```html Markup
 <receiver android:name="com.appsflyer.AppsFlyerLib">
   <intent-filter>
     <action android:name="android.intent.action.PACKAGE_REMOVED"/>
@@ -70,7 +70,7 @@ If you are using version 4.4.0+, **remove this receiver from your manifest file*
 
 The only **mandatory** receiver for the SDK is as follows:
 
-```html
+```html Markup
 <receiver
   android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
   android:exported="true">

@@ -92,7 +92,7 @@ The implementation consists of the following steps:
 
 Add the following HTML code to the web view or web page:
 
-```html
+```html Markup
 <h1>Recording Event From Web View</h1>
 <div id="main">
  <button id="recordEvent" onclick="recordEvent()"> Record Event </button>
@@ -114,7 +114,7 @@ When passing event value, keep the following in mind:
 
 * Make sure to pass the event value as a stringified JSON.
 
-  ```html
+  ```html Markup
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
 * To avoid any possible problems AppsFlyer recommends using
@@ -212,7 +212,7 @@ class.
 
 Add the following HTML code to the web view or web page:
 
-```html
+```html Markup
 <body>
  <h1>Recroding Event From Web View</h1>
  <div id="main">
@@ -242,7 +242,7 @@ When passing event value, keep the following in mind:
 
 * Make sure to pass the event value as a stringified JSON.
 
-  ```html
+  ```html Markup
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
 * To avoid any possible problems AppsFlyer recommends using

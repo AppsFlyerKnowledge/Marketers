@@ -106,7 +106,7 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 
 In the Android manifest, add the click domain host and any prefix in the activity tag of the activity you want to deep link into.
 
-```html
+```html Markup
 <activity android:name=".DeepLinkActivity">
     <intent-filter  android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />

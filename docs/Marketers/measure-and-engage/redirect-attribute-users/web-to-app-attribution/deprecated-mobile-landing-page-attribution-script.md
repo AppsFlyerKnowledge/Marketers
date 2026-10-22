@@ -556,7 +556,7 @@ function generateUrl(isDebug) {
 
 <Accordion title="HTML sample for landing page">
 
-```html
+```html Markup
 <html>
 <head>
   <title>Landing Page</title>

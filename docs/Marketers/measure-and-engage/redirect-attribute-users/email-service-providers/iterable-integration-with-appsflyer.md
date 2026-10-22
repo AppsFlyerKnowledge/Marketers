@@ -110,7 +110,7 @@ See the following to set up your apps to support App and Universal links.
 
 In the Android manifest, add the click domain host and any prefix in the activity tag of the activity you want to deep link into.
 
-```html
+```html Markup
 <activity android:name=".DeepLinkActivity">
     <intent-filter  android:autoVerify="true">
         <action android:name="android.intent.action.VIEW" />

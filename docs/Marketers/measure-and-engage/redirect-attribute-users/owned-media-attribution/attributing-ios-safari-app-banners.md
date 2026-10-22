@@ -53,7 +53,7 @@ Before implementing iOS App Banners consider:
 
 1. Insert the following in the header element of the web page HTML.  
 
-   ```html
+   ```html Markup
    <meta name="apple-itunes-app" content="app-id=123456789">
    ```
 2. Generate an attribution Link for the mobile app you are promoting in the App Banner. The following is an example showing an attribution Link for the mobile app being promoted in the App Banner. You can also use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">shortened custom attribution links</Anchor>.   
@@ -63,13 +63,13 @@ Before implementing iOS App Banners consider:
    ```
 3. Insert the generated attribution link inside an image pixel. Your image pixel with the measurement URL is formatted as illustrated.
 
-   ```html
+   ```html Markup
    <img src="https://app.appsflyer.com/123456789?pid=ios_smart_banner&c=ios_campaign" height="1" width="1" border ="0" />
    ```
 
    The final HTML page with the image pixel should appear as shown in the following HTML example.
 
-   ```html
+   ```html Markup
    <html>
      <head>
        <meta name="apple-itunes-app" content="app-id=123456789">

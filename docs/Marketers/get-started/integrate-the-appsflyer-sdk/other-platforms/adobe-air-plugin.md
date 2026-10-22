@@ -48,7 +48,7 @@ Download the <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/Adob
 
 If the following was not added automatically, add it to the APP\_NAME-app.xml:
 
-```html
+```html Markup
 <extensions>
   <extensionID>com.appsflyer.adobeair</extensionID>
 </extensions>
@@ -59,7 +59,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 > * In the AppsFlyer dashboard you will need to add "air." prefix to the package name as this is added automatically by Air. For example - an app with the package name "**com.test.android**", should set the app id in the AppsFlyer Dashboard as "**air.com.test.android**".
 > * Add the following permissions to Android Manifest (in the app description `APP_NAME-app.xml`):
 >
->   ```html
+>   ```html Markup
 >   <uses-permission android:name="android.permission.INTERNET"/>
 >   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 >   <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
@@ -67,7 +67,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 > * Add the following metatag to Android Manifest within the application tag (in the app description `APP_NAME-app.xml`):
 >
 >
->   ```html
+>   ```html Markup
 >   meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 >   ```
 >
@@ -105,17 +105,17 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >    `apktool b app`
 > 6. Sign the APK.
 >
->    ```html
+>    ```html Markup
 >    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore myKeystore.keystore app_name/dist/app_name.apk myKey
 >    ```
 > 7. Zipalign the apk (to be able to upload to Google Play)
 >
->    ```html
+>    ```html Markup
 >    zipalign -f -v 4 app_name/dist/app_name.apk app_name/dist/zipalign_app_name.apk
 >    ```
 > 8. Verify zipalignment
 >
->    ```html
+>    ```html Markup
 >    zipalign -c -v 4 app_name/dist/zipalign_app_name.apk
 >    ```
 > 9. Your apk `zipalign_app_name.apk` is ready to use!
@@ -128,32 +128,32 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 
 Import the AppsFlyer Extension into your project:
 
-```html
+```html Markup
 import AppsFlyerInterface;
 ```
 
 Construct the AppsFlyer interface:
 
-```html
+```html Markup
 private static var appsFlyer:AppsFlyerInterface; 
 appsFlyer = new AppsFlyerInterface();
 ```
 
 [Optional] If you want to perform deep linking or access AppsFlyer conversion data from the application, register Conversion Listener:
 
-```html
+```html Markup
 appsFlyer.registerConversionListener();
 ```
 
 Set the Developer key and iOS app ID (optional) and Initialise the SDK:
 
-```html
+```html Markup
 appsFlyer.appsFlyer.init("DevKey", "iOSAppID");
 ```
 
 Initialize session logging (automatically log app launches and background-to-foreground transitions) with DevKey and iOS app ID (optional):
 
-```html
+```html Markup
 appsFlyer.start("DevKey", "iOSAppID");
 ```
 
@@ -167,13 +167,13 @@ In order to receive the relevant AppsFlyer information from the deep link used:
 
 1. Register the following event listeners:
 
-   ```html
+   ```html Markup
    appsFlyer.addEventListener(AppsFlyerEvent.APP_OPEN_ATTRIBUTION, eventHandler); // success 
    appsFlyer.addEventListener(AppsFlyerEvent.ATTRIBUTION_FAILURE, eventHandler); // error
    ```
 2. Handle the response in a corresponding event handler:
 
-   ```html
+   ```html Markup
    private function eventHandler(event:AppsFlyerEvent):void {
    	log("AppsFlyer event: " + event.type + "; \nData: " + event.data);
    }
@@ -189,13 +189,13 @@ In order to receive the conversion data for the current install:
 
 1. Register the following event listeners:
 
-   ```html
+   ```html Markup
    appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_DATA_LOADED, eventHandler); // success
    appsFlyer.addEventListener(AppsFlyerEvent.INSTALL_CONVERSATION_FAILED, eventHandler); //error
    ```
 2. Handle the response in a corresponding event handler:
 
-   ```html
+   ```html Markup
    private function eventHandler(event:AppsFlyerEvent):void {
    	log("AppsFlyer event: " + event.type + "; \nData: " + event.data);
    }
@@ -217,25 +217,25 @@ If the app does NOT contain Google Play Services, the IMEI and Android ID are co
 
 **Enable/disable IMEI collection (disabled by default)**
 
-```html
+```html Markup
 appsFlyer.setCollectIMEI(bool);
 ```
 
 **Manually set IMEI Data**
 
-```html
+```html Markup
 appsFlyer.setImeiData("imeiString");
 ```
 
 **Enable/disable Android ID collection (disabled by default)**
 
-```html
+```html Markup
 appsFlyer.setCollectAndroidID(bool);
 ```
 
 **Manually set Android ID data**
 
-```html
+```html Markup
 appsFlyer.setAndroidIdData("AndroidIDString");
 ```
 
@@ -271,7 +271,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         Log in-app events.
       </td>
       <td>
-        ```html
+        ```html Markup
         var param:String = "Deposit";
         var value:String = '{"amount":10, "FTDLevel":"-"}';
         appsFlyer.logEvent(param, value);
@@ -286,7 +286,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         Send a session logging event, regardless of app state.
       </td>
       <td>
-        ```html
+        ```html Markup
         appsFlyer.start();
         ```
       </td>
@@ -299,7 +299,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         Get the user ID as used in the app.
       </td>
       <td>
-        ```html
+        ```html Markup
         appsFlyer.setAppUserId("user_id_as_used_in_the_app");
         ```
       </td>
@@ -312,7 +312,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         Get user email.
       </td>
       <td>
-        ```html
+        ```html Markup
         appsFlyer.setUserEmails("example@example.com");
         ```
       </td>
@@ -325,7 +325,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         Set the currency for logging revenue events, for example, USD.
       </td>
       <td>
-        ```html
+        ```html Markup
         appsFlyer.setCurrency("USD");
         ```
       </td>
@@ -338,7 +338,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         Used when you want want to shut down all SDK logging due to legal and privacy compliance. Once this API is invoked, our SDK no longer communicates with our servers.
       </td>
       <td>
-        ```html
+        ```html Markup
         appsFlyer.stop();
         ```
       </td>
@@ -353,7 +353,7 @@ appsFlyer.setAndroidIdData("AndroidIDString");
         **Important:** Do not release the app to app stores with debug logs enabled.
       </td>
       <td>
-        ```html
+        ```html Markup
         appsFlyer.setDebug(bool);
         ```
       </td>

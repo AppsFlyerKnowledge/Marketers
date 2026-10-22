@@ -233,7 +233,7 @@ The name in the manifest method requires you to add a metadata tag to the app's 
 
 Add a metadata tag before the closing application tag:
 
-```html
+```html Markup
 ...
     <meta-data android:name="AF_PRE_INSTALL_NAME" android:value="market_name"/>
   </application>
@@ -295,7 +295,7 @@ The pathway method allows you to specify a path to a file that holds the name of
 2. Talk to the media source or manufacturer and agree with them on a path where they put the file. The recommended path is "/data/local/tmp/pre\_install.appsflyer".
 3. Once a path is agreed upon, specify it in the manifest file. Place the following snippet before the closing application tag:  
 
-   ```html
+   ```html Markup
    <meta-data android:name="AF_PRE_INSTALL_PATH" 
          android:value="/data/local/temp/pre_install.appsflyer" />
    ```
