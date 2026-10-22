@@ -78,7 +78,24 @@ Using the Website Attribution dashboard advertisers gain an insight as to the me
         Table
       </td>
       <td>
-        **Attribution table**<br /><br />[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)<ul><li>Metrics are available for the website as a whole with a breakdown per conversion event.</li><li>Drill down from the media source to the ad level to uncover specific media sources and ads driving traffic to the website.</li><li>Compare ad performance in driving traffic and generating conversions.</li></ul><table><thead><tr><th>Total metrics</th><th>Description</th></tr></thead><tbody><tr><td><span id="visits"></span>Visits</td><td>Sessions of users visiting the website</td></tr><tr><td><span id="unique-visitors"></span>Unique visitors</td><td>Unique visitors to the site. Unique users are determined by PBA by using the PBA private-user graph. To maintain graph integrity you must implement <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">CUID</Anchor>. The same user arriving at the site using different browsers is counted once.</td></tr><tr><td><span id="conversions"></span>Conversions</td><td>Number of conversion events performed</td></tr><tr><td><span id="conversion-rate"></span>Conversion rate</td><td>Formula: Conversions / Visits \* 100</td></tr><tr><td><span id="acpu"></span>ACPU</td><td>The average number of Conversions per Unique visitor. Formula: Conversions / Unique visitors</td></tr><tr><td><span id="revenue"></span>Revenue</td><td>Revenue from all events combined</td></tr><tr><td><span id="arpu"></span>ARPU</td><td>Average Revenue per User. Formula: Revenue / Unique users</td></tr></tbody></table><table><thead><tr><th>Conversion event metrics</th><th>Description</th></tr></thead><tbody><tr><td><span id="event-count"></span>Event count</td><td>Number of times the event was performed</td></tr><tr><td><span id="unique-users"></span>Unique users</td><td>Unique users performing the conversion event</td></tr><tr><td><span id="revenue::58195989"></span>Revenue</td><td>Revenue associated with this conversion event</td></tr><tr><td><span id="arpe"></span>ARPE</td><td>Average Revenue per Conversion Event. Formula: Revenue / Event count</td></tr></tbody></table>
+        **Attribution table**<br /><br />[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)<ul><li>Metrics are available for the website as a whole with a breakdown per conversion event.</li><li>Drill down from the media source to the ad level to uncover specific media sources and ads driving traffic to the website.</li><li>Compare ad performance in driving traffic and generating conversions.</li></ul>
+
+        | Total metrics | Description |
+        | --- | --- |
+        | <span id="visits"></span>Visits | Sessions of users visiting the website |
+        | <span id="unique-visitors"></span>Unique visitors | Unique visitors to the site. Unique users are determined by PBA by using the PBA private-user graph. To maintain graph integrity you must implement <anchor href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid" target="_blank">CUID</anchor>. The same user arriving at the site using different browsers is counted once. |
+        | <span id="conversions"></span>Conversions | Number of conversion events performed |
+        | <span id="conversion-rate"></span>Conversion rate | Formula: Conversions / Visits \* 100 |
+        | <span id="acpu"></span>ACPU | The average number of Conversions per Unique visitor. Formula: Conversions / Unique visitors |
+        | <span id="revenue"></span>Revenue | Revenue from all events combined |
+        | <span id="arpu"></span>ARPU | Average Revenue per User. Formula: Revenue / Unique users |
+
+        | Conversion event metrics | Description |
+        | --- | --- |
+        | <span id="event-count"></span>Event count | Number of times the event was performed |
+        | <span id="unique-users"></span>Unique users | Unique users performing the conversion event |
+        | <span id="revenue::58195989"></span>Revenue | Revenue associated with this conversion event |
+        | <span id="arpe"></span>ARPE | Average Revenue per Conversion Event. Formula: Revenue / Event count |
       </td>
     </tr>
     <tr>

@@ -548,7 +548,15 @@ In the table:
         Example
       </td>
       <td>
-        5 users install the app and open the app the number of times listed in the table.<br /><br />**<span id="app-opens"></span>App opens**<table><thead><tr><th></th><th>Number of times the event is performed</th></tr></thead><tbody><tr><td>User A</td><td>63</td></tr><tr><td>User B</td><td>10</td></tr><tr><td>User C</td><td>5</td></tr><tr><td>User D</td><td>1</td></tr><tr><td>User E</td><td>-</td></tr></tbody></table>
+        5 users install the app and open the app the number of times listed in the table.<br /><br />**<span id="app-opens"></span>App opens**
+
+        |  | Number of times the event is performed |
+        | --- | --- |
+        | User A | 63 |
+        | User B | 10 |
+        | User C | 5 |
+        | User D | 1 |
+        | User E | - |
       </td>
     </tr>
     <tr>

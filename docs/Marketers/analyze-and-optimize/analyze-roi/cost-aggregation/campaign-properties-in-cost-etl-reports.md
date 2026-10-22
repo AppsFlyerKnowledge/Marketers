@@ -75,7 +75,14 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Meta ads
         AppsFlyer normalized cost model mapping
       </td>
       <td>
-        <table><thead><tr><th>Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td><ul><li>LINK_CLICKS</li><li>POST_ENGAGEMENT</li><li>REPLIES</li><li>LANDING_PAGE_VIEWS</li></ul></td><td>CPC</td></tr><tr><td><ul><li>OFFSITE_ CONVERSIONS</li><li>DERIVED_EVENTS</li><li>LEAD_GENERATION</li></ul></td><td>CPA</td></tr><tr><td>APP\_INSTALLS</td><td>CPI</td></tr><tr><td>VALUE</td><td>ROI</td></tr><tr><td><ul><li>REACH</li><li>IMPRESSIONS</li><li>SOCIAL_IMPRESSIONS</li></ul></td><td>CPM</td></tr><tr><td><ul><li>THRUPLAY</li><li>VIDEO_VIEWS</li><li>TWO_SECOND_CONTINUOUS_VIDEO_VIEWS</li></ul></td><td>CPCV</td></tr></tbody></table>
+        | Cost model | Normalized cost model |
+        | --- | --- |
+        | <ul><li>LINK_CLICKS</li><li>POST_ENGAGEMENT</li><li>REPLIES</li><li>LANDING_PAGE_VIEWS</li></ul> | CPC |
+        | <ul><li>OFFSITE_ CONVERSIONS</li><li>DERIVED_EVENTS</li><li>LEAD_GENERATION</li></ul> | CPA |
+        | APP\_INSTALLS | CPI |
+        | VALUE | ROI |
+        | <ul><li>REACH</li><li>IMPRESSIONS</li><li>SOCIAL_IMPRESSIONS</li></ul> | CPM |
+        | <ul><li>THRUPLAY</li><li>VIDEO_VIEWS</li><li>TWO_SECOND_CONTINUOUS_VIDEO_VIEWS</li></ul> | CPCV |
       </td>
     </tr>
     <tr>
@@ -91,7 +98,11 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Meta ads
         AppsFlyer normalized bid strategy
       </td>
       <td>
-        <table><thead><tr><th>Bid strategy</th><th>Normalized bid strategy</th></tr></thead><tbody><tr><td><ul><li>LOWEST_COST_ WITHOUT_CAP</li><li>COST_CAP</li><li>LOWEST_COST_ WITH_MIN_ROAS</li></ul></td><td>Auto bid</td></tr><tr><td>TARGET\_COST</td><td>Target bid</td></tr><tr><td>Anything else</td><td>Unknown</td></tr></tbody></table>
+        | Bid strategy | Normalized bid strategy |
+        | --- | --- |
+        | <ul><li>LOWEST_COST_ WITHOUT_CAP</li><li>COST_CAP</li><li>LOWEST_COST_ WITH_MIN_ROAS</li></ul> | Auto bid |
+        | TARGET\_COST | Target bid |
+        | Anything else | Unknown |
       </td>
     </tr>
     <tr>
@@ -162,7 +173,13 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Google, 
         AppsFlyer normalized cost model mapping
       </td>
       <td>
-        <table><thead><tr><th>Cost model</th><th>Normalized cost model</th></tr></thead><tbody><tr><td><ul><li>SWIPES</li><li>STORY_OPENS</li></ul></td><td>CPC</td></tr><tr><td><ul><li>USES</li><li>PIXEL_ADD_TO_CART</li><li>PIXEL_PURCHASE</li><li>PIXEL_SIGNUP</li><li>APP_ADD_TO_CART</li><li>APP_PURCHASE</li><li>APP_SIGNUP</li></ul></td><td>CPA</td></tr><tr><td>APP\_INSTALLS</td><td>CPI</td></tr><tr><td><ul><li>IMPRESSIONS</li></ul></td><td>CPM</td></tr><tr><td><ul><li>VIDEO_VIEWS</li><li>VIDEO_VIEWS_15_SEC</li></ul></td><td>CPCV</td></tr></tbody></table>
+        | Cost model | Normalized cost model |
+        | --- | --- |
+        | <ul><li>SWIPES</li><li>STORY_OPENS</li></ul> | CPC |
+        | <ul><li>USES</li><li>PIXEL_ADD_TO_CART</li><li>PIXEL_PURCHASE</li><li>PIXEL_SIGNUP</li><li>APP_ADD_TO_CART</li><li>APP_PURCHASE</li><li>APP_SIGNUP</li></ul> | CPA |
+        | APP\_INSTALLS | CPI |
+        | <ul><li>IMPRESSIONS</li></ul> | CPM |
+        | <ul><li>VIDEO_VIEWS</li><li>VIDEO_VIEWS_15_SEC</li></ul> | CPCV |
       </td>
     </tr>
     <tr>
@@ -178,7 +195,11 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Google, 
         AppsFlyer normalized bid strategy
       </td>
       <td>
-        <table><thead><tr><th>Bid strategy</th><th>Normalized bid strategy</th></tr></thead><tbody><tr><td><ul><li>MIN_ROAS</li><li>AUTO_BID</li></ul></td><td>Auto bid</td></tr><tr><td>LOWEST\_COST\_ WITH\_MAX\_BID</td><td>Max bid</td></tr><tr><td>TARGET\_COST</td><td>Target bid</td></tr></tbody></table>
+        | Bid strategy | Normalized bid strategy |
+        | --- | --- |
+        | <ul><li>MIN_ROAS</li><li>AUTO_BID</li></ul> | Auto bid |
+        | LOWEST\_COST\_ WITH\_MAX\_BID | Max bid |
+        | TARGET\_COST | Target bid |
       </td>
     </tr>
     <tr>
