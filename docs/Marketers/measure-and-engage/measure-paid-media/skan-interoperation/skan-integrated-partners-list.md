@@ -73,7 +73,7 @@ The following enrichment fields are available:
 
 The table that follows contains the list of Apple SKAdNetwork IDs to populate your app <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/configuring_a_source_app">*Info.plist*</Anchor>.
 
-<Embed title="SKAN integrated partners list" typeOfEmbed="oembed" url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqwIBW3FzbrXKqluDQ2hEec7zcvVrxQ02ivWsHnGQTvLMeFmHHjGz1R5TVy6_cqAIVh0pAy4Yud7Qx/pubhtml?widget=true&amp;headers=false" providerUrl="https://docs.google.com" />
+<Embed title="SKAN integrated partners list" typeOfEmbed="iframe" url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqwIBW3FzbrXKqluDQ2hEec7zcvVrxQ02ivWsHnGQTvLMeFmHHjGz1R5TVy6_cqAIVh0pAy4Yud7Qx/pubhtml?widget=true&amp;headers=false" providerUrl="https://docs.google.com" height="500px" />
 
 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSqwIBW3FzbrXKqluDQ2hEec7zcvVrxQ02ivWsHnGQTvLMeFmHHjGz1R5TVy6_cqAIVh0pAy4Yud7Qx/pub?gid=0&single=true&output=csv">Download CSV file</Anchor>
 

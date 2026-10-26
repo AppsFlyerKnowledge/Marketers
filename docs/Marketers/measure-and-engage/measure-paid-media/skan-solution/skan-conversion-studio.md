@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance**: Use SKAN Conversion Studio to set which user engagements in the app to measure, and for how long. Measure revenue, conversion, engagement, and retention during a limited post-install period. By adding the Single Source of Truth measurement we can let you know if the user was attributed by both AppsFlyer and SKAN.
 
-<Embed title="SKAN 4 Conversion Studio (including lock window)" typeOfEmbed="vimeo" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
+<Embed title="SKAN 4 Conversion Studio (including lock window)" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
 ## SKAN Conversion Studio basics
 
