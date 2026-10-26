@@ -151,120 +151,120 @@ The following table includes different sections of the integration page. Some se
   </thead>
   <tbody>
     <tr>
-      <td>
-        <span id="a-activate-partner"></span>Activate partner
+      <td><span id="a-activate-partner"></span>
+        Activate partner
       </td>
       <td>
         Before sharing attribution links with a partner, you must enable **Activate partner** and complete the remaining sections of the Integration tab.<ul><li>Don't use **Activate partner** to pause or turn off campaign attribution</li><li>Disabling partner integration **can cause irreversible damage to active campaigns**.</li><li>Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor> and the impact of deactivating a partner.</li></ul>**To activate an integrated partner**:<ol><li>In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.</li><li>Search for and select the partner. You're directed to the partner configuration page.</li><li>Turn on <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">**Activate partner**</Anchor>.</li><li>Click **Save Integration.**</li><li>[Optional] To allow the partner to <Anchor target="_blank" href="/marketers/docs/manage-data-access-permissions">view the data attributed to them</Anchor>, make sure to turn [Ad network permissions](/docs/set-up-an-integrated-partner#ad-network-permissions) in the [Permissions](/docs/set-up-an-integrated-partner#permissions-tab) tab.</li></ol>
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="b-advanced-privacy"></span>Advanced Privacy
+      <td><span id="b-advanced-privacy"></span>
+        Advanced Privacy
       </td>
       <td>
         For iOS apps only:  <br />When **Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">control what data to share</Anchor> with the partner via postbacks and reports. This limits the sharing of user identifiers with the partner. Note that when <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="c-transaction-id"></span>Transaction ID
+      <td><span id="c-transaction-id"></span>
+        Transaction ID
       </td>
       <td>
         For iOS apps only:  <br />When **Share SKAN transaction ID** is turned on, you're <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">sharing the transaction ID of SKAdNetwork postbacks</Anchor> with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="d-general-settings"></span>General settings
+      <td><span id="d-general-settings"></span>
+        General settings
       </td>
       <td>
         **Partner ID—Credentials**  <br />Some partners require credentials for AppsFlyer to integrate with them. Partners refer to this ID as app ID, account ID, user ID, or network ID. If this field displays, get the ID from the partner dashboard and enter it in the field.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="non-eu-users"></span>Non EU Users
+      <td><span id="non-eu-users"></span>
+        Non EU Users
       </td>
       <td>
         Decide whether or not to turn on <Anchor target="_blank" href="/marketers/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Non EU users**</Anchor>.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="e-install-attribution"></span>Install attribution
+      <td><span id="e-install-attribution"></span>
+        Install attribution
       </td>
       <td>
         Set attribution windows to attribute new installs (first launches) of users who viewed or clicked your ad. The attribution lookback window is the maximum time from a click or a view of your ad to the install for which installs may be attributed to the partner.<ul><li>**Install click-through lookback window:** Set the maximum time after a click-to-app that an install can be attributed to the click.</li></ul>**Install view-through attribution: Turn on to start attributing new installs by users who viewed your ad but didn't click it.**<ul><li>**Install view-through lookback window:** Set the maximum time after a view-to-app that an install can be attributed to the view.</li></ul><Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Learn more about lookback windows</Anchor>.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="e-re-engagement-attribution"></span>Re-engagement attribution
+      <td><span id="e-re-engagement-attribution"></span>
+        Re-engagement attribution
       </td>
       <td>
         Turn on and set the lookback windows to start attributing re-engagements of your existing users. For non-SRNs, this setting is available either in the Integration tab or in the [attribution link](/docs/set-up-an-integrated-partner#retargeting-settings) tab.<ul><li>**Re-engagement click-through lookback window:** Set the maximum time after a click-to-app that the app launch can be attributed to the click as a re-engagement.</li></ul>**Re-engagement view-through attribution:** Turn on to start attributing re-engagements of your existing users who viewed your ad but didn't click it.<ul><li>**Re-engagement view-through lookback window:** Set the maximum time after a view-to-app that an app launch can be attributed to the view as a re-engagement.</li></ul><Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">Learn more about lookback windows</Anchor>.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="reengagement-window"></span>Re-engagement window
+      <td><span id="reengagement-window"></span>
+        Re-engagement window
       </td>
       <td>
         Set the time window during which in-app events are primarily attributed to the re-engagement conversion. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#setup-reengagement-window">Learn more</Anchor>.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="ignore-active-users"></span>Ignore active users for retargeting
+      <td><span id="ignore-active-users"></span>
+        Ignore active users for retargeting
       </td>
       <td>
         Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window">Retargeting inactivity period</Anchor>.<br /><br />**For** <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">**SRNs**</Anchor>:<ol><li>From the Integration tab, turn on **Re-engagement attribution**.</li><li>Turn on **Ignore active users for retargeting**.</li><li>Set the **Inactivity window**.</li></ol>**For non-SRNs:**<ol><li>From the Attribution link tab, turn on **Retargeting settings**.</li><li>Turn on **Ignore active users for retargeting**.</li><li>Set the **Inactivity window**.</li></ol>
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="e-cross-platform-attribution"></span>Cross-platform attribution
+      <td><span id="e-cross-platform-attribution"></span>
+        Cross-platform attribution
       </td>
       <td>
         When **Cross-platform equal attribution priority** is turned on, cross-platform impressions during the selected time frame have equal priority for attribution.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="f-preload-attribution"></span>Preload attribution
+      <td><span id="f-preload-attribution"></span>
+        Preload attribution
       </td>
       <td>
         When **Preload attribution** is turned on, installs are attributed to <Anchor target="_blank" href="/marketers/docs/measure-preload-campaigns-with-google-play-install">preload campaigns</Anchor>. Set the **Preload lookback window** to determine how long after device activation a preload install can be attributed to the partner.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="f-preload-equal-attribution-priority"></span>Preload equal attribution priority
+      <td><span id="f-preload-equal-attribution-priority"></span>
+        Preload equal attribution priority
       </td>
       <td>
         When **Preload equal attribution priority** is turned on, preload engagement during the selected lookback window has equal <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-methods">attribution priority</Anchor> as deterministic clicks.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="advanced-data-sharing"></span>Advanced Data Sharing
+      <td><span id="advanced-data-sharing"></span>
+        Advanced Data Sharing
       </td>
       <td>
         When **Advanced Data Sharing** is turned on, additional data is shared with the partner via the attribution link.  <br />**Note:** This sharing option is different from the <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing">Meta ads AEM Advanced data sharing</Anchor>.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="default-postbacks"></span>Default postbacks
+      <td><span id="default-postbacks"></span>
+        Default postbacks
       </td>
       <td>
         When the partner integration is turned on, default postbacks are sent to partners relating to user actions occurring before the app launch, such as installs, rejected installs, and re-engagements.<br /><br /><br /><br />**<span id="01H80XGTBQ4MPGGKSZW0D9GG9H"></span>Note**<ul><li>Rejected events are in-app events blocked by <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> or events found to be non-compliant by target validation. In the case of rejected events, confirm with the partner that they have enabled reject event integration with AppsFlyer.</li><li>Tech partners can receive Default postbacks for installs and re-engagements. In some cases, they can also receive in-app event postbacks.</li></ul>**To configure default postbacks for the partner**, define the source of users for sending postbacks:<ul><li>**This partner only**: Send postbacks only when the event is attributed to this partner—meaning, the user who performed it came from this partner.<br />**Note:** In the following cases, default postbacks are always defined as **This partner only**:<ul><li>Rejected installs</li><li>Agencies (with [permissions](/docs/set-up-an-integrated-partner#agency-permissions))</li></ul></li><li>**All media sources including organic**: Send postbacks for events attributed to any partner and for organic events—meaning, the user who performed it came from any media source.</li><li>**Off**: Don't send default postbacks to this partner.</li></ul>
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="g-in-app-event-postback-configuration"></span><Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">In-app event postbacks</Anchor>
+      <td><span id="g-in-app-event-postback-configuration"></span>
+        <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration">In-app event postbacks</Anchor>
       </td>
       <td>
         <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">Map</Anchor> AppsFlyer events with the partner's events via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).<br /><br />**To configure in-app event postbacks:**<ol><li>Set the **Partner ID** (if required).</li><li>Enable **In-app event postbacks**.</li><li>Set the **In-app event postback window**, if required (read more about <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">in-app event postback window configuration</Anchor>).</li><li>Click **Add event** to add an SDK or server-to-server event to the list.</li><li>Complete the required parameters according to the <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">mapping method</Anchor>.</li><li>[Optional] Click<Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/e2543cb26e0cc02f4840040721376ae88a4015a24ac1fc271264e3965560c1f9-4413022777105.png" width="30px" />to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for sending certain in-app events to the partner.</li></ol>
@@ -280,16 +280,16 @@ The following table includes different sections of the integration page. Some se
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="h"></span>Save integration
+      <td><span id="h"></span>
+        Save integration
       </td>
       <td>
         Click **Save Integration** after making the changes.
       </td>
     </tr>
     <tr>
-      <td>
-        <span id="i-connect-more-apps-optional"></span>Connect more apps (optional)
+      <td><span id="i-connect-more-apps-optional"></span>
+        Connect more apps (optional)
       </td>
       <td>
         After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner.<ol><li>From the top-left corner, under the partner name, click the app name to open the list of apps.</li><li>Select a different app from the drop-down list.</li><li>Repeat the integration steps for the selected app.</li></ol>
@@ -440,7 +440,7 @@ Send it to the partner to be activated when a corresponding ad is watched, usual
 
 #### Cost data sync status
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 

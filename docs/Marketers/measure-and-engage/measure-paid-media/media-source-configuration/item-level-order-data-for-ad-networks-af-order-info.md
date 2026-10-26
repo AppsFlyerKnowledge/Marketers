@@ -11,7 +11,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2026-08-25T12:25:01Z'
-  edited_at: '2026-09-22T14:00:28Z'
+  edited_at: '2026-10-22T13:20:31Z'
   id: 50185623016721
   locale: en-us
   section: Media source configuration
@@ -115,10 +115,12 @@ AppsFlyer reads the `af_order_info` array and automatically restructures it into
 | Google Ads / DV360 | `sku`, `qty`, `revenue` |
 | Meta (Facebook) | `sku`, `qty`, `revenue` |
 | TikTok | `sku`, `qty`, `revenue`, `content_name`, `content_type`, `content_category`, `brand` (all seven fields) |
-| Snapchat | `sku`, `revenue`, `brand`, `content_category`. AppsFlyer sends quantity only as a total item count, not per item |
+| Snapchat | Mobile: `sku`, `revenue`, `brand`, `content_category`; quantity is sent as a total item count. Web: `sku`, `revenue`, `qty`; quantity is sent per item and as a total item count. |
 | Pinterest | `sku`, `revenue`, `qty` |
 
 <Accordion title="Google Ads and DV360">
+
+**Mobile**
 
 AppsFlyer maps the fields into the `items` array under `app_event_data`:
 
@@ -132,9 +134,29 @@ AppsFlyer maps the fields into the `items` array under `app_event_data`:
 }
 ```
 
+**Google Ads web (OCI)**
+
+AppsFlyer maps `sku` to `productId`, `qty` to `quantity`, and `revenue` to `unitPrice` under `conversions[].cartData.items[]`.
+
+Excerpt from a conversion object:
+
+```json
+{
+  "cartData": {
+    "items": [
+      {"productId": "SKU-001", "quantity": 1, "unitPrice": 50.00},
+      {"productId": "SKU-002", "quantity": 1, "unitPrice": 75.00},
+      {"productId": "SKU-003", "quantity": 2, "unitPrice": 25.00}
+    ]
+  }
+}
+```
+
 </Accordion>
 
 <Accordion title="Meta (Facebook)">
+
+**Mobile**
 
 AppsFlyer maps the fields into `fb_contents`:
 
@@ -146,9 +168,29 @@ AppsFlyer maps the fields into `fb_contents`:
 ]
 ```
 
+**Web**
+
+AppsFlyer maps the fields into `data[].custom_data.contents`.
+
+Excerpt from an event object:
+
+```json
+{
+  "custom_data": {
+    "contents": [
+      {"id": "SKU-001", "quantity": 1, "item_price": 50.00},
+      {"id": "SKU-002", "quantity": 1, "item_price": 75.00},
+      {"id": "SKU-003", "quantity": 2, "item_price": 25.00}
+    ]
+  }
+}
+```
+
 </Accordion>
 
 <Accordion title="TikTok">
+
+**Mobile**
 
 AppsFlyer maps the fields into `properties.contents`. TikTok is the only network of the five that accepts all seven fields:
 
@@ -170,9 +212,53 @@ AppsFlyer maps the fields into `properties.contents`. TikTok is the only network
 }
 ```
 
+**Web**
+
+AppsFlyer maps item details into `data[].properties.contents`, with `content_type` sent once under `properties`, alongside `contents`. Include the event's total revenue and currency. AppsFlyer forwards item details when event revenue is present.
+
+Excerpt from an event object:
+
+```json
+{
+  "properties": {
+    "content_type": "product",
+    "currency": "USD",
+    "value": 175.00,
+    "contents": [
+      {
+        "content_id": "SKU-001",
+        "price": 50.00,
+        "quantity": 1,
+        "content_name": "Wireless Mouse",
+        "content_category": "accessories",
+        "brand": "Logitech"
+      },
+      {
+        "content_id": "SKU-002",
+        "price": 75.00,
+        "quantity": 1,
+        "content_name": "Bluetooth Headphones",
+        "content_category": "audio",
+        "brand": "Sony"
+      },
+      {
+        "content_id": "SKU-003",
+        "price": 25.00,
+        "quantity": 2,
+        "content_name": "USB-C Cable",
+        "content_category": "cables",
+        "brand": "Anker"
+      }
+    ]
+  }
+}
+```
+
 </Accordion>
 
 <Accordion title="Snapchat">
+
+**Mobile**
 
 AppsFlyer maps the fields into URL query parameters. Snapchat does not receive quantity per item. Instead, `number_items` reflects the total quantity across all items in the order:
 
@@ -180,9 +266,30 @@ AppsFlyer maps the fields into URL query parameters. Snapchat does not receive q
 &item_ids=SKU-001,SKU-002,SKU-003&number_items=5&price=50.00,75.00,25.00&brands=Logitech,Sony,Anker&category=accessories,audio,cables
 ```
 
+**Web**
+
+AppsFlyer maps item details into `data[].custom_data.contents`, including quantity per item. `num_items` contains the total quantity across the order.
+
+Excerpt from an event object:
+
+```json
+{
+  "custom_data": {
+    "contents": [
+      {"id": "SKU-001", "quantity": 1, "item_price": 50.00},
+      {"id": "SKU-002", "quantity": 1, "item_price": 75.00},
+      {"id": "SKU-003", "quantity": 2, "item_price": 25.00}
+    ],
+    "num_items": 4
+  }
+}
+```
+
 </Accordion>
 
 <Accordion title="Pinterest">
+
+**Mobile and web**
 
 AppsFlyer maps the fields into `contents`:
 
@@ -193,6 +300,8 @@ AppsFlyer maps the fields into `contents`:
   {"id": "SKU-003", "item_price": "25.00", "quantity": 2}
 ]
 ```
+
+For web postbacks, `contents` is nested under `data[].custom_data`.
 
 </Accordion>
 
@@ -206,14 +315,15 @@ Existing formats also continue to work, including the array-based `af_content_id
 >
 > Because af\_order\_info is supported only for the networks listed in this article, continue sending this information under the existing fields, such as af\_content\_id, af\_content\_list, af\_content\_type, and af\_quantity, if you run campaigns with other networks that need it.
 >
-> If you previously sent this information in the format Meta expects (under af\_content, which AppsFlyer mapped to fb\_contents), you can now remove that field from the payload. The new solution also supports Meta under fb\_contents out of the box.
+> For the Meta mobile integration, if you previously sent this information in the format Meta expects (under af\_content, which AppsFlyer mapped to fb\_contents), you can now remove that field from the payload. The new solution also supports Meta under fb\_contents out of the box.
 
 ## Traits and limitations
 
 | Trait | Description |
 | --- | --- |
 | Supported networks | AppsFlyer supports `af_order_info` only for the networks listed in this article. Other networks might still support the older format. |
-| Supported platforms | This solution currently supports only in-app purchases for mobile apps. AppsFlyer plans to add support for other platforms, such as websites, in a later phase. |
+| Supported platforms | Supports mobile apps and websites. Website support is available for Google Ads, Meta, TikTok, Snapchat, and Pinterest. DV360 support applies to mobile apps. |
+| TikTok web | Item details are forwarded when event revenue is present. Send the event's total revenue and currency in addition to the item details. |
 | Event value length | The total length of the `event_value` field, including `af_order_info`, cannot exceed 3,000 characters. |
 
 <div data-zendesk-anchors="h_01_why-item-level-data-matters=why-item-level-data-matters h_01_parameter-structure=parameter-structure h_01_per-network-mapping=per-network-mapping h_01_backward-compatibility=backward-compatibility h_01_traits-and-limitations=traits-and-limitations" />

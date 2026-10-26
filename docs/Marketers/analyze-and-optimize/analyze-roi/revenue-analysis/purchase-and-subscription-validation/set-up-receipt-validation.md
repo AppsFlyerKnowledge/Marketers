@@ -12,7 +12,7 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2025-12-21T15:14:21Z'
-  edited_at: '2026-06-18T16:05:25Z'
+  edited_at: '2026-10-24T10:32:38Z'
   id: 42137474889489
   locale: en-us
   section: Purchase and subscription validation
@@ -129,7 +129,7 @@ To set iOS credentials, follow these steps:
 <Accordion title="1.2 Set the App Store Connect key">
 
 1. Enable Receipt validation. #enable-receipt-validation
-2. Under the **App Store Connect keys** step, click [<Image alt="" src="https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png" width="2.45%" />](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload** in the **In-App Purchase key** field to upload the p8 file.
+2. Under the **App Store Connect keys** step, click <Image alt="" src="https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png" width="2.45%" />  **Upload** in the **In-App Purchase key** field to upload the p8 file.
 3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
 
    * **Key ID**
@@ -299,7 +299,7 @@ In a sandbox environment:
 
 <Accordion title="Test in-app purchase and subscription revenue">
 
-[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
 **To test in-app purchase and subscription revenue**:
 
@@ -342,7 +342,7 @@ Before the developers release the new app version, make sure that:
 * The in-app events you want to capture as an <Anchor target="_blank" href="/marketers/docs/about-receipt-validation#in-app-purchase-events-and-parameters-for-receipt-validation">in-app purchase or subscription</Anchor> aren't blocked by any of the validation rules you have configured in AppsFlyer.
 * Your developers have all sandbox flags set to `false`.
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
 Once the app with the validateAndLog SDK API is released, <Anchor target="_blank" href="/marketers/docs/about-receipt-validation#in-app-purchase-events-and-parameters-for-receipt-validation">in-app purchase and subscription events</Anchor> are generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports.
 

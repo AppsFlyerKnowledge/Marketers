@@ -124,7 +124,7 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 
 Yesterday's data is available from Moloco at approximately 4 AM (depending on the time zone settings in your MOLOCO account). For example, If the event occurred on Monday, cost data can be pulled by AppsFlyer on Tuesday at approximately 4 AM. After pulling the MOLOCO cost data, AppsFlyer analyzes and prepares the data and once this process is complete, the data can be consumed.
 
-<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+<Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
 
 </Accordion>
 

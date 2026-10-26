@@ -14,7 +14,7 @@ x-zendesk:
     - Marketers
     - Agent Hub
   created_at: '2025-11-16T10:18:23Z'
-  edited_at: '2026-10-18T11:15:00Z'
+  edited_at: '2026-10-26T09:09:52Z'
   id: 40967933109649
   locale: en-us
   section: AI
@@ -455,9 +455,9 @@ Ready-to-use agents are ready to deploy as they are: pick one, configure it, and
 
 <div id="h_01M57AQ8G83P5H1JDJ4FM9ETCV" />
 
-<Accordion title="Incrementality for UA strategist">
+<Accordion title="Measure UA Incrementality">
 
-**Job.** The Incrementality for UA agent guides you through the full incrementality-testing lifecycle so you don't have to be an expert to run it. It defines what to test, explains what your experiment results mean, and recommends concrete marketing actions — turning a steep, specialist learning curve into a guided workflow aimed to measure the causal impact of your paid UA spend: which installs or events happened because of your ads, versus growth you'd have captured anyway.
+**Job.** The **Measure UA Incrementality** agent guides you through the full incrementality-testing lifecycle so you don't have to be an expert to run it. It defines what to test, explains what your experiment results mean, and recommends concrete marketing actions — turning a steep, specialist learning curve into a guided workflow aimed to measure the causal impact of your paid UA spend: which installs or events happened because of your ads, versus growth you'd have captured anyway.
 
 **What it works on.** Installs, in-app events, revenue and cost data from the last 90 days; All Incrementality for UA experiment data.
 

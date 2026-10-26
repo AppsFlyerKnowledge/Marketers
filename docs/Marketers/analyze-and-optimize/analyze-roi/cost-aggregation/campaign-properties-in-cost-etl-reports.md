@@ -198,7 +198,7 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Google, 
         | Bid strategy | Normalized bid strategy |
         | --- | --- |
         | <ul><li>MIN_ROAS</li><li>AUTO_BID</li></ul> | Auto bid |
-        | LOWEST\_COST\_ WITH\_MAX\_BID | Max bid |
+        | {"LOWEST_COST_"} {"WITH_MAX_BID"} | Max bid |
         | TARGET\_COST | Target bid |
       </td>
     </tr>

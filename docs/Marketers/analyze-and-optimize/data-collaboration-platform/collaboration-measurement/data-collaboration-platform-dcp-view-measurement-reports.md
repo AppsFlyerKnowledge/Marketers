@@ -78,8 +78,8 @@ To create a custom report, follow these steps:
 
 1. In AppsFlyer, from the side menu, go to **Collaborate** > **Data Clean Room**.
 2. On the **Data Collaboration Platform** page, select the relevant collaboration.
-3. On the measurement dashboard, click <Image alt="" src="https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png" width="2.86%" /> **Create report.**
-4. In the dialog that appears click <Image alt="" src="https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png" width="2.92%" /> **Customize**.
+3. On the measurement dashboard, click <Image alt="" src="https://files.readme.io/ed483d2c2b845f1274b3cf84887ea15e0b0384a5f1cf3a5148b1fb8458cd6ec9-34061156892177.png" width="25%" /> **Create report.**
+4. In the dialog that appears click <Image alt="" src="https://files.readme.io/317ded6d0dbe6b0acfee8d3b8c7898dbab1c9b7ae621802fa867f2a6069f5d79-34061156893457.png" width="25%" /> **Customize**.
 5. On the **New report** page, perform the listed steps.
 
 </Accordion>

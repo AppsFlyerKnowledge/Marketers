@@ -17,7 +17,7 @@ x-zendesk:
     - Agencies
     - ROI360
   created_at: '2020-05-19T12:50:13Z'
-  edited_at: '2026-09-15T11:18:49Z'
+  edited_at: '2026-10-22T11:50:52Z'
   id: 360008850257
   locale: en-us
   section: Cost aggregation
@@ -25,252 +25,196 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/360008850257-Set-up-ROI360-cost-API-to-measure-cost-data
 ---
-> **At a glance:** Get aggregate marketing cost data (including cost-related LTV (Lifetime Value) performance metrics) using Cost API at the app or media source account level.
+> **At a glance:** Get aggregate marketing cost data, including cost-related LTV (Lifetime Value) performance metrics, using Cost API at the media source account level.
 
 ## Overview
 
-ROI360 provides cost measurement at both the app and account levels, allowing stakeholders to analyze spend granularity per individual application or across an entire media source account.
+ROI360 provides aggregate marketing cost data, including cost-related LTV performance metrics, at the ad account level.
 
-Cost integrations are managed in two different locations, depending on the media source:
+Cost integrations are configured in **Cost settings**, where each integration connects to one media source account and measures the cost of all the apps you select. Depending on the ad network, this can include mobile, CTV, PC and console, and web apps. Connect each media source account once to enable cost for multiple apps.
 
-* **Account-level integrations** are managed in **Cost settings**. These integrations are configured at the ad account level. see the [list of supported ad networks](#h_01KQ7V7Q6MAEMXKKJ7TV8GC1YR).
-* **App-level integrations** are managed in the **Cost** tab. These integrations are configured separately for each app. If a media source isn't available in **Cost settings**, configure its cost integration in the **Cost** tab at the app level.
-
-> 📘 **Note**
->
-> Role permissions control access to Cost settings. If you can't open **Cost settings**, ask your administrator to update your role permissions on the **User Management** page. The relevant capability is **Cost Connections**.
-
-## Enable Cost API
-
-There are two ways to enable cost integration: at the app or account levels.
-
-<Accordion title="Enable the cost integration on the app level (Cost tab)">
-
-To set up a dedicated cost connection with a media source for an individual app, follow these steps:
-
-1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**, and select the partner.
-2. Click **Manage integration**.
-3. Open the integrated partner **Cost** tab.
-4. Turn on **Get Cost Data**. The requirements for connecting to the partner are displayed.
-5. Configure and authenticate the cost integration to the partner. The authentication method depends on the media source. [See Cost integration methods](#cost-integration-methods) below.
-6. If the partner's cost configuration has **Site ID mapping**, select the required site ID configuration from the dropdown. See [Site ID mapping](#site-id-mapping) below.
-7. Click **Save Cost**.
-   * Cost data will start showing on your dashboards within 5-6 hours.
-   * AppsFlyer collects data from the partner 6 times a day, on average, once every four hours.
-   * The media source account in the **Cost settings** section is updated according to what you did at the app level via the **Cost** tab.
-
-</Accordion>
-
-<Accordion title="Enable the cost integration on the account level (Cost settings page)">
-
-You need to connect each media source account once to enable cost for multiple or all apps in your AppsFlyer account.
-
-To enable the cost integration on the account level, follow these steps:
-
-1. In AppsFlyer, from the side menu, open **Settings** > **ROI360** > **Cost settings.**
-2. Select the media source to retrieve cost data, then click **Next**.
-3. Configure and authenticate the cost integration to the media source. The authentication method depends on the media source. See [Cost integration methods](#cost-integration-methods) below.
-4. Enter (or customize) the cost integration name.
-5. Select the apps to include in this cost integration.
-6. Click **Save integration**.
-   * Cost data will start showing on your dashboards within 5-6 hours.
-   * AppsFlyer collects data from the media source 6 times a day, on average, once every four hours.
-   * Updates made at the account level in **Cost settings** are automatically applied to the **Active Integration**'s **Cost** tab for relevant apps and media sources.
-
-</Accordion>
+Cost integrations can also be created and edited from the **Cost** tab in Partner Marketplace. Either entry point produces the same account-level integration.
 
 > 📘 **Note**
 >
-> If an advertiser uses an agency to run their campaigns, we recommend that the agency, and not the advertiser, integrate with the relevant partners. Otherwise, cost data is duplicated if both the advertiser and agency integrate with a media source using the same credentials for the same app.
+> Access to **Cost settings** is controlled by role permissions. If you can't open **Cost settings**, ask your administrator to update your role permissions on the **User Management** page. The relevant capability is **Cost Connections**.
 
-## Cost integration methods
+## Create a new API cost integration
 
-The method for enabling cost integration depends on the media source's integration mode with AppsFlyer. It can be one of the following:
+Every cost integration follows the same two steps: authenticate with the media source, then name the integration and select the apps it covers. Some media sources require one additional step so AppsFlyer can match your apps to the identifiers used in their system.
 
-* **Login**: Click **Log in to `<media source>`** to open the media source login window. Then follow the media source's login prompts.
-* **Credentials**: Enter media source-specific parameter values, for example, **API Key**.
-* **None:** No connection configuration is required other than turning on **Get Cost Data** like was instructed [above](#enable-cost-api).
+After initial configuration, cost data appears in the dashboard with the next data pull, scheduled every four hours, six times a day.
 
-To learn what method a particular media source uses, you can see the **Integration method** column in the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">media source cost integration table</Anchor>.
+<div id="h_01M43Y9WQ8WCXWQ0S9ZAT59CWW" />
 
-## Site ID mapping
+<Accordion title="Step 1: Provide credentials">
 
-<Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">Some media source integrations</Anchor> allow you to select how the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::e9b53459">site ID</Anchor> field populates when reporting cost data. This makes sure that the AppsFlyer attribution link `site-id` macros match the value the media source expects.
-
-* By default, site ID mapping is aligned with the AppsFlyer macros in the attribution link.
-* If your attribution link uses macros that differ from the site ID mapping options, site ID data will not populate correctly.
-
-To set Site ID mapping on the app level, follow these steps:
-
-1. In the integrated partner **Cost** tab, go to **Site ID mapping**, and select a configuration from the dropdown menu.
-2. Click **Save Cost**. The change takes effect from the next day UTC.
-
-## Delete cost integrations
-
-You can delete cost integrations at either the app or the account level. Once deleted, AppsFlyer can no longer pull cost data from the account. Deleting an integration does not impact historical data.
-
-<Accordion title="Delete the cost integration on the app level (Cost tab)">
-
-You can delete the integration at any time.
-
-To delete the cost integration on the app level, follow these steps:
-
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Integrations** > **Active integrations**.
-2. Select the integrated partner (for example, Meta Ads).
-3. Click **Manage integration**.
-4. Open the **Cost** tab. The list of connected accounts is displayed.
-5. In the **Actions** column, hover over the account and click **Delete connection**.
-6. In response to the confirmation prompt, click **Yes, Delete**.
-
-The cost integration previously configured at the app level has been removed from both the app and account levels. As a result, cost data collection will be stopped immediately. This change does not affect any historical cost data already collected.
+1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
+2. Click **+ New integration**, select the media source, then click **Next**.
+3. Depending on the media source, you'll see one of the following:
+   * **Login:** log in with your ad network account and complete the authentication flow. AppsFlyer validates the connection and names the integration after the account you connected.
+   * **Credentials:** provide static credentials, complete the fields shown for that media source, for example a username and password, or an API key. Field names vary by media source. Static credentials aren't validated at setup.
+4. Rename the integration if you'd like something different, or keep the default name. The name has a 50-character maximum, and it's a label that helps you identify the integration later, which matters if you create more than one for the same media source.
 
 </Accordion>
 
-<Accordion title="Delete the cost integration on the account level (Cost settings page)">
+<div id="h_01M43Y9WQ8HK1N0GJNW5BH4MPZ" />
 
-To delete the cost integration on the account level, follow these steps:
+<Accordion title="Step 2: Select apps">
 
-1. In AppsFlyer, from the side menu, select **Settings** > **ROI360 > Cost settings** and select the media source from which you want to delete the integration.
-2. In the integrations list for the media source, click the integration record.
-3. In response to the confirmation prompt, click **Yes, Delete**.
+Click **Select apps** and choose the apps this integration covers. You can select any app you have permission to access, mobile, web, CTV, or any other platform you use to run your campaigns. Click **Apply**, then **Next**.
 
-The cost integration previously configured on the account level has been removed from both the app and account levels. As a result, cost data collection will be stopped immediately. This change does not affect any historical cost data already collected.
+If the media source requires an additional step, continue to [Step 3](#additional-steps-specific-media-sources-only) below. Otherwise, click **Save integration**.
 
 </Accordion>
 
-## Disable Cost API
+<div id="additional-steps-specific-media-sources-only" />
 
-Disabling the Cost API is available only at the app level.
+<Accordion title="Step 3: Additional steps (specific media sources only)">
 
-To turn off Cost API, follow these steps:
+Some media sources require one additional step after you select apps. Add either mapping to package names and bundle IDs, or to site IDs.
 
-1. Go to **Active integrations** and select the media source.
-2. Go to the **Cost** tab.
-3. Turn off **Get Cost Data**.
-4. Click **Save Cost**.
+#### Map apps to package names or bundle IDs
+
+There are media sources that identify apps by Android package name or iOS bundle ID, for example, AppLovin.
+
+As part of the cost configuration, after you select your apps, enter the exact package name or bundle ID for each app, as it appears in the media source's system. Every app requires a mapping value. Click **Save integration**.
+
+#### Map apps to site IDs
+
+For media sources that identify apps by site ID, for example, Liftoff.
+
+After you select your apps, choose a default site ID parameter. It applies to every app in the integration. Available patterns:
+
+* `${APP_ID}`
+* `${APP_NAME}`
+* `${APP_ID}_${APP_NAME}`
+* `${APP_NAME}_${APP_ID}`
+
+To override the default for a specific app, select a different parameter from that app's **Site ID** dropdown. Use this when an app's site ID is formatted differently in the media source's system. Click **Save integration**.
 
 > 📘 **Note**
 >
-> If an advertiser stops working with an agency and turns off the agency permissions at the app level, cost data is still pulled if the agency has cost configured for the app. The advertiser must ask the agency to turn off their cost integration to stop this data from being pulled.
+> Site ID mapping makes sure the AppsFlyer attribution link site ID macros match the value the media source expects. If your attribution link uses macros that differ from the mapping you select, site ID data won't populate correctly.
 
-## Cost API status
+#### Select which ad account to pull cost from
 
-The operational status of cost integrations is available as follows:
+For some media sources, like TikTok, one login can have access to several ad accounts. After you log in to the media source, you need to select the specific ad account yourself.
 
-* <Anchor target="_blank" href="/marketers/docs/dashboard-cost-and-ad-revenue-status">Cost (and ad revenue) integration status dashboard</Anchor>: Centralized list of media sources for which cost integration is enabled for one or more apps housed in your account.
-* Integrated partners: Status available in the context of an individual app.
-* Cost settings: The **Cost settings** page allows you to view the cost API status at both the account and app levels. For more information, see the "[View the media source aggregate cost integration status"](#h_01K3DGA6SKBPXEY18VJBCBNCJS) below.
+</Accordion>
 
-<Accordion title="View the media source cost integration status (Cost tab)">
+## Edit and delete an integration
 
-The **Cost** tab in the media source **Active integration** page (relevant for media sources that support getting cost data via API) displays:
+This works the same way for every integration, regardless of which entry point, **Cost settings** or the **Cost** tab, you used to create it.
 
-* The status of your cost integration of the selected app.
-* Last time, AppsFlyer successfully pulled matching cost data for the app.
+<div id="h_01M43Y9WQ804YMN8TZ7HGYSQH7" />
 
-To view the individual media source cost integration status for a selected app, follow these steps:
+<Accordion title="Edit a cost integration">
 
-1. In AppsFlyer, from the side menu, go to **Collaborate** > **Partner Integrations** > **Active integrations.**
+1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
+2. Click the media source you want to edit.
+3. In the media source page, click the specific account you want to edit.
+4. On the **Apps** tab, click **Edit** to add or remove apps, then save your changes.
+
+Apps added to an integration that uses an additional step must be mapped before you can save the changes. The **Integration details** tab shows the connection settings.
+
+</Accordion>
+
+<div id="h_01M43Y9WQ89XKB2CN2EY4TG2AD" />
+
+<Accordion title="Delete a cost integration">
+
+1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
+2. Click the media source you want to delete from.
+3. In the media source page, in the **Action** column, click the delete icon for the specific account you want to remove.
+4. In the confirmation dialog, click **Yes, delete**.
+
+Cost data collection stops immediately. Historical cost data isn't affected.
+
+</Accordion>
+
+<div id="h_01M43Y9WQ8ANZY2KNHKMV67YNY" />
+
+<Accordion title="Transfer an app to another account">
+
+Cost integrations are disconnected automatically when an app is transferred to a different account.
+
+</Accordion>
+
+## View Cost API status
+
+Cost integration status is reported at two levels.
+
+* **App level:** every app included in an integration has its own status. This is where the actual state of data collection is reported.
+* **Connection level:** each integration shows a single status, derived from the statuses of the apps within it. When all apps share the same status, the connection shows that status. When apps have different statuses, the connection shows **Mixed**. Mixed doesn't indicate a problem with the connection itself, it means the apps aren't in a uniform state. Open the integration to see which apps are affected.
+
+Status is available in the following places:
+
+| Where | Level shown |
+| --- | --- |
+| Cost settings | Both connection level and app level |
+| Cost (and ad revenue) integration status dashboard | App level, across all media sources with cost integration enabled in your account and the agency account you work with. Mixed status isn't shown. |
+| Cost tab | App level, for one app and one media source at a time |
+
+<div id="view-status-in-cost-settings" />
+
+<Accordion title="View status in Cost settings">
+
+1. In AppsFlyer, from the side menu, select **Settings** > **ROI360** > **Cost settings**.
+2. Select the relevant media source. The **Status** column shows the connection-level status for each integration.
+3. To see app-level status, click the integration row to open the **Cost integration** page, then view the status of each app in the list.
+
+</Accordion>
+
+<div id="view-status-in-cost-tab" />
+
+<Accordion title="View status in Cost tab">
+
+Relevant for media sources that support getting cost data via API. This view shows the status for the selected app, along with the last time AppsFlyer successfully pulled matching cost data for it.
+
+1. In AppsFlyer, from the side menu, go to **Collaborate** > **Active integrations**.
 2. Select the media source.
-3. In the media source **Active integration** page, select the app whose cost status you want to view from the App list above the tab bar.
-4. Click the **Cost** tab. The status and last sync time are displayed.
+3. From the App list above the tab bar, select the app whose cost status you want to view.
+4. Click the **Cost** tab to see the status and last sync time.
 
 </Accordion>
 
-<Accordion title="View the media source aggregate cost integration status (Cost settings page)">
-
-To view the media source aggregate cost integration status, follow these steps:
-
-1. In AppsFlyer, from the side menu, select **Settings** > **ROI360 > Cost settings**.
-2. Select the relevant media source.
-3. On the media source page, you can see the media source account status in the **Status** column. If all apps associated with the account have the same status, that status is displayed. If app statuses differ, the status shows as **Mixed status**.
-4. To see a specific app's status associated with a media source account, click the media source account row to display the **Cost integration** page.
-5. View the app status in the list of the media source-associated apps.
-
-</Accordion>
+<div id="h_01M43Y9WQ8H8ANPDEGYCH0T0MF" />
 
 <Accordion title="Status table">
 
+The following table lists every cost integration status and what it means.
+
 | Status | Remarks/action required |
 | --- | --- |
-| Active | Integration is enabled and successfully connected to the media source. |
-| API is not returning matching cost data | This may happen because:  <br />• The campaign ID has not been provided, so the cost can't be matched to campaigns.  <br />  <br />• You integrated a different partner ad account when logging into the partner via AppsFlyer (for example, a different Meta ads account). Check that you connected the right partner ad account.  <br />  <br />• One of the credential fields in the partner cost integration is incorrect. For example, the bundle ID. Review and correct the integration credentials.  <br />  <br />• Your campaigns are paused, and there is no data. |
-| Partner API is not responding | • The integrated partner's server is not responding to AppsFlyer.  <br />• Wait 6 hours. If the status message persists, contact AppsFlyer support. |
-| Invalid credentials | • AppsFlyer can't get data via the API because the credentials are not valid.  <br />• Reconnect using the correct credentials. |
-| Reach out to your ad network account manager to get access to their reporting API | Work with the partner account manager to enable the cost integration in the partner's system. |
-| Partner API is not returning data. Review integration. | This happens because:  <br />• Your campaigns are paused, and there is no data. |
-| Your account is not enabled on the partner system to get cost data | Contact the partner. |
-| Mixed status | Status is shown on the Cost settings > **Media source** page only if the associated apps have different statuses. From the **Media source** page, open the **Integration** page to view the status of the individual app. This status isn't displayed on the status dashboard |
+| Active | Integration is enabled and successfully connected to the media source. AppsFlyer is pulling cost data. |
+| Advertiser account not enabled | The connected ad account isn't enabled for cost data collection on the media source side. Contact the media source to enable API access for the account, then reconnect the integration. |
+| General error | An unexpected failure occurred during the pull. AppsFlyer retries on the next scheduled pull. If the status persists, contact AppsFlyer support. |
+| Invalid credentials | AppsFlyer can't get data via the API because the credentials aren't valid. Reconnect using the correct credentials. |
+| Missing credentials | You haven't configured credentials for this integration. Add the required credentials in Cost settings or in the partner's Cost tab. |
+| No active campaigns | Usually, the integration pulls the cost of only campaigns that have conversions in AppsFlyer. In this pull, no such campaigns were found during the selected period. No action is required. AppsFlyer reports this as a successful pull. |
+| No data | The partner API responded but returned no data. This usually happens because your campaigns are paused and there's no data to pull. No action is required unless you expect campaigns to be running. If they are, review the integration. |
+| Partner API is not responding | The integrated partner's server isn't responding to AppsFlyer, or the partner API rate-limited the request. AppsFlyer retries on the next scheduled pull. Wait six hours. If the status persists, contact AppsFlyer support. |
+| The partner API is not returning data for the information provided. Check the configuration | The media source didn't return data despite active campaigns (campaigns with conversions in AppsFlyer), which points to a misconfiguration at the media source level. Reconnect the account via OAuth and verify the right ad account was selected. |
+| Waiting for sync | The account or app is still syncing with the ad network. Wait for the sync to complete. |
+| Mixed | Shown in Cost settings > Media source page only, when the apps in an integration have different statuses. Open the Integration page to view the status of each app. Not displayed on the status dashboard. |
 
 </Accordion>
 
-## Account-level cost configuration supporting media sources
+## Cost integration and agencies
 
-ROI360 customers can create and edit cost integrations at the account level in **Cost settings** and in the **Cost** tab. The following media sources support account-level cost configuration:
+If an advertiser uses an agency to run their campaigns, we recommend that the agency, and not the advertiser, integrate with the relevant partners. Otherwise, cost data is duplicated if both the advertiser and agency integrate with a media source using the same credentials for the same app.
 
-<Accordion title="Supporting media sources">
-
-| Display name | Integration ID |
-| --- | --- |
-| AdAction3 | `adaction5_int` |
-| Adbloom | `adbloom_int` |
-| AdColony | `adcolony_int` |
-| AdGate Media | `adgatemedia_int` |
-| adjoe GmbH | `adjoe_int` |
-| Adikteev Retargeting | `trademob_int` |
-| Apple Search Ads | `iossearchads_int` |
-| AppLift | `applift_int` |
-| AppLovin | `applovin_int` |
-| Aura | `aura_int` |
-| Blind Ferret Agency | `blindferret_int` |
-| Bluestacks | `bluestacks_int` |
-| ByteDance | `bytedance_int` |
-| Chartboost | `chartboost_int` |
-| Dataseat | `dataseat_int` |
-| Digital Turbine Legacy | `appia_int` |
-| Digital Turbine On Device | `digitalturbine_int` |
-| Domob | `domobc_int` |
-| DV360 | `dv360_int` |
-| GlobalWide Media | `globalwide_int` |
-| Google Ads | `googleadwords_int` |
-| InMobi | `inmobi_int` |
-| InMobi DSP | `inmobidsp_int` |
-| Liftoff Influence | `jetfuelit_int` |
-| Mediaforce | `mediaforce_int` |
-| Meta Ads | `facebook` |
-| Mintegral | `mintegral_int` |
-| Mobupps | `mobupps_int` |
-| Moloco | `moloco_int` |
-| MoPub Acquire | `crossinstall_int` |
-| Opera Mobile | `operaevent_int` |
-| Persona.ly RTB | `personalyrtb_int` |
-| Pinterest | `pinterest_int` |
-| Pinsight | `pinsight_int` |
-| Point2Web | `point2web_int` |
-| Reddit | `reddit_int` |
-| Smadex | `smadex_int` |
-| Snapchat | `snapchat_int` |
-| Tapjoy | `tapjoy_int` |
-| Taptica | `taptica_int` |
-| TikTok | `tiktokglobal_int` |
-| TUNE | `hasoffers_int` |
-| Unity Ads | `unityads_int` |
-| X (Twitter) | `twitter` |
-
-> 📘 **Note**
->
-> Additional media sources are available through InCost ad networks. To get the full list of supported InCost ad networks, contact your Customer Success Manager (CSM).
-
-</Accordion>
+If an advertiser stops working with an agency, cost data is still pulled if the agency still has cost configured for the app. The advertiser must ask the agency to delete their cost integration to stop this data from being pulled.
 
 ## Traits and limitations
 
-| Trait | Description |
+| Trait | Remarks |
 | --- | --- |
-| Agencies | Agencies can't use Cost settings to perform cost integrations across multiple apps simultaneously. |
-| Future apps automatically inherit the cost settings feature in Account-level Cost settings | Currently not supported |
-| Cost data behavior when the advertiser and agency connect to the same ad network | If both an **advertiser and an agency connect to cost integration** for the same ad network account (for example, Google Ads), cost data is pulled from the **account that receives attribution**.<br /><br />**Example scenario:**<ul><li>The advertiser connects to cost integration using the advertiser credentials</li><li>The agency connects cost integration using agency credentials</li><li>Attribution assigned to the agency account.</li></ul>**Result:**<ul><li>ROI360 pulls **cost data from the agency connection**.</li><li>The **advertiser connection** shows as No Data.</li></ul> |
-| Google cost integration automatic disconnection | Cost integrations that show a **No Data** or **Invalid credentials** status for more than 365 consecutive days are automatically disconnected. This applies to Google integrations only. |
-| TikTok advertiser ID list configuration | Configure the advertiser ID list at the account level using only advertiser IDs connected to the TikTok user in the ad network.<br /><br />Advertiser IDs added to the list that are not aligned with the user in the ad network do not return cost data. |
+| Agencies | Agencies can't use Cost settings to perform cost integrations across multiple apps simultaneously, but can use the Cost tab in Partner Marketplace to do so. |
+| Future apps automatically inherit the cost settings feature in account-level Cost settings | Currently not supported. |
+| Cost data behavior when the advertiser and agency connect to the same ad network | If both an advertiser and an agency connect to cost integration for the same ad network account (for example, Google Ads), cost data is pulled from the account that receives attribution. Example: the advertiser connects using advertiser credentials, the agency connects using agency credentials, and attribution is assigned to the agency account. Result: ROI360 pulls cost data from the agency connection, and the advertiser connection shows as No data. |
+| Google cost integration automatic disconnection | Cost integrations that show a No data or Invalid credentials status for more than 365 consecutive days are automatically disconnected. This currently applies only to Google cost integrations. |
+| TikTok advertiser ID list configuration | Configure the advertiser ID list at the account level using only advertiser IDs connected to the TikTok user in the ad network. Advertiser IDs added to the list that aren't aligned with the user in the ad network don't return cost data. |
 
-<div data-zendesk-anchors="h_01K3DGA6SJ82CGNT0R422CF7RY=overview enabling-cost-api=enable-cost-api h_01K3DGA6SJB0R7G9EKH1G76R8K=enable-cost-api h_01K3DGA6SK18MHM5FR6ZDR8Y2G=cost-integration-methods h_01K3DGA6SKDTTPY8Q1JBTCTY7H=site-id-mapping deleting-cost-integrations=delete-cost-integrations h_01K3DGA6SKF8ZA5M9AW6DA0V3J=delete-cost-integrations disabling-cost-api=disable-cost-api h_01K3DGA6SK93AZ8MNMS0VB87YK=disable-cost-api h_01K3DGA6SKCZYP5AX29PW7JQ1T=cost-api-status h_01KQ7V7Q6M2SZX4KWNEM1MQEJV=account-level-cost-configuration-supporting-media-sources specification-and-limitation=traits-and-limitations h_01K3DGA6SKVZ347ZDY599S0Y7Y=traits-and-limitations" />
+<div data-zendesk-anchors="h_01K9S0A1PRMX3VBGHTNQ8C5FJW=overview h_01M43Y9WQ83AK0KTKB9XM8FGM6=note h_01K9S0A1PTQW9YJM3C4LKZRHFB=create-a-new-api-cost-integration h_01K9S0A1PVCXZ3NQ7MWFKTJRH8=additional-steps-specific-media-sources-only h_01M43Y9WQ8HNRN4ZKWRBT9QY9G=map-apps-to-package-names-or-bundle-ids site-id-mapping=map-apps-to-site-ids h_01K3DGA6SKDTTPY8Q1JBTCTY7H=map-apps-to-site-ids h_01M43Y9WQ8V94HB74M6CAKC9PB=note-1 h_01M43Y9WQ8P3XATJS0TBB27ZPQ=select-which-ad-account-to-pull-cost-from deleting-cost-integrations=edit-and-delete-an-integration h_01K3DGA6SKF8ZA5M9AW6DA0V3J=edit-and-delete-an-integration h_01K9S0A1PWRNK08ZQXCF5V3YTM=view-cost-api-status h_01K9S0A1PXJQF2NVC9ZRMLK6HT=view-status-in-cost-settings h_01K9S0A1PYMBX4RQJZC8TNVK3F=view-status-in-cost-tab h_01K9S0A1PZQXN4RTC7VWBLKM9H=cost-integration-and-agencies specification-and-limitation=traits-and-limitations h_01K3DGA6SKVZ347ZDY599S0Y7Y=traits-and-limitations" />
