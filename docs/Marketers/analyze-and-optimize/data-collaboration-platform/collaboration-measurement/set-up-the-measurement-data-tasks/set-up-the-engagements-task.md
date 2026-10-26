@@ -142,7 +142,7 @@ To map the engagement custom source fields, follow these steps
 1. If you are setting a combined **On-site and Off-site campaign**, in the **Map source fields** step, expand the **Data for on-site attribution;** else, skip to the step below.
 2. Map all required fields under **Required**.
 3. (Optional) Expand **Optional enrichment data** to map additional fields.
-4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)
+4. Click **Save**. The **`{source name}` source created** message is displayed.[<Image alt="" src="https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png" width="40.62%" />](https://files.readme.io/670c7ca42d066bf2d874785108d84318387e393512973d2fff5056ab3f5a45cd-38381396764817.png)
 
 </Accordion>
 

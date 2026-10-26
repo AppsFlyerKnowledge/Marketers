@@ -181,7 +181,7 @@ To map the conversion custom source fields, follow these steps
    >
    > If the campaign is combined with an Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
 
-4. Click **Save**. The **`{source name}` source created** message is displayed.[![](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)
+4. Click **Save**. The **`{source name}` source created** message is displayed.[<Image alt="" src="https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png" width="40.33%" />](https://files.readme.io/7741040e43860b110ad1ffa63a55dc08c51cf595717c2fde28f8e7501a1fddfc-38345272613265.png)
 
 </Accordion>
 

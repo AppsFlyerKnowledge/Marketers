@@ -171,7 +171,7 @@ There are 2 cohort trend types:
 
 In this example, the same raw data is used to generate the two cohort trend types. The raw data table contains attribution events related to different users A, B, C, and D. The users engage with an ad, install the app, and post-conversion make one or more purchases. Cohort day 0 is the install day.
 
-[![CohortExample_en-us1.png](https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+[<Image alt="CohortExample_en-us1.png" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
 
 </Accordion>
 

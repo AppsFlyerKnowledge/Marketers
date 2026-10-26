@@ -203,12 +203,12 @@ If you haven’t released your app to the app store yet and want to test the int
 
 7. Go to that URL, you may see this:
 
-[![](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)
+[<Image alt="" src="https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png" width="486px" />](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)
 
 8. Install the App on your device
 
 9. Go to Kahuna’s dashboard and search for the user (you can enable Kahuna debugging and look at the logs to get the Kahuna unique device ID for that user.. “dev\_id”... or if your app requires log-in and you pass credentials to Kahuna, then you can search by that credential also). Once you find the user, you should see an “af\_install” event for that user.
 
-[![](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)
+[<Image alt="" src="https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png" width="629px" />](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)
 
 <div data-zendesk-anchors="h_01H9FKAF22A3FTGC7CSE5K0CY4=important h_01H9FKAF22W59PMYJRFW8HKBQ7=important-note h_01H9FKAF222ES9240V0THQQ5X0=setting-up-kahuna h_01H9FKAF227SZWFTCP9P1B7HEK=integration-tab h_01H9FKAF22EFF1F8D2QR1F38PV=activate-partner h_01H9FKAF221EXQYBJGS8GFRF4S=general-settings h_01H9FKAF22XMJW7A89MBD0J276=obtaining-the-kahuna-secret-key h_01H9FKAF2258JVR3XS6P7TT8H3=default-postbacks h_01H9FKAF22DMF1NNJRY3SJB5XX=attribution-link-tab h_01H9FKAF22KPY1ABFJN63XZ5CM=cost-tab h_01H9FKAF22KRDEFTVBR954JSJT=ad-revenue-tab h_01H9FKAF22HJPHZZM59TQ7RRFM=permissions-tab h_01H9FKAF22A5910NXRFDGC1JTG=view-user-attribution-data-in-kahuna h_01H9FKAF22KW2J6H2B6F9AMDP9=testing-with-sandbox" />

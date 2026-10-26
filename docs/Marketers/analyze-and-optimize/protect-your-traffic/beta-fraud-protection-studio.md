@@ -56,7 +56,7 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
   * **Blocked** In real-time
   * **Reported** as post-attribution fraud
 
-[![Image description](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+[<Image alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
 **Mechanism with FPS:** Installs are either considered:
 
 * **Valid** attribution
@@ -66,7 +66,7 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
     * **Blocked** In real-time
     * **Reported** as post-attribution fraud
 
-[![Image description](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+[<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
 
 > 📘 **Note**
 >
@@ -85,7 +85,7 @@ Tagged detections aren't reflected in fraud reports. Tagged detections are avail
 
 **Protect360 dashboard**:
 
-[![example10.png](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
 
 * Total tagged count in the upper page components (1)
 * Overtime trend of “Detection Status” (2)
@@ -160,7 +160,7 @@ The detection status allows you to choose the [detection](/docs/beta-fraud-prote
 1. In the Click Flood window, choose the [detection mode](/docs/beta-fraud-protection-studio#fps-modes).
 2. Click the **Save** button at the bottom of the page.
 
-   [![Expandable Image](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   [<Image alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
 
 #### **Current detection status**
 

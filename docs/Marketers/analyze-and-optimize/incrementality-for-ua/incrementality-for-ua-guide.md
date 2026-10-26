@@ -331,7 +331,7 @@ The bottom of the dashboard is the **Cumulative incremental installs** graph whi
 * All selected campaigns will share the same holdout regions.
 * Incrementality insights will be presented at the cell level, and not at the individual campaign level.
 
-[![Channel level experiments dashboard cropped narrower.png](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
+[<Image alt="Channel level experiments dashboard cropped narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
 
 </Accordion>
 

@@ -27,7 +27,7 @@ x-zendesk:
 
 <Accordion title="Watch">
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/a65pnqoyxw/swatch" width="100%" />
+<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/a65pnqoyxw" providerUrl="https://fast.wistia.com" />
 
 </Accordion>
 
@@ -218,7 +218,7 @@ Learn about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-p
 
 <Accordion title="Watch">
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/3ypfld8enr/swatch" width="100%" />
+<Embed title="[Legacy] X Ads (formerly Twitter Ads) integration setup" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/3ypfld8enr" providerUrl="https://fast.wistia.com" />
 
 </Accordion>
 

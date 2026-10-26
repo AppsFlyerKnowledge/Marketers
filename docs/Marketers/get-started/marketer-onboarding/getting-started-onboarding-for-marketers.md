@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board.
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/gamcb25kgu/swatch" width="100%" />
+<Embed title="Getting started—Onboarding for marketers" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
 ## Introduction
 

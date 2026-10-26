@@ -129,7 +129,7 @@ To set iOS credentials, follow these steps:
 <Accordion title="1.2 Set the App Store Connect key">
 
 1. Enable Receipt validation. #enable-receipt-validation
-2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload** in the **In-App Purchase key** field to upload the p8 file.
+2. Under the **App Store Connect keys** step, click [<Image alt="" src="https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png" width="2.45%" />](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload** in the **In-App Purchase key** field to upload the p8 file.
 3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
 
    * **Key ID**
@@ -240,7 +240,7 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 **To upload the service account private key to AppsFlyer, follow these steps**:
 
 1. <Anchor target="_blank" href="/marketers/docs/about-receipt-validation#activate-receipt-validation">Activate Receipt validation</Anchor><Anchor target="_blank" href="/marketers/docs/about-receipt-validation#activate-receipt-validation">.</Anchor>
-2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key** field, click [![](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload**.
+2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key** field, click [<Image alt="" src="https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png" width="2.23%" />](https://files.readme.io/962b88087a7109e6131124969c8571df8574e8a6839f4498c176d7c161906c40-42138428770705.png)  **Upload**.
 3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
 4. Click **Validate key**. **Note:**
 
@@ -299,7 +299,7 @@ In a sandbox environment:
 
 <Accordion title="Test in-app purchase and subscription revenue">
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
 
 **To test in-app purchase and subscription revenue**:
 

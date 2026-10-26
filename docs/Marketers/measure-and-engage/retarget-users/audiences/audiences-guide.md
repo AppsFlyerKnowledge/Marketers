@@ -551,7 +551,7 @@ The **Campaign metrics** section of the Audiences dashboard displays data for ca
 
 The initial **Campaign metrics** view displays summary campaign data for each audience:
 
-[![campaign_metrics_summary_view.jpg](https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg)](https://files.readme.io/3b3c1878471a1b77cb7e4296b966302873caa6313f8779b99f4f3687c36bfa5d-46335625093009.png)
+[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://files.readme.io/3b3c1878471a1b77cb7e4296b966302873caa6313f8779b99f4f3687c36bfa5d-46335625093009.png)
 
 | Column | Description |
 | --- | --- |

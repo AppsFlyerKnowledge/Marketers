@@ -93,7 +93,7 @@ To set iOS credentials, follow these step:
 <Accordion title="1.2 Set the App Store Connect key in AppsFlyer">
 
 1. <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#activate-roi360-store-revenue">Enable ROI360 Store revenue</Anchor>.
-2. Under the **App Store Connect keys** step, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png) **Upload** in the **In-App Purchase key** field to upload the p8 file.
+2. Under the **App Store Connect keys** step, click [<Image alt="" src="https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png" width="2%" />](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png) **Upload** in the **In-App Purchase key** field to upload the p8 file.
 3. In the section titled **App Store Connect keys**, paste the values you copied from App Store Connect.
 
    * **Key ID**
@@ -217,7 +217,7 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 **To upload the Service Account Private Key to AppsFlyer, follow these steps**:
 
 1. <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#activate-roi360-store-revenue">Enable ROI360 Store revenue</Anchor>.
-2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key** field, click [![](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)  **(Upload icon).**
+2. Under the **Service Account Key and Permissions** step, in the **Upload Google JSON key** field, click [<Image alt="" src="https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png" width="2.2%" />](https://files.readme.io/83e35630c777ef41478e3743591733723e340c2cb885fab2072ca51b3ce95b47-42158637499665.png)  **(Upload icon).**
 3. Upload the JSON file you downloaded in [step 1.2](#12-configure-your-service-account-in-the-google-cloud-platform).
 4. Click **Validate Key.** **Note:**
    * After setting service account credentials and permissions, it can take up to 24 hours to be able to use them. This may cause you to receive errors when trying to validate the key or perform a validation test.
@@ -596,7 +596,7 @@ Once the app with the SDK connector is released, <Anchor target="_blank" href="
 
 If you completed onboarding for Receipt Validation but want to activate the ROI360 Store revenue product, perform the following:
 
-1. In AppsFlyer, from the side menu, open [![](https://files.readme.io/e759a4435ce6a34eaa31454483b3c75fffc2830c8bc575d66d9fd8e7acc76a97-42158637603601.png)](https://files.readme.io/e759a4435ce6a34eaa31454483b3c75fffc2830c8bc575d66d9fd8e7acc76a97-42158637603601.png) **Settings** and under **ROI360** select **Revenue Settings**.
+1. In AppsFlyer, from the side menu, open [<Image alt="" src="https://files.readme.io/e759a4435ce6a34eaa31454483b3c75fffc2830c8bc575d66d9fd8e7acc76a97-42158637603601.png" width="2.54%" />](https://files.readme.io/e759a4435ce6a34eaa31454483b3c75fffc2830c8bc575d66d9fd8e7acc76a97-42158637603601.png) **Settings** and under **ROI360** select **Revenue Settings**.
 2. Open the **Purchases & subscriptions** tab. A banner appears stating that ROI360 is available but not active.
 3. Click **View product comparison** to understand the benefits, including refund attribution, net revenue reporting, and full subscription lifecycle measurement.
 4. Click **Activate ROI360.**

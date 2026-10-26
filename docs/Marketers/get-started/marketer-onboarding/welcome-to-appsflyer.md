@@ -33,7 +33,7 @@ App attribution **determines which campaigns, partners, and channels drive your 
 
 ## What can you do with AppsFlyer?
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/471j74dt90/swatch" width="100%" />
+<Embed title="Welcome to AppsFlyer" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **At a glance:** How to log in to your account for the first time and how to switch between your accounts.
 

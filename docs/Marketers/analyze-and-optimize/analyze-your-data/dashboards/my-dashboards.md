@@ -59,14 +59,14 @@ The My Dashboards user interface is designed for interactive dashboard building.
 
 1. In AppsFlyer, from the side menu, go to **My Dashboards** and click + (Create new dashboard).
    * Alternatively, in the top-right of the dashboard, click **New** > **+ Create new**.  
-     [![](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
+     [<Image alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
 2. Enter a name for your dashboard, select the apps you want included, and click **Save**.
 3. Click **+ New widget** and select the type of widget you want to add (table, KPI, line, bar, column, or donut).
 4. Configure the widget by adding the metric(s) and group by dimension(s) you want and click **Apply**.
 5. In the top-right of the dashboard, click **Save**.  
-   [![](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
+   [<Image alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
 6. In the top-right of the dashboard, click the **Share** button, select whether to keep your dashboard private or share it with other team members, and click **Done**.  
-   [![](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
+   [<Image alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
 
 </Accordion>
 
@@ -81,10 +81,10 @@ The My Dashboards user interface is designed for interactive dashboard building.
 1. In the top-right of the dashboard, click **+ Create new** and select the type of widget you want to create: Table, KPI, Chart, in-app events table, in-app events chart, Event widgets, text, or Custom metric.  
    **Note:** Both the In-app events table and the in-app events chart quickly [show the top events and user behaviour](/docs/my-dashboards#traits-and-limitations).
 
-   [![image (9).png](https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png)](https://files.readme.io/9a1555adb0185d6c653db9a09c596c66c227b880a7ec94d788d4586bfae8fe78-31801845447697.png)
+   [<Image alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://files.readme.io/9a1555adb0185d6c653db9a09c596c66c227b880a7ec94d788d4586bfae8fe78-31801845447697.png)
 
    * If you choose Chart, when the chart opens, you also choose the kind of chart: line, Bar, Column, Donut, stacked area, or Combo (a mix of line and column).  
-     [![charts.png](https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png)](https://files.readme.io/c93e3c892ad262522b79680fdf388a11528b3c48b7395c51cadfc07280bb7720-31801801161233.png)
+     [<Image alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://files.readme.io/c93e3c892ad262522b79680fdf388a11528b3c48b7395c51cadfc07280bb7720-31801801161233.png)
    * The Text widget is unique in that it allows you to add titles for dashboard sections, share guidelines, knowledge, insights, goals, or usage guidance with other team members, helping turn dashboards into self-explanatory reports.
    * **Event widgets** let you group by event name to compare actions, revenue, and engagement across sources, geos, and additional dimensions, side by side, across both LTV and Actual (Activity) periods. Use Event widgets to see which in-app events drive the most unique users and revenue, measure revenue trends by media source, and drill down into event performance with up to 4 levels of grouping.
 2. [Optional] Enter a name for your widget.
@@ -453,7 +453,7 @@ Here's what to keep in mind when analyzing web data in this dashboard:
 3. If the dashboard view you want isn't in the list of pinned and recently viewed dashboards, at the top of the dashboard that's currently showing, select the one you want to view from the dropdown.  
    [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)
 4. Select the apps, view type, date range, and display filters.  
-   [![image (3).png](https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png)](https://files.readme.io/f7489ebcb3f87b8871fb08cac878ddc0a9b01440d67c6b6862e9157c8e7fbe3a-23901452545681.png)
+   [<Image alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://files.readme.io/f7489ebcb3f87b8871fb08cac878ddc0a9b01440d67c6b6862e9157c8e7fbe3a-23901452545681.png)
 
 </Accordion>
 
@@ -792,7 +792,7 @@ To use a stacked area chart:
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[![](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
+[<Image alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
 
 For bar, column, line, and combo charts, you can add multiple metrics.
 
@@ -912,7 +912,7 @@ You can apply one of the following formatting options to your table cells:
 
 <Accordion title="View types">
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/31zhcq4hv7/swatch" width="100%" />
+<Embed title="My Dashboards" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/31zhcq4hv7" providerUrl="https://fast.wistia.com" />
 
 Data in the dashboard is presented via view types Unified, User acquisition, and Retargeting as described in the figure that follows.
 

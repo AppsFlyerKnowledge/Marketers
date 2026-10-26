@@ -120,7 +120,7 @@ Users log in through the IdP authentication plugin or webpage and are then direc
 
 Users enter AppsFlyer via the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">AppsFlyer SSO login page</Anchor> by clicking **Login with SSO** and entering their email address. They are then directed to the IdP for authentication and redirected to the AppsFlyer homepage.
 
-[![AppsFlyer_login_page.png](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+[<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
 
 > 📘 **Note**
 >

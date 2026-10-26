@@ -302,7 +302,7 @@ Complete the following procedures to connect Snowflake to Data Locker.
 2. In the menu bar, select your name.  
    Your account ID and region display.
 
-   [![Snowflake account details](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)
+   [<Image alt="Snowflake account details" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)
 
 **To connect Data Locker to Snowflake**:
 

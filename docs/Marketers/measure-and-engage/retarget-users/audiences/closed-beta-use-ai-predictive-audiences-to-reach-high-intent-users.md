@@ -54,7 +54,7 @@ In this step, you define what you want Predictive Audiences to predict by select
 2. In **Audiences**, click **New predictive audience**.
 3. Enter an audience name.
 
-   [![Define goal (values entered).png](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
+   [<Image alt="Define goal (values entered).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
 4. Select an app.
 5. Select a target event.
 6. Select a prediction goal (**Likely to purchase**).
@@ -98,7 +98,7 @@ In this step, you connect the predictive audience to your partners so it can be 
 
 1. Select existing partner connections or add a new connection.
 
-   [![Connect to partners.png](https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png)](https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png)
+   [<Image alt="Connect to partners.png" src="https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png" width="1633px" />](https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png)
 2. Review your selections in the **Summary** on the right.
 3. Click **Connect and finish**.
 

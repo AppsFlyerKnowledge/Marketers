@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** Define your own dimensions and use them to group and view data in the Overview dashboard.
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/tvcdofnwjo/swatch" width="100%" />
+<Embed title="Custom dimensions" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/tvcdofnwjo" providerUrl="https://fast.wistia.com" />
 
 ## Overview
 

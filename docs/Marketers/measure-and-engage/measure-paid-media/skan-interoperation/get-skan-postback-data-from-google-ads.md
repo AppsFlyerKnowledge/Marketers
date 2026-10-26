@@ -73,7 +73,7 @@ In order to see SKAN installs attributed to Google Ads in the AppsFlyer SKAN das
    * If the Google account is associated with multiple apps, log in once, and all apps are authorized. In other words, there is no need to authorize on a per-app basis.
    * AppsFlyer pulls data for all the AppsFlyer iOS apps that your Google account is associated with, irrespective of the app's activate partner setting.
 7. Follow the instructions in the user interface.
-8. In some cases, you might be prompted to give AppsFlyer permission to **Manage your AdWords campaigns.** If so, you must enable the permission. Don't worry, we won't make changes to your campaign settings. [![GoogleManageAdWords.png](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
+8. In some cases, you might be prompted to give AppsFlyer permission to **Manage your AdWords campaigns.** If so, you must enable the permission. Don't worry, we won't make changes to your campaign settings. [<Image alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
 9. Verify that the account status, **waiting for sync** displays.  
    This message persists until we get data from Google Ads (maximum 24 hours.)
 10. Wait until after 02:00 UTC of the next day, then verify that the status changes to **active.**  

@@ -584,7 +584,7 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
 
 After installation, verify that the SDK sends requests by checking network requests in your browser's developer tools.
 
-[![DevTools screenshot](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
+[<Image alt="DevTools screenshot" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
 
 **To make sure the SDK is working, follow these steps:**
 

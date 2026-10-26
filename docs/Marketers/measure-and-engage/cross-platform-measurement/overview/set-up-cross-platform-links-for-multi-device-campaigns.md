@@ -41,7 +41,7 @@ A single template supports your app across multiple platforms (meaning one templ
 
 1. Create or edit a <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template-with-redirection-logic-for-new-app-users">OneLink template</Anchor> for cross-platform attribution.
 2. In the **Cross-platform attribution** section, click the **edit button ->** **Enable cross-platform attribution**
-3. From the relevant platform drop-downs, select the relevant app. **Note**: Each app can only be added to one OneLink template with cross-platform attribution enabled. [![Cross-platform attribution.png](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
+3. From the relevant platform drop-downs, select the relevant app. **Note**: Each app can only be added to one OneLink template with cross-platform attribution enabled. [<Image alt="Cross-platform attribution.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
 ## Set up cross-platform partner integration
 

@@ -72,7 +72,7 @@ Preload/click to download engagement campaign performance data is available as f
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations**.
 2. Select the preload partner.
 3. In the **Integration** tab, turn on **Preload attribution**.  
-   [![](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
 4. Set the **Preload lookback window** duration. Range: 1-180 days.
 5. [Optional] Turn on **Preload equal attribution priority**.  
    This gives deterministic clicks the same attribution priority as preload attribution, meaning that if a deterministic click is registered between the preload referrer engagement and install, the click gets the attribution under the standard last-touch attribution logic, instead of being superseded by the preload referrer.

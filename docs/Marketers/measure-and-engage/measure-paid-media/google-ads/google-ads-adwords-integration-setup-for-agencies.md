@@ -45,7 +45,7 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 <Accordion title="Watch">
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/fzihkki0qd/swatch" width="100%" />
+<Embed title="Google Ads (AdWords)—Integration setup for agencies" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/fzihkki0qd" providerUrl="https://fast.wistia.com" />
 
 </Accordion>
 

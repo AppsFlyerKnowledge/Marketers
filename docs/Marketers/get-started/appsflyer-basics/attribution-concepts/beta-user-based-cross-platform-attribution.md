@@ -42,7 +42,7 @@ This model addresses a key limitation of **device-based attribution:** treating 
 
 The following user journey example illustrates the difference between device-centric and user-centric attribution:
 
-[![user-journey.png](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
+[<Image alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
 
 A user clicks a Meta ad on the web, is redirected to the advertiser's website, signs up, and creates an account. Later, the same user installs the advertiser's iOS app, logs in, and makes a $50 purchase. A few days later, the user sees a YouTube ad, installs the advertiser's PC app, logs in again, and makes a $100 purchase.
 

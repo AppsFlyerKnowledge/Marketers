@@ -41,7 +41,7 @@ Using web-to-app campaigns helps you:
 
 ### Attribution solutions
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/kv67fa3rvn/swatch" width="100%" />
+<Embed title="Convert your mobile web visitors to app users" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/kv67fa3rvn" providerUrl="https://fast.wistia.com" />
 
 For mobile web-to-app users, since there are two clicks (the first that directs to the web page and the second that directs from the web page to the app store), attribution and deep linking are problematic. Users who eventually download the app may be wrongfully attributed, or attributed as organic, even if the first click comes from an ad network, Google click, or owned media source. 
 

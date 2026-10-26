@@ -72,7 +72,7 @@ AppsFlyer uses a number of attribution methods, listed in the table that follows
 
 Upon a new install, if there is more than one valid engagement, **AppsFlyer prioritizes clicks over impressions, and deterministic over probabilistic methods**. The attribution methods are utilized according to the priorities shown in the chart.
 
-[![watefall.png](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
+[<Image alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
 
 Find below detailed descriptions of AppsFlyer attribution models.
 

@@ -37,7 +37,7 @@ x-zendesk:
 
 Watch this video to get the big picture of SDK integration.
 
-<Image alt="" src="https://fast.wistia.com/embed/medias/4iybquc6q3/swatch" width="100%" />
+<Embed title="SDK integration overview" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/4iybquc6q3" providerUrl="https://fast.wistia.com" />
 
 The SDK provides app installation and event recording functionality. You can record installs, sessions, and in-app events. In-app events include, for example, in-app purchases or leveling up in a game. Recording these events can help you evaluate ROI and user quality.
 

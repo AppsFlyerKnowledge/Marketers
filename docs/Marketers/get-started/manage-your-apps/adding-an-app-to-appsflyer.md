@@ -230,7 +230,7 @@ Use this option for the following platforms:
 
 **Full URL:** The full URL of the website for which you want to measure traffic. This is the website on which you have implemented (or will implement) the <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution#2">PBA Web SDK</Anchor>.
 
-[![URL_diagram](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+[<Image alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
 
 Include –
 
