@@ -100,7 +100,7 @@ See what data AppsFlyer pulls, and how it is standardized and mapped to Meta ads
       <td>
         | Bid strategy | Normalized bid strategy |
         | --- | --- |
-        | <ul><li>LOWEST_COST_ WITHOUT_CAP</li><li>COST_CAP</li><li>LOWEST_COST_ WITH_MIN_ROAS</li></ul> | Auto bid |
+        | <ul><li>{"LOWEST_COST_"} WITHOUT_CAP</li><li>COST_CAP</li><li>{"LOWEST_COST_"} WITH_MIN_ROAS</li></ul> | Auto bid |
         | TARGET\_COST | Target bid |
         | Anything else | Unknown |
       </td>
