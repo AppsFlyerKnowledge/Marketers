@@ -141,7 +141,7 @@ Configura las distintas ventanas de atribución para atribuir las nuevas instala
 Configura las diferentes ventanas de atribución para atribuir los re-engagements de los usuarios actuales que han visto o hecho clic en tu anuncio. Tenga en cuenta que solo las re-engagements dentro de la ventana retrospectiva pueden atribuirse a GMP-DV360.
 
 1. Establece la **ventana retrospectiva de re-engagements por clics** en de 1 a 23 horas o de 1 a 30 días.
-2. [Opcional] Activa la **Atribución de re-engagements** por impresiones**** para establecer las ventanas restrocpectivas en de 1 a 23 horas o de 1 a 7 días.
+2. [Opcional] Activa la <strong>Atribución de re-engagements</strong> por impresiones para establecer las ventanas restrocpectivas en de 1 a 23 horas o de 1 a 7 días.
 
 > 📘 **Nota:**
 >

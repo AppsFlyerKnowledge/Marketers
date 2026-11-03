@@ -28,7 +28,7 @@ Puedes optar por recibir notificaciones por el correo electrónico de AppsFlyer 
 
 ### Para acceder a las notificaciones
 
-* Desde la barra superior, abre el menú de la cuenta (menú desplegable de la dirección de correo electrónico) > Notificaciones****
+* Desde la barra superior, abre el menú de la cuenta (menú desplegable de la dirección de correo electrónico) > Notificaciones
 * Desde el ícono de la campana dentro de la plataforma > **Ícono de configuración.**
 
 ### Configuración de notificaciones

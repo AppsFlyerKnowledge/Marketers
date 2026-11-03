@@ -94,9 +94,7 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-Con el siguiente formato: \`/t=attributed_ad_revenue/dt=
-
-/h=23/\`
+Con el siguiente formato: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
 
 #### Jerarquía de carpetas de reportes
 
@@ -212,9 +210,7 @@ La tabla que se proporciona a continuación describe los programas de generació
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-\`/t=attributed_ad_revenue_v2/dt=
-
-/version=&lt;9999999>/\`
+`<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
 
 #### Jerarquía de carpetas de reportes
 
@@ -313,9 +309,7 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-\`/t=attributed_adrevenue_sdk_impression_level/dt=
-
-/h=\`
+`<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### Jerarquía de carpetas de reportes
 
@@ -394,9 +388,7 @@ Los datos del reporte provienen de las transacciones recopiladas a través del c
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-\`/t=stores_rawdata/dt=
-
-/h=\`
+`<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### Jerarquía de carpetas de reportes
 
@@ -481,9 +473,7 @@ Los datos del reporte provienen de transacciones recopiladas a través de:
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
-\`/t=stores_devicedata/dt=
-
-/version=&lt;999999999>\`
+`<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
 
 #### Jerarquía de carpetas de reportes
 

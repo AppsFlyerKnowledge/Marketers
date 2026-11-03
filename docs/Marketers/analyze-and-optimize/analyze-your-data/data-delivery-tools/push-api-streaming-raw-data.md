@@ -179,11 +179,11 @@ Asegúrate de que tu servidor cumpla con los siguientes requisitos:
 1. Haz clic en **Enviar prueba.**   
    Aparece un mensaje de resultado de la prueba debajo del botón **Enviar prueba**.   
    Se envía un mensaje de prueba al endpoint. Si la prueba falla, asegúrate de que <Anchor target="_blank" href="/marketers/es/docs/appsflyer-server-ip-address-ranges-allowlisting">las direcciones IP de AppsFlyer estén en la lista de permitidos</Anchor>.   
-   **¡Nota! Esto solo estará disponible para:
+   ¡Nota! Esto solo estará disponible para:
    * Aplicaciones guardadas previamente en modo SKAN 4 en el estudio de conversión.   
      ¡**Importante**! Se utiliza un mecanismo de tiempo de espera que tiene una duración de 2 segundos. Si AppsFlyer no recibe un mensaje de OK durante este tiempo, AppsFlyer lo considera como un error en el envío del mensaje.
    * Comprueba que tu endpoint recibió el mensaje de prueba.  
-     [Ver una copia del mensaje enviado.](https://docs.google.com/spreadsheets/d/e/2PACX-1vScQf189h3Ry0BU-ejbZYkMZCJRdXXYeOwuNxPEHwY77vCVYWW9P9xCTUSJKmTvVbp_yzLidXD0WGLm/pub?gid=0&single=true&output=csv)**
+     [Ver una copia del mensaje enviado.](https://docs.google.com/spreadsheets/d/e/2PACX-1vScQf189h3Ry0BU-ejbZYkMZCJRdXXYeOwuNxPEHwY77vCVYWW9P9xCTUSJKmTvVbp_yzLidXD0WGLm/pub?gid=0&single=true&output=csv)
 
 </Accordion>
 

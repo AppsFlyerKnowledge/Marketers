@@ -191,7 +191,7 @@ Considera las siguientes opciones para enviar los nuevos campos de consentimient
 * **Utilizando el SDK:**
   * Implementar la última versión del SDK de AppsFlyer (Android - v6.13.0+, iOS - v6.13.1+) para aplicaciones de iOS y Android
   * Elige cómo <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance">enviar los datos de consentimiento</Anchor>
-* **Utilizando las** llamadas a la API**** <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile?">**S2S**</Anchor>:
+* <strong>Utilizando las</strong> llamadas a la API <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile?"><strong>S2S</strong></Anchor>:
   * Antes de enviar eventos in-app a AppsFlyer, actualiza tus llamadas a la API para incluir el objeto `consent_data` para cada evento. Descubre <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">cómo hacerlo</Anchor>.
 
 #### Transición desde la antigua integración GMP (DoubleClick)

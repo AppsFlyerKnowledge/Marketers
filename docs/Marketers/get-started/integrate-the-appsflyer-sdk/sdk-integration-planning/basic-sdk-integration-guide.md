@@ -67,7 +67,7 @@ No obstante, para cumplir con las normativas de protección de la privacidad, co
 Decide si quieres iniciar el SDK en la clase global `Application` o en la clase `Activity`:
 
 * **Inicia el SDK en la clase global** `Application`: Inicializar el SDK en la clase/subclase global `Application` es, generalmente, una buena práctica, ya que la clase `Application` se carga e inicializa antes de que cualquier interfaz de usuario de la aplicación se muestre. Esto asegura que el SDK pueda iniciarse en cualquier situación, incluso con enlaces profundos.
-* **Inicia el SDK en una clase** (inicio diferido)** para permitir que los usuarios opten por compartir datos. Esto se debe a que para obtener el consentimiento del usuario es necesaria una interfaz de usuario (UI) en una clase `Activity`.**
+* <strong>Inicia el SDK en una clase</strong> (inicio diferido)<strong> para permitir que los usuarios opten por compartir datos. Esto se debe a que para obtener el consentimiento del usuario es necesaria una interfaz de usuario (UI) en una clase `Activity`.</strong>
 
 #### INSTRUCCIONES PARA DESARROLLADORES DE ANDROID
 

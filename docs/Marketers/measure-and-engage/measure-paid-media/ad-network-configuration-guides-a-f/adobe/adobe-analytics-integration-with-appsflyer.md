@@ -149,7 +149,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 3. Haz clic en  **Configurar integración**. Serás redirigido a la página de configuración de integración.
 4. **Para editar**: en AppsFlyer, en el menú lateral, selecciona **Colaborar**> **Integraciones activas.Nota:** El selector debe estar <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con el partner.
 5. Configura los postbacks predeterminados enviados a Adobe Analytics. AppsFlyer puede enviar postbacks automáticos tanto para instalaciones como para re-engagements (incluidas las reatribuciones). Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">los postbacks predeterminados</Anchor>.
-6. Desde el **SDK de Adobe Analytics**, como parte del archivo **ADBMobileConfig.XML**, copia el **Report\_Suite\_ID (resaltado en azul) y el** Adobe\_Analytic\_Server\_URL**** (resaltado en verde) y pégalos en los campos correspondientes de la página de integración de Adobe Analytics en AppsFlyer.
+6. Desde el <strong>SDK de Adobe Analytics</strong>, como parte del archivo <strong>ADBMobileConfig.XML</strong>, copia el <strong>Report\_Suite\_ID (resaltado en azul) y el</strong> Adobe\_Analytic\_Server\_URL (resaltado en verde) y pégalos en los campos correspondientes de la página de integración de Adobe Analytics en AppsFlyer.
 
    ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
 7. Haz clic en **Guardar integración**.

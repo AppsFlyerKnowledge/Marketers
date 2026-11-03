@@ -55,7 +55,7 @@ La tabla a continuación especifica la <Anchor target="_blank" href="/marketers/
 
 *Cuando no se informa un tipo de engagement, se establece la prioridad predeterminada (2 para clics, 3 para impresiones).
 
-**Las ventanas de lookback para `engaged_click` y `engaged_view` solo se pueden establecer para redes que no son SRNs. Para los SRN, `engaged_click` y `engaged_view` comparten la misma ventana de lookback que los clics y, por lo tanto, se establecen mediante **Install Click-Through Attribution Lookback**.
+<strong>Las ventanas de lookback para `engaged_click` y `engaged_view` solo se pueden establecer para redes que no son SRNs. Para los SRN, `engaged_click` y `engaged_view` comparten la misma ventana de lookback que los clics y, por lo tanto, se establecen mediante </strong>Install Click-Through Attribution Lookback.
 
 ## ¿Qué redes pueden reportar sobre view engaged y engaged clicks?
 

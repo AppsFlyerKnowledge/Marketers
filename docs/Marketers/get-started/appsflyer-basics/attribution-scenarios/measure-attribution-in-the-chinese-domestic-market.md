@@ -143,7 +143,7 @@ AppsFlyerConversionListener() {
 
 En el primer inicio de la aplicación, se envía al usuario una solicitud de permiso READ\_PHONE\_STATE en la devolución de llamada onResume() de MainActivity.
 
-build.gradle en el módulo de la aplicación****
+build.gradle en el módulo de la aplicación
 
 ```java
 allprojects {
