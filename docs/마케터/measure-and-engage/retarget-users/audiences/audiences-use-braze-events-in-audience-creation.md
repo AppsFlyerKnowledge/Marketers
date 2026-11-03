@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** Braze 메시지 인게이지먼트 이벤트를 앱스플라이어 오디언스로 발송하여 오디언스 정의를 더 정밀하게 할 수 있습니다.
 
-Braze 계정과 앱스플라이어 오디언스 사이의 수신 연결을 설정하여 Braze 메시지 인게이지먼트 이벤트 데이터를 오디언스로 가져올 수 있습니다. 이 데이터는 오디언스를 정의할 때 <Anchor target="_blank" href="%20/docs/audiences-guide#all-about-rulesets">규칙 집합</Anchor>에 사용할 수 있습니다.
+Braze 계정과 앱스플라이어 오디언스 사이의 수신 연결을 설정하여 Braze 메시지 인게이지먼트 이벤트 데이터를 오디언스로 가져올 수 있습니다. 이 데이터는 오디언스를 정의할 때 <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide#all-about-rulesets">규칙 집합</Anchor>에 사용할 수 있습니다.
 
 > 🚧 **필수 조건**
 >

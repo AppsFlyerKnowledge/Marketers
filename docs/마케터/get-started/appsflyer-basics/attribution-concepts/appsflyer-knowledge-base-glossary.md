@@ -756,8 +756,8 @@ iOS 또는 안드로이드와 같은 특정 플랫폼을 위해 개발된 어플
 #### NOI
 
 Non-Organic Install  
-Non-Organic Install, 논오가닉 설치 <Anchor target="_blank" href="/marketers/ko/docs/about-organic-and-non-organic-installs">앱스플라이어가 유료 마케팅 활동이나 온드 미디어 마케팅 활동에 어트리뷰션을 기록하는 앱    
-*예시:*</Anchor>
+Non-Organic Install, 논오가닉 설치 앱스플라이어가 유료 마케팅 활동이나 온드 미디어 마케팅 활동에 어트리뷰션을 기록하는 앱    
+*예시:*
 
 </Accordion>
 
