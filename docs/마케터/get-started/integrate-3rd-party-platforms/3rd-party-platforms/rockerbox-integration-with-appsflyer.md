@@ -1,0 +1,110 @@
+---
+title: Xbox와 앱스플라이어의 통합
+metadata:
+  keywords:
+    - Advertisers
+    - Marketers
+    - Mobile Attribution
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  content_tags:
+    - pm-ravid-naori
+    - Marketers
+    - Mobile Attribution
+  created_at: '2020-11-23T14:55:00Z'
+  edited_at: '2026-10-14T10:30:08Z'
+  id: 360015760757
+  locale: ko
+  section: 3rd-party platforms
+  section_id: 6551199962257
+  url: https://support.appsflyer.com/hc/ko/articles/360015760757
+---
+> **한눈에 보기:**
+
+![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
+
+> 🚧 **중요!**
+>
+> <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
+
+
+**<span id="setting-up-rockerbox"></span>전제 조건:** 연동 설정 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
+
+**연동 활성화 또는 편집 방법:**
+
+1. To activate:연동 활성화 방법: 앱스플라이어의 사이드 메뉴에서협업<strong>></strong>파트너 마켓플레이스**를 선택합니다.  
+   **편집 방법:** 앱스플라이어의 사이드 메뉴에서 **협업**> 활성화된 연동을 선택합니다.**
+2. 파트너를 검색하고 선택합니다.
+3. **연동 설정**을 클릭하십시오. 연동 설정 페이지로 이동합니다.
+4. **연동** 탭에서 연동할 앱을 선택하고 **파트너 활성화**를 켭니다.  
+   **참고: 파트너와의 작업 동안 토글이 활성화되어 있어야 합니다<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">(활성화됨)</Anchor>.**
+5. 아래 설명된 대로 관련 탭을 사용하여 설정을 완료합니다.
+
+<Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">파트너 구성 창 헤더</Anchor>에 대해 자세히 알아보세요.
+
+<div id="integration-tab" />
+
+<Accordion title="연동 탭">
+
+연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
+
+### 파트너 활성화
+
+<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">파트너 활성화</Anchor>에 대해 더 알아보십시오.
+
+### 일반 설정
+
+### 기본 포스트백
+
+앱스플라이어는 유저 인스톨 후 자동 포스트백을 믹스패널로 전송할 수 있습니다. 이 섹션을 사용하여 각 이벤트에 대해 포스트백을 보내는 유저 소스를 정의합니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#default-postbacks">기본 포스트백</Anchor>에 대해 자세히 알아보세요.
+
+**앱을 다운로드하는 모든 유저에 대한 포스트백을 믹스패널로 전송하려면** 모든 미디어소스(오가닉 포함)를 선택하세요.
+
+### 인앱 이벤트 설정
+
+![rockerbox-in-app-events_en-us.png](https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png)
+
+<Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">인앱 이벤트 포스트백</Anchor>에 대해 자세히 알아보세요.
+
+**인앱 이벤트 포스트백 구성 방법:**
+
+2. 인앱 이벤트 포스트백을 설정합니다.
+3. SDK 이벤트를 목록에 추가하려면 이벤트 추가를 클릭합니다.
+5. 수익 보내기 드롭다운 메뉴에서 필요한 옵션을 선택합니다.
+   * **No values & no revenue:** 이벤트 값(event value)를 제외하고 이벤트만 전송합니다.
+   * **Values & no revenue:** 매출 값을 제외한 모든 파라미터를 전송합니다.
+   * **값 있음 및 수익 있음**: 매출 값(이벤트에 존재하는 경우)을 포함하여 모든 이벤트 파라미터를 전송합니다.
+6. 연동 구성을 완료하려면 **연동 저장**을 클릭합니다.
+
+</Accordion>
+
+<div id="attribution-link-tab" />
+
+<Accordion title="어트리뷰션 링크 탭">
+
+이 파트너에 대해 어트리뷰션 링크를 사용할 수 없습니다.
+
+</Accordion>
+
+<div id="cost-tab" />
+
+<Accordion title="비용 탭">
+
+</Accordion>
+
+<div id="ad-revenue-tab" />
+
+<Accordion title="광고 수익 탭">
+
+</Accordion>
+
+<div id="permissions-tab" />
+
+<Accordion title="권한 탭">
+
+이 파트너에 대한 권한은 사용할 수 없습니다.
+
+</Accordion>
+
+<div data-zendesk-anchors="h_01H9HWJW82HZ9FR31VHHRBZ3EM=%EC%A4%91%EC%9A%94 h_01H9HWJW83BKP8DSYTV6YGPHK7=setting-up-rockerbox h_01H9HWJW83WDGQKKMM942NPA1S=integration-tab activate-partner=%ED%8C%8C%ED%8A%B8%EB%84%88-%ED%99%9C%EC%84%B1%ED%99%94 h_01H9HWJW83Z4NGT000091AHX0Z=%ED%8C%8C%ED%8A%B8%EB%84%88-%ED%99%9C%EC%84%B1%ED%99%94 general-settings=%EC%9D%BC%EB%B0%98-%EC%84%A4%EC%A0%95 h_01H9HWJW832NQBPK2VS6TS1QK7=%EC%9D%BC%EB%B0%98-%EC%84%A4%EC%A0%95 default-postbacks=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 h_01H9HWJW83CGMBADDBP7EJTR9N=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 inapp-events-settings=%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%84%A4%EC%A0%95 h_01H9HWJW84H4SDVRNZAG1D6N0D=%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%84%A4%EC%A0%95 h_01H9HWJW84G6GXMBTGMHTDPM6R=attribution-link-tab h_01H9HWJW84BZNHN4DRKA33WCVK=cost-tab h_01H9HWJW848DRTKBF3AKR5KYC5=ad-revenue-tab h_01H9HWJW84NTZWKP2FP2WK4FZD=permissions-tab" />
