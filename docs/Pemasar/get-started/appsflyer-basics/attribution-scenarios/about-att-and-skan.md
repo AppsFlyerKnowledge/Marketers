@@ -1,5 +1,5 @@
 ---
-title: Panduan mulai cepat &amp; Pertanyaan Umum (FAQ) untuk iOS 14, ATT, dan SKAN
+title: Panduan mulai cepat & Pertanyaan Umum (FAQ) untuk iOS 14, ATT, dan SKAN
 metadata:
   keywords:
     - Advertisers
