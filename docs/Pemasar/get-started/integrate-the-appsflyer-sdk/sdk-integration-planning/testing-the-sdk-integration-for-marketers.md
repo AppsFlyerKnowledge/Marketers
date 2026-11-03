@@ -167,7 +167,7 @@ Gunakan halaman Uji Integrasi SDK untuk menguji penginstalan non-organik, in-app
 7. Jika Anda memilih **Lainnya**, instal aplikasi dari lingkungan pengembangan Anda.
 8. Tunggu hingga penginstalan non-organik terdaftar di laman **SDK Integration Tests** (Pengujian Integrasi SDK) mengindikasikan bahwa pengujian berhasil. Ini dapat memerlukan waktu hingga 2 menit.
 
-   ![NonOrganic_install](https://support.appsflyer.com/hc/article_attachments/4406213597585)
+   ![NonOrganic_install](https://files.readme.io/3faf784b3d6014e223fdce7b703c6d328ba09af0ea1dde77a8a1f366529e1e00-4406213597585.png)
 
    Jika aplikasi tidak mencatat penginstalan non-organik, kemungkinan alasannya adalah:
    * IDFA tersedia tetapi perangkat uji tidak <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices#mendaftarkan-perangkat-uji-ios">terdaftar dengan pengenal ini di halaman Perangkat uji</Anchor>.
@@ -188,7 +188,7 @@ Untuk kesalahan integrasi, hubungi pengembang Anda.
 3. Luncurkan aplikasi Anda dan mulai hasilkan in-app events.
 4. Anda akan melihat log event ini saat terdaftar secara real time.
 
-   ![Test_SDK_Integration_Inapp_events](https://support.appsflyer.com/hc/article_attachments/4406219047825)
+   ![Test_SDK_Integration_Inapp_events](https://files.readme.io/c501389bcbffd2859a2cb20e5232d57218fc0b75875f9425934c56bc13c12968-4406219047825.png)
 
 #### **Langkah 3: Uji deep link (penargetan ulang)**
 
@@ -207,7 +207,7 @@ Untuk kesalahan integrasi, hubungi pengembang Anda.
 4. Klik **Berikutnya**.
 5. Pindai kode QR dengan perangkat uji terdaftar Anda dan ikuti petunjuk di perangkat Anda. Setelah pengujian selesai, Pengujian Deep Linking terdaftar sebagai berhasil.
 
-   ![TestSDK_DeepLinks_en-us.png](https://support.appsflyer.com/hc/article_attachments/4406221370385)
+   ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
 
 </Accordion>
 

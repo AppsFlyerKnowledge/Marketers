@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Sekilas:** Batasi atau hentikan berbagi data dengan AppsFlyer untuk mematuhi peraturan privasi seperti GDPR dan CCPA.
 
-![OptInOptOut_us-en.png](https://support.appsflyer.com/hc/article_attachments/360010352638)
+![OptInOptOut_us-en.png](https://files.readme.io/bd2cd3e2fa3c443b9cc6a736e3c6b60834f165ad13510b829d40005740615496-360010352638.png)
 
 **Pertanyaan tentang privasi AppsFlyer**: Hubungan privasi antara Anda dan AppsFlyer diatur oleh <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">Kebijakan Privasi Layanan AppsFlyer</Anchor>. Untuk pertanyaan terkait Kebijakan Privasi Layanan ini atau untuk menghubungi petugas perlindungan data kami, kirim email ke: [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Untuk tujuan Pasal 27 Peraturan Perlindungan Data Umum, perwakilan AppsFlyer di UE adalah AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Jerman (hubungi [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 
@@ -54,7 +54,7 @@ Dalam skenario di mana opt-out diaktifkan, ID AppsFlyer akan di-hash.
 
 ### Tidak ikut serta di penginstalan
 
-**![coppa_compliant_appsflyer.png](https://support.appsflyer.com/hc/article_attachments/360002519649)**
+**![coppa_compliant_appsflyer.png](https://files.readme.io/0f2588ad5a4e9d78df88958c6855f5e71498588e35c7a88c3b13c6ef676507f9-360002519649.png)**
 
 **Kapan**: Saat peluncuran pertama (Contoh, <Anchor target="_blank" href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule">kepatuhan COPPA</Anchor>)
 
@@ -124,7 +124,7 @@ Untuk mencegah berbagi data event lewat:
 
 ### Opt-out satu kali
 
-![OpenGDPR-logo-BLK.png](https://support.appsflyer.com/hc/article_attachments/360002512925)
+![OpenGDPR-logo-BLK.png](https://files.readme.io/87560c35c45bf34d8eb7ede3e6bbf90fb4391ab41c7f3186e33a93d8f4f68a6e-360002512925.png)
 
 **Kapan**: Kapan saja (GDPR)
 
@@ -159,7 +159,7 @@ Sebagai gantinya, pada peluncuran pertama gunakan metode `start` dengan ***reque
 **Data dikirimkan ke AppsFlyer:**
 
 * **Saat diinstal:** Data atribusi lengkap dikirim ke AppsFlyer.
-* **Setelah instalasi**: Data in-app event dan data sesi dikirim ke AppsFlyer tanpa data atribusi. Setelah diterima, pengidentifikasi pengguna dianonimkan dan ID AppsFlyer serta alamat IP di-hash. Gambar berikut menunjukkan contoh data yang dianonimkan dan di-hash. [![DataSample_anonymized.png](https://support.appsflyer.com/hc/article_attachments/360018851737)](https://support.appsflyer.com/hc/article_attachments/360018851737)
+* **Setelah instalasi**: Data in-app event dan data sesi dikirim ke AppsFlyer tanpa data atribusi. Setelah diterima, pengidentifikasi pengguna dianonimkan dan ID AppsFlyer serta alamat IP di-hash. Gambar berikut menunjukkan contoh data yang dianonimkan dan di-hash. [![DataSample_anonymized.png](https://files.readme.io/71af1933aee76c2f7a77d24d941ef1976a15f35821448d50eb97db684ed9723c-360018851737.png)](https://files.readme.io/71af1933aee76c2f7a77d24d941ef1976a15f35821448d50eb97db684ed9723c-360018851737.png)
 
 > 📄 **Contoh**
 >

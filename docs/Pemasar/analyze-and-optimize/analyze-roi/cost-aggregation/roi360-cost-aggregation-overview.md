@@ -106,7 +106,7 @@ Untuk sumber media tertentu, biaya dapat diperoleh melalui lebih dari satu metod
 
 **Prioritas metode agregasi biaya kampanye**
 
-![CostPriority.jpg](https://support.appsflyer.com/hc/article_attachments/360014470078)
+![CostPriority.jpg](https://files.readme.io/052420655410713b39c3869a4670465e88d8f7c15a43afc56f11821940fa7c5e-360014470078.jpg)
 
 * Mekanisme ini berdampak pada laporan data agregat dan dashboard.
 * Data biaya klik yang tersedia dalam laporan data lengkap tidak terdampak oleh mekanisme penentuan prioritas.

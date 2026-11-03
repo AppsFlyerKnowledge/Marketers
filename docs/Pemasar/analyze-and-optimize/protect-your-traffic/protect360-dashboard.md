@@ -427,7 +427,7 @@ Dashboard anomali:
 
 <Accordion title="Tab CTIT">
 
-[![Anomalies_CTIT.png](https://support.appsflyer.com/hc/article_attachments/360011641657)](https://support.appsflyer.com/hc/article_attachments/360011641657)
+[![Anomalies_CTIT.png](https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png)](https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png)
 
 **Untuk menampilkan tinjauan CTIT** (angka merujuk pada tangkapan layar sebelumnya):
 
@@ -454,7 +454,7 @@ Tabel **CTIT anomalies breakdown** , di bagian bawah halaman, menampilkan semua
 
 <Accordion title="Tab perangkat baru">
 
-[![anomalies_new_devices](https://support.appsflyer.com/hc/article_attachments/360011641677)](https://support.appsflyer.com/hc/article_attachments/360011641677)
+[![anomalies_new_devices](https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png)](https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png)
 
 Tab **Perangkat baru** memungkinkan Anda mendeteksi sumber media dan ID situs secara visual, yang memiliki <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide#benchmarks-and-tips">rasio tinggi yang mencurigakan dari perangkat baru yang</Anchor> menginstal aplikasi Anda.
 

@@ -590,7 +590,7 @@ Prioritas dijelaskan dengan sangat baik dalam [contoh terperinci](/docs/skan-con
 * Unduh tabel pemetaan CV sebagai file CSV. Klik **Download mapping file.**
 * Dapatkan pemetaan CV menggunakan <Anchor target="_blank" href="/marketers/id/docs/skan-cv-schema-api-for-advertisers">API skema SKAN CV untuk pengiklan</Anchor>.
 
-![CVmapping.png](https://support.appsflyer.com/hc/article_attachments/4407788932113)
+![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
 
 #### Kolom file pemetaan CSV
 

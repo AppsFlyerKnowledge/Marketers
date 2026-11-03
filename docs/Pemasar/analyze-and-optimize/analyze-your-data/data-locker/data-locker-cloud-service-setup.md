@@ -251,7 +251,7 @@ Selesaikan prosedur berikut untuk menyambungkan Snowflake ke Data Locker.
 2. Di bilah menu, pilih nama Anda.  
    ID akun dan wilayah Anda ditampilkan.  
 
-   [![SnowflakeAccountId.png](https://support.appsflyer.com/hc/article_attachments/4412207884433)](https://support.appsflyer.com/hc/article_attachments/4412207884433)
+   [![SnowflakeAccountId.png](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)
 
 **Untuk menyambungkan Data Locker ke Snowflake**:
 

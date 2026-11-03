@@ -128,7 +128,7 @@ Bahkan jika Anda memilih satu hari data retensi, Anda dapat mengambil data sesi 
 
 Laporan Kohort mirip dengan laporan retensi tetapi memiliki lebih dari metrik sesi. Metrik, seperti pendapatan, sesi, dan in-app event semuanya merupakan LTV.
 
-[![CohortForLTV_us-en.jpg](https://support.appsflyer.com/hc/article_attachments/360008407377/CohortForLTV_us-en.jpg)](https://support.appsflyer.com/hc/article_attachments/360008407377/CohortForLTV_us-en.jpg)
+[![CohortForLTV_us-en.jpg](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)
 
 </Accordion>
 
@@ -136,7 +136,7 @@ Laporan Kohort mirip dengan laporan retensi tetapi memiliki lebih dari metrik se
 
 Data event di laman <Anchor target="_blank" href="/marketers/id/docs/activity-dashboard">laman Aktivitas</Anchor> didasarkan pada sesi dan pendapatan dan merupakan **basis aktivitas**. Berarti kronologis dan relevan bagi pengguna aplikasi yang aktif selama rentang tanggal yang ditentukan.
 
-[![Activity_us-en.jpg](https://support.appsflyer.com/hc/article_attachments/360008510978/Activity_us-en.jpg)](https://support.appsflyer.com/hc/article_attachments/360008510978/Activity_us-en.jpg)
+[![Activity_us-en.jpg](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)
 
 </Accordion>
 

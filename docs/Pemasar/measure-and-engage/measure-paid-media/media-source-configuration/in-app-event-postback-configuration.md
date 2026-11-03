@@ -295,7 +295,7 @@ Daftar event yang tersedia untuk pemetaan hanya menampilkan event yang telah dil
 1. Ketik nama event.
 2. Klik **Buat kustom**
 
-   [![In-app_event_postbacks_en-us.png](https://support.appsflyer.com/hc/article_attachments/7901768117905)](https://support.appsflyer.com/hc/article_attachments/7901768117905)
+   [![In-app_event_postbacks_en-us.png](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)
 3. Petakan event ke pengidentifikasi mitra.
 4. Klik **Simpan Integrasi** untuk memastikan pemetaan direkam.
 

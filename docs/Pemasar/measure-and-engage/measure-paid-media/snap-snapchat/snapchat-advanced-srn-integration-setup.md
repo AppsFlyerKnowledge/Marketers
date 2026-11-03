@@ -92,7 +92,7 @@ Anda dapat menyesuaikan nilai ini ke 1-23 jam atau 1-30 hari. Kami merekomendas
 
 Detail lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">click lookback window di sini</Anchor>.
 
-<Image alt="snap-click-window.png" src="https://support.appsflyer.com/hc/article_attachments/360011563618" width="552px" />
+<Image alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" width="552px" />
 
 #### Lookback Window Atribusi View-Through
 
@@ -102,7 +102,7 @@ Anda dapat mengkustomisasi nilai ini ke 1-23 jam atau 1-7 hari. Kami merekomend
 
 Detail lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">atribusi view-through di sini</Anchor>.
 
-<Image alt="snap-viewthrough-window.png" src="https://support.appsflyer.com/hc/article_attachments/360011482617" width="663px" />
+<Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
 
 #### Atribusi interaksi ulang
 
@@ -126,7 +126,7 @@ Tetapkan durasi Re-engagement view-through lookback window (jendela lookback kli
 
 Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (periode ketika in-app event pengguna dikaitkan ke sumber media retargeting (penargetan ulang). Anda dapat mengatur nilai dalam hari (1-90), jam (hingga 23), atau bahkan selamanya:
 
-<Image alt="snap-reengagement-window.png" src="https://support.appsflyer.com/hc/article_attachments/360008512418" width="557px" />
+<Image alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
 
 #### Pengaturan postback in-app event
 

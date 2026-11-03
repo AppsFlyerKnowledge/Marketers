@@ -328,7 +328,7 @@ Proses pembuatan peran khusus melibatkan duplikasi peran **yang telah ditentukan
 **Untuk membuat peran khusus:**
 
 1. Di panel kiri tab **Peran** , klik nama peran **yang telah ditentukan sebelumnya** dengan kemampuan yang paling mirip dengan yang ingin Anda buat. Ini adalah titik awal Anda.
-2. Klik tombol **Duplikat** ![user_management_duplicate_button.png](https://support.appsflyer.com/hc/article_attachments/8781532671249) di pojok kanan atas layar.
+2. Klik tombol **Duplikat** ![user_management_duplicate_button.png](https://files.readme.io/93d3427f3890b6d19470523ab8baa4435489428da62c23cd56a7cca7e8be923c-8781532671249.png) di pojok kanan atas layar.
 
    Tampilan panel kanan berubah, memungkinkan Anda untuk membuat peran kustom baru.
 3. Masukkan nama untuk peran baru yang Anda buat.
@@ -348,7 +348,7 @@ Proses pembuatan peran khusus melibatkan duplikasi peran **yang telah ditentukan
 **Untuk mengedit peran khusus:**
 
 1. Di panel kiri tab **Peran** , klik nama peran khusus yang ingin Anda edit.
-2. Klik tombol **Edit** ![user_management_edit_role_button.png](https://support.appsflyer.com/hc/article_attachments/8781493918225) di sudut kanan atas layar.
+2. Klik tombol **Edit** ![user_management_edit_role_button.png](https://files.readme.io/bf1ba44ddaa3483996c55c9450c42056acb6acbc9e921e339c8af5061f1c0bfb-8781493918225.png) di sudut kanan atas layar.
 
    Tampilan panel kanan berubah, memungkinkan Anda mengedit pengaturan izin peran.
 
@@ -370,7 +370,7 @@ Proses pembuatan peran khusus melibatkan duplikasi peran **yang telah ditentukan
 **Untuk menghapus peran khusus:**
 
 1. Di panel kiri tab **Peran** , klik nama peran khusus yang ingin Anda hapus.
-2. Klik tombol **Hapus** ![user_management_delete_role_button.png](https://support.appsflyer.com/hc/article_attachments/8781434340113) di sudut kanan atas layar.
+2. Klik tombol **Hapus** ![user_management_delete_role_button.png](https://files.readme.io/6a9a97ce9437de6fca16ebb9ed3ac365299e7e558f5075698d20806076c0fd9c-8781434340113.png) di sudut kanan atas layar.
 3. Konfirmasikan bahwa Anda ingin menghapus peran tersebut.
    * Peran khusus hanya dapat dihapus jika tidak ada pengguna yang ditetapkan padanya. Jika ada pengguna yang saat ini ditetapkan ke peran khusus, tetapkan pengguna tersebut ke peran lain sebelum menghapus peran khusus tersebut.
 

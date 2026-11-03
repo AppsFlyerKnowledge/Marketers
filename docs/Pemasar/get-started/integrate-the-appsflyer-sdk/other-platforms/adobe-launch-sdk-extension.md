@@ -357,7 +357,7 @@ Di AppDelegate.m, terapkan kode berikut:
 
 Data konversi dikirim bersama event ke platform Adobe. Variabel-variabel ini memungkinkan Anda menerapkan logika dan aturan pada dimensi, metrik, atau filter laporan.
 
-![adobe_analytics.png](https://support.appsflyer.com/hc/article_attachments/360006050778)
+![adobe_analytics.png](https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png)
 
 1. Masuk ke <Anchor target="_blank" href="https://mobilemarketing.adobe.com">Adobe Mobile Services</Anchor> Anda.
 2. Pilih aplikasi yang relevan dan masuk ke bagian halaman ***Kelola Variabel & Metrik***.

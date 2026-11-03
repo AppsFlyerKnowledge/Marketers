@@ -277,7 +277,7 @@ Gambar berikut menggambarkan bagaimana perbedaan dapat terjadi dalam kaitannya d
 
 **Penargetan ulang aktif**
 
-[![ASA_R_Enabled.png](https://support.appsflyer.com/hc/article_attachments/360002911777)](https://support.appsflyer.com/hc/article_attachments/360002911777)
+[![ASA_R_Enabled.png](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)
 
 **Penargetan ulang dinonaktifkan**
 
