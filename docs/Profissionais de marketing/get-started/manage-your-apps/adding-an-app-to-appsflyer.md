@@ -275,7 +275,7 @@ Use a plataforma web para criar um novo aplicativo web e mensurar visitas ao sit
 
 * **Tamanho:** 1-100 caracteres
 * **Caracteres permitidos:** Letras (qualquer idioma), números, espaços (não no início nem no fim) e caracteres especiais: . - \_ :
-* **Caracteres bloqueados:** ; \`{ }\` $ < > \` \
+* **Caracteres bloqueados:** ; \`{ }\` $ &lt; > \` \
 
 **Exemplo:** Minha Loja Online, Site Corporativo 2024, E-Commerce\_Production
 

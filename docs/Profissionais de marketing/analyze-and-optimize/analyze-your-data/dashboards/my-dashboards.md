@@ -892,7 +892,7 @@ Você pode aplicar uma das seguintes opções de formatação às células da su
 
   * ROAS ≥ **40%** → **Verde** (performance forte).
   * ROAS entre ou igual a **25–39%** → **Amarelo** (dentro do esperado).
-  * ROAS < **25%** → **Vermelho** (abaixo das expectativas).
+  * ROAS &lt; **25%** → **Vermelho** (abaixo das expectativas).
 
   Essa abordagem destaca quais atividades geram resultados fortes, permitindo que você tome decisões mais rápidas e baseadas em dados sobre a otimização das suas campanhas e distribuição do seu orçamento.
 

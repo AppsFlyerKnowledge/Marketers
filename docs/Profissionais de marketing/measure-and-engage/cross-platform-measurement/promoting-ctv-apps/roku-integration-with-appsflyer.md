@@ -29,7 +29,7 @@ A Roku é uma ad network única que possui um inventário de anúncios disponív
 
 * CTV para CTV: anúncios de CTV que impulsionam instalações e eventos de aplicativos de CTV.
 * Mobile para mobile: anúncios de aplicativos mobile que impulsionam instalações e eventos de aplicativos mobile.
-* CTV para mobile < > mobile para CTV: impressões de anúncios em uma plataforma, que impulsionam instalações e eventos em outra plataforma.
+* CTV para mobile &lt; > mobile para CTV: impressões de anúncios em uma plataforma, que impulsionam instalações e eventos em outra plataforma.
 
 ### Fluxo de atribuição da Roku
 

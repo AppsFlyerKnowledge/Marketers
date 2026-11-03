@@ -989,7 +989,7 @@ Garantir que todos os eventos selecionados ocorram na primeira janela de ativida
 
 ✅ Todos os eventos ≥ 3 % das instalações
 
-⚠️ Um ou mais eventos < 3 %
+⚠️ Um ou mais eventos &lt; 3 %
 
 </Accordion>
 
