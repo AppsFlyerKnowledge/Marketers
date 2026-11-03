@@ -49,7 +49,7 @@ A AppsFlyer pode enviar postbacks automáticos de instalação e reengajamento a
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos a este parceiro.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para que toda a sua base de usuários fique disponível para ser reportada a este parceiro.
 
-### https://support.appsflyer.com/hc/article_attachments/19284078965009
+### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 1. Para enviar postbacks de eventos in-app ao parceiro de marketing do Snapchat que você está configurando, alterne o In-App Events Postback para **ON**.
 2. Adicione individualmente os eventos in-app (eventos de SDK) que você deseja enviar ao parceiro e <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#mapeamento-de-eventos">mapeie-os conforme necessário.</Anchor>

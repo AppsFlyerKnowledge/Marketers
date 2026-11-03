@@ -49,7 +49,7 @@ x-zendesk:
 
 7. Insira o número no campo **ID de cliente do Google Ads**.
 
-### https://support.appsflyer.com/hc/article_attachments/19284078965009
+### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 1. Para enviar postbacks de eventos in-app para a Bidalgo, alterne a opção In-App Events Postback para **ON**.
 

@@ -206,7 +206,7 @@ Para iOS: faça isso em UserDefaults: <Anchor target="_blank" href="https://deve
 
 | Caso de uso | Plataforma | Método do SDK da AppsFlyer | Método do Kit mParticle-AF |
 | --- | --- | --- | --- |
-| https://support.appsflyer.com/hc/article_attachments/49929254144657 | /docs/ctv-pc-and-console-platform-attribution-concepts | onConversionDataSuccess | checkForDeferredDeepLinkWithCompletionHandler |
+| https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png | /docs/ctv-pc-and-console-platform-attribution-concepts | onConversionDataSuccess | checkForDeferredDeepLinkWithCompletionHandler |
 | links universais | /docs/ctv-pc-and-console-platform-attribution-concepts | continueUserActivity | continueUserActivity |
 | Abertura do app | Exemplo | onAppOpenAttribution | checkForDeferredDeepLinkWithCompletionHandler |
 | Deep linking diferido | com o Android | onConversionDataSuccess | checkForDeepLink |

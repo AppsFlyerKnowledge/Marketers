@@ -82,7 +82,7 @@ A tabela abaixo lista as etapas necessárias para integrar seu jogo da Epic à A
         <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-epic-sample">Integre a API Epic da AppsFlyer</Anchor> ao seu aplicativo com comandos para reportar os seguintes eventos à AppsFlyer.
 
         * Primeira abertura do app
-        * https://support.appsflyer.com/hc/article_attachments/19284078965009
+        * https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
         * Sessions
 
         **Observação**:

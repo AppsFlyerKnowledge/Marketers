@@ -116,7 +116,7 @@ Personalize a tabela clicando no ícone <Image alt="Creative_table_settings_en_u
   * CPM  
     **Atenção:** as métricas do parceiro aparecem com a indicação "Partners" ao lado.
 
-* #### https://support.appsflyer.com/hc/article_attachments/19284078965009
+* #### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
   **Eventos in-app**: use esses dados para entender como criativos específicos afetam a performance de eventos in-app. As métricas calculadas para cada evento incluem:
 

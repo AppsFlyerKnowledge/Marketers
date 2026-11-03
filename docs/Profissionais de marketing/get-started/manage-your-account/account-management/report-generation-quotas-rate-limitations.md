@@ -77,7 +77,7 @@ As ad networks podem obter os seguintes tipos de relatórios de postback:
 | Grupo de postback | Tipo de relatório  <br />(cada tipo de relatório tem uma cota separada) | Cota diária no nível do aplicativo | Cota diária no nível da conta |
 | --- | --- | --- | --- |
 | Postbacks para atribuição | <ul><li>de instalações</li><li>Conversões de retargeting</li></ul> | 24 | 120 |
-| Postbacks para eventos in-app | <ul><li>https://support.appsflyer.com/hc/article_attachments/19284078965009</li><li>Retargeting de eventos in-app</li></ul> | 12 | 60 |
+| Postbacks para eventos in-app | <ul><li>https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg</li><li>Retargeting de eventos in-app</li></ul> | 12 | 60 |
 
 ## Perguntas frequentes
 

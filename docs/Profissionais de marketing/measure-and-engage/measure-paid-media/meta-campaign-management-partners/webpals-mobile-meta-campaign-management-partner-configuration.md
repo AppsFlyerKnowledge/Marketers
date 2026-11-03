@@ -44,7 +44,7 @@ x-zendesk:
    **Observação importante:** O botão de alternância **deve permanecer ativado (ativo) enquanto você trabalhar com o parceiro**. <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">Saiba mais</Anchor>
 5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo.
 
-### https://support.appsflyer.com/hc/article_attachments/19284078965009
+### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 1. Para enviar postbacks de eventos in-app para o Webpals mobile — parceiro de gerenciamento de campanhas da Meta, insira o **Facebook pixel\_id** em ***Configurações de eventos in-app***.
 2. Ative **Postbacks de eventos in-app**.

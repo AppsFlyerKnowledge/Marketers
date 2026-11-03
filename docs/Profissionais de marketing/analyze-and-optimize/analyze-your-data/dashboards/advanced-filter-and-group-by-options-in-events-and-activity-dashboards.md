@@ -56,7 +56,7 @@ Selecione o canal de mídia para o qual você deseja visualizar os dados.
 
 Use o dropdown **localização** para selecionar uma região geográfica específica e visualizar as atividades do aplicativo para essa região.
 
-![](https://support.appsflyer.com/hc/article_attachments/49929152834833)
+![](https://files.readme.io/1bcf56111b6158d09c3c068a550b4d99a16913b3b9f749db6b66a100da08f759-49929152834833.png)
 
 ## Opções de agrupamento
 

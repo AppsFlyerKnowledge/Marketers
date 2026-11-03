@@ -261,7 +261,7 @@ O agente personalizado tem duas fontes de dados, dados em nível de evento e dad
 | Engajamentos | Cliques e Impressões |
 | Instalações e reengajamentos | Conversões |
 | Sessions | Eventos de abertura do aplicativo |
-| https://support.appsflyer.com/hc/article_attachments/19284078965009 | Incluindo a receita de compras in-app |
+| https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg | Incluindo a receita de compras in-app |
 | Dados | Canal de mídia, campanha, geo até o nível de cidade, dispositivo, versão do sistema operacional, versão do aplicativo, anúncio, ID do site e outros campos de eventos brutos |
 | Período dos dados | Últimos 30 dias |
 

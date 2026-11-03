@@ -48,7 +48,7 @@ Atribua as visitas ao site e as conversões ao mecanismo de busca ou mecanismo d
 2. O SDK de atribuição web ou a integração S2S lê o referrer da web, o campo que mostra de onde o usuário veio. A AppsFlyer atribui a visita à web ao canal de mídia de SEO ou AEO correspondente.
 3. Se o usuário depois concluir uma ação relevante, como se cadastrar ou fazer uma compra, a AppsFlyer atribuirá o evento àquele mecanismo de busca ou mecanismo de respostas com IA.
 
-<Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://support.appsflyer.com/hc/article_attachments/52588347122577" width="2266px" />
+<Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/62c5484c5da854dda37a25e681befe49d9f42ae03d2124f7eff513eb7a3c6630-52588347122577.png" width="2266px" />
 
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/about-traffic-source-resolution#etapa-2-identificação-de-fontes-de-mídia">resolução da fonte de tráfego</Anchor>.
 
@@ -68,7 +68,7 @@ Atribua instalações do aplicativo ao mecanismo de busca ou mecanismo de respos
 3. O Smart Script cria um link de atribuição da AppsFlyer. Seu canal de mídia (`pid`) se baseia no referrer da web, ou seja, a página de onde o usuário veio. Por exemplo, um usuário vem de google.com, e a visita não tem indicadores pagos (`pid`, parâmetros UTM, `gclid`, `gbraid` ou `wbraid`). O Smart Script pode então definir `pid=google_organic_seo`.
 4. O usuário instala o aplicativo e o abre pela primeira vez. A AppsFlyer pode atribuir a instalação àquele clique e dar crédito ao mecanismo de pesquisa ou ao mecanismo de respostas de IA que enviou o usuário ao seu site.
 
-<Image alt="Google Chrome 2026-11-01 19.18.06.png" src="https://support.appsflyer.com/hc/article_attachments/52588347123601" width="2250px" />
+<Image alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/8247f06616323e07fe6c4d00bca81ac965b6955ef46f2d8554c245ade866b70a-52588347123601.png" width="2250px" />
 
 Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">configurar o Smart Script para converter visitantes da web</Anchor>.
 
@@ -87,7 +87,7 @@ Atribua aberturas do aplicativo feitas por usuários que já têm seu aplicativo
 2. O conteúdo do seu site está mapeado para o seu aplicativo, e o usuário tem o aplicativo instalado. O link abre o aplicativo diretamente no conteúdo relevante.
 3. O aplicativo é aberto por meio do deep linking. O referrer da web, a página de onde o usuário veio, é enviado à AppsFlyer. A AppsFlyer o usa para atribuir a abertura do aplicativo ao mecanismo de pesquisa ou mecanismo de respostas de IA correspondente.
 
-<Image alt="Google Chrome 2026-11-01 19.18.53.png" src="https://support.appsflyer.com/hc/article_attachments/52588347124113" width="2227px" />
+<Image alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/28b9c4eddb17c2eb6a63ad1c52158b03200bb45bd079d969e72652c94ed6614a-52588347124113.png" width="2227px" />
 
 Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">configurar a atribuição de reengajamento para pesquisa orgânica (SEO) e respostas orgânicas de IA (AEO)</Anchor>.
 

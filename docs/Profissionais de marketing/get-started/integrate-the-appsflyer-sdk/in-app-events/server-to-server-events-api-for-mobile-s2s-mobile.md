@@ -144,7 +144,7 @@ Na chegada, os eventos são marcados com a hora da seguinte forma:
   * Se o `eventTime` relatado for o dia seguinte, o evento é marcado com a hora de chegada.
 * Os eventos com valor `eventTime` inválido recebem a marcação com a hora de chegada da mensagem HTTP.
 
-https://support.appsflyer.com/hc/article_attachments/30263703398161
+https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png
 
 * Um evento é enviado com `eventTime` = Monday 21:00.
 

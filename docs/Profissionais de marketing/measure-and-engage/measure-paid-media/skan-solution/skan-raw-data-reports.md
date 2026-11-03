@@ -149,10 +149,10 @@ Os tipos de relatórios disponíveis são:
         Evento decodificado
       </td>
       <td>
-        https://support.appsflyer.com/hc/article_attachments/19284078965009
+        https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
       </td>
       <td>
-        https://support.appsflyer.com/hc/article_attachments/19284078965009
+        https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
         A partir de 21 de julho de 2021, haverá mudanças na forma como fornecemos dados brutos de eventos in-app, conforme detalhado nas tabelas.
 

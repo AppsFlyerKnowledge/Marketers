@@ -152,7 +152,7 @@ Os dados a seguir **não** estão disponíveis no Standard Creative ETL:
 
 * Dimensão personalizada
 * Métricas personalizadas
-* https://support.appsflyer.com/hc/article_attachments/19284078965009
+* https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 * Dados de IA (elementos e cenas)
 * Dados de retargeting
 
@@ -464,7 +464,7 @@ Limites:
 | Limitação | Atenção |
 | --- | --- |
 | Relatórios por conta | Máximo de 5 relatórios ativos por conta |
-| https://support.appsflyer.com/hc/article_attachments/19276693230353 | Máximo de 30 eventos por relatório |
+| https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg | Máximo de 30 eventos por relatório |
 | Total de colunas por relatório | Máximo de 150 colunas (dimensões + métricas + submétricas de eventos in-app combinadas) |
 | Data Locker - select Creative.jpg | Os dados estão disponíveis para uma janela de lookback de 30 dias. Os dados históricos fora desta janela não estão disponíveis. |
 | Frequência de entrega | Uma vez por dia. A entrega intradiária não é suportada |

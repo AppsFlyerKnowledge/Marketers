@@ -66,7 +66,7 @@ O proprietário de app pode compartilhar qualquer ID de link com qualquer outra 
 
 > 📘 **Nota**
 >
-> * No painel de controle do Google Ads, clique em (3 pontos) >> ***Contas associadas*** >> ***Detalhes da análise de apps de terceiros*** [![](https://support.appsflyer.com/hc/article_attachments/49929446651665)](https://support.appsflyer.com/hc/article_attachments/49929446651665)
+> * No painel de controle do Google Ads, clique em (3 pontos) >> ***Contas associadas*** >> ***Detalhes da análise de apps de terceiros*** [![](https://files.readme.io/d3b59e7e4a46e8ae4c075c02a652faed58c3b48340e2f0d253a1330694bdad93-49929446651665.png)](https://files.readme.io/d3b59e7e4a46e8ae4c075c02a652faed58c3b48340e2f0d253a1330694bdad93-49929446651665.png)
 > * A outra conta precisa aprovar o "compartilhamento".
 > * Assim, a outra conta estará autorizada a executar campanhas do Google Ads para o app.
 
@@ -80,15 +80,15 @@ As agências ou os grandes anunciantes, que gerem várias contas do Google Ads, 
 
 Durante a configuração da MCC, é possível configurar se a MCC ou as subcontas administram as conversões.
 
-[![MCC_1_new.png](https://support.appsflyer.com/hc/article_attachments/49929501047313)](https://support.appsflyer.com/hc/article_attachments/49929501047313)
+[![MCC_1_new.png](https://files.readme.io/a4d1a0e1cdbc0bd2b1ffdc4c3d0953eba58303a00c2eb9524f5e4f639d4e9fd6-49929501047313.png)](https://files.readme.io/a4d1a0e1cdbc0bd2b1ffdc4c3d0953eba58303a00c2eb9524f5e4f639d4e9fd6-49929501047313.png)
 
 Essa configuração pode ser alterada posteriormente, se necessário.
 
-![mmc-googleads-settings.png](https://support.appsflyer.com/hc/article_attachments/49929446653713)
+![mmc-googleads-settings.png](https://files.readme.io/89355ae020242b00c2002153b46ee3525fa71568e581533f2822cac500d28eb7-49929446653713.png)
 
 ## MCC de MCCs
 
-[![](https://support.appsflyer.com/hc/article_attachments/49929446654097)](https://support.appsflyer.com/hc/article_attachments/49929446654097)
+[![](https://files.readme.io/b86511bca7ae029df80cafe46d21aaeb7bb7b4b34b3f65e2368e5ec4064aa614-49929446654097.png)](https://files.readme.io/b86511bca7ae029df80cafe46d21aaeb7bb7b4b34b3f65e2368e5ec4064aa614-49929446654097.png)
 
 Os grandes anunciantes que trabalham com várias agências podem utilizar uma conta MCC de MCCs. Semelhante à conta MCC padrão. Recomenda-se que seja a MCC de nível mais elevado dos MCC ou do Anunciante a gerar o ID da link. A configuração correta para esta estrutura requer que as subcontas selecionem o nível correto de MCC (muito provavelmente, o nível mais elevado de MCC) como o administrador de registros. Se esta for a configuração utilizada, então o ID de link não precisa de ser compartilhado com subcontas e as conversões de importação mais gerais são suficientes.
 

@@ -71,7 +71,7 @@ A tabela abaixo lista as etapas necessárias para integrar um app do Meta Quest 
         Para o método S2S, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-4">integre a API da AppsFlyer</Anchor> no seu aplicativo com comandos para reportar os seguintes eventos à AppsFlyer.
 
         * Primeira abertura do app
-        * https://support.appsflyer.com/hc/article_attachments/19284078965009
+        * https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
         * Sessions
 
         Observação:
