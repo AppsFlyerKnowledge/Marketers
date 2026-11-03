@@ -319,7 +319,7 @@ Quá trình tạo vai trò tùy chỉnh liên quan đến việc sao chép vai t
 **Để tạo vai trò tùy chỉnh:**
 
 1. Trên bảng bên trái của thẻ **Roles**, nhấp vào tên của vai trò **được xác định trước** với các khả năng gần giống với vai trò bạn muốn tạo nhất. Đây là điểm khởi đầu của bạn.
-2. Nhấp vào nút **Duplicate** ![user_management_duplicate_button.png](https://support.appsflyer.com/hc/article_attachments/8781532671249) ở góc trên bên phải của màn hình.
+2. Nhấp vào nút **Duplicate** ![user_management_duplicate_button.png](https://files.readme.io/93d3427f3890b6d19470523ab8baa4435489428da62c23cd56a7cca7e8be923c-8781532671249.png) ở góc trên bên phải của màn hình.
 
    Màn hình của bảng bên phải sẽ thay đổi, cho phép bạn tạo vai trò tùy chỉnh mới.
 3. Nhập tên cho vai trò mới mà bạn đang tạo.
@@ -339,7 +339,7 @@ Quá trình tạo vai trò tùy chỉnh liên quan đến việc sao chép vai t
 **Để chỉnh sửa vai trò tùy chỉnh:**
 
 1. Trên bảng bên trái của thẻ **Roles**, nhấp vào tên của vai trò tùy chỉnh mà bạn muốn chỉnh sửa.
-2. Nhấp vào nút **Edit** ![user_management_edit_role_button.png](https://support.appsflyer.com/hc/article_attachments/8781493918225) ở góc trên bên phải của màn hình.
+2. Nhấp vào nút **Edit** ![user_management_edit_role_button.png](https://files.readme.io/bf1ba44ddaa3483996c55c9450c42056acb6acbc9e921e339c8af5061f1c0bfb-8781493918225.png) ở góc trên bên phải của màn hình.
 
    Màn hình của bảng bên phải sẽ thay đổi, cho phép bạn chỉnh sửa cài đặt quyền của vai trò.
 
@@ -361,7 +361,7 @@ Quá trình tạo vai trò tùy chỉnh liên quan đến việc sao chép vai t
 **Xóa một vai trò tùy chỉnh:**
 
 1. Trên bảng bên trái của thẻ **Roles**, nhấp vào tên của vai trò tùy chỉnh mà bạn muốn xóa.
-2. Nhấp vào nút **Delete** ![user_management_delete_role_button.png](https://support.appsflyer.com/hc/article_attachments/8781434340113) ở góc trên bên phải của màn hình.
+2. Nhấp vào nút **Delete** ![user_management_delete_role_button.png](https://files.readme.io/6a9a97ce9437de6fca16ebb9ed3ac365299e7e558f5075698d20806076c0fd9c-8781434340113.png) ở góc trên bên phải của màn hình.
 3. Xác nhận rằng bạn muốn xóa vai trò.
    * Vai trò tùy chỉnh chỉ có thể bị xóa khi không có người dùng nào được chỉ định cho vai trò đó. Nếu có người dùng hiện được chỉ định cho một vai trò tùy chỉnh, hãy chỉ định những người dùng này cho một vai trò khác trước khi xóa vai trò tùy chỉnh.
 

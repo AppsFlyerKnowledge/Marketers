@@ -590,7 +590,7 @@ Mỗi ưu tiên (tối đa 63) có thể chứa doanh thu, sự kiện trong ứ
 * Tải xuống bảng ánh xạ CV dưới dạng tệp tin CSV. Nhấp vào **Download mapping file.**
 * Nhận ánh xạ CV bằng <Anchor target="_blank" href="/marketers/vi/docs/skan-cv-schema-api-for-advertisers">API lược đồ SKAN CV dành cho nhà quảng cáo</Anchor>.
 
-![CVmapping.png](https://support.appsflyer.com/hc/article_attachments/4407788932113)
+![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
 
 #### Các cột tệp tin ánh xạ CSV
 

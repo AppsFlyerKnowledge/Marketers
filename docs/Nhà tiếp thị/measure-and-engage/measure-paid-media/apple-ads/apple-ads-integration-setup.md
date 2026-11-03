@@ -277,7 +277,7 @@ Các số liệu sau đây minh họa sự khác biệt có thể xảy ra như 
 
 **Tính năng nhắm mục tiêu lại bật**
 
-[![ASA_R_Enabled.png](https://support.appsflyer.com/hc/article_attachments/360002911777)](https://support.appsflyer.com/hc/article_attachments/360002911777)
+[![ASA_R_Enabled.png](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)
 
 **Tính năng nhắm mục tiêu lại tắt**
 

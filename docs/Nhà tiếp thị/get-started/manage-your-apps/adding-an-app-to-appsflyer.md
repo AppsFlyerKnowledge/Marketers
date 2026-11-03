@@ -192,7 +192,7 @@ Bao gồm –
   * Từ <Anchor target="_blank" href="https://developer.roku.com/developer">Bảng điều khiển dành cho Nhà phát triển Roku</Anchor>, hãy nhấp vào tên kênh bạn đang thêm vào AppsFlyer. Thao tác này sẽ mở ra trang Preview & Publish của Roku cho kênh.
   * Số ở cuối URL của trang trong trình duyệt của bạn là ID Kênh:
 
-    <Image alt="find_channel_id.png" src="https://support.appsflyer.com/hc/article_attachments/4411061399569" width="476px" />
+    <Image alt="find_channel_id.png" src="https://files.readme.io/11ef90a222a1deaf6d4718169e5a29f734f0f05d859c009d47b8ae5cb6519639-4411061399569.png" width="476px" />
 
 </Accordion>
 
@@ -214,7 +214,7 @@ Bao gồm –
 
 **ID Ứng dụng:** ID Gói được Samsung chỉ định cho ứng dụng của bạn. Bạn có thể tìm thấy ID này ở cuối URL cửa hàng ứng dụng của ứng dụng của bạn:
 
-<Image alt="samsung_tizen_url_app_id.png" src="https://support.appsflyer.com/hc/article_attachments/7369359502097" width="364px" />
+<Image alt="samsung_tizen_url_app_id.png" src="https://files.readme.io/d4789b59faf551cfc1603dd3d8f95f286d5bb45b59927489bdd2263ac03a3a36-7369359502097.png" width="364px" />
 
 </Accordion>
 

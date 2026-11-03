@@ -35,7 +35,7 @@ Việc ghi lại các sự kiện này có thể giúp bạn xác định:
 
 Để biết thêm thông tin về cách ghi lại các sự kiện trong ứng dụng, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor>.
 
-[![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://support.appsflyer.com/hc/article_attachments/360020171878/In_appEvents_UserJourneys_-_Telecommunications__1_.png)](https://support.appsflyer.com/hc/article_attachments/360020171878/In_appEvents_UserJourneys_-_Telecommunications__1_.png)
+[![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/f5bff70207200a0ebfdc1d1250346091f58431b280a32105a469f9b35d1c39c8-360020171878.png)](https://files.readme.io/f5bff70207200a0ebfdc1d1250346091f58431b280a32105a469f9b35d1c39c8-360020171878.png)
 
 ## Cấu trúc đề xuất cho các sự kiện đã xác định trước
 

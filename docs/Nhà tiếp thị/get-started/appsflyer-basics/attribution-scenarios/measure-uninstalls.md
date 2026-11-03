@@ -162,7 +162,7 @@ Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích
       * Giai đoạn khởi chạy vai trò: Chọn **General availability** (Tính khả dụng chung).
    6. Tìm rồi chọn `cloudmessaging.messages.create`.  
 
-      ![AddPermissions.png](https://support.appsflyer.com/hc/article_attachments/5542178507665)
+      ![AddPermissions.png](https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png)
    7. Nhấp vào **Add** (Thêm).
    8. Nhấp vào **Create** (Tạo).
 3. **Cách chỉ định vai trò gỡ cài đặt FCM cho AppsFlyer:**

@@ -128,7 +128,7 @@ Ngay cả khi bạn chọn một ngày dữ liệu giữ chân người dùng, b
 
 Báo cáo nhóm người tương tự như báo cáo giữ chân nhưng có nhiều số liệu theo phiên hơn. Các số liệu, chẳng hạn như doanh thu, phiên và sự kiện trong ứng dụng đều là LTV.
 
-[![CohortForLTV_us-en.jpg](https://support.appsflyer.com/hc/article_attachments/360008407377/CohortForLTV_us-en.jpg)](https://support.appsflyer.com/hc/article_attachments/360008407377/CohortForLTV_us-en.jpg)
+[![CohortForLTV_us-en.jpg](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)
 
 </Accordion>
 
@@ -136,7 +136,7 @@ Báo cáo nhóm người tương tự như báo cáo giữ chân nhưng có nhi�
 
 Dữ liệu sự kiện trong <Anchor target="_blank" href="/marketers/vi/docs/activity-dashboard">Activity dashboard</Anchor> được dựa trên các phiên và doanh thu và là **cơ sở hoạt động**. Có nghĩa là theo thời gian và liên quan đến người dùng ứng dụng hoạt động trong một phạm vi ngày đã xác định.
 
-[![Activity_us-en.jpg](https://support.appsflyer.com/hc/article_attachments/360008510978/Activity_us-en.jpg)](https://support.appsflyer.com/hc/article_attachments/360008510978/Activity_us-en.jpg)
+[![Activity_us-en.jpg](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)
 
 </Accordion>
 

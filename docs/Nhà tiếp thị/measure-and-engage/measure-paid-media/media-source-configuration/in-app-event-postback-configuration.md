@@ -295,7 +295,7 @@ Danh sách các sự kiện có sẵn để ánh xạ chỉ hiển thị các s�
 1. Nhập tên của sự kiện.
 2. Nhấp vào **Create custom**
 
-   [![In-app_event_postbacks_en-us.png](https://support.appsflyer.com/hc/article_attachments/7901768117905)](https://support.appsflyer.com/hc/article_attachments/7901768117905)
+   [![In-app_event_postbacks_en-us.png](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)
 3. Ánh xạ sự kiện với mã định danh đối tác.
 4. Hãy nhấp vào **Save Integration** để đảm bảo ánh xạ được ghi lại.
 

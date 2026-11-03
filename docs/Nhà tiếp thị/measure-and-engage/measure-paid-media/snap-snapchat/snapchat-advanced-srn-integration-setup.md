@@ -92,7 +92,7 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-30 ngày
 
 Để biết thêm chi tiết về <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">khung thời gian xem lại lượt nhấp tại đây</Anchor>.
 
-![snap-click-window.png](https://support.appsflyer.com/hc/article_attachments/360011563618)
+![snap-click-window.png](https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png)
 
 #### Khung thời gian xem lại phân bổ lượt xem hết
 
@@ -102,7 +102,7 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-7 ngày.
 
 Thông tin chi tiết về <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">phân bổ lượt xem hết tại đây</Anchor>.
 
-![snap-viewthrough-window.png](https://support.appsflyer.com/hc/article_attachments/360011482617)
+![snap-viewthrough-window.png](https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png)
 
 #### Phân bổ thu hút lại
 
@@ -126,7 +126,7 @@ Nếu bạn là đại lý, hãy yêu cầu nhà quảng cáo làm điều đó 
 
 Đặt thời lượng cho **Re-engagement window** (khoảng thời gian khi sự kiện trong ứng dụng của người dùng được phân bổ cho nguồn truyền thông nhắm lại mục tiêu). Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời:
 
-![snap-reengagement-window.png](https://support.appsflyer.com/hc/article_attachments/360008512418)
+![snap-reengagement-window.png](https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png)
 
 #### Cài đặt đăng lại sự kiện trong ứng dụng
 

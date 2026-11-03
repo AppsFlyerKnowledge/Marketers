@@ -357,7 +357,7 @@ Trong AppDelegate.m, hãy triển khai mã sau:
 
 Dữ liệu chuyển đổi được gửi cùng với các sự kiện đến nền tảng Adobe. Các biến này cho phép bạn áp dụng logic và quy tắc đối với các phương diện, chỉ số hoặc bộ lọc báo cáo.
 
-![adobe_analytics.png](https://support.appsflyer.com/hc/article_attachments/360006050778)
+![adobe_analytics.png](https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png)
 
 1. Đăng nhập vào Dịch vụ Adobe Mobile<Anchor target="_blank" href="https://mobilemarketing.adobe.com">.</Anchor>
 2. Chọn ứng dụng có liên quan và vào trang ***Manage Variables & Metrics***.

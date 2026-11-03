@@ -47,7 +47,7 @@ Khung thời gian xem lại lượt nhấp qua mặc định của Meta ads đư
 
 Để so sánh khung thời gian phân bổ lượt nhấp qua và lượt xem hết trên Meta ads với các khung thời gian trên AppsFlyer, hãy truy cập Meta ads. Bạn nên cấu hình khung thời gian phân bổ trên AppsFlyer theo các giá trị của Meta ads như được hiển thị trong ảnh chụp màn hình sau:
 
-![Facebook_Discrepancies.png](https://support.appsflyer.com/hc/article_attachments/4411036047505)
+![Facebook_Discrepancies.png](https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png)
 
 > 📄 **Ví dụ**
 >

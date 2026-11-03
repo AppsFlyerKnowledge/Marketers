@@ -167,7 +167,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 7. Nếu bạn đã chọn **Khác**, hãy cài đặt ứng dụng từ môi trường phát triển của bạn.
 8. Đợi cho đến khi lượt cài đặt không tự nhiên được đăng ký trên trang **Thử nghiệm Tích hợp SDK** cho biết thử nghiệm thành công. Thao tác này có thể kéo dài lên tới 2 phút.
 
-   ![NonOrganic_install](https://support.appsflyer.com/hc/article_attachments/4406213597585)
+   ![NonOrganic_install](https://files.readme.io/3faf784b3d6014e223fdce7b703c6d328ba09af0ea1dde77a8a1f366529e1e00-4406213597585.png)
 
    Nếu ứng dụng không ghi lại lượt cài đặt không tự nhiên, thì lý do có thể là:
    * IDFA khả dụng nhưng thiết bị thử nghiệm không được <Anchor target="_blank" href="/marketers/vi/docs/registering-test-devices#đăng-ký-thiết-bị-thử-nghiệm-ios">đăng ký với mã định danh này trên trang Thiết bị thử nghiệm</Anchor>.
@@ -188,7 +188,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 3. Khởi chạy ứng dụng của bạn và bắt đầu tạo các sự kiện trong ứng dụng.
 4. Bạn sẽ thấy một bản ghi của những sự kiện này khi chúng được đăng ký trong thời gian thực.
 
-   ![Test_SDK_Integration_Inapp_events](https://support.appsflyer.com/hc/article_attachments/4406219047825)
+   ![Test_SDK_Integration_Inapp_events](https://files.readme.io/c501389bcbffd2859a2cb20e5232d57218fc0b75875f9425934c56bc13c12968-4406219047825.png)
 
 #### **Bước 3: Thử nghiệm liên kết sâu (nhắm mục tiêu lại)**
 
@@ -207,7 +207,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 4. Nhấp vào **Next** (Tiếp theo).
 5. Quét mã QR bằng thiết bị thử nghiệm đã được đăng ký của bạn và làm theo hướng dẫn trên thiết bị. Sau khi thử nghiệm kết thúc thì Thử nghiệm Liên kết Sâu sẽ được đăng ký là thành công.
 
-   ![TestSDK_DeepLinks_en-us.png](https://support.appsflyer.com/hc/article_attachments/4406221370385)
+   ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
 
 </Accordion>
 
