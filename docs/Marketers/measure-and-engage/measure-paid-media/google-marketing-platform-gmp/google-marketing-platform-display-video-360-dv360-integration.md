@@ -1,6 +1,6 @@
 ---
 title: >-
-  Plataforma de marketing de Google: integración de Display &amp; Video 360
+  Plataforma de marketing de Google: integración de Display & Video 360
   (DV360)
 metadata:
   keywords:
