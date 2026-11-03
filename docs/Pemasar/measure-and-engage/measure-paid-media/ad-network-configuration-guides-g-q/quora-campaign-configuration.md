@@ -1,0 +1,120 @@
+---
+title: Quora campaign configuration
+metadata:
+  keywords:
+    - Advertisers
+    - Quora
+    - Marketers
+    - Mobile Attribution
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  content_tags:
+    - pm-ravid-naori
+    - Marketers
+    - Mobile Attribution
+  created_at: '2019-02-17T12:56:30Z'
+  edited_at: '2026-06-16T09:55:40Z'
+  id: 360000974737
+  locale: en-us
+  section: Ad network configuration guides (G-Q)
+  section_id: 6552006535953
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/360000974737-Quora-campaign-configuration
+---
+> **At a glance:** Quora, AppsFlyer integrated partners, is one of the most popular online Q&A communities. Over 300 million unique visitors come to Quora every month to ask questions and read insightful answers. Quora's large, engaged audience is one of the key reasons why marketers have found success advertising on Quora.
+
+<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
+
+## Setting up Quora
+
+**Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
+
+**To set up a new integration:**
+
+1. In AppsFlyer, go to **Collaborate > Partner Integrations > Marketplace** tab.  
+   (**To edit an existing integration:** Go to **Collaborate > Partner Integrations > Active integrations** tab.)
+2. Select the relevant app.
+3. Search for the partner and select **Integrate**.
+4. In the **Integration** tab, turn on the **Activate partner** toggle.   
+   Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">Learn more</Anchor>
+5. Complete the configuration using the relevant tabs, as described below.
+
+Quora's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**. Click the items below to read about the tab setup.
+
+For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+
+> 👍 **Tip**
+>
+> * The <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
+> * All the rest of the steps are either descriptive or **optional**
+
+<div id="integration-tab" />
+
+<Accordion title="Integration tab">
+
+### Activate partner
+
+On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
+For more details about partner activation please click <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">here</Anchor>.
+
+Default Postbacks
+
+Send automatic postbacks to Quora following user installs.
+
+> 📘 **Note**
+>
+> The option **Only events attributed to this partner** is the only option with Quora and is selected by default.
+
+</Accordion>
+
+<div id="attribution-link-tab" />
+
+<Accordion title="Attribution link tab">
+
+Generate and save attribution links and send them to the partner for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or a <Anchor target="_blank" href="/marketers/id/docs/onelink-guide">OneLink</Anchor>.  
+<Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
+
+**To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+
+</Accordion>
+
+<div id="cost-tab" />
+
+<Accordion title="Cost tab">
+
+Cost integration is not available for this partner.
+
+</Accordion>
+
+<div id="ad-revenue-tab" />
+
+<Accordion title="Ad revenue tab">
+
+Ad Revenue integration is not available for this partner.
+
+</Accordion>
+
+<div id="permissions-tab" />
+
+<Accordion title="Permissions tab">
+
+In this tab, you can select the permissions to grant Quora, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for Quora, the permissions tab is active and you can grant control to Quora.
+
+Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+### Ad network permissions
+
+* ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
+* ***Allow to configure in-app event postbacks*** - permit the partner to setup in-app event postbacks mapping to itself on the integration tab
+* ***Allow access to your retention report*** - only to the partner's own retention data
+* ***Allow access to your aggregate loyal user data*** - only to the partner's own loyal user data
+* ***Allow access to your aggregate in-app events data** -* only to the partner's own in-app events data
+* ***Allow access to your aggregate revenue dat*a** - only to the revenue data attributed to the partner
+* ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
+
+Learn more about granting <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+</Accordion>
+
+<div data-zendesk-anchors="h_01HKW851RK4MHYEW1AY2E2KH5Q=setting-up-quora h_01HKW851RK9KMV6PJ7YEN7ZMW2=tip h_01HKW851RKYQ0T9XY74EXB4GWX=integration-tab h_01HKW851RKD56502S4PSX8096T=activate-partner h_01HKW851RM09VR496Q7XFB3EMY=note h_01HKW851RM4HP8EVGKD2EJH529=attribution-link-tab h_01HKW851RM4DGBABR81ZJZHBYW=cost-tab h_01HKW851RMQ0KY4CMWP7N4F2T4=ad-revenue-tab h_01HKW851RMV5A43RS3ZFZEPW8Z=permissions-tab h_01HKW851RM2G6Y4J4KQBHAEF3A=ad-network-permissions" />
