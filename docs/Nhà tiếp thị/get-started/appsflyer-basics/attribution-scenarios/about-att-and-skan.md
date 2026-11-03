@@ -1,5 +1,5 @@
 ---
-title: Hướng dẫn bắt đầu nhanh &amp; Câu hỏi thường gặp về iOS 14, ATT và SKAN
+title: Hướng dẫn bắt đầu nhanh & Câu hỏi thường gặp về iOS 14, ATT và SKAN
 metadata:
   keywords:
     - Advertisers

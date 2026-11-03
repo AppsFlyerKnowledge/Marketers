@@ -201,8 +201,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 
 1. Đi đến **Integration** > **API Access**(Tích hợp > Truy cập API).Cuộn xuống phần API Push.
 2. Chọn **SKAdNetwork** làm thực thể phân bổ.
-3. Nhấp vào **Add Endpoint.   
-   Lưu ý**: Bạn có thể xác định 1-3 điểm cuối SKAdNetwork cho mỗi ứng dụng.
+3. Nhấp vào Add Endpoint.   
+   Lưu ý: Bạn có thể xác định 1-3 điểm cuối SKAdNetwork cho mỗi ứng dụng.
 4. Chọn một phương thức HTTP: **POST** hoặc **GET**
 5. Nhập **URL** **Điểm cuối**. Nếu bạn nhận được thông báo *this URL is not safe* (URL này không an toàn), hãy liên hệ với bộ phận hỗ trợ của AppsFlyer.
 6. Chúng tôi không gửi các trường rỗng/trống và mã khóa liên kết. Hãy tính đến điều này khi bạn lập kế hoạch cho quy trình nhập/phân tích.

@@ -546,8 +546,8 @@ Mỗi ưu tiên (tối đa 63) có thể chứa doanh thu, sự kiện trong ứ
 6. Điền đầy đủ các trường theo giao diện người dùng.
    * Lưu ý rằng một ưu tiên có thể bao gồm doanh thu, sự kiện trong ứng dụng hoặc cả hai.
    * Giá trị phạm vi của số lần xuất hiện sự kiện và doanh thu phải xếp theo thứ tự gia tăng (tăng dần) và liên tục. Ví dụ: sau đây là các phạm vi tăng liên tục: 1-5, 5-8, 8-10, v.v. Một phạm vi nhất định có thể được sử dụng nhiều lần (lặp lại) nếu ở lần thứ hai, phạm vi đó nằm trong một kết hợp duy nhất và có cùng một phạm vi như ưu tiên cuối cùng với một phạm vi. Ví dụ: 1-5, 1-5 + thêm vào giỏ hàng.
-7. Nhấp vào **Validate.  
-   Priority is valid message** sẽ hiển thị. Nếu không đúng như vậy, sửa đúng ưu tiên của bạn trước khi tiếp tục.
+7. Nhấp vào Validate.  
+   Priority is valid message sẽ hiển thị. Nếu không đúng như vậy, sửa đúng ưu tiên của bạn trước khi tiếp tục.
 8. Thực hiện một trong những việc sau:
    * Để thêm một ưu tiên, nhấp vào **+ Add priority.** Ưu tiên hiện tại 1 được chuyển xuống thành ưu tiên 2. Hoàn thành các cài đặt ưu tiên như đã mô tả trước đó.
    * Để xoá một ưu tiên, nhấp vào … > **Delete.**

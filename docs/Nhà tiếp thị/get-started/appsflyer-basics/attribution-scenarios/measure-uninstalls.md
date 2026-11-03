@@ -145,8 +145,8 @@ Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích
 1. **Để nhận được ID Dự án**:
    1. Đi đến [FCM console](https://console.firebase.google.com/) (Bảng điều khiển FCM)
    2. Chọn một dự án.
-   3. Đi đến **Project Overview** (Tổng quan Dự án) > **Project settings  
-       (Cài đặt dự án).**
+   3. Đi đến <strong>Project Overview</strong> (Tổng quan Dự án) > Project settings  
+       (Cài đặt dự án).
 
       ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
    4. Sao chép ID Dự án. Bạn sẽ cần ID Dự án cho giai đoạn sau này trong quá trình.
