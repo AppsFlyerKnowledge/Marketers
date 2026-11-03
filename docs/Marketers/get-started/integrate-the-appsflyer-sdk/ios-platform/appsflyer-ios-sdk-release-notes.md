@@ -15,7 +15,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-03-09T19:49:54Z'
-  edited_at: '2026-10-14T12:47:44Z'
+  edited_at: '2026-11-01T11:16:36Z'
   id: 115001224823
   locale: en-us
   section: iOS platform
@@ -44,6 +44,7 @@ The table below provides release notes for supported iOS SDK versions, including
 
 | Version | Release date | Notes |
 | --- | --- | --- |
+| 7.0.4 | 2026-10-27 | <ul><li>Improved handling of Gmail email addresses in the `setUserEmail` API.</li></ul> |
 | 7.0.3 | 2026-10-12 | <ul><li>SDK now supports googleAdManager and cloudX as ad revenue mediation partners.</li><li>Added a net revenue field developers can attach to in-app events, for more precise revenue reporting.</li><li>Reduced the SDK’s memory footprint.</li></ul> |
 | 7.0.1 | 2026-07-22 | <ul><li>Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.</li><li>Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone`</li></ul> |
 | 6.18.1 | 2026-05-25 | <ul><li>Fixed an issue where purchase validation requests from the Purchase Connector that failed due to a network error were permanently lost after the app restarted.</li></ul> |
@@ -65,16 +66,16 @@ The table below provides release notes for supported iOS SDK versions, including
 | 6.15.2 | 2024-08-28 | <ul><li>Fixed an issue with event transmission in the Purchase Connector. This fix does not affect any production versions of the Purchase Connector and is related to its update to version 6.15.x.</li></ul> |
 | 6.15.1 | 2024-08-19 | <ul><li>Fixed an issue with Reinstall Detection that occurred when two or more apps from the same vendor were installed on the device.</li></ul> |
 | 6.15.0 | 2024-08-06 | <ul><li>Added the `logAdRevenue` API to send ad revenue data to AppsFlyer. **Note:** Starting with this version, the AdRevenue Connector should no longer be used; it must be replaced by the `logAdRevenue`method. For more details, see [here](https://dev.appsflyer.com/hc/docs/ad-revenue-2).</li><li>Made internal updates related to the Purchase Connector. Apps that use the Purchase Connector and update to this SDK release must also update their Purchase Connector to v6.15.0.</li></ul> |
-| 6.14.6 | 2024-07-24 | <ul><li>Fixed an issue where the SDK was making redundant calls to the `getConversionData` API (GCD) when starting a new session; this does not impact measurement.</li></ul> |
-| 6.14.5 | 2024-07-03 | <ul><li>Fixed an issue where the SDK would send the manual consent data that had been set by the app, even if the code for sending the manual consent had been removed.</li></ul> |
-| 6.14.4 | 2024-06-10 | <ul><li>Updated Privacy Manifest for the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk">Strict-Mode  SDK</Anchor>.</li></ul> |
-| 6.14.3 | 2024-04-26 | <ul><li>Fixed automated merging of the Privacy Manifest for apps utilizing Cocoapods.</li></ul> |
-| 6.14.2 | 2024-04-19 | SDK Maintenance |
-| 6.14.1 | 2024-04-18 | <ul><li>Added support for the updated Purchase Validation flow. This feature is currently in closed beta. Learn more.</li></ul> |
-| 6.14.0 | 2024-04-07 | <ul><li>Added Privacy Manifest support. <Anchor target="_blank" href="/marketers/docs/implement-privacy-manifest-in-your-app">Learn more about the Privacy Manifest in AppsFlyer</Anchor>.</li><li>Added an XCFramework signature to the SDK, allowing developers using Xcode 15 to validate the SDK’s origin and authenticity.</li></ul> |
-| 6.13.2 | 2024-03-26 | <ul><li>Fixed an issue that was causing the release of apps using SPM in Xcode 15.3 to fail. See the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes#version-6132">developer release notes</Anchor> for more information.</li></ul> |
-| 6.13.1 | 2024-03-05 | <ul><li>Fixed an issue with sending consent data for non-GDPR users in a CMP consent flow (DMA).</li></ul> |
-| 6.13.0   <br />Deprecated | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy</li></ul> |
+| 6.14.6  <br />End of support:  <br />2027-03-08 | 2024-07-24 | <ul><li>Fixed an issue where the SDK was making redundant calls to the `getConversionData` API (GCD) when starting a new session; this does not impact measurement.</li></ul> |
+| 6.14.5  <br />End of support:  <br />2027-03-08 | 2024-07-03 | <ul><li>Fixed an issue where the SDK would send the manual consent data that had been set by the app, even if the code for sending the manual consent had been removed.</li></ul> |
+| 6.14.4  <br />End of support:  <br />2027-03-08 | 2024-06-10 | <ul><li>Updated Privacy Manifest for the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-ios-sdk#strict-mode-sdk">Strict-Mode  SDK</Anchor>.</li></ul> |
+| 6.14.3  <br />End of support:  <br />2027-03-08 | 2024-04-26 | <ul><li>Fixed automated merging of the Privacy Manifest for apps utilizing Cocoapods.</li></ul> |
+| 6.14.2  <br />End of support:  <br />2027-03-08 | 2024-04-19 | SDK Maintenance |
+| 6.14.1  <br />End of support:  <br />2027-03-08 | 2024-04-18 | <ul><li>Added support for the updated Purchase Validation flow. This feature is currently in closed beta. Learn more.</li></ul> |
+| 6.14.0  <br />End of support:  <br />2027-03-08 | 2024-04-07 | <ul><li>Added Privacy Manifest support. <Anchor target="_blank" href="/marketers/docs/implement-privacy-manifest-in-your-app">Learn more about the Privacy Manifest in AppsFlyer</Anchor>.</li><li>Added an XCFramework signature to the SDK, allowing developers using Xcode 15 to validate the SDK’s origin and authenticity.</li></ul> |
+| 6.13.2  <br />End of support:  <br />2027-03-08 | 2024-03-26 | <ul><li>Fixed an issue that was causing the release of apps using SPM in Xcode 15.3 to fail. See the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes#version-6132">developer release notes</Anchor> for more information.</li></ul> |
+| 6.13.1  <br />End of support:  <br />2027-03-08 | 2024-03-05 | <ul><li>Fixed an issue with sending consent data for non-GDPR users in a CMP consent flow (DMA).</li></ul> |
+| 6.13.0   <br />End of support:  <br />2027-03-08 | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy</li></ul> |
 
 ## Unsupported SDK Versions
 

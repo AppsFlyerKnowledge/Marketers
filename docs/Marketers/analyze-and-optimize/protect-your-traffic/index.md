@@ -27,4 +27,4 @@ x-zendesk:
 - [Implement validation rules to prevent fraud](/docs/implement-validation-rules-to-prevent-fraud)
 - [Implement Google License Verification Library (LVL)](/docs/implement-google-license-verification-library-lvl)
 - [Implement Apple App Store (itunes) install validation](/docs/implement-apple-app-store-itunes-install-validation)
-- [Advanced Security Protect360 Module](/docs/beta-advanced-security-protect360-module)
+- [Beta -  Advanced Security Protect360 Module](/docs/beta-advanced-security-protect360-module)

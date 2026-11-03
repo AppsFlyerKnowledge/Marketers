@@ -16,7 +16,7 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2024-03-19T14:29:53Z'
-  edited_at: '2026-10-19T18:31:39Z'
+  edited_at: '2026-10-28T08:56:09Z'
   id: 23461861877009
   locale: en-us
   section: Dashboards
@@ -505,7 +505,7 @@ The metrics available for widgets (tables, KPIs, and charts) are described in th
 >
 > <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/Rnuxb85PRmk?si=4yFRETz_9ACHQbKE" providerUrl="https://www.youtube.com" />
 
-<table><colgroup><col/><col/></colgroup><thead><tr><th>Metric</th><th>Description</th></tr></thead><tbody><tr><td>Clicks</td><td>Number of click engagements. This metric includes all click engagement types, including engaged_click, click_unspecified, and click_to_app.</td></tr><tr><td>Impressions</td><td>Number of impression engagements. This metric includes all impression engagement types, including view, engaged_view, impression_unspecified, and listening.</td></tr><tr><td>IPM</td><td><p>Attributions Per Mille measures the number of attributions per 1,000 impressions. Formula: (Attribution \* 1000) / Impressions<br/><br/><strong>Note:</strong> </p><ul><li>IPM is calculated based on all types of attributions. This includes installs, re-attributions, and re-engagements. To calculate it only based on Installs:<ul><li>In the <a href="./my-dashboards#add-widget">widget settings</a>, add the filter <a href="./my-dashboards#group-by-dimensions">Attribution type = Installs</a></li><li>In the dashboard filters panel, set <a href="./my-dashboards#view-dashboard">View type = UA</a></li></ul></li><li>IPM in a KPI widget includes Organic installs. To exclude organic attributions:<ul><li>In the <a href="./my-dashboards#add-widget">widget settings</a>, add the filter <a href="./my-dashboards#group-by-dimensions">Source = Non-organic</a></li><li>In the dashboard filters panel, add the filter <a href="./my-dashboards#view-dashboard">Source = Non-organic</a></li></ul></li></ul></td></tr><tr><td>Cost</td><td>Campaign cost reported to AppsFlyer via click and/or API.</td></tr><tr><td>Click-to-install rate (%)</td><td>Click-to-install conversion rate. The rate excludes installs with no available click data Formula: Attributions / Clicks \* 100</td></tr><tr><td>CTR</td><td>Click-through rate. Formula: Clicks / Impressions</td></tr><tr><td>Attributions</td><td><ul><li>Number of installs, re-engagements, and re-attributions.</li><li>For SKAN, the number of installs and redownloads.</li><li>For cross-platform attribution methods, the user acquisition metric represents the count of distinct customer user IDs (CUIDs) whose first acquisition falls within the selected date range, deduplicated across platforms.</li></ul></td></tr><tr><td>Assisted installs</td><td>Engagements that led to installs eventually attributed to other media sources or campaigns. Example: A user clicks 2 ads. The install is attributed to the last touchpoint; earlier touchpoints get an assisted install.</td></tr><tr><td>eCPI</td><td>Average effective cost per install (attribution). Formula: Cost / Attributions</td></tr><tr><td>CPM</td><td>Cost per mille (1000 impressions). Formula: (Cost / Impressions) \* 1000</td></tr><tr><td>CPC</td><td>Cost per click. Formula: Cost / Clicks</td></tr><tr><td>Total revenue</td><td>In-app purchase, subscription, and ad revenue reported to AppsFlyer.</td></tr><tr><td>Active Users</td><td><p>The number of users who opened the app at least once within the chosen time range. </p><p>If daily time granularity is selected, it's DAU. If monthly is selected, it's MAU. For information about querying raw data reports for DAU and MAU, see: <a href="./calculate-daily-and-monthly-active-users-dau-and-mau" target="_blank">Calculate daily and monthly active users (DAU and MAU)</a>.</p></td></tr><tr><td>Active Users last 31 days</td><td><p>Monthly active users (the number of unique users who opened the app at least once) during the past 31 days (not calendar month). Only available when viewing in UTC timezone.</p><p><strong>Note</strong>: Active Users last 31 days must be applied with a Date grouping</p></td></tr><tr><td>DAU/MAU</td><td><p>DAU/MAU measures the rate of user stickiness. Formula: Daily active users / Active users in the last 31 days. Only available when viewing in UTC timezone.</p><p><strong>Note</strong>: DAU/MAU must be applied with a Date grouping</p></td></tr><tr><td>ARPU</td><td>Average revenue per user. Formula: Revenue / Unique users (users = attributions).</td></tr><tr><td>ROI</td><td>Return on investment. Formula: (Revenue - Cost) / Cost \* 100</td></tr><tr><td>ROAS</td><td>Return on ad spend. Formula: Revenue / Cost \* 100</td></tr><tr><td>Gross profit</td><td>Gross profit. Formula: Revenue - Cost</td></tr><tr><td>Net revenue</td><td>Net revenue for the selected period, aggregated from the af_net_revenue event parameter. For apps using ROI360 store revenue, this is gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes); apps that send af_net_revenue themselves define the calculation.</td></tr><tr><td>Net ARPU</td><td>Average net revenue per user. Formula: Net revenue / Unique users (users = attributions).</td></tr><tr><td>Net ROI</td><td>Return on investment, based on net revenue. Formula: (Net revenue - Cost) / Cost \* 100</td></tr><tr><td>Net ROAS</td><td>Return on ad spend, based on net revenue. Formula: Net revenue / Cost \* 100</td></tr><tr><td>Net profit</td><td>Net profit. Formula: Net revenue - Cost</td></tr><tr><td>Sessions</td><td>Number of times the app is launched, brought to the device foreground, or other method set by the developer.</td></tr><tr><td>Average sessions</td><td>Number of times per attribution that the app is launched, brought to the device foreground, or other method set by the developer. Formula: Sessions / Attributions</td></tr><tr><td>Retention rate (%)</td><td>On-day percentage of unique users with a session. Formula: On day number of unique users with a session / Conversions \* 100</td></tr><tr><td>Uninstalls rate (%)</td><td><ul><li>Percentage of uninstalls per attribution.  Formula: Uninstalls / Attributions \* 100</li><li>Based on installs attributed via classic attribution method only.</li></ul></td></tr><tr><td>Uninstalls</td><td><ul><li>Number of app users who install the app and subsequently uninstall (delete) the app.</li></ul></td></tr><tr><td>View-throughs</td><td>Number of attributions after users view an ad (VTA).</td></tr><tr><td>Click-throughs</td><td>Number of attributions after users click on an ad (CTA)</td></tr><tr><td>Platform activations (cross-platform)</td><td>Platform activations count total new platform groups whose cross-platform attribution occurred in the selected date range, summed across users. For each CUID, each platform group is counted at most once.</td></tr><tr><td>Cross-platform</td><td>cross-platform metrics that report unique users use Customer User ID (CUID) when available, and fall back to AppsFlyer ID when CUID is missing. User acquisitions and Platform activations always count distinct CUIDs only.<br/> </td></tr><tr><td colspan="2"><strong>Event metrics</strong></td></tr><tr><td>Event name</td><td><p>The name of the in-app event to show in a widget.</p><p><strong>Note</strong>: Event names are case-sensitive. Therefore, make sure the event name you select in the dashboard exactly matches the letter casing of the event sent to AppsFlyer. For example, if your app sends "AF_purchase", you can't select "af_purchase" as the letter casing doesn't match.</p></td></tr><tr><td>Unique users</td><td>Number of unique users (attributions) who perform the event.</td></tr><tr><td>Conversion rate (%)</td><td>Percentage of unique users (attributions) who perform the event. Formula: Event unique users / Attributions x 100</td></tr><tr><td>Revenue</td><td><ul><li>Revenue generated by this specific event.</li><li>For SKAN, based on configuration in SKAN Conversion Studio.</li></ul></td></tr><tr><td>eCPA</td><td>Effective cost per action (event). Formula: Cost / Event unique users</td></tr><tr><td>Count</td><td><ul><li>Number of times this event was performed.</li><li>For SKAN, based on configuration in SKAN Conversion Studio.</li></ul></td></tr><tr><td>Average count</td><td>Average number of times this event was performed per attribution. Formula: Event count / Attributions</td></tr><tr><td>Average revenue</td><td>Average revenue from this event per attribution. Formula: Event revenue / Attributions</td></tr><tr><td colspan="2"><strong>Web app metrics</strong></td></tr><tr><td>First Visits</td><td>Number of first-time visits to a web app. Counted as rows where conversion_name = first_visit. Available for web apps only.</td></tr><tr><td>Re-visits</td><td>Number of non-organic returning visits to a web app. Counted as rows where conversion_name = revisit. Available for web apps only.</td></tr><tr><td>User Acquisitions</td><td>Available for Cross-platform attribution or web apps. For web apps, User Acquisitions reflects First Visits unless a User Acquisition Event is configured. For mobile apps, User Acquisitions equals Installs. When viewing multiple apps together, User Acquisitions = Installs + First Visits (or the custom web event configured by the client).</td></tr></tbody></table>
+<table><colgroup><col/><col/></colgroup><thead><tr><th>Metric</th><th>Description</th></tr></thead><tbody><tr><td>Clicks</td><td>Number of click engagements. This metric includes all click engagement types, including engaged_click, click_unspecified, and click_to_app.</td></tr><tr><td>Impressions</td><td>Number of impression engagements. This metric includes all impression engagement types, including view, engaged_view, impression_unspecified, and listening.</td></tr><tr><td>IPM</td><td><p>Attributions Per Mille measures the number of attributions per 1,000 impressions. Formula: (Attribution \* 1000) / Impressions<br/><br/><strong>Note:</strong> </p><ul><li>IPM is calculated based on all types of attributions. This includes installs, re-attributions, and re-engagements. To calculate it only based on Installs:<ul><li>In the <a href="./my-dashboards#add-widget">widget settings</a>, add the filter <a href="./my-dashboards#group-by-dimensions">Attribution type = Installs</a> </li><li>In the dashboard filters panel, set <a href="./my-dashboards#view-dashboard">View type = UA</a> </li></ul></li><li>IPM in a KPI widget includes Organic installs. To exclude organic attributions:<ul><li>In the <a href="./my-dashboards#add-widget">widget settings</a>, add the filter <a href="./my-dashboards#group-by-dimensions">Source = Non-organic</a> </li><li>In the dashboard filters panel, add the filter <a href="./my-dashboards#view-dashboard">Source = Non-organic</a> </li></ul></li></ul></td></tr><tr><td>Cost</td><td>Campaign cost reported to AppsFlyer via click and/or API.</td></tr><tr><td>Click-to-install rate (%)</td><td>Click-to-install conversion rate. The rate excludes installs with no available click data Formula: Attributions / Clicks \* 100</td></tr><tr><td>CTR</td><td>Click-through rate. Formula: Clicks / Impressions</td></tr><tr><td>Attributions</td><td><ul><li>Number of installs, re-engagements, and re-attributions.</li><li>For SKAN, the number of installs and redownloads.</li><li>For cross-platform attribution methods, the user acquisition metric represents the count of distinct customer user IDs (CUIDs) whose first acquisition falls within the selected date range, deduplicated across platforms.</li></ul></td></tr><tr><td>Assisted installs</td><td>Engagements that led to installs eventually attributed to other media sources or campaigns. Example: A user clicks 2 ads. The install is attributed to the last touchpoint; earlier touchpoints get an assisted install.</td></tr><tr><td>eCPI</td><td>Average effective cost per install (attribution). Formula: Cost / Attributions</td></tr><tr><td>CPM</td><td>Cost per mille (1000 impressions). Formula: (Cost / Impressions) \* 1000</td></tr><tr><td>CPC</td><td>Cost per click. Formula: Cost / Clicks</td></tr><tr><td>Total revenue</td><td>In-app purchase, subscription, and ad revenue reported to AppsFlyer.</td></tr><tr><td>Active Users</td><td><p>The number of users who opened the app at least once within the chosen time range. </p><p>If daily time granularity is selected, it's DAU. If monthly is selected, it's MAU. For information about querying raw data reports for DAU and MAU, see: <a href="./calculate-daily-and-monthly-active-users-dau-and-mau" target="_blank">Calculate daily and monthly active users (DAU and MAU)</a>.</p></td></tr><tr><td>Active Users last 31 days</td><td><p>Monthly active users (the number of unique users who opened the app at least once) during the past 31 days (not calendar month). Only available when viewing in UTC timezone.</p><p><strong>Note</strong>: Active Users last 31 days must be applied with a Date grouping</p></td></tr><tr><td>DAU/MAU</td><td><p>DAU/MAU measures the rate of user stickiness. Formula: Daily active users / Active users in the last 31 days. Only available when viewing in UTC timezone.</p><p><strong>Note</strong>: DAU/MAU must be applied with a Date grouping</p></td></tr><tr><td>ARPU</td><td>Average revenue per user. Formula: Revenue / Unique users (users = attributions).</td></tr><tr><td>ROI</td><td>Return on investment. Formula: (Revenue - Cost) / Cost \* 100</td></tr><tr><td>ROAS</td><td>Return on ad spend. Formula: Revenue / Cost \* 100</td></tr><tr><td>Gross profit</td><td>Gross profit. Formula: Revenue - Cost</td></tr><tr><td>Net revenue</td><td>Net revenue for the selected period, aggregated from the af_net_revenue event parameter. For apps using ROI360 store revenue, this is gross revenue minus app store fees and taxes (Net = Gross - store fees - taxes); apps that send af_net_revenue themselves define the calculation.</td></tr><tr><td>Net ARPU</td><td>Average net revenue per user. Formula: Net revenue / Unique users (users = attributions).</td></tr><tr><td>Net ROI</td><td>Return on investment, based on net revenue. Formula: (Net revenue - Cost) / Cost \* 100</td></tr><tr><td>Net ROAS</td><td>Return on ad spend, based on net revenue. Formula: Net revenue / Cost \* 100</td></tr><tr><td>Net profit</td><td>Net profit. Formula: Net revenue - Cost</td></tr><tr><td>Sessions</td><td>Number of times the app is launched, brought to the device foreground, or other method set by the developer.</td></tr><tr><td>Average sessions</td><td>Number of times per attribution that the app is launched, brought to the device foreground, or other method set by the developer. Formula: Sessions / Attributions</td></tr><tr><td>Retention rate (%)</td><td>On-day percentage of unique users with a session. Formula: On day number of unique users with a session / Conversions \* 100</td></tr><tr><td>Uninstalls rate (%)</td><td><ul><li>Percentage of uninstalls per attribution.  Formula: Uninstalls / Attributions \* 100</li><li>Based on installs attributed via classic attribution method only.</li></ul></td></tr><tr><td>Uninstalls</td><td><ul><li>Number of app users who install the app and subsequently uninstall (delete) the app.</li></ul></td></tr><tr><td>View-throughs</td><td>Number of attributions after users view an ad (VTA).</td></tr><tr><td>Click-throughs</td><td>Number of attributions after users click on an ad (CTA)</td></tr><tr><td>Platform activations (cross-platform)</td><td>Platform activations count total new platform groups whose cross-platform attribution occurred in the selected date range, summed across users. For each CUID, each platform group is counted at most once.</td></tr><tr><td>Cross-platform</td><td>cross-platform metrics that report unique users use Customer User ID (CUID) when available, and fall back to AppsFlyer ID when CUID is missing. User acquisitions and Platform activations always count distinct CUIDs only.<br/> </td></tr><tr><td colspan="2"><strong>Event metrics</strong></td></tr><tr><td>Event name</td><td><p>The name of the in-app event to show in a widget.</p><p><strong>Note</strong>: Event names are case-sensitive. Therefore, make sure the event name you select in the dashboard exactly matches the letter casing of the event sent to AppsFlyer. For example, if your app sends "AF_purchase", you can't select "af_purchase" as the letter casing doesn't match.</p></td></tr><tr><td>Unique users</td><td>Number of unique users (attributions) who perform the event.</td></tr><tr><td>Conversion rate (%)</td><td>Percentage of unique users (attributions) who perform the event. Formula: Event unique users / Attributions x 100</td></tr><tr><td>Revenue</td><td><ul><li>Revenue generated by this specific event.</li><li>For SKAN, based on configuration in SKAN Conversion Studio.</li></ul></td></tr><tr><td>eCPA</td><td>Effective cost per action (event). Formula: Cost / Event unique users</td></tr><tr><td>Count</td><td><ul><li>Number of times this event was performed.</li><li>For SKAN, based on configuration in SKAN Conversion Studio.</li></ul></td></tr><tr><td>Average count</td><td>Average number of times this event was performed per attribution. Formula: Event count / Attributions</td></tr><tr><td>Average revenue</td><td>Average revenue from this event per attribution. Formula: Event revenue / Attributions</td></tr><tr><td colspan="2"><strong>Web app metrics</strong></td></tr><tr><td>First Visits</td><td>Number of first-time visits to a web app. Counted as rows where conversion_name = first_visit. Available for web apps only.</td></tr><tr><td>Re-visits</td><td>Number of non-organic returning visits to a web app. Counted as rows where conversion_name = revisit. Available for web apps only.</td></tr><tr><td>User Acquisitions</td><td>Available for Cross-platform attribution or web apps. For web apps, User Acquisitions reflects First Visits unless a User Acquisition Event is configured. For mobile apps, User Acquisitions equals Installs. When viewing multiple apps together, User Acquisitions = Installs + First Visits (or the custom web event configured by the client).</td></tr></tbody></table>
 
 **Net vs. gross revenue metrics**
 
@@ -1087,7 +1087,376 @@ Advertisers manage agency and ad network access in the **Permissions tab** in th
 
 <Accordion title="Traits and limitations">
 
-<table><colgroup><col/><col/></colgroup><thead><tr><th>Trait</th><th>Description</th></tr></thead><tbody><tr><td colspan="2"><strong>Metrics &amp; attribution methods</strong></td></tr><tr><td>SSOT</td><td><ul><li>SSOT is turned on by default if both Android and iOS apps are selected.</li><li>When attribution method is SSOT but SSOT isn't configured for iOS apps in SKAN Conversion Studio, data is incorrect.</li><li>D7 metrics for organic attributions aren't supported.</li><li>Organic attributions for Android aren't supported.</li></ul></td></tr><tr><td>Activity metrics</td><td><ul><li>Activity metrics are supported in Unified view types only.</li><li>A date range of up to 60 days can be chosen.</li></ul></td></tr><tr><td>Cohort metrics</td><td><ul><li>Organic data of unique users and retention metrics doesn't include unattributed events. This can cause lower values for cohort metrics than for LTV metrics.</li><li>For weekly and monthly time granularity, 4 cohort metrics can be added per table. If more are needed, they can be added in a separate table.<ul><li>There's no limit on cohort metrics when the time granularity is Daily</li></ul></li><li>A date range of up to 62 days can be chosen.</li></ul></td></tr><tr><td>Cohort periods</td><td><ul><li>The conversion period is referred to as Day 0, Week 0, or Month 0. The next period after the conversion is referred to as Day 1, Week 1, or Month 1, and so on.</li><li>AppsFlyer cohort periods are based on calendar units, not the exact install timestamp. This may result in discrepancies when comparing AppsFlyer cohort data with networks that define cohort periods based on specific install timestamp (meaning a day is the 24-hour post-install period after the install timestamp, etc.).</li></ul></td></tr><tr><td>Active Users, Active Users last 31 days, and DAU/MAU</td><td><ul><li>Active Users last 31 days and DAU/MAU metrics do not support groupings in charts.</li></ul><p>The total values might be lower than the sum of the values when grouped by any dimension. </p><p>The total is the distinctive number of users, while in some cases a user can be counted in more than one grouping. </p><p>For example, if a user performed a UA session and a reengagement session within the time range, the user will be counted under 2 different media sources (the retargeting network and the UA network/organic).</p></td></tr><tr><td>In-app events table or in-app events charts</td><td><ul><li>Group by Event name must be the primary dimension and cannot be removed.</li><li>Metrics are supported only for the LTV (user lifetime) period.</li><li>Count, Unique users, or Revenue metrics are available.</li><li>Attribution sources:  Classic (default), SSOT (default in SSOT views), SKAN </li></ul></td></tr><tr><td>Assisted installs</td><td><ul><li>From August 1, 2024, assisted installs are available in any timezone.</li><li>For data July 31, 2024 and earlier, assisted installs are only available when viewing data in UTC timezone.</li></ul></td></tr><tr><td>Cross-platform</td><td><ul><li>To view cross platform data you need to create a product line and opt in to cross platform attribution </li><li>Data freshness - limited to daily updates.</li><li>Assist metrics - Not available for Cross-platform dashboards</li></ul></td></tr><tr><td>Event widgets and the Events template</td><td>Cohort data isn't supported. The exception is Revenue and Unique users on Day 2 and Day 7, which are available for the SSOT attribution method only.</td></tr><tr><td colspan="2"><strong>Time: date ranges &amp; data freshness</strong></td></tr><tr><td>Historical data</td><td><ul><li>LTV metrics has up to 25 months (2 years + 1 month).</li><li>Activity metrics has up to:<ul><li>3 years for daily metrics</li><li>1 year for monthly metrics</li></ul></li><li>Cohort metrics include data starting from October 1, 2024.</li><li><div>Date range has up to:</div><ul><li>3 years for Impressions, clicks, cost, attributions, and LTV metrics</li></ul></li><li>Activity and Cohort metrics:<ul><li>60 days for Daily</li><li>Up to 12 months for monthly</li></ul></li><li>Weekly and monthly data is displayed in UTC timezone.</li></ul></td></tr><tr><td>Data freshness</td><td><p>Real-time data is not available for weekly and monthly cohorts, and for grouping or filtering by App version and OS version. Real-time is also not available for Web, CTV, or PC and console apps for Cohort and Activity metrics. This doesn't apply to LTV metrics for CTV and PC and console apps, which remain available in real-time.</p><p><strong>Note</strong>: For Web, CTV, and PC and console apps, the Installs, re-engagements, and re-attributions metrics are now served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously.</p><p>Data will only show after it has been completed (meaning at the end of the day, week or month). However, data, where some of the install data has been completed, such as some data has finished (post-install time) and others haven't started yet, will be displayed.</p></td></tr><tr><td>Attribution dates date range</td><td>If your computer is set to a timezone where it's a specific day, and the app timezone in AppsFlyer is for a timezone where it's still the previous day, "Today" isn't an option in the date range picker. For example, if, according to your computer settings, it's Monday, but according to your app timezone in AppsFlyer, it's still Sunday.</td></tr><tr><td>Week and Month time breakdowns</td><td><ul><li>Week and month time breakdowns are available only for Cohorted metrics and for the "Active Users" Activity metric (which supports monthly breakdown only). Weekly and monthly time breakdowns aren't available for Web, CTV, or PC and console apps — Cohort and Activity data is daily-only for these platforms.</li><li><strong>Unique users</strong>, <strong>retention</strong> and <strong>conversion rate</strong> metrics are not available if the data includes installs from before November 2022.</li></ul></td></tr><tr><td><p>Changing app timezone settings</p></td><td><p>If you've changed your app's timezone configuration, historical data from before the change is only available when viewing the dashboard in UTC. To access this data, switch the dashboard's timezone setting to UTC manually.</p></td></tr><tr><td>Intraday SRN impressions and clicks</td><td>Self-reporting networks (SRNs) don't update impression and click data on the standard intraday cadence. This data is collected only a few times a day. As a result, impressions and clicks from SRNs might be missing from dashboards during the day. To view complete data for a specific date, review the dashboards on the following day, after the SRN completes its reporting cycles.</td></tr><tr><td colspan="2"><strong>Filtering, dimensions &amp; scale limits</strong></td></tr><tr><td>Filter dimensions</td><td>Filters at the widget level also take into account filters set at the dashboard level. If there's a conflict, data doesn't display.</td></tr><tr><td>Geo</td><td>Aggregation by geo is based on the geo where the install occurred.</td></tr><tr><td>Multiple apps</td><td><ul><li>Up to 10 apps can be selected. However, if more than 5 apps are selected, only the following dimensions are available to group by and filter:<ul><li>Attribution type</li><li>Media source</li><li>Campaign</li><li>Geo</li><li>Agency</li><li>Channel</li><li>Source</li></ul></li></ul></td></tr><tr><td>Filter and value limit</td><td><p>All dimension-based filters (for example, <strong>Media source</strong>, <strong>Campaign</strong>, <strong>Adset</strong>, <strong>Ad</strong>, <strong>Site ID</strong>, <strong>Channel</strong>) display up to <strong>2,000 values</strong>. If a dimension contains more than 2,000 values, some values might not appear in the list. </p><p>To view a missing value, first apply a narrowing filter, such as selecting a relevant media source. This reduces the number of possible values and enables the missing value to appear.</p></td></tr><tr><td>Media source name standardization</td><td><p>Media source names are standardized to ensure consistent grouping and reporting across My Dashboards.</p><p>When data is received from partners, incoming values may be transformed before being displayed in the dashboards and metrics. This standardization aligns different naming variations under a single, unified media source name.</p><p>Examples:</p><figure><table><thead><tr><th>Incoming value from media source</th><th>Displayed in My Dashboards</th></tr></thead><tbody><tr><td>facebook</td><td>Facebook Ads</td></tr><tr><td>Facebook Ads</td><td>Facebook Ads</td></tr><tr><td>twitter</td><td>Twitter</td></tr><tr><td>Twitter</td><td>Twitter</td></tr></tbody></table></figure></td></tr><tr><td>Heavy affiliate traffic</td><td>For apps with heavy affiliate traffic, grouping or filtering impressions or clicks by Ad set, Ad set ID, Ad, Ad ID, or Site ID displays NA. These restrictions apply when daily impressions plus clicks exceed 100 million and do not apply to SRN networks, such as Meta, Google, TikTok, Snapchat, LinkedIn, and others. This limitation affects dashboards and aggregated APIs only. Attribution and raw data are not affected</td></tr><tr><td colspan="2"><strong>Tables &amp; charts display limits</strong></td></tr><tr><td>Table</td><td>Max columns: 100</td></tr><tr><td>Multiple metrics</td><td><ul><li>For line, bar, and column charts: Maximum 10 metrics per chart widget.</li><li>For combo charts: Maximum 5 metrics per chart widget.</li><li>Donut charts don't support multiple metrics.</li><li>Group by dimensions aren't available when multiple metrics are selected.</li></ul></td></tr><tr><td>Charts</td><td>When grouping by a dimension, charts can display up to dimension values. For example, when grouping data by media source, the top 10 media sources display.</td></tr><tr><td>Conditional formatting</td><td><p>Rule based coloring:</p><ul><li>Up to <strong>five</strong> conditions are supported.</li><li>If multiple conditions apply to the same value, only the <strong>first</strong> matching rule is applied.</li></ul></td></tr><tr><td><a href="./my-dashboards#compare-in-tables">Compare in tables</a></td><td><ul><li>Rounded values may show unexpected % change. If the displayed metric is rounded (for example, eCPI shown as <strong>0.01 vs. 0.01</strong>) but the underlying values differ (for example, <strong>0.0123 vs. 0.0189</strong>), the table may display a noticeable percentage change such as <strong>20%</strong></li><li>Small changes may display as 0%. Very small percentage differences (for example, <strong>0.3%</strong>) may round to <strong>0%</strong> in the table.</li></ul></td></tr><tr><td colspan="2"><strong>Exporting data</strong></td></tr><tr><td>Export table data</td><td>Limited up to top 1000 rows</td></tr><tr><td><a href="./my-dashboards#export-data">Table Export data</a></td><td>Table exports include only the first 2 group by dimensions. If a table is configured with 3 or 4 groupings, only the first 2 dimensions appear in the exported CSV file. Additional groupings are ignored.</td></tr><tr><td colspan="2"><strong>Access &amp; navigation</strong></td></tr><tr><td>My Dashboards</td><td>The My Dashboards section in the side menu shows up to 7 of your most recently viewed or pinned dashboards.</td></tr><tr><td>Agency and Adnets</td><td><ul><li>Agencies can grant ad networks access to My Dashboards data, if the agency received access from the advertiser.</li></ul></td></tr><tr><td colspan="2"><strong>Legacy &amp; migration quirks</strong></td></tr><tr><td>Retention and cohort data</td><td>Migrated devices have no install record. As such, they aren't associated with any cohort, and can't be shown in the Retention and Cohort reports. </td></tr><tr><td>Legacy unattributed organic in-apps mode</td><td>If your app uses the legacy <strong>Unattributed organic in-apps</strong> mode, real-time <strong>organic Active Users</strong> may appear lower than expected. Values correct automatically after the current day completes. For the most accurate real-time view, we recommend switching to <strong>first-install mode</strong>.<br/>Learn more about <a href="./measure-reinstalls#unattributed-organic-inapps" target="_blank">Unattributed organic in-apps mode</a> and <a href="./measure-reinstalls#attributed-to-the-first-install" target="_blank">first-install mode</a>.</td></tr></tbody></table>
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Trait
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colSpan="2">
+        **Metrics & attribution methods**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        SSOT
+      </td>
+      <td>
+        * SSOT is turned on by default if both Android and iOS apps are selected.
+        * When attribution method is SSOT but SSOT isn't configured for iOS apps in SKAN Conversion Studio, data is incorrect.
+        * D7 metrics for organic attributions aren't supported.
+        * Organic attributions for Android aren't supported.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Activity metrics
+      </td>
+      <td>
+        * Activity metrics are supported in Unified view types only.
+        * A date range of up to 60 days can be chosen.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cohort metrics
+      </td>
+      <td>
+        * Organic data of unique users and retention metrics doesn't include unattributed events. This can cause lower values for cohort metrics than for LTV metrics.
+        * For weekly and monthly time granularity, 4 cohort metrics can be added per table. If more are needed, they can be added in a separate table.
+          * There's no limit on cohort metrics when the time granularity is Daily
+        * A date range of up to 62 days can be chosen.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cohort periods
+      </td>
+      <td>
+        * The conversion period is referred to as Day 0, Week 0, or Month 0. The next period after the conversion is referred to as Day 1, Week 1, or Month 1, and so on.
+        * AppsFlyer cohort periods are based on calendar units, not the exact install timestamp. This may result in discrepancies when comparing AppsFlyer cohort data with networks that define cohort periods based on specific install timestamp (meaning a day is the 24-hour post-install period after the install timestamp, etc.).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Active Users, Active Users last 31 days, and DAU/MAU
+      </td>
+      <td>
+        * Active Users last 31 days and DAU/MAU metrics do not support groupings in charts.
+
+        The total values might be lower than the sum of the values when grouped by any dimension.
+
+        The total is the distinctive number of users, while in some cases a user can be counted in more than one grouping.
+
+        For example, if a user performed a UA session and a reengagement session within the time range, the user will be counted under 2 different media sources (the retargeting network and the UA network/organic).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        In-app events table or in-app events charts
+      </td>
+      <td>
+        * Group by Event name must be the primary dimension and cannot be removed.
+        * Metrics are supported only for the LTV (user lifetime) period.
+        * Count, Unique users, or Revenue metrics are available.
+        * Attribution sources:  Classic (default), SSOT (default in SSOT views), SKAN
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Assisted installs
+      </td>
+      <td>
+        * From August 1, 2024, assisted installs are available in any timezone.
+        * For data July 31, 2024 and earlier, assisted installs are only available when viewing data in UTC timezone.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Cross-platform
+      </td>
+      <td>
+        * To view cross platform data you need to create a product line and opt in to cross platform attribution
+        * Data freshness - limited to daily updates.
+        * Assist metrics - Not available for Cross-platform dashboards
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Event widgets and the Events template
+      </td>
+      <td>
+        Cohort data isn't supported. The exception is Revenue and Unique users on Day 2 and Day 7, which are available for the SSOT attribution method only.
+      </td>
+    </tr>
+    <tr>
+      <td colSpan="2">
+        **Time: date ranges & data freshness**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Historical data
+      </td>
+      <td>
+        * LTV metrics has up to 25 months (2 years + 1 month).
+        * Activity metrics has up to:
+          * 3 years for daily metrics
+          * 1 year for monthly metrics
+        * Cohort metrics include data starting from October 1, 2024.
+        * Date range has up to:
+
+          * 3 years for Impressions, clicks, cost, attributions, and LTV metrics
+        * Activity and Cohort metrics:
+          * 60 days for Daily
+          * Up to 12 months for monthly
+        * Weekly and monthly data is displayed in UTC timezone.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Data freshness
+      </td>
+      <td>
+        Real-time data is not available for weekly and monthly cohorts, and for grouping or filtering by App version and OS version. Real-time is also not available for Web, CTV, or PC and console apps for Cohort and Activity metrics. This doesn't apply to LTV metrics for CTV and PC and console apps, which remain available in real-time.
+
+        **Note**: For Web, CTV, and PC and console apps, the Installs, re-engagements, and re-attributions metrics are now served from our AI-ready data pipeline (migrated between July 21 and August 10, 2026). This means these metrics for these platforms now show up with a delay instead of continuously.
+
+        Data will only show after it has been completed (meaning at the end of the day, week or month). However, data, where some of the install data has been completed, such as some data has finished (post-install time) and others haven't started yet, will be displayed.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Attribution dates date range
+      </td>
+      <td>
+        If your computer is set to a timezone where it's a specific day, and the app timezone in AppsFlyer is for a timezone where it's still the previous day, "Today" isn't an option in the date range picker. For example, if, according to your computer settings, it's Monday, but according to your app timezone in AppsFlyer, it's still Sunday.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Week and Month time breakdowns
+      </td>
+      <td>
+        * Week and month time breakdowns are available only for Cohorted metrics and for the "Active Users" Activity metric (which supports monthly breakdown only). Weekly and monthly time breakdowns aren't available for Web, CTV, or PC and console apps — Cohort and Activity data is daily-only for these platforms.
+        * **Unique users**, **retention** and **conversion rate** metrics are not available if the data includes installs from before November 2022.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Changing app timezone settings
+      </td>
+      <td>
+        If you've changed your app's timezone configuration, historical data from before the change is only available when viewing the dashboard in UTC. To access this data, switch the dashboard's timezone setting to UTC manually.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Intraday SRN impressions and clicks
+      </td>
+      <td>
+        Self-reporting networks (SRNs) don't update impression and click data on the standard intraday cadence. This data is collected only a few times a day. As a result, impressions and clicks from SRNs might be missing from dashboards during the day. To view complete data for a specific date, review the dashboards on the following day, after the SRN completes its reporting cycles.
+      </td>
+    </tr>
+    <tr>
+      <td colSpan="2">
+        **Filtering, dimensions & scale limits**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Filter dimensions
+      </td>
+      <td>
+        Filters at the widget level also take into account filters set at the dashboard level. If there's a conflict, data doesn't display.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Geo
+      </td>
+      <td>
+        Aggregation by geo is based on the geo where the install occurred.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Multiple apps
+      </td>
+      <td>
+        * Up to 10 apps can be selected. However, if more than 5 apps are selected, only the following dimensions are available to group by and filter:
+          * Attribution type
+          * Media source
+          * Campaign
+          * Geo
+          * Agency
+          * Channel
+          * Source
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Filter and value limit
+      </td>
+      <td>
+        All dimension-based filters (for example, **Media source**, **Campaign**, **Adset**, **Ad**, **Site ID**, **Channel**) display up to **2,000 values**. If a dimension contains more than 2,000 values, some values might not appear in the list.
+
+        To view a missing value, first apply a narrowing filter, such as selecting a relevant media source. This reduces the number of possible values and enables the missing value to appear.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Media source name standardization
+      </td>
+      <td>
+        Media source names are standardized to ensure consistent grouping and reporting across My Dashboards.
+
+        When data is received from partners, incoming values may be transformed before being displayed in the dashboards and metrics. This standardization aligns different naming variations under a single, unified media source name.
+
+        Examples:
+
+        | Incoming value from media source | Displayed in My Dashboards |
+        | --- | --- |
+        | facebook | Facebook Ads |
+        | Facebook Ads | Facebook Ads |
+        | twitter | Twitter |
+        | Twitter | Twitter |
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Heavy affiliate traffic
+      </td>
+      <td>
+        For apps with heavy affiliate traffic, grouping or filtering impressions or clicks by Ad set, Ad set ID, Ad, Ad ID, or Site ID displays NA. These restrictions apply when daily impressions plus clicks exceed 100 million and do not apply to SRN networks, such as Meta, Google, TikTok, Snapchat, LinkedIn, and others. This limitation affects dashboards and aggregated APIs only. Attribution and raw data are not affected
+      </td>
+    </tr>
+    <tr>
+      <td colSpan="2">
+        **Tables & charts display limits**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Table
+      </td>
+      <td>
+        Max columns: 100
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Multiple metrics
+      </td>
+      <td>
+        * For line, bar, and column charts: Maximum 10 metrics per chart widget.
+        * For combo charts: Maximum 5 metrics per chart widget.
+        * Donut charts don't support multiple metrics.
+        * Group by dimensions aren't available when multiple metrics are selected.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Charts
+      </td>
+      <td>
+        When grouping by a dimension, charts can display up to dimension values. For example, when grouping data by media source, the top 10 media sources display.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Conditional formatting
+      </td>
+      <td>
+        Rule based coloring:
+
+        * Up to **five** conditions are supported.
+        * If multiple conditions apply to the same value, only the **first** matching rule is applied.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        [Compare in tables](/docs/my-dashboards#compare-in-tables)
+      </td>
+      <td>
+        * Rounded values may show unexpected % change. If the displayed metric is rounded (for example, eCPI shown as **0.01 vs. 0.01**) but the underlying values differ (for example, **0.0123 vs. 0.0189**), the table may display a noticeable percentage change such as **20%**
+        * Small changes may display as 0%. Very small percentage differences (for example, **0.3%**) may round to **0%** in the table.
+      </td>
+    </tr>
+    <tr>
+      <td colSpan="2">
+        **Exporting data**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Export table data
+      </td>
+      <td>
+        Limited up to top 1000 rows
+      </td>
+    </tr>
+    <tr>
+      <td>
+        [Table Export data](/docs/my-dashboards#export-data)
+      </td>
+      <td>
+        Table exports include up to 4 group by dimensions, and all of them appear in the exported CSV file. Additional groupings are ignored.
+      </td>
+    </tr>
+    <tr>
+      <td colSpan="2">
+        **Access & navigation**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        My Dashboards
+      </td>
+      <td>
+        The My Dashboards section in the side menu shows up to 7 of your most recently viewed or pinned dashboards.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Agency and Adnets
+      </td>
+      <td>
+        * Agencies can grant ad networks access to My Dashboards data, if the agency received access from the advertiser.
+      </td>
+    </tr>
+    <tr>
+      <td colSpan="2">
+        **Legacy & migration quirks**
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Retention and cohort data
+      </td>
+      <td>
+        Migrated devices have no install record. As such, they aren't associated with any cohort, and can't be shown in the Retention and Cohort reports.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Legacy unattributed organic in-apps mode
+      </td>
+      <td>
+        If your app uses the legacy **Unattributed organic in-apps** mode, real-time **organic Active Users** may appear lower than expected. Values correct automatically after the current day completes. For the most accurate real-time view, we recommend switching to **first-install mode**.  
+        Learn more about <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#unattributed-organic-inapps">Unattributed organic in-apps mode</Anchor> and <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">first-install mode</Anchor>.
+      </td>
+    </tr>
+  </tbody>
+</Table>
 
 </Accordion>
 

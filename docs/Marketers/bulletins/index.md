@@ -13,6 +13,7 @@ x-zendesk:
   type: section
   url: https://support.appsflyer.com/hc/en-us/sections/6551161473041-Bulletins
 ---
+- [Bulletin: Full cost reporting for Meta non-mobile campaigns in ROI360](/docs/bulletin-full-cost-reporting-for-meta-non-mobile-campaigns-in-roi360)
 - [Bulletin: Data freshness update for Activity metrics in My Dashboards](/docs/bulletin-data-freshness-update-for-activity-metrics-in-my-dashboards)
 - [Bulletin: Digital Turbine migration to unified AppsFlyer integration](/docs/bulletin-digital-turbine-migration-to-unified-appsflyer-integration)
 - [Bulletin: Apple Ads adds timestamps to all attribution claims](/docs/bulletin-apple-ads-adds-timestamps-to-all-attribution-claims)

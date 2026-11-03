@@ -1,7 +1,8 @@
 ---
-title: Advanced Security Protect360 Module
+title: Beta -  Advanced Security Protect360 Module
 metadata:
   keywords:
+    - Beta feature
     - Marketers
     - Protect360
 x-zendesk:
@@ -12,14 +13,16 @@ x-zendesk:
     - Marketers
     - Protect360
   created_at: '2025-09-17T15:23:22Z'
-  edited_at: '2026-10-25T07:26:18Z'
+  edited_at: '2026-11-01T11:13:44Z'
   id: 39145848948625
   locale: en-us
   section: Protect your traffic
   section_id: 6551015912465
   url: >-
-    https://support.appsflyer.com/hc/en-us/articles/39145848948625-Advanced-Security-Protect360-Module
+    https://support.appsflyer.com/hc/en-us/articles/39145848948625-Beta-Advanced-Security-Protect360-Module
 ---
+<span class="af-tag af-tag--beta-feature">Beta feature</span>
+
 > **At a glance:** Strengthen fraud protection for your Android app with the Advanced Security Module. This real-time solution detects and blocks attribution spoofing and manipulated traffic before installs are attributed. Designed for high-traffic apps and Protect360 clients, especially those working with affiliates. The module is fully configurable by you, allowing initial setup and ongoing maintenance to adapt to evolving fraud patterns and protect data integrity.
 
 > 🚧 **Important!**

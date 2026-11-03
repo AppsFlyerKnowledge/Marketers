@@ -22,7 +22,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-05-17T19:16:15Z'
-  edited_at: '2026-10-13T10:46:28Z'
+  edited_at: '2026-11-01T12:35:09Z'
   id: 115002504686
   locale: en-us
   section: Google Ads
@@ -133,35 +133,38 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 
 > ❗️ **Stop!**
 >
-> * To view AppsFlyer attributions for installs and re-engagements in Google Ads, make sure to import the following AppsFlyer events:
->   * "First open" (for installs)
->   * "Session start" (for re-engagements)
-> * You MUST go through [step 4](#h_01HACTC1H5GV04KFM29NCCK8J2) to see Google Ads installs in AppsFlyer. If you also need to map your in-app events to Google Ads, go through [step 5](#h_01HACTC1H50DDS3WCZ9DCHKN0P) first.
+> * If you need to map your in-app events to Google Ads, go through [step 5](#h_01HACTC1H50DDS3WCZ9DCHKN0P) first.
 
 </Accordion>
 
-<Accordion title="Step 4: Import your app conversions (mandatory)">
+<Accordion title="Step 4: Verify your app conversions (recommended)">
 
 > 🚧 **Important!**
 >
-> For Google Ads to register your new conversions, you must **launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
+> For Google Ads to register your new conversions, you must **launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added, the new conversions change status from “No recent conversion” to “recording conversion".
 
 This step requires **Google administrative access** to the account to create a link ID.
 
-Follow the steps described in the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7382633?sjid=11699141105296914680-EU">Google Ads Help documentation</Anchor>. Take note of the following:
+When AppsFlyer sends conversion data for any event that isn’t set up in your Google Ads account yet, including `first_open`, `session_start`, and your in-app events, Google Ads adds it to the conversion list automatically. For more information, see <Anchor target="_blank" href="https://support.google.com/google-ads/answer/17086025?hl=en">About automatically enabled app conversion actions</Anchor>.
 
-* Set the **first\_open** event as a conversion event for all your apps (required for install measurement).
-* Set the **session\_start** event as a conversion event if you plan to measure re-engagements with Google.
-* Repeat this process for each in-app event you want to measure with Google.
+**To verify your app conversions:**
 
-  > 📘 **Note**
-  >
-  > If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
+1. In Google Ads, go to the **Conversions** > **Summary** page.
+2. Make sure that the `first_open` event appears in the list of third-party conversion events for all your apps. This event is required for install measurement.
+3. If you plan to measure re-engagements with Google, make sure that the `session_start` event appears in the list as well.
+4. Make sure that each in-app event you want to measure with Google appears in the list.
 
-* After finishing the process, you can see your third-party conversion events on the **Conversions** > **Summary** page. If an event doesn't appear in the list, or it has been removed from the Google Ads conversion list
-  1. Click **View all conversion actions**. The **Status** filter appears.
-  2. Click **Status** and select **All** to see all events, including disabled and removed events.
-* Make sure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">Google documentation on conversion settings</Anchor>.
+**If an event is missing, hidden, or removed, import it manually:**
+
+1. On the **Conversions** > **Summary** page, click **View all conversion actions**. The **Status** filter appears.
+2. Click **Status** and select **All** to see all events, including disabled and removed events.
+3. If the event still doesn’t appear, import it by following the steps described in the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7382633?sjid=11699141105296914680-EU">Google Ads Help documentation</Anchor>.
+
+> 📘 **Note**
+>
+> If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
+
+Make sure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">Google documentation on conversion settings</Anchor>.
 
 Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer!
 
@@ -292,7 +295,7 @@ The following table describes the parameter mapping between Google Ads and AppsF
 
 Google Ads doesn't send the `Channel(af_channel)` parameter. AppsFlyer determines how to populate this parameter for campaign types received from Google Ads, according to the following rules:
 
-<table><thead><tr><th colspan="2">Campaign type <strong>AND</strong> Network type logic:</th><th rowspan="2"><kbd>Channel</kbd> parameter</th><th rowspan="2">Example</th></tr><tr><th>campaign_type</th><th>network_type</th></tr></thead><tbody><tr><td><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></td><td>All network types</td><td><kbd>campaign_type_network_type</kbd></td><td>channel = <kbd>ACI_Search</kbd></td></tr><tr><td><p><strong>Not:</strong></p><p><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></p></td><td><kbd>Display</kbd></td><td><kbd>network_subtype</kbd></td><td>channel = <kbd>mGDN</kbd></td></tr><tr><td><p><strong>Not:</strong></p><p><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></p></td><td><p><strong>Not:</strong></p><p><kbd>Display</kbd></p></td><td><kbd>network_type</kbd></td><td>channel = <kbd>Search</kbd></td></tr></tbody></table>
+<table><thead><tr><th colspan="2">Campaign type <strong>AND</strong> Network type logic:</th><th rowspan="2"> <kbd>Channel</kbd> parameter</th><th rowspan="2">Example</th></tr><tr><th>campaign_type</th><th>network_type</th></tr></thead><tbody><tr><td> <kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd> </td><td>All network types</td><td><kbd>campaign_type_network_type</kbd></td><td>channel = <kbd>ACI_Search</kbd> </td></tr><tr><td><p><strong>Not:</strong></p><p><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></p></td><td><kbd>Display</kbd></td><td><kbd>network_subtype</kbd></td><td>channel = <kbd>mGDN</kbd> </td></tr><tr><td><p><strong>Not:</strong></p><p><kbd>ACI</kbd>, <kbd>ACE</kbd>, <kbd>ACPRE</kbd>, <kbd>Shopping</kbd>, or <kbd>Hotel</kbd></p></td><td><p><strong>Not:</strong></p><p><kbd>Display</kbd></p></td><td><kbd>network_type</kbd></td><td>channel = <kbd>Search</kbd> </td></tr></tbody></table>
 
 For more information on what ad types are available in Google's response, see the <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google request and response specifications</Anchor>.
 

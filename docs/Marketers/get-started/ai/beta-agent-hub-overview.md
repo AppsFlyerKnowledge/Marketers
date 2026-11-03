@@ -405,7 +405,7 @@ Ready-to-use agents are ready to deploy as they are: pick one, configure it, and
 
 **What it works on.** Daily KPI data across partners, campaigns, and geos. No premium subscription required.
 
-**What a run delivers.** Story-style alerts: which metric moved, by how much, on which partner, campaign, or geo, and the likely reason. Delivered to Slack or email. No alert on quiet days. [CONFIRM]
+**What a run delivers.** Story-style alerts: which metric moved, by how much, on which partner, campaign, or geo, and the likely reason. Delivered to Slack or email.
 
 **Cadence.** Configurable via the standard schedule options or on demand.
 
@@ -485,6 +485,66 @@ Ready-to-use agents are ready to deploy as they are: pick one, configure it, and
 
 </Accordion>
 
+<div id="h_01M5VP47MCYYQVP89CJN9KZ4BP" />
+
+<Accordion title="[Closed beta] Optimize Apple Ads Share of Voice">
+
+**Job.** Keeps your Apple Ads Share of Voice (SoV) on your key keywords inside the range you set, without overpaying. SoV, also called impression share, is the percentage of eligible searches for a keyword where your ad appeared. When a keyword is off target, the agent recommends a bid change: raise the maximum cost-per-tap (max CPT) bid to recover share, or lower it to stop overpaying.
+
+**How the agent checks your SoV.** Apple reports SoV with a one-day delay, but the auction changes during the day. To close the gap, the agent estimates your SoV every hour from today's delivery data. It calibrates the estimate against Apple's official SoV from the day before. You hear about changes within hours.
+
+**What it works on.** Hourly keyword-level Apple Ads data (impressions, taps, spend, and current max CPT bid) and Apple's daily impression share report. The agent pulls both through your Apple Ads connection in **Cost Settings** and uses the last 30 days as history. Requires ROI360.
+
+**What a run delivers.** For each keyword and geo outside the target range, a run delivers:
+
+* Apple's latest SoV range and whether the keyword is above or below target.
+* The recommended bid change in %.
+* The exact current and recommended max CPT bid for each campaign and ad group where the keyword runs.
+
+Keywords that are on target or have no recommendation yet are listed at the end. Delivered to Slack or email, and to the **Activity** tab.
+
+**Apply a recommendation.** In the **Activity** tab, each bid change appears as a card. Click **Apply** to send the recommended bid to Apple Ads, edit the bid and then click **Apply**, or click **Reject**. Nothing changes in Apple Ads until you apply a recommendation.
+
+**Cadence.** The run schedule options are:
+
+* **On trigger:** The agent sends a message only when there's a new or changed recommendation. How often it checks depends on how the agent checks your SoV. See **How the agent checks your SoV** in this section.
+* **No schedule:** The agent runs only when you run it manually.
+
+**Set up. To deploy the agent:**
+
+1. In **Cost Settings**, connect Apple Ads with the account that runs your keywords.
+
+   > 📘 **Note**
+   >
+   > Connect Apple Ads with **Read & Write** permissions and a non-agency account. Read & Write lets you apply bid changes directly from Agent Hub. With Read only access, you get recommendations but can't apply them. You need to change bids manually in Apple Ads.
+
+2. In **Agent Hub**, on the **Optimize Apple Ads Share of Voice** card, click **Deploy Agent**.
+3. Enter an **Agent Name**, or keep the prefilled name.
+4. Under **Select your iOS app**, select the app. One app per agent.
+5. Under **Keywords**, enter at least one and up to three keywords, as they're set up in your Apple Ads campaigns.
+6. Under **Apple Ads geo**, select up to five geos.
+7. Under **Target Share of Voice range**, select the range, for example 81-90%.
+8. Under **Select how you want to receive the results**, select **Slack**, **Email**, or both.
+9. Under **Run Schedule**, select **On trigger** or **No schedule**.
+10. Click **Deploy Agent**.
+
+**No recommendation yet.** A keyword and geo can show this status in two cases:
+
+* There isn't enough data. For example, the keyword has low search volume and Apple doesn't report SoV for it, or the keyword doesn't run in this geo.
+* The bid changed recently. The agent waits to see the effect of the change before it recommends again.
+
+**Limitations.** Keep these limitations in mind:
+
+* **First run is the next day.** After you deploy a new agent, it backfills 30 days of history the next morning (UTC). The agent starts running only after the backfill is done.
+* **Apple Ads connection.** The Apple Ads connection in **Cost Settings** must be a non-agency account. Applying bid changes requires Read & Write permissions.
+* **Automated bidding isn't supported.** If a campaign uses automated bidding on the Apple Ads side, its keywords have no manual max CPT bid. The agent can't recommend or apply a bid change for them.
+* **Use single-geo campaigns.** Apple Ads sets one bid per keyword per ad group, for all countries the campaign targets. If a campaign targets several countries, a bid change for one geo also changes it for the others. The recommendation might not be accurate.
+* **Scope per agent.** One app, up to three keywords, and up to five geos. Create more agents for more keywords or geos.
+
+**Good to know.** The agent never changes a bid on its own. You approve each change. As with any AI output, validate recommendations before you apply them.
+
+</Accordion>
+
 </Accordion>
 
 <Accordion title="Can I create my own agents?">
@@ -541,4 +601,4 @@ No. AppsFlyer doesn't use your data to train any AI models. AI can produce inacc
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01KA62R2NX6YEFMVG0SN0Y7NQ9=about-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=agent-hub-page h_01KQF8YAEDQW52YMK3W4FE2KE1=prerequisites-and-permissions h_01KQF8H9A6FPB3VVBWAAXM257W=slack-optional h_01KQF8HEEMRBFK1K54VH2YDPSC=email-optional h_01KQF8T91KTZ01YKJD8JT6G0ZJ=set-up-an-agent h_01KQF6P3EJMJDMF0BWWXQA091K=view-activity-output h_01KQF6P3EMCX0HQKPVQ89S9VGF=analyze-activity-with-ai-assistant h_01KQF6P3EPWHV7J742F3S4Q0GY=supported-and-unsupported-questions h_01KQF7NTQYDGA17KCCMTNYY72H=notes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=agent-types h_01M3PDTFQEJA8GAE579P1AZG0E=create-a-custom-agent h_01M3PDTFQECPBKDEXMQMPZJTCS=step-1-define-the-agent h_01M3PDTFQEF9QCN15FKMRST3GW=step-2-review-the-agent-plan h_01M3PDTFQE7FN9GPTJ5GEKSNVG=step-3-configure-and-deploy h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=note h_01M3PDTFQENS64JZYT2Y56QMXQ=note-1" />
+<div data-zendesk-anchors="h_01KA62R2NX6YEFMVG0SN0Y7NQ9=about-agent-hub h_01KQF6P3ED1KB47THJP8J3KAE5=agent-hub-page h_01KQF8YAEDQW52YMK3W4FE2KE1=prerequisites-and-permissions h_01KQF8H9A6FPB3VVBWAAXM257W=slack-optional h_01KQF8HEEMRBFK1K54VH2YDPSC=email-optional h_01KQF8T91KTZ01YKJD8JT6G0ZJ=set-up-an-agent h_01KQF6P3EJMJDMF0BWWXQA091K=view-activity-output h_01KQF6P3EMCX0HQKPVQ89S9VGF=analyze-activity-with-ai-assistant h_01KQF6P3EPWHV7J742F3S4Q0GY=supported-and-unsupported-questions h_01KQF7NTQYDGA17KCCMTNYY72H=notes h_01M3PDTFQDAEVRHJYK4ZJXQ3DH=agent-types h_01M3PDTFQEJA8GAE579P1AZG0E=create-a-custom-agent h_01M3PDTFQECPBKDEXMQMPZJTCS=step-1-define-the-agent h_01M3PDTFQEF9QCN15FKMRST3GW=step-2-review-the-agent-plan h_01M3PDTFQE7FN9GPTJ5GEKSNVG=step-3-configure-and-deploy h_01M3PDTFQEZJGPZ0AY4ZWRDR8D=note h_01M3PDTFQENS64JZYT2Y56QMXQ=note-1 h_01M5VP47MCS7HM339EW9AT6NGG=note-2" />

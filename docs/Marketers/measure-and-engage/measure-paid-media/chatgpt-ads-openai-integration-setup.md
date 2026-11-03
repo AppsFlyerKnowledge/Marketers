@@ -7,7 +7,7 @@ x-zendesk:
   category: Marketers
   category_id: 6550444307985
   created_at: '2026-07-05T13:42:23Z'
-  edited_at: '2026-10-06T13:31:52Z'
+  edited_at: '2026-10-29T13:37:02Z'
   id: 48439655791249
   locale: en-us
   section: Measure paid media
@@ -81,10 +81,14 @@ Enter the following credentials:
 
 ##### **Advanced Privacy**
 
-The Advanced Privacy (AP) toggle controls how events are sent to OpenAI for iOS users (14.5 and above) who have not made their IDFA available:
+The Advanced Privacy (AP) toggle controls how events are sent to OpenAI for iOS users (14.5 and above) who have not made their IDFA available (on the advertiser or publisher side):
 
 * Advanced Privacy **Disabled**: Events are sent with all available user identifiers (IPs, user agent, etc.) even when IDFA isn't available.
 * Advanced Privacy **Enabled**: Only events that are attributed to `openai_int` are sent, and these postbacks only include attribution data. All user-level identifiers are removed from the postback before it is sent.
+
+> 📘 **Note**
+>
+> OpenAI doesn’t collect or share IDFA on iOS devices, so the only way to ensure unattributed postbacks are being sent is to turn advanced privacy OFF.
 
 ##### **Advanced Matching Data Sharing**
 

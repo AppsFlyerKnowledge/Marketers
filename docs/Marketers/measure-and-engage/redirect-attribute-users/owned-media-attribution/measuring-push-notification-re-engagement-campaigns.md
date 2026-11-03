@@ -17,7 +17,7 @@ x-zendesk:
     - Marketers
     - OneLink
   created_at: '2016-01-18T10:03:11Z'
-  edited_at: '2026-08-14T16:22:53Z'
+  edited_at: '2026-11-01T13:32:51Z'
   id: 207364076
   locale: en-us
   section: Owned media attribution
@@ -34,7 +34,7 @@ AppsFlyer supports the measurement of push notification campaigns from all push 
 There are 2 possible ways to implement the integration:
 
 * By utilizing OneLink links (recommended).
-* By sending a JSON object with an `af` key in the push notification's payload (legacy).
+* By sending a JSON object with an `af` key in the push notification's payload.
 
 The conversions display in the Overview dashboard, in the retargeting or unified views.
 
@@ -63,8 +63,6 @@ To set up push notification measurement, the following steps must be completed:
 3. [Test the integration](/docs/measuring-push-notification-re-engagement-campaigns#3-testing-the-integration) by triggering a push notification.
 4. [View push notification campaigns performance](/docs/measuring-push-notification-re-engagement-campaigns#4-viewing-push-notification-campaigns-in-the-dashboard) in the dashboard.
 
-<div id="1-creating-the-push-notification" />
-
 <Accordion title="1. Creating the push notification">
 
 First, create a push notification that contains attribution data using one of the following methods.
@@ -81,7 +79,7 @@ First, create a push notification that contains attribution data using one of th
 This is the recommended method of integrating AppsFlyer with push notifications.
 
 1. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">OneLink link and set it up for retargeting.</Anchor>  
-   **Note**: OneLink short and long URLs are both supported.
+    **Note**: OneLink short and long URLs are both supported.
 2. In the push notification custom data, add the OneLink that contains the attribution data you want to send to AppsFlyer.
 
 > 📘 **Note**
@@ -90,19 +88,19 @@ This is the recommended method of integrating AppsFlyer with push notifications.
 >
 > In Firebase:
 >
-> ![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
+>  ![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
 
 </Tab>
 
-<Tab title="Using JSON (legacy)">
+<Tab title="Using JSON">
 
 <div id="using-json-legacy" />
 
-#### **Using JSON (legacy)**
+#### **Using JSON**
 
 > 📘 **Note**
 >
-> The following documents the legacy method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
+> The following documents the JSON-based method of integrating AppsFlyer with push notifications, and is available for backward-compatibility purposes. If you're setting up a new app, use the [recommended OneLink-based solution](/docs/measuring-push-notification-re-engagement-campaigns#using-onelink-recommended).
 
 In the push notification's custom data, add a custom key called `af` that contains the attribution data you want to send to AppsFlyer in JSON format. The following attribution parameters are required:
 
@@ -116,14 +114,12 @@ In the push notification's custom data, add a custom key called `af` that contai
 >
 > In Firebase:
 >
-> ![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
+>  ![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
 
 </Tab>
 </Tabs>
 
 </Accordion>
-
-<div id="2-configuring-the-sdk" />
 
 <Accordion title="2. Configuring the SDK">
 
@@ -135,8 +131,6 @@ This task requires changes to the app code. Follow the instructions on how to co
 * When implementing the legacy JSON-based solution, send your developers <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications#integrating-appsflyer-with-push-notifications-legacy">these instructions</Anchor>.
 
 </Accordion>
-
-<div id="3-testing-the-integration" />
 
 <Accordion title="3. Testing the integration">
 
@@ -150,8 +144,6 @@ If everything is configured properly, the SDK will:
 
 </Accordion>
 
-<div id="4-viewing-push-notification-campaigns-in-the-dashboard" />
-
 <Accordion title="4. Viewing push notification campaigns in the dashboard">
 
 You can see data originating from push notifications in the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#retargeting-dashboard">Retargeting dashboard</Anchor>.
@@ -160,4 +152,4 @@ You can see data originating from push notifications in the <Anchor target="_bla
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01J5XFSEG9DR31DP73KTAGQPFW=overview h_01J5XFSEG967HXNT3GFSC2AQYE=how-does-it-work h_01J5XFSEG91SER3JKB3RKK6B6G=prerequisites h_01J5XFSEG9W3RTP62NW7SV4D0F=steps h_01J5XFSEG9PXHTD4C9XCDC01DH=1-creating-the-push-notification h_01J5XFSEG9W73JYPHH9VRZSTZ8=using-onelink-recommended h_01J5XFSEG9V46T6XSG31J4AVET=using-json-legacy h_01J5XFSEG9GYMKAT27AWTN1WZZ=2-configuring-the-sdk h_01J5XFSEG91NH41QMV9K3S4F18=3-testing-the-integration h_01J5XFSEG904NC72K8MWX9YM06=4-viewing-push-notification-campaigns-in-the-dashboard" />
+<div data-zendesk-anchors="h_01J5XFSEG9DR31DP73KTAGQPFW=overview h_01J5XFSEG967HXNT3GFSC2AQYE=how-does-it-work h_01J5XFSEG91SER3JKB3RKK6B6G=prerequisites h_01J5XFSEG9W3RTP62NW7SV4D0F=steps h_01J5XFSEG9W73JYPHH9VRZSTZ8=using-onelink-recommended h_01J5XFSEG9V46T6XSG31J4AVET=using-json-legacy" />

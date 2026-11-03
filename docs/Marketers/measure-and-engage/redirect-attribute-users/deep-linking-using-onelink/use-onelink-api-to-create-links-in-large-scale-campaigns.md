@@ -15,7 +15,7 @@ x-zendesk:
     - Marketers
     - QR-to-App
   created_at: '2018-06-27T12:00:29Z'
-  edited_at: '2026-05-13T09:31:09Z'
+  edited_at: '2026-10-28T09:53:55Z'
   id: 360001250345
   locale: en-us
   section: Deep linking using OneLink
@@ -119,8 +119,4 @@ This section lists some of the key OneLink API traits and limitations. See a <An
 | API quota limit | <ul><li>The limit for using the OneLink API to create, edit, or delete OneLink links is 7.5 million requests per month (UTC timezone), per account.</li><li>POST, PUT, and DELETE requests count towards this limit. GET requests and GET QR requests do not count toward the quota.</li><li>All requests made after exceeding this quota are not served; the API call receives status code 429 with the message "Monthly quota exceeded".</li><li>You can check how much of the quota is used/remaining by either:<br />• Visiting the OneLink API page in the AppsFlyer platform to view usage history from the past 4 months, or<br />• Using the GET quota API to retrieve your current quota status.<br />You can also use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">GET quota API</Anchor> to trigger internal alerts when your usage nears your defined threshold.</li></ul> |
 | Link visibility | <ul><li>Links created via the API do not appear in the list of OneLink custom links in the AppsFlyer dashboard.</li></ul>**Best practice:** Save API-created links to a local table, so you can access the links for any future purpose. |
 
-> 📘 **Note**
->
-> A new version of OneLink API (v2.0) was released in December 2025. The previous version (v1.0) is deprecated and will continue to work until June 2026, after which it won’t be maintained. New integrations should use OneLink API v2.0. For migration guidance, see the Dev Hub <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/migrate_to_onelink_api_v2">migration guide</Anchor>.
-
-<div data-zendesk-anchors="onelink-api=about-onelink-api h_01HJR5MAKKNH236MVDZ03X1B1P=about-onelink-api h_01HJR5MAKKTDRPS0WQ44VN594X=example h_01KATK4KWTGSHTW5BEY8TEE5JD=get-started h_01KATKWCPHZB1MKCJ8DVDYZ1B3=dashboard h_01KAGQNZZA0NM19KV29QZ9ZDKP=use-cases h_01KBJ92FSTKCH9KXGWKJAF1DFH=crossplatform-journeys-ctv-desktop-webtoapp h_01KBJ92FST51NKDB465N76EX3M=crmpowered-channels-sms-email-whatsapp h_01KBJ92FST5H7V5S13TZ502VJV=offline-and-qrbased-engagement h_01KBJ92FST4FP4ZES5T643DD3R=referral-and-advocate-sharing h_01KAGQP00QZ2VBE9EY3SNPHGBP=traits-and-limitations h_01KAGM8HN6FHRK73FSF0TGXSX7=note" />
+<div data-zendesk-anchors="onelink-api=about-onelink-api h_01HJR5MAKKNH236MVDZ03X1B1P=about-onelink-api h_01HJR5MAKKTDRPS0WQ44VN594X=example h_01KATK4KWTGSHTW5BEY8TEE5JD=get-started h_01KATKWCPHZB1MKCJ8DVDYZ1B3=dashboard h_01KAGQNZZA0NM19KV29QZ9ZDKP=use-cases h_01KBJ92FSTKCH9KXGWKJAF1DFH=crossplatform-journeys-ctv-desktop-webtoapp h_01KBJ92FST51NKDB465N76EX3M=crmpowered-channels-sms-email-whatsapp h_01KBJ92FST5H7V5S13TZ502VJV=offline-and-qrbased-engagement h_01KBJ92FST4FP4ZES5T643DD3R=referral-and-advocate-sharing h_01KAGQP00QZ2VBE9EY3SNPHGBP=traits-and-limitations" />

@@ -13,7 +13,7 @@ x-zendesk:
     - Marketers
     - MCP
   created_at: '2025-06-19T07:19:33Z'
-  edited_at: '2026-10-26T10:38:35Z'
+  edited_at: '2026-11-02T09:07:21Z'
   id: 36349070304785
   locale: en-us
   section: AI
@@ -455,6 +455,48 @@ Explore aggregated marketing performance data in real time. You can identify top
 
 </Accordion>
 
+<div id="h_analyze-creative-performance" />
+
+<Accordion title="Analyze creative performance">
+
+<Embed title="[Beta] AppsFlyer MCP" typeOfEmbed="youtube" url="https://www.youtube.com/embed/FdZhZ497684" providerUrl="https://www.youtube.com" />
+
+Explore creative-level performance data (spend, installs, CPI, ROAS, retention, and revenue cohorts) across networks, campaigns, and apps. Break it down by creative name, type, size, duration, age, end card, in-app event (for example, level achieved, first deposit, or purchase), and more. Use this information to identify your best- and worst-performing creatives, catch creative fatigue early, and pull up asset previews alongside the numbers.
+
+**Prompt:** "What were my top-performing creatives by ROAS last month for Mypets.android.com?"
+
+**Expected AI response:** The AI retrieves the top creatives ranked by ROAS, including spend, installs, and ROAS for each.
+
+**Prompt:** "Which creative type (video, image, HTML, or text) had the best CPI in the US this quarter?"
+
+**Expected AI response:** The AI breaks down performance by creative type and returns CPI for each, highlighting the top performer.
+
+**Prompt:** "Show me creatives from Meta that have been running for over 2 weeks and are showing declining ROAS (possible fatigue)."
+
+**Expected AI response:** The AI returns a day-by-day ROAS trend per creative and flags creatives with a sustained downward trend.
+
+**Prompt:** "Pull up my top 5 creatives by day-7 revenue cohort for Mypets.android.com, with previews."
+
+**Expected AI response:** The AI returns the top 5 creatives ranked by day-7 revenue, including asset links so you can see each creative alongside its numbers.
+
+**Prompt:** "Which end card is driving the best retention for my video creatives, and how does that vary by creative age?"
+
+**Expected AI response:** The AI breaks down retention by end card type and creative age, highlighting which combinations perform best.
+
+**Prompt:** "Which campaign had the highest install cost last month, and what were the top 3 creatives driving it?"
+
+**Expected AI response:** The AI identifies the highest-cost campaign and ranks its creatives by spend or installs.
+
+**Prompt:** "Which creatives drove the most first deposits last month, and what was the cost per first deposit for each?"
+
+**Expected AI response:** The AI breaks down first-deposit events by creative and returns volume and cost per event, alongside spend and installs.
+
+**Prompt:** "Show me ROAS and level-up events by creative type for the last 30 days on Meta."
+
+**Expected AI response:** The AI returns ROAS and level-up event counts per creative type, highlighting the best-performing type.
+
+</Accordion>
+
 <div id="h_analyze-incrementality-experiments" />
 
 <Accordion title="Analyze Incrementality for UA experiments">
@@ -579,11 +621,37 @@ Retrieve key app configuration details such as attribution windows, session time
 
 </Accordion>
 
-<div id="zd-audiences-management" />
+<div id="h_01M6DQ8W2JQ9ECH5VEZPRT7221" />
+
+<Accordion title="Partner integrations management">
+
+Retrieve partner integration status and configuration for your apps, which partners are active, how they're configured, and whether event mappings and attribution settings are set up as expected. Use this to audit integration health and troubleshoot partner-specific issues without opening the AppsFlyer HQ UI.
+
+> 📘 **Note**
+>
+> Partner integrations management is currently read-only. You can retrieve and audit configuration through AppsFlyer MCP, but changes must still be made in the AppsFlyer HQ UI.
+
+**Prompt:** "Which partners are active for Mypets.android.com?"
+
+**Expected AI response:** The AI returns a list of active partner integrations for that app, including partner name, partner category, and platform.
+
+**Prompt:** "Which tech partners do we use for Mypets.android.com?"
+
+**Expected AI response:** The AI returns the subset of active integrations classified as tech partners (analytics-type integrations) for that app.
+
+**Prompt:** "What attribution window is configured for AppLovin on this app?"
+
+**Expected AI response:** The AI returns the configured install attribution lookback window for the AppLovin integration.
+
+**Prompt:** "Show me the full configuration for Moloco on Mypets.android.com."
+
+**Expected AI response:** The AI returns the integration's full configuration, including attribution settings, data-sharing toggles, and in-app event mappings.
+
+</Accordion>
+
+<div id="audiences-management" />
 
 <Accordion title="Audiences management">
-
-### Audiences management
 
 Gain visibility into audience structure, ownership, partner connections, and active tests. Monitor upload health, detect failed connections, identify stale audiences, and understand how each audience is configured. Use this information to streamline cross-functional campaign management.
 
@@ -731,7 +799,7 @@ AppsFlyer doesn't control whether your selected AI tool stores, processes, or le
 
 #### Certifications
 
-AppsFlyer is ISO 27001 and SOC 2 certified. ISO 42001 certification is in progress.
+AppsFlyer is ISO 27001, ISO 42001, and SOC 2 certified. ISO 42001 is the international standard for AI management systems.
 
 </Accordion>
 
@@ -745,7 +813,7 @@ Each tool is mapped to a functional category, such as Analyze performance, apps 
 
 See the table below for the complete list of tools and their category mappings.
 
-<table><thead><tr><th>Category</th><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="#analyze-performance">Analyze performance</a></td><td>fetch_aggregated_data</td><td>Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters.</td></tr><tr><td rowspan="2"><a href="#h_analyze-incrementality-experiments">Analyze Incrementality for UA experiments</a></td><td>incrementality_list_experiments</td><td>Lists incrementality experiments, filtered by status, app, country, media source, and date range.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion.</td></tr><tr><td rowspan="2"><a href="#apps-management">Apps management</a></td><td>get_apps</td><td>Lists all permitted apps organized by pinned and unpinned status with transfer requests.</td></tr><tr><td>get_app_settings</td><td>Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations.</td></tr><tr><td><a href="#cost-configuration-integration">Cost configuration integration</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Gets an overview of active cost integration status and missing cost integrations in your account.</td></tr><tr><td><a href="#ad-revenue-integrations">Ad revenue integrations</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent.</td></tr><tr><td><a href="#analyze-skan-performance">SKAN performance</a></td><td>skan_get_app_data</td><td>Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges.</td></tr><tr><td rowspan="4"><a href="#onelink-management">OneLink management</a></td><td>get_onelink_templates</td><td>Lists all OneLink templates.</td></tr><tr><td>get_onelink_template_links</td><td>Gets all OneLink links created from a specific template.</td></tr><tr><td>get_onelink_details</td><td>Gets configuration details for a specific OneLink.</td></tr><tr><td>discover_onelink</td><td>Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL.</td></tr><tr><td> </td><td>create_onelink_link</td><td>Creates a new short link under an existing OneLink template. Requires user confirmation before the link is created.</td></tr><tr><td> </td><td>list_smart_banners</td><td><p>Lists Smart Banners for the account with metadata, filterable by active status and creation date.</p><p><strong>Note:</strong> list_smart_banners returns at most 30 banners per account, ordered by active banners first and then by last modified.</p></td></tr><tr><td> </td><td>get_smart_banner_performance</td><td>Gets Smart Banner performance for specific banner IDs, at total or daily granularity.</td></tr><tr><td rowspan="3"><a href="#zd-audiences-management">Audiences management</a></td><td>list_active_audiences</td><td>Lists all active audiences that are calculated daily.</td></tr><tr><td>list_audiences_connections</td><td>Lists advertising partner integrations for audience data.</td></tr><tr><td>get_audience_connections</td><td>Gets partner connections for a specific audience.</td></tr><tr><td><a href="#knowledge-base-and-developer-support">Knowledge base and developer support</a></td><td>get_public_knowledge</td><td>Searches AppsFlyer Knowledge Base and DevHub documentation.</td></tr><tr><td><a href="#feedback-tool">Feedback tool</a></td><td>send_feedback</td><td>Submits feedback about the tools or system.</td></tr><tr><td><a href="#user-management-and-role-control">User management and role control</a></td><td>get_users</td><td>Lists users and roles from AppsFlyer.</td></tr></tbody></table>
+<table><thead><tr><th>Category</th><th>Tool</th><th>Description</th></tr></thead><tbody><tr><td><a href="#analyze-performance">Analyze performance</a></td><td>fetch_aggregated_data</td><td>Retrieves aggregated dashboard data with custom date ranges, groupings, metrics, and filters.</td></tr><tr><td><a href="#h_analyze-creative-performance">Analyze creative performance</a></td><td>get_creative_performance</td><td>Retrieves aggregated creative-level performance data (spend, installs, CPI, ROAS, retention, and revenue cohorts) across networks, campaigns, and apps, broken down by creative name, type, size, duration, age, end card, in-app event name, and more. Includes asset links for creative previews.</td></tr><tr><td rowspan="2"><a href="#h_analyze-incrementality-experiments">Analyze Incrementality for UA experiments</a></td><td>incrementality_list_experiments</td><td>Lists incrementality experiments, filtered by status, app, country, media source, and date range.</td></tr><tr><td>incrementality_get_experiment_results</td><td>Gets results for a specific experiment, including lift, incremental conversions, incrementality factor, and cost per incremental conversion.</td></tr><tr><td rowspan="2"><a href="#apps-management">Apps management</a></td><td>get_apps</td><td>Lists all permitted apps organized by pinned and unpinned status with transfer requests.</td></tr><tr><td>get_app_settings</td><td>Gets app configuration settings including attribution windows, privacy controls, session management, and platform-specific configurations.</td></tr><tr><td><a href="#h_01M6DQ8W2JQ9ECH5VEZPRT7221">Partner integrations management</a></td><td>get_app_partner_integration_configuration</td><td>Gets full configuration for a specific partner integration, including attribution settings, data sharing, and in-app event mappings.</td></tr><tr><td><a href="#cost-configuration-integration">Cost configuration integration</a></td><td><p>get_active_cost_integrations</p><p>list_cost_supported_media_source</p></td><td>Gets an overview of active cost integration status and missing cost integrations in your account.</td></tr><tr><td><a href="#ad-revenue-integrations">Ad revenue integrations</a></td><td><p>list_adrevenue_supported_media_sources</p><p>get_active_adrevenue_integrations</p></td><td>Checks which integrations are enabled, monitors health, detects configuration gaps, and helps keep ad revenue data consistent.</td></tr><tr><td><a href="#analyze-skan-performance">SKAN performance</a></td><td>skan_get_app_data</td><td>Retrieves aggregated SKAN performance data grouped by network, campaign, or event across custom date ranges.</td></tr><tr><td rowspan="4"><a href="#onelink-management">OneLink management</a></td><td>get_onelink_templates</td><td>Lists all OneLink templates.</td></tr><tr><td>get_onelink_template_links</td><td>Gets all OneLink links created from a specific template.</td></tr><tr><td>get_onelink_details</td><td>Gets configuration details for a specific OneLink.</td></tr><tr><td>discover_onelink</td><td>Discovers a link's parameters, capabilities, and redirection behavior from a short or long URL.</td></tr><tr><td> </td><td>create_onelink_link</td><td>Creates a new short link under an existing OneLink template. Requires user confirmation before the link is created.</td></tr><tr><td> </td><td>list_smart_banners</td><td><p>Lists Smart Banners for the account with metadata, filterable by active status and creation date.</p><p><strong>Note:</strong> list_smart_banners returns at most 30 banners per account, ordered by active banners first and then by last modified.</p></td></tr><tr><td> </td><td>get_smart_banner_performance</td><td>Gets Smart Banner performance for specific banner IDs, at total or daily granularity.</td></tr><tr><td rowspan="3"><a href="#audiences-management">Audiences management</a></td><td>list_active_audiences</td><td>Lists all active audiences that are calculated daily.</td></tr><tr><td>list_audiences_connections</td><td>Lists advertising partner integrations for audience data.</td></tr><tr><td>get_audience_connections</td><td>Gets partner connections for a specific audience.</td></tr><tr><td><a href="#knowledge-base-and-developer-support">Knowledge base and developer support</a></td><td>get_public_knowledge</td><td>Searches AppsFlyer Knowledge Base and DevHub documentation.</td></tr><tr><td><a href="#feedback-tool">Feedback tool</a></td><td>send_feedback</td><td>Submits feedback about the tools or system.</td></tr><tr><td><a href="#user-management-and-role-control">User management and role control</a></td><td>get_users</td><td>Lists users and roles from AppsFlyer.</td></tr></tbody></table>
 
 </Accordion>
 
@@ -757,7 +825,9 @@ See the table below for the complete list of tools and their category mappings.
 | --- | --- |
 | Multi-account use | AppsFlyer MCP uses data from the default account only. To switch accounts or connect several accounts at once, see [Use multiple accounts or agencies](#h_use-multiple-accounts-or-agencies). |
 | OneLink links | <ul><li>**OneLink link creation:**</li></ul><ul><li>Up to 10 links can be created per day, per account.</li><li>Links are created under an existing OneLink template.</li></ul><ul><li>The get\_onelink\_template\_links tool includes only links created from the OneLink Management page, not links created via API, SDK, or bulk creation.</li><li>Discover OneLink (discover\_onelink) has no such restriction. It supports all AppsFlyer link types, including single-platform (legacy) links, branded domains, and links created via the UI, API, SDK, or bulk creation.</li></ul> |
+| Partner integrations | <ul><li>Configuration details aren't available for agency-type partner integrations through this tool.</li><li>Agency-type and ad-networks-type partner integrations aren't supported.</li><li>Permissions configurations aren't available.</li></ul> |
 | Rate limits | <ul><li>Analytics: 20 requests per minute</li><li>Audiences: 350 requests per minute</li><li>SKAN: Up to 10,000 rows per query</li></ul> |
+| Row limit | Creative performance queries return a maximum of 300 rows per request. Pagination isn't currently supported. If a query matches more than 300 creatives or campaigns, narrow it by date range, media source, or another filter to stay under the limit. |
 | Date range | <ul><li>Analytics: 3 years</li><li>SKAN: Maximum 90 days per request</li></ul> |
 | Groupings | <ul><li>Analytics: 4 groupings per request</li><li>SKAN: As available in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#metrics">SKAN dashboard</Anchor></li></ul> |
 | App limits | <ul><li>Analytics: 10 apps per request</li><li>SKAN: One app per request, iOS only</li></ul> |
@@ -865,4 +935,4 @@ If the issue persists:
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01K9CJ9WQ3JJSYWDMNJ5GP7N04=disclaimer h_01JY3G849QAT2GC714FR6CADH2=what-is-appsflyer-mcp h_set-up-appsflyer-mcp=set-up-appsflyer-mcp h_01KT8Y9JEJEZ26BRHK530JDB0D=note h_authentication-methods=authentication-methods h_browser-based-oauth-login=browser-based-oauth-login h_bearer-token-authentication=bearer-token-authentication h_set-up-by-client=set-up-by-client claude-ai-and-claude-desktop=h_claude-ai-and-claude-desktop h_01KT8Y9JEJQNXK3SZ7M0ETH5RN=note-1 h_set-up-claude-ai-and-desktop=set-up-claude-chat-and-cowork set-up-claude-ai-and-desktop=set-up-claude-chat-and-cowork h_test-claude-connection=test-the-claude-connection test-claude-connection=test-the-claude-connection h_01M09YV6XHR3DPYSHZA127XB50=note-5 claude-code=h_claude-code h_add-appsflyer-mcp-to-claude-code=add-appsflyer-mcp-to-claude-code cursor-ide=h_cursor-ide vs-code=h_vs-code chatgpt=h_chatgpt custom-gpt-available-for-all-packages-including-free-enterprise=add-the-appsflyer-custom-gpt mcp-in-chatgpt-supported-for-chatgpt-users-on-all-paid-plans=add-appsflyer-mcp-in-chatgpt h_01KT8Y9JEJ806MVHJACM0VNM0K=note-3 gemini-cli=h_gemini-cli h_add-appsflyer-mcp-to-gemini-cli=add-appsflyer-mcp-to-gemini-cli h_troubleshoot-gemini-cli-authentication=troubleshoot-gemini-cli-authentication copilot-cli=h_copilot-cli h_add-appsflyer-mcp-to-copilot-cli=add-appsflyer-mcp-to-copilot-cli third-party-and-self-hosted-platforms=h_third-party-and-self-hosted-platforms h_mcp-connection-details=mcp-connection-details h_01KT8Y9JEKZRB56RZJXMMN4WV0=note-4 h_example-use-cases=example-use-cases other-platforms=h_other-platforms use-multiple-accounts-or-agencies=h_use-multiple-accounts-or-agencies h_switch-between-accounts=switch-between-accounts-browser-based-oauth switch-between-accounts=switch-between-accounts-browser-based-oauth h_connect-multiple-accounts-simultaneously=connect-multiple-accounts-simultaneously-bearer-token connect-multiple-accounts-simultaneously=connect-multiple-accounts-simultaneously-bearer-token using-appsflyer-mcp=use-appsflyer-mcp h_01JY3G1ZEC5Q30KP49RAA7EHRS=use-appsflyer-mcp h_01JY3WMZ41HHQ4G13DGV8DPJMW=use-cases-and-prompts h_01JZHT6BA2NX8GXNV8675XNVWT=important h_01JY3WZE6G2WB6DCWV68G1T36D=analyze-performance h_01M09YV6XJ7AM6S502BT2A594T=note-5 analyze-incrementality-experiments=h_analyze-incrementality-experiments h_01K7P0A6V86FZ3YQTQ4N5JZ4ZX=analyze-skan-performance h_01JY3VJEQMRDFAFTKZMPZ90RHP=onelink-management h_01JY3VJEQMXD32NSEE0E0FWG60=knowledge-base-and-developer-support h_01K01CE5NQ56HRT967F78ETKMS=apps-management audiences-management=zd-audiences-management h_01K01CE5NQBW6AADMHEPBQQN7S=zd-audiences-management audiences-management::6584184=audiences-management h_01KWBYTJ8GCJ884DN6XXPXZYMJ=audiences-management h_01JY3VJEQNYKZ3Z724XM9JRWZF=feedback-tool h_01K9SHEQBWKK6AC0GD0YQVVJJ9=cost-configuration-integration h_01KGM1A7V6NB16A1Q07V5FQG2M=ad-revenue-integrations h_01K338G5KA09TESMNC6Z88RJCP=user-management-and-role-control h_01JZHTJ1FQMXX9GSAN31E8HAYF=other-information privacy-and-security=h_privacy-and-security h_data-processing=data-processing h_credentials=credentials h_permissions=permissions h_read-only-access=read-and-write-access read-only-access=read-and-write-access h_ai-provider-data-usage=ai-provider-data-usage h_certifications=certifications h_01K044H4H18ED75GYQWMPDRA4R=tool-mapping h_01K01DT8656BQM1GW0HDHXGCY2=traits-and-limitations h_troubleshoot-connection-issues=troubleshoot-connection-issues troubleshoot-browser-based-oauth-login=h_troubleshoot-browser-based-oauth-login troubleshoot-bearer-token-authentication=h_troubleshoot-bearer-token-authentication access-and-permission-issues=h_access-and-permission-issues general-connection-checks=h_general-connection-checks" />
+<div data-zendesk-anchors="h_01K9CJ9WQ3JJSYWDMNJ5GP7N04=disclaimer h_01JY3G849QAT2GC714FR6CADH2=what-is-appsflyer-mcp h_set-up-appsflyer-mcp=set-up-appsflyer-mcp h_01KT8Y9JEJEZ26BRHK530JDB0D=note h_authentication-methods=authentication-methods h_browser-based-oauth-login=browser-based-oauth-login h_bearer-token-authentication=bearer-token-authentication h_set-up-by-client=set-up-by-client claude-ai-and-claude-desktop=h_claude-ai-and-claude-desktop h_01KT8Y9JEJQNXK3SZ7M0ETH5RN=note-1 h_set-up-claude-ai-and-desktop=set-up-claude-chat-and-cowork set-up-claude-ai-and-desktop=set-up-claude-chat-and-cowork h_test-claude-connection=test-the-claude-connection test-claude-connection=test-the-claude-connection h_01M09YV6XHR3DPYSHZA127XB50=note-5 claude-code=h_claude-code h_add-appsflyer-mcp-to-claude-code=add-appsflyer-mcp-to-claude-code cursor-ide=h_cursor-ide vs-code=h_vs-code chatgpt=h_chatgpt custom-gpt-available-for-all-packages-including-free-enterprise=add-the-appsflyer-custom-gpt mcp-in-chatgpt-supported-for-chatgpt-users-on-all-paid-plans=add-appsflyer-mcp-in-chatgpt h_01KT8Y9JEJ806MVHJACM0VNM0K=note-3 gemini-cli=h_gemini-cli h_add-appsflyer-mcp-to-gemini-cli=add-appsflyer-mcp-to-gemini-cli h_troubleshoot-gemini-cli-authentication=troubleshoot-gemini-cli-authentication copilot-cli=h_copilot-cli h_add-appsflyer-mcp-to-copilot-cli=add-appsflyer-mcp-to-copilot-cli third-party-and-self-hosted-platforms=h_third-party-and-self-hosted-platforms h_mcp-connection-details=mcp-connection-details h_01KT8Y9JEKZRB56RZJXMMN4WV0=note-4 h_example-use-cases=example-use-cases other-platforms=h_other-platforms use-multiple-accounts-or-agencies=h_use-multiple-accounts-or-agencies h_switch-between-accounts=switch-between-accounts-browser-based-oauth switch-between-accounts=switch-between-accounts-browser-based-oauth h_connect-multiple-accounts-simultaneously=connect-multiple-accounts-simultaneously-bearer-token connect-multiple-accounts-simultaneously=connect-multiple-accounts-simultaneously-bearer-token using-appsflyer-mcp=use-appsflyer-mcp h_01JY3G1ZEC5Q30KP49RAA7EHRS=use-appsflyer-mcp h_01JY3WMZ41HHQ4G13DGV8DPJMW=use-cases-and-prompts h_01JZHT6BA2NX8GXNV8675XNVWT=important h_01JY3WZE6G2WB6DCWV68G1T36D=analyze-performance h_01M09YV6XJ7AM6S502BT2A594T=note-5 analyze-creative-performance=h_analyze-creative-performance analyze-incrementality-experiments=h_analyze-incrementality-experiments h_01K7P0A6V86FZ3YQTQ4N5JZ4ZX=analyze-skan-performance h_01JY3VJEQMRDFAFTKZMPZ90RHP=onelink-management h_01JY3VJEQMXD32NSEE0E0FWG60=knowledge-base-and-developer-support h_01K01CE5NQ56HRT967F78ETKMS=apps-management h_01K01CE5NQBW6AADMHEPBQQN7S=audiences-management h_01JY3VJEQNYKZ3Z724XM9JRWZF=feedback-tool h_01K9SHEQBWKK6AC0GD0YQVVJJ9=cost-configuration-integration h_01KGM1A7V6NB16A1Q07V5FQG2M=ad-revenue-integrations h_01K338G5KA09TESMNC6Z88RJCP=user-management-and-role-control h_01JZHTJ1FQMXX9GSAN31E8HAYF=other-information privacy-and-security=h_privacy-and-security h_data-processing=data-processing h_credentials=credentials h_permissions=permissions h_read-only-access=read-and-write-access read-only-access=read-and-write-access h_ai-provider-data-usage=ai-provider-data-usage h_certifications=certifications h_01K044H4H18ED75GYQWMPDRA4R=tool-mapping h_01K01DT8656BQM1GW0HDHXGCY2=traits-and-limitations h_troubleshoot-connection-issues=troubleshoot-connection-issues troubleshoot-browser-based-oauth-login=h_troubleshoot-browser-based-oauth-login troubleshoot-bearer-token-authentication=h_troubleshoot-bearer-token-authentication access-and-permission-issues=h_access-and-permission-issues general-connection-checks=h_general-connection-checks" />

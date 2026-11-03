@@ -13,7 +13,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2021-11-09T09:34:59Z'
-  edited_at: '2026-09-15T11:41:04Z'
+  edited_at: '2026-11-02T07:48:34Z'
   id: 4410464352017
   locale: en-us
   section: X Ads (formerly Twitter Ads)
@@ -69,32 +69,20 @@ You can now go back to your AppsFlyer account and <Anchor target="_blank" href="
 
 <Accordion title="Is it possible to attribute installs to multiple X Ads accounts?">
 
-Yes, but it requires some actions on X Ads. But first, some background is required:
+Yes, but it requires some actions in X Ads. But first, some background is required:
 
-You can connect **only one handle** (also known as an X user) to your AppsFlyer account. When you connect this handle, your X Ads Account appears in the X Ads configuration in AppsFlyer dashboard.
+You can connect **only one handle** (also known as an X user) to your AppsFlyer account. When you connect this handle, your X Ads account appears in the X Ads configuration in AppsFlyer dashboard.
 
-If one of your team members also has an X Ads Account, this means they have a different handle than yours and cannot connect their handle to AppsFlyer. This is because **your handle is the one that is already connected with the AppsFlyer account**. In order for their X Ads Account to also appear in AppsFlyer, they need to **give your handle access as account administrator to their X Ads Account**.
+If one of your team members also has an X Ads account, this means they have a different handle than yours and cannot connect their handle to AppsFlyer. This is because **your handle is the one that is already connected with the AppsFlyer account**. In order for their X Ads account to also appear in AppsFlyer, they need to **give your handle access as account administrator to their X Ads account**.
 
-Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and is the handle that is connected to AppsFlyer. In order for her X Ads Account to appear in the AppsFlyer account, **she needs to give your handle access as account administrator to her X Ads Account**. Jenny needs to give access to Nivi to her X Ads Account and not that other way around. When she does so, AppsFlyer looks at Nivi's handle, and sees all the ad accounts that it is associated with, Jenny's included.
+Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and is the handle that is connected to AppsFlyer. In order for her X Ads account to appear in the AppsFlyer account, **she needs to give your handle access as account administrator to her X Ads account**. Jenny needs to give access to Nivi to her X Ads account and not the other way around. When she does so, AppsFlyer looks at Nivi's handle, and sees all the ad accounts that it is associated with, Jenny's included.
 
-1. Jenny signs into <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
-2. She clicks on **Account** and then chooses **Edit access to account**
+**To connect Jenny's X Ads account to AppsFlyer:**
 
-   ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
-3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
-
-   [![twitter_edit_access_to_account.png](https://files.readme.io/93cee24a4b77c48d47444c5992cffb40f082beda46bdb96e9f22eef5ae8d9269-4416810307601.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
-4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
-5. At this stage, she can see her X Ads Account also listed.
-6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.
-
-   Jenny's view:
-
-   ![jennys_ads_account.png](https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png)
-
-   Account admin view:
-
-   ![jennys_ads_account__1_.png](https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png)
+1. Jenny logs in to <Anchor target="_blank" href="https://ads.x.com/">X Ads</Anchor> with the @jenny handle.
+2. In her X Ads account, Jenny opens the account access settings and gives @nivi access as **Account administrator**. See the <Anchor target="_blank" href="https://help.x.com/en/business-and-advertising/multi-user-login-faq">Multi-user login FAQ</Anchor> in the X Help Center.
+3. Jenny logs in to AppsFlyer, goes to **Collaborate** > **Partner Integrations** > **Active integrations**, searches for **X Ads**, and selects it.
+4. Her X Ads account now appears in the integration settings, and she can configure the integration. Jenny sees only her X Ads account. The account admin sees all connected X Ads accounts, including hers.
 
 </Accordion>
 

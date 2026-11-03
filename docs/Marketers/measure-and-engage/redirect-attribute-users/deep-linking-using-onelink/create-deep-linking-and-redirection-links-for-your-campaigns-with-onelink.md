@@ -13,7 +13,7 @@ x-zendesk:
     - Marketers
     - Text-to-App
   created_at: '2016-05-22T10:03:37Z'
-  edited_at: '2026-10-07T10:22:41Z'
+  edited_at: '2026-11-02T14:41:26Z'
   id: 208874366
   locale: en-us
   section: Deep linking using OneLink
@@ -45,17 +45,27 @@ The steps required to set up a link are described in detail in the section that 
 | **Time required**<br /><br />30 minutes for most links, but approximately 3 hours for links that require deep linking or deferred deep linking functionality. |
 | **Outcome**<ul><li>A link that sends users to the correct app store, web page, or into the app based on their device, and gives them exactly the experience you want them to have.</li></ul> |
 
-> 👍 **Tip**
->
-> **Create OneLink links from your AI tool**
->
-> You can also create OneLink links by describing them in plain language in an AI tool connected to the <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">AppsFlyer MCP</Anchor><Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">.</Anchor> For example: "Create a link for our Black Friday email newsletter that opens the sale page in the app." The AI maps your request to the right parameters, shows you the link details, and creates the link only after you approve. Links are created under an existing OneLink template. <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp#onelink-management">Learn more</Anchor>
+### **Create OneLink links from your AI tool**
 
-**To create a OneLink link with a specific user experience:**
+You can create OneLink links by describing them in plain language, in the AppsFlyer AI Assistant, or in an AI tool connected to the <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">AppsFlyer MCP</Anchor><Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp">.</Anchor> For example: "Create a link for our Black Friday email newsletter that opens the sale page in the app." The AI maps your request to the right parameters, asks follow-up questions if details are missing, shows you the link details, and creates the link only after you approve. Links are created under an existing OneLink template and appear in OneLink management like any other link. <Anchor target="_blank" href="/marketers/docs/beta-appsflyer-mcp#onelink-management">Learn more</Anchor>
+
+**To create a OneLink link with the AI Assistant:**
+
+1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
+2. Select the relevant OneLink template and click **Link Generator**.
+3. Select a suggested prompt or describe the link you need.
+4. Review the link details and approve.
+5. Make sure your <Anchor target="_blank" href="/marketers/docs/set-up-your-domain-redirect-allowlist">domain redirect allowlist</Anchor> is updated with all domains you want to redirect users to.
+
+**Limit:** Up to 10 links per day per account, shared between the AI Assistant and the MCP.
+
+### **Create OneLink links in OneLink Management**
+
+**To create a OneLink link in OneLink Management:**
 
 1. In AppsFlyer, from the side menu, select **Engage** > **OneLink management**.
 2. Select the **OneLink template** to add a custom link for.
-3. Click **Add link**.
+3. Click **Add link manually**.
 4. Select the [experience](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences) you want to create for your users.
 5. Select a media source or enter a custom media source. This is the media source under which data displays in AppsFlyer. The media source is included in your link as the `pid` parameter value.
 
@@ -620,4 +630,4 @@ To solve this, Mark sends users an SMS containing a short URL powered by OneLink
 
 </Accordion>
 
-<div data-zendesk-anchors="h_01H8Y6DDT4M8XGAEJJVTHKHPKV=onelink-links-and-experiences h_01H8Y6DDT41C6JYKXET0NDRB1G=create-a-onelink-link h_01JRX3VWTVE77QVNG37BKPKHWW=note h_01H8Y6DDT4C543RS2BXAGS487M=experiences h_01H8Y6DDT4WZ5FKZYBX2H08MFD=general-settings h_01KY2AWC72SCQKY3XEQGW2J269=important h_01H8Y6DDT4R7785X5DRES66BKJ=enable-retargeting-for-the-app h_01H8Y6DDT4JT9H0R13ZNGHJ79S=social-media-preview-og-tags h_01KY2AWC72V1JR1BBGKHPDQ7AF=note-1 h_01H8Y6DDT4PHY2F5E3GK582P51=social-app-landing-page h_01H8Y6DDT463F5569B28DD17SV=important-1 h_01H8Y6DDT4MMD1AW6D1PNGNX5X=note-2 h_01H8Y6DDT4JB4RT438MAGNNX2S=to-use-the-social-app-landing-page h_01H8Y6DDT4G34S3RV3ZH64XT19=to-set-up-the-social-apps-landing-page h_01H8Y6DDT5XNJVYW2Y8F6JWPK2=deep-linking-and-deferred-deep-linking h_01KY2AWC73CNKHAF4HV26F132E=note-3 h_01H8Y6DDT5JR3B3DMR87JCBZ69=tips h_01H8Y6DDT5KSBE00WWDGQ5R1AQ=note-4 h_01H8Y6DDT58FC3HMSRZBMGZZRJ=redirection h_01H8Y6DDT5AAQ3BZD8QB9H19QB=additional-parameters h_01H8Y6DDT5B6M7CETQRD9NKX8R=testing h_01H8Y6DDT50DH5TGVVPJPJC4MG=new-users-without-your-app-installed h_01H8Y6DDT5KDEWS40XPYGYC8HK=existing-users-with-your-app-installed h_01H8Y6DDT5YR8JA5YMZFPMCC2X=additional-procedures h_01H8Y6DDT58EFS8S46D1AVP3T1=create-a-custom-impression-url h_01H8Y6DDT5S4NEJMNJR4K3QMNH=deep-linking-post-event h_01H8Y6DDT58Y6CS27M2W3MHYAD=deferred-deep-linking-with-ios-private-relay h_01H8Y6DDT5A7J07KNNRWCXCBH2=app-clipbased-solution h_01H8Y6DDT5VDKAR89B8N6D7YMB=flow h_01H8Y6DDT62H71A8DPG00A3ZTN=clipboardbased-solution flow::21baf6ac=flow-1 h_01H8Y6DDT638T7C9HQHZ1CJ726=flow-1 h_01H8Y6DDT6JGP33AWFQV6Z8FF0=requirements h_01H8Y6DDT61ENGJFZ1XS28GS1T=setup h_01H8Y6DDT679SGBTSM669F9FHV=additional-information h_01H8Y6DDT6TX4WTP2HYRF11DZ3=examples h_01H8Y6DDT6TQYRS81BMHARB62S=traits-and-limitations" />
+<div data-zendesk-anchors="h_01H8Y6DDT4M8XGAEJJVTHKHPKV=onelink-links-and-experiences h_01H8Y6DDT41C6JYKXET0NDRB1G=create-a-onelink-link h_01M6BKDS4H25HN73V1P9MVERM6=create-onelink-links-from-your-ai-tool h_01M6BKEMS32CS07M7R2X9T811Y=create-onelink-links-in-onelink-management h_01JRX3VWTVE77QVNG37BKPKHWW=note h_01H8Y6DDT4C543RS2BXAGS487M=experiences h_01H8Y6DDT4WZ5FKZYBX2H08MFD=general-settings h_01KY2AWC72SCQKY3XEQGW2J269=important h_01H8Y6DDT4R7785X5DRES66BKJ=enable-retargeting-for-the-app h_01H8Y6DDT4JT9H0R13ZNGHJ79S=social-media-preview-og-tags h_01KY2AWC72V1JR1BBGKHPDQ7AF=note-1 h_01H8Y6DDT4PHY2F5E3GK582P51=social-app-landing-page h_01H8Y6DDT463F5569B28DD17SV=important-1 h_01H8Y6DDT4MMD1AW6D1PNGNX5X=note-2 h_01H8Y6DDT4JB4RT438MAGNNX2S=to-use-the-social-app-landing-page h_01H8Y6DDT4G34S3RV3ZH64XT19=to-set-up-the-social-apps-landing-page h_01H8Y6DDT5XNJVYW2Y8F6JWPK2=deep-linking-and-deferred-deep-linking h_01KY2AWC73CNKHAF4HV26F132E=note-3 h_01H8Y6DDT5JR3B3DMR87JCBZ69=tips h_01H8Y6DDT5KSBE00WWDGQ5R1AQ=note-4 h_01H8Y6DDT58FC3HMSRZBMGZZRJ=redirection h_01H8Y6DDT5AAQ3BZD8QB9H19QB=additional-parameters h_01H8Y6DDT5B6M7CETQRD9NKX8R=testing h_01H8Y6DDT50DH5TGVVPJPJC4MG=new-users-without-your-app-installed h_01H8Y6DDT5KDEWS40XPYGYC8HK=existing-users-with-your-app-installed h_01H8Y6DDT5YR8JA5YMZFPMCC2X=additional-procedures h_01H8Y6DDT58EFS8S46D1AVP3T1=create-a-custom-impression-url h_01H8Y6DDT5S4NEJMNJR4K3QMNH=deep-linking-post-event h_01H8Y6DDT58Y6CS27M2W3MHYAD=deferred-deep-linking-with-ios-private-relay h_01H8Y6DDT5A7J07KNNRWCXCBH2=app-clipbased-solution h_01H8Y6DDT5VDKAR89B8N6D7YMB=flow h_01H8Y6DDT62H71A8DPG00A3ZTN=clipboardbased-solution flow::21baf6ac=flow-1 h_01H8Y6DDT638T7C9HQHZ1CJ726=flow-1 h_01H8Y6DDT6JGP33AWFQV6Z8FF0=requirements h_01H8Y6DDT61ENGJFZ1XS28GS1T=setup h_01H8Y6DDT679SGBTSM669F9FHV=additional-information h_01H8Y6DDT6TX4WTP2HYRF11DZ3=examples h_01H8Y6DDT6TQYRS81BMHARB62S=traits-and-limitations" />

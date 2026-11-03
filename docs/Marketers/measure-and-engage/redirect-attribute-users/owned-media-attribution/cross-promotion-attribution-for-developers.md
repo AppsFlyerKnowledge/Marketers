@@ -229,7 +229,7 @@ Currently, the cross-promotion attribution APIs are available only for native An
 Clicks cross-promotion URL format:
 
 ```http
-https://app.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&
+https://{PREFIX}.app.appsflyersdk.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```
 

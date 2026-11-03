@@ -18,7 +18,7 @@ x-zendesk:
     - Agencies
     - Ad Networks
   created_at: '2020-02-23T15:35:57Z'
-  edited_at: '2026-09-01T11:14:24Z'
+  edited_at: '2026-11-02T08:54:08Z'
   id: 360006091197
   locale: en-us
   section: Media source configuration
@@ -81,6 +81,7 @@ Consider the following:
 | Snapchat* (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) | snapchat\_int | 6 |
 | TikTok for Business* | tiktokglobal\_int | 13 |
 | X Ads (formerly Twitter) | twitter\_int | 3 |
+| Walmart | walmart\_int | 6 |
 
 > 📘 **Note***
 >

@@ -13,7 +13,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-10-18T19:06:54Z'
-  edited_at: '2026-05-03T13:55:35Z'
+  edited_at: '2026-11-01T10:44:34Z'
   id: 9960361873809
   locale: en-us
   section: Media source configuration
@@ -179,9 +179,13 @@ After [discovering new partners](#discover-partners) and learning about their ac
 
 If the ad network you're working with isn't integrated with AppsFlyer yet, you can send them an invitation link.
 
+### Partner verification
+
+Every partner invited in this way is automatically verified before their account is approved. Both you and the partner receive the outcome by email within 48 hours of the partner submitting the signup form.
+
 ### Validation period for new integrations
 
-Before new ad network integrations can be added to the Marketplace, they undergo a validation period during which AppsFlyer assesses their traffic quality. Integrations failing to meet quality standards post-validation will be removed from the platform.
+Before new ad network integrations can be added to the Marketplace, they undergo a validation period during which AppsFlyer assesses their traffic quality. Integrations failing to meet quality standards, post-validation, will be removed from the platform.
 
 > 📘 **Note**
 >
@@ -195,6 +199,6 @@ Before new ad network integrations can be added to the Marketplace, they undergo
    <Image alt="invite new partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
 3. Enter the partner's name and relevant email address.
 
-The partner will receive an email with a registration link to start the signup process.
+The partner will receive an email with a registration link to start the signup process. Once they submit it, we'll automatically run verification, and you'll both hear back within 48 hours (see [Partner verification](#partner-verification) above).
 
-<div data-zendesk-anchors="h_01KPN37WSQH6HJAY4G3AESFCM8=about-partner-integrations h_01KGHNPTWBMZ85VETBZ4VE07BZ=quick-start h_01KGHNPTWBQ88VKS2A90GVS64T=manage-active-integrations h_01KQQ1C5FVA68RPJFX5GBEVXEC=note h_01KGHNPTWB7W7STV7A2S16755Z=what-you-can-do-from-the-active-integrations-tab h_01KGHNPTWC4A6142DEM5C6MQ7G=discover-partners h_01KGHNPTWCZ76VYXHX4VE1QXJ1=partner-cards h_01KGHNPTWCNB5QP8AR8T6M420S=filter-the-list-of-partners h_01KGHNPTWCDT9WYZKNBKHS7CF7=search-for-partners h_01KGHNPTWCE9HVTV0KN9E8GEKM=learn-about-partners h_01KGHNPTWCKY379EY4649EMPGS=what-you-can-do-from-the-partner-page h_01KGHNPTWC73HH63YNFT13E1RG=what-you-can-see-on-the-partner-page h_01KGHNPTWCS7QX89XKTY917J24=contact-the-partner h_01KQQ1J8V3BG9TCH6JR9BE8YYY=note-1 h_01KGHNPTWCN2X3XVXKE1MXJRA6=integrate-with-a-new-partner h_01KQQ1YC23M8HV6K9BHDWDBKJP=note-2 h_01KGHNPTWCZ2KK5A273F2PAEGC=invite-new-partners-to-appsflyer h_01KGHNPTWCMDS1EH0RGYF7YR12=validation-period-for-new-integrations h_01KQQ1QS4CEHBQHYMMYMF9PK38=note-3" />
+<div data-zendesk-anchors="h_01KPN37WSQH6HJAY4G3AESFCM8=about-partner-integrations h_01KGHNPTWBMZ85VETBZ4VE07BZ=quick-start h_01KGHNPTWBQ88VKS2A90GVS64T=manage-active-integrations h_01KQQ1C5FVA68RPJFX5GBEVXEC=note h_01KGHNPTWB7W7STV7A2S16755Z=what-you-can-do-from-the-active-integrations-tab h_01KGHNPTWC4A6142DEM5C6MQ7G=discover-partners h_01KGHNPTWCZ76VYXHX4VE1QXJ1=partner-cards h_01KGHNPTWCNB5QP8AR8T6M420S=filter-the-list-of-partners h_01KGHNPTWCDT9WYZKNBKHS7CF7=search-for-partners h_01KGHNPTWCE9HVTV0KN9E8GEKM=learn-about-partners h_01KGHNPTWCKY379EY4649EMPGS=what-you-can-do-from-the-partner-page h_01KGHNPTWC73HH63YNFT13E1RG=what-you-can-see-on-the-partner-page h_01KGHNPTWCS7QX89XKTY917J24=contact-the-partner h_01KQQ1J8V3BG9TCH6JR9BE8YYY=note-1 h_01KGHNPTWCN2X3XVXKE1MXJRA6=integrate-with-a-new-partner h_01KQQ1YC23M8HV6K9BHDWDBKJP=note-2 h_01KGHNPTWCZ2KK5A273F2PAEGC=invite-new-partners-to-appsflyer h_01M6B9KN95E7XQFBCC41WXF5VF=partner-verification h_01KGHNPTWCMDS1EH0RGYF7YR12=validation-period-for-new-integrations h_01KQQ1QS4CEHBQHYMMYMF9PK38=note-3" />

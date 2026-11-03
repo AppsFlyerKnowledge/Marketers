@@ -17,7 +17,7 @@ x-zendesk:
     - Mobile Attribution
     - Agencies
   created_at: '2020-07-09T09:50:46Z'
-  edited_at: '2026-09-09T13:07:27Z'
+  edited_at: '2026-11-01T14:09:09Z'
   id: 360011016138
   locale: en-us
   section: Ad network configuration guides (R-Z)
@@ -157,21 +157,9 @@ Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-a
 
 ## Raw data restrictions
 
-Starting August 30, 2025:
+Starting September 8th, 2026: Previous restrictions were removed and all attribution fields are fully supported.
 
-The following restrictions apply to view-through attribution:
-
-* Media source (reddit\_int) — available
-* Attributed touch time Reported as date only (dd/mm/yyyy)
-* Campaign details: Reported as restricted
-* Clicks and impressions: Not included in raw data reports
-
-The following restrictions apply to click-through attribution:
-
-* Media source (reddit\_int) — available
-* Attributed touch time Reported as date only (dd/mm/yyyy)
-* Campaign details — available
-* Clicks and impressions: Not included in raw data reports
+Clicks and impressions from Reddit aren't included in raw data reports.
 
 **Reminder:** Data received about a Reddit campaign is subject to <Anchor target="_blank" href="https://protect.checkpoint.com/v2/___https:/business.reddithelp.com/s/article/Reddit-Business-Tool-Terms___.YzJ1OnJlZGRpdDpjOmc6OGFlZGI3Y2U5MDg3ZTgxNzYxYzdjMzEzYzgwZjI3ZDI6NjowMDg5Ojg1MmViZDg4YWY2ZTg4NThjMDE2NjhkYTk2ZjZkYmZlYWI1NGY3MGEwNDk0MmE0ODQ0NTI3ZDM0ZWYwOWVlMmI6cDpUOk4#:%7E:text=These%20Reddit%20Business%20Tool%20Terms,advertising%20purposes%20or%20to%20otherwise">Reddit Business Tool Terms</Anchor>, and includes, among other restrictions, a prohibition on using Reddit data to create profiles of any users.
 

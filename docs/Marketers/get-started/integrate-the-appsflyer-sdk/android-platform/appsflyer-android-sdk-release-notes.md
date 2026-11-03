@@ -15,7 +15,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2017-03-09T20:17:19Z'
-  edited_at: '2026-10-19T10:06:58Z'
+  edited_at: '2026-11-01T11:18:35Z'
   id: 115001256006
   locale: en-us
   section: Android platform
@@ -44,6 +44,7 @@ The table below provides release notes for supported Android SDK versions, inclu
 
 | Version | Release date | Notes |
 | --- | --- | --- |
+| 7.0.4 | 2026-10-26 | <ul><li>Improved handling of Gmail email addresses in the `setUserEmail` API</li></ul> |
 | 7.0.2 | 2026-10-19 | <ul><li>Added ad revenue reporting support for two new ad mediation partners - Google Ad Manager and CloudX.</li><li>Added a new event parameter for reporting net revenue.</li><li>Stability and performance improvements.</li></ul> |
 | 7.0.1 | 2026-07-22 | <ul><li>Apps can now provide a hashed customer email, phone number, name, and Facebook login ID to the SDK for sharing with ad network partners. The SDK doesn't collect this information itself. The app provides it, and only hashed values are sent, never plain text.</li><li>Removed the `setUserEmails` and `setPhoneNumber` methods. Developers using these must switch to `setUserEmail` and `setUserPhone`</li></ul> |
 | 6.18.1 | 2026-05-25 | <ul><li>Fixed an issue in the Purchase Connector where purchase validations that failed due to connectivity problems were cached and not retried, which could result in missing purchase data.</li></ul> |
@@ -61,11 +62,11 @@ The table below provides release notes for supported Android SDK versions, inclu
 | 6.15.2 | 2024-10-10 | <ul><li>Stability improvements and fixes</li><li>Internal updates related to Privacy Sandbox Attribution API</li></ul> |
 | 6.15.1 | 2024-08-28 | Versions upgrade:<ul><li>targetSDKVersion: v34</li><li>Gradle: v8.7</li><li>Java: v17</li></ul> |
 | 6.15.0 | 2024-07-31 | <ul><li>Added the `logAdRevenue` method to send ad revenue data to AppsFlyer. **Note:** Starting with this version, the AdRevenue Connector should no longer be used; it must be replaced by the `logAdRevenue`method. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-1">Learn more</Anchor></li></ul> |
-| 6.14.2 | 2024-06-10 | <ul><li>Fixed an issue with fetching Meta Install Referrer on apps built with Unity.</li></ul> |
-| 6.14.1 | 2024-05-29 | SDK maintenance |
-| 6.14.0 | 2024-04-18 | <ul><li>Added support for the updated Purchase Validation flow. This feature is currently in closed beta. Learn more.</li><li>Updated Huawei Referrer integration. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Learn more</Anchor>.</li></ul> |
-| 6.13.1 | 2024-04-03 | SDK maintenance |
-| 6.13.0 | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy (DMA)</li></ul> |
+| 6.14.2  <br />End of support:  <br />2027-03-08 | 2024-06-10 | <ul><li>Fixed an issue with fetching Meta Install Referrer on apps built with Unity.</li></ul> |
+| 6.14.1  <br />End of support:  <br />2027-03-08 | 2024-05-29 | SDK maintenance |
+| 6.14.0  <br />End of support:  <br />2027-03-08 | 2024-04-18 | <ul><li>Added support for the updated Purchase Validation flow. This feature is currently in closed beta. Learn more.</li><li>Updated Huawei Referrer integration. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Learn more</Anchor>.</li></ul> |
+| 6.13.1  <br />End of support:  <br />2027-03-08 | 2024-04-03 | SDK maintenance |
+| 6.13.0  <br />End of support:  <br />2027-03-08 | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy (DMA)</li></ul> |
 
 ## Unsupported SDK versions
 

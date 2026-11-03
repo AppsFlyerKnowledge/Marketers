@@ -15,7 +15,7 @@ x-zendesk:
     - Marketers
     - Smart Banners and Scripts
   created_at: '2017-01-02T15:08:07Z'
-  edited_at: '2023-07-24T11:58:04Z'
+  edited_at: '2026-11-01T10:05:43Z'
   id: 115000171743
   locale: en-us
   section: Owned media attribution
@@ -23,7 +23,7 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/115000171743-Attributing-iOS-Safari-App-Banners
 ---
-> **At a glance:** Safari implements an <Anchor target="_blank" href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">App Banner</Anchor> feature providing a standardized way to promote apps in the Apple App Store. **This is not related to the recommended AppsFlyer <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor> solution.**
+> **At a glance:** Safari implements an <Anchor target="_blank" href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">App Banner</Anchor> feature providing a standardized way to promote apps in the Apple App Store. **This is not related to the recommended AppsFlyer** <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">**Smart Banner**</Anchor> **solution.**
 
 > 📘 **Note**
 >
@@ -41,7 +41,7 @@ Using iOS 6.0 and later, you can implement App Banners in Safari to promote apps
 
 **Example banner in Safari**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/dde65134ca3450b407c7b2b5ff7f757422c7fcb3982430df66f1f793b8d0580a-360007210818.jpg" width="278px" />
+<Image alt="AppleBanner_en-us.jpg" src="https://support.appsflyer.com/hc/article_attachments/52437521367441" width="278px" />
 
 Before implementing iOS App Banners consider:
 
@@ -51,12 +51,12 @@ Before implementing iOS App Banners consider:
 
 ### Setting a web page with an app banner and click attribution link
 
-1. Insert the following in the header element of the web page HTML.  
+1. Insert the following in the header element of the web page HTML.
 
    ```html Markup
    <meta name="apple-itunes-app" content="app-id=123456789">
    ```
-2. Generate an attribution Link for the mobile app you are promoting in the App Banner. The following is an example showing an attribution Link for the mobile app being promoted in the App Banner. You can also use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">shortened custom attribution links</Anchor>.   
+2. Generate an attribution Link for the mobile app you are promoting in the App Banner. You can use <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">AppsFlyer SmartScript</Anchor> for this purpose; it will dynamically generate an attribution link based on incoming UTM parameters. The following is an example showing an attribution Link for the mobile app being promoted in the App Banner. You can also use <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">shortened custom attribution links</Anchor>.
 
    ```http
    https://app.appsflyer.com/123456789?pid=ios_smart_banner&c=ios_campaign
@@ -83,3 +83,5 @@ Before implementing iOS App Banners consider:
    ```
 
 **Note!** This code loads and fires a click on both iOS and Android devices. To disable the code on Android devices, add the required logic in your code.
+
+<div data-zendesk-anchors="h_01M63G1712D0HXWH688309CDQB=note h_01M63G1713KMRCGZFNPB7CDRVX=ios-app-banner h_01M63G1713H59N0GGD2R82DPT8=setting-a-web-page-with-an-app-banner-and-click-attribution-link" />

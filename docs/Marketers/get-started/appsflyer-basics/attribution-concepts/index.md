@@ -20,6 +20,7 @@ x-zendesk:
 - [\[Beta\] User-based cross-platform re-engagement attribution](/docs/beta-user-based-cross-platform-re-engagement-attribution)
 - [Advanced-Matching Data Sharing](/docs/advanced-matching-data-sharing)
 - [Unique users](/docs/unique-users)
+- [About organic search and organic AI answers attribution](/docs/about-organic-search-and-organic-ai-answers-attribution)
 - [Set up organic search (SEO) and organic AI answers (AEO) re-engagement attribution](/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution)
 - [AppsFlyer Knowledge Base glossary](/docs/appsflyer-knowledge-base-glossary)
 - [Set up lookback windows](/docs/set-up-lookback-windows)

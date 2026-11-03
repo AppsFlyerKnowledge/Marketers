@@ -12,7 +12,7 @@ x-zendesk:
     - Marketers
     - Mobile Attribution
   created_at: '2022-06-09T16:49:57Z'
-  edited_at: '2026-09-09T10:24:24Z'
+  edited_at: '2026-11-02T08:20:12Z'
   id: 6722785184913
   locale: en-us
   section: TikTok for Business
@@ -368,21 +368,4 @@ AppsFlyer maps TikTok Smart Plus campaign data as follows:
 >
 > AppsFlyer's mapping structure for Smart Plus campaigns differs from TikTok Ads Manager. In TikTok Ads Manager, reports are shown only up to the ad level without a dedicated creative breakdown. AppsFlyer, however, maps TikTok's creative data directly to the ad level. As a result, you might see discrepancies when comparing performance data between AppsFlyer and TikTok.
 
-## Troubleshooting
-
-### My TikTok app status is "Pending Verification."
-
-If Aggregated Advanced Privacy (AAP) is enabled at either the app level or the TikTok partner level in AppsFlyer, install and in-app event postbacks are only sent for installs attributed to an ad network. As a result, TikTok may not receive required postbacks from organic sources, leading to a "Pending Verification" status.
-
-#### Recommended resolution
-
-Use the steps below to get your app verified:
-
-1. You can temporarily disable the AAP setting in AppsFlyer to allow TikTok to receive organic postbacks for verification purposes only. (Disabling AAP can make user-level data available to advertisers and partners. For more information, see <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework#aap-disabled">AAP disabled</Anchor>.)
-   1. Go to the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">app-level settings</Anchor> and disable AAP.
-   2. Go to [TikTok's partner integration configuration](#advanced-data-sharing) and disable AAP there as well.
-2. In the [Postbacks section](#default-postbacks), set the postback method to **All Media Sources, including Organic**.
-3. Wait for TikTok to receive at least one install or in-app event postback. Once received, your app should automatically update to "verified" on the TikTok dashboard.
-4. After verification, you may [re-enable the AAP setting](#advanced-data-sharing), based on your privacy preferences.
-
-<div data-zendesk-anchors="01H8VVCC8G3ZXZJMHSMJ67GMG4=overview set-up-tiktok-for-business-integration=set-up-tiktok-for-business 01H8VVCC8GPY4SEFGK30Q1BJZ6=set-up-tiktok-for-business 01H8VVCC8G0KR4AA2HD9S8QBKD=activate-partner 01H8VVCC8G0Z6ZHC10KVY9CGGQ=advanced-data-sharing h_01_advanced-matching-data-sharing=advanced-matching-data-sharing 01H8VVCC8GSDPSNN0AJPVZPR8P=general-settings 01H8VVCC8GW677RN6R6CV35KGG=default-postbacks 01H8VVCC8GK8VFPBEPAMVHCAWM=install-attribution h_01K6D37PG96P2MG99BETK25GYA=reinstall-attribution reengagement-attribution=re-engagement-attribution 01H8VVCC8HHG5290PYF0BT29QA=re-engagement-attribution h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting inapp-event-postbacks=in-app-event-postbacks 01H8VVCC8HHZRFQ2T1X478YZMP=in-app-event-postbacks 01H8VVCC8HWDC9A03FRY5BC87Y=for-roi360-subscribers h_01JJM8MPX2X37WVR86S7786S06=deep-linking-with-tiktok-for-business h_01HVQR1TC5WVRDS24R9ZKD2HW2=access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking measure-app-activity-for-nonapp-campaigns=web-to-app-measure-app-activity-for-non-app-campaigns h_01J7MYAMBQ8M0JN005FSXQDZNS=web-to-app-measure-app-activity-for-non-app-campaigns 01H8VVCC8HVNNQ9PJS4ZQCVDNS=set-up-tiktok-for-business-for-agencies h_01HHVGS94CB9XC0T63VFDZ18JS=agency-limitations h_01M22GT5M1VJ691TX74VN18SYX=send-complex-in-app-events-to-tiktok h_01K9AGYS6XCDS3193ZAK7Z208F=smart-plus-campaigns-reporting h_01K9AGYS6XSXJ9DD6XYDHVYMYK=how-smart-plus-campaigns-are-structured h_01K9AGYS6XYT763ST1H1T4SXT8=how-smart-plus-data-is-reported-in-appsflyer h_01JQBGSDV84TBJGXGBSFWN6C4D=troubleshooting my-app-status-on-tiktok-is-pending-verification=my-tiktok-app-status-is-pending-verification h_01JQBGSKBY6C3289G3NY3WN74K=my-tiktok-app-status-is-pending-verification h_01JQBGWA8ASV6MBA5FKGD56DKZ=recommended-resolution" />
+<div data-zendesk-anchors="01H8VVCC8G3ZXZJMHSMJ67GMG4=overview set-up-tiktok-for-business-integration=set-up-tiktok-for-business 01H8VVCC8GPY4SEFGK30Q1BJZ6=set-up-tiktok-for-business 01H8VVCC8G0KR4AA2HD9S8QBKD=activate-partner 01H8VVCC8G0Z6ZHC10KVY9CGGQ=advanced-data-sharing h_01_advanced-matching-data-sharing=advanced-matching-data-sharing 01H8VVCC8GSDPSNN0AJPVZPR8P=general-settings 01H8VVCC8GW677RN6R6CV35KGG=default-postbacks 01H8VVCC8GK8VFPBEPAMVHCAWM=install-attribution h_01K6D37PG96P2MG99BETK25GYA=reinstall-attribution reengagement-attribution=re-engagement-attribution 01H8VVCC8HHG5290PYF0BT29QA=re-engagement-attribution h_01HNWSTJZPFQVQ5C8M0JA1J0T5=ignore-active-users-for-retargeting inapp-event-postbacks=in-app-event-postbacks 01H8VVCC8HHZRFQ2T1X478YZMP=in-app-event-postbacks 01H8VVCC8HWDC9A03FRY5BC87Y=for-roi360-subscribers h_01JJM8MPX2X37WVR86S7786S06=deep-linking-with-tiktok-for-business h_01HVQR1TC5WVRDS24R9ZKD2HW2=access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking measure-app-activity-for-nonapp-campaigns=web-to-app-measure-app-activity-for-non-app-campaigns h_01J7MYAMBQ8M0JN005FSXQDZNS=web-to-app-measure-app-activity-for-non-app-campaigns 01H8VVCC8HVNNQ9PJS4ZQCVDNS=set-up-tiktok-for-business-for-agencies h_01HHVGS94CB9XC0T63VFDZ18JS=agency-limitations h_01M22GT5M1VJ691TX74VN18SYX=send-complex-in-app-events-to-tiktok h_01K9AGYS6XCDS3193ZAK7Z208F=smart-plus-campaigns-reporting h_01K9AGYS6XSXJ9DD6XYDHVYMYK=how-smart-plus-campaigns-are-structured h_01K9AGYS6XYT763ST1H1T4SXT8=how-smart-plus-data-is-reported-in-appsflyer" />
