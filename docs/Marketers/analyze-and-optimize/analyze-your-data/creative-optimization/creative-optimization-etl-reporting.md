@@ -152,7 +152,7 @@ Los siguientes datos **no** están disponibles en Standard Creative ETL:
 
 * Dimensión personalizada
 * Cadena
-* https://support.appsflyer.com/hc/article_attachments/19284078965009
+* https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 * Datos de IA (elementos y escenas)
 * Datos de retargeting
 
@@ -464,7 +464,7 @@ Límites:
 | Limitación | Nota |
 | --- | --- |
 | Reportes por cuenta | Máximo de 5 reportes activos por cuenta |
-| https://support.appsflyer.com/hc/article_attachments/19276693230353 | Máximo de 30 eventos por reporte |
+| https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg | Máximo de 30 eventos por reporte |
 | Columnas totales por reporte | Máximo de 150 columnas (dimensiones + métricas + submétricas de eventos in-app combinadas) |
 | Los siguientes datos no están disponibles: | Los datos están disponibles durante una ventana de lookback de 30 días. Los datos históricos fuera de esta ventana no están disponibles. |
 | Frecuencia de entrega | Una vez al día. La entrega intradía no es compatible |

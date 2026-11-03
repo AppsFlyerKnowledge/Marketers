@@ -40,7 +40,7 @@ Con iOS 6.0 y versiones posteriores, puedes implementar banners de apps en Safar
 
 **Ejemplo de banner en Safari**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://support.appsflyer.com/hc/article_attachments/360007210818" width="278px" />
+<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/7cfd7fb6890cbe0151a8edfaf3bfe9e2609cf746c2a2d43c574e6744caa0fde8-360007210818.jpg" width="278px" />
 
 Antes de implementar banners de aplicaciones de iOS, ten en cuenta lo siguiente:
 

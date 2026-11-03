@@ -185,41 +185,41 @@ Fuentes de medios integradas en China:
 | Qianka | Qianka | qianka\_int | <Image alt="__.jpeg" src="https://files.readme.io/bd78e74e85eecdd7abf85be01b5bf0bb532941900fe42f6a2e9d9bf91219c5fe-360004682538.jpg" width="112px" /> |
 | SMZDM | SMZDM | smzdm\_int | <Image alt="logo.png" src="https://files.readme.io/9b60b9dfafcd03fb7a9573c7588ad04c561c640c8e20fa25480411339d1329ef-24508112360977.png" width="108px" /> |
 | MGTV | MangoTV | mgtv\_int | <Image alt="250.png" src="https://files.readme.io/fe9785b8eaea45cd4bcaf383c692ec5676dec7881f3c48a48cc30a561cb55e19-24508112366609.png" width="106px" /> |
-| AdView anuncios | Kuaiyou | adview\_int | <Image alt="adview_logo.png" src="https://support.appsflyer.com/hc/article_attachments/24508128427537" width="108px" /> |
+| AdView anuncios | Kuaiyou | adview\_int | <Image alt="adview_logo.png" src="https://files.readme.io/e65f37628468d3c69cbb403a161d0cf4ca84ec59241cd979848e00999aed26d4-24508128427537.png" width="108px" /> |
 | XTrader | Lingji | thextrader\_int | <Image alt="thextrader_logo.png" src="https://files.readme.io/4ed9e29cd48d0afff7690aceae4caf7b2404b0ca0b30095a27d4cb98386149b7-24508112379665.png" width="96px" /> |
-| Dianrui | Dianrui | dianrui\_int | <Image alt="dianrui_logo.png" src="https://support.appsflyer.com/hc/article_attachments/24508128447761" width="108px" /> |
+| Dianrui | Dianrui | dianrui\_int | <Image alt="dianrui_logo.png" src="https://files.readme.io/18836786f34277726a464bd7c46863c6b1d7b6933dbc1955384b9835820f6fd4-24508128447761.png" width="108px" /> |
 | Samsung | Samsung nacional | samsungcheilcn\_int | <Image alt="samsungcheilcn_logo.png" src="https://files.readme.io/65dd1c741e709d32eed929fd6e2d6c0fa49d8eadcb5d40b808a13dbd633bf21d-24508112409489.png" width="104px" /> |
 | Netease Music | Música en la nube de NetEase | neteasemusic\_int | ![neteasemusic_logo.png](https://files.readme.io/1c0c44266cc436f12830533a3d2c0baf31fb75ea1d45f619c8483be1fdfa45d3-24508112434321.png) |
 | Yixia | Xiaokaxiu（Tecnología Yixia） | yixia\_int | ![yixia_logo.png](https://files.readme.io/6b8da43a2ca3f60203bfb11fec0f033dc826b0f0cdee79022f7d528d699819ce-24508112464401.png) |
-| Shenqi | Shenqi Huyu | shenqi\_int | ![shenqi_logo.png](https://support.appsflyer.com/hc/article_attachments/24508128524817) |
+| Shenqi | Shenqi Huyu | shenqi\_int | ![shenqi_logo.png](https://files.readme.io/1e2993b062f451509894db887a13bce8c26dc31106404cfef72fe1c3ce1cab7f-24508128524817.jpg) |
 | Tangguo | Chuannuo（Anuncios Tangguo） | tangguo\_int | n/a |
 | Hotmobi | Hotmobi | hotmobi\_int | <Image alt="hotmobi_logo.png" src="https://files.readme.io/ed50450f617a051d6691c7871e523f4846e949107e4b45d31b72b2be7608365d-24508112495633.png" width="120px" /> |
-| Zplay | 掌游天下 | zplay\_int | <Image alt="zplay_logo.png" src="https://support.appsflyer.com/hc/article_attachments/24508128544017" width="120px" /> |
-| Yumi Mobi | 玉米移动 | yumimobi\_int | <Image alt="yumimobi.png" src="https://support.appsflyer.com/hc/article_attachments/24508128550289" width="120px" /> |
+| Zplay | 掌游天下 | zplay\_int | <Image alt="zplay_logo.png" src="https://files.readme.io/bd9f0fbe94a246a22411ea58fc59a1557c126eff3291c595a4a76c30050a884b-24508128544017.png" width="120px" /> |
+| Yumi Mobi | 玉米移动 | yumimobi\_int | <Image alt="yumimobi.png" src="https://files.readme.io/f09c0ccdad641f2b9dd1e56d808471861f4ac6ca9df2662f3e397a0f7a8940b4-24508128550289.png" width="120px" /> |
 | Lanpan | 蓝畔 | lanpan\_int | ![lanpan_.png](https://files.readme.io/2cef730097baf95c14bfc07879c0d6b138531cf94f5feef840549aef68656bba-24508112528657.png) |
-| Xinlan | 新蓝(新效科技） | xinlan\_int | <Image alt="xinlan.png" src="https://support.appsflyer.com/hc/article_attachments/24508112535185" width="104px" /> |
-| Youlan Anuncios | 幽蓝 | youlanad\_int | <Image alt="youlanad.png" src="https://support.appsflyer.com/hc/article_attachments/24508128585361" width="104px" /> |
-| Anuncios de Avazu | 艾维邑动 | avazu\_int | <Image alt="avazu.png" src="https://support.appsflyer.com/hc/article_attachments/24508128591377" width="81px" /> |
+| Xinlan | 新蓝(新效科技） | xinlan\_int | <Image alt="xinlan.png" src="https://files.readme.io/12e5600b35da3bae7dd2449101fdd1a2ed36a8d2a212f7fad63e0bbb6286c052-24508112535185.png" width="104px" /> |
+| Youlan Anuncios | 幽蓝 | youlanad\_int | <Image alt="youlanad.png" src="https://files.readme.io/1f0148231e84617b3c66521728db470499337d0c5d895e7a5107c36e3a91db0a-24508128585361.png" width="104px" /> |
+| Anuncios de Avazu | 艾维邑动 | avazu\_int | <Image alt="avazu.png" src="https://files.readme.io/1447b502a754e144567b8056de15a4254a796db3020ade65e15600e36164d59a-24508128591377.png" width="81px" /> |
 | Shangbang | 上榜（今日赚） | shangbang\_int | n/d |
-| 51bizhi | 51壁纸 | 51bizhi\_int | ![51bizhi.png](https://support.appsflyer.com/hc/article_attachments/24508128598289) |
-| Chandashi | 禅大师 | chandashi | ![chandashi.png](https://support.appsflyer.com/hc/article_attachments/24508128611857) |
-| Ann9 | 应用雷达 | ann9adnetwork\_int | ![ann9adnetwork.png](https://support.appsflyer.com/hc/article_attachments/24508112580497) |
-| Gomo | 久邦数码 | gomo\_int | <Image alt="gomo.png" src="https://support.appsflyer.com/hc/article_attachments/24508112590737" width="112px" /> |
-| Vision Móvil | Interacción en la palma de la mano | adzshd\_int | ![adzshd.png](https://support.appsflyer.com/hc/article_attachments/24508112592145) |
-| Adjuz | Publicidad en la palma de la mano | adjuz | <Image alt="adjuz.png" src="https://support.appsflyer.com/hc/article_attachments/24508112596113" width="108px" /> |
-| Guohe Ads | Publicidad de Guohe | guohe\_int | <Image alt="guohe.png" src="https://support.appsflyer.com/hc/article_attachments/24508112598801" width="99px" /> |
-| Mintegral | Mintegral | mingtegral\_int | <Image alt="mintegral.png" src="https://support.appsflyer.com/hc/article_attachments/24508112601361" width="105px" /> |
-| Mobvista | Mobvista | mobvista\_int | <Image alt="mobvista.png" src="https://support.appsflyer.com/hc/article_attachments/24508112602513" width="114px" /> |
-| Emar | Yima | yima\_int | <Image alt="yima.png" src="https://support.appsflyer.com/hc/article_attachments/24508112606353" width="116px" /> |
-| Centrixlink | Yinyi Digital | centrixlink\_int | <Image alt="centrixlink.png" src="https://support.appsflyer.com/hc/article_attachments/24508112615825" width="88px" /> |
-| Codrim | Gasto en compras dentro de la aplicación | codrim\_int | <Image alt="codrim.png" src="https://support.appsflyer.com/hc/article_attachments/24508112619153" width="100px" /> |
-| lbadvisor | 量江湖（比邻弘科） | lbadvisor | <Image alt="lbadvisor.png" src="https://support.appsflyer.com/hc/article_attachments/24508128662417" width="88px" /> |
-| ADYOYU | Yongyu | yoyuad\_int | <Image alt="yoyuad.png" src="https://support.appsflyer.com/hc/article_attachments/24508128664337" width="51px" /> |
-| KUAIZI | Kuaizi Technology | kuaizi\_int | <Image alt="kuaizi.png" src="https://support.appsflyer.com/hc/article_attachments/24508112632209" width="96px" /> |
-| Yeahmobi | Yeahmobi | yeahmobi\_int | <Image alt="yeahmobi.png" src="https://support.appsflyer.com/hc/article_attachments/24508112635281" width="97px" /> |
-| HUYA | HUYA Live | huya\_int | <Image alt="____LOGO.png" src="https://support.appsflyer.com/hc/article_attachments/24508128693521" width="93px" /> |
-| MJweather | Moji Weather | mjweather\_int | <Image alt="200-50.jpg" src="https://support.appsflyer.com/hc/article_attachments/24508112654993" width="100px" /> |
-| Codoon | 咕咚 | codoon\_int | <Image alt="__logo.png" src="https://support.appsflyer.com/hc/article_attachments/24508128712081" width="112px" /> |
-| LongXi DSP | 珑玺DSP | lxdsp\_int | <Image alt="lxdsp_int.png" src="https://support.appsflyer.com/hc/article_attachments/24508112669969" width="112px" /> |
+| 51bizhi | 51壁纸 | 51bizhi\_int | ![51bizhi.png](https://files.readme.io/c1dcb8832ee4a2d07d9df7e4a354e75c83964524a12e4fe11b4c26fbae1a5d43-24508128598289.jpg) |
+| Chandashi | 禅大师 | chandashi | ![chandashi.png](https://files.readme.io/200d48e99ecd58b7357ae8f9d6a372f6142c7deabea13b7a337aa497e20514eb-24508128611857.png) |
+| Ann9 | 应用雷达 | ann9adnetwork\_int | ![ann9adnetwork.png](https://files.readme.io/bdafb97f746225d1bd80201162f6f787066d7da119fdfe40c7c7105de75d44b5-24508112580497.png) |
+| Gomo | 久邦数码 | gomo\_int | <Image alt="gomo.png" src="https://files.readme.io/db09d2d41fd119239c3e21124ff03d855cb872fdb0dd6b63de242a6858439ca7-24508112590737.png" width="112px" /> |
+| Vision Móvil | Interacción en la palma de la mano | adzshd\_int | ![adzshd.png](https://files.readme.io/cb60a5cc2419d59d2af94ffeba9c817a98e43b0fa0627066c492cdafad0c5da9-24508112592145.png) |
+| Adjuz | Publicidad en la palma de la mano | adjuz | <Image alt="adjuz.png" src="https://files.readme.io/e88a503c1254001e42ddf85db4087e528831a51d4863bf9f5fc87fcae6d94a2e-24508112596113.png" width="108px" /> |
+| Guohe Ads | Publicidad de Guohe | guohe\_int | <Image alt="guohe.png" src="https://files.readme.io/04121a5575a1520c51088622acd0c127f43ca2f66108ad08297a02b80e829ed1-24508112598801.png" width="99px" /> |
+| Mintegral | Mintegral | mingtegral\_int | <Image alt="mintegral.png" src="https://files.readme.io/577112de7909e007cc1b49a39b8987570c10841e4679f84995074ffd53e54549-24508112601361.png" width="105px" /> |
+| Mobvista | Mobvista | mobvista\_int | <Image alt="mobvista.png" src="https://files.readme.io/ac28657d264640d6d5fc47fb02a456be8f9f0d6f6d04aa4d2b93e7f0b50e66b8-24508112602513.png" width="114px" /> |
+| Emar | Yima | yima\_int | <Image alt="yima.png" src="https://files.readme.io/5b32a445f03290f1c0a599da84b749e016bfc654e0abf05823ed0245b47fd55d-24508112606353.png" width="116px" /> |
+| Centrixlink | Yinyi Digital | centrixlink\_int | <Image alt="centrixlink.png" src="https://files.readme.io/4adb79da03d974efc38d4ab357670ce487f07eba475566955a9da92d5acee9e8-24508112615825.png" width="88px" /> |
+| Codrim | Gasto en compras dentro de la aplicación | codrim\_int | <Image alt="codrim.png" src="https://files.readme.io/ecde94153f4aaa0eb86db1e710fd8841e345ad8b931ed35ba6209b42b69c3c62-24508112619153.jpg" width="100px" /> |
+| lbadvisor | 量江湖（比邻弘科） | lbadvisor | <Image alt="lbadvisor.png" src="https://files.readme.io/3761b994f7123b9ea7991e4ee718df985cd215c7cf58e09157ff2a692c86f23a-24508128662417.png" width="88px" /> |
+| ADYOYU | Yongyu | yoyuad\_int | <Image alt="yoyuad.png" src="https://files.readme.io/54bb13c51b40fa61f570f7788f7f6d62cf1d975988d054cec5d81319a8f0da02-24508128664337.png" width="51px" /> |
+| KUAIZI | Kuaizi Technology | kuaizi\_int | <Image alt="kuaizi.png" src="https://files.readme.io/86e37a944698c9504cc691abb0d734883c33722dfc5b72f82968b3a1397da814-24508112632209.png" width="96px" /> |
+| Yeahmobi | Yeahmobi | yeahmobi\_int | <Image alt="yeahmobi.png" src="https://files.readme.io/c42177b1f862397170a0c89a7a8953867fafdb2415fe7a08792a6a65ecbb7289-24508112635281.png" width="97px" /> |
+| HUYA | HUYA Live | huya\_int | <Image alt="____LOGO.png" src="https://files.readme.io/2da2751b846f2891567f06e5c3cbb3d3ce30ebdfb01597c5c810b828af1e838e-24508128693521.png" width="93px" /> |
+| MJweather | Moji Weather | mjweather\_int | <Image alt="200-50.jpg" src="https://files.readme.io/6dcb5f2187133037c4628e9ee135b2f4a85da552a2532a249186cabb872f0359-24508112654993.jpg" width="100px" /> |
+| Codoon | 咕咚 | codoon\_int | <Image alt="__logo.png" src="https://files.readme.io/b244c097776983a08f9b69f778b23ec16dcf31960d1ee13fb3972d4f36040431-24508128712081.png" width="112px" /> |
+| LongXi DSP | 珑玺DSP | lxdsp\_int | <Image alt="lxdsp_int.png" src="https://files.readme.io/9a7acb55f3f9d1fd34c7c5b0ba794734b2c2a437962aa42d8a2a449270eb0918-24508112669969.png" width="112px" /> |
 
 <div data-zendesk-anchors="android-apps-in-china=aplicaciones-android-en-china selecting-an-identifier=selecci%C3%B3n-de-un-identificador attribution-solutions-for-the-chinese-market=soluciones-de-atribuci%C3%B3n-para-el-mercado-chino integrated-media-sources=fuentes-de-medios-integradas" />

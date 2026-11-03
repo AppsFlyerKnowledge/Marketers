@@ -58,7 +58,7 @@ Selecciona la fuente de medios cuyos datos deseas ver.
 
 Utiliza el menú desplegable **Geolocalización** para seleccionar una región de geolocalización específica y ver las actividades de la aplicación para esa región.
 
-![](https://support.appsflyer.com/hc/article_attachments/49753041990033)
+![](https://files.readme.io/1380a2be502c104a04f9c6a4b84d16a27100765a8353fa96fecae180492d94e0-49753041990033.png)
 
 ## Opciones de agrupación
 

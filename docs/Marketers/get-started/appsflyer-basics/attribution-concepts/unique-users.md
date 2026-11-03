@@ -72,7 +72,7 @@ La instalación y la reatribución tienen el mismo ID de dispositivo/ID de AppsF
 
 <Accordion title="Instalación y reengagement">
 
-![](https://support.appsflyer.com/hc/article_attachments/49753330239121)
+![](https://files.readme.io/bd4ee5eb9eacc561ac43c4b93d3fab30ddba6824a22e0433e12684fb6b3cf09b-49753330239121.png)
 
 La instalación y el reengagement tienen el mismo ID de dispositivo/ID de AppsFlyer. Sin embargo, en este caso (al igual que para las reatribuciones), AppsFlyer también tiene en cuenta el parámetro `is_retargeting=true`, por lo que el evento posterior al reengagement se cuenta como un usuario único adicional. Por lo tanto, se contabilizan 2 usuarios únicos.
 

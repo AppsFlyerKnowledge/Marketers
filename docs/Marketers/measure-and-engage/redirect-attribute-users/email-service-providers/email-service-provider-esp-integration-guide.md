@@ -80,7 +80,7 @@ Las campañas de correo electrónico ESP para usuarios de aplicaciones móviles 
 
 Aquí tienes una lista de otros ESPs que, aunque no cuentan con el soporte de la integración ESP de AppsFlyer, tienen sus propios métodos para gestionar los problemas de atribución y Deep Linking comentados anteriormente. Para implementar sus métodos, busca tu ESP en la sección siguiente y sigue sus instrucciones de integración en los enlaces proporcionados.
 
-| 53798 KB ORACLE (1).png | https://support.appsflyer.com/hc/article_attachments/38922843662097 |
+| 53798 KB ORACLE (1).png | https://files.readme.io/e893909294e6397226b10dbad55f06644cf7a9e6db0a3020280495a9d17fc53c-32378022194833.png |
 | --- | --- |
 | Bloomreach | N.º Utiliza su propio método de redirección Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/bloomreach-integration-with-appsflyer">integrar Bloomreach.</Anchor> |
 | 53798 KB EmailLabs (1).png | N.º Utiliza su propio método de redirección Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/emaillabs-integration-with-appsflyer">integrar EmailLabs</Anchor>. |

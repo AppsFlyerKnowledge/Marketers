@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **En resumen:** Atribuye las instalaciones de aplicaciones a los fabricantes de los dispositivos para las aplicaciones agregadas a los dispositivos antes de salir de fábrica. **Nota**: Consulta <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#preload-campaigns">todos los demás métodos de atribución de precarga</Anchor>.
 
-![pre-install-intro-breakdown.png](https://support.appsflyer.com/hc/article_attachments/49753458858385)
+![pre-install-intro-breakdown.png](https://files.readme.io/28b0a0dc5bde0b600011b16de97501fa358e4b710c532118ba6bc09c2c5dc1ce-49753458858385.png)
 
 ## Introducción
 
@@ -352,9 +352,9 @@ Esta sección muestra cómo probar y verificar la configuración de preinstalaci
 
 Crea tu aplicación en Android Studio e instálala en el dispositivo de prueba. Una vez iniciada la aplicación, abre el Logcat en Android Studio y filtra por "AppsFlyer". Deberías ver la instalación atribuida con todos los detalles. Véanse las capturas de pantalla siguientes a modo de ilustración:
 
-![pre_install_logcat.png](https://support.appsflyer.com/hc/article_attachments/49753458859281)
+![pre_install_logcat.png](https://files.readme.io/ad4055ead94d755f9db9d72ed458a305660548b871ca53f63297f81c11b56bad-49753458859281.png)
 
-![pre_install_logcat_2.png](https://support.appsflyer.com/hc/article_attachments/49753442960145)
+![pre_install_logcat_2.png](https://files.readme.io/92fc8a4e500975cb353c87b1533e15257abe8422bf07a035b4c3056e51d220e6-49753442960145.png)
 
 </Accordion>
 
@@ -368,13 +368,13 @@ Accede a tu cuenta de AppsFlyer y abre el panel de control de la aplicación que
 
 1. En la página de resumen, filtra por fuentes de medios y elige la fuente de medios:  
 
-   ![choose_media_source.png](https://support.appsflyer.com/hc/article_attachments/49753458860689)
+   ![choose_media_source.png](https://files.readme.io/7aa7e0e4a5d1c4b8428ec4fe934f673ec8304da97ae9d2cc41c2b6f4eac3147b-49753458860689.png)
 2. En el ***Desglose por campaña*** puedes ver que la instalación atribuida a "my media source" procede de una campaña de preinstalación:  
 
     [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
    También puedes verificar que la instalación se atribuye correctamente consultando el ***Reporte agregado de desempeño***. En él, puedes ver la fuente de medios y la campaña. Véase la siguiente captura de pantalla donde "My Media Source" es la fuente de medios y la campaña es Pre-install:  
 
-    [![](https://support.appsflyer.com/hc/article_attachments/49753442961809)](https://support.appsflyer.com/hc/article_attachments/49753442961809)
+    [![](https://files.readme.io/9238b9b19220a40bef2b33dc21277da27e58792af2e6a123fadb640e77e0bf57-49753442961809.png)](https://files.readme.io/9238b9b19220a40bef2b33dc21277da27e58792af2e6a123fadb640e77e0bf57-49753442961809.png)
 3. Repite el proceso para todos los fabricantes o fuentes de medios con los que colabores para las campañas de preinstalación.
 
 </Accordion>
