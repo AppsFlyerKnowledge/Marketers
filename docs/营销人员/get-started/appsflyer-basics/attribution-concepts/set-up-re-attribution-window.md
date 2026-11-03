@@ -1,0 +1,127 @@
+---
+title: 再归因窗口期详解
+metadata:
+  keywords:
+    - Retargeting
+    - Re-Attribution
+    - reattribution
+    - Advertisers
+    - Ad Networks
+    - re-attribution window
+    - reattribution window
+    - Marketers
+    - Mobile Attribution
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  content_tags:
+    - pm-moran-davida
+    - Marketers
+    - Mobile Attribution
+    - Ad Networks
+  created_at: '2017-05-23T08:55:35Z'
+  edited_at: '2026-10-14T10:02:06Z'
+  id: 115002587066
+  locale: zh-cn
+  section: Attribution concepts
+  section_id: 6551394235409
+  url: https://support.appsflyer.com/hc/zh-cn/articles/115002587066
+---
+> **概要：** 本文讲解了再归因窗口期的作用原理，在该窗口期内发生的重装激活不会被归因为新增激活。
+
+## 再归因窗口
+
+再归因窗口期从用户首次激活应用开始计算，其时长由广告主设定（默认为90天）。AF不会将再归因窗口期内发生的重装激活记录为新增激活，也不会生成新增激活的回传（由**再营销广告**带来的重装激活除外）。
+
+[![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+
+### 再归因窗口期的设置
+
+再归因窗口期：
+
+* 在<Anchor target="_blank" href="/marketers/zh/docs/app-settings">应用配置</Anchor>页中设置。
+* 默认为90天（3个月）。
+* 可设置的时长范围为1-24个月。
+
+AF会根据激活发生当下的设置来判断激活。因此如果您更改了设置，新设置会对更改后产生的激活（重装激活）生效，而不会影响到之前的激活。
+
+* **将再归因窗口期从90天改为30天**：
+  * 用户在9月1日激活应用。
+  * 广告主在9月2日更改再归因窗口期。
+  * 10月1日之前发生的重装激活都会被记录为重装激活，而从10月2日开始发生的重装激活则会被记录为新增激活。
+* **将再归因窗口期从30天改为90天**：
+  * 用户在9月1日激活应用。
+  * 广告主在9月2日更改再归因窗口期。
+  * 10月15日发生重装激活。AF会将其记录为重装激活，因为激活当下的再归因窗口期是90天。
+  * 12月15日发生重装激活。AF会将其记录为新增激活，因为从9月1日到12月15日已经超过了90天。
+
+## 再归因窗口使用场景
+
+<div id="first-install" />
+
+<Accordion title="首次安装">
+
+一个从未安装过广告主应用的潜在用户与拉新或再营销广告互动后安装并激活该应用。
+
+会发生以下情况：
+
+* 新增激活会归因到相应的渠道（如果未记录到广告互动，则为自然激活），相关信息会显示在用户获取面板和数据中。
+* 新的再归因窗口开始计时。
+* 激活和应用内事件回传发送到获得归因的媒体渠道（需事先配置）。
+* 后续的应用内事件也会归因到同一个媒体渠道。
+
+</Accordion>
+
+<div id="reinstall" />
+
+<Accordion title="Reinstall（重装激活）">
+
+用户首次激活应用后，在再归因窗口期内卸载并重装了该应用。
+
+会发生以下情况：
+
+* 该次激活不会被归因—即该激活不会出现在面板或数据中。
+* 没有安装回传会发送至任何媒体渠道。
+* 重装激活用户的应用内事件会归因到自然量或初始激活，具体取决于<Anchor target="_blank" href="/marketers/zh/docs/measure-reinstalls#速览">**重装激活后事件归因**</Anchor>的状态。
+
+</Accordion>
+
+<div id="reattribution" />
+
+<Accordion title="再归因（reattribution）">
+
+用户首次激活应用后卸载了该应用，然后与某条再营销广告互动，并在再归因窗口期内重新安装并激活了该应用。  
+这就构成了一次再归因。
+
+会发生以下情况：
+
+* AF会将此次激活归因到再营销渠道，并呈现在数据总览面板的再营销和统一视图中。也就是说，用户获取视图中不包含再归因。
+* 后续所有的应用内事件都会被归因到再营销渠道。
+* 激活回传会发送到相关的再营销渠道。
+
+如需进一步了解再营销归因，请参考<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">此文档</Anchor>。
+
+</Accordion>
+
+<div id="new-install" />
+
+<Accordion title="新增激活">
+
+用户卸载应用，然后在再归因窗口期结束后重新安装并激活该应用。AF会将这次重装激活记录为首次激活，归因链路和结果与新增激活相同：
+
+* AF会将新增激活归因到相应的渠道（如果未记录到广告互动，则为自然激活），相关信息会显示在用户获取面板和数据中。
+* **新的再归因窗口开始计时。**
+* 激活和应用内事件回传发送到获得归因的媒体渠道（需事先配置）。
+* 后续的应用内事件也会归因到同一个媒体渠道。
+
+</Accordion>
+
+<div id="ios-app-restored-from-icloud-backup" />
+
+<Accordion title="从iCloud备份中恢复的iOS应用">
+
+如果用户使用iCloud备份了某个应用，之后再从备份中恢复该应用（不管是不是同一台设备），AppsFlyer都不会将其记录为新增激活或重装激活。在该场景中，用户的AppsFlyer ID和归因数据保持不变。
+
+</Accordion>
+
+<div data-zendesk-anchors="reattribution-window=%E5%86%8D%E5%BD%92%E5%9B%A0%E7%AA%97%E5%8F%A3 h_01H95B0F8XEX9RFXW8W6QBQJBY=%E5%86%8D%E5%BD%92%E5%9B%A0%E7%AA%97%E5%8F%A3 setting-the-reattribution-window=%E5%86%8D%E5%BD%92%E5%9B%A0%E7%AA%97%E5%8F%A3%E6%9C%9F%E7%9A%84%E8%AE%BE%E7%BD%AE h_01H95B0F8X2YQWBB9H0WFXPK8C=%E5%86%8D%E5%BD%92%E5%9B%A0%E7%AA%97%E5%8F%A3%E6%9C%9F%E7%9A%84%E8%AE%BE%E7%BD%AE reattribution-window-use-cases=%E5%86%8D%E5%BD%92%E5%9B%A0%E7%AA%97%E5%8F%A3%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF h_01H95B0F8Y4T13VYEN2D7T5GHR=%E5%86%8D%E5%BD%92%E5%9B%A0%E7%AA%97%E5%8F%A3%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF h_01H95B0F8Y58QFRSJ9TV3J34EX=first-install h_01H95B0F8YBY482KHT09CZNT9E=reinstall h_01H95B0F8YCQV3H6ZSZE0DF5VV=reattribution h_01H95B0F8Y046Q80V0S8YZ1DWG=new-install h_01H95B0F8Y6M7W02ZSNYCN66PD=ios-app-restored-from-icloud-backup" />

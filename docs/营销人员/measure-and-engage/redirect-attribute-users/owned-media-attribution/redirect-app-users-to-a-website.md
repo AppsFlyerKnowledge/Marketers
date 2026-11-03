@@ -1,0 +1,49 @@
+---
+title: Redirect app users to a website
+metadata:
+  keywords:
+    - OneLink
+    - Marketers
+    - Social-to-App
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  content_tags:
+    - pm-asaf-mashiah
+    - Marketers
+    - Social-to-App
+  created_at: '2022-02-22T11:45:43Z'
+  edited_at: '2026-10-13T01:37:58Z'
+  id: 4460838224273
+  locale: zh-cn
+  section: Owned media attribution
+  section_id: 6551214397585
+  url: https://support.appsflyer.com/hc/zh-cn/articles/4460838224273
+---
+> **At a glance:** Redirect app users to a web URL or social media page by using a URL generated with OneLink.
+
+## Redirect app users to a web URL
+
+Advertisers can post OneLink URLs leading to external web pages or social media sites. AppsFlyer measures the clicks on the link inside the app, by which you can determine the efficacy of the ad.
+
+**Prerequisites**: An AppsFlyer account with at least one app.
+
+**To set up app-to-web redirection**:
+
+1. Set up a <Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template#create-a-onelink-template">OneLink template</Anchor>.
+   * In the **When app is installed** section, make sure you don't set up an app-opening method (Universal Links, App Links, or URI scheme).
+2. Create a <Anchor target="_blank" href="/marketers/zh/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#创建onelink链接">OneLink custom link</Anchor>.
+   * In the **When app isn’t installed** section, make sure the redirection settings are to the desired web URL.
+   * Don't add an `af_dp` parameter with a URI Scheme.
+3. Make sure the domain you're redirecting users to appears in your <Anchor target="_blank" href="/marketers/zh/docs/set-up-your-domain-redirect-allowlist">redirect allowlist</Anchor>.   
+   **Note:** Setting up a domain redirect allowlist is required to ensure users are redirected to verified, trustworthy domains.
+
+**To test your link**:
+
+**Prerequisites**: A mobile device with the app installed.
+
+1. Send the short or long URL to your phone, and click it.  
+   **Note**: Email or WhatsApp yourself the link, and open it on your phone. Don't paste into iOS notes, or directly into a mobile browser.
+2. You should be redirected to the web URL.
+
+<div data-zendesk-anchors="01JENAXDEE8C81DN0JGPWPZQSY=redirect-app-users-to-a-web-url" />

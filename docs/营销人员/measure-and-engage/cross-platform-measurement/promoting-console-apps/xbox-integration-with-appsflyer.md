@@ -1,0 +1,60 @@
+---
+title: AppsFlyer中的Xbox对接
+metadata:
+  keywords:
+    - Marketers
+    - PC & Console Attribution
+x-zendesk:
+  category: Marketers
+  category_id: 6550444307985
+  content_tags:
+    - pm-roi-tamir
+    - Marketers
+    - PC & Console Attribution
+  created_at: '2023-04-13T08:28:00Z'
+  edited_at: '2026-10-14T09:59:15Z'
+  id: 14504812967057
+  locale: zh-cn
+  section: Promoting Console apps
+  section_id: 15329052471057
+  url: https://support.appsflyer.com/hc/zh-cn/articles/14504812967057
+---
+> **概要： 本文介绍了Xbox应用与AppsFlyer的对接方式。对接完成后，您就可以针对Xbox上的广告收集归因和事件数据。**
+
+## Xbox归因简介
+
+适用于主机和CTV应用的Xbox操作系统可在所有Xbox设备中运行。
+
+在PC端运行的应用可以通过S2S API或SDK与AppsFlyer对接，从而获得归因数据和投放效果指标，了解应用打开和应用内事件的流量来源和带量广告。这些关键信息能够帮助营销人员评估并优化其市场推广工作。
+
+Xbox API对接适用于：
+
+* Xbox设备。
+* Xbox应用的归因和事件记录（即在用户的Xbox设备上进行归因和记录）。
+
+## 对接流程
+
+下表列出了Xbox应用对接到AppsFlyer时需要完成的工作。
+
+| 事项 | 可用操作 | 人员 |
+| --- | --- | --- |
+| 设置应用 | <ul><li><Anchor target="_blank" href="https://www.appsflyer.com/get-started/">创建一个AppsFlyer帐户</Anchor></li><li><Anchor target="_blank" href="/marketers/zh/docs/user-management">在账户下添加用户，并为其开放必要权限</Anchor></li><li><Anchor target="_blank" href="/marketers/zh/docs/adding-an-app-to-appsflyer">在AppsFlyer后台添加您的Xbox应用</Anchor></li></ul> | 营销人员 |
+| 为您的应用配置API对接（通过S2S发送数据） | 在您的应用中<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-4">接入AppsFlyer API</Anchor>，使其向AppsFlyer上报下列事件：<ul><li>首次打开</li><li>应用内事件</li><li>应用打开（Sessions）</li></ul>**请注意**：<ul><li>应用首次打开（first app open）必须在应用内事件和应用打开（session）之前上报。</li><li>使用`device_ids`参数时，请选择`custom`类型。</li><li>通过该API发送事件。请向开发人员说明您需要发送的事件。 对于要发送到AppsFlyer的事件，请务必在配置API时完成这些事件的设置和映射。</li></ul>如需上报自有媒体中的广告互动，请对接<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_impression-app-platform-app-id">impression engagement API。</Anchor> | 应用开发人员 |
+| 设置报告 | <Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts#数据可用性">了解面板与报告中的数据可用性</Anchor> | 营销人员/数据工程师 |
+
+<div id="traits-and-limitations" />
+
+<Accordion title="特点与局限性">
+
+| 特点 | 说明 |
+| --- | --- |
+| 再营销 | 目前尚不支持 |
+| 成本数据 | 必须使用<Anchor target="_blank" href="/marketers/zh/docs/import-cost-data">成本导入</Anchor>功能，通过邮件上传数据文件，以实现成本数据的发送。 |
+
+</Accordion>
+
+> 📄 **相关文档**
+>
+> * <Anchor target="_blank" href="/marketers/zh/docs/ctv-pc-and-console-platform-attribution-concepts">CTV、PC和主机平台简介</Anchor>
+
+<div data-zendesk-anchors="about-playstation-attribution=xbox%E5%BD%92%E5%9B%A0%E7%AE%80%E4%BB%8B 01H7Z1NEAJMRWKHS4K168V0753=xbox%E5%BD%92%E5%9B%A0%E7%AE%80%E4%BB%8B integration-procedures=%E5%AF%B9%E6%8E%A5%E6%B5%81%E7%A8%8B 01H7Z1NEAJJY4ZRVKY74ACXAAR=%E5%AF%B9%E6%8E%A5%E6%B5%81%E7%A8%8B 01H7Z1NEAJRA11P7NG05KRKR8Q=traits-and-limitations h_01HE0T79YSNWGB3W4S7WEBW1B5=%E7%9B%B8%E5%85%B3%E6%96%87%E6%A1%A3" />
