@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要:** BrazeメッセージエンゲージメントイベントをAppsFlyer オーディエンスに送信し、それによりオーディエンス定義の精度を高めます。
 
-BrazeアカウントとAppsFlyer オーディエンスの間に着信接続を設定することで、Brazeメッセージエンゲージメントイベントデータをオーディエンスに取り込めます。その後、オーディエンスを定義する際に、このデータを<Anchor target="_blank" href="%20/docs/audiences-guide#all-about-rulesets">ルールセット</Anchor>で活用できます。
+BrazeアカウントとAppsFlyer オーディエンスの間に着信接続を設定することで、Brazeメッセージエンゲージメントイベントデータをオーディエンスに取り込めます。その後、オーディエンスを定義する際に、このデータを<Anchor target="_blank" href="/marketers/ja/docs/audiences-guide#all-about-rulesets">ルールセット</Anchor>で活用できます。
 
 > 🚧 **前提条件**
 >

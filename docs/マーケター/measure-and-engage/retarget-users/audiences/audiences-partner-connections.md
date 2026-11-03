@@ -409,7 +409,7 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
 
 **Brazeへのパートナー連携を作成する方法：**
 
-1. Braze アカウントにて<strong>、Integrations > Technology Partners</strong>へ進み、AppsFlyerを選択してください。
+1. Braze アカウントにて**、Integrations > Technology Partners**へ進み、AppsFlyerを選択してください。
 2. **Data Import Using Cohort Import** セクションから、**Generate New Key** をクリックして**Data Import Key**を生成してください。
    * **注意：** ここにキーが既に表示されている場合は、新しいキーを生成する必要はありません。
    * <strong>重要！</strong>ページの**Data Import Using Cohort Import**セクションで（インストール計測セクションではなく）この作業を行っていることを確認してください。
