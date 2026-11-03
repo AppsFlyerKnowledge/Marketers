@@ -341,7 +341,7 @@ Os dados de conversão são enviados com eventos para a plataforma Adobe. Estas 
 
 1. Faça login na sua conta do Adobe Analytics.
 
-   ![https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+   ![](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
 2. Navegue até **Admin** > **Report Suites**
 3. Selecione o Report Suite que foi configurado durante a implementação do Adobe Analytics.
 4. Selecione **Geral** > **Regras de processamento**.

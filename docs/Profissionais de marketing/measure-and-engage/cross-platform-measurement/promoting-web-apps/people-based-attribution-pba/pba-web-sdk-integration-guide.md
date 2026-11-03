@@ -825,9 +825,9 @@ O código anterior mostra uma página HTML básica. A página web precisa carre
 2. No GTM, clique em **Variáveis**, clique em **Configurar** e marque **Clicar element** na lista de **Variáveis internas.**  
 
    ![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
-3. Crie uma nova variável, atribua um nome significativo e escolha o tipo **Todos os elementos.  
+3. Crie uma nova variável, atribua um nome significativo e escolha o tipo Todos os elementos.  
 
-   ![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)**
+   ![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
 4. Na configuração de gatilho, escolha **Alguns cliques** e **Clicar elemento**, que **corresponda ao seletor CSS** de #checkout.  
 
    ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)

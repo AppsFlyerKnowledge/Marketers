@@ -135,7 +135,7 @@ A Braze se conecta ao AppsFlyer por meio de uma chave de API exclusiva e um endp
 2. Selecione **AppsFlyer**.  ![Selecione AppsFlyer como parceiro de tecnologia no Braze](https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png)
 3. Em **Importação de dados para atribuição de instalação**, clique em Gerar chave de API.
 4. braze-af-API-key.png
-5. No AppsFlyer, insira a chave da API da Braze e o endpoint REST.  ![https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+5. No AppsFlyer, insira a chave da API da Braze e o endpoint REST.  ![](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
 6. Clique em **Save and Close**.
 
 Depois de salvar a configuração, o AppsFlyer envia os seguintes dados à Braze em cada instalação orgânica e não orgânica:

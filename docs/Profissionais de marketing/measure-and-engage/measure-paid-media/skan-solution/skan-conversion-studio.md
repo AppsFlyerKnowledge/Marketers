@@ -1092,9 +1092,9 @@ Para permitir a diminuição do valor de conversão:
 2. Selecione o modo de medição **SKAN 4.0**.
 3. Clique nas opções (⋮) para abrir o menu de opções e:
    * Certifique-se de que a opção **Permitir redução de conversão** está ativada.   
-     **Atenção! Isto estará disponível apenas para:
+     Atenção! Isto estará disponível apenas para:
      * Aplicações previamente guardadas no modo SKAN 4 no Conversion Studio.
-     * Usuários com acesso de edição**
+     * Usuários com acesso de edição
 
 #### Exemplos
 

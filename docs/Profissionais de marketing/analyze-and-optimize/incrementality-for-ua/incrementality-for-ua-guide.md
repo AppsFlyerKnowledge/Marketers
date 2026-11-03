@@ -139,8 +139,8 @@ Para que os insights de incrementalidade sejam realmente práticos, a AppsFlyer 
 
 **Otimização com base em aumento (%):**
 
-**A. A. **A. Sem aumento:**  
-O objetivo final do marketing é gerar resultados incrementais. Se a sua campanha foi mensurada para não ter um aumento (regiões de controle estão com a mesma performance das regiões de teste), isso significa que ela não está trazendo nenhum valor adicional e deve ser otimizada para trazer um crescimento significativo. Se sua campanha não tiver um aumento, considere o seguinte:**
+<strong>A. A. </strong>A. Sem aumento:  
+O objetivo final do marketing é gerar resultados incrementais. Se a sua campanha foi mensurada para não ter um aumento (regiões de controle estão com a mesma performance das regiões de teste), isso significa que ela não está trazendo nenhum valor adicional e deve ser otimizada para trazer um crescimento significativo. Se sua campanha não tiver um aumento, considere o seguinte:
 
 * Transfira seus orçamentos para mais campanhas ou canais incrementais.
 * Otimize: Como em qualquer outra campanha de baixa performance, você pode melhorá-la ajustando bids, metas, público-alvo, criativos e outros fatores relevantes. Em seguida, você pode executar outro experimento de incrementalidade para monitorar se os resultados melhoraram.
@@ -158,12 +158,12 @@ Um aumento positivo significa que a sua campanha está gerando resultados increm
 
 **Otimização com base em KPIs de incrementalidade a nível de campanha:**
 
-**A. A. **A. Total de conversões incrementais e métricas de custo:**  
-Assim como na atribuição clássica, o volume total de conversões incrementais e o investimento em anúncios necessário para gerar essas conversões fornecem métricas claras e acionáveis para a otimização. Você pode usar a contagem de conversões de incrementalidade a nível de campanha e o custo por conversão incremental para determinar se uma campanha atende às suas metas de volume e ROI, avaliando a sua performance em comparação a outras campanhas ou canais.**
+<strong>A. A. </strong>A. Total de conversões incrementais e métricas de custo:  
+Assim como na atribuição clássica, o volume total de conversões incrementais e o investimento em anúncios necessário para gerar essas conversões fornecem métricas claras e acionáveis para a otimização. Você pode usar a contagem de conversões de incrementalidade a nível de campanha e o custo por conversão incremental para determinar se uma campanha atende às suas metas de volume e ROI, avaliando a sua performance em comparação a outras campanhas ou canais.
 
-**B. B. **B. Acesse os dados de incrementalidade e atribuição clássicos lado a lado**  
+<strong>B. B. </strong>B. Acesse os dados de incrementalidade e atribuição clássicos lado a lado  
 Para a contagem de conversões a nível de campanha e o custo por conversão, o dashboard de Incrementalidade apresenta dados de atribuição clássicos (último toque) E dados de incrementalidade lado a lado, permitindo que você entenda a relação entre os dois modelos e aplique seus aprendizados em uma escala maior.  
-Quando analisadas separadamente, a atribuição clássica (“último toque”) e a incrementalidade são dois modelos de atribuição diferentes, cada um com suas próprias vantagens e desvantagens:**
+Quando analisadas separadamente, a atribuição clássica (“último toque”) e a incrementalidade são dois modelos de atribuição diferentes, cada um com suas próprias vantagens e desvantagens:
 
 * A atribuição clássica (“último toque”) ocorre em tempo real, sendo padronizada, altamente escalável e granular. Portanto, ela permite a otimização a nível de usuário tanto do lado do anunciante quanto por meio de algoritmos de plataformas de anúncios em tempo real. No entanto, ela fornece uma visão mais clara do engajamento no final do funil, sem oferecer provas científicas causais.
 * A incrementalidade é uma ótima ferramenta para provar cientificamente o impacto causal e é ideal para a mensuração omnichannel. No entanto, ela fornece insights agregados (a nível de campanha), além de ser periódica e mais difícil de escalar.

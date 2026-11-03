@@ -68,7 +68,7 @@ A configuração de um branded domain consiste em associar um conjunto de domín
 
 **Branded domain que direciona para servidores da AppsFlyer**
 
-![https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png)
+![](https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png)
 
 **Antes de começar:**
 

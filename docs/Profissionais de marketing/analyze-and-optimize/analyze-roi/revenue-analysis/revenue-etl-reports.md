@@ -94,9 +94,7 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
-Com o seguinte formato: \`/t=attributed_ad_revenue/dt=
-
-/h=23/\`
+Com o seguinte formato: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
 
 #### Hierarquia de pastas de relatório
 
@@ -212,9 +210,7 @@ A tabela fornecida abaixo descreve os cronogramas de geração para as versões 
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
-\`/t=attributed_ad_revenue_v2/dt=
-
-/version=&lt;9999999>/\`
+`<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
 
 #### Hierarquia de pastas de relatório
 
@@ -313,9 +309,7 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
-\`/t=attributed_adrevenue_sdk_impression_level/dt=
-
-/h=\`
+`<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### Hierarquia de pastas de relatório
 
@@ -394,9 +388,7 @@ Os dados do relatório se originam de transações coletadas por meio do conecto
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
-\`/t=stores_rawdata/dt=
-
-/h=\`
+`<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
 
 #### Hierarquia de pastas de relatório
 
@@ -481,9 +473,7 @@ Os dados do relatório se originam de transações coletadas via:
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
-\`/t=stores_devicedata/dt=
-
-/version=&lt;999999999>\`
+`<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
 
 #### Hierarquia de pastas de relatório
 

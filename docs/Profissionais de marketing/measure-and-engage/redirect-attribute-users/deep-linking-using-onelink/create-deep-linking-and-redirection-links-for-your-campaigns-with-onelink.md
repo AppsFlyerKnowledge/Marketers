@@ -162,7 +162,7 @@ Essas tags OG podem ser automaticamente retiradas da URL da web ou da loja de ap
    * Para mudar o favicon, acesse as <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#h_favicon">configurações do modelo</Anchor>.
    * Se nenhum favicon for exibido, é porque ainda não há nenhum configurado no modelo. Você ainda pode usar a prévia personalizada sem favicon.
 
-Para adicionar parâmetros da OG tag ao seu link**** (se ela não tiver sido criada na interface do usuário do OneLink):
+Para adicionar parâmetros da OG tag ao seu link (se ela não tiver sido criada na interface do usuário do OneLink):
 
 * Adicione os seguintes parâmetros necessários:
   * af\_og\_title (até 40 caracteres)

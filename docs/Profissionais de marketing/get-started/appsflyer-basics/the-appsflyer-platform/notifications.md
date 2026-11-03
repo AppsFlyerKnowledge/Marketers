@@ -56,9 +56,9 @@ Para receber uma notificação específica, ela deve estar:
 
 * **Disponível na conta da AppsFlyer da sua empresa.** Se uma notificação não estiver disponível na conta da sua empresa, a opção para ativá-la não é mostrada.
   * Por exemplo, se a sua empresa não assina a Push API, essa notificação não aparece como uma opção.
-* Disponível para você, com base nas suas permissões de usuário. **Se uma notificação estiver relacionada a uma ferramenta ou recurso ao qual você não tem permissões de uso, a opção fica desativada.
+* Disponível para você, com base nas suas permissões de usuário. Se uma notificação estiver relacionada a uma ferramenta ou recurso ao qual você não tem permissões de uso, a opção fica desativada.
 
-  * * Por exemplo, se você não tiver permissões para adicionar ou editar parceiros integrados, a opção de ativar ou desativar uma notificação relacionada à configuração de parceiros integrados fica desativada.**
+  *  Por exemplo, se você não tiver permissões para adicionar ou editar parceiros integrados, a opção de ativar ou desativar uma notificação relacionada à configuração de parceiros integrados fica desativada.
 
 ## Quando vou receber as notificações?
 

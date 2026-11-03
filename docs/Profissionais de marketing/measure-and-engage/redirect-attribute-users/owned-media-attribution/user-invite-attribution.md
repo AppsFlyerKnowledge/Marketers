@@ -200,7 +200,7 @@ Exemplo:
 | Limite de payload | O valor do payload dos parâmetros do link não deve exceder 3.000 caracteres. |
 | Preços | Incluído nos planos de assinatura OneLink Standalone e Atribuição.<br /><br />**Observação:** Se o seu pacote terminar ou for cancelado, o SDK de convite do usuário deixará de gerar novos links de convite, e todos os fluxos de convite relacionados serão afetados. Os links de convite existentes continuarão a funcionar. |
 | iOS 14+ | A atribuição de convites de usuário não usa IDFA, por isso o iOS 14 não afeta esse recurso. |
-| URL ID | O ID da URL (ou shortlink ID) pode ser editado para destacar a oferta da sua campanha. Por exemplo: https://myapp.onelink.me/abc123/maçãs. O ID da URL não deve exceder 50 caracteres e pode ser uma combinação de letras e números. Por padrão, são 8 caracteres.<br /><br />**Atenção:** Você só pode editar o URL ID se o ID atual ainda não estiver em uso. |
+| URL ID | O ID da URL (ou shortlink ID) pode ser editado para destacar a oferta da sua campanha. Por exemplo: [https://myapp.onelink.me/abc123/ma](https://myapp.onelink.me/abc123/ma)çãs. O ID da URL não deve exceder 50 caracteres e pode ser uma combinação de letras e números. Por padrão, são 8 caracteres.<br /><br />**Atenção:** Você só pode editar o URL ID se o ID atual ainda não estiver em uso. |
 
 </Accordion>
 

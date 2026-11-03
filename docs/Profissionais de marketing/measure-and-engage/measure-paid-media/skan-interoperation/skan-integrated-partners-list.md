@@ -52,9 +52,9 @@ Os seguintes campos de enriquecimento estão disponíveis:
 
 *Ad networks com mais de 10% do seu tráfego SKAN da versão 4
 
-**skan\_campaign\_id não é relatado
+skan\_campaign\_id não é relatado
 
-***Disponível para postbacks da versão 4 e versões mais recentes da SKAN
+Disponível para postbacks da versão 4 e versões mais recentes da SKAN
 
 ^ Agregado com click-through
 

@@ -347,7 +347,7 @@ Agora você pode prosseguir e testar a reatribuição e o reengajamento.
 > Veja abaixo formas alternativas de verificar os resultados do teste:
 >
 > * Se você tiver acesso aos relatórios de dados brutos, faça o download do <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview">relatório de dados brutos de conversões</Anchor>. Esse relatório leva vários minutos para ser baixado. **Para fazer o download do relatório:**
->   1. Na AppsFlyer, no menu lateral, selecione relatório**** > exportar dados brutos.
+>   1. Na AppsFlyer, no menu lateral, selecione relatório > exportar dados brutos.
 >   2. Na lista **Retargeting**, clique em **Conversões (reengajamentos e reatribuições)** e, depois, faça o download do relatório.
 > * Se você tiver acesso aos logs de depuração, poderá usar a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-id-2">SDK integration test API</Anchor> para recuperar os resultados da atribuição de uma instalação específica.
 

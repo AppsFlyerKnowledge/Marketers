@@ -114,7 +114,7 @@ As seções a seguir descrevem os tipos de atribuição de receita de anúncios 
 
 **Para visualizar, editar ou excluir integrações**:
 
-1. Na AppsFlyer, no menu lateral, selecione configurações**** > configurações de receita > receita de anúncios e selecione o seu app.  
+1. Na AppsFlyer, no menu lateral, selecione configurações > configurações de receita > receita de anúncios e selecione o seu app.  
    Uma lista de todas as suas integrações de parceiros é exibida, juntamente com informações sobre o produto e o tipo de integração, o status da integração e os nomes dos eventos de receita publicitária.
 2. Passe o mouse sobre a integração e clique em **editar** ou **excluir** conforme necessário.
 

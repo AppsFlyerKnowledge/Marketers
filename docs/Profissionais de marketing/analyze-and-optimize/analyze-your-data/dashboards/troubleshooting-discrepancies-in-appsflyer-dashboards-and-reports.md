@@ -125,7 +125,7 @@ Para comparar os dois tipos de dados corretamente, precisamos neutralizar as dif
 
 #### Para recuperar dados de LTV a partir de dados brutos de atividade:
 
-1. Na AppsFlyer, no menu lateral, selecione relatório**** > exportar dados brutos.
+1. Na AppsFlyer, no menu lateral, selecione relatório > exportar dados brutos.
 2. Defina o **dia atual como o último dia** do intervalo de datas (problema 2 resolvido)
 3. Faça download do relatório de eventos in-app brutos.
 4. Use a coluna **Install Time** (Tempo de instalação) para filtrar as instalações anteriores ao primeiro dia do intervalo de datas (problema 1 resolvido)

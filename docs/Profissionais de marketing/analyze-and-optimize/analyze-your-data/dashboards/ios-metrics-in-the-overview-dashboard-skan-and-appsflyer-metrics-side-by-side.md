@@ -132,8 +132,8 @@ Este artigo contém orientações baseadas em nosso conhecimento de mercado e ob
 5. [Opcional] Para adicionar ou remover eventos in-app:
    1. Selecione eventos in-app.
    2. Adicione ou remova os eventos in-app necessários.
-6. Clique em **Aplicar.   
-   As métricas selecionadas e os eventos in-app são exibidos.**
+6. Clique em Aplicar.   
+   As métricas selecionadas e os eventos in-app são exibidos.
 
 </Accordion>
 

@@ -139,8 +139,8 @@ Use a lista de verificação abaixo para garantir que você conclua todas as eta
    ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
 3. **No AppsFlyer, configure o parceiro de marketing do Apple Ads:**
    1. Na AppsFlyer, no menu lateral, selecione **Colaboração** > **Integrações ativas**.
-   2. Pesquise o ***parceiro de marketing do Apple Search Ads.*  
-      A lista de parceiros de marketing é exibida.**
+   2. Pesquise o <em>parceiro de marketing do Apple Search Ads.</em>  
+      A lista de parceiros de marketing é exibida.
    3. Selecione um parceiro de marketing.
    4. Habilite **Ativar parceiro.**
    5. Insira a **Campaign Group ID** do parceiro, que você obteve na etapa anterior. Insira apenas os dígitos (números).

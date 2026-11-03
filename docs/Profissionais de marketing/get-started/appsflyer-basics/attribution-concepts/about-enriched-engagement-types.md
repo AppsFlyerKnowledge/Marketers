@@ -55,7 +55,7 @@ A tabela abaixo especifica a <Anchor target="_blank" href="/marketers/pt/docs/ap
 
 Quando um tipo de engajamento não é relatado, a prioridade padrão é definida como (2 para cliques, 3 para impressões).
 
-**As janelas de lookback para `engaged_click` e `engaged_view` só podem ser configuradas para não SRNs. Para SRNs, `engaged_click` e `engaged_view` compartilham a mesma janela de lookback que os cliques e, portanto, é configurada pelos sliders de **Install Click-Through Attribution Lookback**.
+<strong>As janelas de lookback para `engaged_click` e `engaged_view` só podem ser configuradas para não SRNs. Para SRNs, `engaged_click` e `engaged_view` compartilham a mesma janela de lookback que os cliques e, portanto, é configurada pelos sliders de </strong>Install Click-Through Attribution Lookback.
 
 ## Quais networks podem relatar engaged views e engaged clicks?
 

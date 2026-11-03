@@ -140,7 +140,7 @@ public class AFApplication extends Application {
 
 Na primeira inicialização do aplicativo, uma solicitação da permissão READ\_PHONE\_STATE é enviada ao usuário no callback onResume() da MainActivity.
 
-build.gradle no módulo do aplicativo****
+build.gradle no módulo do aplicativo
 
 ```java
 allprojects {
